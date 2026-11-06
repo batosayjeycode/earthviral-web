@@ -1,6 +1,7 @@
 ---
 import type { BatchMeta } from '../../lib/types.ts';
 import { formatDateWib, formatTimeWib } from '../../lib/format.ts';
+import { VAS } from '../../lib/scoring.ts';
 
 interface Props {
   meta: BatchMeta;
@@ -18,6 +19,7 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
   <!-- tabindex: the strip scrolls horizontally on narrow screens; keyboard users must reach it. -->
   <dl
     tabindex="0"
+    data-stale-after-hours={VAS.staleAfterHours}
     class="tabular relative mx-auto flex h-9 max-w-7xl items-center gap-x-5 overflow-x-auto px-4 text-xs whitespace-nowrap text-ink-muted [scrollbar-width:none] sm:px-6"
   >
     <div class="flex items-center gap-1.5 font-semibold text-cyan">
@@ -48,9 +50,23 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
     <div class="flex gap-1.5">
       <dt>Next Update</dt>
       <dd class="text-white">
-        <time datetime={meta.nextUpdateAt}>{formatTimeWib(meta.nextUpdateAt)}</time>
+        <time datetime={meta.nextUpdateAt} data-next-update>
+          {formatTimeWib(meta.nextUpdateAt)}
+        </time>
       </dd>
     </div>
+    {/* Revealed by the script below when the snapshot is older than VAS.staleAfterHours.
+        It is the last item in a fixed-height row, so showing it shifts nothing. */}
+    {!meta.isSeed && (
+      <div
+        data-stale-note
+        hidden
+        class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300"
+      >
+        <dt class="sr-only">Data notice</dt>
+        <dd>Data delayed — updates normally run every 3 hours</dd>
+      </div>
+    )}
     {meta.isSeed && (
       <div class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300">
         <dt class="sr-only">Data notice</dt>
@@ -72,5 +88,18 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
   for (const el of document.querySelectorAll<HTMLTimeElement>('time[data-relative-time]')) {
     el.title = el.textContent ?? '';
     el.textContent = relative(el.dateTime);
+
+    // "Data delayed" notice: the page is static, so staleness is only knowable in the browser.
+    const bar = el.closest<HTMLElement>('[data-stale-after-hours]');
+    const note = bar?.querySelector<HTMLElement>('[data-stale-note]');
+    const staleAfterMs = Number(bar?.dataset.staleAfterHours) * 3_600_000;
+    if (note && staleAfterMs > 0 && Date.now() - Date.parse(el.dateTime) > staleAfterMs) {
+      note.hidden = false;
+      const next = bar?.querySelector<HTMLTimeElement>('time[data-next-update]');
+      if (next) {
+        next.title = next.textContent ?? '';
+        next.textContent = 'Overdue';
+      }
+    }
   }
 </script>

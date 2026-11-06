@@ -370,6 +370,16 @@ describe('content honesty', () => {
     }
   });
 
+  test(
+    'real builds ship the hidden "data delayed" note (revealed client-side)',
+    { skip: isSeed },
+    () => {
+      const home = pages.find((p) => p.path === '/');
+      assert.match(home.html, /<div[^>]*data-stale-note[^>]*hidden/);
+      assert.match(home.html, /data-stale-after-hours="\d+"/);
+    },
+  );
+
   test('real builds contain no sample stories', { skip: isSeed }, () => {
     assert.doesNotMatch(text, /\[Sample\]|Sample story:/);
   });

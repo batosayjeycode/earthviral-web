@@ -116,6 +116,18 @@ All settings are optional environment variables. Anything left unset is simply o
 
 Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up batch commits through its `workflow_run` trigger.
 
+**Staleness watchdog** (`.github/workflows/staleness-watchdog.yml`) runs hourly. It checks when the data was last generated, both on the live site (which catches failed deploys) and in the repository (which catches failed batches).
+
+- If either is older than **9 hours** (three missed runs), it opens a GitHub issue labelled `stale-data`. GitHub emails you about the new issue.
+- While the data stays stale, it keeps updating that same issue's report.
+- When the data is fresh again, it closes the issue.
+- Before launch, the live check is skipped and only the repository data is checked.
+- Optional variables: `SITE_URL` and `STALE_AFTER_HOURS`.
+
+Visitors also see a **"Data delayed"** badge in the telemetry bar once the snapshot passes the same 9-hour threshold, and "Next Update" then reads "Overdue". Because pages are static, this check runs in the browser. Run `node scripts/check-staleness.ts` to check locally.
+
+Scheduled workflows, including the batch and the watchdog, only run from the **default branch (`main`)**.
+
 **Cloudflare Pages setup:** create `earthviral-web` as a **Direct Upload** project. Don't connect the Git integration as well, or every push deploys twice and the second deploy skips CI.
 
 | Setting                                                                                                 | Kind   | Used by                    |
@@ -133,6 +145,7 @@ Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up b
 ```text
 ├── .github/workflows/
 │   ├── ci.yml                                 check → qa → deploy (Wrangler) + IndexNow
+│   ├── staleness-watchdog.yml                 hourly freshness check → GitHub issue
 │   └── update-viral-batch.yml                 3-hour batch and data commit
 ├── scripts/                                   batch pipeline (plain Node TypeScript)
 │   ├── generate-viral-batch.ts                CLI entry point

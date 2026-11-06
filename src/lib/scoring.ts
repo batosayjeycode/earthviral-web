@@ -25,6 +25,12 @@ export const VAS = {
   maxStoriesPerCountry: 10,
   /** How long a removed story's URL keeps redirecting to its country page. */
   redirectRetentionDays: 90,
+  /**
+   * Data older than this is "delayed": the telemetry bar shows a notice and the staleness
+   * watchdog (.github/workflows/staleness-watchdog.yml) opens a GitHub issue. Batches run
+   * every 3 hours, so 9 hours means three missed runs.
+   */
+  staleAfterHours: 9,
   /** Minimum independent outlets for a new story (or 1 outlet + a matching Google Trends search). */
   minPublishers: 2,
 } as const;

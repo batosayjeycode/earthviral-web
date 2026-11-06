@@ -1,0 +1,68 @@
+# Staleness watchdog: alerts when EarthViral's news data stops updating.
+#
+# Hourly, compares the data's generatedAt on the live site (catches failed deploys) and in
+# the repository (catches failed batches) against VAS.staleAfterHours (9 h = three missed
+# 3-hour runs). When stale it opens one issue labelled `stale-data` — GitHub emails repo
+# watchers — and keeps that issue's report current; when data is fresh again it closes it.
+#
+# Like every scheduled workflow, this only runs from the default branch.
+# Optional repository variables: SITE_URL (default https://earthviral.com),
+# STALE_AFTER_HOURS (default 9).
+name: Staleness watchdog
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: staleness-watchdog
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # Astro 7 needs Node >= 22.23.4 (the check runs TypeScript via type stripping).
+          node-version-file: .nvmrc
+
+      - name: Check data freshness
+        id: check
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          STALE_AFTER_HOURS: ${{ vars.STALE_AFTER_HOURS }}
+        run: node scripts/check-staleness.ts
+
+      - name: Open or update the stale-data issue
+        if: steps.check.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SUMMARY: ${{ steps.check.outputs.summary }}
+        run: |
+          gh label create stale-data --color D93F0B \
+            --description "News data stopped updating (staleness watchdog)" --force
+          number=$(gh issue list --label stale-data --state open --json number --jq '.[0].number')
+          if [ -z "$number" ]; then
+            gh issue create --label stale-data \
+              --title "EarthViral data is stale ($SUMMARY)" --body-file staleness-report.md
+          else
+            gh issue edit "$number" \
+              --title "EarthViral data is stale ($SUMMARY)" --body-file staleness-report.md
+          fi
+
+      - name: Close the stale-data issue when data is fresh again
+        if: steps.check.outputs.stale == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for number in $(gh issue list --label stale-data --state open --json number --jq '.[].number'); do
+            gh issue close "$number" --comment "$(cat staleness-report.md)"
+          done

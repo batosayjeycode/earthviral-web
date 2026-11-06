@@ -215,6 +215,43 @@ try {
     await context.close();
   }
 
+  // ---------- "Data delayed" note ----------
+  console.log('\n[data delayed note]');
+  {
+    const before = failures.length;
+    const meta = JSON.parse(
+      await readFile(join(root, 'src', 'data', 'generated', 'batch-meta.json'), 'utf8'),
+    );
+    if (meta.isSeed) {
+      pass('skipped (sample data never shows the note)');
+    } else {
+      const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+      const page = await context.newPage();
+      // Fresh: right after the batch, the note stays hidden.
+      await page.clock.setFixedTime(new Date(Date.parse(meta.generatedAt) + 60 * 60_000));
+      await page.goto(BASE + STORY);
+      if (await page.locator('[data-stale-note]').isVisible()) fail('note shown for fresh data');
+      // Stale: 10 hours later, the note appears and "Next Update" reads "Overdue".
+      await page.clock.setFixedTime(new Date(Date.parse(meta.generatedAt) + 10 * 3_600_000));
+      await page.addInitScript(() => {
+        window.__cls = 0;
+        new PerformanceObserver((list) => {
+          for (const e of list.getEntries()) window.__cls += e.value;
+        }).observe({ type: 'layout-shift', buffered: true });
+      });
+      await page.goto(BASE + STORY);
+      if (!(await page.locator('[data-stale-note]').isVisible())) fail('note not shown when stale');
+      const next = await page.locator('time[data-next-update]').textContent();
+      if (next !== 'Overdue') fail(`Next Update should read "Overdue", got "${next}"`);
+      const cls = await page.evaluate(() => window.__cls);
+      if (cls > 0) fail(`showing the note caused layout shift (CLS ${cls.toFixed(3)})`);
+      await page.screenshot({ path: join(outDir, 'data-delayed-note.png') });
+      if (failures.length === before)
+        pass('hidden when fresh; shown + "Overdue" when stale; no layout shift');
+      await context.close();
+    }
+  }
+
   // ---------- No-JS fallback ----------
   console.log('\n[no JavaScript]');
   {
