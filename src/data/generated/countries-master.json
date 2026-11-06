@@ -14,8 +14,8 @@
     "intensityTier": "surge",
     "topicCount": 10,
     "topClusterIds": [
-      "us-20261106-trump-appoints-miller-chief-of-staff",
       "us-20261105-democrats-swept-the-midterms-what-comes-next-for-the",
+      "us-20261106-trump-appoints-miller-chief-of-staff",
       "us-20261106-thomas-markle-arrested-florida-abuse-charges",
       "us-20261106-pope-leo-latin-america-tour",
       "us-20261104-could-the-us-midterms-further-isolate-israel-in-washington"
@@ -32,7 +32,7 @@
       37.9,
       0.2
     ],
-    "viralScore": 82,
+    "viralScore": 81,
     "intensityTier": "high",
     "topicCount": 4,
     "topClusterIds": [
@@ -53,15 +53,15 @@
       117,
       -2.5
     ],
-    "viralScore": 78,
+    "viralScore": 79,
     "intensityTier": "high",
     "topicCount": 10,
     "topClusterIds": [
       "id-20261106-indonesian-regional-governments-receive-multiple-awards",
-      "id-20261106-kpk-investigates-k-a-i-director",
       "id-20261105-duka-di-tengah-karhutla-3-prajurit-tni-gugur-usai",
-      "id-20261105-gunung-semeru-erupsi-enam-kali-hari-ini-penambang-pasir",
-      "id-20261105-bps-ungkap-alasan-ekonomi-ri-tumbuh-5-47-jauh"
+      "id-20261106-kpk-investigates-k-a-i-director",
+      "id-20261105-bps-ungkap-alasan-ekonomi-ri-tumbuh-5-47-jauh",
+      "id-20261105-gunung-semeru-erupsi-enam-kali-hari-ini-penambang-pasir"
     ]
   },
   {
@@ -129,7 +129,7 @@
       2.4,
       46.6
     ],
-    "viralScore": 64,
+    "viralScore": 63,
     "intensityTier": "high",
     "topicCount": 8,
     "topClusterIds": [
@@ -137,7 +137,27 @@
       "fr-20261105-france-more-than-600-000-protest-as-anger-grows",
       "fr-20261105-french-bank-hit-by-cyberattack-hackers-steal-100-million",
       "fr-20261106-mbappe-returns-to-france-national-team",
-      "fr-20261106-fatal-school-bus-crash-france"
+      "fr-20261106-european-flights-targeted-by-bomb-threats"
+    ]
+  },
+  {
+    "id": "jp",
+    "code": "JP",
+    "isoNumeric": "392",
+    "name": "Japan",
+    "slug": "japan",
+    "region": "Asia",
+    "centroid": [
+      138.5,
+      36.5
+    ],
+    "viralScore": 59,
+    "intensityTier": "active",
+    "topicCount": 3,
+    "topClusterIds": [
+      "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
+      "jp-20261106-japan-launches-emergency-cybersecurity-measures",
+      "jp-20261105-kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung"
     ]
   },
   {
@@ -180,47 +200,6 @@
     ]
   },
   {
-    "id": "gb",
-    "code": "GB",
-    "isoNumeric": "826",
-    "name": "United Kingdom",
-    "slug": "united-kingdom",
-    "region": "Europe",
-    "centroid": [
-      -2,
-      53.5
-    ],
-    "viralScore": 55,
-    "intensityTier": "active",
-    "topicCount": 4,
-    "topClusterIds": [
-      "gb-20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual",
-      "gb-20261105-bank-of-england-raises-interest-rates-to-4-the",
-      "gb-20261104-british-man-infected-with-ebola-in-dr-congo-arrives",
-      "gb-20261105-could-this-be-the-last-bonfire-night-for-noisy"
-    ]
-  },
-  {
-    "id": "jp",
-    "code": "JP",
-    "isoNumeric": "392",
-    "name": "Japan",
-    "slug": "japan",
-    "region": "Asia",
-    "centroid": [
-      138.5,
-      36.5
-    ],
-    "viralScore": 50,
-    "intensityTier": "active",
-    "topicCount": 3,
-    "topClusterIds": [
-      "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
-      "jp-20261106-japan-launches-emergency-cybersecurity-measures",
-      "jp-20261105-kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung"
-    ]
-  },
-  {
     "id": "es",
     "code": "ES",
     "isoNumeric": "724",
@@ -231,11 +210,51 @@
       -3.7,
       40.2
     ],
-    "viralScore": 47,
+    "viralScore": 57,
     "intensityTier": "active",
     "topicCount": 1,
     "topClusterIds": [
       "es-20261106-real-madrid-la-liga-mbappe-controversy"
+    ]
+  },
+  {
+    "id": "gb",
+    "code": "GB",
+    "isoNumeric": "826",
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "region": "Europe",
+    "centroid": [
+      -2,
+      53.5
+    ],
+    "viralScore": 54,
+    "intensityTier": "active",
+    "topicCount": 4,
+    "topClusterIds": [
+      "gb-20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual",
+      "gb-20261105-bank-of-england-raises-interest-rates-to-4-the",
+      "gb-20261104-british-man-infected-with-ebola-in-dr-congo-arrives",
+      "gb-20261105-could-this-be-the-last-bonfire-night-for-noisy"
+    ]
+  },
+  {
+    "id": "ru",
+    "code": "RU",
+    "isoNumeric": "643",
+    "name": "Russia",
+    "slug": "russia",
+    "region": "Europe",
+    "centroid": [
+      60,
+      58
+    ],
+    "viralScore": 49,
+    "intensityTier": "active",
+    "topicCount": 2,
+    "topClusterIds": [
+      "ru-20261106-russian-diesel-tankers-divert-from-us",
+      "ru-20261106-international-diplomatic-efforts-ukraine-conflict"
     ]
   },
   {
@@ -261,6 +280,28 @@
     ]
   },
   {
+    "id": "sg",
+    "code": "SG",
+    "isoNumeric": "702",
+    "name": "Singapore",
+    "slug": "singapore",
+    "region": "Asia",
+    "centroid": [
+      103.82,
+      1.35
+    ],
+    "viralScore": 45,
+    "intensityTier": "active",
+    "topicCount": 6,
+    "topClusterIds": [
+      "sg-20261106-wall-street-stocks-rally-after-selloff",
+      "sg-20261106-doctor-anywhere-hit-by-data-breach",
+      "sg-20261106-motorists-advised-to-avoid-areas-in-northern-singapore-over",
+      "sg-20261106-prepare-for-take-off-sia-unveils-new-seats-in",
+      "sg-20261105-us-blood-pressure-drug-recall-does-not-affect-singapore"
+    ]
+  },
+  {
     "id": "my",
     "code": "MY",
     "isoNumeric": "458",
@@ -271,7 +312,7 @@
       102.3,
       3.8
     ],
-    "viralScore": 44,
+    "viralScore": 43,
     "intensityTier": "active",
     "topicCount": 4,
     "topClusterIds": [
@@ -282,21 +323,23 @@
     ]
   },
   {
-    "id": "ru",
-    "code": "RU",
-    "isoNumeric": "643",
-    "name": "Russia",
-    "slug": "russia",
-    "region": "Europe",
+    "id": "au",
+    "code": "AU",
+    "isoNumeric": "036",
+    "name": "Australia",
+    "slug": "australia",
+    "region": "Oceania",
     "centroid": [
-      60,
-      58
+      134,
+      -25.5
     ],
-    "viralScore": 42,
+    "viralScore": 40,
     "intensityTier": "active",
-    "topicCount": 1,
+    "topicCount": 3,
     "topClusterIds": [
-      "ru-20261106-international-diplomatic-efforts-ukraine-conflict"
+      "au-20261106-usman-khawaja-claims-ball-tampering-knowledge",
+      "au-20261105-russell-brand-found-guilty-of-rape-and-sexual-assault-2",
+      "au-20261105-third-wave-of-hoax-bomb-threats-hit-27-passenger"
     ]
   },
   {
@@ -310,34 +353,12 @@
       -51.9,
       -10.5
     ],
-    "viralScore": 41,
+    "viralScore": 36,
     "intensityTier": "active",
     "topicCount": 2,
     "topClusterIds": [
-      "br-20261106-morre-sebasti-n-lelio-vencedor-do-oscar-por-uma",
-      "br-20261106-sasha-defende-jo-o-lucas-ap-s-cantor-ser"
-    ]
-  },
-  {
-    "id": "sg",
-    "code": "SG",
-    "isoNumeric": "702",
-    "name": "Singapore",
-    "slug": "singapore",
-    "region": "Asia",
-    "centroid": [
-      103.82,
-      1.35
-    ],
-    "viralScore": 38,
-    "intensityTier": "active",
-    "topicCount": 5,
-    "topClusterIds": [
-      "sg-20261106-doctor-anywhere-hit-by-data-breach",
-      "sg-20261106-prepare-for-take-off-sia-unveils-new-seats-in",
-      "sg-20261106-motorists-advised-to-avoid-areas-in-northern-singapore-over",
-      "sg-20261105-us-blood-pressure-drug-recall-does-not-affect-singapore",
-      "sg-20261106-singapore-authorities-urge-strict-limits-on-ai-agent-autonomy"
+      "br-20261106-sasha-defende-jo-o-lucas-ap-s-cantor-ser",
+      "br-20261106-morre-sebasti-n-lelio-vencedor-do-oscar-por-uma"
     ]
   },
   {
@@ -428,25 +449,6 @@
     "topicCount": 1,
     "topClusterIds": [
       "ph-20261105-duchess-of-sussexs-estranged-half-brother-person-of-interest"
-    ]
-  },
-  {
-    "id": "au",
-    "code": "AU",
-    "isoNumeric": "036",
-    "name": "Australia",
-    "slug": "australia",
-    "region": "Oceania",
-    "centroid": [
-      134,
-      -25.5
-    ],
-    "viralScore": 19,
-    "intensityTier": "quiet",
-    "topicCount": 2,
-    "topClusterIds": [
-      "au-20261105-russell-brand-found-guilty-of-rape-and-sexual-assault-2",
-      "au-20261105-third-wave-of-hoax-bomb-threats-hit-27-passenger"
     ]
   },
   {
