@@ -13,7 +13,7 @@
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
  *   --dry-run              don't write files
  *
- * Env: GEMINI_API_KEY, GEMINI_MODEL (default gemini-2.5-flash), OPENAI_API_KEY, OPENAI_MODEL (default gpt-5-mini)
+ * Env: GEMINI_API_KEY, GEMINI_MODEL (default gemini-3.1-flash-lite), OPENAI_API_KEY, OPENAI_MODEL (default gpt-5-mini)
  */
 import { categoryBySlug } from '../src/lib/taxonomy.ts';
 import { VAS } from '../src/lib/scoring.ts';

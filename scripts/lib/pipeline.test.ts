@@ -306,6 +306,10 @@ describe('AI providers (fetch stubbed)', async () => {
         (calls[0]!.init.headers as Record<string, string>)['x-goog-api-key'],
         'test-key',
       );
+      // Default model is gemini-3.1-flash-lite, called without a custom temperature.
+      assert.match(calls[0]!.url, /\/models\/gemini-3\.1-flash-lite:generateContent$/);
+      const body = JSON.parse(String(calls[0]!.init.body));
+      assert.equal(body.generationConfig.temperature, undefined);
     } finally {
       globalThis.fetch = realFetch;
       delete process.env.GEMINI_API_KEY;
@@ -329,6 +333,19 @@ describe('AI providers (fetch stubbed)', async () => {
     } finally {
       globalThis.fetch = realFetch;
       delete process.env.OPENAI_API_KEY;
+    }
+  });
+
+  it('leaves temperature at the default for Gemini 3+ models', async () => {
+    const { geminiRequestBody, usesDefaultTemperature } =
+      await import('./intelligence/generateAiSummaries.ts');
+    for (const m of ['gemini-3.1-flash-lite', 'gemini-3.5-flash', 'gemini-10-pro']) {
+      assert.ok(usesDefaultTemperature(m), m);
+      assert.equal('temperature' in geminiRequestBody(input, m).generationConfig, false, m);
+    }
+    for (const m of ['gemini-2.5-flash', 'gemini-2.0-flash-lite']) {
+      assert.ok(!usesDefaultTemperature(m), m);
+      assert.equal(geminiRequestBody(input, m).generationConfig.temperature, 0.2, m);
     }
   });
 

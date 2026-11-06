@@ -2,7 +2,7 @@
  * Batch LLM summariser (plan §7.2 step 2, §10 `generateAiSummaries.ts`).
  *
  * Providers (chosen by `--provider` or by which API key is present):
- *   gemini  — Gemini API `generateContent` with `responseSchema` (default model gemini-2.5-flash)
+ *   gemini  — Gemini API `generateContent` with `responseSchema` (default model gemini-3.1-flash-lite)
  *   openai  — Chat Completions with strict `json_schema` (default model gpt-5-mini)
  *   none    — deterministic, non-AI fallback built from headlines + metrics
  *
@@ -142,21 +142,44 @@ const GEMINI_SCHEMA = {
 
 // ── Providers ───────────────────────────────────────────────────────────────
 
+/**
+ * Gemini 3+ models are tuned for the default temperature (1.0); Google warns that lowering
+ * it can cause looping or degraded output, so it is only set for Gemini 2.x and older.
+ */
+export function usesDefaultTemperature(model: string): boolean {
+  const major = /^gemini-(\d+)/i.exec(model)?.[1];
+  return major !== undefined && Number(major) >= 3;
+}
+
+interface GeminiRequestBody {
+  systemInstruction: { parts: Array<{ text: string }> };
+  contents: Array<{ role: 'user'; parts: Array<{ text: string }> }>;
+  generationConfig: {
+    temperature?: number;
+    responseMimeType: 'application/json';
+    responseSchema: typeof GEMINI_SCHEMA;
+  };
+}
+
+export function geminiRequestBody(input: SummaryInput, model: string): GeminiRequestBody {
+  return {
+    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+    contents: [{ role: 'user', parts: [{ text: userPrompt(input) }] }],
+    generationConfig: {
+      ...(usesDefaultTemperature(model) ? {} : { temperature: 0.2 }),
+      responseMimeType: 'application/json',
+      responseSchema: GEMINI_SCHEMA,
+    },
+  };
+}
+
 async function callGemini(input: SummaryInput, apiKey: string, model: string): Promise<unknown> {
   const res = await fetchWithRetry(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
     {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-        contents: [{ role: 'user', parts: [{ text: userPrompt(input) }] }],
-        generationConfig: {
-          temperature: 0.2,
-          responseMimeType: 'application/json',
-          responseSchema: GEMINI_SCHEMA,
-        },
-      }),
+      body: JSON.stringify(geminiRequestBody(input, model)),
       timeoutMs: 60_000,
       retries: 2,
       backoffMs: 4_000,
@@ -556,7 +579,7 @@ export function createSummarizer(provider: ProviderName): Summarizer {
     );
   const model =
     provider === 'gemini'
-      ? (process.env.GEMINI_MODEL ?? 'gemini-2.5-flash')
+      ? (process.env.GEMINI_MODEL ?? 'gemini-3.1-flash-lite')
       : (process.env.OPENAI_MODEL ?? 'gpt-5-mini');
   const call = provider === 'gemini' ? callGemini : callOpenAI;
 
