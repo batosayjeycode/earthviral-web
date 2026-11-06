@@ -3,7 +3,7 @@
  *
  * Providers (chosen by `--provider` or by which API key is present):
  *   gemini  — Gemini API `generateContent` with `responseSchema` (default model gemini-2.5-flash)
- *   openai  — Chat Completions with strict `json_schema` (default model gpt-4o-mini)
+ *   openai  — Chat Completions with strict `json_schema` (default model gpt-5-mini)
  *   none    — deterministic, non-AI fallback built from headlines + metrics
  *
  * Every model response is validated with Zod; invalid or failed responses fall back to
@@ -169,23 +169,47 @@ async function callGemini(input: SummaryInput, apiKey: string, model: string): P
   return JSON.parse(text);
 }
 
+/**
+ * Reasoning models (gpt-5 family, o-series) reject a custom `temperature`; they take
+ * `reasoning_effort` instead. "low" keeps hidden reasoning tokens — which count toward
+ * usage and the free data-sharing quota — small for this extraction-style task.
+ */
+export function isReasoningModel(model: string): boolean {
+  return /^(gpt-5|o\d)/i.test(model);
+}
+
+interface OpenAiRequestBody {
+  model: string;
+  temperature?: number;
+  reasoning_effort?: 'low';
+  messages: Array<{ role: 'system' | 'user'; content: string }>;
+  response_format: {
+    type: 'json_schema';
+    json_schema: { name: string; strict: boolean; schema: typeof OPENAI_SCHEMA };
+  };
+}
+
+export function openAiRequestBody(input: SummaryInput, model: string): OpenAiRequestBody {
+  return {
+    model,
+    ...(isReasoningModel(model) ? { reasoning_effort: 'low' } : { temperature: 0.2 }),
+    messages: [
+      { role: 'system', content: SYSTEM_PROMPT },
+      { role: 'user', content: userPrompt(input) },
+    ],
+    response_format: {
+      type: 'json_schema',
+      json_schema: { name: 'cluster_summary', strict: true, schema: OPENAI_SCHEMA },
+    },
+  };
+}
+
 async function callOpenAI(input: SummaryInput, apiKey: string, model: string): Promise<unknown> {
   const res = await fetchWithRetry('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify({
-      model,
-      temperature: 0.2,
-      messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: userPrompt(input) },
-      ],
-      response_format: {
-        type: 'json_schema',
-        json_schema: { name: 'cluster_summary', strict: true, schema: OPENAI_SCHEMA },
-      },
-    }),
-    timeoutMs: 60_000,
+    body: JSON.stringify(openAiRequestBody(input, model)),
+    timeoutMs: 90_000, // reasoning models can take longer
     retries: 2,
     backoffMs: 4_000,
   });
@@ -533,7 +557,7 @@ export function createSummarizer(provider: ProviderName): Summarizer {
   const model =
     provider === 'gemini'
       ? (process.env.GEMINI_MODEL ?? 'gemini-2.5-flash')
-      : (process.env.OPENAI_MODEL ?? 'gpt-4o-mini');
+      : (process.env.OPENAI_MODEL ?? 'gpt-5-mini');
   const call = provider === 'gemini' ? callGemini : callOpenAI;
 
   return {

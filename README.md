@@ -16,7 +16,7 @@ The full product and architecture spec is in [`PLAN_EARTH_VIRAL.md`](./PLAN_EART
 | Map            | MapLibre GL JS 6 and Natural Earth TopoJSON (`world-atlas`)                                          |
 | Data           | JSON files validated by Astro content collections (Zod)                                              |
 | Batch pipeline | Plain Node 22 TypeScript (type stripping, no build step)                                             |
-| AI summaries   | Gemini (`gemini-2.5-flash`) or OpenAI (`gpt-4o-mini`), with a non-AI fallback                        |
+| AI summaries   | Gemini (`gemini-2.5-flash`) or OpenAI (`gpt-5-mini`), with a non-AI fallback                         |
 | Search         | [Pagefind](https://pagefind.app), indexed after the build and run in the browser                     |
 | Social images  | satori and resvg, rendered at build time                                                             |
 | Hosting        | Cloudflare Pages, with data refreshed by GitHub Actions                                              |

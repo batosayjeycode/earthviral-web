@@ -322,10 +322,24 @@ describe('AI providers (fetch stubbed)', async () => {
       const body = JSON.parse(String(calls[0]!.init.body));
       assert.equal(body.response_format.type, 'json_schema');
       assert.equal(body.response_format.json_schema.strict, true);
+      // Default model is gpt-5-mini: reasoning models reject a custom temperature.
+      assert.equal(body.model, 'gpt-5-mini');
+      assert.equal(body.temperature, undefined);
+      assert.equal(body.reasoning_effort, 'low');
     } finally {
       globalThis.fetch = realFetch;
       delete process.env.OPENAI_API_KEY;
     }
+  });
+
+  it('sends temperature only to non-reasoning OpenAI models', async () => {
+    const { openAiRequestBody, isReasoningModel } =
+      await import('./intelligence/generateAiSummaries.ts');
+    for (const m of ['gpt-5-mini', 'gpt-5', 'gpt-5.1-mini', 'o4-mini'])
+      assert.ok(isReasoningModel(m), m);
+    for (const m of ['gpt-4o-mini', 'gpt-4.1-mini']) assert.ok(!isReasoningModel(m), m);
+    assert.equal(openAiRequestBody(input, 'gpt-4o-mini').temperature, 0.2);
+    assert.equal('reasoning_effort' in openAiRequestBody(input, 'gpt-4o-mini'), false);
   });
 
   it('falls back to the non-AI summary when the model returns invalid output', async () => {
