@@ -13,6 +13,8 @@
  *                          MAX_STORIES_PER_COUNTRY; 0 = no cap). Lower-ranked stories are
  *                          removed and their URLs 301-redirect to the country page.
  *   --max-ai <n>           LLM calls per batch (default 80)
+ *   --ai-concurrency <n>   parallel LLM calls (default 2, env AI_CONCURRENCY); keep low on free
+ *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
  *   --dry-run              don't write files
  *
@@ -39,6 +41,8 @@ import {
   createSummarizer,
   resolveProvider,
   type SummaryInput,
+  type AiFailure,
+  type AiFailureCategory,
   type SummaryOutput,
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
@@ -81,6 +85,13 @@ const OPTS = {
       : VAS.maxStoriesPerCountry,
   ),
   maxAi: intOption('max-ai', 80),
+  aiConcurrency: Math.max(
+    1,
+    intOption(
+      'ai-concurrency',
+      process.env.AI_CONCURRENCY?.trim() ? Number.parseInt(process.env.AI_CONCURRENCY, 10) : 2,
+    ),
+  ),
   trends: !flag('no-trends'),
   gdelt: !flag('no-gdelt'),
 };
@@ -308,11 +319,14 @@ async function main() {
       .map((x) => ({ ...x, isNew: false })),
   ].sort((a, b) => b.score.viralScore - a.score.viralScore);
 
-  log(`▶ Summarising ${needsText.length} clusters (budget ${OPTS.maxAi} AI calls)…`);
+  log(
+    `▶ Summarising ${needsText.length} clusters (budget ${OPTS.maxAi} AI calls, ${OPTS.aiConcurrency} at a time)…`,
+  );
   let aiCalls = 0;
-  let aiFailures = 0;
+  const aiFailures = new Map<AiFailureCategory, number>();
+  const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
-  await mapLimit(needsText, 4, async (item, i) => {
+  await mapLimit(needsText, OPTS.aiConcurrency, async (item, i) => {
     const withinBudget = summarizer.provider !== 'none' && i < OPTS.maxAi;
     if (!withinBudget && !item.isNew) return; // keep the existing text
     const input = summaryInput(item.cluster, item.score);
@@ -323,11 +337,20 @@ async function main() {
     aiCalls++;
     const result = await summarizer.summarize(input);
     if (result.error) {
-      aiFailures++;
-      log(`  ! AI summary failed (${item.cluster.countryCode}): ${result.error} — using fallback`);
+      const { category, detail } = result.error;
+      aiFailures.set(category, (aiFailures.get(category) ?? 0) + 1);
+      if (aiFailureSamples.length < 5) aiFailureSamples.push(result.error);
+      log(
+        `  ! AI summary failed (${item.cluster.countryCode}) [${category}]: ${detail} — using fallback`,
+      );
     }
     texts.set(item.cluster, result.output);
   });
+  const aiFailureCount = [...aiFailures.values()].reduce((a, b) => a + b, 0);
+  const aiFailureSummary = [...aiFailures.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([category, n]) => `${category} ${n}`)
+    .join(', ');
 
   // 5. Build records ─────────────────────────────────────────────────────────
   // Retired slugs stay reserved: a redirect for an old URL must never shadow a new story.
@@ -407,6 +430,7 @@ async function main() {
         updatedClusters: updated.length,
         retiredClusters: retiredNow.length,
         aiCalls,
+        ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },
     },
@@ -422,7 +446,7 @@ async function main() {
     `  active countries ${totals.activeCountries} · viral topics ${totals.viralTopics} · global index ${totals.globalIndex}`,
   );
   log(
-    `  AI calls ${aiCalls}${aiFailures ? ` (${aiFailures} fell back)` : ''} · ${((Date.now() - started) / 1000).toFixed(1)}s`,
+    `  AI calls ${aiCalls}${aiFailureCount ? ` (${aiFailureCount} fell back: ${aiFailureSummary})` : ''} · ${((Date.now() - started) / 1000).toFixed(1)}s`,
   );
   log('  Top stories:');
   for (const r of [...records].sort((a, b) => b.viralScore - a.viralScore).slice(0, 10)) {

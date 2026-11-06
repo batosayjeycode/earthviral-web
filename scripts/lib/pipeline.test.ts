@@ -372,7 +372,8 @@ describe('AI providers (fetch stubbed)', async () => {
     try {
       const r = await createSummarizer('gemini').summarize(input);
       assert.equal(r.usedAi, false);
-      assert.ok(r.error);
+      assert.equal(r.error?.category, 'schema');
+      assert.match(r.error?.detail ?? '', /categorySlug/);
       assert.ok(r.output.aiSummaryBullets[0]!.startsWith('Antara reports:'));
     } finally {
       globalThis.fetch = realFetch;
@@ -448,5 +449,97 @@ describe('per-country story cap', async () => {
       ['/news/us/b/', '/news/id/a/'],
     );
     assert.match(redirectsFile(merged), /^\/news\/us\/b\/ \/country\/united-states\/ 301$/m);
+  });
+});
+
+describe('AI failure classification', async () => {
+  const { createSummarizer, classifyAiError } =
+    await import('./intelligence/generateAiSummaries.ts');
+  const { HttpError, suggestedRetryMs } = await import('./http.ts');
+  const input = {
+    countryCode: 'ID',
+    countryName: 'Indonesia',
+    articles: [
+      {
+        publisherName: 'Antara',
+        title: 'A headline long enough to keep',
+        snippet: '',
+        publishedAt: hoursAgo(1),
+      },
+    ],
+    metrics: { viralScore: 50, publishers: 1, velocity: 50, search: 0, trendKeyword: null },
+  };
+  const realFetch = globalThis.fetch;
+  const reply = (status: number, body: unknown) =>
+    (async () =>
+      new Response(JSON.stringify(body), {
+        status,
+        headers: { 'content-type': 'application/json' },
+      })) as unknown as typeof fetch;
+
+  it('labels HTTP errors with the provider message and never leaks the key', () => {
+    const f = classifyAiError(
+      new HttpError(
+        429,
+        'https://x/models/m:generateContent',
+        JSON.stringify({ error: { message: 'Quota exceeded' } }),
+      ),
+    );
+    assert.deepEqual(f, { category: 'rate-limit', detail: 'HTTP 429: Quota exceeded' });
+    assert.equal(classifyAiError(new HttpError(503, 'u', '')).category, 'server-error');
+    assert.equal(classifyAiError(new HttpError(404, 'u', '{}')).category, 'http-error');
+    const timeout = new Error('The operation was aborted due to timeout');
+    timeout.name = 'TimeoutError';
+    assert.equal(classifyAiError(timeout).category, 'timeout');
+  });
+
+  it('reports an empty Gemini reply with its finish reason', async () => {
+    process.env.GEMINI_API_KEY = 'test-key';
+    globalThis.fetch = reply(200, {
+      candidates: [{ finishReason: 'SAFETY', content: { parts: [] } }],
+    });
+    try {
+      const r = await createSummarizer('gemini').summarize(input);
+      assert.equal(r.usedAi, false);
+      assert.equal(r.error?.category, 'empty');
+      assert.match(r.error?.detail ?? '', /SAFETY/);
+    } finally {
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+  });
+
+  it('reports invalid JSON and OpenAI refusals', async () => {
+    process.env.GEMINI_API_KEY = 'test-key';
+    globalThis.fetch = reply(200, {
+      candidates: [{ content: { parts: [{ text: '{not json' }] } }],
+    });
+    try {
+      assert.equal(
+        (await createSummarizer('gemini').summarize(input)).error?.category,
+        'invalid-json',
+      );
+    } finally {
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+    process.env.OPENAI_API_KEY = 'test-key';
+    globalThis.fetch = reply(200, {
+      choices: [{ message: { content: null, refusal: 'I cannot help' } }],
+    });
+    try {
+      const r = await createSummarizer('openai').summarize(input);
+      assert.deepEqual(r.error, { category: 'refusal', detail: 'I cannot help' });
+    } finally {
+      globalThis.fetch = realFetch;
+      delete process.env.OPENAI_API_KEY;
+    }
+  });
+
+  it("honours Retry-After and Google's retryDelay, capped at 60 s", () => {
+    assert.equal(suggestedRetryMs('7', ''), 7000);
+    assert.equal(suggestedRetryMs(null, '{"error":{"details":[{"retryDelay":"37s"}]}}'), 37000);
+    assert.equal(suggestedRetryMs(null, '{"retryDelay": "600s"}'), 60000);
+    assert.equal(suggestedRetryMs(null, '{}'), null);
   });
 });

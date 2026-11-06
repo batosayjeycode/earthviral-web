@@ -72,6 +72,10 @@ export interface BatchMeta {
     /** Stories dropped this batch by the per-country cap (now redirected). */
     retiredClusters?: number;
     aiCalls: number;
+    /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
+    aiFailures?: Record<string, number>;
+    /** Up to 5 example failures for diagnosis (no keys or prompts). */
+    aiFailureSamples?: Array<{ category: string; detail: string }>;
     durationMs: number;
   };
 }

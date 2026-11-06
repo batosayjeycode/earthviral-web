@@ -12,7 +12,7 @@
 import { z } from 'astro/zod';
 import { CATEGORIES, CATEGORY_SLUGS, type CategorySlug } from '../../../src/lib/taxonomy.ts';
 import { COUNTRIES } from '../countries.ts';
-import { fetchWithRetry } from '../http.ts';
+import { HttpError, fetchWithRetry } from '../http.ts';
 import { tokenize, truncate } from './text.ts';
 
 export type ProviderName = 'gemini' | 'openai' | 'none';
@@ -186,10 +186,21 @@ async function callGemini(input: SummaryInput, apiKey: string, model: string): P
     },
   );
   const body = (await res.json()) as {
-    candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
+    candidates?: Array<{
+      finishReason?: string;
+      content?: { parts?: Array<{ text?: string }> };
+    }>;
+    promptFeedback?: { blockReason?: string };
   };
-  const text = body.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
-  return JSON.parse(text);
+  const candidate = body.candidates?.[0];
+  const text = candidate?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
+  if (!text.trim()) {
+    const why = body.promptFeedback?.blockReason
+      ? `blocked: ${body.promptFeedback.blockReason}`
+      : `finishReason: ${candidate?.finishReason ?? 'none'}`;
+    throw new AiResponseError('empty', `no text in response (${why})`);
+  }
+  return parseModelJson(text);
 }
 
 /**
@@ -236,8 +247,19 @@ async function callOpenAI(input: SummaryInput, apiKey: string, model: string): P
     retries: 2,
     backoffMs: 4_000,
   });
-  const body = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-  return JSON.parse(body.choices?.[0]?.message?.content ?? '');
+  const body = (await res.json()) as {
+    choices?: Array<{ finish_reason?: string; message?: { content?: string; refusal?: string } }>;
+  };
+  const choice = body.choices?.[0];
+  if (choice?.message?.refusal) throw new AiResponseError('refusal', choice.message.refusal);
+  const text = choice?.message?.content ?? '';
+  if (!text.trim()) {
+    throw new AiResponseError(
+      'empty',
+      `no content (finish_reason: ${choice?.finish_reason ?? 'none'})`,
+    );
+  }
+  return parseModelJson(text);
 }
 
 // ── Non-AI fallback ─────────────────────────────────────────────────────────
@@ -546,12 +568,77 @@ export function heuristicSummary(input: SummaryInput): SummaryOutput {
 
 // ── Public API ──────────────────────────────────────────────────────────────
 
+// ── Failure classification ──────────────────────────────────────────────────
+
+export type AiFailureCategory =
+  | 'rate-limit' // HTTP 429 after retries
+  | 'server-error' // HTTP 5xx after retries
+  | 'http-error' // other HTTP status (auth, bad request, unknown model…)
+  | 'timeout'
+  | 'network'
+  | 'empty' // no text: safety block, max tokens, etc.
+  | 'refusal'
+  | 'invalid-json'
+  | 'schema' // valid JSON that doesn't match the output schema
+  | 'other';
+
+export interface AiFailure {
+  category: AiFailureCategory;
+  /** Short, key-free description (HTTP status + API message, or failing schema fields). */
+  detail: string;
+}
+
+class AiResponseError extends Error {
+  readonly category: AiFailureCategory;
+  constructor(category: AiFailureCategory, message: string) {
+    super(message);
+    this.category = category;
+  }
+}
+
+function parseModelJson(text: string): unknown {
+  try {
+    return JSON.parse(text);
+  } catch {
+    throw new AiResponseError('invalid-json', `unparseable JSON: ${text.slice(0, 80)}`);
+  }
+}
+
+/** Pull the human-readable message out of a provider's JSON error body. */
+function apiErrorMessage(body: string): string {
+  try {
+    const parsed = JSON.parse(body) as { error?: { message?: string } };
+    if (parsed.error?.message) return parsed.error.message;
+  } catch {
+    // not JSON
+  }
+  return body;
+}
+
+export function classifyAiError(err: unknown): AiFailure {
+  const clip = (s: string) => s.replace(/\s+/g, ' ').trim().slice(0, 200);
+  if (err instanceof AiResponseError) return { category: err.category, detail: clip(err.message) };
+  if (err instanceof HttpError) {
+    const category: AiFailureCategory =
+      err.status === 429 ? 'rate-limit' : err.status >= 500 ? 'server-error' : 'http-error';
+    return { category, detail: clip(`HTTP ${err.status}: ${apiErrorMessage(err.body)}`) };
+  }
+  if (err instanceof Error && (err.name === 'TimeoutError' || err.name === 'AbortError')) {
+    return { category: 'timeout', detail: clip(err.message) };
+  }
+  if (err instanceof TypeError && /fetch failed/i.test(err.message)) {
+    const cause = (err as TypeError & { cause?: { code?: string } }).cause?.code;
+    return { category: 'network', detail: clip(cause ? `fetch failed (${cause})` : err.message) };
+  }
+  return { category: 'other', detail: clip(err instanceof Error ? err.message : String(err)) };
+}
+
 export interface Summarizer {
   provider: ProviderName;
   model: string | null;
   summarize(
     input: SummaryInput,
-  ): Promise<{ output: SummaryOutput; usedAi: boolean; error?: string }>;
+  ): Promise<{ output: SummaryOutput; usedAi: boolean; error?: AiFailure }>;
 }
 
 export function resolveProvider(requested: string | undefined): ProviderName {
@@ -587,13 +674,24 @@ export function createSummarizer(provider: ProviderName): Summarizer {
     provider,
     model,
     async summarize(input) {
+      let raw: unknown;
       try {
-        const parsed = outputSchema.parse(await call(input, apiKey, model));
-        return { output: parsed, usedAi: true };
+        raw = await call(input, apiKey, model);
       } catch (err) {
-        const message = err instanceof Error ? err.message.split('\n')[0]! : String(err);
-        return { output: heuristicSummary(input), usedAi: false, error: message };
+        return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
       }
+      const parsed = outputSchema.safeParse(raw);
+      if (parsed.success) return { output: parsed.data, usedAi: true };
+      // Name the failing fields (e.g. "headline: Too big") instead of Zod's JSON dump.
+      const detail = parsed.error.issues
+        .slice(0, 3)
+        .map((i) => `${i.path.join('.') || '(root)'}: ${i.message}`)
+        .join('; ');
+      return {
+        output: heuristicSummary(input),
+        usedAi: false,
+        error: { category: 'schema', detail: detail.slice(0, 200) },
+      };
     },
   };
 }

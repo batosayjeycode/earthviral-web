@@ -70,6 +70,7 @@ npm run update:viral -- --dry-run            # fetch, cluster and score; write n
 npm run update:viral -- --provider none      # gemini | openai | none (default: whichever key is set)
 npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
 npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
+npm run update:viral -- --ai-concurrency 2             # parallel AI calls (env AI_CONCURRENCY)
 npm run update:viral -- --no-trends --no-gdelt
 ```
 
@@ -83,7 +84,7 @@ npm run update:viral -- --no-trends --no-gdelt
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):
    `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
    The constants live in `src/lib/scoring.ts` and also drive the public `/about/` page.
-5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai`.
+5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`.
 6. **Link and write.** It builds the related-story graph, validates every record, and only then replaces `src/data/generated/` and `public/data/`.
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
@@ -122,7 +123,7 @@ Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up b
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`                                                         | secret | CI deploy                  |
 | `GEMINI_API_KEY` and/or `OPENAI_API_KEY`                                                                | secret | batch                      |
 | `INDEXNOW_KEY`                                                                                          | secret | CI build and IndexNow ping |
-| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`                                               | var    | batch                      |
+| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`, `AI_CONCURRENCY`                             | var    | batch                      |
 | `PUBLIC_CONTACT_EMAIL`, `PUBLIC_ADSENSE_CLIENT`, `PUBLIC_ADSENSE_SLOT_STORY`, `PUBLIC_ADSENSE_SLOT_HUB` | var    | CI build                   |
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.

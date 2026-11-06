@@ -24,6 +24,20 @@ export interface FetchOptions extends RequestInit {
   backoffMs?: number;
 }
 
+const MAX_SUGGESTED_WAIT_MS = 60_000;
+
+/**
+ * Server-suggested wait before retrying: the `Retry-After` header (seconds), or Google's
+ * RetryInfo in the JSON error body (`"retryDelay": "37s"`), capped at 60 s.
+ */
+export function suggestedRetryMs(retryAfterHeader: string | null, body: string): number | null {
+  const header = Number(retryAfterHeader);
+  if (Number.isFinite(header) && header > 0) return Math.min(header * 1000, MAX_SUGGESTED_WAIT_MS);
+  const m = /"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"/.exec(body);
+  if (m) return Math.min(Math.ceil(Number(m[1]) * 1000), MAX_SUGGESTED_WAIT_MS);
+  return null;
+}
+
 export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Promise<Response> {
   const { timeoutMs = 15_000, retries = 1, backoffMs = 1_500, headers, ...init } = opts;
   let lastError: unknown;
@@ -39,13 +53,8 @@ export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Prom
       const body = await res.text().catch(() => '');
       lastError = new HttpError(res.status, url, body.slice(0, 500));
       if (!retryable) break;
-      const retryAfter = Number(res.headers.get('retry-after'));
-      if (attempt < retries)
-        await sleep(
-          Number.isFinite(retryAfter) && retryAfter > 0
-            ? retryAfter * 1000
-            : backoffMs * 2 ** attempt,
-        );
+      const suggested = suggestedRetryMs(res.headers.get('retry-after'), body);
+      if (attempt < retries) await sleep(suggested ?? backoffMs * 2 ** attempt);
     } catch (err) {
       lastError = err;
       if (attempt < retries) await sleep(backoffMs * 2 ** attempt);
