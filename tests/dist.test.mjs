@@ -335,6 +335,20 @@ describe('hosting configuration', () => {
     assert.match(headers, /https:\/\/:version\.:project\.pages\.dev\/\*\s+X-Robots-Tag: noindex/);
   });
 
+  test('generated redirects point at real country pages and never shadow a live page', () => {
+    const file = join(dist, '_redirects');
+    if (!existsSync(file)) return; // only written by the batch pipeline
+    for (const line of readFileSync(file, 'utf8').split('\n')) {
+      if (!line.trim() || line.startsWith('#')) continue;
+      const [from, to, status] = line.trim().split(/\s+/);
+      assert.equal(status, '301', line);
+      assert.match(from, /^\/news\/[a-z]{2}\/[a-z0-9-]+\/$/, line);
+      assert.ok(!existsSync(fileForPath(from)), `redirect shadows a live page: ${from}`);
+      assert.match(to, /^\/country\/[a-z-]+\/$/, line);
+      assert.ok(existsSync(fileForPath(to)), `redirect target missing: ${to}`);
+    }
+  });
+
   test('batch data is never cached as immutable', () => {
     assert.match(headers, /\/data\/\*\s+Cache-Control: public, max-age=300, must-revalidate/);
   });

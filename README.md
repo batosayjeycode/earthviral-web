@@ -69,6 +69,7 @@ Without an API key, `update:viral` still runs. Summaries then list the original 
 npm run update:viral -- --dry-run            # fetch, cluster and score; write nothing
 npm run update:viral -- --provider none      # gemini | openai | none (default: whichever key is set)
 npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
+npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
 npm run update:viral -- --no-trends --no-gdelt
 ```
 
@@ -86,6 +87,8 @@ npm run update:viral -- --no-trends --no-gdelt
 6. **Link and write.** It builds the related-story graph, validates every record, and only then replaces `src/data/generated/` and `public/data/`.
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
+
+**Per-country cap.** Because every story is a static page (HTML, OG image, search index), each country keeps only its **10** highest-scoring stories by default. Existing stories and new candidates are ranked together every batch, before summarising, so no AI call is spent on a story that won't be kept. Removed stories, whether capped or expired, get a `301` redirect to their country page in the generated `public/_redirects` for 90 days, so links never 404. Change the limit with `--max-stories-per-country`, the `MAX_STORIES_PER_COUNTRY` env var, or the GitHub repository variable of the same name; `0` turns the cap off.
 
 ## Configuration
 
@@ -119,7 +122,7 @@ Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up b
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`                                                         | secret | CI deploy                  |
 | `GEMINI_API_KEY` and/or `OPENAI_API_KEY`                                                                | secret | batch                      |
 | `INDEXNOW_KEY`                                                                                          | secret | CI build and IndexNow ping |
-| `GEMINI_MODEL`, `OPENAI_MODEL`                                                                          | var    | batch                      |
+| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`                                               | var    | batch                      |
 | `PUBLIC_CONTACT_EMAIL`, `PUBLIC_ADSENSE_CLIENT`, `PUBLIC_ADSENSE_SLOT_STORY`, `PUBLIC_ADSENSE_SLOT_HUB` | var    | CI build                   |
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.

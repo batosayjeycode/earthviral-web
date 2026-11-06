@@ -69,6 +69,8 @@ export interface BatchMeta {
     articlesFetched: number;
     newClusters: number;
     updatedClusters: number;
+    /** Stories dropped this batch by the per-country cap (now redirected). */
+    retiredClusters?: number;
     aiCalls: number;
     durationMs: number;
   };
@@ -142,4 +144,16 @@ export interface CountryPayload {
       primarySource: { publisherName: string; articleUrl: string } | null;
     }
   >;
+}
+
+/**
+ * A story removed by the per-country cap. Its URL 301-redirects to the country hub (via the
+ * generated Cloudflare `_redirects` file) so search results and shared links never 404.
+ */
+export interface RetiredStory {
+  /** Old canonical path, e.g. "/news/id/some-story/". */
+  path: string;
+  /** Redirect target, the country hub, e.g. "/country/indonesia/". */
+  redirectTo: string;
+  retiredAt: string; // ISO-8601
 }

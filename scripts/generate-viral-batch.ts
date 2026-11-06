@@ -9,6 +9,9 @@
  *   --provider gemini|openai|none   default: gemini if GEMINI_API_KEY, else openai if OPENAI_API_KEY, else none
  *   --max-new <n>          new clusters per batch (default 60)
  *   --max-per-country <n>  new clusters per country per batch (default 8)
+ *   --max-stories-per-country <n>  stories kept per country in total (default 10, env
+ *                          MAX_STORIES_PER_COUNTRY; 0 = no cap). Lower-ranked stories are
+ *                          removed and their URLs 301-redirect to the country page.
  *   --max-ai <n>           LLM calls per batch (default 80)
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
  *   --dry-run              don't write files
@@ -39,12 +42,15 @@ import {
   type SummaryOutput,
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
+import { selectTopPerCountry } from './lib/intelligence/selectStories.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
   iso,
   loadBatchMeta,
   loadExistingClusters,
+  loadRetiredStories,
+  mergeRetired,
   nextWibBoundary,
   writeStaticJson,
 } from './lib/builders/writeStaticJson.ts';
@@ -68,6 +74,12 @@ const OPTS = {
   dryRun: flag('dry-run'),
   maxNew: intOption('max-new', 60),
   maxPerCountry: intOption('max-per-country', 8),
+  maxStoriesPerCountry: intOption(
+    'max-stories-per-country',
+    process.env.MAX_STORIES_PER_COUNTRY?.trim()
+      ? Number.parseInt(process.env.MAX_STORIES_PER_COUNTRY, 10)
+      : VAS.maxStoriesPerCountry,
+  ),
   maxAi: intOption('max-ai', 80),
   trends: !flag('no-trends'),
   gdelt: !flag('no-gdelt'),
@@ -256,7 +268,7 @@ async function main() {
     )
     .sort((a, b) => b.score.viralScore - a.score.viralScore);
   const perCountry = new Map<string, number>();
-  const selectedNew = fresh
+  const candidatesNew = fresh
     .filter(({ cluster }) => {
       const n = perCountry.get(cluster.countryCode) ?? 0;
       if (n >= OPTS.maxPerCountry) return false;
@@ -264,10 +276,27 @@ async function main() {
       return true;
     })
     .slice(0, OPTS.maxNew);
-  const carried = scored.filter(({ cluster }) => cluster.existing);
+
+  // Per-country cap: existing stories and new candidates compete on current score, and only
+  // the top N per country are kept — decided before summarising so no AI call is wasted.
+  const { kept, dropped } = selectTopPerCountry(
+    [
+      ...scored.filter(({ cluster }) => cluster.existing).map((x) => ({ ...x, isExisting: true })),
+      ...candidatesNew.map((x) => ({ ...x, isExisting: false })),
+    ].map((x) => ({ ...x, countryCode: x.cluster.countryCode, viralScore: x.score.viralScore })),
+    OPTS.maxStoriesPerCountry,
+  );
+  const selectedNew = kept.filter((x) => !x.isExisting);
+  const carried = kept.filter((x) => x.isExisting);
+  const retiredNow = dropped.filter((x) => x.isExisting).map((x) => x.cluster.existing!);
   const updated = carried.filter(({ cluster }) => newArticleCount(cluster) > 0);
   log(
     `  ${working.length - existing.length} candidate new clusters → ${selectedNew.length} selected; ${updated.length} existing clusters received new coverage`,
+  );
+  log(
+    OPTS.maxStoriesPerCountry > 0
+      ? `  per-country cap ${OPTS.maxStoriesPerCountry}: ${retiredNow.length} existing stories retired (→ 301 to country page)`
+      : '  per-country cap: off',
   );
 
   // 4. Summarise (within the AI budget, highest scores first) ─────────────────
@@ -301,7 +330,12 @@ async function main() {
   });
 
   // 5. Build records ─────────────────────────────────────────────────────────
-  const takenSlugs = new Set(existing.map((c) => c.slug));
+  // Retired slugs stay reserved: a redirect for an old URL must never shadow a new story.
+  const previousRetired = previousMeta?.isSeed ? [] : await loadRetiredStories();
+  const takenSlugs = new Set([
+    ...existing.map((c) => c.slug),
+    ...previousRetired.map((r) => r.path.split('/').filter(Boolean).at(-1)!),
+  ]);
   const records: ViralClusterStaticRecord[] = [];
 
   for (const { cluster, score } of carried) {
@@ -343,9 +377,21 @@ async function main() {
 
   // 6. Link graph + write ────────────────────────────────────────────────────
   buildInternalLinks(records, now);
+  const retired = mergeRetired(
+    previousRetired,
+    // Capped-out stories and stories past the 30-day retention both redirect.
+    [...retiredNow, ...expired].map((c) => ({
+      path: c.canonicalPath,
+      redirectTo: `/country/${c.countrySlug}/`,
+      retiredAt: iso(now),
+    })),
+    new Set(records.map((r) => r.canonicalPath)),
+    now,
+  );
   const result = await writeStaticJson(
     {
       clusters: records,
+      retired,
       batchId,
       generatedAt: now,
       nextUpdateAt: nextWibBoundary(now),
@@ -359,6 +405,7 @@ async function main() {
         articlesFetched: rss.articles.length + gdelt.articles.length,
         newClusters: selectedNew.length,
         updatedClusters: updated.length,
+        retiredClusters: retiredNow.length,
         aiCalls,
         durationMs: Date.now() - started,
       },

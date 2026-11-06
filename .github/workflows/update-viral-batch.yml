@@ -7,7 +7,7 @@
 #
 # Repository settings needed:
 #   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI)
-#   vars (optional): GEMINI_MODEL, OPENAI_MODEL
+#   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10)
 name: Update viral batch
 
 on:
@@ -59,6 +59,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          # Stories kept per country (default 10; 0 = no cap). Set as a repository variable.
+          MAX_STORIES_PER_COUNTRY: ${{ vars.MAX_STORIES_PER_COUNTRY }}
           PROVIDER: ${{ inputs.provider || 'auto' }}
           DRY_RUN: ${{ inputs.dry_run || false }}
         run: |
@@ -76,7 +78,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/generated public/data
+          git add src/data/generated public/data public/_redirects
           if git diff --cached --quiet; then
             echo "No data changes."
             exit 0

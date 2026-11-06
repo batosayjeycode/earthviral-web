@@ -17,6 +17,14 @@ export const VAS = {
   activeWindowHours: 48,
   /** Days without new coverage before a story is removed. */
   retentionDays: 30,
+  /**
+   * Stories kept per country (highest current score wins). The site is static, so this
+   * bounds its size. Override per run with --max-stories-per-country or the
+   * MAX_STORIES_PER_COUNTRY env var; 0 = no cap.
+   */
+  maxStoriesPerCountry: 10,
+  /** How long a removed story's URL keeps redirecting to its country page. */
+  redirectRetentionDays: 90,
   /** Minimum independent outlets for a new story (or 1 outlet + a matching Google Trends search). */
   minPublishers: 2,
 } as const;

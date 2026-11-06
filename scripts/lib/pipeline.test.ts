@@ -380,3 +380,73 @@ describe('AI providers (fetch stubbed)', async () => {
     }
   });
 });
+
+describe('per-country story cap', async () => {
+  const { selectTopPerCountry } = await import('./intelligence/selectStories.ts');
+  const { mergeRetired, redirectsFile } = await import('./builders/writeStaticJson.ts');
+  const item = (countryCode: string, viralScore: number, isExisting: boolean, id: string) => ({
+    countryCode,
+    viralScore,
+    isExisting,
+    id,
+  });
+
+  it('keeps the top N per country, ranking existing and new stories together', () => {
+    const items = [
+      item('ID', 90, true, 'id-old-hot'),
+      item('ID', 40, true, 'id-old-cold'),
+      item('ID', 70, false, 'id-new-hot'),
+      item('ID', 30, false, 'id-new-cold'),
+      item('US', 50, false, 'us-new'),
+    ];
+    const { kept, dropped } = selectTopPerCountry(items, 2);
+    assert.deepEqual(kept.map((x) => x.id).sort(), ['id-new-hot', 'id-old-hot', 'us-new']);
+    assert.deepEqual(dropped.map((x) => x.id).sort(), ['id-new-cold', 'id-old-cold']);
+  });
+
+  it('prefers existing stories on a tie (no URL churn) and treats 0 as no cap', () => {
+    const items = [item('ID', 60, false, 'new'), item('ID', 60, true, 'old')];
+    assert.deepEqual(
+      selectTopPerCountry(items, 1).kept.map((x) => x.id),
+      ['old'],
+    );
+    assert.equal(selectTopPerCountry(items, 0).kept.length, 2);
+  });
+
+  it('merges redirects: newest wins, live paths and expired entries are dropped', () => {
+    const at = new Date('2026-11-07T00:00:00Z');
+    const merged = mergeRetired(
+      [
+        {
+          path: '/news/id/a/',
+          redirectTo: '/country/indonesia/',
+          retiredAt: '2026-11-01T00:00:00Z',
+        },
+        {
+          path: '/news/id/old/',
+          redirectTo: '/country/indonesia/',
+          retiredAt: '2026-01-01T00:00:00Z',
+        },
+        {
+          path: '/news/id/back/',
+          redirectTo: '/country/indonesia/',
+          retiredAt: '2026-11-02T00:00:00Z',
+        },
+      ],
+      [
+        {
+          path: '/news/us/b/',
+          redirectTo: '/country/united-states/',
+          retiredAt: '2026-11-06T00:00:00Z',
+        },
+      ],
+      new Set(['/news/id/back/']),
+      at,
+    );
+    assert.deepEqual(
+      merged.map((r) => r.path),
+      ['/news/us/b/', '/news/id/a/'],
+    );
+    assert.match(redirectsFile(merged), /^\/news\/us\/b\/ \/country\/united-states\/ 301$/m);
+  });
+});

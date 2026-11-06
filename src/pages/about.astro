@@ -116,7 +116,9 @@ const w = VAS.weights;
   <p>
     A new story needs at least {VAS.minPublishers} independent outlets, or one outlet plus a
     matching search trend. Stories leave the live map after {VAS.activeWindowHours} hours without
-    new coverage and are removed after {VAS.retentionDays} days.
+    new coverage and are removed after {VAS.retentionDays} days. Each country keeps at most its
+    {VAS.maxStoriesPerCountry} highest-scoring stories; a story that drops out redirects to its
+    country page.
   </p>
 
   <h3>Intensity tiers</h3>
