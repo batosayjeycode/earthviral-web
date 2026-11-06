@@ -3,21 +3,38 @@
   "name": "France",
   "slug": "france",
   "region": "Europe",
-  "viralScore": 84,
+  "viralScore": 64,
   "intensityTier": "high",
-  "generatedAt": "2026-11-05T18:06:00Z",
+  "generatedAt": "2026-11-06T20:55:00Z",
   "clusters": [
+    {
+      "slug": "french-minister-sued-over-protest-injuries",
+      "canonicalPath": "/news/fr/french-minister-sued-over-protest-injuries/",
+      "headline": "French Officials Face Legal Action Over Protester Injuries Reported",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A group of demonstrators injured during recent protests in France intends to sue Interior Minister Laurent Nuñez.",
+        "Legal counsel is filing a formal complaint alleging the minister authorized the use of weapons known to cause mutilating injuries."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/06/french-lawyers-to-sue-interior-minister-over-protester-mutilations_6773533_7.html"
+      }
+    },
     {
       "slug": "france-more-than-600-000-protest-as-anger-grows",
       "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-      "headline": "France: More than 600,000 protest as anger grows over cost of living",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 82,
-      "intensityTier": "high",
+      "headline": "Protests reignite in France amid worker strikes, national day of action",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "BBC reports: French protests see numbers surge as unions join strikes over high cost of living",
-        "Deutsche Welle reports: France: More than 600,000 protest as anger grows over cost of living"
+        "CBS News reports: Protests reignite in France amid worker strikes, national day of action",
+        "France 24 reports: France faces new protests as government seeks to prevent violence"
       ],
       "primarySource": {
         "publisherName": "The Japan Times",
@@ -25,20 +42,71 @@
       }
     },
     {
-      "slug": "protesters-march-in-cities-across-france-as-unions-stage",
-      "canonicalPath": "/news/fr/protesters-march-in-cities-across-france-as-unions-stage/",
-      "headline": "Protesters march in cities across France as unions stage general strike",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 53,
+      "slug": "french-bank-hit-by-cyberattack-hackers-steal-100-million",
+      "canonicalPath": "/news/fr/french-bank-hit-by-cyberattack-hackers-steal-100-million/",
+      "headline": "French bank hit by cyberattack, hackers steal $100 million",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Guardian reports: Protesters march in cities across France as unions stage general strike",
-        "France 24 reports: 🔴 Live: Interior ministry says 600,000 protest across France as unions claim 'close to 1.6 million'"
+        "France 24 reports: French bank hit by cyberattack, hackers steal $100 million",
+        "Le Monde reports: European banks wake up to scale of vulnerability after cyberattack on French bank"
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs"
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/economy/article/2026/11/05/european-banks-wake-up-to-scale-of-vulnerability-after-cyberattack-on-french-bank_6772537_19.html"
+      }
+    },
+    {
+      "slug": "mbappe-returns-to-france-national-team",
+      "canonicalPath": "/news/fr/mbappe-returns-to-france-national-team/",
+      "headline": "Kylian Mbappe Returns To France Squad Under Coach Zinedine Zidane",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Kylian Mbappe has been selected for the upcoming France squad following his recovery from a September injury.",
+        "The national team manager Zinedine Zidane has included Pablo Pagis, marking the player's first-ever call-up."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/zidane-gives-pagis-first-france-call-up-6532116"
+      }
+    },
+    {
+      "slug": "fatal-school-bus-crash-france",
+      "canonicalPath": "/news/fr/fatal-school-bus-crash-france/",
+      "headline": "Two Fatalities Reported Following School Bus Accident In France",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A school bus carrying 43 passengers struck a tree in eastern France.",
+        "Local authorities confirmed that a seven-year-old child and an 18-year-old man died in the incident."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo"
+      }
+    },
+    {
+      "slug": "european-flights-targeted-by-bomb-threats",
+      "canonicalPath": "/news/fr/european-flights-targeted-by-bomb-threats/",
+      "headline": "Multiple European Air Routes Impacted By Ongoing Bomb Threat Wave",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Several flights arriving at or departing from Prague were subjected to bomb threats on Friday.",
+        "Additional security alerts were reported affecting flights traveling to Sofia and Rome."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/mutiple-european-flights-targeted-in-fresh-bomb-threats_6773529_4.html"
       }
     },
     {
@@ -47,7 +115,7 @@
       "headline": "Photos: Thousands rally in France over rising costs and economic struggles",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Al Jazeera reports: Photos: Thousands rally in France over rising costs and economic struggles",
@@ -59,20 +127,20 @@
       }
     },
     {
-      "slug": "french-bank-hit-by-cyberattack-hackers-steal-100-million",
-      "canonicalPath": "/news/fr/french-bank-hit-by-cyberattack-hackers-steal-100-million/",
-      "headline": "French bank hit by cyberattack, hackers steal $100 million",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 42,
+      "slug": "protesters-march-in-cities-across-france-as-unions-stage",
+      "canonicalPath": "/news/fr/protesters-march-in-cities-across-france-as-unions-stage/",
+      "headline": "Protesters march in cities across France as unions stage general strike",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "France 24 reports: French bank hit by cyberattack, hackers steal $100 million",
-        "Le Monde reports: European banks wake up to scale of vulnerability after cyberattack on French bank"
+        "The Guardian reports: Protesters march in cities across France as unions stage general strike",
+        "France 24 reports: 🔴 Live: Interior ministry says 600,000 protest across France as unions claim 'close to 1.6 million'"
       ],
       "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/economy/article/2026/11/05/european-banks-wake-up-to-scale-of-vulnerability-after-cyberattack-on-french-bank_6772537_19.html"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs"
       }
     }
   ]
