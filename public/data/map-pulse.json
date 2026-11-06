@@ -1,6 +1,6 @@
 {
-  "batchId": "batch-202611062103",
-  "generatedAt": "2026-11-06T21:03:00Z",
+  "batchId": "batch-202611062106",
+  "generatedAt": "2026-11-06T21:06:00Z",
   "nextUpdateAt": "2026-11-06T23:00:00Z",
   "countries": [
     {
@@ -34,17 +34,17 @@
         37.9,
         0.2
       ],
-      "viralScore": 81,
-      "intensityTier": "high",
-      "topicCount": 4,
+      "viralScore": 94,
+      "intensityTier": "surge",
+      "topicCount": 6,
       "topTopic": {
         "slug": "kenyan-cult-leader-receives-prison-sentence",
         "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Sentenced To 200 Years For Mass Starvation Deaths",
+        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 79,
-        "intensityTier": "high"
+        "viralScore": 91,
+        "intensityTier": "surge"
       }
     },
     {
@@ -290,6 +290,28 @@
       }
     },
     {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "najib-razak-returns-to-kajang-prison",
+        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
+        "headline": "Former Prime Minister Najib Razak Remains In Custody Following Shift",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 45,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "IN",
       "isoNumeric": "356",
       "name": "India",
@@ -322,7 +344,7 @@
       ],
       "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 6,
+      "topicCount": 7,
       "topTopic": {
         "slug": "wall-street-stocks-rally-after-selloff",
         "canonicalPath": "/news/sg/wall-street-stocks-rally-after-selloff/",
@@ -330,28 +352,6 @@
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
         "viralScore": 42,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 43,
-      "intensityTier": "active",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "high-court-najib-house-arrest-order",
-        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-        "headline": "High Court Issues House Arrest Order For Former Prime Minister Najib",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 41,
         "intensityTier": "active"
       }
     },
@@ -488,6 +488,28 @@
       }
     },
     {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 30,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "silvana-estrada-la-philharmonic-appointment",
+        "canonicalPath": "/news/mx/silvana-estrada-la-philharmonic-appointment/",
+        "headline": "Silvana Estrada Named First Latin Music Chair For LA Philharmonic",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 29,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "PH",
       "isoNumeric": "608",
       "name": "Philippines",
@@ -507,28 +529,6 @@
         "categoryName": "Crime & Law",
         "viralScore": 29,
         "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
-      "centroid": [
-        -102.5,
-        23.6
-      ],
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "as-ibero-american-summit-gets-underway-in-madrid-foreign",
-        "canonicalPath": "/news/mx/as-ibero-american-summit-gets-underway-in-madrid-foreign/",
-        "headline": "As Ibero-American Summit gets underway in Madrid, foreign ministers cite ‘excellent’ Spain-Mexico…",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 18,
-        "intensityTier": "quiet"
       }
     }
   ]

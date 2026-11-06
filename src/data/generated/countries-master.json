@@ -18,7 +18,7 @@
       "us-20261106-trump-appoints-miller-chief-of-staff",
       "us-20261106-thomas-markle-arrested-florida-abuse-charges",
       "us-20261106-pope-leo-latin-america-tour",
-      "us-20261104-could-the-us-midterms-further-isolate-israel-in-washington"
+      "us-20261105-did-a-data-centre-revolt-affect-the-us-midterm"
     ]
   },
   {
@@ -32,14 +32,15 @@
       37.9,
       0.2
     ],
-    "viralScore": 81,
-    "intensityTier": "high",
-    "topicCount": 4,
+    "viralScore": 94,
+    "intensityTier": "surge",
+    "topicCount": 6,
     "topClusterIds": [
       "ke-20261106-kenyan-cult-leader-receives-prison-sentence",
+      "ke-20261106-charlene-ruto-marries-isaya-yunge",
+      "ke-20261106-tanzanian-opposition-leader-court-verdict",
       "ke-20261106-family-identifies-officers-in-lawyer-disappearance",
-      "ke-20261104-oburu-oginga-death-rumours-gave-me-strength-to-recover",
-      "ke-20261105-eu-backs-kenyas-growing-role-in-regional-maritime-security"
+      "ke-20261104-oburu-oginga-death-rumours-gave-me-strength-to-recover"
     ]
   },
   {
@@ -258,6 +259,27 @@
     ]
   },
   {
+    "id": "my",
+    "code": "MY",
+    "isoNumeric": "458",
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "region": "Asia",
+    "centroid": [
+      102.3,
+      3.8
+    ],
+    "viralScore": 47,
+    "intensityTier": "active",
+    "topicCount": 4,
+    "topClusterIds": [
+      "my-20261106-najib-razak-returns-to-kajang-prison",
+      "my-20261106-high-court-najib-house-arrest-order",
+      "my-20261106-malaysian-former-pm-house-arrest-halted",
+      "my-20261106-opr-stays-at-2-75pc-as-bank-negara-sees"
+    ]
+  },
+  {
     "id": "in",
     "code": "IN",
     "isoNumeric": "356",
@@ -292,34 +314,13 @@
     ],
     "viralScore": 45,
     "intensityTier": "active",
-    "topicCount": 6,
+    "topicCount": 7,
     "topClusterIds": [
       "sg-20261106-wall-street-stocks-rally-after-selloff",
+      "sg-20261106-singapore-enacts-stricter-haze-legislation",
       "sg-20261106-doctor-anywhere-hit-by-data-breach",
       "sg-20261106-motorists-advised-to-avoid-areas-in-northern-singapore-over",
-      "sg-20261106-prepare-for-take-off-sia-unveils-new-seats-in",
-      "sg-20261105-us-blood-pressure-drug-recall-does-not-affect-singapore"
-    ]
-  },
-  {
-    "id": "my",
-    "code": "MY",
-    "isoNumeric": "458",
-    "name": "Malaysia",
-    "slug": "malaysia",
-    "region": "Asia",
-    "centroid": [
-      102.3,
-      3.8
-    ],
-    "viralScore": 43,
-    "intensityTier": "active",
-    "topicCount": 4,
-    "topClusterIds": [
-      "my-20261106-high-court-najib-house-arrest-order",
-      "my-20261106-najib-razak-returns-to-kajang-prison",
-      "my-20261106-malaysian-former-pm-house-arrest-halted",
-      "my-20261106-opr-stays-at-2-75pc-as-bank-negara-sees"
+      "sg-20261106-prepare-for-take-off-sia-unveils-new-seats-in"
     ]
   },
   {
@@ -434,6 +435,26 @@
     ]
   },
   {
+    "id": "mx",
+    "code": "MX",
+    "isoNumeric": "484",
+    "name": "Mexico",
+    "slug": "mexico",
+    "region": "North America",
+    "centroid": [
+      -102.5,
+      23.6
+    ],
+    "viralScore": 30,
+    "intensityTier": "active",
+    "topicCount": 3,
+    "topClusterIds": [
+      "mx-20261106-silvana-estrada-la-philharmonic-appointment",
+      "mx-20261104-as-ibero-american-summit-gets-underway-in-madrid-foreign",
+      "mx-20261104-mexico-and-my-money-the-fintech-revolution-in-mexico"
+    ]
+  },
+  {
     "id": "ph",
     "code": "PH",
     "isoNumeric": "608",
@@ -449,25 +470,6 @@
     "topicCount": 1,
     "topClusterIds": [
       "ph-20261105-duchess-of-sussexs-estranged-half-brother-person-of-interest"
-    ]
-  },
-  {
-    "id": "mx",
-    "code": "MX",
-    "isoNumeric": "484",
-    "name": "Mexico",
-    "slug": "mexico",
-    "region": "North America",
-    "centroid": [
-      -102.5,
-      23.6
-    ],
-    "viralScore": 19,
-    "intensityTier": "quiet",
-    "topicCount": 2,
-    "topClusterIds": [
-      "mx-20261104-as-ibero-american-summit-gets-underway-in-madrid-foreign",
-      "mx-20261104-mexico-and-my-money-the-fintech-revolution-in-mexico"
     ]
   }
 ]
