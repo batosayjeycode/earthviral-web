@@ -78,7 +78,7 @@ npm run update:viral -- --no-trends --no-gdelt
 
 `scripts/generate-viral-batch.ts` runs these steps:
 
-1. **Collect.** It reads 29 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
+1. **Collect.** It reads 31 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
 2. **Attribute.** It assigns each article to one of 41 tracked countries (`scripts/lib/countries.ts`), using the outlet's home country plus the places named in the headline. English and Bahasa Indonesia names are both recognised.
 3. **Cluster.** It groups articles by TF-IDF headline similarity within each country, then merges fragments of the same event. New coverage attaches to existing stories, so **story URLs never change**.
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):

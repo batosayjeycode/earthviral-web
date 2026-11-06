@@ -8,7 +8,12 @@
  * articles are kept only when a country can be detected.
  *
  * Not included (probed and unavailable): Kompas (no public feed), The Jakarta Post,
- * The Star (404), Globo g1 (403), Korea Herald (empty feed).
+ * The Star (404), Globo g1 (403), Korea Herald (empty feed), Tempo's section feeds such as
+ * rss.tempo.co/nasional (403 since 2026-11-06 — its main feed is used instead).
+ *
+ * Re-checked 2026-11-07: Tempo's main feed (English edition, still Indonesia-focused) and
+ * Nation Africa (an intermittent 404 on 2026-11-06) work; Capital FM and KBC were added
+ * so Kenya keeps coverage when one outlet is down.
  */
 export interface RssSource {
   id: string;
@@ -41,9 +46,10 @@ export const RSS_SOURCES: RssSource[] = [
     id: 'tempo',
     publisherName: 'Tempo',
     publisherDomain: 'tempo.co',
-    url: 'https://rss.tempo.co/nasional',
+    // Main feed: Tempo's English edition. Section feeds return 403.
+    url: 'https://rss.tempo.co/',
     homeCountry: 'ID',
-    language: 'id',
+    language: 'en',
   },
   {
     id: 'cnn-id',
@@ -222,6 +228,22 @@ export const RSS_SOURCES: RssSource[] = [
     publisherName: 'Nation Africa',
     publisherDomain: 'nation.africa',
     url: 'https://nation.africa/kenya/rss.xml',
+    homeCountry: 'KE',
+    language: 'en',
+  },
+  {
+    id: 'capitalfm-ke',
+    publisherName: 'Capital FM',
+    publisherDomain: 'capitalfm.co.ke',
+    url: 'https://www.capitalfm.co.ke/news/feed/',
+    homeCountry: 'KE',
+    language: 'en',
+  },
+  {
+    id: 'kbc-ke',
+    publisherName: 'KBC',
+    publisherDomain: 'kbc.co.ke',
+    url: 'https://www.kbc.co.ke/feed/',
     homeCountry: 'KE',
     language: 'en',
   },
