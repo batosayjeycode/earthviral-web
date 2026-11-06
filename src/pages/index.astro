@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MapHero from '../components/map/MapHero.astro';
+import CountryDrawer from '../components/drawer/CountryDrawer.tsx';
+import JsonLd from '../components/seo/JsonLd.astro';
+import { homeGraph } from '../lib/structuredData.ts';
+import NewsCard from '../components/news/NewsCard.astro';
+import { batchMeta, getClusters, getCountries } from '../lib/data.ts';
+import { CATEGORIES, REGIONS, flagEmoji } from '../lib/taxonomy.ts';
+
+const clusters = await getClusters();
+const countries = await getCountries();
+const ref = batchMeta.generatedAt;
+
+// lg: feature card (2×2) + 2 beside it + two rows of 3 → 9 cards fill the 3-column grid exactly.
+const trending = clusters.slice(0, 9);
+const latest = [...clusters].sort(
+  (a, b) => Date.parse(b.firstDetectedAt) - Date.parse(a.firstDetectedAt),
+);
+const latestCategories = CATEGORIES.filter((cat) =>
+  latest.some((c) => c.categorySlug === cat.slug),
+);
+
+const regions = REGIONS.map((r) => {
+  const inRegion = countries.filter((c) => c.region === r.name);
+  return {
+    ...r,
+    countries: inRegion.slice(0, 4),
+    activeCount: inRegion.filter((c) => c.intensityTier !== 'quiet').length,
+    topicCount: inRegion.reduce((sum, c) => sum + c.topicCount, 0),
+  };
+});
+---
+
+<BaseLayout
+  title="EarthViral — Global Viral News Map & Trending Topics by Country"
+  description="See what is going viral in every country right now. An interactive world map of trending news, refreshed every 3 hours with AI summaries and links to original publishers."
+>
+  <JsonLd slot="head" data={homeGraph(clusters)} />
+  <MapHero />
+  <!-- Fixed-position panel; lives outside the hero's isolated stacking context so it layers above page content. -->
+  <CountryDrawer client:idle />
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <!-- Global trending: pre-rendered bento grid -->
+    <section id="trending" aria-labelledby="trending-heading" class="pt-16">
+      <div class="flex items-end justify-between gap-4">
+        <h2 id="trending-heading" class="text-2xl font-bold text-white sm:text-3xl">
+          <span aria-hidden="true">🔥</span> Global Trending Topics
+        </h2>
+        <p class="tabular hidden text-xs text-ink-faint sm:block">Ranked by Viral Activity Score</p>
+      </div>
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {trending.map((c, i) => (
+          <NewsCard
+            cluster={c}
+            referenceIso={ref}
+            variant={i === 0 ? 'feature' : 'default'}
+            class={i === 0 ? 'md:col-span-2 lg:row-span-2' : ''}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Latest: pre-rendered list with a client-side category filter (progressive enhancement) -->
+    <section id="latest" aria-labelledby="latest-heading" class="pt-20">
+      <h2 id="latest-heading" class="text-2xl font-bold text-white sm:text-3xl">
+        <span aria-hidden="true">📰</span> Latest Viral News
+      </h2>
+      <div
+        role="toolbar"
+        aria-label="Filter by category"
+        class="mt-5 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]"
+        data-latest-filter
+        hidden
+      >
+        <button type="button" data-filter="all" aria-pressed="true" class="ev-chip">
+          All
+        </button>
+        {latestCategories.map((cat) => (
+          <button type="button" data-filter={cat.slug} aria-pressed="false" class="ev-chip">
+            {cat.shortName}
+          </button>
+        ))}
+      </div>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-latest-list>
+        {latest.map((c) => (
+          <NewsCard cluster={c} referenceIso={ref} />
+        ))}
+      </div>
+    </section>
+
+    <!-- Regions: pre-rendered hub links -->
+    <section id="regions" aria-labelledby="regions-heading" class="pt-20">
+      <h2 id="regions-heading" class="text-2xl font-bold text-white sm:text-3xl">
+        <span aria-hidden="true">🌏</span> Trending by Region
+      </h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {regions.map((r) => (
+          <article class="rounded-2xl border border-line bg-land/60 p-5">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-display text-lg font-semibold text-white">
+                <a class="hover:text-cyan" href={`/region/${r.slug}/`}>
+                  {r.name}
+                </a>
+              </h3>
+              <p class="tabular text-xs text-ink-faint">
+                {r.activeCount} active · {r.topicCount} topics
+              </p>
+            </div>
+            {r.countries.length > 0 ? (
+              <ul class="mt-4 grid gap-2 text-sm">
+                {r.countries.map((c) => (
+                  <li class="flex items-center gap-2">
+                    <span aria-hidden="true">{flagEmoji(c.code)}</span>
+                    <a class="text-ink hover:text-cyan" href={`/country/${c.slug}/`}>
+                      {c.name}
+                    </a>
+                    <span class="tier-badge ml-auto" data-tier={c.intensityTier}>
+                      {c.viralScore}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="mt-4 text-sm text-ink-faint">No viral activity in this batch.</p>
+            )}
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .ev-chip {
+    flex-shrink: 0;
+    border-radius: 9999px;
+    border: 1px solid var(--color-line);
+    padding: 0.375rem 0.875rem;
+    font-size: 0.8125rem;
+    color: var(--color-ink-muted);
+    transition:
+      color 150ms,
+      border-color 150ms,
+      background-color 150ms;
+  }
+  .ev-chip:hover {
+    color: white;
+  }
+  .ev-chip[aria-pressed='true'] {
+    color: var(--color-cyan);
+    border-color: rgb(0 240 255 / 0.45);
+    background: rgb(0 240 255 / 0.08);
+  }
+</style>
+
+<script>
+  // Instant category filter for the pre-rendered "Latest" list. Without JS every card stays visible.
+  const toolbar = document.querySelector<HTMLElement>('[data-latest-filter]');
+  const list = document.querySelector<HTMLElement>('[data-latest-list]');
+  if (toolbar && list) {
+    toolbar.hidden = false;
+    const cards = [...list.querySelectorAll<HTMLElement>('[data-category]')];
+    toolbar.addEventListener('click', (e) => {
+      const button = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-filter]');
+      if (!button) return;
+      const filter = button.dataset.filter;
+      for (const b of toolbar.querySelectorAll('button'))
+        b.setAttribute('aria-pressed', String(b === button));
+      for (const card of cards) card.hidden = filter !== 'all' && card.dataset.category !== filter;
+    });
+  }
+</script>

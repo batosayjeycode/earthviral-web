@@ -1,0 +1,74 @@
+/*
+ * Mobile: bottom sheet. Desktop (≥1024px, keep in sync with DESKTOP_QUERY / DRAWER_WIDTH_PX
+ * in ../map/events.ts): right-hand side panel below the sticky header.
+ */
+.ev-drawer {
+  /* Near-opaque so map controls underneath don't show through the glass. */
+  background-color: rgb(9 14 28 / 0.97);
+  position: fixed;
+  z-index: 30;
+  inset: auto 0 0 0;
+  height: min(72dvh, 640px);
+  border-radius: 1.25rem 1.25rem 0 0;
+  border-bottom: 0;
+  box-shadow: 0 -20px 60px rgb(0 0 0 / 0.5);
+  transform: translateY(calc(100% + 24px));
+  visibility: hidden;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 320ms;
+}
+
+.ev-drawer[data-open] {
+  transform: none;
+  visibility: visible;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s;
+}
+
+.ev-drawer__handle {
+  width: 2.5rem;
+  height: 4px;
+  margin: 0.5rem auto 0;
+  border-radius: 9999px;
+  background: rgb(148 163 184 / 0.35);
+}
+
+@media (min-width: 1024px) {
+  .ev-drawer {
+    /* Sticky header (3.5rem) + telemetry bar (2.25rem). */
+    inset: 5.75rem 0 0 auto;
+    width: 420px;
+    height: auto;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: -20px 0 60px rgb(0 0 0 / 0.45);
+    transform: translateX(calc(100% + 24px));
+  }
+}
+
+.ev-drawer__chip {
+  border-radius: 9999px;
+  border: 1px solid var(--color-line);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+}
+.ev-drawer__chip:hover {
+  color: white;
+}
+.ev-drawer__chip[aria-pressed='true'] {
+  color: var(--color-cyan);
+  border-color: rgb(0 240 255 / 0.45);
+  background: rgb(0 240 255 / 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ev-drawer,
+  .ev-drawer[data-open] {
+    transition: none;
+  }
+}

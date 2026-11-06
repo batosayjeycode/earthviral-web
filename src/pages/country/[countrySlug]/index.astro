@@ -1,0 +1,113 @@
+---
+/** Static Country Hub — /country/[countrySlug]/ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import JsonLd from '../../../components/seo/JsonLd.astro';
+import { collectionGraph } from '../../../lib/structuredData.ts';
+import HubHeader from '../../../components/hub/HubHeader.astro';
+import StoryGrid from '../../../components/hub/StoryGrid.astro';
+import AdSlot from '../../../components/ads/AdSlot.astro';
+import LinkCloud from '../../../components/hub/LinkCloud.astro';
+import LocatorGlobe from '../../../components/map/LocatorGlobe.astro';
+import { getClusters, getCountries } from '../../../lib/data.ts';
+import { CATEGORIES, TIER_META, flagEmoji, regionSlug } from '../../../lib/taxonomy.ts';
+import type { CountryMasterRecord } from '../../../lib/types.ts';
+
+export const getStaticPaths = (async () => {
+  const countries = await getCountries();
+  return countries.map((country) => ({
+    params: { countrySlug: country.slug },
+    props: { country },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  country: CountryMasterRecord;
+}
+
+const { country } = Astro.props;
+const [clusters, countries] = await Promise.all([getClusters(), getCountries()]);
+const own = clusters.filter((c) => c.countryCode === country.code);
+
+const categoryLinks = CATEGORIES.map((cat) => ({
+  cat,
+  count: own.filter((c) => c.categorySlug === cat.slug).length,
+}))
+  .filter((x) => x.count > 0)
+  .map(({ cat, count }) => ({
+    name: cat.name,
+    href: `/country/${country.slug}/${cat.slug}/`,
+    meta: count,
+  }));
+
+const neighbours = countries
+  .filter((c) => c.region === country.region && c.code !== country.code)
+  .map((c) => ({
+    name: c.name,
+    href: `/country/${c.slug}/`,
+    meta: c.viralScore,
+    prefix: flagEmoji(c.code),
+  }));
+---
+
+<BaseLayout
+  title={`Viral News in ${country.name} Today — Trending Topics | EarthViral`}
+  description={`What is going viral in ${country.name} right now: ${own.length} trending ${own.length === 1 ? 'story' : 'stories'} with AI summaries, viral scores and links to original publishers. Updated every 3 hours.`}
+  noindex={own.length === 0}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: `/country/${country.slug}/`,
+      name: `Viral news in ${country.name}`,
+      description: `Trending stories in ${country.name}, ranked by Viral Activity Score.`,
+      breadcrumbs: [
+        { name: country.region, path: `/region/${regionSlug(country.region)}/` },
+        { name: country.name },
+      ],
+      clusters: own,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[
+      { name: country.region, href: `/region/${regionSlug(country.region)}/` },
+      { name: country.name },
+    ]}
+    eyebrow="Country report"
+    title={`Viral news in ${country.name}`}
+    intro={`The stories driving conversation in ${country.name} in the latest 3-hour batch, ranked by Viral Activity Score.`}
+    stats={[
+      { label: 'Viral Activity Score', value: `${country.viralScore}/100` },
+      { label: 'Intensity', value: TIER_META[country.intensityTier].label },
+      { label: 'Viral topics', value: country.topicCount },
+    ]}
+  >
+    <span slot="title-prefix" aria-hidden="true" class="mr-3">
+      {flagEmoji(country.code)}
+    </span>
+    <div slot="aside" class="hidden text-center md:block">
+      <LocatorGlobe
+        isoNumeric={country.isoNumeric}
+        centroid={country.centroid}
+        tier={country.intensityTier}
+        label={`Map locating ${country.name}`}
+        size={200}
+      />
+      <a href="/#map" class="mt-2 inline-block text-sm font-semibold text-cyan hover:underline">
+        Open live world map →
+      </a>
+    </div>
+  </HubHeader>
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    <LinkCloud title={`${country.name} by category`} links={categoryLinks} />
+    <StoryGrid title={`Trending in ${country.name}`} clusters={own} />
+    <AdSlot placement="hub" />
+    <LinkCloud title={`More in ${country.region}`} links={neighbours} />
+  </div>
+</BaseLayout>

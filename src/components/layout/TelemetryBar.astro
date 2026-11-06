@@ -1,0 +1,76 @@
+---
+import type { BatchMeta } from '../../lib/types.ts';
+import { formatDateWib, formatTimeWib } from '../../lib/format.ts';
+
+interface Props {
+  meta: BatchMeta;
+}
+
+const { meta } = Astro.props;
+const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.generatedAt)}`;
+---
+
+<div
+  class="border-b border-line bg-ocean/90 backdrop-blur"
+  role="region"
+  aria-label="Batch telemetry"
+>
+  <!-- tabindex: the strip scrolls horizontally on narrow screens; keyboard users must reach it. -->
+  <dl
+    tabindex="0"
+    class="tabular relative mx-auto flex h-9 max-w-7xl items-center gap-x-5 overflow-x-auto px-4 text-xs whitespace-nowrap text-ink-muted [scrollbar-width:none] sm:px-6"
+  >
+    <div class="flex items-center gap-1.5 font-semibold text-cyan">
+      <span aria-hidden="true">⚡</span>
+      <dt>Snapshot</dt>
+      <dd class="sr-only">{snapshot}</dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dd class="text-white">{meta.totals.activeCountries}</dd>
+      <dt>Active Countries</dt>
+    </div>
+    <div class="flex gap-1.5">
+      <dd class="text-white">{meta.totals.viralTopics}</dd>
+      <dt>Viral Topics</dt>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Global Index</dt>
+      <dd class="text-white">{meta.totals.globalIndex}/100</dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Updated</dt>
+      <dd>
+        <time datetime={meta.generatedAt} data-relative-time class="text-white">
+          {snapshot}
+        </time>
+      </dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Next Update</dt>
+      <dd class="text-white">
+        <time datetime={meta.nextUpdateAt}>{formatTimeWib(meta.nextUpdateAt)}</time>
+      </dd>
+    </div>
+    {meta.isSeed && (
+      <div class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300">
+        <dt class="sr-only">Data notice</dt>
+        <dd>Sample data — not real news</dd>
+      </div>
+    )}
+  </dl>
+</div>
+
+<script>
+  // Progressive enhancement: swap the absolute snapshot time for "28m ago".
+  function relative(iso: string): string {
+    const minutes = Math.round((Date.now() - Date.parse(iso)) / 60_000);
+    if (minutes < 1) return 'just now';
+    if (minutes < 60) return `${minutes}m ago`;
+    const hours = Math.floor(minutes / 60);
+    return hours < 48 ? `${hours}h ${minutes % 60}m ago` : `${Math.floor(hours / 24)}d ago`;
+  }
+  for (const el of document.querySelectorAll<HTMLTimeElement>('time[data-relative-time]')) {
+    el.title = el.textContent ?? '';
+    el.textContent = relative(el.dateTime);
+  }
+</script>

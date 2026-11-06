@@ -1,0 +1,94 @@
+---
+/*
+ * Describes what the site actually does as built. Have it reviewed by counsel before launch,
+ * and update it whenever analytics, ads or any data collection is added.
+ */
+import ProsePage from '../components/layout/ProsePage.astro';
+import { SITE } from '../lib/site.ts';
+
+const ads = Boolean(SITE.adsense.client);
+---
+
+<ProsePage
+  title="Privacy Policy"
+  pageTitle="Privacy Policy | EarthViral"
+  description="What data EarthViral collects (very little), which third parties are involved, and your choices."
+  updated="6 November 2026"
+>
+  <h2>Summary</h2>
+  <p>
+    EarthViral has no accounts, no sign-up forms and no comments. We do not set our own cookies and
+    we do not run analytics. The site is a set of static pages served from a content delivery
+    network.
+  </p>
+
+  <h2>Information collected when you visit</h2>
+  <ul>
+    <li>
+      <strong>Hosting logs.</strong> Our hosting and CDN provider (Cloudflare) processes standard
+      request data — such as IP address, browser user agent and the page requested — to deliver the
+      site and protect it from abuse.
+    </li>
+    <li>
+      <strong>Search.</strong> Site search runs entirely in your browser against a downloaded index.
+      Your search terms are not sent to us.
+    </li>
+    <li>
+      <strong>Fonts and map data</strong> are served from our own domain, not from third-party font
+      or map services.
+    </li>
+  </ul>
+
+  <h2>Advertising</h2>
+  {ads ? (
+    <p>
+      We show ads served by Google AdSense. Google and its partners may use cookies or similar
+      technologies to serve and measure ads, including ads based on your previous visits to this and
+      other websites. You can manage personalised advertising at{' '}
+      <a href="https://adssettings.google.com" rel="noopener">
+        Google Ads Settings
+      </a>{' '}
+      and learn more at{' '}
+      <a href="https://policies.google.com/technologies/ads" rel="noopener">
+        How Google uses information from sites that use its services
+      </a>
+      .
+    </p>
+  ) : (
+    <p>
+      The site does not currently show advertising. This section will be updated before any
+      advertising is enabled.
+    </p>
+  )}
+
+  <h2>Links to other websites</h2>
+  <p>
+    Story pages link to the original reporting on publishers’ websites. Those sites have their own
+    privacy policies, which apply once you follow a link.
+  </p>
+
+  <h2>How story content is produced</h2>
+  <p>
+    Our batch process reads publicly available news headlines and summaries. When AI summaries are
+    enabled, those public news texts are sent to an AI provider to generate summaries. No
+    information about visitors is sent.
+  </p>
+
+  <h2>Your choices</h2>
+  <p>
+    You can block or delete cookies in your browser settings. Because we hold no account or profile
+    data about you, there is nothing for us to export or delete; hosting logs are retained by our
+    provider under its own policy.
+  </p>
+
+  <h2>Contact</h2>
+  {SITE.contactEmail ? (
+    <p>
+      Questions about this policy: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
+    </p>
+  ) : (
+    <p>
+      Questions about this policy can be sent through our <a href="/contact/">contact page</a>.
+    </p>
+  )}
+</ProsePage>

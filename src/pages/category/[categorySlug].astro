@@ -1,0 +1,87 @@
+---
+/** Static Global Category Hub — /category/[categorySlug]/ (all 9 canonical categories). */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JsonLd from '../../components/seo/JsonLd.astro';
+import { collectionGraph } from '../../lib/structuredData.ts';
+import HubHeader from '../../components/hub/HubHeader.astro';
+import StoryGrid from '../../components/hub/StoryGrid.astro';
+import AdSlot from '../../components/ads/AdSlot.astro';
+import LinkCloud from '../../components/hub/LinkCloud.astro';
+import { getClusters, getCountries } from '../../lib/data.ts';
+import { CATEGORIES, flagEmoji } from '../../lib/taxonomy.ts';
+
+export const getStaticPaths = (() =>
+  CATEGORIES.map((category) => ({
+    params: { categorySlug: category.slug },
+    props: { category },
+  }))) satisfies GetStaticPaths;
+
+interface Props {
+  category: (typeof CATEGORIES)[number];
+}
+
+const { category } = Astro.props;
+const [clusters, countries] = await Promise.all([getClusters(), getCountries()]);
+const stories = clusters.filter((c) => c.categorySlug === category.slug);
+
+const countryLinks = countries
+  .map((country) => ({
+    country,
+    count: stories.filter((s) => s.countryCode === country.code).length,
+  }))
+  .filter((x) => x.count > 0)
+  .map(({ country, count }) => ({
+    name: country.name,
+    href: `/country/${country.slug}/${category.slug}/`,
+    meta: count,
+    prefix: flagEmoji(country.code),
+  }));
+
+const otherCategories = CATEGORIES.map((c) => ({
+  name: c.name,
+  href: `/category/${c.slug}/`,
+  meta: clusters.filter((s) => s.categorySlug === c.slug).length,
+  current: c.slug === category.slug,
+}));
+---
+
+<BaseLayout
+  title={`Viral ${category.name} News Worldwide Today | EarthViral`}
+  description={`${category.name} stories going viral worldwide right now, ranked by coverage and search interest, with links to the original reporting.`}
+  noindex={stories.length === 0}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: `/category/${category.slug}/`,
+      name: `Viral ${category.name} news worldwide`,
+      description: `${category.name} stories trending around the world.`,
+      breadcrumbs: [{ name: category.name }],
+      clusters: stories,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: category.name }]}
+    eyebrow="Global category"
+    title={`Viral ${category.name} news worldwide`}
+    intro={`Every ${category.name.toLowerCase()} story trending across the countries EarthViral tracks, ranked by Viral Activity Score.`}
+    stats={[
+      { label: 'Viral topics', value: stories.length },
+      { label: 'Countries', value: countryLinks.length },
+      { label: 'Top score', value: stories[0] ? `${stories[0].viralScore}/100` : '—' },
+    ]}
+  />
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    <LinkCloud title={`${category.name} by country`} links={countryLinks} />
+    <StoryGrid title={`Trending ${category.name} stories`} clusters={stories} />
+    <AdSlot placement="hub" />
+    <LinkCloud title="All categories" links={otherCategories} />
+  </div>
+</BaseLayout>

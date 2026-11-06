@@ -1,0 +1,102 @@
+---
+import '@fontsource-variable/space-grotesk';
+import '@fontsource-variable/plus-jakarta-sans';
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import TelemetryBar from '../components/layout/TelemetryBar.astro';
+import Footer from '../components/layout/Footer.astro';
+import SearchDialog from '../components/search/SearchDialog.tsx';
+import { batchMeta } from '../lib/data.ts';
+import { SITE, absoluteUrl } from '../lib/site.ts';
+// Preload the Latin subsets used above the fold so headings render in their final font
+// immediately (avoids a late swap that delayed LCP and nudged layout on story pages).
+import displayFontUrl from '@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2?url';
+import bodyFontUrl from '@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2?url';
+
+interface Props {
+  title: string;
+  description: string;
+  ogType?: 'website' | 'article';
+  /** Thin pages (e.g. a hub with no stories this batch) stay out of the index. */
+  noindex?: boolean;
+  /** Site-relative path of a 1200×630 social card (defaults to the generic card). */
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  ogType = 'website',
+  noindex = false,
+  ogImage = '/og/default.png',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// Seed batches contain fictional sample stories — keep them out of every index.
+const robots = batchMeta.isSeed
+  ? 'noindex, nofollow'
+  : noindex
+    ? 'noindex, follow'
+    : 'index, follow, max-image-preview:large';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    {/* noindex pages (404, search) don't declare a canonical URL */}
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <meta name="theme-color" content="#050811" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={displayFontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={bodyFontUrl} as="font" type="font/woff2" crossorigin />
+
+    <meta property="og:site_name" content="EarthViral" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={absoluteUrl(ogImage)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={absoluteUrl(ogImage)} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="EarthViral — latest viral stories"
+      href="/rss.xml"
+    />
+    {SITE.adsense.client && (
+      <script
+        async
+        is:inline
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(SITE.adsense.client)}`}
+        crossorigin="anonymous"
+      />
+    )}
+
+    <slot name="head" />
+  </head>
+  <body class="min-h-dvh">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-land focus:px-3 focus:py-2"
+    >
+      Skip to content
+    </a>
+    <div class="sticky top-0 z-40">
+      <Header />
+      <TelemetryBar meta={batchMeta} />
+    </div>
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <SearchDialog client:idle />
+  </body>
+</html>

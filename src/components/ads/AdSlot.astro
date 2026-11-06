@@ -1,0 +1,61 @@
+---
+/**
+ * CLS-safe AdSense container (plan §2.2: CLS 0.00, Phase 4 item 3).
+ * - Renders nothing unless PUBLIC_ADSENSE_CLIENT and the slot id are configured.
+ * - Reserves the slot's height before the ad loads, so filling it never shifts layout.
+ * - Fixed-size responsive units only (no `data-full-width-responsive`, which can resize).
+ */
+import { SITE } from '../../lib/site.ts';
+
+interface Props {
+  placement: keyof typeof SITE.adsense.slots;
+  class?: string;
+}
+
+const { placement, class: className = '' } = Astro.props;
+const client = SITE.adsense.client;
+const slot = SITE.adsense.slots[placement];
+---
+
+{client && slot && (
+  <aside class:list={['ev-ad', className]} aria-label="Advertisement">
+    <p class="mb-1 text-center text-[10px] tracking-widest text-ink-faint uppercase">
+      Advertisement
+    </p>
+    <ins
+      class="adsbygoogle"
+      style="display:block;width:100%;height:100%"
+      data-ad-client={client}
+      data-ad-slot={slot}
+      data-ad-format="rectangle"
+    />
+  </aside>
+)}
+
+<script>
+  // Fill every rendered slot once; no-op when there are none or the loader is blocked.
+  const slots = document.querySelectorAll('.ev-ad ins.adsbygoogle');
+  if (slots.length) {
+    const queue = ((window as unknown as { adsbygoogle?: unknown[] }).adsbygoogle ??= []);
+    slots.forEach(() => queue.push({}));
+  }
+</script>
+
+<style>
+  .ev-ad {
+    /* Reserved box: 250px rectangle on desktop, 280px on mobile, plus the label. */
+    min-height: calc(280px + 1.25rem);
+    contain: layout;
+  }
+  .ev-ad ins {
+    min-height: 280px;
+  }
+  @media (min-width: 768px) {
+    .ev-ad {
+      min-height: calc(250px + 1.25rem);
+    }
+    .ev-ad ins {
+      min-height: 250px;
+    }
+  }
+</style>

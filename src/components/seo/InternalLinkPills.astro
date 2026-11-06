@@ -1,0 +1,26 @@
+---
+/** Entity tag pills linking to /topic/[tag-slug]/ (plan §9.5 item 4). */
+interface Props {
+  tags: Array<{ name: string; slug: string }>;
+  label?: string;
+}
+
+const { tags, label = 'Topics' } = Astro.props;
+---
+
+{tags.length > 0 && (
+  <nav aria-label={label}>
+    <ul class="flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <li>
+          <a
+            href={`/topic/${tag.slug}/`}
+            class="inline-block rounded-full border border-line bg-land/60 px-3 py-1 text-sm text-ink-muted hover:border-cyan/40 hover:text-cyan"
+          >
+            #{tag.name.replace(/\s+/g, '')}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

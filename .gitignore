@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+# Copied from the world-atlas package by `npm run geo:sync`
+public/geo/
+qa-report/
+.wrangler/

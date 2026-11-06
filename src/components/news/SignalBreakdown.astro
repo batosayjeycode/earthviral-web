@@ -1,0 +1,70 @@
+---
+/** Transparent breakdown of the Viral Activity Score inputs ("Honest Viral Telemetry", plan §8.2). */
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { TIER_META } from '../../lib/taxonomy.ts';
+
+interface Props {
+  cluster: ViralClusterStaticRecord;
+}
+
+const { cluster: c } = Astro.props;
+const s = c.signalBreakdown;
+const bars = [
+  { label: 'Coverage velocity', value: s.coverageVelocityScore },
+  { label: 'Public search signal', value: s.publicSearchSignalScore },
+];
+const verified = s.confidenceLabel === 'Verified Multi-Source';
+---
+
+<section aria-labelledby="signal-heading" class="rounded-2xl border border-line bg-land/40 p-5">
+  <div class="flex items-center justify-between gap-3">
+    <h2 id="signal-heading" class="font-display text-base font-semibold text-white">
+      Viral Activity Score
+    </h2>
+    <span class="tier-badge text-sm" data-tier={c.intensityTier}>
+      {c.viralScore}/100
+    </span>
+  </div>
+  <p class="mt-1 text-xs text-ink-faint">
+    {TIER_META[c.intensityTier].label} · tier {TIER_META[c.intensityTier].range}
+  </p>
+
+  <dl class="mt-4 grid gap-3 text-sm">
+    <div class="flex items-center justify-between">
+      <dt class="text-ink-muted">Independent publishers</dt>
+      <dd class="tabular text-white">{s.verifiedPublisherCount}</dd>
+    </div>
+    {bars.map((b) => (
+      <div class="relative flex items-center justify-between pb-3">
+        <dt class="text-ink-muted">{b.label}</dt>
+        <dd class="tabular text-white">
+          {b.value}
+          <span
+            class="absolute inset-x-0 bottom-0 h-1.5 rounded-full bg-white/5"
+            aria-hidden="true"
+          >
+            <span
+              class="block h-full rounded-full bg-gradient-to-r from-signal to-cyan"
+              style={`width:${b.value}%`}
+            />
+          </span>
+        </dd>
+      </div>
+    ))}
+  </dl>
+
+  <p
+    class:list={[
+      'mt-4 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium',
+      verified ? 'bg-verified/10 text-verified' : 'bg-amber-400/10 text-amber-300',
+    ]}
+  >
+    <span aria-hidden="true">{verified ? '✓' : '◔'}</span>
+    {s.confidenceLabel}
+  </p>
+  <p class="mt-3 text-xs text-ink-faint">
+    <a href="/about/" class="underline hover:text-cyan">
+      How the score works
+    </a>
+  </p>
+</section>

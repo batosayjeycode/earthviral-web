@@ -1,0 +1,59 @@
+---
+/**
+ * Compact related-story list — used for "Trending Now in [Country]" and
+ * "More Viral in [Category]" (plan §9.5 items 2–3).
+ */
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { flagEmoji } from '../../lib/taxonomy.ts';
+
+interface Props {
+  title: string;
+  clusters: ViralClusterStaticRecord[];
+  /** Show the country flag + name (cross-country lists) or the category (same-country lists). */
+  show: 'country' | 'category';
+  moreHref?: string;
+  moreLabel?: string;
+}
+
+const { title, clusters, show, moreHref, moreLabel } = Astro.props;
+const id = `related-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+---
+
+{clusters.length > 0 && (
+  <section aria-labelledby={id} class="rounded-2xl border border-line bg-land/40 p-5">
+    <h2 id={id} class="font-display text-base font-semibold text-white">
+      {title}
+    </h2>
+    <ol class="mt-3 grid gap-3">
+      {clusters.map((c) => (
+        <li class="flex gap-3">
+          <span class="tier-badge h-fit shrink-0" data-tier={c.intensityTier}>
+            {c.viralScore}
+          </span>
+          <div class="min-w-0">
+            <a
+              href={c.canonicalPath}
+              class="text-sm leading-snug font-medium text-ink hover:text-cyan"
+            >
+              {c.headline}
+            </a>
+            <p class="mt-0.5 text-xs text-ink-faint">
+              {show === 'country' ? (
+                <>
+                  <span aria-hidden="true">{flagEmoji(c.countryCode)}</span> {c.countryName}
+                </>
+              ) : (
+                c.categoryName
+              )}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
+    {moreHref && (
+      <a href={moreHref} class="mt-4 inline-block text-sm font-semibold text-cyan hover:underline">
+        {moreLabel ?? 'See all'} <span aria-hidden="true">→</span>
+      </a>
+    )}
+  </section>
+)}
