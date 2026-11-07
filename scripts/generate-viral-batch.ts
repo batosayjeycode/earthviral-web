@@ -13,6 +13,8 @@
  *                          MAX_STORIES_PER_COUNTRY; 0 = no cap). Lower-ranked stories are
  *                          removed and their URLs 301-redirect to the country page.
  *   --max-ai <n>           LLM calls per batch (default 80)
+ *   --resummarize-fallback re-summarise kept stories that still have non-AI fallback text
+ *                          (e.g. from runs without an API key); counts toward --max-ai
  *   --ai-concurrency <n>   parallel LLM calls (default 2, env AI_CONCURRENCY); keep low on free
  *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
@@ -39,6 +41,7 @@ import {
 import { computeViralScore, type ViralScore } from './lib/intelligence/computeViralScore.ts';
 import {
   createSummarizer,
+  isFallbackSummary,
   resolveProvider,
   type SummaryInput,
   type AiFailure,
@@ -85,6 +88,7 @@ const OPTS = {
       : VAS.maxStoriesPerCountry,
   ),
   maxAi: intOption('max-ai', 80),
+  resummarizeFallback: flag('resummarize-fallback'),
   aiConcurrency: Math.max(
     1,
     intOption(
@@ -311,13 +315,25 @@ async function main() {
   );
 
   // 4. Summarise (within the AI budget, highest scores first) ─────────────────
-  // New clusters always need text; existing ones are re-summarised only after ≥ 2 new articles.
+  // New clusters always need text; existing ones are re-summarised after ≥ 2 new articles,
+  // or — with --resummarize-fallback and an AI provider — when they still have non-AI text.
+  const resummarize = carried.filter(
+    ({ cluster }) =>
+      OPTS.resummarizeFallback &&
+      summarizer.provider !== 'none' &&
+      newArticleCount(cluster) < 2 &&
+      isFallbackSummary(cluster.existing!),
+  );
   const needsText = [
     ...selectedNew.map((x) => ({ ...x, isNew: true })),
     ...updated
       .filter(({ cluster }) => newArticleCount(cluster) >= 2)
       .map((x) => ({ ...x, isNew: false })),
+    ...resummarize.map((x) => ({ ...x, isNew: false })),
   ].sort((a, b) => b.score.viralScore - a.score.viralScore);
+  if (OPTS.resummarizeFallback) {
+    log(`  --resummarize-fallback: ${resummarize.length} kept stories with non-AI text queued`);
+  }
 
   log(
     `▶ Summarising ${needsText.length} clusters (budget ${OPTS.maxAi} AI calls, ${OPTS.aiConcurrency} at a time)…`,

@@ -517,6 +517,14 @@ function formatList(items: string[]): string {
   return `${items.slice(0, -1).join(', ')} and ${items.at(-1)}`;
 }
 
+/** Sentence every non-AI summary contains; also how stored fallback summaries are recognised. */
+export const FALLBACK_MARKER = 'This summary was generated without an AI model';
+
+/** True when a stored story still has the non-AI fallback text (see `--resummarize-fallback`). */
+export function isFallbackSummary(story: { aiContextParagraph: string }): boolean {
+  return story.aiContextParagraph.includes(FALLBACK_MARKER);
+}
+
 export function heuristicSummary(input: SummaryInput): SummaryOutput {
   const publishers = [...new Set(input.articles.map((a) => a.publisherName))];
   // Representative headline: the article sharing the most tokens with the rest of the cluster.
@@ -549,7 +557,7 @@ export function heuristicSummary(input: SummaryInput): SummaryOutput {
     `This story about ${input.countryName} has been reported by ${formatList(publishers.slice(0, 5))}` +
     `${publishers.length > 5 ? ` and ${publishers.length - 5} other outlets` : ''} since ${firstSeen.slice(0, 10)}. ` +
     `EarthViral groups these reports into one cluster and links to each original article below. ` +
-    `This summary was generated without an AI model, so it lists the reporting rather than synthesising it; ` +
+    `${FALLBACK_MARKER}, so it lists the reporting rather than synthesising it; ` +
     `read the linked sources for full details.`;
   const headline = truncate(lead.title, 100);
 

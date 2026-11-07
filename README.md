@@ -71,6 +71,7 @@ npm run update:viral -- --provider none      # gemini | openai | none (default: 
 npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
 npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
 npm run update:viral -- --ai-concurrency 2             # parallel AI calls (env AI_CONCURRENCY)
+npm run update:viral -- --resummarize-fallback         # re-summarise kept stories that have non-AI text
 npm run update:viral -- --no-trends --no-gdelt
 ```
 

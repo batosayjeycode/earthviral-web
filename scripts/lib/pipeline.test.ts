@@ -543,3 +543,27 @@ describe('AI failure classification', async () => {
     assert.equal(suggestedRetryMs(null, '{}'), null);
   });
 });
+
+describe('fallback detection', async () => {
+  const { heuristicSummary, isFallbackSummary } =
+    await import('./intelligence/generateAiSummaries.ts');
+  it('recognises stored non-AI summaries, and only those', () => {
+    const fallback = heuristicSummary({
+      countryCode: 'ID',
+      countryName: 'Indonesia',
+      articles: [
+        {
+          publisherName: 'Antara',
+          title: 'A headline long enough to keep',
+          snippet: '',
+          publishedAt: hoursAgo(1),
+        },
+      ],
+      metrics: { viralScore: 50, publishers: 1, velocity: 50, search: 0, trendKeyword: null },
+    });
+    assert.ok(isFallbackSummary(fallback));
+    assert.ok(
+      !isFallbackSummary({ aiContextParagraph: 'Bank Indonesia kept its rate unchanged.' }),
+    );
+  });
+});
