@@ -1,0 +1,92 @@
+# EarthViral 3-hour AI batch (plan §7.1 / Phase 3).
+#
+# Runs the batch generator, verifies the site still builds with the new data, then
+# commits src/data/generated + public/data. When this workflow succeeds, CI (ci.yml) runs
+# on the new commit via `workflow_run` and deploys it — pushes made with GITHUB_TOKEN do
+# not trigger `push` workflows. Trigger manually from Actions → "Update viral batch".
+#
+# Repository settings needed:
+#   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI)
+#   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10),
+#                    AI_CONCURRENCY (default 2)
+name: Update viral batch
+
+on:
+  schedule:
+    # Every 3 hours on the WIB clock (UTC+7): 00:00, 03:00, … WIB = 17:00, 20:00, … UTC.
+    # (Plan text says `0 */3 * * *`; that fires at 07:00, 10:00 … WIB and would not match
+    # the "Next Update: 03:00 WIB" telemetry, so the hours are shifted to WIB boundaries.)
+    - cron: '0 2-23/3 * * *'
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: 'Summary provider (auto = Gemini if its key is set, else OpenAI, else none)'
+        type: choice
+        options: [auto, gemini, openai, none]
+        default: auto
+      dry_run:
+        description: 'Dry run (fetch, cluster and score, but write and commit nothing)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: viral-batch
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Astro 7 needs Node >= 22.23.4
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Pipeline unit tests
+        run: npm run test:unit
+
+      - name: Generate batch
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          # Stories kept per country (default 10; 0 = no cap). Set as a repository variable.
+          MAX_STORIES_PER_COUNTRY: ${{ vars.MAX_STORIES_PER_COUNTRY }}
+          # Parallel AI calls (default 2). Keep low on free tiers, which rate-limit per minute.
+          AI_CONCURRENCY: ${{ vars.AI_CONCURRENCY }}
+          PROVIDER: ${{ inputs.provider || 'auto' }}
+          DRY_RUN: ${{ inputs.dry_run || false }}
+        run: |
+          args=()
+          if [ "$PROVIDER" != "auto" ]; then args+=(--provider "$PROVIDER"); fi
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          npm run update:viral -- "${args[@]}"
+
+      - name: Verify the site builds with the new data
+        if: ${{ !inputs.dry_run }}
+        run: npm run build
+
+      - name: Commit generated data
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/generated public/data public/_redirects
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "chore(data): viral batch $(node -p "require('./src/data/generated/batch-meta.json').batchId")"
+          git push
+
+      # IndexNow is pinged by ci.yml after the deploy (this run must finish before CI starts).

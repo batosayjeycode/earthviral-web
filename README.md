@@ -10,20 +10,20 @@ The full product and architecture spec is in [`PLAN_EARTH_VIRAL.md`](./PLAN_EART
 
 ## Tech stack
 
-| Layer | Choice |
-| --- | --- |
-| Site | [Astro 7](https://astro.build) static output, React 19 islands, Tailwind CSS v4, TypeScript (strict) |
-| Map | MapLibre GL JS 6 and Natural Earth TopoJSON (`world-atlas`) |
-| Data | JSON files validated by Astro content collections (Zod) |
-| Batch pipeline | Plain Node 22 TypeScript (type stripping, no build step) |
-| AI summaries | Gemini (`gemini-2.5-flash`) or OpenAI (`gpt-4o-mini`), with a non-AI fallback |
-| Search | [Pagefind](https://pagefind.app), indexed after the build and run in the browser |
-| Social images | satori and resvg, rendered at build time |
-| Hosting | Cloudflare Pages, with data refreshed by GitHub Actions |
+| Layer          | Choice                                                                                               |
+| -------------- | ---------------------------------------------------------------------------------------------------- |
+| Site           | [Astro 7](https://astro.build) static output, React 19 islands, Tailwind CSS v4, TypeScript (strict) |
+| Map            | MapLibre GL JS 6 and Natural Earth TopoJSON (`world-atlas`)                                          |
+| Data           | JSON files validated by Astro content collections (Zod)                                              |
+| Batch pipeline | Plain Node 22 TypeScript (type stripping, no build step)                                             |
+| AI summaries   | Gemini (`gemini-3.1-flash-lite`) or OpenAI (`gpt-5-mini`), with a non-AI fallback                    |
+| Search         | [Pagefind](https://pagefind.app), indexed after the build and run in the browser                     |
+| Social images  | satori and resvg, rendered at build time                                                             |
+| Hosting        | Cloudflare Pages, with data refreshed by GitHub Actions                                              |
 
 ## Getting started
 
-Requires **Node.js ≥ 22.23.4** (Astro 7's minimum).
+Requires **Node.js ≥ 22.23.4** (Astro 7's minimum; pinned in `.nvmrc`).
 
 ```bash
 npm install
@@ -45,17 +45,23 @@ Without an API key, `update:viral` still runs. Summaries then list the original 
 
 ## Scripts
 
-| Command | What it does |
-| --- | --- |
-| `npm run dev` | Astro dev server (syncs map TopoJSON first) |
-| `npm run build` | `astro check`, then `astro build`, then the Pagefind index, all into `dist/` |
-| `npm run preview` | Serve `dist/` locally (`npx astro preview stop` stops it) |
-| `npm run check` | Type-check Astro and TypeScript |
-| `npm test` | Pipeline unit tests (`node:test`, no extra dependencies) |
-| `npm run update:viral` | Run the 3-hour batch (alias: `generate:viral`) |
-| `npm run seed` | Write sample data (`isSeed: true`, so pages are `noindex`) |
-| `npm run indexnow` | Submit this batch's changed URLs to IndexNow once the deploy is live |
-| `npm run geo:sync` | Copy Natural Earth TopoJSON into `public/geo/` |
+| Command                | What it does                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| `npm run dev`          | Astro dev server (syncs map TopoJSON first)                                    |
+| `npm run build`        | `astro build`, then the Pagefind index, into `dist/`                           |
+| `npm run preview`      | Serve `dist/` locally (`npx astro preview stop` stops it)                      |
+| `npm run typecheck`    | Type-check Astro and TypeScript (`astro check`)                                |
+| `npm run lint`         | ESLint (TypeScript, Astro, React hooks)                                        |
+| `npm run format`       | Prettier, write (`format:check` to verify only)                                |
+| `npm test`             | Pipeline unit tests + SEO/integrity tests against `dist/` (build first)        |
+| `npm run test:unit`    | Pipeline unit tests only (no build needed)                                     |
+| `npm run test:dist`    | `dist/` tests only                                                             |
+| `npm run qa`           | Playwright browser QA against `dist/` (add `-- --external` to check out-links) |
+| `npm run check`        | Everything CI's `check` job runs: format, lint, typecheck, build, tests        |
+| `npm run update:viral` | Run the 3-hour batch (alias: `generate:viral`)                                 |
+| `npm run seed`         | Write sample data (`isSeed: true`, so pages are `noindex`)                     |
+| `npm run indexnow`     | Submit this batch's changed URLs to IndexNow once the deploy is live           |
+| `npm run geo:sync`     | Copy Natural Earth TopoJSON into `public/geo/`                                 |
 
 ### Batch flags
 
@@ -63,6 +69,9 @@ Without an API key, `update:viral` still runs. Summaries then list the original 
 npm run update:viral -- --dry-run            # fetch, cluster and score; write nothing
 npm run update:viral -- --provider none      # gemini | openai | none (default: whichever key is set)
 npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
+npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
+npm run update:viral -- --ai-concurrency 2             # parallel AI calls (env AI_CONCURRENCY)
+npm run update:viral -- --resummarize-fallback         # re-summarise kept stories that have non-AI text
 npm run update:viral -- --no-trends --no-gdelt
 ```
 
@@ -70,55 +79,79 @@ npm run update:viral -- --no-trends --no-gdelt
 
 `scripts/generate-viral-batch.ts` runs these steps:
 
-1. **Collect.** It reads 29 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
+1. **Collect.** It reads 31 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
 2. **Attribute.** It assigns each article to one of 41 tracked countries (`scripts/lib/countries.ts`), using the outlet's home country plus the places named in the headline. English and Bahasa Indonesia names are both recognised.
 3. **Cluster.** It groups articles by TF-IDF headline similarity within each country, then merges fragments of the same event. New coverage attaches to existing stories, so **story URLs never change**.
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):
    `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
    The constants live in `src/lib/scoring.ts` and also drive the public `/about/` page.
-5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai`.
+5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`.
 6. **Link and write.** It builds the related-story graph, validates every record, and only then replaces `src/data/generated/` and `public/data/`.
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
+
+**Per-country cap.** Because every story is a static page (HTML, OG image, search index), each country keeps only its **10** highest-scoring stories by default. Existing stories and new candidates are ranked together every batch, before summarising, so no AI call is spent on a story that won't be kept. Removed stories, whether capped or expired, get a `301` redirect to their country page in the generated `public/_redirects` for 90 days, so links never 404. Change the limit with `--max-stories-per-country`, the `MAX_STORIES_PER_COUNTRY` env var, or the GitHub repository variable of the same name; `0` turns the cap off.
 
 ## Configuration
 
 All settings are optional environment variables. Anything left unset is simply omitted from the build: no empty ad boxes and no placeholder addresses. See [`.env.example`](./.env.example).
 
-| Variable | Used by | Purpose |
-| --- | --- | --- |
-| `GEMINI_API_KEY` / `GEMINI_MODEL` | batch | Gemini summaries |
-| `OPENAI_API_KEY` / `OPENAI_MODEL` | batch | OpenAI summaries |
-| `PUBLIC_CONTACT_EMAIL` | site build | Address on `/contact/` and the legal pages |
-| `PUBLIC_ADSENSE_CLIENT` | site build | Turns on ad slots and `ads.txt` (`ca-pub-…`) |
-| `PUBLIC_ADSENSE_SLOT_STORY` / `PUBLIC_ADSENSE_SLOT_HUB` | site build | Ad unit IDs |
-| `INDEXNOW_KEY` | site build and `npm run indexnow` | Publishes `/{key}.txt` and authenticates pings |
+| Variable                                                | Used by                           | Purpose                                        |
+| ------------------------------------------------------- | --------------------------------- | ---------------------------------------------- |
+| `GEMINI_API_KEY` / `GEMINI_MODEL`                       | batch                             | Gemini summaries                               |
+| `OPENAI_API_KEY` / `OPENAI_MODEL`                       | batch                             | OpenAI summaries                               |
+| `PUBLIC_CONTACT_EMAIL`                                  | site build                        | Address on `/contact/` and the legal pages     |
+| `PUBLIC_ADSENSE_CLIENT`                                 | site build                        | Turns on ad slots and `ads.txt` (`ca-pub-…`)   |
+| `PUBLIC_ADSENSE_SLOT_STORY` / `PUBLIC_ADSENSE_SLOT_HUB` | site build                        | Ad unit IDs                                    |
+| `INDEXNOW_KEY`                                          | site build and `npm run indexnow` | Publishes `/{key}.txt` and authenticates pings |
 
-## Deployment
+## CI and deployment
 
-**Cloudflare Pages** (connect the Git repository):
+**CI** (`.github/workflows/ci.yml`) runs on pushes to `main`, on pull requests, and after every successful batch run:
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Environment: `NODE_VERSION=22.23.4` or later, plus any `PUBLIC_*` and `INDEXNOW_KEY` values from the table above.
+1. **check:** format, lint, typecheck, build, then `npm test` (pipeline unit tests + SEO/integrity tests against `dist/`). The build is uploaded as an artifact.
+2. **qa:** Playwright and axe against that exact build. It covers WCAG 2.1 AA, horizontal overflow, console errors, search, the country drawer, the tap-to-load map on touch devices, the no-JS fallback, 404s and throttled CLS/LCP. On failure, screenshots are uploaded as `qa-report`.
+3. **deploy** (`main` and batch runs only): `wrangler pages deploy dist` to the `earthviral-web` Cloudflare Pages project. After a batch run, it then pings IndexNow (best-effort).
 
-**GitHub Actions** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock (00:00, 03:00, … WIB) and can be started manually from the Actions tab. Each run:
+**Batch** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock (00:00, 03:00, … WIB) and can be started manually from the Actions tab. It runs the unit tests, generates the batch, checks that the site still builds, and commits `src/data/generated` and `public/data`.
 
-1. Runs the unit tests.
-2. Generates the batch.
-3. Checks that the site still builds.
-4. Commits `src/data/generated` and `public/data`; the push triggers the Cloudflare Pages deploy.
-5. Waits for the deploy to go live, then pings IndexNow (best-effort).
+Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up batch commits through its `workflow_run` trigger.
 
-Repository secrets: `GEMINI_API_KEY` and/or `OPENAI_API_KEY`, and optionally `INDEXNOW_KEY`. Optional repository variables: `GEMINI_MODEL`, `OPENAI_MODEL`.
+**Staleness watchdog** (`.github/workflows/staleness-watchdog.yml`) runs hourly. It checks when the data was last generated, both on the live site (which catches failed deploys) and in the repository (which catches failed batches).
+
+- If either is older than **9 hours** (three missed runs), it opens a GitHub issue labelled `stale-data`. GitHub emails you about the new issue.
+- While the data stays stale, it keeps updating that same issue's report.
+- When the data is fresh again, it closes the issue.
+- Before launch, the live check is skipped and only the repository data is checked.
+- Optional variables: `SITE_URL` and `STALE_AFTER_HOURS`.
+
+Visitors also see a **"Data delayed"** badge in the telemetry bar once the snapshot passes the same 9-hour threshold, and "Next Update" then reads "Overdue". Because pages are static, this check runs in the browser. Run `node scripts/check-staleness.ts` to check locally.
+
+Scheduled workflows, including the batch and the watchdog, only run from the **default branch (`main`)**.
+
+**Cloudflare Pages setup:** create `earthviral-web` as a **Direct Upload** project. Don't connect the Git integration as well, or every push deploys twice and the second deploy skips CI.
+
+| Setting                                                                                                 | Kind   | Used by                    |
+| ------------------------------------------------------------------------------------------------------- | ------ | -------------------------- |
+| `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`                                                         | secret | CI deploy                  |
+| `GEMINI_API_KEY` and/or `OPENAI_API_KEY`                                                                | secret | batch                      |
+| `INDEXNOW_KEY`                                                                                          | secret | CI build and IndexNow ping |
+| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`, `AI_CONCURRENCY`                             | var    | batch                      |
+| `PUBLIC_CONTACT_EMAIL`, `PUBLIC_ADSENSE_CLIENT`, `PUBLIC_ADSENSE_SLOT_STORY`, `PUBLIC_ADSENSE_SLOT_HUB` | var    | CI build                   |
+
+`public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.
 
 ## Project structure
 
 ```text
-├── .github/workflows/update-viral-batch.yml   3-hour batch, data commit and IndexNow
+├── .github/workflows/
+│   ├── ci.yml                                 check → qa → deploy (Wrangler) + IndexNow
+│   ├── staleness-watchdog.yml                 hourly freshness check → GitHub issue
+│   └── update-viral-batch.yml                 3-hour batch and data commit
 ├── scripts/                                   batch pipeline (plain Node TypeScript)
 │   ├── generate-viral-batch.ts                CLI entry point
 │   ├── indexnow.ts                            post-deploy IndexNow ping
+│   ├── qa-browser.mjs                         Playwright + axe browser QA
 │   ├── seed/                                  sample-data generator
 │   └── lib/
 │       ├── fetchers/                          RSS, Google Trends, GDELT
@@ -126,6 +159,7 @@ Repository secrets: `GEMINI_API_KEY` and/or `OPENAI_API_KEY`, and optionally `IN
 │       ├── builders/writeStaticJson.ts        validated writer, shared by the batch and the seed
 │       ├── countries.ts                       tracked-country registry
 │       └── pipeline.test.ts                   unit tests
+├── tests/dist.test.mjs                        SEO + integrity tests against dist/
 ├── src/
 │   ├── content.config.ts                      content collections over the generated JSON
 │   ├── data/generated/                        build-time data (written by the batch, committed)

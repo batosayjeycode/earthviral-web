@@ -1,0 +1,12 @@
+dist
+.astro
+node_modules
+package-lock.json
+qa-report
+# Written by the batch pipeline (JSON.stringify) every 3 hours — not hand-edited.
+src/data/generated
+public/data
+public/geo
+# Product spec, maintained by hand.
+PLAN_EARTH_VIRAL.md
+staleness-report.md

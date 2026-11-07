@@ -1,0 +1,52 @@
+---
+/**
+ * Original publisher attribution (plan §8.2 sources, FR-07 timeline). Sources are shown
+ * oldest-first as a coverage timeline, each with a direct outbound link.
+ */
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { formatDateWib, formatTimeWib } from '../../lib/format.ts';
+
+interface Props {
+  sources: ViralClusterStaticRecord['sources'];
+}
+
+const sources = [...Astro.props.sources].sort(
+  (a, b) => Date.parse(a.publishedAt) - Date.parse(b.publishedAt),
+);
+---
+
+<section aria-labelledby="sources-heading">
+  <h2 id="sources-heading" class="font-display text-xl font-semibold text-white">
+    Coverage timeline &amp; original sources
+  </h2>
+  <p class="mt-1 text-sm text-ink-faint">
+    EarthViral summarises; the reporting belongs to these publishers. Read the full stories at the
+    source.
+  </p>
+  <ol class="mt-5 border-l border-line">
+    {sources.map((s) => (
+      <li class="relative pb-5 pl-6 last:pb-0">
+        <span
+          class="absolute top-1.5 -left-[5px] size-2.5 rounded-full border-2 border-void bg-cyan"
+          aria-hidden="true"
+        />
+        <p class="tabular text-xs text-ink-faint">
+          <time datetime={s.publishedAt}>
+            {formatDateWib(s.publishedAt)} · {formatTimeWib(s.publishedAt)}
+          </time>
+        </p>
+        <p class="mt-1 text-sm font-semibold text-white">{s.publisherName}</p>
+        <a
+          href={s.articleUrl}
+          target="_blank"
+          rel="noopener"
+          class="mt-0.5 inline-block text-sm text-ink-muted underline decoration-line underline-offset-2 hover:text-cyan"
+        >
+          {s.articleTitle}
+          <span aria-hidden="true"> ↗</span>
+          <span class="sr-only"> (opens {s.publisherDomain} in a new tab)</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</section>

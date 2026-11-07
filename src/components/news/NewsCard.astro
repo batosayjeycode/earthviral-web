@@ -1,0 +1,77 @@
+---
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { categoryBySlug, flagEmoji } from '../../lib/taxonomy.ts';
+import { hoursBefore } from '../../lib/format.ts';
+
+interface Props {
+  cluster: ViralClusterStaticRecord;
+  referenceIso: string;
+  variant?: 'feature' | 'default';
+  class?: string;
+}
+
+const { cluster: c, referenceIso, variant = 'default', class: className = '' } = Astro.props;
+const feature = variant === 'feature';
+const category = categoryBySlug(c.categorySlug);
+---
+
+<article
+  class:list={[
+    'group relative flex flex-col rounded-2xl border border-line bg-land/60 p-5 transition hover:border-cyan/40 hover:bg-land',
+    feature && 'sm:p-7',
+    className,
+  ]}
+  data-category={c.categorySlug}
+>
+  <div class="flex flex-wrap items-center gap-2 text-xs" data-pagefind-ignore>
+    <span class="rounded-full border border-line px-2 py-0.5 text-ink-muted">
+      {category?.shortName ?? c.categoryName}
+    </span>
+    <span class="text-ink-muted">
+      <span aria-hidden="true">{flagEmoji(c.countryCode)}</span> {c.countryName}
+    </span>
+    <span
+      class="tier-badge ml-auto"
+      data-tier={c.intensityTier}
+      title={`Viral Activity Score ${c.viralScore}/100`}
+    >
+      <span aria-hidden="true">🔥</span>
+      {c.viralScore}
+      <span class="sr-only"> out of 100</span>
+    </span>
+  </div>
+
+  <h3
+    class:list={[
+      'mt-3 font-display leading-snug font-semibold text-white',
+      feature ? 'text-2xl sm:text-3xl' : 'text-lg',
+    ]}
+  >
+    <a href={c.canonicalPath} class="after:absolute after:inset-0 group-hover:text-cyan">
+      {c.headline}
+    </a>
+  </h3>
+
+  <p class:list={['mt-2 text-sm leading-relaxed text-ink-muted', !feature && 'line-clamp-3']}>
+    {c.whyItIsViral}
+  </p>
+
+  {feature && (
+    <ul class="mt-4 grid gap-1.5 text-sm text-ink">
+      {c.aiSummaryBullets.map((b) => (
+        <li class="flex gap-2">
+          <span class="mt-2 size-1.5 shrink-0 rounded-full bg-cyan" aria-hidden="true" />
+          {b}
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <p class="mt-auto pt-4 text-xs text-ink-faint" data-pagefind-ignore>
+    <time datetime={c.firstDetectedAt}>{hoursBefore(c.firstDetectedAt, referenceIso)}</time>·{' '}
+    {c.signalBreakdown.verifiedPublisherCount}
+    {c.signalBreakdown.verifiedPublisherCount === 1 ? 'source' : 'sources'}·{' '}
+    {c.sources[0]?.publisherName}
+    {c.sources.length > 1 && ` +${c.sources.length - 1}`}
+  </p>
+</article>

@@ -1,0 +1,99 @@
+---
+import { CATEGORIES } from '../../lib/taxonomy.ts';
+---
+
+<header class="glass border-x-0 border-t-0">
+  <nav aria-label="Primary" class="mx-auto flex h-14 max-w-7xl items-center gap-4 px-4 sm:px-6">
+    <a
+      href="/"
+      class="flex items-center gap-2 font-display text-lg font-bold tracking-tight text-white"
+    >
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 24 24"
+        class="size-6 text-cyan"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+      >
+        <circle cx="12" cy="12" r="9"></circle>
+        <ellipse cx="12" cy="12" rx="4" ry="9"></ellipse>
+        <path d="M3 12h18"></path>
+        <circle cx="17" cy="7" r="1.6" fill="currentColor" stroke="none"></circle>
+      </svg>
+      Earth<span class="text-cyan">Viral</span>
+    </a>
+
+    <ul class="ml-4 hidden items-center gap-1 text-sm text-ink-muted md:flex">
+      <li>
+        <a class="rounded-md px-3 py-2 hover:bg-white/5 hover:text-white" href="/#map">
+          Explore Map
+        </a>
+      </li>
+      <li>
+        <a class="rounded-md px-3 py-2 hover:bg-white/5 hover:text-white" href="/#trending">
+          Trending
+        </a>
+      </li>
+      <li>
+        <details class="group relative">
+          <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 hover:bg-white/5 hover:text-white [&::-webkit-details-marker]:hidden">
+            Categories
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 20 20"
+              class="size-4 transition group-open:rotate-180"
+              fill="currentColor"
+            >
+              <path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"></path>
+            </svg>
+          </summary>
+          <ul class="glass absolute top-full left-0 mt-2 grid w-64 gap-0.5 rounded-xl p-2 shadow-2xl">
+            {CATEGORIES.map((c) => (
+              <li>
+                <a
+                  class="block rounded-md px-3 py-2 hover:bg-white/5 hover:text-white"
+                  href={`/category/${c.slug}/`}
+                >
+                  {c.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </li>
+    </ul>
+
+    <div class="ml-auto flex items-center gap-2">
+      <!-- Opens the Pagefind dialog when JS is ready; plain link to /search/ otherwise. -->
+      <a
+        href="/search/"
+        data-search-trigger
+        aria-keyshortcuts="Meta+K Control+K"
+        class="flex items-center gap-2 rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink-muted hover:border-cyan/40 hover:text-white sm:px-3"
+      >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 20 20"
+          class="size-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <circle cx="9" cy="9" r="6"></circle>
+          <path d="m14 14 4 4"></path>
+        </svg>
+        <span class="sr-only sm:not-sr-only">Search</span>
+        <kbd class="tabular hidden rounded border border-line px-1 text-xs sm:inline">⌘K</kbd>
+      </a>
+      <a
+        href="/country/indonesia/"
+        class="flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-sm text-ink hover:border-cyan/40"
+        aria-label="Indonesia edition"
+      >
+        <span aria-hidden="true">🇮🇩</span>
+        <span class="hidden sm:inline">Indonesia</span>
+      </a>
+    </div>
+  </nav>
+</header>

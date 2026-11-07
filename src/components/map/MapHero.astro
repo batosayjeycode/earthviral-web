@@ -1,0 +1,74 @@
+---
+import WorldSilhouette from './WorldSilhouette.astro';
+import WorldMap from './WorldMap.tsx';
+import { TIER_META } from '../../lib/taxonomy.ts';
+import { INITIAL_CENTER, GLOBE_DIAMETER_RATIO } from './mapConfig.ts';
+
+const legend = (['active', 'high', 'surge'] as const).map((tier) => ({ tier, ...TIER_META[tier] }));
+---
+
+<section
+  id="map"
+  data-map-hero
+  aria-labelledby="map-heading"
+  class="relative isolate h-[64svh] min-h-[420px] overflow-hidden bg-[radial-gradient(ellipse_at_center,#0b1a33_0%,#050811_62%)] md:h-[80svh] md:max-h-[960px]"
+>
+  <WorldSilhouette center={INITIAL_CENTER} diameterRatio={GLOBE_DIAMETER_RATIO} />
+
+  <WorldMap client:idle pulseUrl="/data/map-pulse.json" topoUrl="/geo/countries-110m.topo.json" />
+
+  <div class="pointer-events-none absolute top-4 left-4 z-10 max-w-xs sm:top-6 sm:left-6 sm:max-w-sm">
+    <h1
+      id="map-heading"
+      class="font-display text-2xl leading-tight font-bold text-white sm:text-3xl"
+    >
+      What the world is <span class="text-cyan">talking about</span> right now
+    </h1>
+    <p class="mt-2 hidden text-sm text-ink-muted sm:block">
+      Viral news intensity by country, scored from publisher coverage and search signals every 3
+      hours.
+    </p>
+  </div>
+
+  <div class="glass absolute bottom-4 left-4 z-10 max-w-[calc(100%-11rem)] rounded-xl px-3 py-2 text-xs sm:bottom-6 sm:left-6 sm:max-w-none">
+    <p class="sr-only">Intensity legend</p>
+    <ul class="flex flex-wrap items-center gap-x-4 gap-y-1 text-ink-muted">
+      {legend.map((item) => (
+        <li class="flex items-center gap-1.5">
+          <span class="ev-legend-dot" data-tier={item.tier} aria-hidden="true" />
+          {item.label}
+          <span class="tabular text-ink-faint">{item.range}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  [data-map-hero][data-map-ready] :global(.ev-silhouette) {
+    opacity: 0;
+    transition: opacity 600ms ease;
+  }
+
+  .ev-legend-dot {
+    display: inline-block;
+    border-radius: 9999px;
+  }
+  .ev-legend-dot[data-tier='active'] {
+    width: 6px;
+    height: 6px;
+    background: #06b6d4;
+  }
+  .ev-legend-dot[data-tier='high'] {
+    width: 8px;
+    height: 8px;
+    background: #00f0ff;
+    box-shadow: 0 0 6px #00f0ff;
+  }
+  .ev-legend-dot[data-tier='surge'] {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #00f0ff 0 30%, #a855f7 45%);
+    box-shadow: 0 0 8px #a855f7;
+  }
+</style>

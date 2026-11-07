@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/*
+ * "Orbital Intelligence" dark theme (plan §6).
+ * Fonts are self-hosted via Fontsource; all three families are SIL OFL-1.1.
+ * Fallbacks use only CSS generic keywords (Sociolla font policy).
+ */
+@theme {
+  --color-void: #050811;
+  --color-ocean: #070d19;
+  --color-land: #0f172a;
+  --color-quiet: #0b101e;
+  --color-line: #1e293b;
+  --color-panel: rgb(15 23 42 / 0.78);
+
+  --color-cyan: #00f0ff;
+  --color-cyan-soft: #06b6d4;
+  --color-signal: #3b82f6;
+  --color-surge: #8b5cf6;
+  --color-surge-hot: #a855f7;
+  --color-verified: #10b981;
+
+  --color-ink: #e2e8f0;
+  --color-ink-muted: #94a3b8;
+  /* ≥ 4.5:1 on --color-void and --color-land for small text (was #64748b, failed WCAG AA). */
+  --color-ink-faint: #8391a7;
+
+  --font-display:
+    'Space Grotesk Variable', system-ui, -apple-system, Roboto, 'Noto Sans', sans-serif;
+  --font-sans:
+    'Plus Jakarta Sans Variable', system-ui, -apple-system, Roboto, 'Noto Sans', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-padding-top: 7rem;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-cyan);
+    outline-offset: 2px;
+  }
+}
+
+@utility glass {
+  background-color: var(--color-panel);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgb(148 163 184 / 0.12);
+}
+
+@utility tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Score badge colour per intensity tier — used by .astro components and islands alike. */
+@layer components {
+  .tier-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 9999px;
+    padding: 0.125rem 0.5rem;
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    border: 1px solid transparent;
+  }
+  .tier-badge[data-tier='quiet'] {
+    color: var(--color-ink-muted);
+    border-color: var(--color-line);
+  }
+  .tier-badge[data-tier='active'] {
+    color: var(--color-cyan-soft);
+    border-color: rgb(6 182 212 / 0.35);
+    background: rgb(6 182 212 / 0.08);
+  }
+  .tier-badge[data-tier='high'] {
+    color: var(--color-cyan);
+    border-color: rgb(0 240 255 / 0.4);
+    background: rgb(0 240 255 / 0.08);
+  }
+  .tier-badge[data-tier='surge'] {
+    color: #e9d5ff;
+    border-color: rgb(168 85 247 / 0.55);
+    background: rgb(139 92 246 / 0.2);
+  }
+}
+
+/* Pagefind excerpt highlights */
+.ev-excerpt mark {
+  background: rgb(0 240 255 / 0.18);
+  color: var(--color-cyan);
+  border-radius: 2px;
+}

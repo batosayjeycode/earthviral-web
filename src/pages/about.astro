@@ -1,0 +1,187 @@
+---
+/** Mission + transparent scoring methodology (plan §10 `(legal)/about`). */
+import ProsePage from '../components/layout/ProsePage.astro';
+import { VAS } from '../lib/scoring.ts';
+import { INTENSITY_TIERS, TIER_META, CATEGORIES } from '../lib/taxonomy.ts';
+import { SITE } from '../lib/site.ts';
+import { RSS_SOURCES } from '../../scripts/lib/fetchers/rssSources.ts';
+import { COUNTRIES } from '../../scripts/lib/countries.ts';
+
+const publishers = [...new Set(RSS_SOURCES.map((s) => s.publisherName))].sort((a, b) =>
+  a.localeCompare(b),
+);
+const w = VAS.weights;
+---
+
+<ProsePage
+  title="About & Methodology"
+  pageTitle="About EarthViral & How the Viral Activity Score Works"
+  description="How EarthViral finds, groups, scores and summarises viral news every 3 hours — the full Viral Activity Score formula, sources and editorial standards."
+>
+  <h2>What EarthViral is</h2>
+  <p>
+    EarthViral maps which news stories are drawing unusual attention in each country. Every three
+    hours an automated batch reads public news feeds, groups articles about the same event, measures
+    how widely and how fast each story is being covered, and publishes a summary that links back to
+    every original report.
+  </p>
+  <p>
+    We do not do original reporting. The journalism belongs to the publishers we link to;
+    EarthViral’s job is to show where attention is concentrating and to send readers to the source.
+  </p>
+
+  <h2>How a batch works</h2>
+  <ol>
+    <li>
+      <strong>Collect.</strong> Public RSS feeds from {publishers.length} outlets, public Google
+      Trends search lists for tracked countries, and (when available) the GDELT news index.
+    </li>
+    <li>
+      <strong>Attribute.</strong> Each article is assigned to one of {COUNTRIES.length} tracked
+      countries from its outlet’s home country and the places named in its headline.
+    </li>
+    <li>
+      <strong>Group.</strong> Articles in the same country with similar headlines are clustered into
+      a single story. Follow-up coverage joins the existing story, so its page address never
+      changes.
+    </li>
+    <li>
+      <strong>Score.</strong> Each story receives a Viral Activity Score (below).
+    </li>
+    <li>
+      <strong>Summarise.</strong> An AI model writes a neutral summary using only the headlines and
+      snippets in the cluster, then the page links to every source.
+    </li>
+    <li>
+      <strong>Publish.</strong> The site is rebuilt as static pages and refreshed on our CDN.
+    </li>
+  </ol>
+
+  <h2 id="score">The Viral Activity Score (0–100)</h2>
+  <p>The score measures attention, not importance. It combines three signals:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Signal</th>
+        <th>What it measures</th>
+        <th>Formula</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Coverage</td>
+        <td>How many independent outlets are reporting the story</td>
+        <td>
+          <code>
+            100 · (1 − e<sup>−outlets / {VAS.coverageScale}</sup>)
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>Velocity</td>
+        <td>
+          How much coverage is recent; each article’s weight halves roughly every{' '}
+          {Math.round(VAS.velocityHalfLifeHours * Math.LN2)} hours
+        </td>
+        <td>
+          <code>
+            100 · (1 − e
+            <sup>
+              −Σ e<sup>−age(h) / {VAS.velocityHalfLifeHours}</sup> / {VAS.velocityScale}
+            </sup>
+            )
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>Search</td>
+        <td>Whether the story matches a public Google Trends search in that country</td>
+        <td>
+          <code>
+            {VAS.searchBase} + {VAS.searchPerDecade} · log₁₀(searches + 1)
+          </code>
+          , capped at 100; 0 if no match
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>
+      Score = {w.coverage} × Coverage + {w.velocity} × Velocity + {w.searchBonus} × Search
+    </strong>
+    , capped at 100. Search is a bonus on top of coverage and velocity because Google Trends lists
+    only a handful of searches per country. Scores are recalculated every batch, so stories cool
+    down as coverage slows.
+  </p>
+  <p>
+    A new story needs at least {VAS.minPublishers} independent outlets, or one outlet plus a
+    matching search trend. Stories leave the live map after {VAS.activeWindowHours} hours without
+    new coverage and are removed after {VAS.retentionDays} days. Each country keeps at most its
+    {VAS.maxStoriesPerCountry} highest-scoring stories; a story that drops out redirects to its
+    country page.
+  </p>
+
+  <h3>Intensity tiers</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Tier</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...INTENSITY_TIERS].reverse().map((t) => (
+        <tr>
+          <td>{TIER_META[t].label}</td>
+          <td class="tabular">{TIER_META[t].range}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p>
+    A country’s score is its highest-scoring active story, plus a small bonus (up to 3 points) when
+    several stories are active.
+  </p>
+
+  <h2>Categories</h2>
+  <p>
+    Every story is placed in one of nine categories: {CATEGORIES.map((c) => c.name).join(', ')}.
+  </p>
+
+  <h2>Sources</h2>
+  <p>Current RSS sources: {publishers.join(', ')}.</p>
+
+  <h2>Editorial standards & AI disclosure</h2>
+  <ul>
+    <li>
+      Summaries are generated by an AI model instructed to use only facts present in the linked
+      coverage, to stay neutral, to attribute contested claims, and not to name private individuals.
+    </li>
+    <li>
+      AI summaries can still contain mistakes. Always check the original reporting linked on each
+      page before relying on a summary.
+    </li>
+    <li>
+      When no AI model is available for a batch, pages list the original headlines instead of a
+      synthesis and say so.
+    </li>
+    <li>
+      Scores describe media and search attention. A high score does not mean a story is true,
+      important or endorsed.
+    </li>
+  </ul>
+
+  <h2>Corrections & removal requests</h2>
+  {SITE.contactEmail ? (
+    <p>
+      Publishers and readers can request a correction or removal at{' '}
+      <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. Please include the page
+      address.
+    </p>
+  ) : (
+    <p>
+      Publishers and readers can request a correction or removal through our{' '}
+      <a href="/contact/">contact page</a>.
+    </p>
+  )}
+</ProsePage>

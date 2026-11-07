@@ -1,0 +1,35 @@
+---
+/** Breadcrumb hierarchy links (plan §9.5 item 1). The last item is the current page. */
+export interface Crumb {
+  name: string;
+  href?: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const items: Crumb[] = [{ name: 'Home', href: '/' }, ...Astro.props.items];
+---
+
+<nav aria-label="Breadcrumb" class="text-sm">
+  <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-ink-faint">
+    {items.map((item, i) => {
+      const last = i === items.length - 1;
+      return (
+        <li class="flex min-w-0 items-center gap-2">
+          {last || !item.href ? (
+            <span aria-current={last ? 'page' : undefined} class="truncate text-ink-muted">
+              {item.name}
+            </span>
+          ) : (
+            <a href={item.href} class="hover:text-cyan">
+              {item.name}
+            </a>
+          )}
+          {!last && <span aria-hidden="true">/</span>}
+        </li>
+      );
+    })}
+  </ol>
+</nav>

@@ -1,0 +1,42 @@
+---
+import ProsePage from '../components/layout/ProsePage.astro';
+import { SITE } from '../lib/site.ts';
+
+if (!SITE.contactEmail) {
+  console.warn(
+    '[earthviral] PUBLIC_CONTACT_EMAIL is not set — /contact/ will not show an address.',
+  );
+}
+---
+
+<ProsePage
+  title="Contact"
+  pageTitle="Contact EarthViral"
+  description="Contact EarthViral about corrections, removal requests, publisher enquiries or partnerships."
+>
+  {SITE.contactEmail ? (
+    <p>
+      Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. We read every message.
+    </p>
+  ) : (
+    <p>A contact address will be published here shortly.</p>
+  )}
+
+  <h2>What to include</h2>
+  <ul>
+    <li>
+      <strong>Corrections or removal requests:</strong> the page address and what is wrong.
+      Publishers, please write from your organisation’s domain.
+    </li>
+    <li>
+      <strong>Source suggestions:</strong> the outlet name, its country and a link to its RSS feed.
+    </li>
+    <li>
+      <strong>Everything else:</strong> partnerships, press and feedback are welcome.
+    </li>
+  </ul>
+
+  <p>
+    For how stories are found and scored, see <a href="/about/">About &amp; Methodology</a>.
+  </p>
+</ProsePage>

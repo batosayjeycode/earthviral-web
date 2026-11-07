@@ -1,0 +1,13 @@
+---
+import { jsonLdString } from '../../lib/structuredData.ts';
+
+interface Props {
+  data: unknown;
+}
+
+// Serialise in frontmatter: expressions referencing `Astro` inside <script> attributes
+// are evaluated outside the component scope.
+const json = jsonLdString(Astro.props.data);
+---
+
+<script type="application/ld+json" set:html={json} />

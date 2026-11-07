@@ -1,0 +1,104 @@
+---
+/** Static Regional Hub — /region/[regionSlug]/ (all 6 regions). */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JsonLd from '../../components/seo/JsonLd.astro';
+import { collectionGraph } from '../../lib/structuredData.ts';
+import HubHeader from '../../components/hub/HubHeader.astro';
+import StoryGrid from '../../components/hub/StoryGrid.astro';
+import LinkCloud from '../../components/hub/LinkCloud.astro';
+import { getClusters, getCountries } from '../../lib/data.ts';
+import { REGIONS, TIER_META, flagEmoji } from '../../lib/taxonomy.ts';
+
+export const getStaticPaths = (() =>
+  REGIONS.map((region) => ({
+    params: { regionSlug: region.slug },
+    props: { region },
+  }))) satisfies GetStaticPaths;
+
+interface Props {
+  region: (typeof REGIONS)[number];
+}
+
+const { region } = Astro.props;
+const [clusters, countries] = await Promise.all([getClusters(), getCountries()]);
+const inRegion = countries.filter((c) => c.region === region.name);
+const stories = clusters.filter((c) => c.region === region.name);
+
+const otherRegions = REGIONS.map((r) => ({
+  name: r.name,
+  href: `/region/${r.slug}/`,
+  current: r.slug === region.slug,
+}));
+---
+
+<BaseLayout
+  title={`Trending Viral News in ${region.name} Today | EarthViral`}
+  description={`What is going viral across ${region.name}: country-by-country viral scores and the top trending stories, with links to original publishers. Updated every 3 hours.`}
+  noindex={stories.length === 0}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: `/region/${region.slug}/`,
+      name: `Trending viral news in ${region.name}`,
+      description: `Viral activity across ${region.name}, by country and by story.`,
+      breadcrumbs: [{ name: region.name }],
+      clusters: stories,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: region.name }]}
+    eyebrow="Regional hub"
+    title={`Trending viral news in ${region.name}`}
+    intro={`Viral activity across ${region.name}, by country and by story, from the latest 3-hour batch.`}
+    stats={[
+      {
+        label: 'Active countries',
+        value: inRegion.filter((c) => c.intensityTier !== 'quiet').length,
+      },
+      { label: 'Viral topics', value: stories.length },
+    ]}
+  />
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    {inRegion.length > 0 && (
+      <section aria-labelledby="region-countries">
+        <h2 id="region-countries" class="font-display text-2xl font-bold text-white">
+          Countries in {region.name}
+        </h2>
+        <ul class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {inRegion.map((c) => (
+            <li>
+              <a
+                href={`/country/${c.slug}/`}
+                class="flex items-center gap-3 rounded-2xl border border-line bg-land/60 p-4 hover:border-cyan/40"
+              >
+                <span aria-hidden="true" class="text-2xl">
+                  {flagEmoji(c.code)}
+                </span>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-semibold text-white">{c.name}</span>
+                  <span class="block text-xs text-ink-faint">
+                    {TIER_META[c.intensityTier].label} · {c.topicCount}{' '}
+                    {c.topicCount === 1 ? 'topic' : 'topics'}
+                  </span>
+                </span>
+                <span class="tier-badge" data-tier={c.intensityTier}>
+                  {c.viralScore}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+    <StoryGrid title={`Top stories in ${region.name}`} clusters={stories} />
+    <LinkCloud title="Other regions" links={otherRegions} />
+  </div>
+</BaseLayout>

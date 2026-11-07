@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # Data commits from the 3-hour batch are pushed with GITHUB_TOKEN, which does not trigger
+  # `push` workflows — so CI also runs (and deploys) when that workflow completes.
+  workflow_run:
+    workflows: ['Update viral batch']
+    types: [completed]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # Astro 7 needs Node >= 22.23.4
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+        env:
+          # Optional site settings (see .env.example); unset values are left out of the build.
+          PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
+          PUBLIC_ADSENSE_CLIENT: ${{ vars.PUBLIC_ADSENSE_CLIENT }}
+          PUBLIC_ADSENSE_SLOT_STORY: ${{ vars.PUBLIC_ADSENSE_SLOT_STORY }}
+          PUBLIC_ADSENSE_SLOT_HUB: ${{ vars.PUBLIC_ADSENSE_SLOT_HUB }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      # Pipeline unit tests + SEO and integrity tests against dist/
+      - run: npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+
+  qa:
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      # Test the exact build that will be deployed.
+      - uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+      # Accessibility (axe, WCAG 2.1 AA), responsive overflow, search, country drawer,
+      # deferred map on touch devices, no-JS fallback, 404 and CLS / LCP.
+      - run: npm run qa
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: qa-report
+          path: qa-report
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [check, qa]
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_run'
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=earthviral-web --branch=main
+      # Plan §9.4 (5): submit this batch's new/updated story URLs to IndexNow once live.
+      # Best-effort: skipped without INDEXNOW_KEY and never fails the deploy.
+      - uses: actions/checkout@v4
+        if: github.event_name == 'workflow_run'
+      - uses: actions/setup-node@v4
+        if: github.event_name == 'workflow_run'
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Ping IndexNow
+        if: github.event_name == 'workflow_run'
+        continue-on-error: true
+        timeout-minutes: 17
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: npm ci && npm run indexnow

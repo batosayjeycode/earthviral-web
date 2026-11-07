@@ -1,0 +1,146 @@
+/* Beacon markers (plan §5.2). Sizes are core diameters per tier. */
+.ev-beacon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ev-beacon__core {
+  grid-area: 1 / 1;
+  border-radius: 9999px;
+}
+
+.ev-beacon[data-tier='active'] .ev-beacon__core {
+  width: 6px;
+  height: 6px;
+  background: #06b6d4;
+  animation: ev-breath 4s ease-in-out infinite;
+}
+
+.ev-beacon[data-tier='high'] .ev-beacon__core {
+  width: 8px;
+  height: 8px;
+  background: #00f0ff;
+  box-shadow: 0 0 8px 1px rgb(0 240 255 / 0.8);
+}
+
+.ev-beacon[data-tier='surge'] .ev-beacon__core {
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #00f0ff 0 32%, #a855f7 48%);
+  box-shadow:
+    0 0 10px 2px rgb(168 85 247 / 0.85),
+    0 0 22px 6px rgb(168 85 247 / 0.35);
+}
+
+.ev-beacon__ring {
+  grid-area: 1 / 1;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  border: 1.5px solid #00f0ff;
+  opacity: 0;
+  animation: ev-sonar 2.8s cubic-bezier(0.2, 0.6, 0.35, 1) infinite;
+  animation-delay: var(--ring-delay, 0s);
+}
+
+.ev-beacon[data-tier='surge'] .ev-beacon__ring {
+  width: 12px;
+  height: 12px;
+  border-color: #a855f7;
+  animation-duration: 1.8s;
+}
+
+.ev-beacon__pill {
+  position: absolute;
+  left: calc(50% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  border-radius: 9999px;
+  padding: 1px 7px;
+  font: 600 11px/18px var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: #f5f3ff;
+  background: rgb(36 18 74 / 0.88);
+  border: 1px solid rgb(168 85 247 / 0.6);
+  pointer-events: none;
+}
+
+.ev-beacon__pill--compact {
+  color: #00f0ff;
+  background: rgb(7 13 25 / 0.85);
+  border-color: rgb(0 240 255 / 0.4);
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.ev-beacon:focus-visible {
+  outline: 2px solid #00f0ff;
+  outline-offset: 2px;
+  border-radius: 9999px;
+}
+
+@keyframes ev-sonar {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(4.2);
+    opacity: 0;
+  }
+}
+
+@keyframes ev-breath {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Off-screen / hidden tab: freeze all marker animations. */
+.ev-paused .ev-beacon * {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ev-beacon * {
+    animation: none !important;
+  }
+  .ev-beacon__ring {
+    display: none;
+  }
+}
+
+/* Tooltip anchoring: card sits above the point, or below it near the top edge. */
+.ev-tooltip {
+  transform: translate(-50%, calc(-100% - 16px));
+}
+.ev-tooltip[data-placement='below'] {
+  transform: translate(-50%, 16px);
+}
+
+/* Attribution control styled for the dark theme. */
+.ev-map .maplibregl-ctrl.maplibregl-ctrl-attrib,
+.ev-map .maplibregl-ctrl.maplibregl-ctrl-attrib.maplibregl-compact {
+  background: rgb(7 13 25 / 0.75);
+  color: #64748b;
+}
+.ev-map .maplibregl-ctrl-attrib-button {
+  filter: invert(1) opacity(0.6);
+  background-color: transparent;
+}
+.ev-map .maplibregl-ctrl-attrib a {
+  color: #94a3b8;
+}

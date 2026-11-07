@@ -1,0 +1,56 @@
+---
+/**
+ * Build-time orthographic silhouette of the globe (plan §5.1). It is inlined in the
+ * static HTML so the hero paints before any JavaScript runs, and is drawn with the
+ * same centre and on-screen size as the MapLibre globe that replaces it.
+ */
+import { geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import type { GeometryCollection, Topology } from 'topojson-specification';
+import world from 'world-atlas/countries-110m.json';
+
+interface Props {
+  center: [number, number];
+  /** Fraction of the hero height the globe diameter occupies (must match WorldMap). */
+  diameterRatio: number;
+}
+
+const { center, diameterRatio } = Astro.props;
+const SIZE = 1000;
+
+const topo = world as unknown as Topology<{ countries: GeometryCollection }>;
+const land = feature(topo, topo.objects.countries);
+const projection = geoOrthographic()
+  .rotate([-center[0], -center[1]])
+  .translate([SIZE / 2, SIZE / 2])
+  .scale(SIZE / 2 - 2)
+  .precision(0.6);
+const path = geoPath(projection).digits(0);
+
+const landPath = path(land) ?? '';
+const graticulePath = path(geoGraticule10()) ?? '';
+---
+
+<svg
+  aria-hidden="true"
+  viewBox={`0 0 ${SIZE} ${SIZE}`}
+  class="ev-silhouette pointer-events-none absolute top-1/2 left-1/2 aspect-square -translate-x-1/2 -translate-y-1/2"
+  style={`height: ${diameterRatio * 100}%`}
+>
+  <defs>
+    <radialGradient id="ev-ocean" cx="40%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#0b1730"></stop>
+      <stop offset="100%" stop-color="#070d19"></stop>
+    </radialGradient>
+  </defs>
+  <circle
+    cx={SIZE / 2}
+    cy={SIZE / 2}
+    r={SIZE / 2 - 2}
+    fill="url(#ev-ocean)"
+    stroke="#1e293b"
+    stroke-width="2"
+  ></circle>
+  <path d={graticulePath} fill="none" stroke="#0f1a2e" stroke-width="1"></path>
+  <path d={landPath} fill="#0f172a" stroke="#1e293b" stroke-width="1.2"></path>
+</svg>

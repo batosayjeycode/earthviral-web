@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchDialog from '../components/search/SearchDialog.tsx';
+---
+
+<!-- Target of the homepage WebSite SearchAction (/search/?q=…). Results pages stay out of the index. -->
+<BaseLayout
+  title="Search | EarthViral"
+  description="Search viral stories, countries and topics on EarthViral."
+  noindex
+>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-3xl font-bold text-white">Search</h1>
+    <p class="mt-2 text-ink-muted">Find viral stories by keyword, country or topic.</p>
+    <div class="mt-6">
+      <!-- client:only: the query is read from ?q= on first render, so there is no server HTML to match. -->
+      <SearchDialog client:only="react" mode="page" />
+      <noscript>
+        <p class="rounded-2xl border border-line p-6 text-ink-muted">
+          Search needs JavaScript. You can browse stories by{' '}
+          <a class="text-cyan underline" href="/#trending">
+            trending topics
+          </a>
+          or by{' '}
+          <a class="text-cyan underline" href="/category/politics-government/">
+            category
+          </a>
+          .
+        </p>
+      </noscript>
+    </div>
+  </section>
+</BaseLayout>

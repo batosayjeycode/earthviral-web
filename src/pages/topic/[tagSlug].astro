@@ -1,0 +1,87 @@
+---
+/** Static Entity Tag Page — /topic/[tagSlug]/ (one per entity tag across all clusters). */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JsonLd from '../../components/seo/JsonLd.astro';
+import { collectionGraph } from '../../lib/structuredData.ts';
+import HubHeader from '../../components/hub/HubHeader.astro';
+import StoryGrid from '../../components/hub/StoryGrid.astro';
+import InternalLinkPills from '../../components/seo/InternalLinkPills.astro';
+import { getTopics, type TopicRecord } from '../../lib/data.ts';
+
+export const getStaticPaths = (async () => {
+  const topics = await getTopics();
+  return topics.map((topic) => ({ params: { tagSlug: topic.slug }, props: { topic } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  topic: TopicRecord;
+}
+
+const { topic } = Astro.props;
+const countryCount = new Set(topic.clusters.map((c) => c.countryCode)).size;
+
+// Co-occurring tags first, then the most active other topics, for onward links.
+const coTags = new Map<string, { name: string; slug: string }>();
+for (const c of topic.clusters)
+  for (const t of c.entityTags) if (t.slug !== topic.slug) coTags.set(t.slug, t);
+const others = (await getTopics())
+  .filter((t) => t.slug !== topic.slug && !coTags.has(t.slug))
+  .slice(0, 12);
+---
+
+<BaseLayout
+  title={`${topic.name} — Viral News & Trending Stories | EarthViral`}
+  description={`Viral stories about ${topic.name} across ${countryCount} ${countryCount === 1 ? 'country' : 'countries'}, with AI summaries, viral scores and links to the original reporting.`}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: `/topic/${topic.slug}/`,
+      name: topic.name,
+      description: `Viral stories about ${topic.name}.`,
+      breadcrumbs: [{ name: `#${topic.name.replace(/\s+/g, '')}` }],
+      clusters: topic.clusters,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: `#${topic.name.replace(/\s+/g, '')}` }]}
+    eyebrow="Topic"
+    title={topic.name}
+    intro={`Every viral story EarthViral is tracking about ${topic.name}, ranked by Viral Activity Score.`}
+    stats={[
+      { label: 'Stories', value: topic.clusters.length },
+      { label: 'Countries', value: countryCount },
+      { label: 'Peak score', value: `${topic.peakScore}/100` },
+    ]}
+  />
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    <StoryGrid title={`Stories about ${topic.name}`} clusters={topic.clusters} />
+    {coTags.size > 0 && (
+      <div>
+        <h2 class="text-xs font-semibold tracking-widest text-ink-faint uppercase">
+          Related topics
+        </h2>
+        <div class="mt-3">
+          <InternalLinkPills tags={[...coTags.values()]} label="Related topics" />
+        </div>
+      </div>
+    )}
+    {others.length > 0 && (
+      <div>
+        <h2 class="text-xs font-semibold tracking-widest text-ink-faint uppercase">
+          More trending topics
+        </h2>
+        <div class="mt-3">
+          <InternalLinkPills tags={others} label="More trending topics" />
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

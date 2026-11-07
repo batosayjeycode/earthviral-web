@@ -1,0 +1,35 @@
+---
+import NewsCard from '../news/NewsCard.astro';
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { batchMeta } from '../../lib/data.ts';
+
+interface Props {
+  title: string;
+  clusters: ViralClusterStaticRecord[];
+  emptyText?: string;
+}
+
+const {
+  title,
+  clusters,
+  emptyText = 'No viral stories in this batch. Check back after the next 3-hour update.',
+} = Astro.props;
+const id = `grid-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+---
+
+<section aria-labelledby={id}>
+  <h2 id={id} class="font-display text-2xl font-bold text-white" data-pagefind-ignore>
+    {title}
+  </h2>
+  {clusters.length > 0 ? (
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {clusters.map((c) => (
+        <NewsCard cluster={c} referenceIso={batchMeta.generatedAt} />
+      ))}
+    </div>
+  ) : (
+    <p class="mt-5 rounded-2xl border border-dashed border-line p-8 text-center text-ink-muted">
+      {emptyText}
+    </p>
+  )}
+</section>

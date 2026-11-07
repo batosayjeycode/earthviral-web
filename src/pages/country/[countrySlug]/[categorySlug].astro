@@ -1,0 +1,112 @@
+---
+/**
+ * Static Country + Category Hub — /country/[countrySlug]/[categorySlug]/
+ * Only combinations with at least one story are generated, so no thin pages exist.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import JsonLd from '../../../components/seo/JsonLd.astro';
+import { collectionGraph } from '../../../lib/structuredData.ts';
+import HubHeader from '../../../components/hub/HubHeader.astro';
+import StoryGrid from '../../../components/hub/StoryGrid.astro';
+import LinkCloud from '../../../components/hub/LinkCloud.astro';
+import { getClusters, getCountries } from '../../../lib/data.ts';
+import { CATEGORIES, categoryBySlug, flagEmoji } from '../../../lib/taxonomy.ts';
+import type { CategorySlug } from '../../../lib/taxonomy.ts';
+import type { CountryMasterRecord, ViralClusterStaticRecord } from '../../../lib/types.ts';
+
+export const getStaticPaths = (async () => {
+  const [countries, clusters] = await Promise.all([getCountries(), getClusters()]);
+  return countries.flatMap((country) =>
+    CATEGORIES.map((cat) => ({
+      country,
+      categorySlug: cat.slug,
+      stories: clusters.filter(
+        (c) => c.countryCode === country.code && c.categorySlug === cat.slug,
+      ),
+    }))
+      .filter((x) => x.stories.length > 0)
+      .map(({ country, categorySlug, stories }) => ({
+        params: { countrySlug: country.slug, categorySlug },
+        props: { country, categorySlug, stories },
+      })),
+  );
+}) satisfies GetStaticPaths;
+
+interface Props {
+  country: CountryMasterRecord;
+  categorySlug: CategorySlug;
+  stories: ViralClusterStaticRecord[];
+}
+
+const { country, categorySlug, stories } = Astro.props;
+const category = categoryBySlug(categorySlug)!;
+const clusters = await getClusters();
+const own = clusters.filter((c) => c.countryCode === country.code);
+
+const siblingLinks = CATEGORIES.map((cat) => ({
+  cat,
+  count: own.filter((c) => c.categorySlug === cat.slug).length,
+}))
+  .filter((x) => x.count > 0)
+  .map(({ cat, count }) => ({
+    name: cat.name,
+    href: `/country/${country.slug}/${cat.slug}/`,
+    meta: count,
+    current: cat.slug === categorySlug,
+  }));
+
+const elsewhere = clusters
+  .filter((c) => c.categorySlug === categorySlug && c.countryCode !== country.code)
+  .slice(0, 6);
+---
+
+<BaseLayout
+  title={`Viral ${category.name} News in ${country.name} Today | EarthViral`}
+  description={`Trending ${category.name.toLowerCase()} stories in ${country.name}, with AI summaries, viral scores and links to the original reporting. Updated every 3 hours.`}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: `/country/${country.slug}/${categorySlug}/`,
+      name: `Viral ${category.name} news in ${country.name}`,
+      description: `Trending ${category.name.toLowerCase()} stories in ${country.name}.`,
+      breadcrumbs: [
+        { name: country.name, path: `/country/${country.slug}/` },
+        { name: category.name },
+      ],
+      clusters: stories,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: country.name, href: `/country/${country.slug}/` }, { name: category.name }]}
+    eyebrow={`${country.name} · ${category.name}`}
+    title={`Viral ${category.name} news in ${country.name}`}
+    intro={`${stories.length} trending ${category.name.toLowerCase()} ${stories.length === 1 ? 'story' : 'stories'} in ${country.name} from the latest batch.`}
+  >
+    <span slot="title-prefix" aria-hidden="true" class="mr-3">
+      {flagEmoji(country.code)}
+    </span>
+  </HubHeader>
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    <LinkCloud title={`${country.name} by category`} links={siblingLinks} />
+    <StoryGrid title={`${category.name} in ${country.name}`} clusters={stories} />
+    {elsewhere.length > 0 && (
+      <div>
+        <StoryGrid title={`${category.name} around the world`} clusters={elsewhere} />
+        <a
+          href={`/category/${categorySlug}/`}
+          class="mt-5 inline-block text-sm font-semibold text-cyan hover:underline"
+        >
+          All {category.name} stories worldwide →
+        </a>
+      </div>
+    )}
+  </div>
+</BaseLayout>

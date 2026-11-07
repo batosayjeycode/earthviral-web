@@ -1,0 +1,62 @@
+---
+/**
+ * Zero-JS locator globe for story and hub pages (plan §3.1 step 3): a build-time
+ * orthographic SVG centred on the country, with the country highlighted by tier.
+ */
+import { geoCircle, geoOrthographic, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import type { Feature } from 'geojson';
+import type { GeometryCollection, Topology } from 'topojson-specification';
+import world from 'world-atlas/countries-110m.json';
+import type { IntensityTier } from '../../lib/taxonomy.ts';
+
+interface Props {
+  isoNumeric: string;
+  centroid: [number, number];
+  tier: IntensityTier;
+  label: string;
+  size?: number;
+}
+
+const { isoNumeric, centroid, tier, label, size = 220 } = Astro.props;
+
+const topo = world as unknown as Topology<{ countries: GeometryCollection }>;
+const all = feature(topo, topo.objects.countries).features as Feature[];
+const projection = geoOrthographic()
+  .rotate([-centroid[0], -Math.max(-60, Math.min(60, centroid[1]))])
+  .translate([size / 2, size / 2])
+  .scale(size / 2 - 1)
+  .precision(1);
+const path = geoPath(projection).digits(1);
+
+const land =
+  path({ type: 'FeatureCollection', features: all.filter((f) => f.id !== isoNumeric) }) ?? '';
+const target = all.find((f) => f.id === isoNumeric);
+// Small countries (e.g. Singapore) are missing at 110m resolution — fall back to a marker ring.
+const highlight = target
+  ? (path(target) ?? '')
+  : (path(geoCircle().center(centroid).radius(1.2)()) ?? '');
+const [cx, cy] = projection(centroid) ?? [size / 2, size / 2];
+
+const fill: Record<IntensityTier, string> = {
+  quiet: '#1e293b',
+  active: '#0e7490',
+  high: '#0891b2',
+  surge: '#7c3aed',
+};
+---
+
+<svg
+  viewBox={`0 0 ${size} ${size}`}
+  width={size}
+  height={size}
+  role="img"
+  aria-label={label}
+  class="mx-auto h-auto max-w-full"
+>
+  <circle cx={size / 2} cy={size / 2} r={size / 2 - 1} fill="#070d19" stroke="#1e293b"></circle>
+  <path d={land} fill="#0f172a" stroke="#1e293b" stroke-width="0.6"></path>
+  <path d={highlight} fill={fill[tier]} stroke="#00f0ff" stroke-width="1.2"></path>
+  <circle cx={cx} cy={cy} r="4" fill="#00f0ff"></circle>
+  <circle cx={cx} cy={cy} r="9" fill="none" stroke="#00f0ff" stroke-opacity="0.45"></circle>
+</svg>

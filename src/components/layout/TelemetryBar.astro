@@ -1,0 +1,113 @@
+---
+import type { BatchMeta } from '../../lib/types.ts';
+import { formatDateWib, formatTimeWib } from '../../lib/format.ts';
+import { VAS } from '../../lib/scoring.ts';
+
+interface Props {
+  meta: BatchMeta;
+}
+
+const { meta } = Astro.props;
+const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.generatedAt)}`;
+---
+
+<div
+  class="border-b border-line bg-ocean/90 backdrop-blur"
+  role="region"
+  aria-label="Batch telemetry"
+>
+  <!-- tabindex: the strip scrolls horizontally on narrow screens; keyboard users must reach it. -->
+  <dl
+    tabindex="0"
+    data-stale-after-hours={VAS.staleAfterHours}
+    class="tabular relative mx-auto flex h-9 max-w-7xl items-center gap-x-5 overflow-x-auto px-4 text-xs whitespace-nowrap text-ink-muted [scrollbar-width:none] sm:px-6"
+  >
+    <div class="flex items-center gap-1.5 font-semibold text-cyan">
+      <span aria-hidden="true">⚡</span>
+      <dt>Snapshot</dt>
+      <dd class="sr-only">{snapshot}</dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dd class="text-white">{meta.totals.activeCountries}</dd>
+      <dt>Active Countries</dt>
+    </div>
+    <div class="flex gap-1.5">
+      <dd class="text-white">{meta.totals.viralTopics}</dd>
+      <dt>Viral Topics</dt>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Global Index</dt>
+      <dd class="text-white">{meta.totals.globalIndex}/100</dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Updated</dt>
+      <dd>
+        <time datetime={meta.generatedAt} data-relative-time class="text-white">
+          {snapshot}
+        </time>
+      </dd>
+    </div>
+    <div class="flex gap-1.5">
+      <dt>Next Update</dt>
+      <dd class="text-white">
+        <time datetime={meta.nextUpdateAt} data-next-update>
+          {formatTimeWib(meta.nextUpdateAt)}
+        </time>
+      </dd>
+    </div>
+    {/* Revealed by the script below when the snapshot is older than VAS.staleAfterHours.
+        It is the last item in a fixed-height row, so showing it shifts nothing. */}
+    {!meta.isSeed && (
+      <div
+        data-stale-note
+        hidden
+        class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300"
+      >
+        <dt class="sr-only">Data notice</dt>
+        <dd>Data delayed — updates normally run every 3 hours</dd>
+      </div>
+    )}
+    {meta.isSeed && (
+      <div class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300">
+        <dt class="sr-only">Data notice</dt>
+        <dd>Sample data — not real news</dd>
+      </div>
+    )}
+  </dl>
+  {/*
+    Inline and placed right after the bar so it runs while the page is parsed, before the bar
+    is first painted: rewriting the times later would shift the row (a layout shift).
+    Swaps the absolute snapshot time for "28m ago" and reveals the "Data delayed" notice
+    (the page is static, so staleness is only knowable in the browser).
+  */}
+  <script is:inline>
+    (() => {
+      const bar = document.currentScript?.previousElementSibling;
+      const time = bar?.querySelector('time[data-relative-time]');
+      if (!bar || !time) return;
+      const ageMs = Date.now() - Date.parse(time.dateTime);
+      const minutes = Math.round(ageMs / 60000);
+      const hours = Math.floor(minutes / 60);
+      time.title = time.textContent.trim();
+      time.textContent =
+        minutes < 1
+          ? 'just now'
+          : minutes < 60
+            ? `${minutes}m ago`
+            : hours < 48
+              ? `${hours}h ${minutes % 60}m ago`
+              : `${Math.floor(hours / 24)}d ago`;
+
+      const note = bar.querySelector('[data-stale-note]');
+      const staleAfterMs = Number(bar.dataset.staleAfterHours) * 3600000;
+      if (note && staleAfterMs > 0 && ageMs > staleAfterMs) {
+        note.hidden = false;
+        const next = bar.querySelector('time[data-next-update]');
+        if (next) {
+          next.title = next.textContent.trim();
+          next.textContent = 'Overdue';
+        }
+      }
+    })();
+  </script>
+</div>

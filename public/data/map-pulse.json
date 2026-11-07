@@ -1,0 +1,535 @@
+{
+  "batchId": "batch-202611070426",
+  "generatedAt": "2026-11-07T04:26:00Z",
+  "nextUpdateAt": "2026-11-07T05:00:00Z",
+  "countries": [
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "trump-appoints-miller-chief-of-staff",
+        "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
+        "headline": "Donald Trump Appoints Stephen Miller As White House Chief Of Staff",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 97,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 90,
+      "intensityTier": "surge",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "kenyan-cult-leader-receives-prison-sentence",
+        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
+        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 87,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "NL",
+      "isoNumeric": "528",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "centroid": [
+        5.3,
+        52.2
+      ],
+      "viralScore": 81,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "activists-breach-microsoft-amsterdam-data-center",
+        "canonicalPath": "/news/nl/activists-breach-microsoft-amsterdam-data-center/",
+        "headline": "Activists Enter Microsoft Data Center Construction Site In Amsterdam",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 81,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "centroid": [
+        117,
+        -2.5
+      ],
+      "viralScore": 80,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
+        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
+        "headline": "Investigation Expands Into Illegal Wiretapping Of President Prabowo",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 77,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+        "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "French Security Forces Mobilize Amid Escalating Nationwide Protests",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "farage-says-he-is-worried-trump-will-step-up",
+        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
+        "headline": "President Trump Weighs Potential Military Action Against Iran",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "House Arrest Of Former Prime Minister Najib Subject To Review",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Gadi Eisenkot Receives Arab-Led Parties Support For Israeli Premiership",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "obi-faults-court-ruling-sacking-atiku-as-adc-candidate",
+        "canonicalPath": "/news/ng/obi-faults-court-ruling-sacking-atiku-as-adc-candidate/",
+        "headline": "Atiku Abubakar Reaffirms 2027 Presidential Bid Amid Legal Crisis",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "man-arrested-following-little-india-chase",
+        "canonicalPath": "/news/sg/man-arrested-following-little-india-chase/",
+        "headline": "Suspect Arrested In Little India Following Pursuit And Collision",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 51,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 53,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
+        "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
+        "headline": "Hong Kong Activist Joshua Wong Sentenced To Ten Years In Prison",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 51,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "bank-of-england-raises-interest-rates-to-4-the",
+        "canonicalPath": "/news/gb/bank-of-england-raises-interest-rates-to-4-the/",
+        "headline": "Bank Of England Increases Interest Rates To Four Percent Level",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 49,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 46,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "nigeria-japan-u17-womens-world-cup-final",
+        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
+        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 45,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 41,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "giovanna-gold-financial-loss-reality-show",
+        "canonicalPath": "/news/br/giovanna-gold-financial-loss-reality-show/",
+        "headline": "Actress Giovanna Gold Reports Financial Loss Following Reality Show",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 39,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 38,
+      "intensityTier": "active",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "karnataka-government-policy-updates",
+        "canonicalPath": "/news/in/karnataka-government-policy-updates/",
+        "headline": "Diverse Policy Issues Emerging Within The Karnataka State Government",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 35,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 37,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "russian-diesel-tankers-divert-from-us",
+        "canonicalPath": "/news/ru/russian-diesel-tankers-divert-from-us/",
+        "headline": "Russian Diesel Tankers Divert Following Failed United States Deal",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 36,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 36,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Real Madrid And LaLiga Address Controversy Over Kylian Mbappe Remarks",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 36,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 32,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
+        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
+        "headline": "African National Congress Faces Losses In South African Local Polls",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 32,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
+      "centroid": [
+        12.6,
+        42.8
+      ],
+      "viralScore": 30,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "bomb-threats-disrupt-several-flights-across-europe",
+        "canonicalPath": "/news/it/bomb-threats-disrupt-several-flights-across-europe/",
+        "headline": "European Air Travel Disrupted By Series Of Bomb Threat Incidents",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 30,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 30,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "lead-s-korea-to-expand-anti-piracy-mission-closer",
+        "canonicalPath": "/news/kr/lead-s-korea-to-expand-anti-piracy-mission-closer/",
+        "headline": "South Korea To Deploy Additional Naval Assets To Hormuz Region",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 30,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 30,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Arabia Implements Capital Punishment For Hashish Trafficking",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 30,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "as-ibero-american-summit-gets-underway-in-madrid-foreign",
+        "canonicalPath": "/news/mx/as-ibero-american-summit-gets-underway-in-madrid-foreign/",
+        "headline": "Spain And Mexico Officials Highlight Strong Diplomatic Relations",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 18,
+        "intensityTier": "quiet"
+      }
+    },
+    {
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
+      "centroid": [
+        122,
+        12.5
+      ],
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "duchess-of-sussexs-estranged-half-brother-person-of-interest",
+        "canonicalPath": "/news/ph/duchess-of-sussexs-estranged-half-brother-person-of-interest/",
+        "headline": "Thomas Markle Jr Identified As Person Of Interest In Abuse Inquiry",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 18,
+        "intensityTier": "quiet"
+      }
+    }
+  ]
+}
