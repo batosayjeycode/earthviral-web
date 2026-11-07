@@ -5,7 +5,8 @@
 # 3-hour runs). When stale it opens one issue labelled `stale-data` — GitHub emails repo
 # watchers — and keeps that issue's report current; when data is fresh again it closes it.
 #
-# Like every scheduled workflow, this only runs from the default branch.
+# Started hourly by the Cloudflare Worker in workers/scheduler (GitHub's own cron never fired
+# for this repository); the schedule below is a backup. Duplicate runs are harmless.
 # Optional repository variables: SITE_URL (default https://earthviral.com),
 # STALE_AFTER_HOURS (default 9).
 name: Staleness watchdog

@@ -1,0 +1,24 @@
+# EarthViral scheduler — a Cloudflare Worker that starts the GitHub Actions workflows on a
+# timer, because GitHub's own `schedule` trigger never fired for this repository.
+#
+# Deploy once (from this directory):
+#   npx wrangler@latest login
+#   npx wrangler@latest secret put GITHUB_TOKEN   # fine-grained PAT: this repo, Actions: read & write
+#   npx wrangler@latest deploy
+#
+# Keep the crons in sync with .github/workflows/*.yml and VAS.batchCronMinute (a unit test
+# in scripts/lib/scheduler.test.ts enforces this).
+name = "earthviral-scheduler"
+main = "index.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[vars]
+GITHUB_REPO = "batosayjeycode/earthviral-web"
+GITHUB_REF = "main"
+
+[triggers]
+crons = [
+  "17 2-23/3 * * *", # Update viral batch — 00:17, 03:17, … WIB
+  "41 * * * *",      # Staleness watchdog — hourly
+]
