@@ -3,17 +3,34 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 51,
+  "viralScore": 53,
   "intensityTier": "active",
-  "generatedAt": "2026-11-07T20:17:00Z",
+  "generatedAt": "2026-11-07T23:17:00Z",
   "clusters": [
+    {
+      "slug": "lee-hsien-loong-australia-asia-ties",
+      "canonicalPath": "/news/au/lee-hsien-loong-australia-asia-ties/",
+      "headline": "Senior Minister Lee Hsien Loong Urges Deeper Ties For Australia",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Senior Minister Lee Hsien Loong recommended that Australia enhance its economic and security engagement with Southeast Asia.",
+        "Greater regional cooperation could help nations function as development partners rather than focusing on US-China tensions."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/australia-should-deepen-ties-with-asia-to-give-itself-more-room-to-pursue-its-interests-sm-lee"
+      }
+    },
     {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Usman Khawaja alleges that the Australian cricket team was aware of the 2018 ball-tampering plot during the South Africa tour.",
@@ -30,7 +47,7 @@
       "headline": "President-Elect Trump Offers Press Secretary Role To Dana White",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 27,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President-elect Donald Trump has extended an offer for the White House press secretary position to Dana White.",
@@ -42,30 +59,13 @@
       }
     },
     {
-      "slug": "who-gives-a-crap-data-breach",
-      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
-      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 35,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
-        "Exposed customer information includes names, contact details, and total purchase history."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
-      }
-    },
-    {
       "slug": "fatal-shooting-krakow-main-square",
       "canonicalPath": "/news/au/fatal-shooting-krakow-main-square/",
       "headline": "Multiple Fatalities Reported Following Shooting In Krakow Square",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 27,
-      "intensityTier": "active",
+      "viralScore": 24,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "A shooting incident occurred at the main square in Krakow, Poland.",
         "Authorities confirmed that at least five individuals have died."
@@ -73,6 +73,23 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-08/five-killed-in-krakow/107360360"
+      }
+    },
+    {
+      "slug": "who-gives-a-crap-data-breach",
+      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
+      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 22,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
+        "Exposed customer information includes names, contact details, and total purchase history."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
       }
     },
     {
@@ -93,23 +110,6 @@
       }
     },
     {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Kalyn Ponga Guides New Zealand To Rugby League World Cup Final",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 20,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Kalyn Ponga made an immediate return to professional rugby league after being sidelined for 23 days with a fractured arm.",
-        "The New Zealand squad secured a spot in the Rugby League World Cup final following a victory in their recent semifinal match."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
-      }
-    },
-    {
       "slug": "ben-roberts-smith-supplements-collaboration",
       "canonicalPath": "/news/au/ben-roberts-smith-supplements-collaboration/",
       "headline": "Ben Roberts-Smith Engages In Partnership With Supplements Business",
@@ -124,6 +124,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/07/ben-roberts-smith-collaborates-gym-business-influencer-war-crimes-pre-workout-supplement-ntwnfb"
+      }
+    },
+    {
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Kalyn Ponga Guides New Zealand To Rugby League World Cup Final",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Kalyn Ponga made an immediate return to professional rugby league after being sidelined for 23 days with a fractured arm.",
+        "The New Zealand squad secured a spot in the Rugby League World Cup final following a victory in their recent semifinal match."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
       }
     },
     {

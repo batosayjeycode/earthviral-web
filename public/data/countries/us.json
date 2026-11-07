@@ -3,17 +3,51 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 87,
+  "viralScore": 86,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-07T20:17:00Z",
+  "generatedAt": "2026-11-07T23:17:00Z",
   "clusters": [
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "President Trump Nominates UFC Executive Dana White As Press Secretary",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 83,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Donald Trump has publicly invited UFC CEO Dana White to serve as the White House press secretary.",
+        "The position has remained largely unfilled since the departure of Karoline Leavitt earlier this year in August."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
+      }
+    },
+    {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Reactions Follow Results Of United States Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 77,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
+        "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
+      }
+    },
     {
       "slug": "trump-appoints-miller-chief-of-staff",
       "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
       "headline": "President Trump Appoints Stephen Miller As White House Chief Of Staff",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 84,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump has named Stephen Miller as his new White House chief of staff, replacing outgoing aide Susie Wiles.",
@@ -30,7 +64,7 @@
       "headline": "Pope Leo XIV Begins South America Tour Following Lung Cancer Surgery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 81,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Uruguay to commence a 12-day, three-country tour of South America.",
@@ -42,63 +76,12 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "President Trump Offers Press Secretary Position To Dana White",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 78,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Donald Trump has offered the White House press secretary role to UFC CEO Dana White.",
-        "The appointment offer follows recent security concerns at the White House complex involving an armed suspect."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
-      }
-    },
-    {
-      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
-      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
-      "headline": "International Reactions Follow Results Of United States Midterms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
-        "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
-        "Democratic leadership is currently debating its legislative strategy, including policies on artificial intelligence and economic affordability."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "thomas-markle-arrested-florida-abuse-charges",
       "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
       "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 69,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
@@ -110,12 +93,29 @@
       }
     },
     {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
+        "Democratic leadership is currently debating its legislative strategy, including policies on artificial intelligence and economic affordability."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "senior-officials-resign-after-us-midterm-elections",
       "canonicalPath": "/news/us/senior-officials-resign-after-us-midterm-elections/",
       "headline": "Senior US Officials Resign Following Midterm Election Outcomes",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Several senior Department of Justice officials, including the head of the civil rights division and a federal prosecutor, have resigned.",
@@ -132,7 +132,7 @@
       "headline": "Houston Mayor Restricts City Police Cooperation With Federal ICE",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Houston police officers will no longer transfer individuals to federal immigration authorities following minor traffic stops.",
@@ -149,7 +149,7 @@
       "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
@@ -166,7 +166,7 @@
       "headline": "United States Conducts Additional Targeted Strikes Within Iran",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 40,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump confirmed the execution of additional limited military strikes against targets in Iran.",
