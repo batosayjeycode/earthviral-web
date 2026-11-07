@@ -47,19 +47,36 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Latest main when the job *starts* (a queued run's trigger commit may be stale).
+          ref: main
+
+      # Runs are started by the Cloudflare Worker in workers/scheduler (GitHub's own cron
+      # never fired here); this schedule is a backup. If both fire, the later one skips.
+      - name: Skip a scheduled run if a batch ran in the last 2 hours
+        id: guard
+        if: github.event_name == 'schedule'
+        run: |
+          age=$(node -p "Math.floor((Date.now() - Date.parse(require('./src/data/generated/batch-meta.json').generatedAt)) / 60000)")
+          echo "Latest batch is ${age} min old."
+          if [ "$age" -lt 120 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; echo "Skipping."; fi
 
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != 'true'
         with:
           # Astro 7 needs Node >= 22.23.4
           node-version-file: .nvmrc
           cache: npm
 
       - run: npm ci
+        if: steps.guard.outputs.skip != 'true'
 
       - name: Pipeline unit tests
+        if: steps.guard.outputs.skip != 'true'
         run: npm run test:unit
 
       - name: Generate batch
+        if: steps.guard.outputs.skip != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -80,11 +97,11 @@ jobs:
           npm run update:viral -- "${args[@]}"
 
       - name: Verify the site builds with the new data
-        if: ${{ !inputs.dry_run }}
+        if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
         run: npm run build
 
       - name: Commit generated data
-        if: ${{ !inputs.dry_run }}
+        if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -94,6 +111,8 @@ jobs:
             exit 0
           fi
           git commit -m "chore(data): viral batch $(node -p "require('./src/data/generated/batch-meta.json').batchId")"
-          git push
+          # main may have moved during the run (e.g. a merged PR); data commits rebase cleanly.
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       # IndexNow is pinged by ci.yml after the deploy (this run must finish before CI starts).

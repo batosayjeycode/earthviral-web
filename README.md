@@ -127,7 +127,20 @@ Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up b
 
 Visitors also see a **"Data delayed"** badge in the telemetry bar once the snapshot passes the same 9-hour threshold, and "Next Update" then reads "Overdue". Because pages are static, this check runs in the browser. Run `node scripts/check-staleness.ts` to check locally.
 
-Scheduled workflows, including the batch and the watchdog, only run from the **default branch (`main`)**.
+**Scheduler (Cloudflare Worker).** GitHub's own `schedule` trigger never fired for this repository, so `workers/scheduler/` starts the workflows on a timer instead, through GitHub's "run workflow" API: the batch at `17 2-23/3 * * *` and the watchdog at `41 * * * *`. The workflows keep their `schedule` triggers as a backup, and a scheduled batch skips itself if a batch already ran within the last 2 hours.
+
+One-time setup:
+
+1. Create a **fine-grained GitHub token**: GitHub → Settings → Developer settings → Fine-grained tokens. Give it access to **only this repository**, with **Repository permissions → Actions: Read and write**. Choose an expiry and note it, since the scheduler stops working when the token expires.
+2. From `workers/scheduler/`, run:
+   ```bash
+   npx wrangler@latest login
+   npx wrangler@latest secret put GITHUB_TOKEN   # paste the token
+   npx wrangler@latest deploy
+   ```
+3. Check Cloudflare → Workers & Pages → `earthviral-scheduler` → **Logs** after the next :17 or :41. Each trigger logs `Dispatched … on main`, and the run appears in GitHub Actions as "workflow_dispatch".
+
+Keep the crons in `wrangler.toml` in sync with the workflow files and `VAS.batchCronMinute`; `scripts/lib/scheduler.test.ts` enforces this.
 
 **Cloudflare Pages setup:** create `earthviral-web` as a **Direct Upload** project. Don't connect the Git integration as well, or every push deploys twice and the second deploy skips CI.
 
@@ -148,6 +161,7 @@ Scheduled workflows, including the batch and the watchdog, only run from the **d
 │   ├── ci.yml                                 check → qa → deploy (Wrangler) + IndexNow
 │   ├── staleness-watchdog.yml                 hourly freshness check → GitHub issue
 │   └── update-viral-batch.yml                 3-hour batch and data commit
+├── workers/scheduler/                         Cloudflare Worker cron → starts the batch and watchdog
 ├── scripts/                                   batch pipeline (plain Node TypeScript)
 │   ├── generate-viral-batch.ts                CLI entry point
 │   ├── indexnow.ts                            post-deploy IndexNow ping
