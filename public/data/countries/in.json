@@ -3,20 +3,38 @@
   "name": "India",
   "slug": "india",
   "region": "Asia",
-  "viralScore": 44,
+  "viralScore": 54,
   "intensityTier": "active",
-  "generatedAt": "2026-11-07T05:04:00Z",
+  "generatedAt": "2026-11-07T05:24:00Z",
   "clusters": [
+    {
+      "slug": "delhi-air-quality-grap-iii-restrictions",
+      "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
+      "headline": "Delhi Implements GRAP III Restrictions Amid Declining Air Quality",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Air Quality Index in Delhi reached levels between 364 and 382, prompting authorities to implement GRAP III protocols.",
+        "The Directorate of Education mandated that all schools up to class 5 shift to hybrid learning due to pollution concerns."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/city/delhi/severe-season-grap-iii-in-force-as-air-quality-plummets/articleshow/135624300.cms"
+      }
+    },
     {
       "slug": "us-offers-20-million-reward-for-information-on-irans",
       "canonicalPath": "/news/in/us-offers-20-million-reward-for-information-on-irans/",
-      "headline": "US offers $20 million reward for information on Iran's nuclear programme",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 41,
+      "headline": "United States Offers Reward For Details Regarding Iran Nuclear Program",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Times of India reports: US offers $20 million reward for information on Iran's nuclear programme"
+        "The United States government is offering a $20 million reward for actionable information regarding Iran's nuclear activities.",
+        "The reward announcement coincides with recent claims made by Donald Trump regarding his past role in addressing Iran's nuclear threat."
       ],
       "primarySource": {
         "publisherName": "Times of India",
@@ -26,13 +44,14 @@
     {
       "slug": "google-faces-school-laptop-ai-lawsuit-says-its-features",
       "canonicalPath": "/news/in/google-faces-school-laptop-ai-lawsuit-says-its-features/",
-      "headline": "Google faces school laptop AI lawsuit; says its features help young people",
+      "headline": "Google Faces Legal Challenge Over Artificial Intelligence In Schools",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Times of India reports: Google faces school laptop AI lawsuit; says its features help young people"
+        "A legal challenge has been initiated concerning the use of AI in laptops distributed to school students.",
+        "Google contends that its AI tools are designed to provide educational benefits to young users."
       ],
       "primarySource": {
         "publisherName": "Times of India",
@@ -42,13 +61,14 @@
     {
       "slug": "mediation-efforts-between-us-and-iran-continue-to-prevent",
       "canonicalPath": "/news/in/mediation-efforts-between-us-and-iran-continue-to-prevent/",
-      "headline": "Mediation efforts between US and Iran continue to prevent escalation, says Qatar PM",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
+      "headline": "Qatar Prime Minister Provides Update On US And Iran Negotiations",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Times of India reports: Mediation efforts between US and Iran continue to prevent escalation, says Qatar PM"
+        "Qatar is actively mediating between the United States and Iran to maintain stability.",
+        "The primary focus of current discussions is the prevention of further regional escalation."
       ],
       "primarySource": {
         "publisherName": "Times of India",
@@ -107,29 +127,12 @@
       }
     },
     {
-      "slug": "india-diwali-festival-lights-celebrations",
-      "canonicalPath": "/news/in/india-diwali-festival-lights-celebrations/",
-      "headline": "Millions Across India Commemorate The Annual Diwali Celebrations",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 29,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Diwali, known as the festival of lights, is being observed by millions of people across India.",
-        "Traditional practices for the event include illuminating homes and temples with lamps."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro"
-      }
-    },
-    {
       "slug": "trump-appoints-stephen-miller-chief-staff",
       "canonicalPath": "/news/in/trump-appoints-stephen-miller-chief-staff/",
       "headline": "President Trump Appoints Stephen Miller As The New Chief Of Staff",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 22,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Stephen Miller has been selected to serve as the White House Chief of Staff.",
@@ -155,6 +158,23 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/trumps-fawning-tech-bros-under-scrutiny-after-midterm-rout-for-president/articleshow/135613502.cms"
+      }
+    },
+    {
+      "slug": "india-diwali-festival-lights-celebrations",
+      "canonicalPath": "/news/in/india-diwali-festival-lights-celebrations/",
+      "headline": "Millions Across India Commemorate The Annual Diwali Celebrations",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Diwali, known as the festival of lights, is being observed by millions of people across India.",
+        "Traditional practices for the event include illuminating homes and temples with lamps."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro"
       }
     }
   ]
