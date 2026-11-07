@@ -6,28 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "Did a data centre revolt affect the US midterm election results?",
-  "seoTitle": "Did a data centre revolt affect the US midterm election…",
-  "metaDescription": "3 independent outlets are covering this story. BBC reports: Did a data centre revolt affect the US midterm election results?",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "Global Market Volatility Follows United States Midterm Election Results",
+  "seoTitle": "US Midterm Results Impact Markets and Global Relations",
+  "metaDescription": "Following the US midterm elections, international markets experienced sharp declines as global leaders assessed the impact on alliances and data policy.",
   "aiSummaryBullets": [
-    "BBC reports: Did a data centre revolt affect the US midterm election results?",
-    "ABC reports: Albanese weighs in on 'very significant' US midterm results",
-    "Yonhap reports: (2nd LD) Cheong Wa Dae says U.S. midterm results unlikely to affect S. Korea-U.S. alliance"
+    "Financial markets in South Korea and other regions experienced significant downward pressure following the US midterm election outcome.",
+    "International observers and officials are evaluating how the results may influence ongoing foreign policy, alliances, and data infrastructure regulations.",
+    "Analysts are examining the potential connection between localized public opposition to data center expansion and broader electoral performance."
   ],
-  "aiContextParagraph": "This story about United States has been reported by ABC, BBC and Yonhap since 2026-11-05. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "3 independent outlets are covering this story.",
-  "viralScore": 74,
+  "aiContextParagraph": "The conclusion of the United States midterm elections has triggered varied reactions across global financial and political sectors. South Korea’s KOSPI index saw a notable decline, falling below 5,000 points, as markets responded to broader volatility linked to the US results. Beyond domestic financial concerns, foreign governments are closely monitoring the political shift for potential implications on bilateral ties, with reports highlighting concerns from Israeli officials regarding future diplomatic cooperation. Additionally, the election discourse featured discussions on the role of large-scale infrastructure, specifically data centers, with some observers suggesting that community resistance to these projects influenced voter behavior. As global leaders, including those in Australia, analyze the significance of the vote, the broader impact of the election results on international alliances remains a subject of ongoing scrutiny by geopolitical analysts and state officials.",
+  "whyItIsViral": "The story has gained attention across five independent international outlets due to the combined impact of financial market instability and concerns over long-term geopolitical alliances.",
+  "viralScore": 64,
   "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 36,
-    "publicSearchSignalScore": 92,
+    "verifiedPublisherCount": 5,
+    "coverageVelocityScore": 38,
+    "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-05T12:42:31Z",
-  "lastUpdatedBatchAt": "2026-11-06T21:06:00Z",
+  "lastUpdatedBatchAt": "2026-11-07T04:26:00Z",
   "sources": [
     {
       "publisherName": "Yonhap",
@@ -35,6 +35,13 @@
       "articleTitle": "(2nd LD) Cheong Wa Dae says U.S. midterm results unlikely to affect S. Korea-U.S. alliance",
       "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315",
       "publishedAt": "2026-11-05T12:42:31Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(News Focus) AI rout prompts KOSPI to tumble below 5,000 after U.S. midterm elections",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261106004400320",
+      "publishedAt": "2026-11-06T02:44:40Z"
     },
     {
       "publisherName": "Tempo",
@@ -63,17 +70,41 @@
       "articleTitle": "Albanese weighs in on 'very significant' US midterm results",
       "articleUrl": "https://www.abc.net.au/news/2026-11-07/albanese-trump-iran-war-midterms-chogm-budget/107356124",
       "publishedAt": "2026-11-06T18:50:09Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "How the US midterm elections reflected resistance to data centres",
+      "articleUrl": "https://www.aljazeera.com/economy/2026/11/7/how-the-us-midterm-elections-reflected-resistance-to-data-centres?traffic_source=rss",
+      "publishedAt": "2026-11-07T03:22:41Z"
     }
   ],
-  "entityTags": [],
+  "entityTags": [
+    {
+      "name": "US midterm elections",
+      "slug": "us-midterm-elections"
+    },
+    {
+      "name": "KOSPI",
+      "slug": "kospi"
+    },
+    {
+      "name": "Foreign policy",
+      "slug": "foreign-policy"
+    },
+    {
+      "name": "Data centers",
+      "slug": "data-centers"
+    }
+  ],
   "relatedInCountrySlugs": [
-    "could-the-us-midterms-further-isolate-israel-in-washington",
     "democrats-swept-the-midterms-what-comes-next-for-the",
-    "trump-appoints-miller-chief-of-staff"
+    "senior-officials-resign-after-us-midterm-elections",
+    "us-conducts-new-military-strikes-iran"
   ],
   "relatedInCategorySlugs": [
-    "doctor-anywhere-hit-by-data-breach",
-    "eci-issues-fresh-work-allocation-order-brings-back-oversight",
-    "singapore-authorities-urge-strict-limits-on-ai-agent-autonomy"
+    "trumps-fawning-tech-bros-under-scrutiny-after-midterm-rout",
+    "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
+    "indonesian-regional-governments-receive-multiple-awards"
   ]
 }
