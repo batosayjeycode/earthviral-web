@@ -45,6 +45,15 @@ export const RETENTION_DAYS = VAS.retentionDays;
 const HOUR = 3_600_000;
 export const iso = (d: Date) => d.toISOString().replace(/\.\d{3}Z$/, 'Z');
 
+/**
+ * Next scheduled batch strictly after `from`: 3-hour WIB slots plus the cron minute
+ * (00:17, 03:17, … WIB with VAS.batchCronMinute = 17).
+ */
+export function nextScheduledBatch(from: Date, minute: number = VAS.batchCronMinute): Date {
+  const offset = minute * 60_000;
+  return new Date(nextWibBoundary(new Date(from.getTime() - offset)).getTime() + offset);
+}
+
 /** Next 3-hour boundary on the WIB clock (00:00, 03:00, … WIB) strictly after `from`. */
 export function nextWibBoundary(from: Date): Date {
   const period = 3 * HOUR;

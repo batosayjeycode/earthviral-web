@@ -58,7 +58,7 @@ import {
   loadExistingClusters,
   loadRetiredStories,
   mergeRetired,
-  nextWibBoundary,
+  nextScheduledBatch,
   writeStaticJson,
 } from './lib/builders/writeStaticJson.ts';
 
@@ -433,7 +433,7 @@ async function main() {
       retired,
       batchId,
       generatedAt: now,
-      nextUpdateAt: nextWibBoundary(now),
+      nextUpdateAt: nextScheduledBatch(now),
       isSeed: false,
       pipeline: {
         provider: summarizer.model

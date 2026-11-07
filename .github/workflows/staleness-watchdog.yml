@@ -12,7 +12,8 @@ name: Staleness watchdog
 
 on:
   schedule:
-    - cron: '23 * * * *'
+    # Hourly, off the top of the hour (GitHub delays or drops runs most often at :00).
+    - cron: '41 * * * *'
   workflow_dispatch:
 
 permissions:

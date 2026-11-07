@@ -15,7 +15,7 @@ import {
 import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
-import { nextWibBoundary } from './builders/writeStaticJson.ts';
+import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
 import { slugify, tokenize, truncate } from './intelligence/text.ts';
 
 const NOW = new Date('2026-11-06T03:00:00Z');
@@ -678,5 +678,38 @@ describe('model output normalisation', async () => {
       globalThis.fetch = realFetch;
       delete process.env.GEMINI_API_KEY;
     }
+  });
+});
+
+describe('batch schedule', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { VAS } = await import('../../src/lib/scoring.ts');
+
+  it('next scheduled batch is the next 3-hour WIB slot plus the cron minute', () => {
+    // 03:20Z (10:20 WIB) → next slot 12:17 WIB = 05:17Z
+    assert.equal(
+      nextScheduledBatch(new Date('2026-11-06T03:20:00Z')).toISOString(),
+      '2026-11-06T05:17:00.000Z',
+    );
+    // A run that starts at 05:17:30Z (slightly late) → the following slot, 08:17Z
+    assert.equal(
+      nextScheduledBatch(new Date('2026-11-06T05:17:30Z')).toISOString(),
+      '2026-11-06T08:17:00.000Z',
+    );
+    // A manual run at 05:05Z, before the slot's minute → still today's 05:17Z
+    assert.equal(
+      nextScheduledBatch(new Date('2026-11-06T05:05:00Z')).toISOString(),
+      '2026-11-06T05:17:00.000Z',
+    );
+  });
+
+  it('the workflow cron minute matches VAS.batchCronMinute', async () => {
+    const yml = await readFile(
+      new URL('../../.github/workflows/update-viral-batch.yml', import.meta.url),
+      'utf8',
+    );
+    const cron = /cron: '(\d+) 2-23\/3 \* \* \*'/.exec(yml);
+    assert.ok(cron, 'batch cron not found');
+    assert.equal(Number(cron[1]), VAS.batchCronMinute);
   });
 });
