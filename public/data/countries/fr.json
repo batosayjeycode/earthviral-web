@@ -3,9 +3,9 @@
   "name": "France",
   "slug": "france",
   "region": "Europe",
-  "viralScore": 87,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-07T14:17:00Z",
+  "viralScore": 80,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-07T16:53:00Z",
   "clusters": [
     {
       "slug": "france-more-than-600-000-protest-as-anger-grows",
@@ -13,7 +13,7 @@
       "headline": "France Deploys Security Forces Ahead Of Fresh Nationwide Protests",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 84,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "French authorities have deployed 70,000 security personnel to manage upcoming demonstrations amid rising tensions.",
@@ -30,8 +30,8 @@
       "headline": "Former Professional Tennis Player Gael Monfils Named Davis Cup Captain",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The French Tennis Federation has officially appointed Gael Monfils as the new captain for France's Davis Cup squad.",
         "Monfils, aged 40, transitioned into this coaching role shortly after concluding his professional playing career last month."
@@ -42,13 +42,30 @@
       }
     },
     {
+      "slug": "melenchon-launches-2027-presidential-election-campaign",
+      "canonicalPath": "/news/fr/melenchon-launches-2027-presidential-election-campaign/",
+      "headline": "Jean-Luc Mélenchon Outlines 2027 French Presidential Platform",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Jean-Luc Mélenchon officially launched his 2027 presidential campaign, proposing reforms to retirement age, wages, and essential food costs.",
+        "The candidate remains a leading figure for the French left and maintains significant popularity among Gen Z voters."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/france/20261107-french-2027-presidential-elections-how-m%C3%A9lenchon-became-a-gen-z-favourite"
+      }
+    },
+    {
       "slug": "jean-luc-melenchon-presidential-foreign-policy",
       "canonicalPath": "/news/fr/jean-luc-melenchon-presidential-foreign-policy/",
       "headline": "Jean-Luc Mélenchon Outlines Foreign Policy Ahead Of Presidential Race",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 45,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Jean-Luc Mélenchon has established himself as a prominent contender for the upcoming French presidential election.",
         "His published manifesto prioritizes the situation in Gaza while de-emphasizing the ongoing conflict in Ukraine."
@@ -64,7 +81,7 @@
       "headline": "Cyberattack On French Bank Leads To Massive Financial Data Breach",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 46,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A French financial institution recently experienced a significant cyberattack resulting in a reported theft of $100 million.",
@@ -73,6 +90,23 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/economy/article/2026/11/05/european-banks-wake-up-to-scale-of-vulnerability-after-cyberattack-on-french-bank_6772537_19.html"
+      }
+    },
+    {
+      "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
+      "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
+      "headline": "Large Protests Across France Demand Higher Wages And School Funding",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Demonstrators organized mass rallies in various French cities to voice concerns regarding economic conditions.",
+        "Protesters specifically requested pay increases to address the impact of rising living costs."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/05/france-workers-strike-march-for-dignified-wage_6772768_7.html"
       }
     },
     {
@@ -90,23 +124,6 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/06/french-lawyers-to-sue-interior-minister-over-protester-mutilations_6773533_7.html"
-      }
-    },
-    {
-      "slug": "mbappe-returns-to-france-national-team",
-      "canonicalPath": "/news/fr/mbappe-returns-to-france-national-team/",
-      "headline": "Kylian Mbappe Returns To France Squad Under Coach Zinedine Zidane",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kylian Mbappe has been selected for the upcoming France squad following his recovery from a September injury.",
-        "The national team manager Zinedine Zidane has included Pablo Pagis, marking the player's first-ever call-up."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/zidane-gives-pagis-first-france-call-up-6532116"
       }
     },
     {
@@ -144,37 +161,20 @@
       }
     },
     {
-      "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
-      "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
-      "headline": "Large Protests Across France Demand Higher Wages And School Funding",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 30,
+      "slug": "mbappe-returns-to-france-national-team",
+      "canonicalPath": "/news/fr/mbappe-returns-to-france-national-team/",
+      "headline": "Kylian Mbappe Returns To France Squad Under Coach Zinedine Zidane",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Demonstrators organized mass rallies in various French cities to voice concerns regarding economic conditions.",
-        "Protesters specifically requested pay increases to address the impact of rising living costs."
+        "Kylian Mbappe has been selected for the upcoming France squad following his recovery from a September injury.",
+        "The national team manager Zinedine Zidane has included Pablo Pagis, marking the player's first-ever call-up."
       ],
       "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/05/france-workers-strike-march-for-dignified-wage_6772768_7.html"
-      }
-    },
-    {
-      "slug": "protesters-march-in-cities-across-france-as-unions-stage",
-      "canonicalPath": "/news/fr/protesters-march-in-cities-across-france-as-unions-stage/",
-      "headline": "Discrepancy In Participation Figures Reported During French Strikes",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Labor unions and the interior ministry released conflicting estimates regarding nationwide protest participation.",
-        "The interior ministry stated that 600,000 individuals gathered across various French cities."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs"
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/zidane-gives-pagis-first-france-call-up-6532116"
       }
     }
   ]
