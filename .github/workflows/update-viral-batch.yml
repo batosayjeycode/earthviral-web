@@ -13,10 +13,11 @@ name: Update viral batch
 
 on:
   schedule:
-    # Every 3 hours on the WIB clock (UTC+7): 00:00, 03:00, … WIB = 17:00, 20:00, … UTC.
-    # (Plan text says `0 */3 * * *`; that fires at 07:00, 10:00 … WIB and would not match
-    # the "Next Update: 03:00 WIB" telemetry, so the hours are shifted to WIB boundaries.)
-    - cron: '0 2-23/3 * * *'
+    # Every 3 hours on the WIB clock (UTC+7), 17 minutes past: 00:17, 03:17, … WIB
+    # = 17:17, 20:17, … UTC. Kept off :00, where GitHub most often delays or drops scheduled
+    # runs. The minute must match VAS.batchCronMinute (src/lib/scoring.ts), which the site's
+    # "Next Update" time uses. (Plan text says `0 */3 * * *`, i.e. 07:00, 10:00 … WIB.)
+    - cron: '17 2-23/3 * * *'
   workflow_dispatch:
     inputs:
       provider:

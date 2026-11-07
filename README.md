@@ -113,7 +113,7 @@ All settings are optional environment variables. Anything left unset is simply o
 2. **qa:** Playwright and axe against that exact build. It covers WCAG 2.1 AA, horizontal overflow, console errors, search, the country drawer, the tap-to-load map on touch devices, the no-JS fallback, 404s and throttled CLS/LCP. On failure, screenshots are uploaded as `qa-report`.
 3. **deploy** (`main` and batch runs only): `wrangler pages deploy dist` to the `earthviral-web` Cloudflare Pages project. After a batch run, it then pings IndexNow (best-effort).
 
-**Batch** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock (00:00, 03:00, … WIB) and can be started manually from the Actions tab. It runs the unit tests, generates the batch, checks that the site still builds, and commits `src/data/generated` and `public/data`.
+**Batch** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock, at 17 minutes past (00:17, 03:17, … WIB), away from the busy top of the hour and can be started manually from the Actions tab. It runs the unit tests, generates the batch, checks that the site still builds, and commits `src/data/generated` and `public/data`.
 
 Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up batch commits through its `workflow_run` trigger.
 

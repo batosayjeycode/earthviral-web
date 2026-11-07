@@ -26,6 +26,12 @@ export const VAS = {
   /** How long a removed story's URL keeps redirecting to its country page. */
   redirectRetentionDays: 90,
   /**
+   * Minute past the hour the scheduled batch runs (cron `17 2-23/3 * * *`). Kept off :00,
+   * where GitHub most often delays or drops scheduled runs. Keep in sync with
+   * .github/workflows/update-viral-batch.yml — the site's "Next Update" time uses it.
+   */
+  batchCronMinute: 17,
+  /**
    * Data older than this is "delayed": the telemetry bar shows a notice and the staleness
    * watchdog (.github/workflows/staleness-watchdog.yml) opens a GitHub issue. Batches run
    * every 3 hours, so 9 hours means three missed runs.
