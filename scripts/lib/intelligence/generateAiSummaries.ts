@@ -674,8 +674,10 @@ export function createSummarizer(provider: ProviderName): Summarizer {
     );
   const model =
     provider === 'gemini'
-      ? (process.env.GEMINI_MODEL ?? 'gemini-3.1-flash-lite')
-      : (process.env.OPENAI_MODEL ?? 'gpt-5-mini');
+      ? process.env.GEMINI_MODEL?.trim() || 'gemini-3.1-flash-lite'
+      : process.env.OPENAI_MODEL?.trim() || 'gpt-5-mini';
+  // `||`, not `??`: GitHub Actions passes an unset repository variable as an empty string,
+  // and an empty model name made every request 404.
   const call = provider === 'gemini' ? callGemini : callOpenAI;
 
   return {

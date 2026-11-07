@@ -28,6 +28,10 @@ on:
         description: 'Dry run (fetch, cluster and score, but write and commit nothing)'
         type: boolean
         default: false
+      resummarize_fallback:
+        description: 'Re-summarise stories that still have non-AI text (uses extra AI calls)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -66,10 +70,12 @@ jobs:
           AI_CONCURRENCY: ${{ vars.AI_CONCURRENCY }}
           PROVIDER: ${{ inputs.provider || 'auto' }}
           DRY_RUN: ${{ inputs.dry_run || false }}
+          RESUMMARIZE_FALLBACK: ${{ inputs.resummarize_fallback || false }}
         run: |
           args=()
           if [ "$PROVIDER" != "auto" ]; then args+=(--provider "$PROVIDER"); fi
           if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          if [ "$RESUMMARIZE_FALLBACK" = "true" ]; then args+=(--resummarize-fallback); fi
           npm run update:viral -- "${args[@]}"
 
       - name: Verify the site builds with the new data

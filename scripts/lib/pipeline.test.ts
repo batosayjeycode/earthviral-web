@@ -567,3 +567,22 @@ describe('fallback detection', async () => {
     );
   });
 });
+
+describe('model environment variables', async () => {
+  const { createSummarizer } = await import('./intelligence/generateAiSummaries.ts');
+  it('treats an empty GEMINI_MODEL / OPENAI_MODEL (unset GitHub variable) as unset', () => {
+    process.env.GEMINI_API_KEY = 'k';
+    process.env.OPENAI_API_KEY = 'k';
+    process.env.GEMINI_MODEL = '';
+    process.env.OPENAI_MODEL = '  ';
+    try {
+      assert.equal(createSummarizer('gemini').model, 'gemini-3.1-flash-lite');
+      assert.equal(createSummarizer('openai').model, 'gpt-5-mini');
+      process.env.GEMINI_MODEL = 'gemini-custom';
+      assert.equal(createSummarizer('gemini').model, 'gemini-custom');
+    } finally {
+      for (const k of ['GEMINI_API_KEY', 'OPENAI_API_KEY', 'GEMINI_MODEL', 'OPENAI_MODEL'])
+        delete process.env[k];
+    }
+  });
+});
