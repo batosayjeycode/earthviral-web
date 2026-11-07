@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611071007",
-  "generatedAt": "2026-11-07T10:07:00Z",
-  "nextUpdateAt": "2026-11-07T11:17:00Z",
+  "batchId": "batch-202611071417",
+  "generatedAt": "2026-11-07T14:17:00Z",
+  "nextUpdateAt": "2026-11-07T17:17:00Z",
   "countries": [
     {
       "code": "US",
@@ -12,16 +12,16 @@
         -98.5,
         39.5
       ],
-      "viralScore": 99,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
-        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-        "headline": "Market Reactions Follow Democratic Success In 2026 Midterm Elections",
+        "slug": "trump-appoints-miller-chief-of-staff",
+        "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
+        "headline": "Donald Trump Names Stephen Miller As White House Chief Of Staff",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 96,
+        "viralScore": 98,
         "intensityTier": "surge"
       }
     },
@@ -34,7 +34,7 @@
         117,
         -2.5
       ],
-      "viralScore": 94,
+      "viralScore": 89,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
@@ -43,74 +43,8 @@
         "headline": "Officials Call For Thorough Investigation Into Prabowo Wiretapping",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 91,
+        "viralScore": 86,
         "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 91,
-      "intensityTier": "surge",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "delhi-air-quality-grap-iii-restrictions",
-        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
-        "headline": "Delhi Tightens Air Pollution Measures As AQI Levels Remain Elevated",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 88,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "farage-says-he-is-worried-trump-will-step-up",
-        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Political And Security Tensions Escalate Amid Iran Conflict Reports",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 80,
-        "intensityTier": "high"
       }
     },
     {
@@ -122,104 +56,82 @@
         2.4,
         46.6
       ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 9,
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 10,
       "topTopic": {
         "slug": "france-more-than-600-000-protest-as-anger-grows",
         "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "French Security Forces Mobilize Amid Escalating Nationwide Protests",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 76,
+        "headline": "France Deploys Security Forces Ahead Of Fresh Nationwide Protests",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
       "centroid": [
-        102.3,
-        3.8
+        53.7,
+        32.4
       ],
-      "viralScore": 79,
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "farage-says-he-is-worried-trump-will-step-up",
+        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
+        "headline": "Heightened Tensions Between United States And Iran Spark Concerns",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 86,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 80,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "high-court-najib-house-arrest-order",
-        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-        "headline": "Legal Uncertainties Delay Najib Razak’s Transition To House Arrest",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 76,
+        "slug": "kenyan-cult-leader-receives-prison-sentence",
+        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
+        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 77,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NL",
-      "isoNumeric": "528",
-      "name": "Netherlands",
-      "slug": "netherlands",
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
       "centroid": [
-        5.3,
-        52.2
+        79,
+        22
       ],
-      "viralScore": 67,
+      "viralScore": 70,
       "intensityTier": "high",
-      "topicCount": 1,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "activists-breach-microsoft-amsterdam-data-center",
-        "canonicalPath": "/news/nl/activists-breach-microsoft-amsterdam-data-center/",
-        "headline": "Activists Enter Microsoft Data Center Construction Site In Amsterdam",
+        "slug": "delhi-air-quality-grap-iii-restrictions",
+        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
+        "headline": "Delhi Tightens Air Pollution Measures As AQI Levels Remain Elevated",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
         "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
-        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
-        "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 63,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Real Madrid And LaLiga Address Controversy Over Kylian Mbappe Remarks",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -232,60 +144,104 @@
         172,
         -41.5
       ],
-      "viralScore": 61,
+      "viralScore": 68,
       "intensityTier": "high",
-      "topicCount": 1,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "new-zealand-2026-election-results",
-        "canonicalPath": "/news/nz/new-zealand-2026-election-results/",
-        "headline": "New Zealand Election Results Remain Unclear As Count Progresses",
+        "slug": "new-zealand-election-too-close",
+        "canonicalPath": "/news/nz/new-zealand-election-too-close/",
+        "headline": "New Zealand Election Results Remain Too Close To Call After Voting",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
+        "viralScore": 67,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
       "centroid": [
-        8.1,
-        9.6
+        102.3,
+        3.8
       ],
-      "viralScore": 60,
+      "viralScore": 68,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "nigeria-power-supply-improvement-expected",
-        "canonicalPath": "/news/ng/nigeria-power-supply-improvement-expected/",
-        "headline": "Nigeria Minister Expects Electricity Supply To Improve Within Days",
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Legal Uncertainties Delay Najib Razak’s Transition To House Arrest",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 57,
-        "intensityTier": "active"
+        "viralScore": 65,
+        "intensityTier": "high"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
       "centroid": [
-        103.82,
-        1.35
+        -3.7,
+        40.2
       ],
-      "viralScore": 54,
-      "intensityTier": "active",
-      "topicCount": 10,
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 1,
       "topTopic": {
-        "slug": "smrt-escalator-standing-policy-trial",
-        "canonicalPath": "/news/sg/smrt-escalator-standing-policy-trial/",
-        "headline": "SMRT Trial Encourages Commuters To Stand Anywhere On Escalators",
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Real Madrid And LaLiga Address Controversy Over Kylian Mbappe Remarks",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Rainfall Causes Widespread Flooding In Gaza Displacement Camps",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NL",
+      "isoNumeric": "528",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "centroid": [
+        5.3,
+        52.2
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "activists-breach-microsoft-amsterdam-data-center",
+        "canonicalPath": "/news/nl/activists-breach-microsoft-amsterdam-data-center/",
+        "headline": "Activists Enter Microsoft Data Center Construction Site In Amsterdam",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 51,
+        "viralScore": 59,
         "intensityTier": "active"
       }
     },
@@ -298,7 +254,7 @@
         104,
         35
       ],
-      "viralScore": 52,
+      "viralScore": 58,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -307,117 +263,51 @@
         "headline": "Hong Kong Activist Joshua Wong Sentenced To Ten Years In Prison",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+        "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 55,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "amaechi-claims-buhari-promised-presidential-ticket",
+        "canonicalPath": "/news/ng/amaechi-claims-buhari-promised-presidential-ticket/",
+        "headline": "Rotimi Amaechi Claims Buhari Promised 2022 Presidential Ticket",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 52,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 51,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Receives Arab-Led Parties Support For Israeli Premiership",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AR",
-      "isoNumeric": "032",
-      "name": "Argentina",
-      "slug": "argentina",
-      "centroid": [
-        -63.6,
-        -38.4
-      ],
-      "viralScore": 50,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "argentina-secures-pope-leo-xiv-visit",
-        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
-        "headline": "Argentina Implements Heightened Security For Pope Leo XIV Visit",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "new-zealand-2026-general-election",
-        "canonicalPath": "/news/gb/new-zealand-2026-general-election/",
-        "headline": "New Zealand Citizens Head To The Polls For The 2026 General Election",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 48,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "russian-missile-strikes-target-kyiv",
-        "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
-        "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 47,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 42,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
-        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
-        "headline": "African National Congress Faces Losses In South African Local Polls",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -430,7 +320,7 @@
         138.5,
         36.5
       ],
-      "viralScore": 42,
+      "viralScore": 53,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -439,7 +329,139 @@
         "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 41,
+        "viralScore": 52,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 52,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "russian-diesel-tankers-divert-from-us",
+        "canonicalPath": "/news/ru/russian-diesel-tankers-divert-from-us/",
+        "headline": "Russian Diesel Tankers Divert Following Failed United States Deal",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 51,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 50,
+      "intensityTier": "active",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "smrt-escalator-standing-policy-trial",
+        "canonicalPath": "/news/sg/smrt-escalator-standing-policy-trial/",
+        "headline": "SMRT Trial Encourages Commuters To Stand Anywhere On Escalators",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 47,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 49,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Gadi Eisenkot Receives Arab-Led Parties Support For Israeli Premiership",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 49,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 48,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "russia-strikes-ukraine-energy-infrastructure",
+        "canonicalPath": "/news/ua/russia-strikes-ukraine-energy-infrastructure/",
+        "headline": "Russia Launches Large-Scale Airstrikes Against Ukrainian Energy Grid",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 48,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+        "headline": "British Comedian Russell Brand Convicted Of Rape And Sexual Assault",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "AR",
+      "isoNumeric": "032",
+      "name": "Argentina",
+      "slug": "argentina",
+      "centroid": [
+        -63.6,
+        -38.4
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "argentina-secures-pope-leo-xiv-visit",
+        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
+        "headline": "Argentina Implements Heightened Security For Pope Leo XIV Visit",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -452,16 +474,60 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 37,
+      "viralScore": 34,
       "intensityTier": "active",
       "topicCount": 8,
       "topTopic": {
-        "slug": "former-spouse-arrested-rio-business-dispute",
-        "canonicalPath": "/news/br/former-spouse-arrested-rio-business-dispute/",
-        "headline": "Former Spouse Of Deceased Auctioneer Arrested In Rio De Janeiro",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 34,
+        "slug": "sasha-defende-jo-o-lucas-ap-s-cantor-ser",
+        "canonicalPath": "/news/br/sasha-defende-jo-o-lucas-ap-s-cantor-ser/",
+        "headline": "Sasha Meneghel Defends João Lucas From Online Harassment Attacks",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 31,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 31,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
+        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
+        "headline": "African National Congress Faces Losses In South African Local Polls",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 31,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 31,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "mexico-california-high-speed-rail-projects",
+        "canonicalPath": "/news/mx/mexico-california-high-speed-rail-projects/",
+        "headline": "Progress Reported On Mexico And California High Speed Rail Projects",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 29,
         "intensityTier": "active"
       }
     },
@@ -529,28 +595,6 @@
         "categoryName": "Crime & Law",
         "viralScore": 30,
         "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
-      "centroid": [
-        -102.5,
-        23.6
-      ],
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "as-ibero-american-summit-gets-underway-in-madrid-foreign",
-        "canonicalPath": "/news/mx/as-ibero-american-summit-gets-underway-in-madrid-foreign/",
-        "headline": "Spain And Mexico Officials Highlight Strong Diplomatic Relations",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 18,
-        "intensityTier": "quiet"
       }
     },
     {

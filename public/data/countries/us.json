@@ -3,25 +3,59 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 99,
+  "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-07T10:07:00Z",
+  "generatedAt": "2026-11-07T14:17:00Z",
   "clusters": [
+    {
+      "slug": "trump-appoints-miller-chief-of-staff",
+      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
+      "headline": "Donald Trump Names Stephen Miller As White House Chief Of Staff",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 98,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Donald Trump has appointed Stephen Miller as the new White House Chief of Staff to replace Susie Wiles.",
+        "The appointment follows significant Republican losses in the recent midterm elections, which resulted in Democratic control of both chambers of Congress."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo"
+      }
+    },
     {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Market Reactions Follow Democratic Success In 2026 Midterm Elections",
+      "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 96,
+      "viralScore": 85,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Democratic candidates secured a majority in the U.S. House of Representatives during the 2026 midterm election cycle.",
-        "Global stock markets experienced a sharp decline, with major technology companies seeing a valuation drop of approximately $1 trillion in one day."
+        "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
+        "Democratic leadership is currently debating its legislative strategy, including policies on artificial intelligence and economic affordability."
       ],
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Reactions Follow Results Of United States Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 80,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
+        "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
       }
     },
     {
@@ -30,8 +64,8 @@
       "headline": "Pope Leo XIV Commences Twelve-Day South America Official Visit",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 88,
-      "intensityTier": "surge",
+      "viralScore": 76,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Pope Leo XIV has officially arrived in Uruguay for the first stop of a 12-day tour spanning three South American countries.",
         "The trip marks the pontiff's first international travel since undergoing a surgical procedure for lung cancer at Rome’s Gemelli Hospital."
@@ -42,29 +76,12 @@
       }
     },
     {
-      "slug": "trump-appoints-miller-chief-of-staff",
-      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
-      "headline": "Donald Trump Appoints Stephen Miller As White House Chief Of Staff",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 87,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "President Donald Trump has named Stephen Miller as his new White House chief of staff following the resignation of Susie Wiles.",
-        "Miller is recognized for his long-standing role as a senior advisor and architect of the president's hardline immigration policies."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo"
-      }
-    },
-    {
       "slug": "thomas-markle-arrested-florida-abuse-charges",
       "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
       "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 76,
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
@@ -76,30 +93,13 @@
       }
     },
     {
-      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
-      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
-      "headline": "Global Market Volatility Follows United States Midterm Election Results",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Financial markets in South Korea and other regions experienced significant downward pressure following the US midterm election outcome.",
-        "International observers and officials are evaluating how the results may influence ongoing foreign policy, alliances, and data infrastructure regulations."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
       "slug": "houston-mayor-limits-ice-police-cooperation-2",
       "canonicalPath": "/news/us/houston-mayor-limits-ice-police-cooperation-2/",
       "headline": "Houston Mayor Restricts City Police Cooperation With Federal ICE",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Houston police officers will no longer transfer individuals to federal immigration authorities following minor traffic stops.",
         "The directive specifically targets the interaction between local law enforcement and US Immigration and Customs Enforcement."
@@ -110,12 +110,29 @@
       }
     },
     {
+      "slug": "president-trump-confirms-limited-us-strikes",
+      "canonicalPath": "/news/us/president-trump-confirms-limited-us-strikes/",
+      "headline": "United States Conducts Additional Targeted Strikes Within Iran",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Trump confirmed the execution of additional limited military strikes against targets in Iran.",
+        "Operations have reportedly focused on sites including Qeshm Island and locations near the Strait of Hormuz."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
       "slug": "senior-officials-resign-after-us-midterm-elections",
       "canonicalPath": "/news/us/senior-officials-resign-after-us-midterm-elections/",
       "headline": "Senior US Officials Resign Following Midterm Election Outcomes",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Several senior Department of Justice officials, including the head of the civil rights division and a federal prosecutor, have resigned.",
@@ -132,7 +149,7 @@
       "headline": "Secret Service Arrests Armed Suspect Near The White House Complex",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 52,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "U.S. Secret Service officers detained a man near the White House following suspicious activity.",
@@ -144,37 +161,20 @@
       }
     },
     {
-      "slug": "president-trump-confirms-limited-us-strikes",
-      "canonicalPath": "/news/us/president-trump-confirms-limited-us-strikes/",
-      "headline": "President Trump Confirms Limited United States Strikes On Iran Targets",
+      "slug": "paraguay-president-arrested-bank-crisis",
+      "canonicalPath": "/news/us/paraguay-president-arrested-bank-crisis/",
+      "headline": "Paraguay President Placed Under House Arrest Following Bank Collapse",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Trump stated the United States conducted minor strikes targeting an Iranian air defense system.",
-        "Military action reportedly occurred near Qeshm Island, with local media noting sounds of explosions."
+        "President Santiago Peña resigned from office following a widespread banking crisis.",
+        "The collapse of Ueno Bank, which had recently expanded under the administration, triggered the political turmoil."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "zoo-atlanta-debuts-new-giant-pandas",
-      "canonicalPath": "/news/us/zoo-atlanta-debuts-new-giant-pandas/",
-      "headline": "Zoo Atlanta Welcomes New Giant Pandas Ping Ping And Fu Shuang",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Zoo Atlanta has introduced two giant pandas, Ping Ping and Fu Shuang, to the public.",
-        "The arrival of the pandas marks the end of a two-year period in which the facility housed no giant pandas."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/giant-pandas-ping-ping-and-fu-shuang-make-long-awaited-debut-at-zoo-atlanta/"
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns"
       }
     }
   ]

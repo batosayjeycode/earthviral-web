@@ -3,18 +3,35 @@
   "name": "New Zealand",
   "slug": "new-zealand",
   "region": "Oceania",
-  "viralScore": 61,
+  "viralScore": 68,
   "intensityTier": "high",
-  "generatedAt": "2026-11-07T10:07:00Z",
+  "generatedAt": "2026-11-07T14:17:00Z",
   "clusters": [
+    {
+      "slug": "new-zealand-election-too-close",
+      "canonicalPath": "/news/nz/new-zealand-election-too-close/",
+      "headline": "New Zealand Election Results Remain Too Close To Call After Voting",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Preliminary election results show the National Party and opposition bloc in a near-dead heat.",
+        "Less than 4,000 votes separate the two primary political factions according to current counts."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/new-zealand-election-too-close-to-call-with-over-95-of-votes-counted/a-79883056?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
     {
       "slug": "new-zealand-2026-election-results",
       "canonicalPath": "/news/nz/new-zealand-2026-election-results/",
       "headline": "New Zealand Election Results Remain Unclear As Count Progresses",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 42,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Preliminary vote counts show the National and Labour parties separated by a narrow margin.",
         "Neither major political group is currently projected to secure an outright parliamentary majority."
