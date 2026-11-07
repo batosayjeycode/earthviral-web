@@ -1,30 +1,8 @@
 {
-  "batchId": "batch-202611070920",
-  "generatedAt": "2026-11-07T09:20:00Z",
+  "batchId": "batch-202611071007",
+  "generatedAt": "2026-11-07T10:07:00Z",
   "nextUpdateAt": "2026-11-07T11:17:00Z",
   "countries": [
-    {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
-      "centroid": [
-        117,
-        -2.5
-      ],
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
-        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
-        "headline": "Investigation Continues Into Illegal Wiretapping Of President Prabowo",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 99,
-        "intensityTier": "surge"
-      }
-    },
     {
       "code": "US",
       "isoNumeric": "840",
@@ -34,7 +12,7 @@
         -98.5,
         39.5
       ],
-      "viralScore": 95,
+      "viralScore": 99,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
@@ -43,30 +21,30 @@
         "headline": "Market Reactions Follow Democratic Success In 2026 Midterm Elections",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 92,
+        "viralScore": 96,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
       "centroid": [
-        37.9,
-        0.2
+        117,
+        -2.5
       ],
-      "viralScore": 85,
+      "viralScore": 94,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 82,
-        "intensityTier": "high"
+        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
+        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
+        "headline": "Officials Call For Thorough Investigation Into Prabowo Wiretapping",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 91,
+        "intensityTier": "surge"
       }
     },
     {
@@ -78,8 +56,8 @@
         79,
         22
       ],
-      "viralScore": 83,
-      "intensityTier": "high",
+      "viralScore": 91,
+      "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
         "slug": "delhi-air-quality-grap-iii-restrictions",
@@ -87,29 +65,51 @@
         "headline": "Delhi Tightens Air Pollution Measures As AQI Levels Remain Elevated",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 80,
+        "viralScore": 88,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 83,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "farage-says-he-is-worried-trump-will-step-up",
+        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
+        "headline": "Political And Security Tensions Escalate Amid Iran Conflict Reports",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 83,
         "intensityTier": "high"
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
       "centroid": [
-        102.3,
-        3.8
+        37.9,
+        0.2
       ],
-      "viralScore": 76,
+      "viralScore": 83,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "high-court-najib-house-arrest-order",
-        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-        "headline": "Legal Uncertainties Delay Najib Razak’s Transition To House Arrest",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 73,
+        "slug": "kenyan-cult-leader-receives-prison-sentence",
+        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
+        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 80,
         "intensityTier": "high"
       }
     },
@@ -122,7 +122,7 @@
         2.4,
         46.6
       ],
-      "viralScore": 72,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
@@ -131,7 +131,29 @@
         "headline": "French Security Forces Mobilize Amid Escalating Nationwide Protests",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 69,
+        "viralScore": 76,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 79,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Legal Uncertainties Delay Najib Razak’s Transition To House Arrest",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
@@ -144,7 +166,7 @@
         5.3,
         52.2
       ],
-      "viralScore": 68,
+      "viralScore": 67,
       "intensityTier": "high",
       "topicCount": 1,
       "topTopic": {
@@ -153,7 +175,7 @@
         "headline": "Activists Enter Microsoft Data Center Construction Site In Amsterdam",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 68,
+        "viralScore": 67,
         "intensityTier": "high"
       }
     },
@@ -166,7 +188,7 @@
         134,
         -25.5
       ],
-      "viralScore": 67,
+      "viralScore": 65,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -175,29 +197,7 @@
         "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 66,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "farage-says-he-is-worried-trump-will-step-up",
-        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "President Trump Weighs Potential Military Action Against Iran",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 66,
+        "viralScore": 63,
         "intensityTier": "high"
       }
     },
@@ -210,7 +210,7 @@
         -3.7,
         40.2
       ],
-      "viralScore": 63,
+      "viralScore": 62,
       "intensityTier": "high",
       "topicCount": 1,
       "topTopic": {
@@ -219,30 +219,30 @@
         "headline": "Real Madrid And LaLiga Address Controversy Over Kylian Mbappe Remarks",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 63,
+        "viralScore": 62,
         "intensityTier": "high"
       }
     },
     {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
+      "code": "NZ",
+      "isoNumeric": "554",
+      "name": "New Zealand",
+      "slug": "new-zealand",
       "centroid": [
-        -2,
-        53.5
+        172,
+        -41.5
       ],
-      "viralScore": 60,
+      "viralScore": 61,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-        "headline": "British Comedian Russell Brand Convicted Of Rape And Sexual Assault",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 57,
-        "intensityTier": "active"
+        "slug": "new-zealand-2026-election-results",
+        "canonicalPath": "/news/nz/new-zealand-2026-election-results/",
+        "headline": "New Zealand Election Results Remain Unclear As Count Progresses",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 61,
+        "intensityTier": "high"
       }
     },
     {
@@ -254,16 +254,16 @@
         8.1,
         9.6
       ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 6,
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 8,
       "topTopic": {
         "slug": "nigeria-power-supply-improvement-expected",
         "canonicalPath": "/news/ng/nigeria-power-supply-improvement-expected/",
         "headline": "Nigeria Minister Expects Electricity Supply To Improve Within Days",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 53,
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -312,28 +312,6 @@
       }
     },
     {
-      "code": "AR",
-      "isoNumeric": "032",
-      "name": "Argentina",
-      "slug": "argentina",
-      "centroid": [
-        -63.6,
-        -38.4
-      ],
-      "viralScore": 52,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "argentina-secures-pope-leo-xiv-visit",
-        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
-        "headline": "Argentina Implements Heightened Security For Pope Leo XIV Visit",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 52,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "IL",
       "isoNumeric": "376",
       "name": "Israel",
@@ -356,6 +334,50 @@
       }
     },
     {
+      "code": "AR",
+      "isoNumeric": "032",
+      "name": "Argentina",
+      "slug": "argentina",
+      "centroid": [
+        -63.6,
+        -38.4
+      ],
+      "viralScore": 50,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "argentina-secures-pope-leo-xiv-visit",
+        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
+        "headline": "Argentina Implements Heightened Security For Pope Leo XIV Visit",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 50,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 49,
+      "intensityTier": "active",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "new-zealand-2026-general-election",
+        "canonicalPath": "/news/gb/new-zealand-2026-general-election/",
+        "headline": "New Zealand Citizens Head To The Polls For The 2026 General Election",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 46,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "RU",
       "isoNumeric": "643",
       "name": "Russia",
@@ -364,7 +386,7 @@
         60,
         58
       ],
-      "viralScore": 50,
+      "viralScore": 48,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -373,29 +395,7 @@
         "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 49,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
-      ],
-      "viralScore": 43,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "nigeria-japan-u17-womens-world-cup-final",
-        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
-        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 42,
+        "viralScore": 47,
         "intensityTier": "active"
       }
     },
@@ -422,6 +422,28 @@
       }
     },
     {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "nigeria-japan-u17-womens-world-cup-final",
+        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
+        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 41,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "BR",
       "isoNumeric": "076",
       "name": "Brazil",
@@ -430,16 +452,16 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 41,
+      "viralScore": 37,
       "intensityTier": "active",
-      "topicCount": 7,
+      "topicCount": 8,
       "topTopic": {
-        "slug": "brazil-business-interest-paraguay-declines",
-        "canonicalPath": "/news/br/brazil-business-interest-paraguay-declines/",
-        "headline": "Business Interest In Paraguay Declines Following Ueno Bank Crisis",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 38,
+        "slug": "former-spouse-arrested-rio-business-dispute",
+        "canonicalPath": "/news/br/former-spouse-arrested-rio-business-dispute/",
+        "headline": "Former Spouse Of Deceased Auctioneer Arrested In Rio De Janeiro",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 34,
         "intensityTier": "active"
       }
     },

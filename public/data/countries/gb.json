@@ -3,34 +3,17 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 60,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-07T09:20:00Z",
+  "viralScore": 49,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-07T10:07:00Z",
   "clusters": [
-    {
-      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-      "headline": "British Comedian Russell Brand Convicted Of Rape And Sexual Assault",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A United Kingdom court found Russell Brand guilty of charges including rape and three counts of sexual assault.",
-        "Reports indicate that law enforcement officials are concurrently investigating two additional allegations of rape against the entertainer."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual-assault"
-      }
-    },
     {
       "slug": "new-zealand-2026-general-election",
       "canonicalPath": "/news/gb/new-zealand-2026-general-election/",
       "headline": "New Zealand Citizens Head To The Polls For The 2026 General Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Polling stations have closed across New Zealand following the conclusion of the 2026 general election.",
@@ -42,12 +25,29 @@
       }
     },
     {
+      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+      "headline": "British Comedian Russell Brand Convicted Of Rape And Sexual Assault",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A United Kingdom court found Russell Brand guilty of charges including rape and three counts of sexual assault.",
+        "Reports indicate that law enforcement officials are concurrently investigating two additional allegations of rape against the entertainer."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual-assault"
+      }
+    },
+    {
       "slug": "jehovas-witnesses-update-blood-transfusion-policy",
       "canonicalPath": "/news/gb/jehovas-witnesses-update-blood-transfusion-policy/",
       "headline": "Jehovah's Witnesses Update Policy Regarding Blood Transfusion Ban",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jehovah's Witnesses have reportedly modified their internal regulations regarding the acceptance of blood transfusions.",
@@ -76,20 +76,20 @@
       }
     },
     {
-      "slug": "barrister-self-refers-to-legal-regulator",
-      "canonicalPath": "/news/gb/barrister-self-refers-to-legal-regulator/",
-      "headline": "Barrister Self-Refers To Regulatory Body Following Court Incident",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 31,
+      "slug": "married-at-first-sight-uk-cancelled",
+      "canonicalPath": "/news/gb/married-at-first-sight-uk-cancelled/",
+      "headline": "Married At First Sight UK Cancelled Following Allegations Reports",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Barrister Ian Winter reported himself to a regulatory body following an alleged incident outside court.",
-        "The incident reportedly involved a confrontation with a journalist covering legal proceedings."
+        "The television series Married at First Sight UK has been officially cancelled.",
+        "The decision follows a BBC Panorama investigation involving allegations from three former participants."
       ],
       "primarySource": {
         "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c8kgee9yxvn7o"
+        "articleUrl": "https://www.bbc.co.uk/news/articles/crx233lx94n7o"
       }
     },
     {
@@ -141,6 +141,23 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/crp3gk07850zo"
+      }
+    },
+    {
+      "slug": "barrister-self-refers-to-legal-regulator",
+      "canonicalPath": "/news/gb/barrister-self-refers-to-legal-regulator/",
+      "headline": "Barrister Self-Refers To Regulatory Body Following Court Incident",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Barrister Ian Winter reported himself to a regulatory body following an alleged incident outside court.",
+        "The incident reportedly involved a confrontation with a journalist covering legal proceedings."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c8kgee9yxvn7o"
       }
     }
   ]
