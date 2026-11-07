@@ -586,3 +586,97 @@ describe('model environment variables', async () => {
     }
   });
 });
+
+describe('model output normalisation', async () => {
+  const { normalizeModelOutput, createSummarizer } =
+    await import('./intelligence/generateAiSummaries.ts');
+  const longTag = 'The Extraordinarily Long Name Of A Government Programme';
+  const base = {
+    headline: 'Bank Indonesia Holds Benchmark Rate Steady Amid Rupiah Pressure',
+    seoTitle: 'Bank Indonesia Holds Benchmark Rate Steady',
+    metaDescription:
+      'Bank Indonesia kept its benchmark interest rate unchanged, according to three outlets, as markets watched the rupiah.',
+    slug: 'bank-indonesia-holds-benchmark-rate',
+    aiSummaryBullets: ['Bank Indonesia kept its policy rate.', 'Outlets linked it to the rupiah.'],
+    aiContextParagraph:
+      'Bank Indonesia announced its monthly policy decision, according to outlets. '.repeat(4),
+    whyItIsViral: 'Three outlets covered the decision within hours.',
+    categorySlug: 'economy-business',
+    entityTags: ['Bank Indonesia', 'Rupiah'],
+  };
+
+  it('drops over-long tags but keeps the rest', () => {
+    const out = normalizeModelOutput({
+      ...base,
+      entityTags: [longTag, 'Bank Indonesia'],
+    }) as typeof base;
+    assert.deepEqual(out.entityTags, ['Bank Indonesia']);
+  });
+
+  it('shortens the first tag when every tag is too long, and caps tags at 4', () => {
+    const one = normalizeModelOutput({ ...base, entityTags: [longTag, longTag] }) as typeof base;
+    assert.equal(one.entityTags.length, 1);
+    assert.ok(one.entityTags[0]!.length <= 40);
+    const many = normalizeModelOutput({
+      ...base,
+      entityTags: ['A1', 'B2', 'C3', 'D4', 'E5', 'F6'],
+    }) as typeof base;
+    assert.equal(many.entityTags.length, 4);
+  });
+
+  it('truncates over-long text and extra bullets; leaves short text for validation to reject', () => {
+    const out = normalizeModelOutput({
+      ...base,
+      headline: 'Word '.repeat(40),
+      aiSummaryBullets: [
+        'First bullet text here.',
+        'Second bullet text.',
+        'Third one here.',
+        'Fourth one.',
+        'Fifth one.',
+      ],
+    }) as typeof base;
+    assert.ok(out.headline.length <= 110);
+    assert.equal(out.aiSummaryBullets.length, 4);
+    const short = normalizeModelOutput({ ...base, headline: 'Too short' }) as typeof base;
+    assert.equal(short.headline, 'Too short');
+  });
+
+  it('a reply with one over-long tag is now accepted as an AI summary', async () => {
+    process.env.GEMINI_API_KEY = 'test-key';
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = (async () =>
+      new Response(
+        JSON.stringify({
+          candidates: [
+            {
+              content: {
+                parts: [{ text: JSON.stringify({ ...base, entityTags: [longTag, 'Rupiah'] }) }],
+              },
+            },
+          ],
+        }),
+        { status: 200, headers: { 'content-type': 'application/json' } },
+      )) as unknown as typeof fetch;
+    try {
+      const r = await createSummarizer('gemini').summarize({
+        countryCode: 'ID',
+        countryName: 'Indonesia',
+        articles: [
+          {
+            publisherName: 'Antara',
+            title: 'Bank Indonesia holds rate',
+            snippet: '',
+            publishedAt: hoursAgo(1),
+          },
+        ],
+        metrics: { viralScore: 60, publishers: 2, velocity: 60, search: 0, trendKeyword: null },
+      });
+      assert.equal(r.usedAi, true, r.error?.detail);
+      assert.deepEqual(r.output.entityTags, ['Rupiah']);
+    } finally {
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+  });
+});
