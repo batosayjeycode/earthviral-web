@@ -1,27 +1,5 @@
 [
   {
-    "id": "us",
-    "code": "US",
-    "isoNumeric": "840",
-    "name": "United States",
-    "slug": "united-states",
-    "region": "North America",
-    "centroid": [
-      -98.5,
-      39.5
-    ],
-    "viralScore": 99,
-    "intensityTier": "surge",
-    "topicCount": 10,
-    "topClusterIds": [
-      "us-20261106-trump-appoints-miller-chief-of-staff",
-      "us-20261106-pope-leo-latin-america-tour",
-      "us-20261106-thomas-markle-arrested-florida-abuse-charges",
-      "us-20261105-democrats-swept-the-midterms-what-comes-next-for-the",
-      "us-20261106-senior-officials-resign-after-us-midterm-elections"
-    ]
-  },
-  {
     "id": "id",
     "code": "ID",
     "isoNumeric": "360",
@@ -32,15 +10,37 @@
       117,
       -2.5
     ],
-    "viralScore": 94,
+    "viralScore": 100,
     "intensityTier": "surge",
     "topicCount": 10,
     "topClusterIds": [
       "id-20261105-peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
       "id-20261105-gunung-semeru-erupsi-enam-kali-hari-ini-penambang-pasir",
-      "id-20261105-roy-suryo-tolak-semua-kesaksian-jokowi-di-sidang-kasus",
+      "id-20261107-central-java-health-and-logistics-expansion",
       "id-20261106-indonesian-regional-governments-receive-multiple-awards",
-      "id-20261106-mulai-1-januari-2027-ekspor-3-sda-strategis-lewat"
+      "id-20261107-womens-march-jakarta-demands-2026"
+    ]
+  },
+  {
+    "id": "us",
+    "code": "US",
+    "isoNumeric": "840",
+    "name": "United States",
+    "slug": "united-states",
+    "region": "North America",
+    "centroid": [
+      -98.5,
+      39.5
+    ],
+    "viralScore": 95,
+    "intensityTier": "surge",
+    "topicCount": 10,
+    "topClusterIds": [
+      "us-20261105-democrats-swept-the-midterms-what-comes-next-for-the",
+      "us-20261106-trump-appoints-miller-chief-of-staff",
+      "us-20261106-pope-leo-latin-america-tour",
+      "us-20261106-thomas-markle-arrested-florida-abuse-charges",
+      "us-20261105-did-a-data-centre-revolt-affect-the-us-midterm"
     ]
   },
   {
@@ -54,15 +54,81 @@
       37.9,
       0.2
     ],
-    "viralScore": 88,
+    "viralScore": 85,
     "intensityTier": "surge",
-    "topicCount": 8,
+    "topicCount": 10,
     "topClusterIds": [
       "ke-20261106-kenyan-cult-leader-receives-prison-sentence",
-      "ke-20261106-tanzanian-opposition-leader-court-verdict",
-      "ke-20261106-charlene-ruto-marries-isaya-yunge",
-      "ke-20261106-family-identifies-officers-in-lawyer-disappearance",
-      "ke-20261104-oburu-oginga-death-rumours-gave-me-strength-to-recover"
+      "ke-20261107-nairobi-uniformed-services-annual-thanksgiving",
+      "ke-20261106-kenya-expands-international-diplomatic-agricultural-partnerships",
+      "ke-20261105-martha-koome-honorary-doctorate-kemu",
+      "ke-20261106-tanzanian-opposition-leader-court-verdict"
+    ]
+  },
+  {
+    "id": "in",
+    "code": "IN",
+    "isoNumeric": "356",
+    "name": "India",
+    "slug": "india",
+    "region": "Asia",
+    "centroid": [
+      79,
+      22
+    ],
+    "viralScore": 83,
+    "intensityTier": "high",
+    "topicCount": 10,
+    "topClusterIds": [
+      "in-20261107-delhi-air-quality-grap-iii-restrictions",
+      "in-20261107-sonia-gandhi-releases-new-memoir-belonging",
+      "in-20261107-abhishek-banerjee-residence-attack-dispute",
+      "in-20261107-telangana-medical-education-and-staffing-trends",
+      "in-20261107-jharkhand-activist-nisha-bhagat-death"
+    ]
+  },
+  {
+    "id": "my",
+    "code": "MY",
+    "isoNumeric": "458",
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "region": "Asia",
+    "centroid": [
+      102.3,
+      3.8
+    ],
+    "viralScore": 76,
+    "intensityTier": "high",
+    "topicCount": 10,
+    "topClusterIds": [
+      "my-20261106-high-court-najib-house-arrest-order",
+      "my-20261107-malaysia-governance-rankings-labor-policy-review",
+      "my-20261107-malaysia-heavy-rain-flood-warnings",
+      "my-20261106-najib-razak-returns-to-kajang-prison",
+      "my-20261107-dap-discusses-transport-minister-replacement-status"
+    ]
+  },
+  {
+    "id": "fr",
+    "code": "FR",
+    "isoNumeric": "250",
+    "name": "France",
+    "slug": "france",
+    "region": "Europe",
+    "centroid": [
+      2.4,
+      46.6
+    ],
+    "viralScore": 72,
+    "intensityTier": "high",
+    "topicCount": 9,
+    "topClusterIds": [
+      "fr-20261105-france-more-than-600-000-protest-as-anger-grows",
+      "fr-20261106-french-minister-sued-over-protest-injuries",
+      "fr-20261105-french-bank-hit-by-cyberattack-hackers-steal-100-million",
+      "fr-20261106-european-flights-targeted-by-bomb-threats",
+      "fr-20261106-fatal-school-bus-crash-france"
     ]
   },
   {
@@ -76,7 +142,7 @@
       5.3,
       52.2
     ],
-    "viralScore": 79,
+    "viralScore": 68,
     "intensityTier": "high",
     "topicCount": 1,
     "topClusterIds": [
@@ -94,7 +160,7 @@
       134,
       -25.5
     ],
-    "viralScore": 66,
+    "viralScore": 67,
     "intensityTier": "high",
     "topicCount": 4,
     "topClusterIds": [
@@ -102,28 +168,6 @@
       "au-20261107-ben-roberts-smith-supplements-collaboration",
       "au-20261105-russell-brand-found-guilty-of-rape-and-sexual-assault-2",
       "au-20261105-third-wave-of-hoax-bomb-threats-hit-27-passenger"
-    ]
-  },
-  {
-    "id": "fr",
-    "code": "FR",
-    "isoNumeric": "250",
-    "name": "France",
-    "slug": "france",
-    "region": "Europe",
-    "centroid": [
-      2.4,
-      46.6
-    ],
-    "viralScore": 66,
-    "intensityTier": "high",
-    "topicCount": 9,
-    "topClusterIds": [
-      "fr-20261105-france-more-than-600-000-protest-as-anger-grows",
-      "fr-20261106-french-minister-sued-over-protest-injuries",
-      "fr-20261105-french-bank-hit-by-cyberattack-hackers-steal-100-million",
-      "fr-20261107-houston-mayor-limits-ice-police-cooperation",
-      "fr-20261106-mbappe-returns-to-france-national-team"
     ]
   },
   {
@@ -137,7 +181,7 @@
       53.7,
       32.4
     ],
-    "viralScore": 64,
+    "viralScore": 66,
     "intensityTier": "high",
     "topicCount": 1,
     "topClusterIds": [
@@ -145,83 +189,43 @@
     ]
   },
   {
-    "id": "my",
-    "code": "MY",
-    "isoNumeric": "458",
-    "name": "Malaysia",
-    "slug": "malaysia",
-    "region": "Asia",
+    "id": "es",
+    "code": "ES",
+    "isoNumeric": "724",
+    "name": "Spain",
+    "slug": "spain",
+    "region": "Europe",
     "centroid": [
-      102.3,
-      3.8
+      -3.7,
+      40.2
     ],
     "viralScore": 63,
     "intensityTier": "high",
-    "topicCount": 10,
-    "topClusterIds": [
-      "my-20261106-high-court-najib-house-arrest-order",
-      "my-20261107-malaysia-cybersecurity-strengthens-austria-diplomacy",
-      "my-20261106-najib-razak-returns-to-kajang-prison",
-      "my-20261106-malaysian-former-pm-house-arrest-halted",
-      "my-20261107-malaysia-turkiye-trade-defense-cooperation"
-    ]
-  },
-  {
-    "id": "il",
-    "code": "IL",
-    "isoNumeric": "376",
-    "name": "Israel",
-    "slug": "israel",
-    "region": "Asia",
-    "centroid": [
-      34.9,
-      31.3
-    ],
-    "viralScore": 55,
-    "intensityTier": "active",
     "topicCount": 1,
     "topClusterIds": [
-      "il-20261105-israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra"
+      "es-20261106-real-madrid-la-liga-mbappe-controversy"
     ]
   },
   {
-    "id": "in",
-    "code": "IN",
-    "isoNumeric": "356",
-    "name": "India",
-    "slug": "india",
-    "region": "Asia",
+    "id": "gb",
+    "code": "GB",
+    "isoNumeric": "826",
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "region": "Europe",
     "centroid": [
-      79,
-      22
+      -2,
+      53.5
     ],
-    "viralScore": 54,
-    "intensityTier": "active",
-    "topicCount": 10,
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 8,
     "topClusterIds": [
-      "in-20261107-delhi-air-quality-grap-iii-restrictions",
-      "in-20261106-us-offers-20-million-reward-for-information-on-irans",
-      "in-20261107-google-faces-school-laptop-ai-lawsuit-says-its-features",
-      "in-20261107-mediation-efforts-between-us-and-iran-continue-to-prevent",
-      "in-20261106-karnataka-government-policy-updates"
-    ]
-  },
-  {
-    "id": "cn",
-    "code": "CN",
-    "isoNumeric": "156",
-    "name": "China",
-    "slug": "china",
-    "region": "Asia",
-    "centroid": [
-      104,
-      35
-    ],
-    "viralScore": 53,
-    "intensityTier": "active",
-    "topicCount": 1,
-    "topClusterIds": [
-      "cn-20261105-hong-kong-pro-democracy-activist-joshua-wong-sentenced-to"
+      "gb-20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual",
+      "gb-20261107-new-zealand-2026-general-election",
+      "gb-20261107-jehovas-witnesses-update-blood-transfusion-policy",
+      "gb-20261105-bank-of-england-raises-interest-rates-to-4-the",
+      "gb-20261106-barrister-self-refers-to-legal-regulator"
     ]
   },
   {
@@ -235,14 +239,14 @@
       8.1,
       9.6
     ],
-    "viralScore": 53,
+    "viralScore": 56,
     "intensityTier": "active",
-    "topicCount": 5,
+    "topicCount": 6,
     "topClusterIds": [
+      "ng-20261107-nigeria-power-supply-improvement-expected",
       "ng-20261106-flamingos-captain-harmony-chidi-targets-historic-u-17-world",
       "ng-20261105-obi-faults-court-ruling-sacking-atiku-as-adc-candidate",
       "ng-20261106-alaafin-claims-historical-yoruba-primacy",
-      "ng-20261106-victor-osimhen-knee-surgery-injury-news",
       "ng-20261106-nigeria-opposition-electoral-uncertainty-2027"
     ]
   },
@@ -257,75 +261,69 @@
       103.82,
       1.35
     ],
-    "viralScore": 52,
+    "viralScore": 54,
     "intensityTier": "active",
-    "topicCount": 9,
+    "topicCount": 10,
     "topClusterIds": [
+      "sg-20261106-smrt-escalator-standing-policy-trial",
       "sg-20261107-man-arrested-following-little-india-chase",
+      "sg-20261107-singapore-banking-sector-2027-outlook",
       "sg-20261106-singapore-enacts-stricter-haze-legislation",
-      "sg-20261106-singapore-airlines-new-seating-specifications",
-      "sg-20261106-wall-street-stocks-rally-after-selloff",
-      "sg-20261106-doctor-anywhere-hit-by-data-breach"
+      "sg-20261106-singapore-opens-new-green-data-centre"
     ]
   },
   {
-    "id": "gb",
-    "code": "GB",
-    "isoNumeric": "826",
-    "name": "United Kingdom",
-    "slug": "united-kingdom",
-    "region": "Europe",
+    "id": "cn",
+    "code": "CN",
+    "isoNumeric": "156",
+    "name": "China",
+    "slug": "china",
+    "region": "Asia",
     "centroid": [
-      -2,
-      53.5
+      104,
+      35
     ],
-    "viralScore": 49,
-    "intensityTier": "active",
-    "topicCount": 5,
-    "topClusterIds": [
-      "gb-20261105-bank-of-england-raises-interest-rates-to-4-the",
-      "gb-20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual",
-      "gb-20261107-thomas-markle-arrested-following-charges",
-      "gb-20261104-british-man-infected-with-ebola-in-dr-congo-arrives",
-      "gb-20261105-could-this-be-the-last-bonfire-night-for-noisy"
-    ]
-  },
-  {
-    "id": "es",
-    "code": "ES",
-    "isoNumeric": "724",
-    "name": "Spain",
-    "slug": "spain",
-    "region": "Europe",
-    "centroid": [
-      -3.7,
-      40.2
-    ],
-    "viralScore": 45,
+    "viralScore": 52,
     "intensityTier": "active",
     "topicCount": 1,
     "topClusterIds": [
-      "es-20261106-real-madrid-la-liga-mbappe-controversy"
+      "cn-20261105-hong-kong-pro-democracy-activist-joshua-wong-sentenced-to"
     ]
   },
   {
-    "id": "jp",
-    "code": "JP",
-    "isoNumeric": "392",
-    "name": "Japan",
-    "slug": "japan",
+    "id": "ar",
+    "code": "AR",
+    "isoNumeric": "032",
+    "name": "Argentina",
+    "slug": "argentina",
+    "region": "South America",
+    "centroid": [
+      -63.6,
+      -38.4
+    ],
+    "viralScore": 52,
+    "intensityTier": "active",
+    "topicCount": 1,
+    "topClusterIds": [
+      "ar-20261107-argentina-secures-pope-leo-xiv-visit"
+    ]
+  },
+  {
+    "id": "il",
+    "code": "IL",
+    "isoNumeric": "376",
+    "name": "Israel",
+    "slug": "israel",
     "region": "Asia",
     "centroid": [
-      138.5,
-      36.5
+      34.9,
+      31.3
     ],
-    "viralScore": 45,
+    "viralScore": 51,
     "intensityTier": "active",
-    "topicCount": 3,
+    "topicCount": 1,
     "topClusterIds": [
-      "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
-      "jp-20261106-japan-launches-emergency-cybersecurity-measures",
-      "jp-20261105-kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung"
+      "il-20261105-israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra"
     ]
   },
   {
@@ -339,33 +337,33 @@
       60,
       58
     ],
-    "viralScore": 37,
+    "viralScore": 50,
     "intensityTier": "active",
-    "topicCount": 2,
+    "topicCount": 3,
     "topClusterIds": [
+      "ru-20261107-russian-missile-strikes-target-kyiv",
       "ru-20261106-russian-diesel-tankers-divert-from-us",
       "ru-20261106-international-diplomatic-efforts-ukraine-conflict"
     ]
   },
   {
-    "id": "br",
-    "code": "BR",
-    "isoNumeric": "076",
-    "name": "Brazil",
-    "slug": "brazil",
-    "region": "South America",
+    "id": "jp",
+    "code": "JP",
+    "isoNumeric": "392",
+    "name": "Japan",
+    "slug": "japan",
+    "region": "Asia",
     "centroid": [
-      -51.9,
-      -10.5
+      138.5,
+      36.5
     ],
-    "viralScore": 35,
+    "viralScore": 43,
     "intensityTier": "active",
-    "topicCount": 4,
+    "topicCount": 3,
     "topClusterIds": [
-      "br-20261106-pioneering-brazilian-television-director-dies",
-      "br-20261107-giovanna-gold-financial-loss-reality-show",
-      "br-20261106-morre-sebasti-n-lelio-vencedor-do-oscar-por-uma",
-      "br-20261106-sasha-defende-jo-o-lucas-ap-s-cantor-ser"
+      "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
+      "jp-20261106-japan-launches-emergency-cybersecurity-measures",
+      "jp-20261105-kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung"
     ]
   },
   {
@@ -379,11 +377,33 @@
       24.7,
       -29
     ],
-    "viralScore": 31,
+    "viralScore": 42,
     "intensityTier": "active",
     "topicCount": 1,
     "topClusterIds": [
       "za-20261104-anc-faces-anger-over-poor-services-as-south-africans"
+    ]
+  },
+  {
+    "id": "br",
+    "code": "BR",
+    "isoNumeric": "076",
+    "name": "Brazil",
+    "slug": "brazil",
+    "region": "South America",
+    "centroid": [
+      -51.9,
+      -10.5
+    ],
+    "viralScore": 41,
+    "intensityTier": "active",
+    "topicCount": 7,
+    "topClusterIds": [
+      "br-20261107-brazil-business-interest-paraguay-declines",
+      "br-20261107-former-spouse-arrested-rio-business-dispute",
+      "br-20261106-larissa-riquelme-paraguay-financial-crisis",
+      "br-20261107-giovanna-gold-financial-loss-reality-show",
+      "br-20261106-pioneering-brazilian-television-director-dies"
     ]
   },
   {

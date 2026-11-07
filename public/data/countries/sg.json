@@ -3,17 +3,34 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 52,
+  "viralScore": 54,
   "intensityTier": "active",
-  "generatedAt": "2026-11-07T05:24:00Z",
+  "generatedAt": "2026-11-07T09:20:00Z",
   "clusters": [
+    {
+      "slug": "smrt-escalator-standing-policy-trial",
+      "canonicalPath": "/news/sg/smrt-escalator-standing-policy-trial/",
+      "headline": "SMRT Trial Encourages Commuters To Stand Anywhere On Escalators",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Signs placed at City Hall MRT station encourage commuters to stand on both sides of the escalator steps.",
+        "The traditional practice in Singapore has been to stand on the left and keep the right side clear for walking."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/stand-on-either-side-of-the-escalator-signs-spotted-at-city-hall-mrt-station"
+      }
+    },
     {
       "slug": "man-arrested-following-little-india-chase",
       "canonicalPath": "/news/sg/man-arrested-following-little-india-chase/",
       "headline": "Suspect Arrested In Little India Following Pursuit And Collision",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 49,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A man was apprehended by law enforcement officials following an alleged assault.",
@@ -25,12 +42,29 @@
       }
     },
     {
+      "slug": "singapore-banking-sector-2027-outlook",
+      "canonicalPath": "/news/sg/singapore-banking-sector-2027-outlook/",
+      "headline": "Analysts Predict Challenging Fiscal Outlook For Singaporean Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 34,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "DBS and UOB released quarterly financial results that fell below analyst projections.",
+        "The banking sector in Singapore is facing forecasts of increased difficulty for the 2027 fiscal year."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/dbs-uob-ocbc-banks-earnings-outlook-6531376"
+      }
+    },
+    {
       "slug": "singapore-enacts-stricter-haze-legislation",
       "canonicalPath": "/news/sg/singapore-enacts-stricter-haze-legislation/",
       "headline": "Singapore Parliament Enacts Stricter Legislation To Combat Haze",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore lawmakers approved a legislative update to address transboundary haze issues.",
@@ -42,20 +76,20 @@
       }
     },
     {
-      "slug": "singapore-airlines-new-seating-specifications",
-      "canonicalPath": "/news/sg/singapore-airlines-new-seating-specifications/",
-      "headline": "Singapore Airlines Updates Seating Features Across All Cabin Classes",
+      "slug": "singapore-opens-new-green-data-centre",
+      "canonicalPath": "/news/sg/singapore-opens-new-green-data-centre/",
+      "headline": "Singapore Opens First Data Centre Adhering To Stricter Green Rules",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
       "viralScore": 29,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "New first-class seats for Singapore Airlines measure 30 inches in width and 80 inches in length.",
-        "Boeing 777-9 aircraft will feature upgraded economy and premium economy seats with increased reclining capabilities."
+        "The SG6 data centre facility has officially opened in Singapore.",
+        "This is the first data centre to launch under newly implemented green regulations."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/transport/how-sias-new-first-class-seats-are-customised-down-to-the-last-stitch"
+        "articleUrl": "https://www.straitstimes.com/tech/singapores-first-data-centre-under-stricter-green-rules-is-open"
       }
     },
     {
@@ -64,7 +98,7 @@
       "headline": "Wall Street Stocks Experience Relief Rally Following Market Selloff",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 22,
+      "viralScore": 20,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Wall Street equity markets recorded gains during a relief rally phase.",
@@ -81,7 +115,7 @@
       "headline": "Doctor Anywhere And M1 Report Data Security Breaches In Singapore",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 20,
+      "viralScore": 19,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Telemedicine platform Doctor Anywhere confirmed a recent data breach on its network.",
@@ -90,23 +124,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/m1-hit-by-data-breach"
-      }
-    },
-    {
-      "slug": "motorists-advised-to-avoid-areas-in-northern-singapore-over",
-      "canonicalPath": "/news/sg/motorists-advised-to-avoid-areas-in-northern-singapore-over/",
-      "headline": "Motorists Advised To Avoid Areas In Northern Singapore Amid Flooding",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Motorists in northern Singapore are cautioned to steer clear of certain locations.",
-        "The alert follows an increased risk of flash flooding in the area."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/motorists-advised-to-avoid-areas-in-northern-singapore-over-risk-of-flash-floods"
       }
     },
     {
@@ -127,6 +144,23 @@
       }
     },
     {
+      "slug": "motorists-advised-to-avoid-areas-in-northern-singapore-over",
+      "canonicalPath": "/news/sg/motorists-advised-to-avoid-areas-in-northern-singapore-over/",
+      "headline": "Motorists Advised To Avoid Areas In Northern Singapore Amid Flooding",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Motorists in northern Singapore are cautioned to steer clear of certain locations.",
+        "The alert follows an increased risk of flash flooding in the area."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/motorists-advised-to-avoid-areas-in-northern-singapore-over-risk-of-flash-floods"
+      }
+    },
+    {
       "slug": "prepare-for-take-off-sia-unveils-new-seats-in",
       "canonicalPath": "/news/sg/prepare-for-take-off-sia-unveils-new-seats-in/",
       "headline": "Singapore Airlines Reveals Seat Upgrades In Two Billion Dollar Plan",
@@ -141,23 +175,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/transport/prepare-for-take-off-sia-unveils-new-seats-in-2b-upgrade-rolling-out-from-second-half-of-2027"
-      }
-    },
-    {
-      "slug": "singapore-authorities-urge-strict-limits-on-ai-agent-autonomy",
-      "canonicalPath": "/news/sg/singapore-authorities-urge-strict-limits-on-ai-agent-autonomy/",
-      "headline": "Singapore Officials Propose New Restrictions For AI Agent Autonomy",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Regulatory authorities in Singapore are calling for implementation of stricter limits on artificial intelligence agent behavior.",
-        "The proposed guidelines specifically target the level of autonomy granted to these software agents."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/tech/singapore-authorities-urge-strict-limits-on-ai-agent-autonomy-access-to-personal-accounts"
       }
     }
   ]
