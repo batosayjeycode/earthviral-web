@@ -43,17 +43,68 @@ export interface SummaryOutput {
   entityTags: string[];
 }
 
+/** Upper bounds shared by the schema and by `normalizeModelOutput` (which enforces them). */
+const LIMITS = {
+  headline: 110,
+  seoTitle: 90,
+  metaDescription: 220,
+  slug: 100,
+  bullet: 260,
+  bullets: 4,
+  aiContextParagraph: 1600,
+  whyItIsViral: 400,
+  tag: 40,
+  tags: 4,
+} as const;
+
 const outputSchema = z.object({
-  headline: z.string().min(20).max(110),
-  seoTitle: z.string().min(10).max(90),
-  metaDescription: z.string().min(60).max(220),
-  slug: z.string().min(3).max(100),
-  aiSummaryBullets: z.array(z.string().min(10).max(260)).min(2).max(4),
-  aiContextParagraph: z.string().min(200).max(1600),
-  whyItIsViral: z.string().min(20).max(400),
+  headline: z.string().min(20).max(LIMITS.headline),
+  seoTitle: z.string().min(10).max(LIMITS.seoTitle),
+  metaDescription: z.string().min(60).max(LIMITS.metaDescription),
+  slug: z.string().min(3).max(LIMITS.slug),
+  aiSummaryBullets: z.array(z.string().min(10).max(LIMITS.bullet)).min(2).max(LIMITS.bullets),
+  aiContextParagraph: z.string().min(200).max(LIMITS.aiContextParagraph),
+  whyItIsViral: z.string().min(20).max(LIMITS.whyItIsViral),
   categorySlug: z.enum(CATEGORY_SLUGS),
-  entityTags: z.array(z.string().min(2).max(40)).min(1).max(4),
+  entityTags: z.array(z.string().min(2).max(LIMITS.tag)).min(1).max(LIMITS.tags),
 });
+
+/**
+ * Fix over-long fields in a model reply before validation, so one long tag or a slightly
+ * wordy headline doesn't throw away an otherwise good summary. Only upper bounds are
+ * repaired (word-boundary truncation, extra items dropped); text that is too short, a
+ * missing field or an unknown category still fails validation and falls back.
+ * Over-long tags are dropped rather than cut (a cut-off name can be wrong), unless that
+ * would leave none, in which case the first is shortened.
+ */
+export function normalizeModelOutput(raw: unknown): unknown {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw;
+  const o = { ...(raw as Record<string, unknown>) };
+  const clip = (key: string, max: number) => {
+    if (typeof o[key] === 'string') o[key] = truncate(o[key] as string, max);
+  };
+  clip('headline', LIMITS.headline);
+  clip('seoTitle', LIMITS.seoTitle);
+  clip('metaDescription', LIMITS.metaDescription);
+  clip('slug', LIMITS.slug);
+  clip('aiContextParagraph', LIMITS.aiContextParagraph);
+  clip('whyItIsViral', LIMITS.whyItIsViral);
+  if (Array.isArray(o.aiSummaryBullets)) {
+    o.aiSummaryBullets = o.aiSummaryBullets
+      .slice(0, LIMITS.bullets)
+      .map((b) => (typeof b === 'string' ? truncate(b, LIMITS.bullet) : b));
+  }
+  if (Array.isArray(o.entityTags)) {
+    const tags = o.entityTags
+      .filter((t): t is string => typeof t === 'string')
+      .map((t) => t.trim());
+    const fitting = tags.filter((t) => t.length <= LIMITS.tag);
+    const kept =
+      fitting.length > 0 ? fitting : tags.slice(0, 1).map((t) => truncate(t, LIMITS.tag));
+    o.entityTags = kept.slice(0, LIMITS.tags);
+  }
+  return o;
+}
 
 const SYSTEM_PROMPT = `You are the EarthViral Intelligence Desk, writing neutral, factual summaries of trending news clusters for a global audience.
 
@@ -690,7 +741,7 @@ export function createSummarizer(provider: ProviderName): Summarizer {
       } catch (err) {
         return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
       }
-      const parsed = outputSchema.safeParse(raw);
+      const parsed = outputSchema.safeParse(normalizeModelOutput(raw));
       if (parsed.success) return { output: parsed.data, usedAi: true };
       // Name the failing fields (e.g. "headline: Too big") instead of Zod's JSON dump.
       const detail = parsed.error.issues
