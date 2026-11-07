@@ -74,32 +74,40 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
       </div>
     )}
   </dl>
-</div>
+  {/*
+    Inline and placed right after the bar so it runs while the page is parsed, before the bar
+    is first painted: rewriting the times later would shift the row (a layout shift).
+    Swaps the absolute snapshot time for "28m ago" and reveals the "Data delayed" notice
+    (the page is static, so staleness is only knowable in the browser).
+  */}
+  <script is:inline>
+    (() => {
+      const bar = document.currentScript?.previousElementSibling;
+      const time = bar?.querySelector('time[data-relative-time]');
+      if (!bar || !time) return;
+      const ageMs = Date.now() - Date.parse(time.dateTime);
+      const minutes = Math.round(ageMs / 60000);
+      const hours = Math.floor(minutes / 60);
+      time.title = time.textContent.trim();
+      time.textContent =
+        minutes < 1
+          ? 'just now'
+          : minutes < 60
+            ? `${minutes}m ago`
+            : hours < 48
+              ? `${hours}h ${minutes % 60}m ago`
+              : `${Math.floor(hours / 24)}d ago`;
 
-<script>
-  // Progressive enhancement: swap the absolute snapshot time for "28m ago".
-  function relative(iso: string): string {
-    const minutes = Math.round((Date.now() - Date.parse(iso)) / 60_000);
-    if (minutes < 1) return 'just now';
-    if (minutes < 60) return `${minutes}m ago`;
-    const hours = Math.floor(minutes / 60);
-    return hours < 48 ? `${hours}h ${minutes % 60}m ago` : `${Math.floor(hours / 24)}d ago`;
-  }
-  for (const el of document.querySelectorAll<HTMLTimeElement>('time[data-relative-time]')) {
-    el.title = el.textContent ?? '';
-    el.textContent = relative(el.dateTime);
-
-    // "Data delayed" notice: the page is static, so staleness is only knowable in the browser.
-    const bar = el.closest<HTMLElement>('[data-stale-after-hours]');
-    const note = bar?.querySelector<HTMLElement>('[data-stale-note]');
-    const staleAfterMs = Number(bar?.dataset.staleAfterHours) * 3_600_000;
-    if (note && staleAfterMs > 0 && Date.now() - Date.parse(el.dateTime) > staleAfterMs) {
-      note.hidden = false;
-      const next = bar?.querySelector<HTMLTimeElement>('time[data-next-update]');
-      if (next) {
-        next.title = next.textContent ?? '';
-        next.textContent = 'Overdue';
+      const note = bar.querySelector('[data-stale-note]');
+      const staleAfterMs = Number(bar.dataset.staleAfterHours) * 3600000;
+      if (note && staleAfterMs > 0 && ageMs > staleAfterMs) {
+        note.hidden = false;
+        const next = bar.querySelector('time[data-next-update]');
+        if (next) {
+          next.title = next.textContent.trim();
+          next.textContent = 'Overdue';
+        }
       }
-    }
-  }
-</script>
+    })();
+  </script>
+</div>

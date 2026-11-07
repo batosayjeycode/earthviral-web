@@ -233,18 +233,33 @@ try {
       if (await page.locator('[data-stale-note]').isVisible()) fail('note shown for fresh data');
       // Stale: 10 hours later, the note appears and "Next Update" reads "Overdue".
       await page.clock.setFixedTime(new Date(Date.parse(meta.generatedAt) + 10 * 3_600_000));
-      await page.addInitScript(() => {
-        window.__cls = 0;
-        new PerformanceObserver((list) => {
-          for (const e of list.getEntries()) window.__cls += e.value;
-        }).observe({ type: 'layout-shift', buffered: true });
-      });
       await page.goto(BASE + STORY);
       if (!(await page.locator('[data-stale-note]').isVisible())) fail('note not shown when stale');
       const next = await page.locator('time[data-next-update]').textContent();
       if (next !== 'Overdue') fail(`Next Update should read "Overdue", got "${next}"`);
-      const cls = await page.evaluate(() => window.__cls);
-      if (cls > 0) fail(`showing the note caused layout shift (CLS ${cls.toFixed(3)})`);
+      // The note must not move anything: compare every other item in the bar, and the bar's
+      // height, with the note shown vs hidden. (Page-wide CLS isn't used here: on CI it also
+      // picks up unrelated sub-pixel shifts such as web-font swaps.)
+      const moved = await page.evaluate(() => {
+        const bar = document.querySelector('[data-stale-after-hours]');
+        const note = bar.querySelector('[data-stale-note]');
+        const snapshot = () =>
+          JSON.stringify([
+            bar.getBoundingClientRect().height,
+            ...[...bar.children]
+              .filter((el) => el !== note)
+              .map((el) => {
+                const r = el.getBoundingClientRect();
+                return [r.left, r.top, r.width, r.height];
+              }),
+          ]);
+        const shown = snapshot();
+        note.hidden = true;
+        const hidden = snapshot();
+        note.hidden = false;
+        return shown !== hidden;
+      });
+      if (moved) fail('showing the note moved other items in the telemetry bar');
       await page.screenshot({ path: join(outDir, 'data-delayed-note.png') });
       if (failures.length === before)
         pass('hidden when fresh; shown + "Overdue" when stale; no layout shift');
