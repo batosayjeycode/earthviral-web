@@ -1,33 +1,50 @@
 {
-  "batchId": "batch-202611070426",
-  "generatedAt": "2026-11-07T04:26:00Z",
-  "nextUpdateAt": "2026-11-07T05:00:00Z",
+  "batchId": "batch-202611070504",
+  "generatedAt": "2026-11-07T05:04:00Z",
+  "nextUpdateAt": "2026-11-07T08:00:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 22,
-    "viralTopics": 88,
+    "viralTopics": 92,
     "globalIndex": 73
   },
   "pipeline": {
-    "provider": "gemini:gemini-3.1-flash-lite",
+    "provider": "gemini",
     "feedsOk": 31,
     "feedsFailed": [
-      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-unitedstates: fetch failed",
+      "gdelt-unitedkingdom: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1213,
-    "newClusters": 2,
+    "articlesFetched": 1253,
+    "newClusters": 8,
     "updatedClusters": 4,
-    "retiredClusters": 2,
-    "aiCalls": 37,
+    "retiredClusters": 4,
+    "aiCalls": 9,
     "aiFailures": {
-      "timeout": 1
+      "http-error": 9
     },
     "aiFailureSamples": [
       {
-        "category": "timeout",
-        "detail": "The operation was aborted due to timeout"
+        "category": "http-error",
+        "detail": "HTTP 404:"
+      },
+      {
+        "category": "http-error",
+        "detail": "HTTP 404:"
+      },
+      {
+        "category": "http-error",
+        "detail": "HTTP 404:"
+      },
+      {
+        "category": "http-error",
+        "detail": "HTTP 404:"
+      },
+      {
+        "category": "http-error",
+        "detail": "HTTP 404:"
       }
     ],
-    "durationMs": 353242
+    "durationMs": 103591
   }
 }
