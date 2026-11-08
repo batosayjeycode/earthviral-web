@@ -347,13 +347,34 @@ export default function WorldMap({ pulseUrl, topoUrl }: Props) {
         }
       };
 
+      // Back to the overview after a selection. `select` flies in with drawer padding, and
+      // MapLibre keeps padding on the camera after the move, so it must be cleared explicitly
+      // or the globe stays shifted left (and zoomed in) once the drawer has closed.
+      const resetView = () => {
+        const globe = state.projection === 'globe';
+        const zoom = globe
+          ? globeZoomForHeight(container.clientHeight)
+          : mercatorZoomForWidth(container.clientWidth);
+        // Globe: keep the longitude the user was looking at. Map: same framing as switchProjection.
+        const center: [number, number] = globe
+          ? [map.getCenter().lng, INITIAL_CENTER[1]]
+          : [INITIAL_CENTER[0], 15];
+        const padding = { top: 0, right: 0, bottom: 0, left: 0 };
+        if (state.reducedMotion) map.jumpTo({ center, zoom, padding });
+        else map.easeTo({ center, zoom, padding, duration: 800, essential: false });
+      };
+
       const clearSelection = (notify = true) => {
-        if (notify && state.selectedId !== null)
-          window.dispatchEvent(new CustomEvent(COUNTRY_DESELECT_EVENT));
+        const hadSelection = state.selectedId !== null;
+        if (notify && hadSelection) window.dispatchEvent(new CustomEvent(COUNTRY_DESELECT_EVENT));
         setFeatureFlag(state.selectedId, 'selected', false);
         state.selectedId = null;
         state.pinned = false;
         setTooltip(null);
+        if (hadSelection) {
+          stopSpin();
+          resetView();
+        }
         scheduleSpin();
       };
 
