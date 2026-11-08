@@ -5,36 +5,19 @@
   "region": "Asia",
   "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-08T17:17:00Z",
+  "generatedAt": "2026-11-08T20:17:00Z",
   "clusters": [
-    {
-      "slug": "helicopter-crashes-during-kalimantan-water-bombing",
-      "canonicalPath": "/news/id/helicopter-crashes-during-kalimantan-water-bombing/",
-      "headline": "Helicopter Involved In Firefighting Operations Crashes In Barito",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "A Super Puma H-225 helicopter crashed into the Barito River in South Kalimantan while performing water bombing operations for forest fire control.",
-        "Search and rescue efforts resulted in the recovery of one deceased crew member, identified as an Indonesian citizen."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Indonesia",
-        "articleUrl": "https://www.cnnindonesia.com/nasional/20261107005831-20-1424314/5-kru-korban-heli-tni-jatuh-di-kalteng-akan-dirawat-di-dki-semarang"
-      }
-    },
     {
       "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
       "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
-      "headline": "Indonesian President Holds Talks With Former Police Chiefs On Wiretap",
+      "headline": "Indonesian President Holds Security Consultations Amid Wiretap Case",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 91,
+      "viralScore": 98,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "President Prabowo Subianto hosted a meeting with ten former National Police chiefs at his residence in Hambalang.",
-        "The meeting occurred during an ongoing police investigation into allegations that the President was subjected to unauthorized wiretapping."
+        "President Prabowo Subianto held a meeting with ten former National Police chiefs at his residence in Hambalang.",
+        "The National Police have requested protection for six witnesses from the Witness and Victim Protection Agency regarding the investigation."
       ],
       "primarySource": {
         "publisherName": "Detik",
@@ -47,8 +30,8 @@
       "headline": "President Prabowo Subianto Hosts Ten Former Police Chiefs In Hambalang",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 91,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "President Prabowo Subianto held a formal meeting with ten former chiefs of the Indonesian National Police.",
         "The session took place at the President's residence in Hambalang and included discussions on current national affairs."
@@ -59,12 +42,63 @@
       }
     },
     {
+      "slug": "helicopter-crashes-during-kalimantan-water-bombing",
+      "canonicalPath": "/news/id/helicopter-crashes-during-kalimantan-water-bombing/",
+      "headline": "Helicopter Involved In Firefighting Operations Crashes In Barito",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 84,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A Super Puma H-225 helicopter crashed into the Barito River in South Kalimantan while performing water bombing operations for forest fire control.",
+        "Search and rescue efforts resulted in the recovery of one deceased crew member, identified as an Indonesian citizen."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Indonesia",
+        "articleUrl": "https://www.cnnindonesia.com/nasional/20261107005831-20-1424314/5-kru-korban-heli-tni-jatuh-di-kalteng-akan-dirawat-di-dki-semarang"
+      }
+    },
+    {
+      "slug": "damri-bus-depot-fire-bandung",
+      "canonicalPath": "/news/id/damri-bus-depot-fire-bandung/",
+      "headline": "Fire Damages Damri Bus Depot In Bandung Affecting Multiple Vehicles",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 71,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A fire broke out at a Damri bus depot located on Jalan Kebon Kawung in Bandung, West Java, on November 8.",
+        "The incident resulted in the destruction of ten inactive buses and caused damage to thirteen surrounding residential homes."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Indonesia",
+        "articleUrl": "https://www.cnnindonesia.com/nasional/20261108180045-20-1424700/8-bus-damri-terbakar-di-kebon-kawung-bandung"
+      }
+    },
+    {
+      "slug": "electrical-fire-tanjung-priok-jakarta",
+      "canonicalPath": "/news/id/electrical-fire-tanjung-priok-jakarta/",
+      "headline": "Electrical Short Circuit Triggers Residential Fire In North Jakarta",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A residential building in Kebon Bawang, North Jakarta, caught fire on Sunday evening.",
+        "Initial reports indicate the incident was caused by an electrical short circuit within the home."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8744162/kebakaran-landa-rumah-warga-di-tanjung-priok-jakut"
+      }
+    },
+    {
       "slug": "police-investigate-east-jakarta-mosque-attack",
       "canonicalPath": "/news/id/police-investigate-east-jakarta-mosque-attack/",
       "headline": "Indonesian Authorities Investigate Axe Attack At East Jakarta Mosque",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 75,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Three worshippers were injured by an assailant wielding an axe at the Darul Ma'arif Mosque during early morning prayers in East Jakarta.",
@@ -81,7 +115,7 @@
       "headline": "Poland Declares National Mourning Following Deadly Krakow Shooting",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 74,
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A shooting at a Krakow city square resulted in six fatalities and seventeen injuries.",
@@ -98,7 +132,7 @@
       "headline": "Officials Estimate Gambir Station Fire Damage At 200 Million Rupiah",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 72,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Regional disaster management agencies estimated the fire damage to reach 200 million rupiah.",
@@ -115,7 +149,7 @@
       "headline": "Indonesia National Football Team Holds Training Camp In Bali",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 69,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The national football team is conducting a training camp in Bali to foster team cohesion.",
@@ -127,46 +161,12 @@
       }
     },
     {
-      "slug": "damri-bus-depot-fire-bandung",
-      "canonicalPath": "/news/id/damri-bus-depot-fire-bandung/",
-      "headline": "Fire Damages Damri Bus Depot In Bandung Affecting Multiple Vehicles",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 68,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A fire broke out at a Damri bus depot located on Jalan Kebon Kawung in Bandung, West Java, on November 8.",
-        "The incident resulted in the destruction of ten inactive buses and caused damage to thirteen surrounding residential homes."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Indonesia",
-        "articleUrl": "https://www.cnnindonesia.com/nasional/20261108180045-20-1424700/8-bus-damri-terbakar-di-kebon-kawung-bandung"
-      }
-    },
-    {
-      "slug": "salt-production-assistance-aceh",
-      "canonicalPath": "/news/id/salt-production-assistance-aceh/",
-      "headline": "Ministry Of Marine Affairs Delivers Salt Processing Units In Aceh",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 67,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Ministry of Marine Affairs and Fisheries delivered 15 salt boiling units to Bireuen, Aceh.",
-        "The initiative aims to rehabilitate local production capacity following a recent natural disaster."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8743808/usaha-garam-rakyat-aceh-bangkit-berkat-bantuan-rumah-perebusan-dari-kkp"
-      }
-    },
-    {
       "slug": "king-nassar-lost-in-the-jungle-concert",
       "canonicalPath": "/news/id/king-nassar-lost-in-the-jungle-concert/",
       "headline": "King Nassar Performs At Lost In The Jungle Solo Concert In Jakarta",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 67,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "King Nassar held his inaugural solo concert event titled Lost in the Jungle.",
@@ -174,7 +174,7 @@
       ],
       "primarySource": {
         "publisherName": "Tempo",
-        "articleUrl": "https://www.cantika.com/read/2122590/10-kostum-unik-king-nassar-di-konser-lost-in-the-jungle-dari-tarzan-hingga-sayap-merak-raksasa"
+        "articleUrl": "https://www.cantika.com/read/2123196/detail-look-lesti-kejora-dan-raisa-di-konser-king-nassar-sentuhan-classic-vintage-vs-oceanic-teal"
       }
     }
   ]
