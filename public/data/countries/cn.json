@@ -3,18 +3,35 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 60,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-08T20:17:00Z",
+  "viralScore": 90,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-08T23:17:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-investigates-ceo-espionage-allegations",
+      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+      "headline": "Nvidia Launches Independent Probe Into CEO Alleged Espionage Risks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 89,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Nvidia's board has initiated an independent inquiry into reports that CEO Jensen Huang was targeted by Chinese intelligence.",
+        "The investigation follows reports of a personal relationship between Huang and an executive allegedly linked to Beijing's information gathering."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/world/nvidia-opens-probe-after-report-ceo-jensen-huangs-relationship-alleged-chinese-spy-6534611"
+      }
+    },
     {
       "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
       "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
       "headline": "Hong Kong Activist Joshua Wong Sentenced To Ten Years In Prison",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Hong Kong courts have sentenced prominent activist Joshua Wong to ten years in prison.",
         "The sentencing follows conviction on charges related to collusion with foreign forces."
