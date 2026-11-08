@@ -3,9 +3,9 @@
   "name": "Saudi Arabia",
   "slug": "saudi-arabia",
   "region": "Asia",
-  "viralScore": 89,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-08T08:17:00Z",
+  "viralScore": 70,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-08T11:17:00Z",
   "clusters": [
     {
       "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
@@ -13,8 +13,8 @@
       "headline": "Saudi Arabia Reports Missile Interceptions Following Houthi Attacks",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 87,
-      "intensityTier": "surge",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Saudi Arabia's defense systems intercepted missiles aimed at Riyadh and the Eastern province.",
         "Houthi forces reported that a coalition airstrike resulted in 33 fatalities near Sanaa."
@@ -25,12 +25,29 @@
       }
     },
     {
+      "slug": "saudi-financial-district-missile-attack",
+      "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
+      "headline": "Saudi Financial District Struck By Debris Following Missile Attack",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Falling debris damaged the Aramco Tower in Riyadh's King Abdullah Financial District on Sunday.",
+        "The Saudi-led coalition reported the interception of two ballistic missiles aimed at the capital."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/world/saudi-arabia-houthis-riyadh-financial-district-aramco-tower-6534071"
+      }
+    },
+    {
       "slug": "saudi-arabia-hajj-fraud-drone-interception",
       "canonicalPath": "/news/sa/saudi-arabia-hajj-fraud-drone-interception/",
       "headline": "Saudi Authorities Address Security And Regional Military Operations",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 46,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Saudi military forces reportedly conducted airstrikes on Houthi-controlled areas near the Yemeni capital, resulting in 33 reported fatalities.",
@@ -42,29 +59,12 @@
       }
     },
     {
-      "slug": "saudi-arabia-security-alert-riyadh",
-      "canonicalPath": "/news/sa/saudi-arabia-security-alert-riyadh/",
-      "headline": "Saudi Arabia Issues Security Alert For Riyadh Regarding Houthi Risks",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Authorities in Saudi Arabia issued a warning regarding potential dangers in Riyadh.",
-        "The alert was initiated due to identified threats from Houthi groups."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8743601/saudi-keluarkan-peringatan-potensi-bahaya-di-riyadh-gegara-ancaman-houthi"
-      }
-    },
-    {
       "slug": "fatal-airstrikes-clashes-reported-yemen",
       "canonicalPath": "/news/sa/fatal-airstrikes-clashes-reported-yemen/",
       "headline": "Reports Emerge Of Fatal Airstrikes And Clashes Within Yemen Regions",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 37,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "At least 33 people died following airstrikes on a village near Sanaa, with reports indicating women and children are among the victims.",
@@ -73,6 +73,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market"
+      }
+    },
+    {
+      "slug": "saudi-arabia-security-alert-riyadh",
+      "canonicalPath": "/news/sa/saudi-arabia-security-alert-riyadh/",
+      "headline": "Saudi Arabia Issues Security Alert For Riyadh Regarding Houthi Risks",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 26,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Authorities in Saudi Arabia issued a warning regarding potential dangers in Riyadh.",
+        "The alert was initiated due to identified threats from Houthi groups."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8743601/saudi-keluarkan-peringatan-potensi-bahaya-di-riyadh-gegara-ancaman-houthi"
       }
     }
   ]

@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 92,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-08T08:17:00Z",
+  "viralScore": 83,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-08T11:17:00Z",
   "clusters": [
     {
       "slug": "armed-suspect-arrested-near-white-house",
@@ -13,8 +13,8 @@
       "headline": "UFC Chief Dana White And President Trump To Discuss Cabinet Offer",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 89,
-      "intensityTier": "surge",
+      "viralScore": 80,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump publicly stated he offered the position of White House press secretary to Dana White.",
         "The UFC executive is scheduled to meet with the President on Monday to discuss the potential appointment."
@@ -30,7 +30,7 @@
       "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 80,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
@@ -42,29 +42,12 @@
       }
     },
     {
-      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
-      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
-      "headline": "International Reactions Follow Results Of United States Midterms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
-        "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
       "slug": "trump-appoints-miller-chief-of-staff",
       "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
       "headline": "President Trump Appoints Stephen Miller As White House Chief Of Staff",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump has named Stephen Miller as his new White House chief of staff, replacing outgoing aide Susie Wiles.",
@@ -76,12 +59,29 @@
       }
     },
     {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Reactions Follow Results Of United States Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
+        "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
+      }
+    },
+    {
       "slug": "pope-leo-latin-america-tour",
       "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
       "headline": "Pope Leo XIV Begins South America Tour Following Lung Cancer Surgery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Uruguay to commence a 12-day, three-country tour of South America.",
@@ -98,7 +98,7 @@
       "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
@@ -107,6 +107,23 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
+      }
+    },
+    {
+      "slug": "us-election-results-analysis",
+      "canonicalPath": "/news/us/us-election-results-analysis/",
+      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
+        "Florida remains a notable area of support for the Republican party and its current political agenda."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
       }
     },
     {
@@ -149,7 +166,7 @@
       "headline": "United States Conducts Additional Targeted Strikes Within Iran",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump confirmed the execution of additional limited military strikes against targets in Iran.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "us-election-results-analysis",
-      "canonicalPath": "/news/us/us-election-results-analysis/",
-      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
-        "Florida remains a notable area of support for the Republican party and its current political agenda."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
       }
     }
   ]
