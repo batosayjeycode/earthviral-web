@@ -19,9 +19,13 @@
  *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
  *   --dry-run              don't write files
+ *   --snapshot <file>      also save the batch's input articles + trend signals as JSON
+ *                          (CI uploads it as an artifact so clustering can be replayed)
  *
  * Env: GEMINI_API_KEY, GEMINI_MODEL (default gemini-3.1-flash-lite), OPENAI_API_KEY, OPENAI_MODEL (default gpt-5-mini)
  */
+import { mkdir, writeFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
 import { categoryBySlug } from '../src/lib/taxonomy.ts';
 import { VAS } from '../src/lib/scoring.ts';
 import type { ViralClusterStaticRecord } from '../src/lib/types.ts';
@@ -79,6 +83,7 @@ const intOption = (name: string, fallback: number) => {
 const OPTS = {
   provider: resolveProvider(option('provider')),
   dryRun: flag('dry-run'),
+  snapshot: option('snapshot'),
   maxNew: intOption('max-new', 60),
   maxPerCountry: intOption('max-per-country', 8),
   maxStoriesPerCountry: intOption(
@@ -267,6 +272,22 @@ async function main() {
 
   const articles = assignCountries([...rss.articles, ...gdelt.articles]);
   log(`  ${articles.length} articles attributed to a tracked country`);
+  if (OPTS.snapshot) {
+    // Raw inputs aren't otherwise kept (stories store only their own sources), so without
+    // this a batch's clustering can't be reproduced.
+    await mkdir(dirname(OPTS.snapshot), { recursive: true });
+    await writeFile(
+      OPTS.snapshot,
+      JSON.stringify({
+        batchId,
+        generatedAt: iso(now),
+        feedsFailed,
+        trends: trends.signals,
+        articles,
+      }),
+    );
+    log(`  Snapshot: ${articles.length} articles → ${OPTS.snapshot}`);
+  }
 
   // 3. Cluster + score ───────────────────────────────────────────────────────
   log('▶ Clustering & scoring…');
