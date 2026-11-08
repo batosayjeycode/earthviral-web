@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611081417",
-  "generatedAt": "2026-11-08T14:17:00Z",
-  "nextUpdateAt": "2026-11-08T17:17:00Z",
+  "batchId": "batch-202611081717",
+  "generatedAt": "2026-11-08T17:17:00Z",
+  "nextUpdateAt": "2026-11-08T20:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -12,15 +12,59 @@
         117,
         -2.5
       ],
-      "viralScore": 94,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
-        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
-        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
-        "headline": "Indonesian President Meets Former Police Chiefs Amid Wiretap Probe",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "slug": "helicopter-crashes-during-kalimantan-water-bombing",
+        "canonicalPath": "/news/id/helicopter-crashes-during-kalimantan-water-bombing/",
+        "headline": "Helicopter Involved In Firefighting Operations Crashes In Barito",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 100,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 96,
+      "intensityTier": "surge",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "uk-minister-warns-media-sexual-abuse",
+        "canonicalPath": "/news/gb/uk-minister-warns-media-sexual-abuse/",
+        "headline": "UK Minister Demands Media Industry Address Systemic Sexual Abuse",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 93,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "PL",
+      "isoNumeric": "616",
+      "name": "Poland",
+      "slug": "poland",
+      "centroid": [
+        19.4,
+        52.1
+      ],
+      "viralScore": 92,
+      "intensityTier": "surge",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "mass-shooting-krakow-market-square",
+        "canonicalPath": "/news/pl/mass-shooting-krakow-market-square/",
+        "headline": "Poland Opens Terrorism Probe Following Deadly Krakow Mass Shooting",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 91,
         "intensityTier": "surge"
       }
@@ -34,7 +78,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 91,
+      "viralScore": 87,
       "intensityTier": "surge",
       "topicCount": 2,
       "topTopic": {
@@ -43,73 +87,51 @@
         "headline": "Israel President Tasks Gadi Eisenkot With Forming New Government",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 90,
+        "viralScore": 86,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "PL",
-      "isoNumeric": "616",
-      "name": "Poland",
-      "slug": "poland",
+      "code": "EG",
+      "isoNumeric": "818",
+      "name": "Egypt",
+      "slug": "egypt",
       "centroid": [
-        19.4,
-        52.1
+        30.8,
+        26.8
       ],
-      "viralScore": 91,
+      "viralScore": 86,
       "intensityTier": "surge",
       "topicCount": 2,
       "topTopic": {
-        "slug": "mass-shooting-krakow-market-square",
-        "canonicalPath": "/news/pl/mass-shooting-krakow-market-square/",
-        "headline": "Poland Declares National Mourning Following Deadly Krakow Shooting",
+        "slug": "train-collision-occurs-giza-egypt",
+        "canonicalPath": "/news/eg/train-collision-occurs-giza-egypt/",
+        "headline": "Train Collision Occurs In Giza Province Resulting In Casualties",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 90,
+        "viralScore": 85,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
+      "code": "AR",
+      "isoNumeric": "032",
+      "name": "Argentina",
+      "slug": "argentina",
       "centroid": [
-        -98.5,
-        39.5
+        -63.6,
+        -38.4
       ],
-      "viralScore": 82,
+      "viralScore": 81,
       "intensityTier": "high",
-      "topicCount": 10,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "armed-suspect-arrested-near-white-house",
-        "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-        "headline": "UFC Chief Dana White And President Trump To Discuss Cabinet Offer",
+        "slug": "argentina-secures-pope-leo-xiv-visit",
+        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
+        "headline": "Pope Leo XIV Arrives In Argentina Amidst Political Tensions",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Heavy Rainfall Destroys Thousands Of Displacement Tents Across Gaza",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 78,
+        "viralScore": 81,
         "intensityTier": "high"
       }
     },
@@ -122,7 +144,7 @@
         138.5,
         36.5
       ],
-      "viralScore": 79,
+      "viralScore": 81,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -131,7 +153,29 @@
         "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 76,
+        "viralScore": 78,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 78,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "australian-pilots-survive-borneo-helicopter-crash",
+        "canonicalPath": "/news/au/australian-pilots-survive-borneo-helicopter-crash/",
+        "headline": "Two Australian Pilots Survive Helicopter Crash In South Kalimantan",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -144,7 +188,7 @@
         45,
         24
       ],
-      "viralScore": 78,
+      "viralScore": 77,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -153,7 +197,29 @@
         "headline": "Saudi Arabia Reports Damage To Aramco Facility After Houthi Attack",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 76,
+        "viralScore": 75,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 77,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+        "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 74,
         "intensityTier": "high"
       }
     },
@@ -166,7 +232,7 @@
         8.1,
         9.6
       ],
-      "viralScore": 72,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -175,73 +241,51 @@
         "headline": "Nigeria Flamingos Secure Historic FIFA U-17 Women's World Cup Win",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 69,
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
-        53.7,
-        32.4
+        35.2,
+        31.9
       ],
-      "viralScore": 66,
+      "viralScore": 71,
       "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
-        "slug": "farage-says-he-is-worried-trump-will-step-up",
-        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Regional Escalation And Diplomacy Efforts Surround Ongoing Iran Conflict",
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Heavy Rainfall Destroys Thousands Of Displacement Tents Across Gaza",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NZ",
+      "isoNumeric": "554",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "centroid": [
+        172,
+        -41.5
+      ],
+      "viralScore": 70,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "new-zealand-election-too-close",
+        "canonicalPath": "/news/nz/new-zealand-election-too-close/",
+        "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 66,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "king-charles-leads-annual-remembrance-service",
-        "canonicalPath": "/news/gb/king-charles-leads-annual-remembrance-service/",
-        "headline": "King Charles Leads National Remembrance Service At The London Cenotaph",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 63,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "French Protests Persist Amid Disagreements Over Turnout Figures",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 60,
+        "viralScore": 69,
         "intensityTier": "high"
       }
     },
@@ -254,7 +298,7 @@
         79,
         22
       ],
-      "viralScore": 60,
+      "viralScore": 69,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -263,28 +307,116 @@
         "headline": "Delhi Air Quality Reaches Severe Levels Following Deepavali Festival",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 57,
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
+        "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
+        "headline": "Hong Kong Activist Joshua Wong Sentenced To Ten Years In Prison",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "farage-says-he-is-worried-trump-will-step-up",
+        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
+        "headline": "Regional Escalation And Diplomacy Efforts Surround Ongoing Iran Conflict",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 61,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 61,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "French Protests Persist Amid Disagreements Over Turnout Figures",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 58,
         "intensityTier": "active"
       }
     },
     {
-      "code": "NZ",
-      "isoNumeric": "554",
-      "name": "New Zealand",
-      "slug": "new-zealand",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        172,
-        -41.5
+        -51.9,
+        -10.5
       ],
       "viralScore": 58,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "new-zealand-election-too-close",
-        "canonicalPath": "/news/nz/new-zealand-election-too-close/",
-        "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "slug": "wet-weather-impacts-brazilian-grand-prix",
+        "canonicalPath": "/news/br/wet-weather-impacts-brazilian-grand-prix/",
+        "headline": "Drivers Face Difficult Qualifying Session At The Brazilian Grand Prix",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 55,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 57,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "samsung-lions-win-korean-series-championship",
+        "canonicalPath": "/news/kr/samsung-lions-win-korean-series-championship/",
+        "headline": "Samsung Lions Claim First Korean Series Championship In Twelve Years",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
         "viralScore": 57,
         "intensityTier": "active"
       }
@@ -298,7 +430,7 @@
         37.9,
         0.2
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "topicCount": 10,
       "topTopic": {
@@ -307,7 +439,7 @@
         "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 55,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -320,7 +452,7 @@
         -3.7,
         40.2
       ],
-      "viralScore": 57,
+      "viralScore": 55,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -329,7 +461,7 @@
         "headline": "Real Madrid Defeats Valencia Amidst Ongoing La Liga Scheduling Debate",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 56,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -342,7 +474,7 @@
         24.7,
         -29
       ],
-      "viralScore": 56,
+      "viralScore": 51,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -351,95 +483,7 @@
         "headline": "African National Congress Faces Losses In South African Local Polls",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "samsung-lions-win-korean-series-championship",
-        "canonicalPath": "/news/kr/samsung-lions-win-korean-series-championship/",
-        "headline": "Samsung Lions Claim First Korean Series Championship In Twelve Years",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 54,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "ponga-leads-new-zealand-world-cup",
-        "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-        "headline": "Jillaroos And Kiwis Advance To Rugby League World Cup Grand Finals",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
         "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 53,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
-        "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
-        "headline": "Hong Kong Activist Joshua Wong Sentenced To Ten Years In Prison",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 53,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "EG",
-      "isoNumeric": "818",
-      "name": "Egypt",
-      "slug": "egypt",
-      "centroid": [
-        30.8,
-        26.8
-      ],
-      "viralScore": 50,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "egypt-football-appoints-ali-maher",
-        "canonicalPath": "/news/eg/egypt-football-appoints-ali-maher/",
-        "headline": "Egyptian National Football Team Appoints Ali Maher As Head Coach",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 50,
         "intensityTier": "active"
       }
     },
@@ -466,28 +510,6 @@
       }
     },
     {
-      "code": "AR",
-      "isoNumeric": "032",
-      "name": "Argentina",
-      "slug": "argentina",
-      "centroid": [
-        -63.6,
-        -38.4
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "argentina-secures-pope-leo-xiv-visit",
-        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
-        "headline": "Argentina Implements Heightened Security For Pope Leo XIV Visit",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "UA",
       "isoNumeric": "804",
       "name": "Ukraine",
@@ -496,7 +518,7 @@
         31.2,
         49
       ],
-      "viralScore": 46,
+      "viralScore": 43,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -505,28 +527,6 @@
         "headline": "Russia Launches Large-Scale Airstrikes Against Ukrainian Energy Grid",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "city-of-god-series-update",
-        "canonicalPath": "/news/br/city-of-god-series-update/",
-        "headline": "City of God Season Two Features New Conflict Within The Community",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
         "viralScore": 43,
         "intensityTier": "active"
       }
@@ -554,28 +554,6 @@
       }
     },
     {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 41,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "cop31-climate-summit-antalya-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
-        "headline": "United Nations COP31 Climate Change Summit Begins In Antalya Turkey",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 41,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "RU",
       "isoNumeric": "643",
       "name": "Russia",
@@ -598,6 +576,28 @@
       }
     },
     {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 37,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "cop31-climate-summit-antalya-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
+        "headline": "United Nations COP31 Climate Change Summit Begins In Antalya Turkey",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 37,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "SG",
       "isoNumeric": "702",
       "name": "Singapore",
@@ -606,7 +606,7 @@
         103.82,
         1.35
       ],
-      "viralScore": 38,
+      "viralScore": 36,
       "intensityTier": "active",
       "topicCount": 10,
       "topTopic": {
@@ -615,7 +615,7 @@
         "headline": "Singapore-Based IT Executive Killed In Faridabad Parking Dispute",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 35,
+        "viralScore": 33,
         "intensityTier": "active"
       }
     },
@@ -650,7 +650,7 @@
         -102.5,
         23.6
       ],
-      "viralScore": 24,
+      "viralScore": 23,
       "intensityTier": "quiet",
       "topicCount": 8,
       "topTopic": {
@@ -659,7 +659,7 @@
         "headline": "Denver Nuggets Defeat Indiana Pacers In Mexico City Exhibition",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 21,
+        "viralScore": 20,
         "intensityTier": "quiet"
       }
     },

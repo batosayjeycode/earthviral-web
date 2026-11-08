@@ -3,34 +3,17 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 82,
+  "viralScore": 77,
   "intensityTier": "high",
-  "generatedAt": "2026-11-08T14:17:00Z",
+  "generatedAt": "2026-11-08T17:17:00Z",
   "clusters": [
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "UFC Chief Dana White And President Trump To Discuss Cabinet Offer",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 79,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Donald Trump publicly stated he offered the position of White House press secretary to Dana White.",
-        "The UFC executive is scheduled to meet with the President on Monday to discuss the potential appointment."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
-      }
-    },
     {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
@@ -42,20 +25,20 @@
       }
     },
     {
-      "slug": "trump-appoints-miller-chief-of-staff",
-      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
-      "headline": "President Trump Appoints Stephen Miller As White House Chief Of Staff",
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "UFC Chief Dana White And President Trump To Discuss Cabinet Offer",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "President Trump has named Stephen Miller as his new White House chief of staff, replacing outgoing aide Susie Wiles.",
-        "The appointment follows recent midterm election results that have been described in reports as a dismal performance for the Republican party."
+        "President Donald Trump publicly stated he offered the position of White House press secretary to Dana White.",
+        "The UFC executive is scheduled to meet with the President on Monday to discuss the potential appointment."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/6/trump-says-making-adviser-stephen-miller-white-house-chief-of-staff?traffic_source=rss"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
       }
     },
     {
@@ -64,8 +47,8 @@
       "headline": "International Reactions Follow Results Of United States Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "viralScore": 70,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
         "International political figures and governments have begun assessing how the electoral outcome might impact foreign relations and alliance stability."
@@ -81,8 +64,8 @@
       "headline": "Pope Leo XIV Begins South America Tour Following Lung Cancer Surgery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 56,
-      "intensityTier": "active",
+      "viralScore": 64,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Uruguay to commence a 12-day, three-country tour of South America.",
         "The trip marks the pontiff's return to international travel shortly after undergoing surgery to remove a cancerous lung tumor."
@@ -90,6 +73,40 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o"
+      }
+    },
+    {
+      "slug": "trump-appoints-miller-chief-of-staff",
+      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
+      "headline": "President Trump Appoints Stephen Miller As White House Chief Of Staff",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump has named Stephen Miller as his new White House chief of staff, replacing outgoing aide Susie Wiles.",
+        "The appointment follows recent midterm election results that have been described in reports as a dismal performance for the Republican party."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/6/trump-says-making-adviser-stephen-miller-white-house-chief-of-staff?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "us-election-results-analysis",
+      "canonicalPath": "/news/us/us-election-results-analysis/",
+      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
+        "Florida remains a notable area of support for the Republican party and its current political agenda."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
       }
     },
     {
@@ -107,23 +124,6 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
-      }
-    },
-    {
-      "slug": "us-election-results-analysis",
-      "canonicalPath": "/news/us/us-election-results-analysis/",
-      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
-        "Florida remains a notable area of support for the Republican party and its current political agenda."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
       }
     },
     {

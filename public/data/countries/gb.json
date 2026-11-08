@@ -3,18 +3,35 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 66,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-08T14:17:00Z",
+  "viralScore": 96,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-08T17:17:00Z",
   "clusters": [
+    {
+      "slug": "uk-minister-warns-media-sexual-abuse",
+      "canonicalPath": "/news/gb/uk-minister-warns-media-sexual-abuse/",
+      "headline": "UK Minister Demands Media Industry Address Systemic Sexual Abuse",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 93,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Culture Secretary Lisa Nandy stated that the time for the media industry to address abuse allegations has reached a critical point.",
+        "The minister reported that numerous individuals from the media sector have reached out to share their personal experiences."
+      ],
+      "primarySource": {
+        "publisherName": "theleader.com.au",
+        "articleUrl": "https://www.theleader.com.au/story/9387816/minister-warns-uk-media-still-has-sexual-abuse-problem/"
+      }
+    },
     {
       "slug": "king-charles-leads-annual-remembrance-service",
       "canonicalPath": "/news/gb/king-charles-leads-annual-remembrance-service/",
       "headline": "King Charles Leads National Remembrance Service At The London Cenotaph",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "King Charles presided over the annual Remembrance Sunday ceremony held at the Cenotaph in central London.",
         "Approximately 10,000 military veterans participated in the event, including a small group of surviving World War Two personnel."
@@ -22,6 +39,23 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/videos/cw1l307v4edlo"
+      }
+    },
+    {
+      "slug": "uk-parents-sue-school-over-tilak",
+      "canonicalPath": "/news/gb/uk-parents-sue-school-over-tilak/",
+      "headline": "Parents File Legal Challenge Against UK School Over Religious Mark",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Parents of a nine-year-old student have filed a legal challenge in the UK High Court.",
+        "The legal action follows an incident where a school barred the boy from wearing a traditional Hindu tilak-chandlo."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/uk/parents-sue-uk-school-for-stopping-hindu-boy-from-putting-on-tilak/articleshow/135661050.cms"
       }
     },
     {
@@ -98,7 +132,7 @@
       "headline": "Experts Discuss Emerging Patterns In Global Cyber Security Breaches",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 22,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Recent reports highlight incidents where cyber interference allegedly affected industrial refrigeration units in London.",
@@ -124,40 +158,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/crp3gk07850zo"
-      }
-    },
-    {
-      "slug": "barrister-self-refers-to-legal-regulator",
-      "canonicalPath": "/news/gb/barrister-self-refers-to-legal-regulator/",
-      "headline": "Barrister Self-Refers To Regulatory Body Following Court Incident",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Barrister Ian Winter reported himself to a regulatory body following an alleged incident outside court.",
-        "The incident reportedly involved a confrontation with a journalist covering legal proceedings."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c8kgee9yxvn7o"
-      }
-    },
-    {
-      "slug": "early-polar-vortex-weakening-uk",
-      "canonicalPath": "/news/gb/early-polar-vortex-weakening-uk/",
-      "headline": "Early Polar Vortex Weakening Sparks UK Winter Weather Uncertainty",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Meteorologists have identified an unprecedented early weakening of the polar vortex.",
-        "The phenomenon has generated significant uncertainty regarding potential impacts on UK weather patterns."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/weather/articles/cwyvrz09mnd6o"
       }
     },
     {
