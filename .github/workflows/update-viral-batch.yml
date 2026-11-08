@@ -90,11 +90,22 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || false }}
           RESUMMARIZE_FALLBACK: ${{ inputs.resummarize_fallback || false }}
         run: |
-          args=()
+          args=(--snapshot batch-snapshot/articles.json)
           if [ "$PROVIDER" != "auto" ]; then args+=(--provider "$PROVIDER"); fi
           if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
           if [ "$RESUMMARIZE_FALLBACK" = "true" ]; then args+=(--resummarize-fallback); fi
           npm run update:viral -- "${args[@]}"
+
+      # Input articles + trend signals, so a batch's clustering can be replayed and tuned
+      # later (story files keep only their own sources). Uploaded even if the batch fails.
+      - name: Upload batch input snapshot
+        if: always() && steps.guard.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-snapshot-${{ github.run_id }}
+          path: batch-snapshot/
+          retention-days: 14
+          if-no-files-found: ignore
 
       - name: Verify the site builds with the new data
         if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
