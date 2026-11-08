@@ -3,17 +3,34 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 80,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-08T02:17:00Z",
+  "viralScore": 89,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-08T05:17:00Z",
   "clusters": [
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "UFC Executive Dana White Declines Role As White House Press Secretary",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "President Donald Trump offered the position of White House press secretary to UFC CEO Dana White.",
+        "Multiple sources report that Dana White has declined the offer citing his ongoing professional responsibilities."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
+      }
+    },
     {
       "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
       "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
       "headline": "International Reactions Follow Results Of United States Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 77,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Global market volatility and a sharp decline in AI stocks followed the release of United States midterm election results.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "President Trump Nominates UFC Executive Dana White As Press Secretary",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Donald Trump has publicly invited UFC CEO Dana White to serve as the White House press secretary.",
-        "The position has remained largely unfilled since the departure of Karoline Leavitt earlier this year in August."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
-      }
-    },
-    {
       "slug": "trump-appoints-miller-chief-of-staff",
       "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
       "headline": "President Trump Appoints Stephen Miller As White House Chief Of Staff",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump has named Stephen Miller as his new White House chief of staff, replacing outgoing aide Susie Wiles.",
@@ -64,7 +64,7 @@
       "headline": "US Democrats Prepare Agenda Following Midterm Congressional Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party has secured a majority in both chambers of the US Congress following the midterm elections.",
@@ -81,7 +81,7 @@
       "headline": "Pope Leo XIV Begins South America Tour Following Lung Cancer Surgery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 66,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Uruguay to commence a 12-day, three-country tour of South America.",
@@ -98,8 +98,8 @@
       "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
         "The arrest follows official allegations concerning the possession of child sexual abuse materials."
@@ -115,7 +115,7 @@
       "headline": "Senior US Officials Resign Following Midterm Election Outcomes",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Several senior Department of Justice officials, including the head of the civil rights division and a federal prosecutor, have resigned.",
@@ -144,29 +144,12 @@
       }
     },
     {
-      "slug": "us-election-results-analysis",
-      "canonicalPath": "/news/us/us-election-results-analysis/",
-      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 35,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
-        "Florida remains a notable area of support for the Republican party and its current political agenda."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
-      }
-    },
-    {
       "slug": "president-trump-confirms-limited-us-strikes",
       "canonicalPath": "/news/us/president-trump-confirms-limited-us-strikes/",
       "headline": "United States Conducts Additional Targeted Strikes Within Iran",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump confirmed the execution of additional limited military strikes against targets in Iran.",
@@ -175,6 +158,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
+      "slug": "us-election-results-analysis",
+      "canonicalPath": "/news/us/us-election-results-analysis/",
+      "headline": "Election Results Show Shifting Political Landscape Across The U.S.",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 33,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Latino voter participation significantly contributed to democratic gains in Texas during the recent election.",
+        "Florida remains a notable area of support for the Republican party and its current political agenda."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/07/florida-republicans-midterm-elections"
       }
     }
   ]

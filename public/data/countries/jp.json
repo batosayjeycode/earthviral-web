@@ -3,17 +3,34 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 44,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-08T02:17:00Z",
+  "viralScore": 86,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-08T05:17:00Z",
   "clusters": [
+    {
+      "slug": "seismic-activity-hits-kanto-region-japan",
+      "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
+      "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 83,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A magnitude 5.7 earthquake impacted the Aichi and Shizuoka prefectures early in the morning.",
+        "Local reports confirm that over 20 people have sustained injuries following the seismic event."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/06/japan/tokyo-shallow-quake/"
+      }
+    },
     {
       "slug": "nigeria-japan-u17-womens-world-cup-final",
       "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
       "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Nigerian U-17 women's national team has reached the final of the FIFA U-17 Women's World Cup for the first time in history.",
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/06/japan/politics/jt-seize-russia/"
-      }
-    },
-    {
-      "slug": "seismic-activity-hits-kanto-region-japan",
-      "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
-      "headline": "Significant Seismic Activity Reported Across The Kanto Region Japan",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A magnitude 6.1 earthquake occurred off the coast of the Kanto region without triggering a tsunami alert.",
-        "A subsequent magnitude 5.7 earthquake impacted central Japan resulting in dozens of reported injuries."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/06/japan/tokyo-shallow-quake/"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "Kazuyoshi Miura Sets New Record As Oldest Professional Athlete",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 21,
+      "viralScore": 20,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Footballer Kazuyoshi Miura has broken the record for the oldest professional player to compete in a match.",
@@ -90,55 +90,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/sport/japan-great-king-kazu-miura-sets-oldest-appearance-record-59-6533271"
-      }
-    },
-    {
-      "slug": "japan-education-programs-us-troops",
-      "canonicalPath": "/news/jp/japan-education-programs-us-troops/",
-      "headline": "Japan Proposes Education Initiatives For U.S. Troops In Okinawa",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Japan and U.S. officials have reached an agreement on measures to prevent the recurrence of criminal incidents.",
-        "The new initiatives include mandatory educational lectures for U.S. military personnel stationed in Okinawa."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
-      }
-    },
-    {
-      "slug": "japan-eyes-early-contribution-payment-to-icc-as-court",
-      "canonicalPath": "/news/jp/japan-eyes-early-contribution-payment-to-icc-as-court/",
-      "headline": "Japan eyes early contribution payment to ICC as court faces U.S. sanctions",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Japan Times reports: Japan eyes early contribution payment to ICC as court faces U.S. sanctions"
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/politics/japan-contribution-icc-us-sanctions/"
-      }
-    },
-    {
-      "slug": "japan-picks-28-priority-items-for-370-trillion-in",
-      "canonicalPath": "/news/jp/japan-picks-28-priority-items-for-370-trillion-in/",
-      "headline": "Japan picks 28 priority items for ¥370 trillion in investments",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Japan Times reports: Japan picks 28 priority items for ¥370 trillion in investments"
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/business/2026/11/07/economy/japan-priority-items-investments/"
       }
     },
     {
@@ -172,6 +123,55 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/business/2026/11/07/economy/japan-biz-community-china-tensions/"
+      }
+    },
+    {
+      "slug": "japan-education-programs-us-troops",
+      "canonicalPath": "/news/jp/japan-education-programs-us-troops/",
+      "headline": "Japan Proposes Education Initiatives For U.S. Troops In Okinawa",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Japan and U.S. officials have reached an agreement on measures to prevent the recurrence of criminal incidents.",
+        "The new initiatives include mandatory educational lectures for U.S. military personnel stationed in Okinawa."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
+      }
+    },
+    {
+      "slug": "japan-eyes-early-contribution-payment-to-icc-as-court",
+      "canonicalPath": "/news/jp/japan-eyes-early-contribution-payment-to-icc-as-court/",
+      "headline": "Japan eyes early contribution payment to ICC as court faces U.S. sanctions",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Japan Times reports: Japan eyes early contribution payment to ICC as court faces U.S. sanctions"
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/politics/japan-contribution-icc-us-sanctions/"
+      }
+    },
+    {
+      "slug": "japan-picks-28-priority-items-for-370-trillion-in",
+      "canonicalPath": "/news/jp/japan-picks-28-priority-items-for-370-trillion-in/",
+      "headline": "Japan picks 28 priority items for ¥370 trillion in investments",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Japan Times reports: Japan picks 28 priority items for ¥370 trillion in investments"
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/business/2026/11/07/economy/japan-priority-items-investments/"
       }
     }
   ]
