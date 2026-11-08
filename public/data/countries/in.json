@@ -3,9 +3,9 @@
   "name": "India",
   "slug": "india",
   "region": "Asia",
-  "viralScore": 67,
+  "viralScore": 60,
   "intensityTier": "high",
-  "generatedAt": "2026-11-08T11:17:00Z",
+  "generatedAt": "2026-11-08T14:17:00Z",
   "clusters": [
     {
       "slug": "delhi-air-quality-grap-iii-restrictions",
@@ -13,8 +13,8 @@
       "headline": "Delhi Air Quality Reaches Severe Levels Following Deepavali Festival",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Air quality in Delhi approached severe levels with an AQI of 383 recorded on the morning after Deepavali.",
         "The Supreme Court of India identified vehicle emissions as a primary contributor to the regional air pollution crisis."
@@ -25,46 +25,12 @@
       }
     },
     {
-      "slug": "pm-modi-celebrates-deepavali-in-bastar",
-      "canonicalPath": "/news/in/pm-modi-celebrates-deepavali-in-bastar/",
-      "headline": "Prime Minister Modi Celebrates Deepavali With Forces In Bastar Region",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Narendra Modi visited Bastar to observe the festival of Deepavali alongside local security personnel.",
-        "The Prime Minister stated that the region has transitioned from being influenced by Maoist activity to experiencing development."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/india/pm-modi-to-continue-diwali-tradition-with-jawans-extends-wishes-to-people-across-country/articleshow/135649642.cms"
-      }
-    },
-    {
-      "slug": "rajnath-singh-sikkim-border-visit",
-      "canonicalPath": "/news/in/rajnath-singh-sikkim-border-visit/",
-      "headline": "Defence Minister Rajnath Singh Conducts Security Review In Sikkim",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Defence Minister Rajnath Singh visited military bases near the China frontier to evaluate operational preparedness.",
-        "The Minister inspected infrastructure developments along the Line of Actual Control and emphasized the need for military readiness."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/from-strategic-eastern-airbase-rajnath-calls-for-highest-military-preparedness/article71678566.ece"
-      }
-    },
-    {
       "slug": "teen-develops-solar-powered-three-wheeler",
       "canonicalPath": "/news/in/teen-develops-solar-powered-three-wheeler/",
       "headline": "Gurugram Teen Develops Solar-Powered Three-Wheeler For Families",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 45,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A Gurugram-based teenager constructed a three-wheeled solar vehicle.",
@@ -76,12 +42,80 @@
       }
     },
     {
+      "slug": "sonia-gandhi-releases-new-memoir-belonging",
+      "canonicalPath": "/news/in/sonia-gandhi-releases-new-memoir-belonging/",
+      "headline": "Sonia Gandhi Reflects On Life And Politics In New Memoir Belonging",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Sonia Gandhi is set to release her memoir titled Belonging: A Journey of Love, detailing her transition from a private life to public politics.",
+        "The book covers her personal experiences with loss, her decision to decline the Prime Minister position, and her reflections on the Emergency period."
+      ],
+      "primarySource": {
+        "publisherName": "The Hindu",
+        "articleUrl": "https://www.thehindu.com/news/national/sonia-gandhi-interview-great-damage-done-to-the-fabric-of-india-by-bjp/article71674284.ece"
+      }
+    },
+    {
+      "slug": "rajnath-singh-sikkim-border-visit",
+      "canonicalPath": "/news/in/rajnath-singh-sikkim-border-visit/",
+      "headline": "Defence Minister Rajnath Singh Conducts Security Review In Sikkim",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Defence Minister Rajnath Singh visited military bases near the China frontier to evaluate operational preparedness.",
+        "The Minister inspected infrastructure developments along the Line of Actual Control and emphasized the need for military readiness."
+      ],
+      "primarySource": {
+        "publisherName": "The Hindu",
+        "articleUrl": "https://www.thehindu.com/news/national/from-strategic-eastern-airbase-rajnath-calls-for-highest-military-preparedness/article71678566.ece"
+      }
+    },
+    {
+      "slug": "pm-modi-celebrates-deepavali-in-bastar",
+      "canonicalPath": "/news/in/pm-modi-celebrates-deepavali-in-bastar/",
+      "headline": "Prime Minister Modi Celebrates Deepavali With Forces In Bastar Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Prime Minister Narendra Modi visited Bastar to observe the festival of Deepavali alongside local security personnel.",
+        "The Prime Minister stated that the region has transitioned from being influenced by Maoist activity to experiencing development."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/india/pm-modi-to-continue-diwali-tradition-with-jawans-extends-wishes-to-people-across-country/articleshow/135649642.cms"
+      }
+    },
+    {
+      "slug": "microsoft-employees-critique-ai-strategy",
+      "canonicalPath": "/news/in/microsoft-employees-critique-ai-strategy/",
+      "headline": "Microsoft Employees Express Concerns Over AI Strategy and Buyouts",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Staff members have drafted an open letter characterizing the current work environment at Microsoft as demoralizing.",
+        "The document criticizes the company's intensive pursuit of artificial intelligence and its impact on corporate culture."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/as-microsoft-offers-buyouts-to-60000-employees-staff-write-open-letter-says-working-at-microsoft-has-become-joyless-and-/articleshow/135657463.cms"
+      }
+    },
+    {
       "slug": "abhishek-banerjee-residence-attack-dispute",
       "canonicalPath": "/news/in/abhishek-banerjee-residence-attack-dispute/",
       "headline": "Trinamool Congress MP Abhishek Banerjee Reports Attack On Residence",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Trinamool Congress MP Abhishek Banerjee reported an attack on his residence during his birthday celebration.",
@@ -98,7 +132,7 @@
       "headline": "Indian National Congress Reports Significant Decline In Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Indian National Congress recorded a 75 percent decrease in donations during the 2025-26 fiscal year.",
@@ -110,29 +144,12 @@
       }
     },
     {
-      "slug": "ramayana-film-box-office-earnings",
-      "canonicalPath": "/news/in/ramayana-film-box-office-earnings/",
-      "headline": "Ramayana Part I Reaches Two Hundred Ten Crore Net Box Office Total",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The film Ramayana: Part I has accumulated a net box office total of 210 crore.",
-        "The production achieved 194.39 crore in earnings within its first four days of release."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/ramayana-rise-of-a-legend-box-office-collection-day-4-live-the-ranbir-kapoor-yash-sai-pallavi-starrer-touches-rs-210-crore-net-in-india-diwali-laxmi-puja-day-may-play-a-key-role-in-determining-sunday-numbers/articleshow/135655467.cms"
-      }
-    },
-    {
       "slug": "hasanamba-temple-devotees-political-discourse",
       "canonicalPath": "/news/in/hasanamba-temple-devotees-political-discourse/",
       "headline": "Hasanamba Temple Sees Large Crowds As Political Rhetoric Intensifies",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Large numbers of pilgrims are currently visiting the Hasanamba Temple.",
@@ -144,29 +161,12 @@
       }
     },
     {
-      "slug": "sonia-gandhi-releases-new-memoir-belonging",
-      "canonicalPath": "/news/in/sonia-gandhi-releases-new-memoir-belonging/",
-      "headline": "Sonia Gandhi Reflects On Life And Politics In New Memoir Belonging",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 35,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Sonia Gandhi is set to release her memoir titled Belonging: A Journey of Love, detailing her transition from a private life to public politics.",
-        "The book covers her personal experiences with loss, her decision to decline the Prime Minister position, and her reflections on the Emergency period."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/sonia-gandhi-interview-great-damage-done-to-the-fabric-of-india-by-bjp/article71674284.ece"
-      }
-    },
-    {
       "slug": "indigo-flight-returns-after-hijack-threat",
       "canonicalPath": "/news/in/indigo-flight-returns-after-hijack-threat/",
       "headline": "IndiGo Flight From Bengaluru To Lucknow Returns Over Hijack Threat",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "An IndiGo aircraft en route to Lucknow returned to Kempegowda International Airport shortly after takeoff.",
