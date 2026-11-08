@@ -1,25 +1,24 @@
 {
-  "batchId": "batch-202611080517",
-  "generatedAt": "2026-11-08T05:17:00Z",
-  "nextUpdateAt": "2026-11-08T08:17:00Z",
+  "batchId": "batch-202611080817",
+  "generatedAt": "2026-11-08T08:17:00Z",
+  "nextUpdateAt": "2026-11-08T11:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 27,
-    "viralTopics": 146,
-    "globalIndex": 81
+    "activeCountries": 28,
+    "viralTopics": 150,
+    "globalIndex": 85
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 30,
+    "feedsOk": 31,
     "feedsFailed": [
-      "nation-ke: HTTP 404 for https://nation.africa/kenya/rss.xml",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1165,
-    "newClusters": 11,
-    "updatedClusters": 20,
-    "retiredClusters": 10,
-    "aiCalls": 18,
+    "articlesFetched": 1156,
+    "newClusters": 14,
+    "updatedClusters": 17,
+    "retiredClusters": 11,
+    "aiCalls": 20,
     "aiFailures": {
       "rate-limit": 1
     },
@@ -29,6 +28,6 @@
         "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
       }
     ],
-    "durationMs": 127336
+    "durationMs": 124724
   }
 }
