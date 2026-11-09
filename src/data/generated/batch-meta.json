@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611090217",
-  "generatedAt": "2026-11-09T02:17:00Z",
-  "nextUpdateAt": "2026-11-09T05:17:00Z",
+  "batchId": "batch-202611090517",
+  "generatedAt": "2026-11-09T05:17:00Z",
+  "nextUpdateAt": "2026-11-09T08:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 30,
-    "viralTopics": 159,
-    "globalIndex": 88
+    "activeCountries": 29,
+    "viralTopics": 157,
+    "globalIndex": 92
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -16,11 +16,11 @@
       "gdelt-unitedstates: The operation was aborted due to timeout",
       "gdelt-unitedkingdom: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1142,
-    "newClusters": 10,
-    "updatedClusters": 30,
-    "retiredClusters": 9,
-    "aiCalls": 20,
-    "durationMs": 256462
+    "articlesFetched": 1168,
+    "newClusters": 12,
+    "updatedClusters": 28,
+    "retiredClusters": 10,
+    "aiCalls": 27,
+    "durationMs": 196051
   }
 }

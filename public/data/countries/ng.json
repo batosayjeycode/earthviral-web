@@ -3,17 +3,34 @@
   "name": "Nigeria",
   "slug": "nigeria",
   "region": "Africa",
-  "viralScore": 73,
+  "viralScore": 69,
   "intensityTier": "high",
-  "generatedAt": "2026-11-09T02:17:00Z",
+  "generatedAt": "2026-11-09T05:17:00Z",
   "clusters": [
+    {
+      "slug": "ogun-state-police-security-operations-update",
+      "canonicalPath": "/news/ng/ogun-state-police-security-operations-update/",
+      "headline": "Ogun State Prepares State Police Force Following Security Ops",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Governor Dapo Abiodun announced that Ogun State has over 6,000 personnel from Amotekun and So-Safe ready for state police duties.",
+        "Security forces, including the police and DSS, neutralised one kidnapping suspect and arrested an 18-year-old in a recent operation."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/promoted/923758-state-police-ogun-has-over-6000-amotekun-so-safe-personnel-ready-says-abiodun.html"
+      }
+    },
     {
       "slug": "lagos-governorship-candidates-debate-2027-election",
       "canonicalPath": "/news/ng/lagos-governorship-candidates-debate-2027-election/",
       "headline": "Lagos Governorship Candidates Debate Policies Ahead Of 2027 Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 70,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Candidates discussed strategies to mitigate rising housing costs, including government-subletting programs and ambitious construction targets.",
@@ -30,8 +47,8 @@
       "headline": "Multiple Fatal Transport Incidents Reported Across Lagos State",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 67,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "An elderly individual died after falling from a moving truck that experienced a tire blowout in the Gbagada area.",
         "Reports indicate a separate fatal accident occurred when a transport truck overturned within Lagos state."
@@ -42,30 +59,13 @@
       }
     },
     {
-      "slug": "ogun-state-police-security-operations-update",
-      "canonicalPath": "/news/ng/ogun-state-police-security-operations-update/",
-      "headline": "Ogun State Prepares State Police Force Following Security Ops",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Governor Dapo Abiodun announced that Ogun State has over 6,000 personnel from Amotekun and So-Safe ready for state police duties.",
-        "Security forces, including the police and DSS, neutralised one kidnapping suspect and arrested an 18-year-old in a recent operation."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/promoted/923758-state-police-ogun-has-over-6000-amotekun-so-safe-personnel-ready-says-abiodun.html"
-      }
-    },
-    {
       "slug": "flamingos-captain-harmony-chidi-targets-historic-u-17-world",
       "canonicalPath": "/news/ng/flamingos-captain-harmony-chidi-targets-historic-u-17-world/",
       "headline": "Nigeria Flamingos Secure Historic FIFA U-17 Women's World Cup Win",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Nigeria's Flamingos defeated Japan 2-1 to secure the 2026 FIFA U-17 Women's World Cup title in Morocco.",
         "Head coach Hakeem Busari attributed the team's victory to their collective fighting spirit and character during the tournament."
@@ -76,29 +76,12 @@
       }
     },
     {
-      "slug": "apc-prepares-for-2027-general-elections",
-      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-      "headline": "All Progressives Congress Intensifies Preparations For 2027 Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The All Progressives Congress inaugurated its 2027 campaign council in Jigawa state to support President Bola Tinubu and Governor Namadi.",
-        "In Oyo state, the party candidate Sharafadeen Alli is building support through a realignment of political figures formerly allied with the governor."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923741-kaduna-kano-rail-line-to-be-inaugurated-3-december-apc-campaign-council.html"
-      }
-    },
-    {
       "slug": "lagos-political-and-security-developments",
       "canonicalPath": "/news/ng/lagos-political-and-security-developments/",
       "headline": "Lagos Political Climate Shifts Ahead Of The 2027 General Elections",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Lagos State Police Command has requested political parties to provide advance notice for planned rallies.",
@@ -110,12 +93,29 @@
       }
     },
     {
+      "slug": "apc-prepares-for-2027-general-elections",
+      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+      "headline": "All Progressives Congress Intensifies Preparations For 2027 Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The All Progressives Congress inaugurated its 2027 campaign council in Jigawa state to support President Bola Tinubu and Governor Namadi.",
+        "In Oyo state, the party candidate Sharafadeen Alli is building support through a realignment of political figures formerly allied with the governor."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923741-kaduna-kano-rail-line-to-be-inaugurated-3-december-apc-campaign-council.html"
+      }
+    },
+    {
       "slug": "lagos-candidates-debate-endsars-report-governance",
       "canonicalPath": "/news/ng/lagos-candidates-debate-endsars-report-governance/",
       "headline": "Lagos Political Candidates Debate EndSARS Report And Governance",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Deputy Governor Obafemi Hamzat claims the Lagos government has addressed several recommendations from the 2020 Lekki judicial panel report.",
@@ -132,7 +132,7 @@
       "headline": "Nigerian Sprinters Secure Double Gold At Dakar Youth Olympics 2026",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 49,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Gift Bright and Rosemary Chigozie Nwankwo won gold medals in the men's and women's 100m events.",
@@ -149,7 +149,7 @@
       "headline": "Nigerian Air Force Executes Significant Senior Leadership Reshuffle",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Nigerian Air Force has initiated a large-scale redeployment of 67 senior officers holding the rank of air vice marshal.",
@@ -166,7 +166,7 @@
       "headline": "I-Fitness GameFest 2.0 Concludes With Regional Athletic Success",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 43,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Yaba branch secured first-place finishes in both the male and female 100-meter sprint events.",
