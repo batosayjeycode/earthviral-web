@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611091117",
-  "generatedAt": "2026-11-09T11:17:00Z",
-  "nextUpdateAt": "2026-11-09T14:17:00Z",
+  "batchId": "batch-202611091418",
+  "generatedAt": "2026-11-09T14:18:00Z",
+  "nextUpdateAt": "2026-11-09T17:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
-    "viralTopics": 159,
-    "globalIndex": 91
+    "viralTopics": 160,
+    "globalIndex": 89
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -14,20 +14,11 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1193,
-    "newClusters": 21,
-    "updatedClusters": 36,
-    "retiredClusters": 20,
-    "aiCalls": 37,
-    "aiFailures": {
-      "rate-limit": 1
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      }
-    ],
-    "durationMs": 167990
+    "articlesFetched": 1186,
+    "newClusters": 14,
+    "updatedClusters": 35,
+    "retiredClusters": 12,
+    "aiCalls": 24,
+    "durationMs": 171471
   }
 }
