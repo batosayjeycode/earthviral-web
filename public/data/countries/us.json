@@ -3,42 +3,59 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 88,
+  "viralScore": 91,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-09T20:18:00Z",
+  "generatedAt": "2026-11-09T23:18:00Z",
   "clusters": [
-    {
-      "slug": "trump-appoints-miller-chief-of-staff",
-      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
-      "headline": "Stephen Miller Begins Term As White House Chief Of Staff For Trump",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Stephen Miller has officially commenced his tenure as White House chief of staff following his appointment by President Donald Trump.",
-        "The appointment follows the departure of Susie Wiles from the position."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
-      }
-    },
     {
       "slug": "armed-suspect-arrested-near-white-house",
       "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "UFC Chief Dana White And President Trump To Discuss Cabinet Offer",
+      "headline": "Donald Trump Clarifies Press Secretary Offer To UFC Boss Dana White",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
-      "intensityTier": "high",
+      "viralScore": 88,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "President Donald Trump publicly stated he offered the position of White House press secretary to Dana White.",
-        "The UFC executive is scheduled to meet with the President on Monday to discuss the potential appointment."
+        "President Trump stated he was joking about offering the White House press secretary role to UFC CEO Dana White.",
+        "The clarification followed public speculation and the circulation of an AI-generated video featuring the UFC executive."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
+      }
+    },
+    {
+      "slug": "thomas-massie-files-hegseth-impeachment",
+      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
+      "headline": "Representative Thomas Massie Moves To Impeach Defense Chief Hegseth",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 81,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Representative Thomas Massie submitted eight articles of impeachment against Defense Secretary Pete Hegseth.",
+        "The charges center on accusations that Hegseth violated the War Powers Resolution by launching a military conflict in Iran without congressional consent."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/pete-hegseth-impeachment-were-not-worried-about-that/"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "Nvidia CEO Jensen Huang Faces FBI Probe Amid Chinese Spy Allegations",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump confirmed the FBI is investigating Nvidia CEO Jensen Huang regarding potential links to a Chinese intelligence operation.",
+        "A proposed class action lawsuit alleges that Nvidia and Huang defrauded shareholders by concealing his connections to the suspected spy."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 73,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -59,12 +76,29 @@
       }
     },
     {
+      "slug": "trump-appoints-miller-chief-of-staff",
+      "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
+      "headline": "Stephen Miller Begins Term As White House Chief Of Staff For Trump",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Stephen Miller has officially commenced his tenure as White House chief of staff following his appointment by President Donald Trump.",
+        "The appointment follows the departure of Susie Wiles from the position."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump"
+      }
+    },
+    {
       "slug": "thomas-massie-moves-to-impeach-hegseth",
       "canonicalPath": "/news/us/thomas-massie-moves-to-impeach-hegseth/",
       "headline": "Representative Thomas Massie Initiates Impeachment Effort For Hegseth",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Representative Thomas Massie has formally moved to force a vote to impeach Defense Secretary Pete Hegseth.",
@@ -81,8 +115,8 @@
       "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
         "The party has indicated plans to review existing immigration policies and investigate former President Donald Trump."
@@ -93,63 +127,12 @@
       }
     },
     {
-      "slug": "thomas-massie-files-hegseth-impeachment",
-      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
-      "headline": "Representative Thomas Massie Files Impeachment Against Pete Hegseth",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Representative Thomas Massie introduced formal articles of impeachment against Defense Secretary Pete Hegseth.",
-        "The impeachment articles accuse Hegseth of authorizing military operations against Iran without the required congressional approval."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/pete-hegseth-impeachment-were-not-worried-about-that/"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "Nvidia Board Investigates Allegations Against CEO Jensen Huang",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The board of Nvidia has launched an investigation into CEO Jensen Huang.",
-        "The inquiry centers on allegations involving a potential Chinese intelligence operation targeting the executive."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "trump-reflects-on-deportation-policy",
-      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
-      "headline": "President Trump Reviews Deportation Policy Following Election Losses",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump stated in an interview that his administration's deportation policy may have been excessively harsh.",
-        "The remarks follow Republican legislative setbacks during the recent midterm elections."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
-      }
-    },
-    {
       "slug": "pope-leo-latin-america-tour",
       "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
       "headline": "Pope Leo XIV Visits Argentina Following Successful Surgery Recovery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Argentina for the second leg of his South American tour after concluding a visit to Uruguay.",
@@ -158,6 +141,23 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o"
+      }
+    },
+    {
+      "slug": "trump-reflects-on-deportation-policy",
+      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
+      "headline": "President Trump Reviews Deportation Policy Following Election Losses",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Trump stated in an interview that his administration's deportation policy may have been excessively harsh.",
+        "The remarks follow Republican legislative setbacks during the recent midterm elections."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
       }
     },
     {
