@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611090517",
-  "generatedAt": "2026-11-09T05:17:00Z",
-  "nextUpdateAt": "2026-11-09T08:17:00Z",
+  "batchId": "batch-202611090817",
+  "generatedAt": "2026-11-09T08:17:00Z",
+  "nextUpdateAt": "2026-11-09T11:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 29,
-    "viralTopics": 157,
-    "globalIndex": 92
+    "activeCountries": 30,
+    "viralTopics": 160,
+    "globalIndex": 91
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -16,11 +16,24 @@
       "gdelt-unitedstates: The operation was aborted due to timeout",
       "gdelt-unitedkingdom: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1168,
-    "newClusters": 12,
-    "updatedClusters": 28,
-    "retiredClusters": 10,
-    "aiCalls": 27,
-    "durationMs": 196051
+    "articlesFetched": 1192,
+    "newClusters": 20,
+    "updatedClusters": 32,
+    "retiredClusters": 17,
+    "aiCalls": 32,
+    "aiFailures": {
+      "rate-limit": 2
+    },
+    "aiFailureSamples": [
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+      },
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+      }
+    ],
+    "durationMs": 199242
   }
 }
