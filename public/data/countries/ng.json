@@ -3,18 +3,35 @@
   "name": "Nigeria",
   "slug": "nigeria",
   "region": "Africa",
-  "viralScore": 68,
+  "viralScore": 67,
   "intensityTier": "high",
-  "generatedAt": "2026-11-09T14:18:00Z",
+  "generatedAt": "2026-11-09T17:18:00Z",
   "clusters": [
+    {
+      "slug": "nigeria-electricity-distribution-outage-apology",
+      "canonicalPath": "/news/ng/nigeria-electricity-distribution-outage-apology/",
+      "headline": "Nigerian Electricity Providers And Minister Issue Apology For Outages",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Electricity distribution companies in Nigeria have apologized for ongoing, prolonged power supply disruptions.",
+        "The Minister of Power acknowledged the public hardship caused by the unreliable electricity grid."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923941-power-minister-apologises-to-nigerians-over-outages-promises-improved-electricity-supply.html"
+      }
+    },
     {
       "slug": "apc-prepares-for-2027-general-elections",
       "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
       "headline": "All Progressives Congress Advances 2027 Campaign And Rescue Efforts",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The All Progressives Congress party has initiated regional campaign activities and inaugurated councils to support 2027 re-election bids.",
         "Police in Kano State successfully secured the release of a local party chairman following a prolonged period of abduction."
@@ -25,13 +42,30 @@
       }
     },
     {
+      "slug": "flamingos-captain-harmony-chidi-targets-historic-u-17-world",
+      "canonicalPath": "/news/ng/flamingos-captain-harmony-chidi-targets-historic-u-17-world/",
+      "headline": "Nigeria Flamingos Return Home Following Historic World Cup Victory",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Flamingos arrived in Abuja on Monday morning after winning the FIFA U-17 Women's World Cup.",
+        "The team secured the title in Morocco, becoming the first African nation to win the tournament."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923261-flamingos-captain-harmony-chidi-targets-historic-u-17-world-cup-title-for-nigeria.html"
+      }
+    },
+    {
       "slug": "ogun-state-police-security-operations-update",
       "canonicalPath": "/news/ng/ogun-state-police-security-operations-update/",
       "headline": "Ogun State Authorities Report Recent Security Operations And Rescues",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Police in Ogun State rescued a man allegedly forced to drink poison by three individuals seeking retribution for a motorcycle theft.",
         "Governor Dapo Abiodun stated that the state is preparing for a local police force, citing the readiness of 6,000 security personnel."
@@ -47,8 +81,8 @@
       "headline": "Presidency Addresses Dispute Over Peter Obi And Flamingos Encounter",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Peter Obi alleged that officials from the Nigeria Football Federation prevented him from greeting the U-17 Flamingos team at the Abuja airport.",
         "Obi claimed that staff members cited concerns regarding their job security if they permitted him to interact with the players."
@@ -59,97 +93,12 @@
       }
     },
     {
-      "slug": "flamingos-captain-harmony-chidi-targets-historic-u-17-world",
-      "canonicalPath": "/news/ng/flamingos-captain-harmony-chidi-targets-historic-u-17-world/",
-      "headline": "Nigeria Flamingos Return Home Following Historic World Cup Victory",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Flamingos arrived in Abuja on Monday morning after winning the FIFA U-17 Women's World Cup.",
-        "The team secured the title in Morocco, becoming the first African nation to win the tournament."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923261-flamingos-captain-harmony-chidi-targets-historic-u-17-world-cup-title-for-nigeria.html"
-      }
-    },
-    {
-      "slug": "nigerian-army-operations-plateau-state",
-      "canonicalPath": "/news/ng/nigerian-army-operations-plateau-state/",
-      "headline": "Nigerian Army Conducts Security Operations In Plateau State",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nigerian Army troops neutralized two terrorists during operations across three local government areas in Plateau State.",
-        "A suspected gunrunner was taken into custody by military forces during the security missions."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/army-arrests-suspected-gunrunner-kills-two-terrorists-in-plateau/"
-      }
-    },
-    {
-      "slug": "niger-state-police-commissioner-appointment",
-      "canonicalPath": "/news/ng/niger-state-police-commissioner-appointment/",
-      "headline": "Police Service Commission Announces New Niger State Commissioner",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Police Service Commission has appointed Salisu Fago as the new Commissioner of Police for Niger State.",
-        "Fago succeeds Adamu Ell, who has retired from the position."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/regional/south-south-regional/923880-police-commissioner-warns-officers-against-unlawful-detention-abuse-of-power.html"
-      }
-    },
-    {
-      "slug": "nigerian-army-operation-old-oyo-park",
-      "canonicalPath": "/news/ng/nigerian-army-operation-old-oyo-park/",
-      "headline": "Nigerian Army Conducts Security Operation In Old Oyo National Park",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nigerian Army troops cleared suspected criminal encampments within the Old Oyo National Park.",
-        "A single suspected criminal was neutralized during the course of the military engagement."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/soldiers-recover-ak-47-destroy-criminal-hideouts-in-old-oyo-park/"
-      }
-    },
-    {
-      "slug": "lagos-governorship-candidates-debate-2027-election",
-      "canonicalPath": "/news/ng/lagos-governorship-candidates-debate-2027-election/",
-      "headline": "Lagos governorship candidates disagree over rent control, housing, flooding",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Premium Times reports: Lagos governorship candidates disagree over rent control, housing, flooding",
-        "Punch reports: Lagos NDC gov candidate promises free education, 150,000 housing units"
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/lagos-pdp-gov-candidate-promises-power-rebates-cheaper-housing/"
-      }
-    },
-    {
       "slug": "gospel-singer-toluwanisings-laid-to-rest",
       "canonicalPath": "/news/ng/gospel-singer-toluwanisings-laid-to-rest/",
       "headline": "Gospel Singer Olayemi Bolaji To Be Laid To Rest Today In Ibadan",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 42,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Gospel musician Olayemi Bolaji, known professionally as Toluwanisings, is being buried today in Ibadan, Oyo State.",
@@ -166,7 +115,7 @@
       "headline": "Multiple Fatal Transport Incidents Reported Across Lagos State",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 40,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "An elderly individual died after falling from a moving truck that experienced a tire blowout in the Gbagada area.",
@@ -175,6 +124,57 @@
       "primarySource": {
         "publisherName": "Punch",
         "articleUrl": "https://punchng.com/one-dies-as-truck-overturns-in-lagos/"
+      }
+    },
+    {
+      "slug": "nigerian-army-operations-plateau-state",
+      "canonicalPath": "/news/ng/nigerian-army-operations-plateau-state/",
+      "headline": "Nigerian Army Conducts Security Operations In Plateau State",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Nigerian Army troops neutralized two terrorists during operations across three local government areas in Plateau State.",
+        "A suspected gunrunner was taken into custody by military forces during the security missions."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/army-arrests-suspected-gunrunner-kills-two-terrorists-in-plateau/"
+      }
+    },
+    {
+      "slug": "niger-state-police-commissioner-appointment",
+      "canonicalPath": "/news/ng/niger-state-police-commissioner-appointment/",
+      "headline": "Police Service Commission Announces New Niger State Commissioner",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Police Service Commission has appointed Salisu Fago as the new Commissioner of Police for Niger State.",
+        "Fago succeeds Adamu Ell, who has retired from the position."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/regional/south-south-regional/923880-police-commissioner-warns-officers-against-unlawful-detention-abuse-of-power.html"
+      }
+    },
+    {
+      "slug": "crashes-block-kaduna-abuja-highway",
+      "canonicalPath": "/news/ng/crashes-block-kaduna-abuja-highway/",
+      "headline": "Traffic Congestion Follows Vehicle Crashes On Kaduna-Abuja Highway",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Several accidents involving long vehicles occurred on the Kaduna-Abuja highway.",
+        "The collisions resulted in extensive traffic congestion on Monday."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/travellers-stranded-for-hours-after-crashes-block-kaduna-abuja-highway/"
       }
     }
   ]
