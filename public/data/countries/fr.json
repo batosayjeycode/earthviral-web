@@ -3,17 +3,34 @@
   "name": "France",
   "slug": "france",
   "region": "Europe",
-  "viralScore": 58,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-08T23:17:00Z",
+  "viralScore": 66,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-09T02:17:00Z",
   "clusters": [
+    {
+      "slug": "carlos-alcaraz-wins-paris-masters",
+      "canonicalPath": "/news/fr/carlos-alcaraz-wins-paris-masters/",
+      "headline": "Carlos Alcaraz Wins First Career Title At The Paris Masters 1000",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Carlos Alcaraz defeated Ben Shelton in straight sets with scores of 7-6 and 7-5.",
+        "This victory marks the 23-year-old athlete's first title at the Paris Masters 1000."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/alcaraz-beats-error-prone-shelton-win-paris-masters-6534421"
+      }
+    },
     {
       "slug": "france-more-than-600-000-protest-as-anger-grows",
       "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
       "headline": "French Protests Persist Amid Disagreements Over Turnout Figures",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Demonstrators organized nationwide marches to address concerns regarding the cost of living and conditions within the education system.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "carlos-alcaraz-wins-paris-masters",
-      "canonicalPath": "/news/fr/carlos-alcaraz-wins-paris-masters/",
-      "headline": "Carlos Alcaraz Wins First Career Title At The Paris Masters 1000",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Carlos Alcaraz defeated Ben Shelton in straight sets with scores of 7-6 and 7-5.",
-        "This victory marks the 23-year-old athlete's first title at the Paris Masters 1000."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/alcaraz-beats-error-prone-shelton-win-paris-masters-6534421"
-      }
-    },
-    {
       "slug": "tom-laperche-wins-route-du-rhum",
       "canonicalPath": "/news/fr/tom-laperche-wins-route-du-rhum/",
       "headline": "Tom Laperche Wins Route Du Rhum Ultim Sailing Race In Record Time",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 45,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Tom Laperche completed the Route du Rhum Ultim race in record time.",
@@ -115,7 +115,7 @@
       "headline": "French Civil Unrest Erupts While Rugby Team Adjusts For Match",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Police and demonstrators engaged in clashes in Paris during unsanctioned anti-government protests.",
@@ -132,7 +132,7 @@
       "headline": "Jean-Luc Mélenchon Outlines Foreign Policy Ahead Of Presidential Race",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jean-Luc Mélenchon has established himself as a prominent contender for the upcoming French presidential election.",
@@ -149,8 +149,8 @@
       "headline": "Rassemblement National Security Unit Strategies Under Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
-      "intensityTier": "active",
+      "viralScore": 20,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "A specialized security team is operating during political events for the Rassemblement National.",
         "The internal unit known as Groupe Action Mobile 75 monitors for potential protest activity."
