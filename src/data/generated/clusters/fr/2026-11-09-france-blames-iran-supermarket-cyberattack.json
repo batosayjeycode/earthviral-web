@@ -6,8 +6,28 @@
   "countryName": "France",
   "countrySlug": "france",
   "region": "Europe",
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
+  "headline": "France Launches Probe Into Iranian Cyber Unit For Fridge Attacks",
+  "seoTitle": "France Probes Iranian Cyber Attack On Supermarkets",
+  "metaDescription": "French prosecutors are investigating an Iranian cyber unit linked to unprecedented digital attacks that disabled supermarket fridges in October.",
+  "aiSummaryBullets": [
+    "French prosecutors have opened a formal investigation into the Shahid Kaveh cyber unit of the IRGC.",
+    "The probe follows October cyberattacks that disabled supermarket refrigeration systems, leading to food loss.",
+    "French officials have indicated plans to pursue European-level sanctions against Iran in response to the incidents."
+  ],
+  "aiContextParagraph": "French authorities have officially attributed a series of cyberattacks that targeted supermarket refrigeration systems in October to the Shahid Kaveh unit, which is reportedly linked to the Islamic Revolutionary Guard Corps (IRGC). The attacks occurred on October 11 and 12, causing temperatures in affected freezers to rise and resulting in the significant loss of perishable inventory across multiple locations in France. While experts suggest the technical methods used in the defrosting hack were not highly complex, the incident is being treated as part of a broader trend of state-backed digital operations. Analysts noted that the IRGC has previously utilized cyber tools for disruptive messaging purposes in other regions. In response to these events, the French government has expressed its intent to coordinate with European partners to implement sanctions against Tehran, characterizing the breach as an unprecedented act of digital interference.",
+  "whyItIsViral": "The story has gained significant traction across major European news outlets due to the unusual nature of the target and the geopolitical implications of the attributed state-sponsored cyber activity.",
+  "viralScore": 79,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 4,
+    "coverageVelocityScore": 79,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-09T16:42:00Z",
-  "lastUpdatedBatchAt": "2026-11-09T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-09T20:18:00Z",
   "sources": [
     {
       "publisherName": "Deutsche Welle",
@@ -22,50 +42,55 @@
       "articleTitle": "France accuses Iran of supermarket fridge hacking",
       "articleUrl": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo",
       "publishedAt": "2026-11-09T16:55:07Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "France opens probe into Iranian cyber unit over fridge attacks",
+      "articleUrl": "https://www.france24.com/en/france-opens-probe-into-iranian-cyber-unit-over-fridge-attacks",
+      "publishedAt": "2026-11-09T19:24:54Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "Cyber-attack on French supermarket freezers has geopolitical context",
+      "articleUrl": "https://www.theguardian.com/technology/2026/nov/09/cyber-attack-french-supermarket-freezers-iran-europe",
+      "publishedAt": "2026-11-09T19:40:45Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Paris prosecutor opens probe into IRGC cyber unit Shahid Kaveh over fridge cyberattacks",
+      "articleUrl": "https://www.france24.com/en/paris-prosecutor-opens-probe-into-irgc-cyber-unit-shahid-kaveh-over-fridge-cyberattacks",
+      "publishedAt": "2026-11-09T20:06:09Z"
+    }
+  ],
+  "entityTags": [
+    {
+      "name": "IRGC",
+      "slug": "irgc"
+    },
+    {
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
+    },
+    {
+      "name": "France",
+      "slug": "france"
+    },
+    {
+      "name": "Shahid Kaveh",
+      "slug": "shahid-kaveh"
     }
   ],
   "relatedInCountrySlugs": [
-    "france-accuses-iran-supermarket-cyber-attacks",
     "french-bank-hit-by-cyberattack-hackers-steal-100-million",
+    "france-accuses-iran-supermarket-cyber-attacks",
     "france-accelerates-minimum-wage-hike"
   ],
   "relatedInCategorySlugs": [
     "british-comedian-russell-brand-found-guilty-of-rape-sexual",
     "mass-shooting-krakow-market-square",
-    "police-investigate-east-jakarta-mosque-attack"
-  ],
-  "headline": "France Attributes Nationwide Supermarket Fridge Hacking To Iran",
-  "seoTitle": "France Blames Iran for Supermarket Cyberattack",
-  "metaDescription": "French Foreign Minister Jean-Noel Barrot has accused Iran's Revolutionary Guards of orchestrating a recent cyberattack on supermarket refrigeration systems.",
-  "aiSummaryBullets": [
-    "French officials claim the Islamic Revolutionary Guard Corps orchestrated a cyberattack on supermarket cooling units.",
-    "The breach resulted in temperature spikes within refrigerators and freezers across hundreds of locations in France.",
-    "Foreign Minister Jean-Noel Barrot characterized the incident as an unprecedented digital disruption."
-  ],
-  "aiContextParagraph": "French authorities have formally attributed a recent series of cyberattacks targeting commercial refrigeration infrastructure to the Islamic Revolutionary Guard Corps of Iran. Foreign Minister Jean-Noel Barrot publicly identified the group as the party responsible for the incident, which occurred last month. The operation involved unauthorized access to the digital control systems of refrigerators and freezers located in supermarkets throughout France. Reports indicate that the malicious activity caused these cooling units to increase their internal temperatures, potentially compromising the integrity of stored goods. Government officials have described the breach as a significant and unprecedented event in terms of its reach and method of execution within the country's retail sector. No further details regarding the specific technical vulnerabilities exploited or potential broader national security implications were provided by the minister during his initial announcement regarding the findings of the investigation.",
-  "whyItIsViral": "The story has gained traction through reports from two independent international news outlets, reflecting a moderate coverage velocity.",
-  "categorySlug": "crime-law",
-  "categoryName": "Crime & Law",
-  "entityTags": [
-    {
-      "name": "Jean-Noel Barrot",
-      "slug": "jean-noel-barrot"
-    },
-    {
-      "name": "Islamic Revolutionary Guard Corps",
-      "slug": "islamic-revolutionary-guard-corps"
-    },
-    {
-      "name": "Cybersecurity",
-      "slug": "cybersecurity"
-    }
-  ],
-  "viralScore": 54,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 52,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
-  }
+    "teen-develops-solar-powered-three-wheeler"
+  ]
 }
