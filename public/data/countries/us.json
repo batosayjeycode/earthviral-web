@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 95,
+  "viralScore": 89,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-10T02:18:00Z",
+  "generatedAt": "2026-11-10T04:40:00Z",
   "clusters": [
     {
       "slug": "armed-suspect-arrested-near-white-house",
@@ -13,7 +13,7 @@
       "headline": "Dana White Declines Potential White House Press Secretary Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 92,
+      "viralScore": 86,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "Dana White confirmed he has no political ambitions and will not serve as White House press secretary.",
@@ -30,8 +30,8 @@
       "headline": "Representative Thomas Massie Formally Files Articles Of Impeachment",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 87,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Representative Thomas Massie introduced articles of impeachment against Defense Secretary Pete Hegseth.",
         "The impeachment push centers on allegations that Hegseth initiated military operations in Iran without authorization from Congress."
@@ -42,12 +42,46 @@
       }
     },
     {
+      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
+      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
+      "headline": "California voters reject proposed one-time tax on billionaires' wealth",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 76,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "France 24 reports: California voters reject proposed one-time tax on billionaires' wealth",
+        "The Guardian reports: California voters fail to pass proposed one-time tax on billionaires’ wealth"
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+      }
+    },
+    {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Perspectives Follow Republican Losses In US Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
+        "Former President Donald Trump described the electoral outcome as a regression in history and indicated a potential shift further toward the political right."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
+      }
+    },
+    {
       "slug": "nvidia-ceo-jensen-huang-security-investigation",
       "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
       "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 69,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
@@ -64,7 +98,7 @@
       "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
@@ -81,7 +115,7 @@
       "headline": "Stephen Miller Begins Term As White House Chief Of Staff For Trump",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Stephen Miller has officially commenced his tenure as White House chief of staff following his appointment by President Donald Trump.",
@@ -93,30 +127,13 @@
       }
     },
     {
-      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
-      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
-      "headline": "International Perspectives Follow Republican Losses In US Midterms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
-        "Former President Donald Trump described the electoral outcome as a regression in history and indicated a potential shift further toward the political right."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
       "slug": "trump-reflects-on-deportation-policy",
       "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
       "headline": "President Trump Reviews Deportation Policy Following Election Losses",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump stated in an interview that his administration's deportation policy may have been excessively harsh.",
         "The remarks follow Republican legislative setbacks during the recent midterm elections."
@@ -127,30 +144,13 @@
       }
     },
     {
-      "slug": "thomas-massie-moves-to-impeach-hegseth",
-      "canonicalPath": "/news/us/thomas-massie-moves-to-impeach-hegseth/",
-      "headline": "Representative Thomas Massie Initiates Impeachment Effort For Hegseth",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Representative Thomas Massie has formally moved to force a vote to impeach Defense Secretary Pete Hegseth.",
-        "The impeachment push centers on allegations that the Secretary engaged in unauthorized military actions and abused official powers."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-10/us-defence-secretary-pete-hegseth-subject-of-new-impeachment-bid/107366698"
-      }
-    },
-    {
       "slug": "supreme-court-allows-texas-border-wall",
       "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
       "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
         "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
@@ -161,20 +161,20 @@
       }
     },
     {
-      "slug": "pope-leo-latin-america-tour",
-      "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
-      "headline": "Pope Leo XIV Visits Argentina Following Successful Surgery Recovery",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 54,
+      "slug": "thomas-massie-moves-to-impeach-hegseth",
+      "canonicalPath": "/news/us/thomas-massie-moves-to-impeach-hegseth/",
+      "headline": "Representative Thomas Massie Initiates Impeachment Effort For Hegseth",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Pope Leo XIV arrived in Argentina for the second leg of his South American tour after concluding a visit to Uruguay.",
-        "The 71-year-old pontiff resumed international travel just weeks after undergoing surgery for lung cancer."
+        "Representative Thomas Massie has formally moved to force a vote to impeach Defense Secretary Pete Hegseth.",
+        "The impeachment push centers on allegations that the Secretary engaged in unauthorized military actions and abused official powers."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/us-defence-secretary-pete-hegseth-subject-of-new-impeachment-bid/107366698"
       }
     }
   ]

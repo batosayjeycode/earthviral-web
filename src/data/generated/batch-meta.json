@@ -1,24 +1,50 @@
 {
-  "batchId": "batch-202611100218",
-  "generatedAt": "2026-11-10T02:18:00Z",
+  "batchId": "batch-202611100440",
+  "generatedAt": "2026-11-10T04:40:00Z",
   "nextUpdateAt": "2026-11-10T05:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
-    "viralTopics": 166,
-    "globalIndex": 90
+    "viralTopics": 167,
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 31,
     "feedsFailed": [
-      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: fetch failed",
+      "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
     "articlesFetched": 1190,
     "newClusters": 16,
-    "updatedClusters": 30,
-    "retiredClusters": 14,
-    "aiCalls": 28,
-    "durationMs": 212231
+    "updatedClusters": 18,
+    "retiredClusters": 15,
+    "aiCalls": 20,
+    "aiFailures": {
+      "server-error": 19
+    },
+    "aiFailureSamples": [
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      }
+    ],
+    "durationMs": 487632
   }
 }

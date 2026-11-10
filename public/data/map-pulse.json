@@ -1,49 +1,27 @@
 {
-  "batchId": "batch-202611100218",
-  "generatedAt": "2026-11-10T02:18:00Z",
+  "batchId": "batch-202611100440",
+  "generatedAt": "2026-11-10T04:40:00Z",
   "nextUpdateAt": "2026-11-10T05:17:00Z",
   "countries": [
     {
-      "code": "AR",
-      "isoNumeric": "032",
-      "name": "Argentina",
-      "slug": "argentina",
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
       "centroid": [
-        -63.6,
-        -38.4
+        117,
+        -2.5
       ],
       "viralScore": 100,
       "intensityTier": "surge",
-      "topicCount": 3,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "argentina-secures-pope-leo-xiv-visit",
-        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
-        "headline": "Pope Leo XIV Addresses Austerity Concerns During Argentina Visit",
+        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
+        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
+        "headline": "DPR dukung Polri usut kasus penyadapan Presiden secara profesional",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 100,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "nvidia-investigates-ceo-espionage-allegations",
-        "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-        "headline": "Nvidia CEO Jensen Huang Faces Lawsuits Over Alleged Spy Connections",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 99,
         "intensityTier": "surge"
       }
     },
@@ -56,38 +34,38 @@
         53.7,
         32.4
       ],
-      "viralScore": 98,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 2,
       "topTopic": {
         "slug": "farage-says-he-is-worried-trump-will-step-up",
         "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "President Trump Signals Potential Path Toward Ending Iran Conflict",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 97,
+        "headline": "Rubio throws cold water on Iran talks, Trump says there's no reason to escalate war",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 99,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
       "centroid": [
-        45,
-        24
+        104,
+        35
       ],
-      "viralScore": 97,
+      "viralScore": 98,
       "intensityTier": "surge",
-      "topicCount": 6,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Arabia Faces Series Of Attacks Targeting Aramco Facilities",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 94,
+        "slug": "nvidia-investigates-ceo-espionage-allegations",
+        "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+        "headline": "Nvidia CEO Jensen Huang Faces Lawsuits Over Alleged Spy Connections",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 96,
         "intensityTier": "surge"
       }
     },
@@ -100,7 +78,7 @@
         -98.5,
         39.5
       ],
-      "viralScore": 95,
+      "viralScore": 89,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
@@ -109,30 +87,52 @@
         "headline": "Dana White Declines Potential White House Press Secretary Role",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 92,
+        "viralScore": 86,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
       "centroid": [
-        117,
-        -2.5
+        45,
+        24
       ],
-      "viralScore": 92,
+      "viralScore": 85,
       "intensityTier": "surge",
-      "topicCount": 10,
+      "topicCount": 6,
       "topTopic": {
-        "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
-        "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
-        "headline": "Six Witnesses Seek Protection In Presidential Wiretapping Probe",
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Arabia Faces Series Of Attacks Targeting Aramco Facilities",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 82,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AR",
+      "isoNumeric": "032",
+      "name": "Argentina",
+      "slug": "argentina",
+      "centroid": [
+        -63.6,
+        -38.4
+      ],
+      "viralScore": 84,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "argentina-secures-pope-leo-xiv-visit",
+        "canonicalPath": "/news/ar/argentina-secures-pope-leo-xiv-visit/",
+        "headline": "Pope Leo XIV Addresses Austerity Concerns During Argentina Visit",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 89,
-        "intensityTier": "surge"
+        "viralScore": 83,
+        "intensityTier": "high"
       }
     },
     {
@@ -144,7 +144,7 @@
         -2,
         53.5
       ],
-      "viralScore": 82,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
@@ -153,29 +153,7 @@
         "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "france-accuses-iran-supermarket-cyber-attacks",
-        "canonicalPath": "/news/fr/france-accuses-iran-supermarket-cyber-attacks/",
-        "headline": "France Accuses Iranian Revolutionary Guards Of Supermarket Hacks",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 76,
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
@@ -188,7 +166,7 @@
         35.2,
         39
       ],
-      "viralScore": 78,
+      "viralScore": 72,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -197,7 +175,7 @@
         "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 76,
+        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -210,7 +188,7 @@
         79,
         22
       ],
-      "viralScore": 77,
+      "viralScore": 72,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -219,29 +197,51 @@
         "headline": "Severe Smog Envelops New Delhi Amidst Ongoing Air Quality Concerns",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 74,
+        "viralScore": 69,
         "intensityTier": "high"
       }
     },
     {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
       "centroid": [
-        -3.7,
-        40.2
+        134,
+        -25.5
       ],
-      "viralScore": 70,
+      "viralScore": 66,
       "intensityTier": "high",
-      "topicCount": 2,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 69,
+        "slug": "australia-to-adopt-mandatory-ai-safeguards",
+        "canonicalPath": "/news/au/australia-to-adopt-mandatory-ai-safeguards/",
+        "headline": "Australia to adopt 'mandatory' AI safeguards",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "singapore-assurance-package-cash-payouts",
+        "canonicalPath": "/news/sg/singapore-assurance-package-cash-payouts/",
+        "headline": "Three Million Singaporeans Set To Receive Assurance Package Payouts",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -254,7 +254,7 @@
         19.4,
         52.1
       ],
-      "viralScore": 68,
+      "viralScore": 64,
       "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
@@ -263,29 +263,29 @@
         "headline": "Krakow Shooting Suspect Dies Following Fatal Market Square Attack",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 67,
+        "viralScore": 63,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
       "centroid": [
-        8.1,
-        9.6
+        2.4,
+        46.6
       ],
-      "viralScore": 67,
+      "viralScore": 64,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "All Progressives Congress Accelerates Political Activities For 2027",
+        "slug": "france-accuses-iran-supermarket-cyber-attacks",
+        "canonicalPath": "/news/fr/france-accuses-iran-supermarket-cyber-attacks/",
+        "headline": "France Accuses Iranian Revolutionary Guards Of Supermarket Hacks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 64,
+        "viralScore": 61,
         "intensityTier": "high"
       }
     },
@@ -298,7 +298,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -307,7 +307,7 @@
         "headline": "Gadi Eisenkot Receives Formal Mandate To Lead Israeli Government",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 63,
+        "viralScore": 60,
         "intensityTier": "high"
       }
     },
@@ -320,7 +320,7 @@
         35.2,
         31.9
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -329,8 +329,52 @@
         "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 59,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "All Progressives Congress Accelerates Political Activities For 2027",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 57,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 57,
+        "intensityTier": "active"
       }
     },
     {
@@ -342,60 +386,38 @@
         60,
         58
       ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 2,
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 3,
       "topTopic": {
         "slug": "novaya-gazeta-closes-moscow-operations",
         "canonicalPath": "/news/ru/novaya-gazeta-closes-moscow-operations/",
         "headline": "Russian Independent Newspaper Novaya Gazeta Shuts Down Operations",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 57,
+        "intensityTier": "active"
       }
     },
     {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
       "centroid": [
-        31.2,
-        49
+        102.3,
+        3.8
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "european-leaders-seek-ukraine-peace-influence",
-        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
-        "headline": "Ukraine And Russia Representatives Convene For Talks In Abu Dhabi",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 8,
       "topTopic": {
-        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
-        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
-        "headline": "African National Congress Faces Losses In South African Local Polls",
+        "slug": "najib-razak-returns-to-kajang-prison",
+        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
+        "headline": "Former Prime Minister Najib Razak Remains In Custody Following Shift",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 58,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -408,7 +430,7 @@
         30.8,
         26.8
       ],
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -417,73 +439,51 @@
         "headline": "Fatal Collision Between Two Passenger Trains Occurs Near Giza, Egypt",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 56,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
       "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "singapore-assurance-package-cash-payouts",
-        "canonicalPath": "/news/sg/singapore-assurance-package-cash-payouts/",
-        "headline": "Three Million Singaporeans Set To Receive Assurance Package Payouts",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
+        24.7,
+        -29
       ],
       "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 10,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "qantas-airways-job-cuts-restructuring",
-        "canonicalPath": "/news/au/qantas-airways-job-cuts-restructuring/",
-        "headline": "Qantas Airways To Reduce Workforce By 850 Positions In Restructure",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 53,
+        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
+        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
+        "headline": "African National Congress Faces Losses In South African Local Polls",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
       "centroid": [
-        37.9,
-        0.2
+        31.2,
+        49
       ],
       "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 8,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "nairobi-water-rationing-ndakaini-levels",
-        "canonicalPath": "/news/ke/nairobi-water-rationing-ndakaini-levels/",
-        "headline": "Nairobi Implements Water Rationing Amid Low Reservoir Capacity",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 52,
+        "slug": "european-leaders-seek-ukraine-peace-influence",
+        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
+        "headline": "Ukraine And Russia Representatives Convene For Talks In Abu Dhabi",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -510,28 +510,6 @@
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "lando-norris-brazil-grand-prix-pole",
-        "canonicalPath": "/news/br/lando-norris-brazil-grand-prix-pole/",
-        "headline": "Lando Norris Secures Victory At The 2026 Formula 1 Brazilian Grand Prix",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 52,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "NZ",
       "isoNumeric": "554",
       "name": "New Zealand",
@@ -554,24 +532,46 @@
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        102.3,
-        3.8
+        -51.9,
+        -10.5
       ],
-      "viralScore": 49,
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "lando-norris-brazil-grand-prix-pole",
+        "canonicalPath": "/news/br/lando-norris-brazil-grand-prix-pole/",
+        "headline": "Lando Norris Secures Victory At The 2026 Formula 1 Brazilian Grand Prix",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 51,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 51,
       "intensityTier": "active",
       "topicCount": 8,
       "topTopic": {
-        "slug": "najib-razak-returns-to-kajang-prison",
-        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
-        "headline": "Former Prime Minister Najib Razak Remains In Custody Following Shift",
+        "slug": "ruto-brands-gachagua-chief-extortionist",
+        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
+        "headline": "Ruto brands Gachagua 'chief extortionist'",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 46,
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },
@@ -584,7 +584,7 @@
         90.3,
         23.7
       ],
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -593,7 +593,7 @@
         "headline": "Ousted Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 48,
+        "viralScore": 47,
         "intensityTier": "active"
       }
     },
@@ -606,7 +606,7 @@
         10.4,
         51.1
       ],
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -615,7 +615,7 @@
         "headline": "Chancellor Friedrich Merz Nominates Ilse Aigner For Presidency",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 42,
+        "viralScore": 41,
         "intensityTier": "active"
       }
     },
@@ -676,9 +676,9 @@
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
-        "slug": "ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa",
-        "canonicalPath": "/news/it/ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa/",
-        "headline": "AC Milan Naik ke Peringkat Empat Usai Tekuk Genoa 2-1",
+        "slug": "inter-milan-ac-milan-serie-a-results",
+        "canonicalPath": "/news/it/inter-milan-ac-milan-serie-a-results/",
+        "headline": "Inter And AC Milan Secure Victories In Latest Serie A Matchweek",
         "categorySlug": "sports",
         "categoryName": "Sports",
         "viralScore": 31,
