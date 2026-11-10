@@ -3,9 +3,9 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 67,
+  "viralScore": 83,
   "intensityTier": "high",
-  "generatedAt": "2026-11-10T11:18:00Z",
+  "generatedAt": "2026-11-10T13:32:00Z",
   "clusters": [
     {
       "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
@@ -13,7 +13,7 @@
       "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 64,
+      "viralScore": 80,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Russell Brand received a ten-and-a-half-year prison sentence following a four-week trial at Southwark Crown Court.",
@@ -30,8 +30,8 @@
       "headline": "Author M. John Harrison Wins Booker Prize For The End Of Everything",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Writer M. John Harrison received the Booker Prize for his novel, The End of Everything.",
         "The narrative follows characters navigating a post-apocalyptic version of the English coast."
@@ -59,20 +59,54 @@
       }
     },
     {
-      "slug": "king-charles-leads-annual-remembrance-service",
-      "canonicalPath": "/news/gb/king-charles-leads-annual-remembrance-service/",
-      "headline": "King Charles Leads National Remembrance Service At The London Cenotaph",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 39,
+      "slug": "thick-fog-disrupts-uk-travel",
+      "canonicalPath": "/news/gb/thick-fog-disrupts-uk-travel/",
+      "headline": "Thick Fog Causes Travel Disruption Across The United Kingdom Regions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "King Charles presided over the annual Remembrance Sunday ceremony held at the Cenotaph in central London.",
-        "Approximately 10,000 military veterans participated in the event, including a small group of surviving World War Two personnel."
+        "Meteorological authorities issued yellow weather warnings due to dense fog across several regions.",
+        "The affected areas include parts of England, Wales, and six counties within Northern Ireland."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123245/uk-fog-warnings-cover-six-northern-ireland-counties-and-parts-of-england"
+      }
+    },
+    {
+      "slug": "david-walliams-faces-misconduct-allegations",
+      "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations/",
+      "headline": "Comedian David Walliams Faces Allegations Of Grooming And Harassment",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "David Walliams is accused of grooming female fans as young as 15 years old.",
+        "The comedian is also facing allegations regarding the harassment of women in the workplace."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/tv-and-radio/ng-interactive/2026/nov/10/david-walliams-accused-sex-grooming-allegations-young-women"
+      }
+    },
+    {
+      "slug": "stricter-smartphone-bans-england-schools",
+      "canonicalPath": "/news/gb/stricter-smartphone-bans-england-schools/",
+      "headline": "Stricter Smartphone Restrictions Proposed For Schools In England",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 40,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The government in England is tightening existing school guidance regarding student mobile phone usage.",
+        "New measures propose that pupils be prohibited from keeping devices in their pockets or bags."
       ],
       "primarySource": {
         "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/videos/cw1l307v4edlo"
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c51kdk422w8jo"
       }
     },
     {
@@ -93,71 +127,37 @@
       }
     },
     {
-      "slug": "thick-fog-disrupts-uk-travel",
-      "canonicalPath": "/news/gb/thick-fog-disrupts-uk-travel/",
-      "headline": "Thick Fog Causes Travel Disruption Across The United Kingdom Regions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
+      "slug": "edinburgh-academy-child-abuse-inquiry",
+      "canonicalPath": "/news/gb/edinburgh-academy-child-abuse-inquiry/",
+      "headline": "Scottish Child Abuse Inquiry Finds Systemic Failure At Edinburgh Academy",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Meteorological authorities issued yellow weather warnings due to dense fog across several regions.",
-        "The affected areas include parts of England, Wales, and six counties within Northern Ireland."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123245/uk-fog-warnings-cover-six-northern-ireland-counties-and-parts-of-england"
-      }
-    },
-    {
-      "slug": "uk-civil-servant-fraud-conviction",
-      "canonicalPath": "/news/gb/uk-civil-servant-fraud-conviction/",
-      "headline": "British Civil Servant Convicted Following Multi-Job Fraud Scheme",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kashim Chowdhury was found guilty of fraud for holding five government jobs concurrently.",
-        "The individual collected full-time salaries across the multiple public sector positions."
+        "The Scottish Child Abuse Inquiry documented decades of widespread abuse at the Edinburgh Academy.",
+        "Investigators concluded that school leadership repeatedly prioritized institutional reputation over student welfare."
       ],
       "primarySource": {
         "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cxdd8de0d099o"
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cqr7y7pjpy7do"
       }
     },
     {
-      "slug": "jojo-moyes-faces-eu-border-travel-ban",
-      "canonicalPath": "/news/gb/jojo-moyes-faces-eu-border-travel-ban/",
-      "headline": "Author Jojo Moyes Faces Potential EU Travel Ban Amid System Errors",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 26,
+      "slug": "king-charles-leads-annual-remembrance-service",
+      "canonicalPath": "/news/gb/king-charles-leads-annual-remembrance-service/",
+      "headline": "King Charles Leads National Remembrance Service At The London Cenotaph",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Author Jojo Moyes is at risk of a two-year EU travel ban and significant fines.",
-        "Technical errors in the European Union's digital entry and exit system have inaccurately flagged some UK visitors."
+        "King Charles presided over the annual Remembrance Sunday ceremony held at the Cenotaph in central London.",
+        "Approximately 10,000 military veterans participated in the event, including a small group of surviving World War Two personnel."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/business/2026/nov/10/jojo-moyes-uk-travellers-eu-ban-digital-border-system-ees"
-      }
-    },
-    {
-      "slug": "bank-of-england-official-youth-employment",
-      "canonicalPath": "/news/gb/bank-of-england-official-youth-employment/",
-      "headline": "Bank Of England Official Warns Of Impact On UK Youth Employment",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 25,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Clare Lombardelli stated that a low-gear economy is placing a significant burden on younger workers in the United Kingdom.",
-        "The Bank of England deputy governor attributed rising unemployment to employer caution regarding hiring processes."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/business/2026/nov/10/young-people-uk-economy-bank-of-england-clare-lombardelli"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/videos/cw1l307v4edlo"
       }
     },
     {

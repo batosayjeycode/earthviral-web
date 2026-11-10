@@ -6,28 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "California voters reject proposed one-time tax on billionaires' wealth",
-  "seoTitle": "California voters reject proposed one-time tax on…",
-  "metaDescription": "4 independent outlets are covering this story, with coverage accelerating in the latest batch. France 24 reports: California voters reject proposed one-time…",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "California Voters Reject Ballot Measure To Tax Billionaire Wealth",
+  "seoTitle": "California Rejects Billionaire Wealth Tax Measure",
+  "metaDescription": "California voters have defeated a ballot measure that sought to impose a one-time five percent tax on the net worth of residents exceeding $1 billion.",
   "aiSummaryBullets": [
-    "France 24 reports: California voters reject proposed one-time tax on billionaires' wealth",
-    "The Guardian reports: California voters fail to pass proposed one-time tax on billionaires’ wealth",
-    "CBS News reports: California voters reject billionaire wealth tax, CBS News projects"
+    "California voters officially defeated a proposed ballot initiative aimed at taxing individual net worth exceeding $1 billion.",
+    "The rejected measure would have implemented a one-time five percent levy on the wealth of residents categorized as billionaires.",
+    "The campaign preceding the vote involved significant financial contributions from technology leaders opposed to the proposed taxation."
   ],
-  "aiContextParagraph": "This story about United States has been reported by CBS News, France 24, NPR and The Guardian since 2026-11-10. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "4 independent outlets are covering this story, with coverage accelerating in the latest batch.",
-  "viralScore": 70,
+  "aiContextParagraph": "Following a recent election, California residents have rejected a high-profile ballot measure that proposed a first-of-its-kind tax on the wealth of billionaires. The initiative sought to impose a one-time five percent tax on individuals whose net worth surpassed the $1 billion threshold. The legislative proposal sparked significant public debate and division among political factions, including within the Democratic party. Throughout the lead-up to the vote, the campaign became notably contentious, characterized by substantial financial expenditures from prominent figures within the technology industry who worked to block the measure from passing. Economists are currently debating the broader implications of this outcome for the future of wealth tax movements across the United States. While the measure was framed by proponents as a way to generate state revenue, it failed to secure enough voter support to proceed as state law.",
+  "whyItIsViral": "The measure generated significant media attention due to heavy campaign spending by tech leaders and its potential influence on future tax policy, attracting coverage from five independent outlets.",
+  "viralScore": 76,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 5,
-    "coverageVelocityScore": 49,
+    "coverageVelocityScore": 64,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-10T02:54:54Z",
-  "lastUpdatedBatchAt": "2026-11-10T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-10T13:32:00Z",
   "sources": [
     {
       "publisherName": "The Guardian",
@@ -63,17 +63,44 @@
       "articleTitle": "California voters reject billionaire tax",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/10/california-voters-reject-billionaire-tax?traffic_source=rss",
       "publishedAt": "2026-11-10T08:38:26Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "California voters reject measure to tax the wealth of billionaires",
+      "articleUrl": "https://www.france24.com/en/video/20261110-california-voters-reject-measure-to-tax-the-wealth-of-billionaires",
+      "publishedAt": "2026-11-10T11:20:09Z"
+    },
+    {
+      "publisherName": "NPR",
+      "publisherDomain": "npr.org",
+      "articleTitle": "Why did California's billionaire tax fail to surf the blue wave?",
+      "articleUrl": "https://www.npr.org/sections/planet-money/2026/11/10/g-s1-152755/why-did-californias-billionaire-tax-fail-to-surf-the-blue-wave",
+      "publishedAt": "2026-11-10T11:30:00Z"
     }
   ],
-  "entityTags": [],
+  "entityTags": [
+    {
+      "name": "California",
+      "slug": "california"
+    },
+    {
+      "name": "Billionaire Wealth Tax",
+      "slug": "billionaire-wealth-tax"
+    },
+    {
+      "name": "Proposition 40",
+      "slug": "proposition-40"
+    }
+  ],
   "relatedInCountrySlugs": [
-    "armed-suspect-arrested-near-white-house",
     "thomas-massie-files-hegseth-impeachment",
-    "democrats-swept-the-midterms-what-comes-next-for-the"
+    "armed-suspect-arrested-near-white-house",
+    "did-a-data-centre-revolt-affect-the-us-midterm"
   ],
   "relatedInCategorySlugs": [
-    "australia-to-adopt-mandatory-ai-safeguards",
-    "sph-media-reports-system-cyberattacks",
-    "malaysia-national-post-quantum-cryptography-plan"
+    "farage-says-he-is-worried-trump-will-step-up",
+    "protests-at-vice-presidential-palace",
+    "prabowo-distributes-vehicles-announces-national-heroes"
   ]
 }
