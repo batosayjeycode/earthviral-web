@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611100440",
-  "generatedAt": "2026-11-10T04:40:00Z",
-  "nextUpdateAt": "2026-11-10T05:17:00Z",
+  "batchId": "batch-202611100518",
+  "generatedAt": "2026-11-10T05:18:00Z",
+  "nextUpdateAt": "2026-11-10T08:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
     "viralTopics": 167,
-    "globalIndex": 84
+    "globalIndex": 85
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -16,12 +16,13 @@
       "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
     "articlesFetched": 1190,
-    "newClusters": 16,
-    "updatedClusters": 18,
-    "retiredClusters": 15,
-    "aiCalls": 20,
+    "newClusters": 5,
+    "updatedClusters": 16,
+    "retiredClusters": 4,
+    "aiCalls": 9,
     "aiFailures": {
-      "server-error": 19
+      "server-error": 6,
+      "rate-limit": 1
     },
     "aiFailureSamples": [
       {
@@ -37,14 +38,14 @@
         "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
       },
       {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
       },
       {
         "category": "server-error",
         "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
       }
     ],
-    "durationMs": 487632
+    "durationMs": 221077
   }
 }
