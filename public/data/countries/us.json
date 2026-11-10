@@ -3,17 +3,34 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 87,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-10T05:18:00Z",
+  "viralScore": 81,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-10T08:18:00Z",
   "clusters": [
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
+        "The party has indicated plans to review existing immigration policies and investigate former President Donald Trump."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
     {
       "slug": "armed-suspect-arrested-near-white-house",
       "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
       "headline": "Dana White Declines Potential White House Press Secretary Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 84,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Dana White confirmed he has no political ambitions and will not serve as White House press secretary.",
@@ -30,7 +47,7 @@
       "headline": "Representative Thomas Massie Formally Files Articles Of Impeachment",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 82,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Representative Thomas Massie introduced articles of impeachment against Defense Secretary Pete Hegseth.",
@@ -47,7 +64,7 @@
       "headline": "California voters reject proposed one-time tax on billionaires' wealth",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 74,
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "France 24 reports: California voters reject proposed one-time tax on billionaires' wealth",
@@ -64,7 +81,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -76,46 +93,12 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
-        "The party has indicated plans to review existing immigration policies and investigate former President Donald Trump."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
-        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
-      }
-    },
-    {
       "slug": "trump-appoints-miller-chief-of-staff",
       "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
       "headline": "Stephen Miller Begins Term As White House Chief Of Staff For Trump",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Stephen Miller has officially commenced his tenure as White House chief of staff following his appointment by President Donald Trump.",
@@ -127,12 +110,29 @@
       }
     },
     {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
+        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
+      }
+    },
+    {
       "slug": "trump-reflects-on-deportation-policy",
       "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
       "headline": "President Trump Reviews Deportation Policy Following Election Losses",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump stated in an interview that his administration's deportation policy may have been excessively harsh.",
@@ -144,12 +144,29 @@
       }
     },
     {
+      "slug": "us-russia-ukraine-abu-dhabi-talks",
+      "canonicalPath": "/news/us/us-russia-ukraine-abu-dhabi-talks/",
+      "headline": "United States Russia And Ukraine Convene Peace Talks In Abu Dhabi",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The United States, Russia, and Ukraine have initiated trilateral peace negotiations in Abu Dhabi.",
+        "These represent the first substantive diplomatic discussions between the involved parties since February."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
+      }
+    },
+    {
       "slug": "supreme-court-allows-texas-border-wall",
       "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
       "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
-      }
-    },
-    {
-      "slug": "thomas-massie-moves-to-impeach-hegseth",
-      "canonicalPath": "/news/us/thomas-massie-moves-to-impeach-hegseth/",
-      "headline": "Representative Thomas Massie Initiates Impeachment Effort For Hegseth",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Representative Thomas Massie has formally moved to force a vote to impeach Defense Secretary Pete Hegseth.",
-        "The impeachment push centers on allegations that the Secretary engaged in unauthorized military actions and abused official powers."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-10/us-defence-secretary-pete-hegseth-subject-of-new-impeachment-bid/107366698"
       }
     }
   ]

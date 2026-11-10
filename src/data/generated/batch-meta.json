@@ -1,51 +1,24 @@
 {
-  "batchId": "batch-202611100518",
-  "generatedAt": "2026-11-10T05:18:00Z",
-  "nextUpdateAt": "2026-11-10T08:17:00Z",
+  "batchId": "batch-202611100818",
+  "generatedAt": "2026-11-10T08:18:00Z",
+  "nextUpdateAt": "2026-11-10T11:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
-    "viralTopics": 167,
-    "globalIndex": 85
+    "viralTopics": 168,
+    "globalIndex": 87
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 31,
     "feedsFailed": [
-      "gdelt-indonesia: fetch failed",
-      "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1190,
-    "newClusters": 5,
-    "updatedClusters": 16,
-    "retiredClusters": 4,
-    "aiCalls": 9,
-    "aiFailures": {
-      "server-error": 6,
-      "rate-limit": 1
-    },
-    "aiFailureSamples": [
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      },
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      },
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      }
-    ],
-    "durationMs": 221077
+    "articlesFetched": 1193,
+    "newClusters": 25,
+    "updatedClusters": 36,
+    "retiredClusters": 23,
+    "aiCalls": 36,
+    "durationMs": 174776
   }
 }

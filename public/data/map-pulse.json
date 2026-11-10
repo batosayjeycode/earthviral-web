@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611100518",
-  "generatedAt": "2026-11-10T05:18:00Z",
-  "nextUpdateAt": "2026-11-10T08:17:00Z",
+  "batchId": "batch-202611100818",
+  "generatedAt": "2026-11-10T08:18:00Z",
+  "nextUpdateAt": "2026-11-10T11:17:00Z",
   "countries": [
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "australia-to-adopt-mandatory-ai-safeguards",
+        "canonicalPath": "/news/au/australia-to-adopt-mandatory-ai-safeguards/",
+        "headline": "Australia Mandates AI Safeguards Following OpenAI Security Breach",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 100,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -18,9 +40,9 @@
       "topTopic": {
         "slug": "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
         "canonicalPath": "/news/id/peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan/",
-        "headline": "LPSK Dalami Dugaan Ancaman ke 6 Saksi Kasus Penyadapan Presiden Prabowo",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "headline": "Authorities Investigate Alleged Wiretapping Of President Prabowo",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
         "viralScore": 100,
         "intensityTier": "surge"
       }
@@ -34,16 +56,16 @@
         53.7,
         32.4
       ],
-      "viralScore": 100,
+      "viralScore": 99,
       "intensityTier": "surge",
       "topicCount": 2,
       "topTopic": {
         "slug": "farage-says-he-is-worried-trump-will-step-up",
         "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Rubio throws cold water on Iran talks, Trump says there's no reason to escalate war",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 99,
+        "headline": "Trump Indicates Military Engagement With Iran Has Effectively Ceased",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 98,
         "intensityTier": "surge"
       }
     },
@@ -58,14 +80,14 @@
       ],
       "viralScore": 97,
       "intensityTier": "surge",
-      "topicCount": 5,
+      "topicCount": 6,
       "topTopic": {
         "slug": "nvidia-investigates-ceo-espionage-allegations",
         "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-        "headline": "Nvidia CEO Jensen Huang Faces Lawsuits Over Alleged Spy Connections",
+        "headline": "Nvidia Shareholders Sue Jensen Huang Over Alleged Chinese Spy Ties",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 95,
+        "viralScore": 94,
         "intensityTier": "surge"
       }
     },
@@ -78,16 +100,16 @@
         45,
         24
       ],
-      "viralScore": 89,
+      "viralScore": 90,
       "intensityTier": "surge",
-      "topicCount": 6,
+      "topicCount": 5,
       "topTopic": {
         "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
         "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
         "headline": "Saudi Arabia Faces Series Of Attacks Targeting Aramco Facilities",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 86,
+        "viralScore": 88,
         "intensityTier": "surge"
       }
     },
@@ -100,16 +122,16 @@
         -98.5,
         39.5
       ],
-      "viralScore": 87,
-      "intensityTier": "surge",
+      "viralScore": 81,
+      "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "armed-suspect-arrested-near-white-house",
-        "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-        "headline": "Dana White Declines Potential White House Press Secretary Role",
+        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+        "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 84,
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
@@ -122,7 +144,7 @@
         -63.6,
         -38.4
       ],
-      "viralScore": 82,
+      "viralScore": 80,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -131,73 +153,7 @@
         "headline": "Pope Leo XIV Addresses Austerity Concerns During Argentina Visit",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 81,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 77,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "australia-to-adopt-mandatory-ai-safeguards",
-        "canonicalPath": "/news/au/australia-to-adopt-mandatory-ai-safeguards/",
-        "headline": "Australia to adopt 'mandatory' AI safeguards",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 74,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 74,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-        "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 71,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 71,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "cop31-climate-summit-begins-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-begins-turkey/",
-        "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 69,
+        "viralScore": 79,
         "intensityTier": "high"
       }
     },
@@ -210,60 +166,16 @@
         79,
         22
       ],
-      "viralScore": 70,
+      "viralScore": 80,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "delhi-air-quality-grap-iii-restrictions",
-        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
-        "headline": "Severe Smog Envelops New Delhi Amidst Ongoing Air Quality Concerns",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 69,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 68,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 67,
-      "intensityTier": "high",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "severe-storms-flood-gaza-refugee-tents",
-        "canonicalPath": "/news/ps/severe-storms-flood-gaza-refugee-tents/",
-        "headline": "Severe Storms Inundate Over 70,000 Refugee Tents Across Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 66,
+        "slug": "sonia-gandhi-releases-new-political-memoir",
+        "canonicalPath": "/news/in/sonia-gandhi-releases-new-political-memoir/",
+        "headline": "Sonia Gandhi Discusses Political Memoir And National History In India",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 77,
         "intensityTier": "high"
       }
     },
@@ -276,7 +188,7 @@
         102.3,
         3.8
       ],
-      "viralScore": 65,
+      "viralScore": 78,
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
@@ -285,7 +197,7 @@
         "headline": "Former Prime Minister Najib Razak Remains In Custody Following Shift",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -298,7 +210,7 @@
         19.4,
         52.1
       ],
-      "viralScore": 63,
+      "viralScore": 69,
       "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
@@ -307,73 +219,29 @@
         "headline": "Krakow Shooting Suspect Dies Following Fatal Market Square Attack",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 62,
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
     {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
       "centroid": [
-        2.4,
-        46.6
+        -2,
+        53.5
       ],
-      "viralScore": 63,
+      "viralScore": 69,
       "intensityTier": "high",
-      "topicCount": 10,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "france-accuses-iran-supermarket-cyber-attacks",
-        "canonicalPath": "/news/fr/france-accuses-iran-supermarket-cyber-attacks/",
-        "headline": "France Accuses Iranian Revolutionary Guards Of Supermarket Hacks",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "singapore-assurance-package-cash-payouts",
-        "canonicalPath": "/news/sg/singapore-assurance-package-cash-payouts/",
-        "headline": "Three Million Singaporeans Set To Receive Assurance Package Payouts",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Receives Formal Mandate To Lead Israeli Government",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
+        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+        "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 66,
         "intensityTier": "high"
       }
     },
@@ -386,8 +254,8 @@
         60,
         58
       ],
-      "viralScore": 58,
-      "intensityTier": "active",
+      "viralScore": 68,
+      "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
         "slug": "novaya-gazeta-closes-moscow-operations",
@@ -395,7 +263,227 @@
         "headline": "Russian Independent Newspaper Novaya Gazeta Shuts Down Operations",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 57,
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "france-accuses-iran-supermarket-cyber-attacks",
+        "canonicalPath": "/news/fr/france-accuses-iran-supermarket-cyber-attacks/",
+        "headline": "France Accuses Iranian Revolutionary Guards Of Supermarket Hacks",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "ruto-brands-gachagua-chief-extortionist",
+        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
+        "headline": "President Ruto And Former Deputy President Exchange Verbal Attacks",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "cop31-climate-summit-begins-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-begins-turkey/",
+        "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "lando-norris-brazil-grand-prix-pole",
+        "canonicalPath": "/news/br/lando-norris-brazil-grand-prix-pole/",
+        "headline": "Lando Norris Secures Victory At The 2026 Formula 1 Brazilian Grand Prix",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "cruise-ship-odyssey-detained-singapore",
+        "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
+        "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "european-leaders-seek-ukraine-peace-influence",
+        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
+        "headline": "Ukraine And Russia Representatives Convene For Talks In Abu Dhabi",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "severe-storms-flood-gaza-refugee-tents",
+        "canonicalPath": "/news/ps/severe-storms-flood-gaza-refugee-tents/",
+        "headline": "Severe Storms Inundate Over 70,000 Refugee Tents Across Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 59,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Gadi Eisenkot Receives Formal Mandate To Lead Israeli Government",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
+      ],
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Ousted Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 58,
         "intensityTier": "active"
       }
     },
@@ -408,35 +496,13 @@
         8.1,
         9.6
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "topicCount": 10,
       "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "All Progressives Congress Accelerates Political Activities For 2027",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "ruto-nominates-data-commissioner-and-ceos",
-        "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
-        "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
+        "slug": "political-shifts-ahead-of-tinubu-jigawa-visit",
+        "canonicalPath": "/news/ng/political-shifts-ahead-of-tinubu-jigawa-visit/",
+        "headline": "President Tinubu Prepares For Official Visit To Jigawa State",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 54,
@@ -466,28 +532,6 @@
       }
     },
     {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
-        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
-        "headline": "African National Congress Faces Losses In South African Local Polls",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "JP",
       "isoNumeric": "392",
       "name": "Japan",
@@ -506,50 +550,6 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 53,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 54,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "european-leaders-seek-ukraine-peace-influence",
-        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
-        "headline": "Ukraine And Russia Representatives Convene For Talks In Abu Dhabi",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 53,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 54,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "lando-norris-brazil-grand-prix-pole",
-        "canonicalPath": "/news/br/lando-norris-brazil-grand-prix-pole/",
-        "headline": "Lando Norris Secures Victory At The 2026 Formula 1 Brazilian Grand Prix",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 51,
         "intensityTier": "active"
       }
     },
@@ -576,46 +576,24 @@
       }
     },
     {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
       "centroid": [
-        90.3,
-        23.7
+        24.7,
+        -29
       ],
-      "viralScore": 47,
+      "viralScore": 53,
       "intensityTier": "active",
-      "topicCount": 1,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "sheikh-hasina-seeks-passport-for-return",
-        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
-        "headline": "Ousted Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
+        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
+        "headline": "African National Congress Faces Losses In South African Local Polls",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 47,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
-      "centroid": [
-        10.4,
-        51.1
-      ],
-      "viralScore": 41,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "merz-nominates-aigner-for-german-president",
-        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
-        "headline": "Chancellor Friedrich Merz Nominates Ilse Aigner For Presidency",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 41,
+        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -628,16 +606,38 @@
         127.8,
         36.3
       ],
+      "viralScore": 52,
+      "intensityTier": "active",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "south-korean-political-and-border-tensions",
+        "canonicalPath": "/news/kr/south-korean-political-and-border-tensions/",
+        "headline": "Political Challenges And Border Tensions Shape South Korea News Cycle",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 49,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
+      "centroid": [
+        10.4,
+        51.1
+      ],
       "viralScore": 40,
       "intensityTier": "active",
-      "topicCount": 7,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
-        "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
-        "headline": "(LEAD) KT Q3 operating profit down amid data breach fallout, AI expenditures",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 37,
+        "slug": "merz-nominates-aigner-for-german-president",
+        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
+        "headline": "Chancellor Friedrich Merz Nominates Ilse Aigner For Presidency",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 40,
         "intensityTier": "active"
       }
     },
@@ -672,16 +672,16 @@
         12.6,
         42.8
       ],
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
-        "slug": "inter-milan-ac-milan-serie-a-results",
-        "canonicalPath": "/news/it/inter-milan-ac-milan-serie-a-results/",
-        "headline": "Inter And AC Milan Secure Victories In Latest Serie A Matchweek",
+        "slug": "ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa",
+        "canonicalPath": "/news/it/ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa/",
+        "headline": "AC Milan Naik ke Peringkat Empat Usai Tekuk Genoa 2-1",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 31,
+        "viralScore": 30,
         "intensityTier": "active"
       }
     },

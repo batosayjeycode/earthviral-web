@@ -3,25 +3,42 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 77,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-10T05:18:00Z",
+  "viralScore": 100,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-10T08:18:00Z",
   "clusters": [
     {
       "slug": "australia-to-adopt-mandatory-ai-safeguards",
       "canonicalPath": "/news/au/australia-to-adopt-mandatory-ai-safeguards/",
-      "headline": "Australia to adopt 'mandatory' AI safeguards",
+      "headline": "Australia Mandates AI Safeguards Following OpenAI Security Breach",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 74,
-      "intensityTier": "high",
+      "viralScore": 100,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Le Monde reports: Australia to adopt 'mandatory' AI safeguards",
-        "CNA reports: Australia to adopt 'mandatory' AI safeguards"
+        "The Australian government is establishing a dedicated AI safety regulator to oversee technological compliance.",
+        "New mandatory reporting requirements will be introduced to address risks associated with autonomous artificial intelligence."
       ],
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/world/australia-tightens-ai-overnight-rules-openai-breach-6537776"
+      }
+    },
+    {
+      "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+      "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+      "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Usman Khawaja alleges that the Australian cricket team was aware of the 2018 ball-tampering plot during the South Africa tour.",
+        "Darren Lehmann denies Khawaja’s specific claim about the team's knowledge of the sandpaper incident."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/usman-khawaja-sandpapergate-ball-tampering-south-africa-cricket/107345086"
       }
     },
     {
@@ -30,8 +47,8 @@
       "headline": "Jillaroos And Kiwis Advance To Rugby League World Cup Grand Finals",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 56,
-      "intensityTier": "active",
+      "viralScore": 60,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "The Jillaroos qualified for the Rugby League World Cup final after defeating Fiji at Sydney Football Stadium.",
         "Fiji put up a competitive challenge against the Jillaroos during their tournament debut performance."
@@ -59,46 +76,12 @@
       }
     },
     {
-      "slug": "qantas-airways-job-cuts-restructuring",
-      "canonicalPath": "/news/au/qantas-airways-job-cuts-restructuring/",
-      "headline": "Qantas Airways To Reduce Workforce By 850 Positions In Restructure",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Qantas Airways plans to eliminate 850 corporate roles within the next few years.",
-        "The airline intends to outsource specific functions to India as part of an operational overhaul."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/business/2026/nov/10/qantas-850-job-cuts-outsource-work-to-india-ai-overhaul"
-      }
-    },
-    {
-      "slug": "usman-khawaja-claims-ball-tampering-knowledge",
-      "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
-      "headline": "Former Coach Darren Lehmann Responds To Khawaja Ball Tampering Claim",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Usman Khawaja alleges that the Australian cricket team was aware of the 2018 ball-tampering plot during the South Africa tour.",
-        "Darren Lehmann denies Khawaja’s specific claim about the team's knowledge of the sandpaper incident."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/usman-khawaja-sandpapergate-ball-tampering-south-africa-cricket/107345086"
-      }
-    },
-    {
       "slug": "man-charged-murder-fatal-home-invasion",
       "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
       "headline": "Multiple Murder Charges Filed Following Fatal Stabbings In Australia",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A 51-year-old man was charged with murder following the stabbing death of a delivery rider in Melbourne's central business district.",
@@ -110,20 +93,54 @@
       }
     },
     {
-      "slug": "author-wins-booker-prize-award",
-      "canonicalPath": "/news/au/author-wins-booker-prize-award/",
-      "headline": "M John Harrison Awarded Booker Prize For The End Of Everything",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 40,
+      "slug": "former-officer-testifies-double-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
+      "headline": "Former Officer Testifies In Trial For Sydney Double Murder Case",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "M John Harrison, age 81, was announced as the winner of the Booker Prize.",
-        "The winning literary work is titled The End of Everything."
+        "Beau Lamarre-Condon denied executing Jesse Baird while providing evidence during his trial for the murders of Baird and Luke Davies.",
+        "The defendant is currently facing cross-examination in a Sydney court after pleading not guilty to the 2024 killings in Paddington."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-10/booker-prize-2026-m-john-harrison-the-end-of-everything/107342508"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
+      }
+    },
+    {
+      "slug": "qantas-airways-job-cuts-restructuring",
+      "canonicalPath": "/news/au/qantas-airways-job-cuts-restructuring/",
+      "headline": "Qantas Airways To Reduce Workforce By 850 Positions In Restructure",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Qantas Airways plans to eliminate 850 corporate roles within the next few years.",
+        "The airline intends to outsource specific functions to India as part of an operational overhaul."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/business/2026/nov/10/qantas-850-job-cuts-outsource-work-to-india-ai-overhaul"
+      }
+    },
+    {
+      "slug": "neurological-conditions-in-perth-double-murder",
+      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
+      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
+        "Evidence suggests the perpetrator engaged in high-level planning for the event."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
       }
     },
     {
@@ -144,37 +161,20 @@
       }
     },
     {
-      "slug": "former-officer-testifies-double-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
-      "headline": "Former Officer Testifies In Trial For Sydney Double Murder Case",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "author-wins-booker-prize-award",
+      "canonicalPath": "/news/au/author-wins-booker-prize-award/",
+      "headline": "M John Harrison Awarded Booker Prize For The End Of Everything",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
       "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Beau Lamarre-Condon denied executing Jesse Baird while providing evidence during his trial for the murders of Baird and Luke Davies.",
-        "The defendant is currently facing cross-examination in a Sydney court after pleading not guilty to the 2024 killings in Paddington."
+        "M John Harrison, age 81, was announced as the winner of the Booker Prize.",
+        "The winning literary work is titled The End of Everything."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
-      }
-    },
-    {
-      "slug": "australia-faces-scrutiny-climate-summit",
-      "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
-      "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
-        "Australia faces scrutiny over its export-related emissions as delegates gather to participate in the global climate summit."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/booker-prize-2026-m-john-harrison-the-end-of-everything/107342508"
       }
     }
   ]

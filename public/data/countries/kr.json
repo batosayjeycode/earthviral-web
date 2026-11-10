@@ -3,17 +3,34 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 40,
+  "viralScore": 52,
   "intensityTier": "active",
-  "generatedAt": "2026-11-10T05:18:00Z",
+  "generatedAt": "2026-11-10T08:18:00Z",
   "clusters": [
+    {
+      "slug": "south-korean-political-and-border-tensions",
+      "canonicalPath": "/news/kr/south-korean-political-and-border-tensions/",
+      "headline": "Political Challenges And Border Tensions Shape South Korea News Cycle",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "North Korea has formally accused the UN Secretary-General of favoring South Korea amid ongoing regional border disputes.",
+        "The South Korean National Assembly recently passed the Special Counsel Act on Fabricated Indictments."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110000700320"
+      }
+    },
     {
       "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
       "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
       "headline": "(LEAD) KT Q3 operating profit down amid data breach fallout, AI expenditures",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 37,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Yonhap reports: (LEAD) KT Q3 operating profit down amid data breach fallout, AI expenditures"
@@ -41,23 +58,6 @@
       }
     },
     {
-      "slug": "nvidia-skt-rebellions-ai-partnership",
-      "canonicalPath": "/news/kr/nvidia-skt-rebellions-ai-partnership/",
-      "headline": "Nvidia, SK Telecom, And Rebellions Collaborate On AI Computing System",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 20,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Nvidia, SK Telecom, and Rebellions are partnering to develop a specialized heterogeneous computing system.",
-        "The collaboration aims to enhance infrastructure and capabilities within the artificial intelligence sector."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261109005400320"
-      }
-    },
-    {
       "slug": "samsung-lions-win-korean-series-championship",
       "canonicalPath": "/news/kr/samsung-lions-win-korean-series-championship/",
       "headline": "Samsung Lions Claim First Korean Series Championship In Twelve Years",
@@ -72,6 +72,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261106011500315"
+      }
+    },
+    {
+      "slug": "nvidia-skt-rebellions-ai-partnership",
+      "canonicalPath": "/news/kr/nvidia-skt-rebellions-ai-partnership/",
+      "headline": "Nvidia, SK Telecom, And Rebellions Collaborate On AI Computing System",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Nvidia, SK Telecom, and Rebellions are partnering to develop a specialized heterogeneous computing system.",
+        "The collaboration aims to enhance infrastructure and capabilities within the artificial intelligence sector."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261109005400320"
       }
     },
     {
