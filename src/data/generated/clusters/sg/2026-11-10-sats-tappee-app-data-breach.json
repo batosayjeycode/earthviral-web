@@ -6,6 +6,26 @@
   "countryName": "Singapore",
   "countrySlug": "singapore",
   "region": "Asia",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "SATS Confirms Cybersecurity Breach Of School Meal Application Tappee",
+  "seoTitle": "SATS Reports Tappee App Data Breach",
+  "metaDescription": "Food services provider SATS confirmed a cybersecurity incident affecting the Tappee school meal app, impacting four institutions in Singapore.",
+  "aiSummaryBullets": [
+    "Food services company SATS reported a cybersecurity incident involving its Tappee school meal ordering application.",
+    "The breach impacted four schools, though SATS stated that financial data and student identification documents remained unaffected.",
+    "Meal services for students will continue without disruption while the situation is addressed."
+  ],
+  "aiContextParagraph": "The Singapore-based food solutions provider SATS has confirmed that its Tappee application, which facilitates meal ordering and delivery services for educational institutions, recently experienced a cybersecurity breach. According to statements released by the company, the incident affected the digital operations at four specific schools. Despite the unauthorized access, SATS clarified that the application does not collect sensitive financial data such as credit card or banking information. Additionally, the company stated that no images or personal details associated with student identification documents were compromised during the event. SATS has assured the public and affected families that daily meal services will continue to function as intended without any service interruptions resulting from the technical incident. The company continues to manage the situation to ensure the integrity of its digital platforms used within the school ecosystem.",
+  "whyItIsViral": "The incident is trending due to reports from multiple major news outlets monitoring local digital infrastructure and school safety.",
+  "viralScore": 49,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 41,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Emerging Coverage"
+  },
   "firstDetectedAt": "2026-11-10T09:59:26Z",
   "lastUpdatedBatchAt": "2026-11-10T13:32:00Z",
   "sources": [
@@ -24,28 +44,6 @@
       "publishedAt": "2026-11-10T13:12:00Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "sph-media-reports-system-cyberattacks",
-    "cruise-ship-odyssey-detained-singapore",
-    "nvidia-shares-drop-jensen-huang"
-  ],
-  "relatedInCategorySlugs": [
-    "australia-to-adopt-mandatory-ai-safeguards",
-    "malaysia-national-post-quantum-cryptography-plan",
-    "nvidia-skt-rebellions-ai-partnership"
-  ],
-  "headline": "SATS Confirms Cybersecurity Breach Of School Meal Application Tappee",
-  "seoTitle": "SATS Reports Tappee App Data Breach",
-  "metaDescription": "Food services provider SATS confirmed a cybersecurity incident affecting the Tappee school meal app, impacting four institutions in Singapore.",
-  "aiSummaryBullets": [
-    "Food services company SATS reported a cybersecurity incident involving its Tappee school meal ordering application.",
-    "The breach impacted four schools, though SATS stated that financial data and student identification documents remained unaffected.",
-    "Meal services for students will continue without disruption while the situation is addressed."
-  ],
-  "aiContextParagraph": "The Singapore-based food solutions provider SATS has confirmed that its Tappee application, which facilitates meal ordering and delivery services for educational institutions, recently experienced a cybersecurity breach. According to statements released by the company, the incident affected the digital operations at four specific schools. Despite the unauthorized access, SATS clarified that the application does not collect sensitive financial data such as credit card or banking information. Additionally, the company stated that no images or personal details associated with student identification documents were compromised during the event. SATS has assured the public and affected families that daily meal services will continue to function as intended without any service interruptions resulting from the technical incident. The company continues to manage the situation to ensure the integrity of its digital platforms used within the school ecosystem.",
-  "whyItIsViral": "The incident is trending due to reports from multiple major news outlets monitoring local digital infrastructure and school safety.",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
   "entityTags": [
     {
       "name": "SATS",
@@ -60,12 +58,14 @@
       "slug": "cybersecurity"
     }
   ],
-  "viralScore": 51,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 45,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "sph-media-reports-system-cyberattacks",
+    "cruise-ship-odyssey-detained-singapore",
+    "singapore-disability-hiring-grant"
+  ],
+  "relatedInCategorySlugs": [
+    "australia-to-adopt-mandatory-ai-safeguards",
+    "malaysia-national-post-quantum-cryptography-plan",
+    "nvidia-skt-rebellions-ai-partnership"
+  ]
 }
