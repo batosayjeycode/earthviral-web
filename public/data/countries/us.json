@@ -3,17 +3,51 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 81,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-10T08:18:00Z",
+  "viralScore": 86,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-10T11:18:00Z",
   "clusters": [
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "Dana White Formally Declines White House Press Secretary Offer",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 83,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Dana White formally declined the offer to become the White House press secretary during a visit to Washington.",
+        "The UFC CEO stated he holds no political aspirations following widespread speculation about the potential appointment."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
+      }
+    },
+    {
+      "slug": "thomas-massie-files-hegseth-impeachment",
+      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
+      "headline": "Defense Secretary Pete Hegseth Faces Impeachment Vote This Week",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 80,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Representative Thomas Massie has formally introduced articles of impeachment against Defense Secretary Pete Hegseth.",
+        "The legislative push follows political backlash linked to the conflict in Iran and recent election losses for the Republican Party."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/pete-hegseth-impeachment-were-not-worried-about-that/"
+      }
+    },
     {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 78,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
@@ -25,54 +59,20 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "Dana White Declines Potential White House Press Secretary Role",
+      "slug": "us-russia-ukraine-abu-dhabi-talks",
+      "canonicalPath": "/news/us/us-russia-ukraine-abu-dhabi-talks/",
+      "headline": "United States Mediated Peace Talks Resume Between Russia And Ukraine",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 76,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Dana White confirmed he has no political ambitions and will not serve as White House press secretary.",
-        "President Trump clarified that his initial public offer to the UFC executive was made in jest."
+        "Officials from the United States, Russia, and Ukraine have started a two-day diplomatic session in Abu Dhabi.",
+        "The meeting marks the first trilateral effort to negotiate an end to the conflict since February."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump"
-      }
-    },
-    {
-      "slug": "thomas-massie-files-hegseth-impeachment",
-      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
-      "headline": "Representative Thomas Massie Formally Files Articles Of Impeachment",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Representative Thomas Massie introduced articles of impeachment against Defense Secretary Pete Hegseth.",
-        "The impeachment push centers on allegations that Hegseth initiated military operations in Iran without authorization from Congress."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/pete-hegseth-impeachment-were-not-worried-about-that/"
-      }
-    },
-    {
-      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
-      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
-      "headline": "California voters reject proposed one-time tax on billionaires' wealth",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "France 24 reports: California voters reject proposed one-time tax on billionaires' wealth",
-        "The Guardian reports: California voters fail to pass proposed one-time tax on billionaires’ wealth"
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -93,12 +93,63 @@
       }
     },
     {
+      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
+      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
+      "headline": "California voters reject proposed one-time tax on billionaires' wealth",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "France 24 reports: California voters reject proposed one-time tax on billionaires' wealth",
+        "The Guardian reports: California voters fail to pass proposed one-time tax on billionaires’ wealth"
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+      }
+    },
+    {
+      "slug": "us-relocates-aircraft-uk-bases",
+      "canonicalPath": "/news/us/us-relocates-aircraft-uk-bases/",
+      "headline": "United States Relocates Aircraft From Second United Kingdom Airbase",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "US military refueling tankers were moved from RAF Mildenhall to locations including Germany.",
+        "The relocation follows a security incident involving aircraft at a separate airbase last month."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/us-moves-aircraft-from-second-uk-base-over-threat-from-iran?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "supreme-court-allows-texas-border-wall",
+      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
+      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
+        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+      }
+    },
+    {
       "slug": "trump-appoints-miller-chief-of-staff",
       "canonicalPath": "/news/us/trump-appoints-miller-chief-of-staff/",
       "headline": "Stephen Miller Begins Term As White House Chief Of Staff For Trump",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Stephen Miller has officially commenced his tenure as White House chief of staff following his appointment by President Donald Trump.",
@@ -115,7 +166,7 @@
       "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 54,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
@@ -124,57 +175,6 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "trump-reflects-on-deportation-policy",
-      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
-      "headline": "President Trump Reviews Deportation Policy Following Election Losses",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump stated in an interview that his administration's deportation policy may have been excessively harsh.",
-        "The remarks follow Republican legislative setbacks during the recent midterm elections."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
-      }
-    },
-    {
-      "slug": "us-russia-ukraine-abu-dhabi-talks",
-      "canonicalPath": "/news/us/us-russia-ukraine-abu-dhabi-talks/",
-      "headline": "United States Russia And Ukraine Convene Peace Talks In Abu Dhabi",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The United States, Russia, and Ukraine have initiated trilateral peace negotiations in Abu Dhabi.",
-        "These represent the first substantive diplomatic discussions between the involved parties since February."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
-      }
-    },
-    {
-      "slug": "supreme-court-allows-texas-border-wall",
-      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
-      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
-        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
       }
     }
   ]

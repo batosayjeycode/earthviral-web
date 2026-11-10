@@ -3,18 +3,52 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 65,
+  "viralScore": 62,
   "intensityTier": "high",
-  "generatedAt": "2026-11-10T08:18:00Z",
+  "generatedAt": "2026-11-10T11:18:00Z",
   "clusters": [
+    {
+      "slug": "sph-media-reports-system-cyberattacks",
+      "canonicalPath": "/news/sg/sph-media-reports-system-cyberattacks/",
+      "headline": "SPH Media Reports Cyberattacks Across Five Internal Systems Today",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "SPH Media identified unauthorized cyberactivity affecting five of its systems.",
+        "A company spokesperson stated that the incidents appear linked to a single threat actor."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/politics/sph-media-hit-by-cyberattacks-no-payment-card-details-or-financial-information-compromised"
+      }
+    },
+    {
+      "slug": "nvidia-shares-drop-jensen-huang",
+      "canonicalPath": "/news/sg/nvidia-shares-drop-jensen-huang/",
+      "headline": "Nvidia Shares Decline Following Reports Regarding Jensen Huang",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 57,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Nvidia stock prices decreased following reports concerning company chief Jensen Huang.",
+        "The market reaction coincided with reports on various other subjects, including Pete Hegseth."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens8"
+      }
+    },
     {
       "slug": "cruise-ship-odyssey-detained-singapore",
       "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
       "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
         "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
@@ -25,12 +59,29 @@
       }
     },
     {
+      "slug": "singapore-missing-person-reports-update",
+      "canonicalPath": "/news/sg/singapore-missing-person-reports-update/",
+      "headline": "Singapore Authorities Report Multiple Recent Missing Person Cases",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 13-year-old girl was reported missing after she was last seen in Sengkang on November 8.",
+        "A woman last seen near Kebun Baru Food Centre in Ang Mo Kio on November 8 has been located."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/found-man-last-seen-near-yishun-ave-2-on-nov-8"
+      }
+    },
+    {
       "slug": "four-men-charged-singapore-mortgage-fraud",
       "canonicalPath": "/news/sg/four-men-charged-singapore-mortgage-fraud/",
       "headline": "Four Men Face Charges Over Alleged Six Million Dollar Mortgage Fraud",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 59,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Four individuals are being charged for an alleged scheme involving six million dollars in fraudulent home loans.",
@@ -47,7 +98,7 @@
       "headline": "Singapore To Host BTS The City Arirang Event Throughout December",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 46,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore is set to host the BTS The City Arirang event, serving as the sole destination for the experience in Southeast Asia.",
@@ -64,7 +115,7 @@
       "headline": "Owners of Elba tumble dryer model EBD 602S urged to halt use after string of fire incidents",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Straits Times reports: Owners of Elba tumble dryer model EBD 602S urged to halt use after string of fire incidents",
@@ -81,7 +132,7 @@
       "headline": "Experts Analyze Haze Impact On Health And Singapore Economy In 2026",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 44,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Economic analysis suggests the 2026 haze could cost Singapore approximately $2.32 billion.",
@@ -98,7 +149,7 @@
       "headline": "Three Million Singaporeans Set To Receive Assurance Package Payouts",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Singapore government is distributing cash payments to approximately three million citizens.",
@@ -115,7 +166,7 @@
       "headline": "Singapore Water Agency Issues Flash Flood Warnings For Motorists",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 41,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The PUB issued flash flood warnings for drivers in parts of central and western Singapore on November 10.",
@@ -124,57 +175,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/motorists-advised-to-avoid-two-areas-in-singapore-over-risk-of-flash-floods"
-      }
-    },
-    {
-      "slug": "nvidia-shares-drop-jensen-huang",
-      "canonicalPath": "/news/sg/nvidia-shares-drop-jensen-huang/",
-      "headline": "Nvidia Shares Decline Following Reports Regarding Jensen Huang",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nvidia stock prices decreased following reports concerning company chief Jensen Huang.",
-        "The market reaction coincided with reports on various other subjects, including Pete Hegseth."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens8"
-      }
-    },
-    {
-      "slug": "trump-comments-on-jensen-huang-spy-allegations",
-      "canonicalPath": "/news/sg/trump-comments-on-jensen-huang-spy-allegations/",
-      "headline": "Donald Trump References Nvidia CEO Jensen Huang In Spy Allegation",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Donald Trump stated that Jensen Huang provided an account regarding an individual accused of espionage.",
-        "The Nvidia CEO reportedly informed Trump that he was unaware of the woman's alleged involvement in intelligence activities."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/world/jensen-huang-nvidia-donald-trump-chinese-spy-6537361"
-      }
-    },
-    {
-      "slug": "singapore-enacts-stricter-haze-legislation",
-      "canonicalPath": "/news/sg/singapore-enacts-stricter-haze-legislation/",
-      "headline": "Singapore Parliament Enacts Stricter Legislation To Combat Haze",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Singapore lawmakers approved a legislative update to address transboundary haze issues.",
-        "The new policy mandates a tenfold increase in financial penalties for non-compliant corporations."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/environment/mask-distribution-haze-shelters-to-cease-by-nov-7-haze-subsidy-scheme-to-end-from-nov-12"
       }
     }
   ]

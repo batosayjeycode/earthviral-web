@@ -6,27 +6,43 @@
   "countryName": "South Korea",
   "countrySlug": "south-korea",
   "region": "Asia",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "(LEAD) KT Q3 operating profit down amid data breach fallout, AI expenditures",
-  "seoTitle": "(LEAD) KT Q3 operating profit down amid data breach…",
-  "metaDescription": "1 independent outlet is covering this story, and \"kt\" is trending in Google searches in South Korea. Yonhap reports: (LEAD) KT Q3 operating profit down amid…",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "South Korean Major Corporations Report Mixed Q3 Financial Results",
+  "seoTitle": "Major South Korean Firms Report Q3 Financial Results",
+  "metaDescription": "Multiple major South Korean companies report varying third-quarter financial results as the national export landscape shows high concentration.",
   "aiSummaryBullets": [
-    "Yonhap reports: (LEAD) KT Q3 operating profit down amid data breach fallout, AI expenditures"
+    "Krafton, CJ Cheiljedang, CJ Logistics, and KT reported declines in quarterly operating profits or net income.",
+    "Higher operational costs and specific sector challenges were cited as primary factors for decreased earnings across several firms.",
+    "Data indicate the top 10 exporters account for over 60 percent of national exports during the third quarter, fueled by the semiconductor industry."
   ],
-  "aiContextParagraph": "This story about South Korea has been reported by Yonhap since 2026-11-10. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "1 independent outlet is covering this story, and \"kt\" is trending in Google searches in South Korea.",
-  "viralScore": 36,
+  "aiContextParagraph": "Major South Korean corporations have released their third-quarter financial reports, revealing a complex economic landscape characterized by both growth in specific sectors and profit declines for key industry players. While the broader export market is bolstered by a significant boom in the semiconductor sector—with the top 10 companies contributing more than 60 percent of the nation's total exports—individual firms face varied headwinds. Companies such as CJ Cheiljedang and CJ Logistics have experienced notable drops in net income, attributed largely to rising operational costs. Simultaneously, the telecommunications and gaming sectors, represented by firms like KT and Krafton, reported lower operating profits due to increased expenditure on artificial intelligence and other business-related setbacks. These reports collectively highlight a trend where high-level export performance does not necessarily translate to uniform profitability across South Korea's major corporate entities.",
+  "whyItIsViral": "This story is trending due to simultaneous earnings reports from multiple industry-leading corporations appearing in local news cycles.",
+  "viralScore": 37,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 40,
+    "coverageVelocityScore": 43,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-10T01:36:21Z",
-  "lastUpdatedBatchAt": "2026-11-10T08:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-10T11:18:00Z",
   "sources": [
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) CJ Logistics Q3 net falls 25.5 pct on higher costs",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320",
+      "publishedAt": "2026-11-10T00:30:48Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) CJ Cheiljedang Q3 net plunges 48.3 pct on higher costs",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261110003200320",
+      "publishedAt": "2026-11-10T01:11:51Z"
+    },
     {
       "publisherName": "Yonhap",
       "publisherDomain": "en.yna.co.kr",
@@ -37,20 +53,44 @@
     {
       "publisherName": "Yonhap",
       "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "Top 10 firms take up over 60 pct of S. Korea's exports in Q3 amid chip boom",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261110002000320",
+      "publishedAt": "2026-11-10T03:00:21Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
       "articleTitle": "(LEAD) Krafton's Q3 operating profit down over 35 pct despite sales increase",
       "articleUrl": "https://en.yna.co.kr/view/AEN20261110008451320",
       "publishedAt": "2026-11-10T08:06:25Z"
     }
   ],
-  "entityTags": [],
+  "entityTags": [
+    {
+      "name": "Krafton",
+      "slug": "krafton"
+    },
+    {
+      "name": "KT",
+      "slug": "kt"
+    },
+    {
+      "name": "CJ Cheiljedang",
+      "slug": "cj-cheiljedang"
+    },
+    {
+      "name": "South Korean Exports",
+      "slug": "south-korean-exports"
+    }
+  ],
   "relatedInCountrySlugs": [
-    "south-korean-political-and-border-tensions",
-    "nvidia-skt-rebellions-ai-partnership",
-    "lead-s-korea-to-expand-anti-piracy-mission-closer"
+    "samsung-lions-win-korean-series-championship",
+    "lead-s-korea-to-expand-anti-piracy-mission-closer",
+    "south-korean-political-and-border-tensions"
   ],
   "relatedInCategorySlugs": [
-    "australia-to-adopt-mandatory-ai-safeguards",
-    "california-voters-reject-proposed-one-time-tax-on-billionaires",
-    "malaysia-national-post-quantum-cryptography-plan"
+    "nvidia-investigates-ceo-espionage-allegations",
+    "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
+    "cruise-ship-odyssey-detained-singapore"
   ]
 }

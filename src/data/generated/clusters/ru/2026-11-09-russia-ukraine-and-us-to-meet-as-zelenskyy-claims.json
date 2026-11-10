@@ -6,27 +6,28 @@
   "countryName": "Russia",
   "countrySlug": "russia",
   "region": "Europe",
-  "categorySlug": "disasters-world-events",
-  "categoryName": "Disasters & World Events",
-  "headline": "Russia, Ukraine and US to meet as Zelenskyy claims battlefield successes",
-  "seoTitle": "Russia, Ukraine and US to meet as Zelenskyy claims…",
-  "metaDescription": "2 independent outlets are covering this story. Al Jazeera reports: Russia, Ukraine and US to meet as Zelenskyy claims battlefield successes",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "Russia and Ukraine Begin US Brokered Peace Talks In Abu Dhabi",
+  "seoTitle": "Russia and Ukraine Hold US-Brokered Peace Talks",
+  "metaDescription": "Russian and Ukrainian officials have convened for trilateral discussions in Abu Dhabi, aimed at ending the four-year conflict with US diplomatic support.",
   "aiSummaryBullets": [
-    "Al Jazeera reports: Russia, Ukraine and US to meet as Zelenskyy claims battlefield successes",
-    "France 24 reports: What to expect as Russia, Ukraine and the US hold trilateral talks in Abu Dhabi"
+    "Russian and Ukrainian representatives have gathered in Abu Dhabi for the first significant peace negotiations in several months.",
+    "The discussions are facilitated by the United States following recent suggestions from President Donald Trump regarding a potential conflict resolution.",
+    "The start of the summit coincides with reports of renewed military strikes occurring shortly before the scheduled commencement of talks."
   ],
-  "aiContextParagraph": "This story about Russia has been reported by Al Jazeera and France 24 since 2026-11-09. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "2 independent outlets are covering this story.",
-  "viralScore": 47,
-  "intensityTier": "active",
+  "aiContextParagraph": "Diplomatic representatives from Russia and Ukraine have arrived in Abu Dhabi for a series of trilateral meetings mediated by the United States. These discussions, which began on November 10, mark the first substantive diplomatic engagement between the two nations since February. The negotiations come in the wake of statements by US President Donald Trump regarding the possibility of a comprehensive agreement to conclude the four-year conflict and establish regional security guarantees. European diplomats are also reportedly advocating for the involvement of US Secretary of State Marco Rubio in the process. However, the diplomatic proceedings have been tempered by ongoing violence, as reports emerged that Russia launched lethal attacks in Ukraine shortly before the talks commenced. These developments represent a renewed attempt at high-level mediation aimed at reaching a final cessation of hostilities in the ongoing war.",
+  "whyItIsViral": "The story has gained significant attention across three independent international outlets due to the high-stakes nature of the first US-brokered peace talks in months.",
+  "viralScore": 67,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 37,
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 64,
     "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
+    "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-09T21:46:23Z",
-  "lastUpdatedBatchAt": "2026-11-10T08:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-10T11:18:00Z",
   "sources": [
     {
       "publisherName": "France 24",
@@ -48,17 +49,48 @@
       "articleTitle": "European diplomats press Rubio for a role in Russia-Ukraine talks",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/10/europe-belongs-at-this-table-germany-tells-us-before-ukraine-talks?traffic_source=rss",
       "publishedAt": "2026-11-10T05:02:33Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Russia and Ukraine hold US-backed talks after Trump says broad deal is possible",
+      "articleUrl": "https://www.france24.com/en/video/20261110-russia-and-ukraine-hold-us-backed-talks-after-trump-says-broad-deal-is-possible",
+      "publishedAt": "2026-11-10T10:40:40Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "Russia launched deadly Ukraine attacks hours before start of Abu Dhabi talks – Europe live",
+      "articleUrl": "https://www.theguardian.com/world/live/2026/nov/10/ukraine-russia-war-us-talks-abu-dhabi-europe-latest-news-updates",
+      "publishedAt": "2026-11-10T11:03:58Z"
     }
   ],
-  "entityTags": [],
+  "entityTags": [
+    {
+      "name": "Russia-Ukraine conflict",
+      "slug": "russia-ukraine-conflict"
+    },
+    {
+      "name": "Donald Trump",
+      "slug": "donald-trump"
+    },
+    {
+      "name": "Abu Dhabi",
+      "slug": "abu-dhabi"
+    },
+    {
+      "name": "United States",
+      "slug": "united-states"
+    }
+  ],
   "relatedInCountrySlugs": [
     "international-diplomatic-efforts-ukraine-conflict",
-    "novaya-gazeta-closes-moscow-operations",
+    "russian-diesel-tankers-divert-from-us",
     "russian-missile-strikes-target-kyiv"
   ],
   "relatedInCategorySlugs": [
-    "russia-strikes-ukraine-energy-infrastructure",
-    "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-    "foreign-nationals-arrested-south-africa-airport"
+    "us-russia-ukraine-abu-dhabi-talks",
+    "european-leaders-seek-ukraine-peace-influence",
+    "democrats-swept-the-midterms-what-comes-next-for-the"
   ]
 }
