@@ -3,9 +3,9 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 90,
+  "viralScore": 86,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-10T20:18:00Z",
+  "generatedAt": "2026-11-10T23:18:00Z",
   "clusters": [
     {
       "slug": "david-walliams-faces-misconduct-allegations-2",
@@ -13,8 +13,8 @@
       "headline": "Comedian David Walliams Faces Serious Misconduct And Grooming Claims",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 87,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "David Walliams is facing allegations of sexual misconduct and grooming involving teenagers and young women.",
         "The claims emerged following a joint investigation conducted by ITV News and The Guardian."
@@ -30,7 +30,7 @@
       "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Russell Brand received a ten-and-a-half-year prison sentence following a four-week trial at Southwark Crown Court.",
@@ -47,8 +47,8 @@
       "headline": "UK Authorities Arrest American Soldier Over Alleged Russia Ties",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
+      "viralScore": 61,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "British counter-terrorism police detained a 41-year-old American soldier near Gloucester.",
         "The arrest follows an investigation into suspected espionage activities linked to Russia."
@@ -59,12 +59,29 @@
       }
     },
     {
+      "slug": "james-hill-england-football-call-up",
+      "canonicalPath": "/news/gb/james-hill-england-football-call-up/",
+      "headline": "James Hill Receives First Call Up To The England Senior Football Team",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "AFC Bournemouth defender James Hill has earned his first senior England national team call-up.",
+        "The 24-year-old player was selected to join the squad for upcoming UEFA Nations League fixtures."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5845503/james-hill-dapat-panggilan-perdana-ke-timnas-senior-inggris"
+      }
+    },
+    {
       "slug": "uk-court-overturns-trinidad-gay-sex-law",
       "canonicalPath": "/news/gb/uk-court-overturns-trinidad-gay-sex-law/",
       "headline": "UK Privy Council Strikes Down Trinidad And Tobago Gay Sex Statute",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 51,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Judicial Committee of the Privy Council in London ruled to invalidate laws criminalizing consensual same-sex acts in Trinidad and Tobago.",
@@ -81,7 +98,7 @@
       "headline": "Author M. John Harrison Wins Booker Prize For The End Of Everything",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 45,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Writer M. John Harrison received the Booker Prize for his novel, The End of Everything.",
@@ -90,23 +107,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/europe/20261109-uk-writer-m-john-harrison-wins-booker-prize-for-ai-tinged-apocalyptic-novel"
-      }
-    },
-    {
-      "slug": "uk-government-restricts-early-gcse-teaching",
-      "canonicalPath": "/news/gb/uk-government-restricts-early-gcse-teaching/",
-      "headline": "UK Government Proposes Restricting GCSE Instruction Before Year 10",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The UK government intends to phase out the early introduction of GCSE curriculum content in secondary schools.",
-        "Education Secretary Lucy Powell stated that starting exam-focused coursework early risks disengaging students."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell"
       }
     },
     {
@@ -127,20 +127,20 @@
       }
     },
     {
-      "slug": "thick-fog-disrupts-uk-travel",
-      "canonicalPath": "/news/gb/thick-fog-disrupts-uk-travel/",
-      "headline": "Thick Fog Causes Travel Disruption Across The United Kingdom Regions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 32,
+      "slug": "uk-government-restricts-early-gcse-teaching",
+      "canonicalPath": "/news/gb/uk-government-restricts-early-gcse-teaching/",
+      "headline": "UK Government Proposes Restricting GCSE Instruction Before Year 10",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Meteorological authorities issued yellow weather warnings due to dense fog across several regions.",
-        "The affected areas include parts of England, Wales, and six counties within Northern Ireland."
+        "The UK government intends to phase out the early introduction of GCSE curriculum content in secondary schools.",
+        "Education Secretary Lucy Powell stated that starting exam-focused coursework early risks disengaging students."
       ],
       "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123245/uk-fog-warnings-cover-six-northern-ireland-counties-and-parts-of-england"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell"
       }
     },
     {

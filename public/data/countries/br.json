@@ -5,7 +5,7 @@
   "region": "South America",
   "viralScore": 53,
   "intensityTier": "active",
-  "generatedAt": "2026-11-10T20:18:00Z",
+  "generatedAt": "2026-11-10T23:18:00Z",
   "clusters": [
     {
       "slug": "lando-norris-brazil-grand-prix-pole",
@@ -42,12 +42,29 @@
       }
     },
     {
+      "slug": "santos-port-authority-systems-outage",
+      "canonicalPath": "/news/br/santos-port-authority-systems-outage/",
+      "headline": "Santos Port Authority Investigates Widespread Online System Outage",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Santos Port Authority reports that its official website and online portals are currently offline.",
+        "The organization is conducting an investigation to determine the origin of the technical disruptions."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/porto-de-santos-tem-sistemas-fora-do-ar-autoridade-portuaria-investiga-causas.shtml"
+      }
+    },
+    {
       "slug": "financial-outlook-brazil-us-inflation",
       "canonicalPath": "/news/br/financial-outlook-brazil-us-inflation/",
       "headline": "Financial Outlook Shows Inflation Concerns In Brazil And The US",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 34,
+      "viralScore": 28,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Bradesco increased its 2027 inflation forecast for Brazil to 5.3% citing potential impacts from labor and tax policy changes.",
@@ -64,7 +81,7 @@
       "headline": "Federal Police Arrest Former STJ Official Over Data Leak Allegations",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 32,
+      "viralScore": 27,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Federal Police arrested a former IT secretary of the Superior Court of Justice.",
@@ -81,8 +98,8 @@
       "headline": "Brazilian Real Declines As Central Bank Signals Inflation Concerns",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 27,
-      "intensityTier": "active",
+      "viralScore": 24,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "The Brazilian Real opened with a 0.83% decline against the U.S. dollar on Tuesday, reaching 5.551.",
         "The Central Bank's monetary policy committee released minutes identifying rising inflation expectations."
@@ -93,46 +110,12 @@
       }
     },
     {
-      "slug": "federal-police-investigate-bahia-funding-fraud",
-      "canonicalPath": "/news/br/federal-police-investigate-bahia-funding-fraud/",
-      "headline": "Federal Police Investigate Embezzlement Of Parliamentary Funds",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 23,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Federal Police initiated Operation Fluxo Paralelo to investigate irregularities in federal resource allocation.",
-        "The investigation focuses on suspected money laundering and the diversion of funds transferred via Pix amendments."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pf-deflagra-operacao-na-bahia-por-suspeita-de-desvio-de-recursos-de-emendas-pix.shtml"
-      }
-    },
-    {
-      "slug": "santos-port-authority-systems-outage",
-      "canonicalPath": "/news/br/santos-port-authority-systems-outage/",
-      "headline": "Santos Port Authority Investigates Widespread Online System Outage",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 23,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Santos Port Authority reports that its official website and online portals are currently offline.",
-        "The organization is conducting an investigation to determine the origin of the technical disruptions."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/porto-de-santos-tem-sistemas-fora-do-ar-autoridade-portuaria-investiga-causas.shtml"
-      }
-    },
-    {
       "slug": "embraer-reports-third-quarter-financial-results",
       "canonicalPath": "/news/br/embraer-reports-third-quarter-financial-results/",
       "headline": "Embraer Reports Revenue Growth Amid Third Quarter Profit Decline",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 22,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Embraer reached a net revenue of 12.1 billion Brazilian reais in the third quarter.",
@@ -144,12 +127,29 @@
       }
     },
     {
+      "slug": "federal-police-investigate-bahia-funding-fraud",
+      "canonicalPath": "/news/br/federal-police-investigate-bahia-funding-fraud/",
+      "headline": "Federal Police Investigate Embezzlement Of Parliamentary Funds",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 21,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Federal Police initiated Operation Fluxo Paralelo to investigate irregularities in federal resource allocation.",
+        "The investigation focuses on suspected money laundering and the diversion of funds transferred via Pix amendments."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pf-deflagra-operacao-na-bahia-por-suspeita-de-desvio-de-recursos-de-emendas-pix.shtml"
+      }
+    },
+    {
       "slug": "brazil-suspends-meal-voucher-rules",
       "canonicalPath": "/news/br/brazil-suspends-meal-voucher-rules/",
       "headline": "Brazilian Courts Suspend New Regulations For Meal Benefit Vouchers",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 21,
+      "viralScore": 20,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "A federal court granted an injunction halting new guidelines for meal and food voucher distribution.",
