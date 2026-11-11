@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611112127",
-  "generatedAt": "2026-11-11T21:27:00Z",
-  "nextUpdateAt": "2026-11-11T23:17:00Z",
+  "batchId": "batch-202611112318",
+  "generatedAt": "2026-11-11T23:18:00Z",
+  "nextUpdateAt": "2026-11-12T02:17:00Z",
   "countries": [
     {
       "code": "US",
@@ -12,7 +12,7 @@
         -98.5,
         39.5
       ],
-      "viralScore": 98,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
@@ -21,51 +21,7 @@
         "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 95,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
-      "centroid": [
-        117,
-        -2.5
-      ],
-      "viralScore": 91,
-      "intensityTier": "surge",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "protests-at-vice-presidential-palace",
-        "canonicalPath": "/news/id/protests-at-vice-presidential-palace/",
-        "headline": "Indonesian Leadership Addresses Rumors Of Vice President Resignation",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 88,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 91,
-      "intensityTier": "surge",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "kenya-begins-countdown-ebola-free-status",
-        "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
-        "headline": "Kenya Discharges Final Ebola Patient As Disease-Free Status Nears",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 88,
+        "viralScore": 98,
         "intensityTier": "surge"
       }
     },
@@ -78,16 +34,38 @@
         -3.7,
         40.2
       ],
-      "viralScore": 88,
+      "viralScore": 94,
       "intensityTier": "surge",
       "topicCount": 3,
       "topTopic": {
         "slug": "spain-general-strike-over-housing-crisis",
         "canonicalPath": "/news/es/spain-general-strike-over-housing-crisis/",
-        "headline": "Tens Of Thousands Participate In Nationwide Spanish Housing Strike",
+        "headline": "Spain Experiences General Strike Amid Intense Nationwide Protests",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 87,
+        "viralScore": 93,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "centroid": [
+        117,
+        -2.5
+      ],
+      "viralScore": 93,
+      "intensityTier": "surge",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "protests-at-vice-presidential-palace",
+        "canonicalPath": "/news/id/protests-at-vice-presidential-palace/",
+        "headline": "Officials Address Speculation Regarding Vice President Resignation",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 90,
         "intensityTier": "surge"
       }
     },
@@ -100,38 +78,38 @@
         53.7,
         32.4
       ],
-      "viralScore": 85,
+      "viralScore": 86,
       "intensityTier": "surge",
-      "topicCount": 4,
+      "topicCount": 5,
       "topTopic": {
         "slug": "farage-says-he-is-worried-trump-will-step-up",
         "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
         "headline": "Reports Emerge Of Tensions Between Trump And Netanyahu Over Iran",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 83,
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
     {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
       "centroid": [
-        79,
-        22
+        37.9,
+        0.2
       ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 10,
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "topicCount": 9,
       "topTopic": {
-        "slug": "delhi-air-quality-grap-iii-restrictions",
-        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
-        "headline": "New Delhi Air Quality Deteriorates Following Deepavali Celebrations",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 80,
+        "slug": "kenya-begins-countdown-ebola-free-status",
+        "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
+        "headline": "Kenya Discharges Final Ebola Patient As Disease-Free Status Nears",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 83,
         "intensityTier": "high"
       }
     },
@@ -180,28 +158,6 @@
       }
     },
     {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 75,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "david-walliams-faces-misconduct-allegations-2",
-        "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
-        "headline": "Comedian David Walliams Faces Serious Sexual Misconduct Allegations",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
-        "viralScore": 72,
-        "intensityTier": "high"
-      }
-    },
-    {
       "code": "TR",
       "isoNumeric": "792",
       "name": "Turkey",
@@ -210,7 +166,7 @@
         35.2,
         39
       ],
-      "viralScore": 73,
+      "viralScore": 78,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -219,7 +175,29 @@
         "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 71,
+        "viralScore": 76,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 71,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "david-walliams-faces-misconduct-allegations-2",
+        "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
+        "headline": "Comedian David Walliams Faces Serious Sexual Misconduct Allegations",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
@@ -232,7 +210,7 @@
         -63.6,
         -38.4
       ],
-      "viralScore": 71,
+      "viralScore": 70,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -241,95 +219,7 @@
         "headline": "Pope Leo XIV Addresses Economic Policy During Argentina Visit",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
         "viralScore": 68,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 68,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "australia-to-adopt-mandatory-ai-safeguards",
-        "canonicalPath": "/news/au/australia-to-adopt-mandatory-ai-safeguards/",
-        "headline": "Australia Mandates AI Safeguards Following OpenAI Security Breach",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CA",
-      "isoNumeric": "124",
-      "name": "Canada",
-      "slug": "canada",
-      "centroid": [
-        -106.3,
-        56.1
-      ],
-      "viralScore": 64,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "four-grizzly-bears-culled-in-canada",
-        "canonicalPath": "/news/ca/four-grizzly-bears-culled-in-canada/",
-        "headline": "Canadian Authorities Cull Four Grizzly Bears Following Fatal Attack",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 64,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 64,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Proposes October 7 Inquiry Amid Government Formation",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -342,7 +232,7 @@
         60,
         58
       ],
-      "viralScore": 64,
+      "viralScore": 69,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -351,7 +241,29 @@
         "headline": "Russia And Ukraine Reach Prisoner Exchange Deal In Abu Dhabi Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "delhi-air-quality-grap-iii-restrictions",
+        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
+        "headline": "New Delhi Air Quality Deteriorates Following Deepavali Celebrations",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 65,
         "intensityTier": "high"
       }
     },
@@ -364,7 +276,7 @@
         8.1,
         9.6
       ],
-      "viralScore": 64,
+      "viralScore": 68,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -373,7 +285,95 @@
         "headline": "APC Presidential Campaign Council Centralizes Media Communication",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "najib-razak-returns-to-kajang-prison",
+        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
+        "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "sydney-homicide-investigation-human-remains",
+        "canonicalPath": "/news/au/sydney-homicide-investigation-human-remains/",
+        "headline": "Homicide Investigation Initiated After Remains Found In Sydney",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Gadi Eisenkot Proposes October 7 Inquiry Amid Government Formation",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 60,
         "intensityTier": "high"
       }
     },
@@ -386,7 +386,7 @@
         31.2,
         49
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
@@ -395,28 +395,50 @@
         "headline": "Ukraine And Russia Representatives Convene For Talks In Abu Dhabi",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 59,
+        "intensityTier": "active"
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
       "centroid": [
-        -51.9,
-        -10.5
+        127.8,
+        36.3
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 4,
       "topTopic": {
-        "slug": "brazil-fines-meta-electoral-court-ruling",
-        "canonicalPath": "/news/br/brazil-fines-meta-electoral-court-ruling/",
-        "headline": "Brazilian Electoral Court Issues Fine Against Meta For Noncompliance",
+        "slug": "south-korean-political-and-border-tensions",
+        "canonicalPath": "/news/kr/south-korean-political-and-border-tensions/",
+        "headline": "Diverse Political And Security Challenges Emerged In South Korea",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "CA",
+      "isoNumeric": "124",
+      "name": "Canada",
+      "slug": "canada",
+      "centroid": [
+        -106.3,
+        56.1
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "four-grizzly-bears-culled-in-canada",
+        "canonicalPath": "/news/ca/four-grizzly-bears-culled-in-canada/",
+        "headline": "Canadian Authorities Cull Four Grizzly Bears Following Fatal Attack",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 59,
         "intensityTier": "active"
       }
@@ -430,8 +452,8 @@
         90.3,
         23.7
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
         "slug": "sheikh-hasina-seeks-passport-for-return",
@@ -439,8 +461,30 @@
         "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "brazil-fines-meta-electoral-court-ruling",
+        "canonicalPath": "/news/br/brazil-fines-meta-electoral-court-ruling/",
+        "headline": "Brazilian Electoral Court Issues Fine Against Meta For Noncompliance",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
+        "intensityTier": "active"
       }
     },
     {
@@ -474,38 +518,16 @@
         45,
         24
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 3,
       "topTopic": {
         "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
         "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
         "headline": "Saudi Arabia Intercepts Houthi Missiles Following Aramco Attack",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "najib-razak-returns-to-kajang-prison",
-        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
-        "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
+        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -532,24 +554,24 @@
       }
     },
     {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
       "centroid": [
-        127.8,
-        36.3
+        103.82,
+        1.35
       ],
       "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 4,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "bus-collision-bundang-south-korea",
-        "canonicalPath": "/news/kr/bus-collision-bundang-south-korea/",
-        "headline": "Dozens Injured After Bus Collides With Thirty Two Vehicles In Bundang",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
+        "slug": "nvidia-ceo-conduct-leadership-review",
+        "canonicalPath": "/news/sg/nvidia-ceo-conduct-leadership-review/",
+        "headline": "Nvidia Board Reviews Conduct Of Chief Executive Officer Jensen Huang",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 53,
         "intensityTier": "active"
       }
     },
@@ -562,7 +584,7 @@
         2.4,
         46.6
       ],
-      "viralScore": 56,
+      "viralScore": 54,
       "intensityTier": "active",
       "topicCount": 7,
       "topTopic": {
@@ -571,7 +593,7 @@
         "headline": "French Students Organize Blockades Across Numerous Secondary Schools",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 53,
+        "viralScore": 51,
         "intensityTier": "active"
       }
     },
@@ -598,28 +620,6 @@
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 53,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "singapore-airlines-flight-diverted-smoke",
-        "canonicalPath": "/news/sg/singapore-airlines-flight-diverted-smoke/",
-        "headline": "Singapore Airlines Flight Diverted Following Reported Cabin Smoke",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "PH",
       "isoNumeric": "608",
       "name": "Philippines",
@@ -628,7 +628,7 @@
         122,
         12.5
       ],
-      "viralScore": 50,
+      "viralScore": 48,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -637,29 +637,7 @@
         "headline": "Asean Leaders Address Regional Energy Crisis At Manila Summit",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AE",
-      "isoNumeric": "784",
-      "name": "United Arab Emirates",
-      "slug": "united-arab-emirates",
-      "centroid": [
-        54,
-        24
-      ],
-      "viralScore": 45,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
-        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
-        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 45,
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },
@@ -694,13 +672,35 @@
         138.5,
         36.5
       ],
-      "viralScore": 43,
+      "viralScore": 42,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
         "slug": "nigeria-japan-u17-womens-world-cup-final",
         "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
         "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 41,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "AE",
+      "isoNumeric": "784",
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
+      "centroid": [
+        54,
+        24
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
+        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
+        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
         "categorySlug": "sports",
         "categoryName": "Sports",
         "viralScore": 42,
@@ -716,16 +716,16 @@
         -102.5,
         23.6
       ],
-      "viralScore": 31,
+      "viralScore": 35,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 4,
       "topTopic": {
-        "slug": "mexico-california-high-speed-rail-projects",
-        "canonicalPath": "/news/mx/mexico-california-high-speed-rail-projects/",
-        "headline": "Progress Reported On Mexico And California High Speed Rail Projects",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 30,
+        "slug": "authenticity-debate-mexico-beach-towns",
+        "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
+        "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
+        "categorySlug": "lifestyle-culture",
+        "categoryName": "Lifestyle & Culture",
+        "viralScore": 33,
         "intensityTier": "active"
       }
     },
@@ -738,7 +738,7 @@
         106.3,
         16
       ],
-      "viralScore": 24,
+      "viralScore": 22,
       "intensityTier": "quiet",
       "topicCount": 3,
       "topTopic": {
@@ -747,7 +747,7 @@
         "headline": "Anonymous Art Installation Criticizes Donald Trump Draft History",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 23,
+        "viralScore": 21,
         "intensityTier": "quiet"
       }
     },
