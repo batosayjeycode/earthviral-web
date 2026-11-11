@@ -6,27 +6,8 @@
   "countryName": "Singapore",
   "countrySlug": "singapore",
   "region": "Asia",
-  "firstDetectedAt": "2026-11-11T12:13:00Z",
-  "lastUpdatedBatchAt": "2026-11-11T14:18:00Z",
-  "sources": [
-    {
-      "publisherName": "CNA",
-      "publisherDomain": "channelnewsasia.com",
-      "articleTitle": "Dementia Singapore app users' personal data potentially compromised in cyber incident",
-      "articleUrl": "https://www.channelnewsasia.com/singapore/cara-app-dementia-singapore-cybersecurity-incident-6542871",
-      "publishedAt": "2026-11-11T12:13:00Z"
-    }
-  ],
-  "relatedInCountrySlugs": [
-    "fullerton-health-cybersecurity-incident",
-    "minmed-reports-recent-cybersecurity-incident",
-    "sats-tappee-app-data-breach"
-  ],
-  "relatedInCategorySlugs": [
-    "australia-to-adopt-mandatory-ai-safeguards",
-    "nvidia-skt-rebellions-ai-partnership",
-    "samsung-google-smart-glasses-preorder"
-  ],
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
   "headline": "Dementia Singapore App Users Face Potential Personal Data Breach",
   "seoTitle": "Dementia Singapore App Data Breach",
   "metaDescription": "Personal information of CARA SG app users may have been compromised during a recent cyber incident involving Dementia Singapore, reports indicate.",
@@ -37,8 +18,32 @@
   ],
   "aiContextParagraph": "Dementia Singapore, an organization focused on supporting individuals living with dementia and their caregivers, has identified a security incident involving its CARA SG mobile application. The application, which serves as a digital platform for members, experienced unauthorized access that may have exposed sensitive personal information. According to reports, the potentially compromised data points include the names, contact numbers, and email addresses of registered users, along with their unique membership identification numbers. The organization is currently managing the fallout of this security event. While details regarding the exact nature of the cyber breach remain limited, the incident highlights ongoing concerns regarding the protection of personal data within digital health and social service platforms. Users of such applications are often reminded to remain vigilant regarding potential phishing attempts or unsolicited communications following similar security compromises of their digital identities.",
   "whyItIsViral": "The story has generated significant public interest with a search signal score of 68 out of 100 regarding cyber incidents in Singapore.",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
+  "viralScore": 47,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 36,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Emerging Coverage"
+  },
+  "firstDetectedAt": "2026-11-11T12:13:00Z",
+  "lastUpdatedBatchAt": "2026-11-11T17:18:00Z",
+  "sources": [
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Dementia Singapore app users' personal data potentially compromised in cyber incident",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/cara-app-dementia-singapore-cybersecurity-incident-6542871",
+      "publishedAt": "2026-11-11T12:13:00Z"
+    },
+    {
+      "publisherName": "The Straits Times",
+      "publisherDomain": "straitstimes.com",
+      "articleTitle": "Personal data of Dementia Singapore’s app users potentially exposed; unauthorised notifications sent",
+      "articleUrl": "https://www.straitstimes.com/singapore/personal-data-of-dementia-singapores-app-users-potentially-compromised-in-cybersecurity-incident",
+      "publishedAt": "2026-11-11T15:08:51Z"
+    }
+  ],
   "entityTags": [
     {
       "name": "Dementia Singapore",
@@ -53,12 +58,14 @@
       "slug": "cybersecurity"
     }
   ],
-  "viralScore": 39,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 25,
-    "publicSearchSignalScore": 68,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "fullerton-health-cybersecurity-incident",
+    "sats-tappee-app-data-breach",
+    "minmed-reports-recent-cybersecurity-incident"
+  ],
+  "relatedInCategorySlugs": [
+    "australia-to-adopt-mandatory-ai-safeguards",
+    "nvidia-skt-rebellions-ai-partnership",
+    "samsung-google-smart-glasses-preorder"
+  ]
 }

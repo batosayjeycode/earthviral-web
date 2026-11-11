@@ -3,25 +3,25 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 61,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-11T14:18:00Z",
+  "viralScore": 50,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-11T17:18:00Z",
   "clusters": [
     {
-      "slug": "minmed-reports-recent-cybersecurity-incident",
-      "canonicalPath": "/news/sg/minmed-reports-recent-cybersecurity-incident/",
-      "headline": "Healthcare Provider Minmed Reports Malicious Cybersecurity Incident",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 58,
+      "slug": "dementia-singapore-app-data-breach",
+      "canonicalPath": "/news/sg/dementia-singapore-app-data-breach/",
+      "headline": "Dementia Singapore App Users Face Potential Personal Data Breach",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Minmed disclosed a malicious cybersecurity incident affecting its teleconsultation and health screening platforms.",
-        "The healthcare provider stated that patient clinical records have remained secure during the breach."
+        "A cyber incident has impacted the CARA SG mobile application.",
+        "Potentially compromised data includes user names, email addresses, phone numbers, and membership IDs."
       ],
       "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/healthcare-group-minmed-reports-cybersecurity-incident-affecting-teleconsultation-screening-services"
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/cara-app-dementia-singapore-cybersecurity-incident-6542871"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "Singapore Airlines Flight Diverted Following Reported Cabin Smoke",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 51,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A flight operated by Singapore Airlines en route to Singapore from Brisbane was diverted mid-journey.",
@@ -39,23 +39,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/sia-flight-from-brisbane-to-singapore-diverted-to-rockhampton-due-to-cabin-smoke"
-      }
-    },
-    {
-      "slug": "fullerton-health-cybersecurity-incident",
-      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
-      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
-        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
       }
     },
     {
@@ -76,20 +59,54 @@
       }
     },
     {
-      "slug": "singapore-disability-hiring-grant",
-      "canonicalPath": "/news/sg/singapore-disability-hiring-grant/",
-      "headline": "Singapore Launches S$30 Million Grant To Boost Disability Hiring",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
+      "slug": "minmed-reports-recent-cybersecurity-incident",
+      "canonicalPath": "/news/sg/minmed-reports-recent-cybersecurity-incident/",
+      "headline": "Healthcare Provider Minmed Reports Malicious Cybersecurity Incident",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "A new S$30 million grant tier has been introduced to encourage the employment of individuals with moderate support needs.",
-        "The initiative aims to provide financial assistance to businesses that integrate employees with disabilities into their workforces."
+        "Minmed disclosed a malicious cybersecurity incident affecting its teleconsultation and health screening platforms.",
+        "The healthcare provider stated that patient clinical records have remained secure during the breach."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/community/employers-get-more-support-25m-grant-to-boost-hiring-of-persons-with-disabilities"
+        "articleUrl": "https://www.straitstimes.com/singapore/healthcare-group-minmed-reports-cybersecurity-incident-affecting-teleconsultation-screening-services"
+      }
+    },
+    {
+      "slug": "coreweave-growth-boosts-ai-stocks",
+      "canonicalPath": "/news/sg/coreweave-growth-boosts-ai-stocks/",
+      "headline": "CoreWeave AI Infrastructure Growth Boosts Semiconductor Stock Rally",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 35,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "CoreWeave expansion led to an increase in artificial intelligence cloud service sector stocks.",
+        "Nvidia experienced a rise in share value following reports concerning the firm."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/business/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-6542926"
+      }
+    },
+    {
+      "slug": "fullerton-health-cybersecurity-incident",
+      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
+      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 34,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
+        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
       }
     },
     {
@@ -98,7 +115,7 @@
       "headline": "SATS Confirms Cybersecurity Breach Of School Meal Application Tappee",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 41,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Food services company SATS reported a cybersecurity incident involving its Tappee school meal ordering application.",
@@ -110,37 +127,20 @@
       }
     },
     {
-      "slug": "dementia-singapore-app-data-breach",
-      "canonicalPath": "/news/sg/dementia-singapore-app-data-breach/",
-      "headline": "Dementia Singapore App Users Face Potential Personal Data Breach",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A cyber incident has impacted the CARA SG mobile application.",
-        "Potentially compromised data includes user names, email addresses, phone numbers, and membership IDs."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/cara-app-dementia-singapore-cybersecurity-incident-6542871"
-      }
-    },
-    {
-      "slug": "sph-media-reports-system-cyberattacks",
-      "canonicalPath": "/news/sg/sph-media-reports-system-cyberattacks/",
-      "headline": "SPH Media Reports Cyberattacks Across Five Internal Systems Today",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
+      "slug": "singapore-disability-hiring-grant",
+      "canonicalPath": "/news/sg/singapore-disability-hiring-grant/",
+      "headline": "Singapore Launches S$30 Million Grant To Boost Disability Hiring",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "SPH Media identified unauthorized cyberactivity affecting five of its systems.",
-        "A company spokesperson stated that the incidents appear linked to a single threat actor."
+        "A new S$30 million grant tier has been introduced to encourage the employment of individuals with moderate support needs.",
+        "The initiative aims to provide financial assistance to businesses that integrate employees with disabilities into their workforces."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/politics/sph-media-hit-by-cyberattacks-no-payment-card-details-or-financial-information-compromised"
+        "articleUrl": "https://www.straitstimes.com/singapore/community/employers-get-more-support-25m-grant-to-boost-hiring-of-persons-with-disabilities"
       }
     },
     {
