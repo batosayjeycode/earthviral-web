@@ -3,17 +3,34 @@
   "name": "Kenya",
   "slug": "kenya",
   "region": "Africa",
-  "viralScore": 59,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-11T11:18:00Z",
+  "viralScore": 65,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-11T14:18:00Z",
   "clusters": [
+    {
+      "slug": "kenya-begins-countdown-ebola-free-status",
+      "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
+      "headline": "Kenya Commences Final Countdown To Attain Official Ebola-Free Status",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Health authorities have released the country's final patient diagnosed with the Bundibugyo strain of Ebola.",
+        "A total of 11 individuals who were under close observation as contacts have now been cleared from monitoring."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/duale-kenya-on-course-to-be-declared-ebola-free-on-23rd-december/"
+      }
+    },
     {
       "slug": "ruto-brands-gachagua-chief-extortionist",
       "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
       "headline": "President Ruto Criticizes Gachagua Regarding Young Political Leaders",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President William Ruto publicly urged former Deputy President Rigathi Gachagua to cease interfering with the careers of young politicians.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "kenya-begins-countdown-ebola-free-status",
-      "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
-      "headline": "Kenya Commences Final Countdown To Attain Official Ebola-Free Status",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Health authorities have released the country's final patient diagnosed with the Bundibugyo strain of Ebola.",
-        "A total of 11 individuals who were under close observation as contacts have now been cleared from monitoring."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/duale-kenya-on-course-to-be-declared-ebola-free-on-23rd-december/"
-      }
-    },
-    {
       "slug": "nvidia-investigates-ceo-legal-matter",
       "canonicalPath": "/news/ke/nvidia-investigates-ceo-legal-matter/",
       "headline": "Nvidia Commissions Law Firm Probe Into Chief Executive Allegations",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 50,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Nvidia has engaged the law firm Wachtell, Lipton, Rosen & Katz to perform an independent investigation.",
@@ -56,40 +56,6 @@
       "primarySource": {
         "publisherName": "Capital FM",
         "articleUrl": "https://capitalfm.africa/nvidia-hires-major-us-law-firm-to-investigate-alleged-chinese-spy-affair/"
-      }
-    },
-    {
-      "slug": "sudan-lifts-kenyan-tea-import-ban",
-      "canonicalPath": "/news/ke/sudan-lifts-kenyan-tea-import-ban/",
-      "headline": "Sudan Reopens Tea Market To Kenyan Exporters Following Official Talks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Sudanese authorities have removed a 20-month prohibition on tea shipments originating from Kenya.",
-        "President William Ruto confirmed the policy shift following diplomatic discussions between the two nations."
-      ],
-      "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/news/africa/sudan-lifts-ban-on-kenyan-tea-imports-5666266"
-      }
-    },
-    {
-      "slug": "nairobi-talanta-stadium-rail-link",
-      "canonicalPath": "/news/ke/nairobi-talanta-stadium-rail-link/",
-      "headline": "Nairobi Rail Link To Talanta Stadium Scheduled For December Launch",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The railway project connecting the Nairobi CBD to Talanta Stadium is slated for completion by December 15, 2026.",
-        "Operations will support passenger transport for an upcoming football match between Bayern and Ajax."
-      ],
-      "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/counties/nairobi/ps-daghar-cbd-talanta-stadium-rail-will-transport-1-500-people-every-10-minutes-5665994"
       }
     },
     {
@@ -110,12 +76,46 @@
       }
     },
     {
+      "slug": "nairobi-talanta-stadium-rail-link",
+      "canonicalPath": "/news/ke/nairobi-talanta-stadium-rail-link/",
+      "headline": "Nairobi Rail Link To Talanta Stadium Scheduled For December Launch",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The railway project connecting the Nairobi CBD to Talanta Stadium is slated for completion by December 15, 2026.",
+        "Operations will support passenger transport for an upcoming football match between Bayern and Ajax."
+      ],
+      "primarySource": {
+        "publisherName": "Nation Africa",
+        "articleUrl": "https://nation.africa/kenya/counties/nairobi/ps-daghar-cbd-talanta-stadium-rail-will-transport-1-500-people-every-10-minutes-5665994"
+      }
+    },
+    {
+      "slug": "sudan-lifts-kenyan-tea-import-ban",
+      "canonicalPath": "/news/ke/sudan-lifts-kenyan-tea-import-ban/",
+      "headline": "Sudan Reopens Tea Market To Kenyan Exporters Following Official Talks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Sudanese authorities have removed a 20-month prohibition on tea shipments originating from Kenya.",
+        "President William Ruto confirmed the policy shift following diplomatic discussions between the two nations."
+      ],
+      "primarySource": {
+        "publisherName": "Nation Africa",
+        "articleUrl": "https://nation.africa/kenya/news/africa/sudan-lifts-ban-on-kenyan-tea-imports-5666266"
+      }
+    },
+    {
       "slug": "armed-attack-mandera-road-project",
       "canonicalPath": "/news/ke/armed-attack-mandera-road-project/",
       "headline": "Armed Ambush On Road Construction Team Kills Seven In Mandera County",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Seven individuals were killed during an armed attack in Mandera County.",
@@ -149,7 +149,7 @@
       "headline": "President Ruto Launches Four-Day Development Tour In Gusii Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President William Ruto initiated a four-day development tour across Nyamira and Kisii counties.",

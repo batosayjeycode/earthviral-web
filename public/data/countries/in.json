@@ -3,18 +3,35 @@
   "name": "India",
   "slug": "india",
   "region": "Asia",
-  "viralScore": 88,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-11T11:18:00Z",
+  "viralScore": 73,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-11T14:18:00Z",
   "clusters": [
+    {
+      "slug": "kolkata-sairang-express-train-derailment",
+      "canonicalPath": "/news/in/kolkata-sairang-express-train-derailment/",
+      "headline": "Multiple Passenger Train Derailments Reported Across Indian States",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Sairang-Kolkata Express derailed in Assam, resulting in multiple injuries and raising questions about recent track inspection procedures.",
+        "Four coaches of the Chauri Chaura Express derailed near Kanpur Central station shortly after departure, though no injuries were reported."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/city/guwahati/6-coaches-of-kolkata-sairang-express-derail-at-digaru-station-several-injured/articleshow/135723685.cms"
+      }
+    },
     {
       "slug": "delhi-air-quality-grap-iii-restrictions",
       "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
       "headline": "New Delhi Air Quality Deteriorates Following Deepavali Celebrations",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "New Delhi's air quality index reached 303 as seasonal smog combined with the impact of firecracker displays during Deepavali.",
         "The Central Pollution Control Board addressed discrepancies in reporting, while the Supreme Court highlighted vehicular emissions as a factor."
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "recent-developments-in-tamil-nadu-india",
-      "canonicalPath": "/news/in/recent-developments-in-tamil-nadu-india/",
-      "headline": "Diverse Administrative and Industrial Developments in Tamil Nadu",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Industrial activity continues with the opening of a new electric motorcycle center, while a workplace accident occurred at an iPhone parts facility.",
-        "State authorities are considering legal action regarding water management powers and are investigating procurement practices in local libraries."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/three-workers-die-at-tatas-iphone-parts-plant-in-indias-tamil-nadu?traffic_source=rss"
-      }
-    },
-    {
       "slug": "sonia-gandhi-releases-new-political-memoir",
       "canonicalPath": "/news/in/sonia-gandhi-releases-new-political-memoir/",
       "headline": "Sonia Gandhi Memoir Belonging Sparks Political And Personal Debate",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Sonia Gandhi's newly released memoir, Belonging, addresses personal tragedies, including the loss of a child and political reflections.",
@@ -59,54 +59,20 @@
       }
     },
     {
-      "slug": "kolkata-sairang-express-train-derailment",
-      "canonicalPath": "/news/in/kolkata-sairang-express-train-derailment/",
-      "headline": "Kolkata-Sairang Express Derails Near Digaru Railway Station Assam",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 61,
+      "slug": "recent-developments-in-tamil-nadu-india",
+      "canonicalPath": "/news/in/recent-developments-in-tamil-nadu-india/",
+      "headline": "Diverse Administrative and Industrial Developments in Tamil Nadu",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Several coaches and the engine of the Kolkata-Sairang Express derailed at Digaru station in Assam.",
-        "Conflicting reports exist regarding casualties, with some sources citing no injuries and others noting multiple injured passengers."
+        "Industrial activity continues with the opening of a new electric motorcycle center, while a workplace accident occurred at an iPhone parts facility.",
+        "State authorities are considering legal action regarding water management powers and are investigating procurement practices in local libraries."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/city/guwahati/6-coaches-of-kolkata-sairang-express-derail-at-digaru-station-several-injured/articleshow/135723685.cms"
-      }
-    },
-    {
-      "slug": "security-alert-air-india-flight",
-      "canonicalPath": "/news/in/security-alert-air-india-flight/",
-      "headline": "Security Procedures Triggered Following Note On Air India Flight",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A note threatening a hijacking was found in the washroom of an Air India aircraft before its scheduled departure.",
-        "The flight, which was preparing to travel from Kolkata to Mumbai, was moved to an isolation bay for safety."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/city/kolkata/hijack-threat-note-found-on-air-india-flight-in-kolkata-passengers-deboarded-plane-moved-to-isolation-bay/articleshow/135728515.cms"
-      }
-    },
-    {
-      "slug": "hardik-pandya-traded-to-punjab-kings",
-      "canonicalPath": "/news/in/hardik-pandya-traded-to-punjab-kings/",
-      "headline": "Hardik Pandya Moves To Punjab Kings In Trade With Mumbai Indians",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Hardik Pandya has concluded his second tenure with the Mumbai Indians after three seasons.",
-        "The Punjab Kings acquired Pandya in a trade deal with the Mumbai franchise."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/hardik-pandya-to-pbks-mi-get-arshdeep-singh-blockbuster-ipl-trade-complete/articleshow/135706397.cms"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/three-workers-die-at-tatas-iphone-parts-plant-in-indias-tamil-nadu?traffic_source=rss"
       }
     },
     {
@@ -115,7 +81,7 @@
       "headline": "Indian Cabinet Approves Major Fertiliser Subsidy And Infrastructure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The government approved a subsidy of ₹62,370 crore for phosphatic and potassic fertilisers for the upcoming rabi season.",
@@ -127,12 +93,63 @@
       }
     },
     {
+      "slug": "hardik-pandya-traded-to-punjab-kings",
+      "canonicalPath": "/news/in/hardik-pandya-traded-to-punjab-kings/",
+      "headline": "Hardik Pandya Moves To Punjab Kings In Trade With Mumbai Indians",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Hardik Pandya has concluded his second tenure with the Mumbai Indians after three seasons.",
+        "The Punjab Kings acquired Pandya in a trade deal with the Mumbai franchise."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/hardik-pandya-to-pbks-mi-get-arshdeep-singh-blockbuster-ipl-trade-complete/articleshow/135706397.cms"
+      }
+    },
+    {
+      "slug": "ins-betwa-propulsion-upgrade-contract",
+      "canonicalPath": "/news/in/ins-betwa-propulsion-upgrade-contract/",
+      "headline": "Indian Ministry Of Defence Finalizes INS Betwa Propulsion Upgrade",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Indian Defence Ministry has awarded a 498 crore rupee contract for the refit of the frigate INS Betwa.",
+        "The project involves replacing the vessel's current steam-based propulsion with a diesel engine-based system."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/defence/news/ins-betwa-set-for-major-propulsion-upgrade-under-rs-498-crore-deal/articleshow/135731220.cms"
+      }
+    },
+    {
+      "slug": "amul-mother-dairy-milk-price-hike",
+      "canonicalPath": "/news/in/amul-mother-dairy-milk-price-hike/",
+      "headline": "Amul And Mother Dairy Announce Milk Price Hikes Across India",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Amul has increased the retail price of milk by two to four rupees per litre.",
+        "Mother Dairy is implementing price adjustments of up to six rupees per litre."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/india-business/mother-dairy-milk-gets-costlier-dairy-giant-hikes-rate-by-rs-2-4-per-litre-from-thursday-check-prices/articleshow/135727078.cms"
+      }
+    },
+    {
       "slug": "bengaluru-police-recover-stolen-olympic-medal",
       "canonicalPath": "/news/in/bengaluru-police-recover-stolen-olympic-medal/",
       "headline": "Bengaluru Police Recover Stolen Olympic Gold Medal From Hockey Star",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 52,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Bengaluru police apprehended two suspects in connection with the theft of an Olympic gold medal.",
@@ -149,7 +166,7 @@
       "headline": "Three Security Personnel Injured Following Gunfire Attack In Kulgam",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 52,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Three security personnel were wounded after unidentified individuals opened fire in Kulgam.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/india/kulgam-terror-attack-terrorists-were-on-motorcycle-search-operation-launched-what-we-know-so-far/articleshow/135732438.cms"
-      }
-    },
-    {
-      "slug": "sunetra-pawar-addresses-ncp-merger-rumors",
-      "canonicalPath": "/news/in/sunetra-pawar-addresses-ncp-merger-rumors/",
-      "headline": "Sunetra Pawar Addresses Ongoing Speculation Regarding NCP Merger",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Sunetra Pawar commented on persistent speculation regarding a possible merger involving the Nationalist Congress Party.",
-        "The politician declined to provide specific details during a recent public appearance."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/india/things-will-be-known-at-appropriate-time-sunetra-pawar-on-ncp-merger-speculation/articleshow/135731755.cms"
       }
     }
   ]

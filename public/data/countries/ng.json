@@ -3,17 +3,51 @@
   "name": "Nigeria",
   "slug": "nigeria",
   "region": "Africa",
-  "viralScore": 60,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-11T11:18:00Z",
+  "generatedAt": "2026-11-11T14:18:00Z",
   "clusters": [
+    {
+      "slug": "african-democratic-congress-abuja-protest",
+      "canonicalPath": "/news/ng/african-democratic-congress-abuja-protest/",
+      "headline": "Abuja Court Invalidates Resignation Letter Amid ADC Party Conflict",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A Federal High Court in Abuja determined that the resignation letter submitted by former deputy national chairman Nafiu Bala is not authentic.",
+        "Supporters of the African Democratic Congress held protests at the court location concerning a separate ruling that nullified the party's 2027 candidates."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/924403-adc-supporters-protest-at-abuja-court-over-judgement-sacking-partys-2027-candidates.html"
+      }
+    },
+    {
+      "slug": "fatal-truck-accident-lagos-gbagada",
+      "canonicalPath": "/news/ng/fatal-truck-accident-lagos-gbagada/",
+      "headline": "Sequence Of Road Accidents In Lagos Results In Multiple Casualties",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A CNG-powered bus fire at Berger Bus Stop led to the rescue of 17 passengers and one severe injury.",
+        "A separate collision on the Lagos-Ibadan Expressway resulted in one fatality and three injuries."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/one-dies-as-truck-overturns-in-lagos/"
+      }
+    },
     {
       "slug": "journalist-daniel-ojukwu-remanded-abuja",
       "canonicalPath": "/news/ng/journalist-daniel-ojukwu-remanded-abuja/",
       "headline": "Amnesty International Calls For Release Of Detained FIJ Journalist",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 57,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Amnesty International Nigeria has formally requested the immediate and unconditional release of journalist Daniel Ojukwu.",
@@ -25,54 +59,20 @@
       }
     },
     {
-      "slug": "apc-prepares-for-2027-general-elections",
-      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-      "headline": "All Progressives Congress Intensifies Strategy For 2027 Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "nigeria-october-crude-oil-production-figures",
+      "canonicalPath": "/news/ng/nigeria-october-crude-oil-production-figures/",
+      "headline": "Nigeria Reports October Crude Oil Production At 1.69 Million BPD",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Campaign representatives claim Nigeria’s economic challenges have passed and defend President Bola Tinubu’s current policies.",
-        "Internal directives are limiting political appointees to home-state rallies to manage campaign participation ahead of 2027."
+        "National crude oil and condensate production averaged 1.69 million barrels per day in October.",
+        "Data indicates a 5.7% year-on-year increase in total oil output for the month."
       ],
       "primarySource": {
         "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923741-kaduna-kano-rail-line-to-be-inaugurated-3-december-apc-campaign-council.html"
-      }
-    },
-    {
-      "slug": "african-democratic-congress-abuja-protest",
-      "canonicalPath": "/news/ng/african-democratic-congress-abuja-protest/",
-      "headline": "African Democratic Congress Members Protest At Abuja High Court",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Members of the African Democratic Congress demonstrated outside the Federal High Court in Abuja.",
-        "Protesters stated they are seeking the release of a certified true copy of a court ruling regarding the party's leadership and candidates."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/924403-adc-supporters-protest-at-abuja-court-over-judgement-sacking-partys-2027-candidates.html"
-      }
-    },
-    {
-      "slug": "nigeria-ebola-surveillance-update",
-      "canonicalPath": "/news/ng/nigeria-ebola-surveillance-update/",
-      "headline": "Nigeria Reports No New Ebola Cases Three Weeks Post-Imported Event",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Nigeria Centre for Disease Control and Prevention reported zero new Ebola cases 21 days following the country's single imported instance.",
-        "Health authorities are actively monitoring 28 individuals connected to the case, while 34 people have been officially cleared of infection risk."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/924315-nhrc-records-384196-human-rights-violation-complaints-in-october-cases-up-13-4.html"
+        "articleUrl": "https://www.premiumtimesng.com/business/business-news/924450-nigerias-crude-oil-output-dips-in-october-nuprc.html"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "Flamingos Coach Celebrates Historic FIFA U-17 World Cup Victory",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 45,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Flamingos coach expressed gratitude for leading the team to a historic victory at the U-17 World Cup.",
@@ -93,12 +93,46 @@
       }
     },
     {
+      "slug": "apc-prepares-for-2027-general-elections",
+      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+      "headline": "All Progressives Congress Intensifies Strategy For 2027 Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Campaign representatives claim Nigeria’s economic challenges have passed and defend President Bola Tinubu’s current policies.",
+        "Internal directives are limiting political appointees to home-state rallies to manage campaign participation ahead of 2027."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/923741-kaduna-kano-rail-line-to-be-inaugurated-3-december-apc-campaign-council.html"
+      }
+    },
+    {
+      "slug": "nigeria-ebola-surveillance-update",
+      "canonicalPath": "/news/ng/nigeria-ebola-surveillance-update/",
+      "headline": "Nigeria Reports No New Ebola Cases Three Weeks Post-Imported Event",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Nigeria Centre for Disease Control and Prevention reported zero new Ebola cases 21 days following the country's single imported instance.",
+        "Health authorities are actively monitoring 28 individuals connected to the case, while 34 people have been officially cleared of infection risk."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/top-news/924315-nhrc-records-384196-human-rights-violation-complaints-in-october-cases-up-13-4.html"
+      }
+    },
+    {
       "slug": "tinubu-inaugurates-lagos-governors-lodge",
       "canonicalPath": "/news/ng/tinubu-inaugurates-lagos-governors-lodge/",
       "headline": "President Tinubu Inaugurates Reconstructed Lagos Governor’s Lodge",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 40,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Bola Tinubu officially opened the rebuilt Lagos State Governor’s Lodge located in Abuja.",
@@ -115,7 +149,7 @@
       "headline": "Federal Government Reports Completion Of Health Sector Target Goals",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The administration claims to have met 41 performance targets for the national health sector.",
@@ -127,29 +161,12 @@
       }
     },
     {
-      "slug": "fatal-truck-accident-lagos-gbagada",
-      "canonicalPath": "/news/ng/fatal-truck-accident-lagos-gbagada/",
-      "headline": "Multiple Fatal Transport Incidents Reported Across Lagos State",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "An elderly individual died after falling from a moving truck that experienced a tire blowout in the Gbagada area.",
-        "Reports indicate a separate fatal accident occurred when a transport truck overturned within Lagos state."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/one-dies-as-truck-overturns-in-lagos/"
-      }
-    },
-    {
       "slug": "caf-awards-2026-rescheduled",
       "canonicalPath": "/news/ng/caf-awards-2026-rescheduled/",
       "headline": "Confederation Of African Football Reschedules 2026 Awards Ceremony",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The 2026 Confederation of African Football Awards have been rescheduled to December 2.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "Premium Times",
         "articleUrl": "https://www.premiumtimesng.com/sports/football/924270-caf-awards-2026-lagos-set-to-host-africas-biggest-stars-as-ceremony-gets-new-date.html"
-      }
-    },
-    {
-      "slug": "cbn-launches-digital-fiscal-reporting",
-      "canonicalPath": "/news/ng/cbn-launches-digital-fiscal-reporting/",
-      "headline": "Central Bank Of Nigeria Launches Digital Fiscal Reporting For States",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Central Bank of Nigeria implemented a digital fiscal reporting system to increase financial data accuracy for states and local governments.",
-        "A recent BudgIT index identified Enugu and Bayelsa as the top performing states regarding fiscal viability."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/promoted/924298-zamfara-among-top-10-best-performing-states-in-fiscal-viability-budgit.html"
       }
     }
   ]
