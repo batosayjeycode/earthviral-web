@@ -3,17 +3,34 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 49,
+  "viralScore": 59,
   "intensityTier": "active",
-  "generatedAt": "2026-11-11T05:18:00Z",
+  "generatedAt": "2026-11-11T08:18:00Z",
   "clusters": [
+    {
+      "slug": "fullerton-health-cybersecurity-incident",
+      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
+      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
+        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
+      }
+    },
     {
       "slug": "cruise-ship-odyssey-detained-singapore",
       "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
       "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
@@ -47,7 +64,7 @@
       "headline": "Singapore Airlines Addresses Feedback On New Business Class Seats",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 40,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore Airlines issued a statement regarding their new business class seats following negative public feedback.",
@@ -56,40 +73,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/singapore/singapore-airlines-business-class-seats-design-6539191"
-      }
-    },
-    {
-      "slug": "fullerton-health-cybersecurity-incident",
-      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
-      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
-        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
-      }
-    },
-    {
-      "slug": "singapore-disability-hiring-grant",
-      "canonicalPath": "/news/sg/singapore-disability-hiring-grant/",
-      "headline": "Singapore Launches S$30 Million Grant To Boost Disability Hiring",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A new S$30 million grant tier has been introduced to encourage the employment of individuals with moderate support needs.",
-        "The initiative aims to provide financial assistance to businesses that integrate employees with disabilities into their workforces."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/community/employers-get-more-support-25m-grant-to-boost-hiring-of-persons-with-disabilities"
       }
     },
     {
@@ -124,6 +107,23 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens8"
+      }
+    },
+    {
+      "slug": "singapore-disability-hiring-grant",
+      "canonicalPath": "/news/sg/singapore-disability-hiring-grant/",
+      "headline": "Singapore Launches S$30 Million Grant To Boost Disability Hiring",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A new S$30 million grant tier has been introduced to encourage the employment of individuals with moderate support needs.",
+        "The initiative aims to provide financial assistance to businesses that integrate employees with disabilities into their workforces."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/community/employers-get-more-support-25m-grant-to-boost-hiring-of-persons-with-disabilities"
       }
     },
     {
@@ -166,7 +166,7 @@
       "headline": "Linda Noskova Defeats Coco Gauff At The WTA Finals Tournament",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 24,
+      "viralScore": 22,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Linda Noskova defeated Coco Gauff to secure a place in the semi-finals of the WTA Finals.",

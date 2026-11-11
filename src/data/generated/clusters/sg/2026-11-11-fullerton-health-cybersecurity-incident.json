@@ -6,27 +6,8 @@
   "countryName": "Singapore",
   "countrySlug": "singapore",
   "region": "Asia",
-  "firstDetectedAt": "2026-11-11T02:39:00Z",
-  "lastUpdatedBatchAt": "2026-11-11T05:18:00Z",
-  "sources": [
-    {
-      "publisherName": "CNA",
-      "publisherDomain": "channelnewsasia.com",
-      "articleTitle": "Fullerton Health server supporting migrant worker care programme hit by cybersecurity incident",
-      "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451",
-      "publishedAt": "2026-11-11T02:39:00Z"
-    }
-  ],
-  "relatedInCountrySlugs": [
-    "sats-tappee-app-data-breach",
-    "sph-media-reports-system-cyberattacks",
-    "singapore-disability-hiring-grant"
-  ],
-  "relatedInCategorySlugs": [
-    "france-blames-iran-supermarket-cyberattack",
-    "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
-    "mass-shooting-krakow-market-square"
-  ],
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
   "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
   "seoTitle": "Fullerton Health Data Breach Reported",
   "metaDescription": "Fullerton Health has confirmed a cybersecurity incident that may have compromised the personal data of migrant workers involved in a care programme.",
@@ -37,8 +18,32 @@
   ],
   "aiContextParagraph": "Fullerton Health, a Singapore-based healthcare provider, has announced a cybersecurity incident involving a server that supports a healthcare program for migrant workers. According to the company, the unauthorized access may have led to the exposure of personal information. The specific details reportedly affected include the full names of migrant workers, their respective foreign identification numbers, and their mobile telephone contact numbers. The provider is currently working to assess the impact of this incident and manage the security risks associated with the compromised server. While the breach has been identified, further investigations are ongoing to determine the full scope and nature of the unauthorized activity. The incident highlights ongoing challenges in protecting sensitive medical and identity data within digital health infrastructure, particularly for systems managing services for foreign labor populations in the region.",
   "whyItIsViral": "The incident has generated significant public interest as indicated by search trends, reflecting concerns over data privacy in the healthcare sector.",
-  "categorySlug": "crime-law",
-  "categoryName": "Crime & Law",
+  "viralScore": 56,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 35,
+    "publicSearchSignalScore": 68,
+    "confidenceLabel": "Emerging Coverage"
+  },
+  "firstDetectedAt": "2026-11-11T02:39:00Z",
+  "lastUpdatedBatchAt": "2026-11-11T08:18:00Z",
+  "sources": [
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Fullerton Health server supporting migrant worker care programme hit by cybersecurity incident",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451",
+      "publishedAt": "2026-11-11T02:39:00Z"
+    },
+    {
+      "publisherName": "The Straits Times",
+      "publisherDomain": "straitstimes.com",
+      "articleTitle": "Fullerton Health server hit by cyberattack; personal data of migrant workers affected",
+      "articleUrl": "https://www.straitstimes.com/singapore/fullerton-health-server-hit-by-cyberattack-personal-data-of-migrant-workers-affected",
+      "publishedAt": "2026-11-11T05:55:00Z"
+    }
+  ],
   "entityTags": [
     {
       "name": "Fullerton Health",
@@ -53,12 +58,14 @@
       "slug": "data-privacy"
     }
   ],
-  "viralScore": 38,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 23,
-    "publicSearchSignalScore": 64,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "sats-tappee-app-data-breach",
+    "sph-media-reports-system-cyberattacks",
+    "singapore-disability-hiring-grant"
+  ],
+  "relatedInCategorySlugs": [
+    "france-blames-iran-supermarket-cyberattack",
+    "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
+    "british-comedian-russell-brand-found-guilty-of-rape-sexual"
+  ]
 }

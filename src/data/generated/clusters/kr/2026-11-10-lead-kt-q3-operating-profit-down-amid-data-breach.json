@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "economy-business",
   "categoryName": "Economy & Business",
-  "headline": "South Korean Major Corporations Report Mixed Q3 Financial Results",
-  "seoTitle": "Major South Korean Firms Report Q3 Financial Results",
-  "metaDescription": "Multiple major South Korean companies report varying third-quarter financial results as the national export landscape shows high concentration.",
+  "headline": "South Korean Corporations Report Mixed Financial Results For Q3",
+  "seoTitle": "South Korean Firms See Mixed Q3 Results",
+  "metaDescription": "Major South Korean corporations disclose varied third-quarter financial performances, ranging from profit dips at retailers to gains in the gaming sector.",
   "aiSummaryBullets": [
-    "Krafton, CJ Cheiljedang, CJ Logistics, and KT reported declines in quarterly operating profits or net income.",
-    "Higher operational costs and specific sector challenges were cited as primary factors for decreased earnings across several firms.",
-    "Data indicate the top 10 exporters account for over 60 percent of national exports during the third quarter, fueled by the semiconductor industry."
+    "Gaming firm NC Corp. reported a return to operating profit during the third quarter.",
+    "Emart Inc. experienced a significant decline in net profit, attributed largely to losses accounted for through the equity method.",
+    "Other major firms including Krafton, KT, CJ Cheiljedang, and CJ Logistics saw operating profit or net income decreases due to increased costs and other factors."
   ],
-  "aiContextParagraph": "Major South Korean corporations have released their third-quarter financial reports, revealing a complex economic landscape characterized by both growth in specific sectors and profit declines for key industry players. While the broader export market is bolstered by a significant boom in the semiconductor sector—with the top 10 companies contributing more than 60 percent of the nation's total exports—individual firms face varied headwinds. Companies such as CJ Cheiljedang and CJ Logistics have experienced notable drops in net income, attributed largely to rising operational costs. Simultaneously, the telecommunications and gaming sectors, represented by firms like KT and Krafton, reported lower operating profits due to increased expenditure on artificial intelligence and other business-related setbacks. These reports collectively highlight a trend where high-level export performance does not necessarily translate to uniform profitability across South Korea's major corporate entities.",
-  "whyItIsViral": "This story is trending due to simultaneous earnings reports from multiple industry-leading corporations appearing in local news cycles.",
-  "viralScore": 19,
-  "intensityTier": "quiet",
+  "aiContextParagraph": "Major South Korean corporations have released their financial results for the third quarter of 2026, revealing a diverse economic landscape. While some entities, such as the gaming developer NC Corp., shifted to operating profitability, others faced substantial financial setbacks. Emart Inc. recorded a net profit drop of 99.8 percent, linked to equity-method losses, while CJ Cheiljedang and CJ Logistics reported net income declines attributed to rising operational costs. Telecommunications provider KT saw its operating profit decrease, citing expenditures on artificial intelligence and impacts from a data breach. Furthermore, Krafton reported an operating profit drop exceeding 35 percent, despite an overall increase in sales figures. Broadly, data indicates that the top ten South Korean firms accounted for more than 60 percent of the nation's total exports during this quarter, a trend bolstered by performance in the semiconductor sector.",
+  "whyItIsViral": "The story is trending due to widespread media coverage of various major South Korean corporations releasing their third-quarter earnings simultaneously, creating a composite picture of the national economy.",
+  "viralScore": 38,
+  "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 3,
+    "coverageVelocityScore": 45,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-10T01:36:21Z",
-  "lastUpdatedBatchAt": "2026-11-10T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-11T08:18:00Z",
   "sources": [
     {
       "publisherName": "Yonhap",
@@ -63,9 +63,31 @@
       "articleTitle": "(LEAD) Krafton's Q3 operating profit down over 35 pct despite sales increase",
       "articleUrl": "https://en.yna.co.kr/view/AEN20261110008451320",
       "publishedAt": "2026-11-10T08:06:25Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) Emart Q3 net plunges 99.8 pct on equity-method losses",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261111006251320",
+      "publishedAt": "2026-11-11T06:06:18Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) NC turns to operating profit in Q3",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261111006451320",
+      "publishedAt": "2026-11-11T06:33:53Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "NC Corp",
+      "slug": "nc-corp"
+    },
+    {
+      "name": "Emart Inc",
+      "slug": "emart-inc"
+    },
     {
       "name": "Krafton",
       "slug": "krafton"
@@ -73,24 +95,16 @@
     {
       "name": "KT",
       "slug": "kt"
-    },
-    {
-      "name": "CJ Cheiljedang",
-      "slug": "cj-cheiljedang"
-    },
-    {
-      "name": "South Korean Exports",
-      "slug": "south-korean-exports"
     }
   ],
   "relatedInCountrySlugs": [
     "south-korea-fines-fifteen-bond-dealers",
-    "south-korean-political-and-border-tensions",
-    "lead-s-korea-to-expand-anti-piracy-mission-closer"
+    "bus-collision-bundang-south-korea",
+    "south-korean-political-and-border-tensions"
   ],
   "relatedInCategorySlugs": [
+    "embraer-reports-third-quarter-financial-results",
     "nvidia-investigates-ceo-espionage-allegations",
-    "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
     "french-bank-hit-by-cyberattack-hackers-steal-100-million"
   ]
 }
