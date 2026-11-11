@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 98,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-11T17:18:00Z",
+  "generatedAt": "2026-11-11T21:27:00Z",
   "clusters": [
     {
       "slug": "thomas-massie-files-hegseth-impeachment",
@@ -13,7 +13,7 @@
       "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 100,
+      "viralScore": 95,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
@@ -37,8 +37,25 @@
         "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
       ],
       "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/trump-says-he-wants-ufc-chief-dana-white-white-house-press-secretary-6533411"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
+        "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
+      ],
+      "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/armed-man-arrested-near-white-house-secret-service-trump/"
+        "articleUrl": "https://www.cbsnews.com/news/2026-midterm-election-results-where-democrats-won/"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 83,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
@@ -59,20 +76,20 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
+      "slug": "house-republicans-elect-jim-jordan-leader",
+      "canonicalPath": "/news/us/house-republicans-elect-jim-jordan-leader/",
+      "headline": "House Republicans Select Jim Jordan As New Minority Leader",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
-        "The party has indicated plans to review existing immigration policies and investigate former President Donald Trump."
+        "Ohio Representative Jim Jordan was chosen as the next House Republican minority leader.",
+        "Jordan secured the position by defeating incumbent Majority Leader Steve Scalise in an internal party vote."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/democrats-got-it-right-but-what-next/articleshow/135571410.cms"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/10/jim-jordan-house-republican-leader"
       }
     },
     {
@@ -81,8 +98,8 @@
       "headline": "US Treasury Secretary Scott Bessent Moves To Secure Military Base",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 51,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Treasury Secretary Scott Bessent relocated from his Washington-area residence to a military base.",
         "The move follows reports of security threats against his life attributed to Iranian actors."
@@ -98,7 +115,7 @@
       "headline": "Russia And Ukraine Reach Agreement For Major Prisoner Of War Swap",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russia and Ukraine reached a mutual agreement to conduct a major prisoner of war exchange.",
@@ -107,23 +124,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/us-russia-ukraine-wrap-up-abu-dhabi-talks-with-prisoner-exchange/live-79906232?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "house-republicans-elect-jim-jordan-leader",
-      "canonicalPath": "/news/us/house-republicans-elect-jim-jordan-leader/",
-      "headline": "House Republicans Select Jim Jordan As New Minority Leader",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ohio Representative Jim Jordan was chosen as the next House Republican minority leader.",
-        "Jordan secured the position by defeating incumbent Majority Leader Steve Scalise in an internal party vote."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/10/jim-jordan-house-republican-leader"
       }
     },
     {
@@ -144,29 +144,12 @@
       }
     },
     {
-      "slug": "kennedy-family-challenges-dc-arch-proposal",
-      "canonicalPath": "/news/us/kennedy-family-challenges-dc-arch-proposal/",
-      "headline": "Kennedy Family Members Join Legal Action Against Proposed D.C. Arch",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nine members of the Kennedy family have formally joined a legal challenge against a proposed arch project in Washington, D.C.",
-        "Plaintiffs argue that the structure would obstruct views and cast shadows over graves at Arlington National Cemetery."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
-      }
-    },
-    {
       "slug": "us-charges-three-over-iranian-plot",
       "canonicalPath": "/news/us/us-charges-three-over-iranian-plot/",
       "headline": "United States Files Charges Against Three Alleged Iranian Operatives",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "US prosecutors have filed charges against three men identified as Iranian operatives linked to planned terrorist activities.",
@@ -175,6 +158,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/americas/20261110-us-iranian-operatives-raf-fairford-terror-plot"
+      }
+    },
+    {
+      "slug": "kennedy-family-challenges-dc-arch-proposal",
+      "canonicalPath": "/news/us/kennedy-family-challenges-dc-arch-proposal/",
+      "headline": "Kennedy Family Members Join Legal Action Against Proposed D.C. Arch",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Nine members of the Kennedy family have formally joined a legal challenge against a proposed arch project in Washington, D.C.",
+        "Plaintiffs argue that the structure would obstruct views and cast shadows over graves at Arlington National Cemetery."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
       }
     }
   ]

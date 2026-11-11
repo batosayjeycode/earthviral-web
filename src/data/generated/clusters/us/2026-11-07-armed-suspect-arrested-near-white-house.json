@@ -22,20 +22,13 @@
   "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 12,
-    "coverageVelocityScore": 54,
-    "publicSearchSignalScore": 68,
+    "coverageVelocityScore": 52,
+    "publicSearchSignalScore": 72,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-07T00:31:59Z",
-  "lastUpdatedBatchAt": "2026-11-11T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-11T21:27:00Z",
   "sources": [
-    {
-      "publisherName": "CBS News",
-      "publisherDomain": "cbsnews.com",
-      "articleTitle": "Armed man arrested near White House planned to kill Trump, DHS says",
-      "articleUrl": "https://www.cbsnews.com/news/armed-man-arrested-near-white-house-secret-service-trump/",
-      "publishedAt": "2026-11-07T01:32:00Z"
-    },
     {
       "publisherName": "CNA",
       "publisherDomain": "channelnewsasia.com",
@@ -238,6 +231,13 @@
       "articleTitle": "Democrat says Trump has ‘something to hide’ after White House threatens oversight efforts",
       "articleUrl": "https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia",
       "publishedAt": "2026-11-11T16:54:36Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
+      "publishedAt": "2026-11-11T20:39:50Z"
     }
   ],
   "entityTags": [
@@ -265,7 +265,7 @@
   ],
   "relatedInCategorySlugs": [
     "farage-says-he-is-worried-trump-will-step-up",
-    "iran-refuses-transfer-enriched-nuclear-material",
-    "trump-to-meet-xi-putin-apec"
+    "trump-to-meet-xi-putin-apec",
+    "iran-refuses-transfer-enriched-nuclear-material"
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611111718",
-  "generatedAt": "2026-11-11T17:18:00Z",
-  "nextUpdateAt": "2026-11-11T20:17:00Z",
+  "batchId": "batch-202611112127",
+  "generatedAt": "2026-11-11T21:27:00Z",
+  "nextUpdateAt": "2026-11-11T23:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 33,
     "viralTopics": 165,
-    "globalIndex": 87
+    "globalIndex": 85
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -14,32 +14,11 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1210,
-    "newClusters": 12,
+    "articlesFetched": 1213,
+    "newClusters": 9,
     "updatedClusters": 33,
-    "retiredClusters": 10,
-    "aiCalls": 26,
-    "aiFailures": {
-      "rate-limit": 4
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      }
-    ],
-    "durationMs": 174875
+    "retiredClusters": 6,
+    "aiCalls": 14,
+    "durationMs": 41914
   }
 }

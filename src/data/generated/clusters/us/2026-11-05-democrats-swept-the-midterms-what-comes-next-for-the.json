@@ -8,41 +8,27 @@
   "region": "North America",
   "categorySlug": "politics-government",
   "categoryName": "Politics & Government",
-  "headline": "US Democrats Navigate Legislative Priorities Following Midterm Wins",
-  "seoTitle": "Democrats Set Agenda After US Midterm Election Victories",
-  "metaDescription": "Following successful midterm elections, US Democrats are shifting focus toward economic relief, immigration policy, and potential investigations.",
+  "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
+  "seoTitle": "Democrats Outline Legislative Agenda After Midterm Wins",
+  "metaDescription": "Following recent midterm successes, Democratic lawmakers are balancing legislative priorities, oversight, and public policy demands in Washington.",
   "aiSummaryBullets": [
-    "Democratic lawmakers face pressure to address voter concerns regarding rising grocery costs and economic affordability.",
-    "The party has indicated plans to review existing immigration policies and investigate former President Donald Trump.",
-    "Financial markets have shown volatility as stakeholders debate potential regulatory approaches to artificial intelligence under the new leadership."
+    "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
+    "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors.",
+    "The party is balancing campaign promises regarding social contracts, economic costs, and foreign policy against legislative hurdles."
   ],
-  "aiContextParagraph": "Following a recent electoral victory in the United States midterm elections, the Democratic party has secured control of the Senate and is now transitioning to a period of agenda-setting. Voters cited economic challenges, including elevated grocery prices influenced by tariffs and conflict in Iran, as primary concerns. While some political observers and media outlets question the party's ability to provide immediate financial relief, officials are concurrently navigating expectations regarding immigration reform and the oversight of former President Donald Trump. Additionally, the victory has prompted discourse among industry analysts regarding the future of federal artificial intelligence oversight. As the party moves forward, they must balance these competing legislative priorities while addressing expectations from an electorate focused on long-term economic stability and potential shifts in executive branch accountability.",
-  "whyItIsViral": "The story is highly viral due to widespread reporting across nine independent outlets, reaching a high activity score of 85/100 as public interest in post-election policy impacts surges.",
-  "viralScore": 71,
+  "aiContextParagraph": "Following their recent performance in the midterm elections, Democrats in the United States are navigating a complex agenda. Lawmakers have signaled an intent to increase oversight of the executive branch, including investigating the use of presidential pardons and federal immigration procedures. Recent legislative focus includes a proposal to monitor pardons linked to donors and associates, alongside ongoing demands for information from federal agencies regarding the detention of migrant children. Beyond oversight, the party is managing expectations regarding their platform, which includes balancing public demands for lower costs and shifting foreign policy positions with existing federal funding commitments to agencies like ICE. Experts suggest that while the party holds legislative momentum, internal disagreements on regulatory approaches, such as artificial intelligence policy, and the challenges of implementing broad social contracts remain key obstacles as they transition into their next term.",
+  "whyItIsViral": "The story is widely covered by nine independent media outlets due to the legislative shift following the midterm election results.",
+  "viralScore": 65,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 9,
-    "coverageVelocityScore": 14,
-    "publicSearchSignalScore": 76,
+    "coverageVelocityScore": 25,
+    "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-05T07:03:00Z",
-  "lastUpdatedBatchAt": "2026-11-11T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-11T21:27:00Z",
   "sources": [
-    {
-      "publisherName": "Times of India",
-      "publisherDomain": "timesofindia.indiatimes.com",
-      "articleTitle": "US midterm: Democrats got it right, but what next?",
-      "articleUrl": "https://timesofindia.indiatimes.com/world/us/democrats-got-it-right-but-what-next/articleshow/135571410.cms",
-      "publishedAt": "2026-11-05T12:36:40Z"
-    },
-    {
-      "publisherName": "France 24",
-      "publisherDomain": "france24.com",
-      "articleTitle": "What comes next for Democrats after midterm election victory?",
-      "articleUrl": "https://www.france24.com/en/video/20261105-what-comes-next-for-democrats-after-midterm-election-victory",
-      "publishedAt": "2026-11-05T12:54:51Z"
-    },
     {
       "publisherName": "CBS News",
       "publisherDomain": "cbsnews.com",
@@ -226,6 +212,13 @@
       "publishedAt": "2026-11-10T06:16:43Z"
     },
     {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "Democrats demand answers on 8-year-old Haitian boy detained by ICE",
+      "articleUrl": "https://www.theguardian.com/us-news/2026/nov/10/haitian-boy-ice-california",
+      "publishedAt": "2026-11-10T15:51:42Z"
+    },
+    {
       "publisherName": "Al Jazeera",
       "publisherDomain": "aljazeera.com",
       "articleTitle": "Most Americans want Democrats focused on ending Iran war, lower costs: Poll",
@@ -238,6 +231,13 @@
       "articleTitle": "Democrats’ US election sweep brings the price of their promised social contract into focus",
       "articleUrl": "https://www.theguardian.com/business/2026/nov/11/democrats-election-medicaid-costs",
       "publishedAt": "2026-11-11T11:00:46Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Congressional Democrats target Trump's \"pardon industrial complex\"",
+      "articleUrl": "https://www.cbsnews.com/news/democrats-congress-trump-pardon-industrial-complex/",
+      "publishedAt": "2026-11-11T17:36:00Z"
     }
   ],
   "entityTags": [
@@ -246,22 +246,22 @@
       "slug": "democratic-party"
     },
     {
+      "name": "United States Congress",
+      "slug": "united-states-congress"
+    },
+    {
       "name": "Donald Trump",
       "slug": "donald-trump"
     },
     {
-      "name": "United States Senate",
-      "slug": "united-states-senate"
-    },
-    {
-      "name": "Midterm Elections",
-      "slug": "midterm-elections"
+      "name": "Immigration",
+      "slug": "immigration"
     }
   ],
   "relatedInCountrySlugs": [
     "armed-suspect-arrested-near-white-house",
-    "kennedy-family-challenges-dc-arch-proposal",
-    "thomas-massie-files-hegseth-impeachment"
+    "house-republicans-elect-jim-jordan-leader",
+    "kennedy-family-challenges-dc-arch-proposal"
   ],
   "relatedInCategorySlugs": [
     "farage-says-he-is-worried-trump-will-step-up",
