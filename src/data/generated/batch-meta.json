@@ -1,34 +1,25 @@
 {
-  "batchId": "batch-202611102318",
-  "generatedAt": "2026-11-10T23:18:00Z",
-  "nextUpdateAt": "2026-11-11T02:17:00Z",
+  "batchId": "batch-202611110218",
+  "generatedAt": "2026-11-11T02:18:00Z",
+  "nextUpdateAt": "2026-11-11T05:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 31,
-    "viralTopics": 160,
-    "globalIndex": 81
+    "activeCountries": 30,
+    "viralTopics": 158,
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 30,
+    "feedsOk": 31,
     "feedsFailed": [
-      "detik: fetch failed",
-      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: The operation was aborted due to timeout",
+      "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1113,
-    "newClusters": 8,
-    "updatedClusters": 21,
-    "retiredClusters": 7,
-    "aiCalls": 17,
-    "aiFailures": {
-      "server-error": 1
-    },
-    "aiFailureSamples": [
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      }
-    ],
-    "durationMs": 111627
+    "articlesFetched": 1222,
+    "newClusters": 12,
+    "updatedClusters": 30,
+    "retiredClusters": 11,
+    "aiCalls": 20,
+    "durationMs": 260278
   }
 }
