@@ -3,21 +3,21 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 87,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-11T02:18:00Z",
+  "viralScore": 82,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-11T05:18:00Z",
   "clusters": [
     {
       "slug": "david-walliams-faces-misconduct-allegations-2",
       "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
-      "headline": "Comedian David Walliams Faces Serious Misconduct And Grooming Claims",
+      "headline": "Comedian David Walliams Faces Serious Sexual Misconduct Allegations",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 84,
+      "viralScore": 79,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "David Walliams is facing allegations of sexual misconduct and grooming involving teenagers and young women.",
-        "The claims emerged following a joint investigation conducted by ITV News and The Guardian."
+        "David Walliams is facing public allegations concerning sexual misconduct and the grooming of minors.",
+        "The comedian has denied all accusations made against him following a failed attempt to obtain a legal injunction."
       ],
       "primarySource": {
         "publisherName": "BBC",
@@ -30,8 +30,8 @@
       "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 67,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Russell Brand received a ten-and-a-half-year prison sentence following a four-week trial at Southwark Crown Court.",
         "The judge characterized the entertainer as a sexual predator who utilized his public status to avoid accountability."
@@ -47,8 +47,8 @@
       "headline": "UK Privy Council Strikes Down Trinidad And Tobago Gay Sex Statute",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 67,
-      "intensityTier": "high",
+      "viralScore": 51,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Judicial Committee of the Privy Council in London ruled to invalidate laws criminalizing consensual same-sex acts in Trinidad and Tobago.",
         "The decision concludes a decade-long legal challenge initiated by an activist seeking to overturn the country's legislative restrictions."
@@ -64,8 +64,8 @@
       "headline": "UK Authorities Arrest American Soldier Over Alleged Russia Ties",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 49,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "British counter-terrorism police detained a 41-year-old American soldier near Gloucester.",
         "The arrest follows an investigation into suspected espionage activities linked to Russia."
@@ -76,29 +76,12 @@
       }
     },
     {
-      "slug": "m-john-harrison-wins-booker-prize",
-      "canonicalPath": "/news/gb/m-john-harrison-wins-booker-prize/",
-      "headline": "Author M. John Harrison Wins Booker Prize For The End Of Everything",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Writer M. John Harrison received the Booker Prize for his novel, The End of Everything.",
-        "The narrative follows characters navigating a post-apocalyptic version of the English coast."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261109-uk-writer-m-john-harrison-wins-booker-prize-for-ai-tinged-apocalyptic-novel"
-      }
-    },
-    {
       "slug": "bank-of-england-raises-interest-rates-to-4-the",
       "canonicalPath": "/news/gb/bank-of-england-raises-interest-rates-to-4-the/",
       "headline": "Bank Of England Increases Interest Rates To Four Percent Level",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 49,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Bank of England increased interest rates to four percent.",
@@ -110,20 +93,37 @@
       }
     },
     {
-      "slug": "uk-government-restricts-early-gcse-teaching",
-      "canonicalPath": "/news/gb/uk-government-restricts-early-gcse-teaching/",
-      "headline": "UK Government Proposes Restricting GCSE Instruction Before Year 10",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 48,
+      "slug": "trump-defamation-lawsuit-against-bbc",
+      "canonicalPath": "/news/gb/trump-defamation-lawsuit-against-bbc/",
+      "headline": "Federal Judge Allows Trump Defamation Lawsuit Against BBC To Proceed",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The UK government intends to phase out the early introduction of GCSE curriculum content in secondary schools.",
-        "Education Secretary Lucy Powell stated that starting exam-focused coursework early risks disengaging students."
+        "Judge Jeffrey T. Kuntz partially denied the BBC's request to dismiss a $10 billion lawsuit.",
+        "The legal action concerns allegations of defamation involving the editing of comments made by Donald Trump."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm93rpy6lx0do"
+      }
+    },
+    {
+      "slug": "m-john-harrison-wins-booker-prize",
+      "canonicalPath": "/news/gb/m-john-harrison-wins-booker-prize/",
+      "headline": "Author M. John Harrison Wins Booker Prize For The End Of Everything",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 40,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Writer M. John Harrison received the Booker Prize for his novel, The End of Everything.",
+        "The narrative follows characters navigating a post-apocalyptic version of the English coast."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261109-uk-writer-m-john-harrison-wins-booker-prize-for-ai-tinged-apocalyptic-novel"
       }
     },
     {
@@ -132,7 +132,7 @@
       "headline": "James Hill Receives First Call Up To The England Senior Football Team",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "AFC Bournemouth defender James Hill has earned his first senior England national team call-up.",
@@ -144,20 +144,20 @@
       }
     },
     {
-      "slug": "trump-defamation-lawsuit-against-bbc",
-      "canonicalPath": "/news/gb/trump-defamation-lawsuit-against-bbc/",
-      "headline": "Federal Judge Allows Trump Defamation Lawsuit Against BBC To Proceed",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 41,
+      "slug": "uk-government-restricts-early-gcse-teaching",
+      "canonicalPath": "/news/gb/uk-government-restricts-early-gcse-teaching/",
+      "headline": "UK Government Proposes Restricting GCSE Instruction Before Year 10",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Judge Jeffrey T. Kuntz partially denied the BBC's request to dismiss a $10 billion lawsuit.",
-        "The legal action concerns allegations of defamation involving the editing of comments made by Donald Trump."
+        "The UK government intends to phase out the early introduction of GCSE curriculum content in secondary schools.",
+        "Education Secretary Lucy Powell stated that starting exam-focused coursework early risks disengaging students."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/10/trump-10bn-defamation-lawsuit-bbc-allowed"
+        "articleUrl": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell"
       }
     },
     {

@@ -3,25 +3,42 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 57,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-11T02:18:00Z",
+  "viralScore": 80,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-11T05:18:00Z",
   "clusters": [
     {
       "slug": "bus-collision-bundang-south-korea",
       "canonicalPath": "/news/kr/bus-collision-bundang-south-korea/",
-      "headline": "Mass Vehicle Collision Involving Bus Reported In Bundang Area",
+      "headline": "Dozens Injured After Bus Collides With Thirty Two Vehicles In Bundang",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 54,
-      "intensityTier": "active",
+      "viralScore": 77,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "A bus crashed into dozens of vehicles in the Bundang district of Seongnam.",
-        "Initial reports on the number of vehicles struck range between 31 and 32."
+        "A bus crashed into 32 vehicles, including other buses, in the Bundang district of Seongnam, South Korea.",
+        "Authorities reported that 57 people sustained injuries during the morning rush hour incident."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261111003500315"
+      }
+    },
+    {
+      "slug": "south-korea-fines-fifteen-bond-dealers",
+      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
+      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
+        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
       }
     },
     {
@@ -30,7 +47,7 @@
       "headline": "Diverse Policy And Regional Security Concerns Impact South Korea",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "North Korea has criticized the United Nations secretary-general, alleging bias toward Seoul regarding recent border friction.",
@@ -64,7 +81,7 @@
       "headline": "South Korean Major Corporations Report Mixed Q3 Financial Results",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 20,
+      "viralScore": 19,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Krafton, CJ Cheiljedang, CJ Logistics, and KT reported declines in quarterly operating profits or net income.",
@@ -90,23 +107,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261106011500315"
-      }
-    },
-    {
-      "slug": "jtbc-selects-preferred-bidder-january",
-      "canonicalPath": "/news/kr/jtbc-selects-preferred-bidder-january/",
-      "headline": "Broadcaster JTBC To Name Preferred Acquisition Bidder In January",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "South Korean television network JTBC is currently managing significant debt obligations.",
-        "The broadcaster has scheduled the selection of a preferred bidder for its sale to take place in January."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261109001900315"
       }
     },
     {
@@ -158,6 +158,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261108002100315"
+      }
+    },
+    {
+      "slug": "jtbc-selects-preferred-bidder-january",
+      "canonicalPath": "/news/kr/jtbc-selects-preferred-bidder-january/",
+      "headline": "Broadcaster JTBC To Name Preferred Acquisition Bidder In January",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "South Korean television network JTBC is currently managing significant debt obligations.",
+        "The broadcaster has scheduled the selection of a preferred bidder for its sale to take place in January."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261109001900315"
       }
     }
   ]

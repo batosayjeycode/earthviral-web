@@ -3,35 +3,18 @@
   "name": "Palestine",
   "slug": "palestine",
   "region": "Asia",
-  "viralScore": 60,
+  "viralScore": 70,
   "intensityTier": "high",
-  "generatedAt": "2026-11-11T02:18:00Z",
+  "generatedAt": "2026-11-11T05:18:00Z",
   "clusters": [
-    {
-      "slug": "lewis-hamilton-visits-gaza-border",
-      "canonicalPath": "/news/ps/lewis-hamilton-visits-gaza-border/",
-      "headline": "Formula 1 Champion Lewis Hamilton Visits Egyptian Border Near Gaza",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Lewis Hamilton arrived in El Arish, Egypt, to observe international humanitarian aid efforts.",
-        "The North Sinai Governor provided a briefing on the coordination of supplies moving through the Rafah crossing."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/esporte/2026/11/hamilton-visita-posto-de-fronteira-para-conhecer-esforcos-de-ajuda-a-gaza.shtml"
-      }
-    },
     {
       "slug": "gaza-displacement-camps-flooded-by-rain",
       "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
       "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 53,
-      "intensityTier": "active",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Torrential rains have inundated tens of thousands of makeshift tents housing displaced persons throughout the Gaza Strip.",
         "Local health authorities confirmed four fatalities, including three children, following the collapse of a sand embankment onto shelter sites."
@@ -42,12 +25,46 @@
       }
     },
     {
+      "slug": "lewis-hamilton-visits-gaza-border",
+      "canonicalPath": "/news/ps/lewis-hamilton-visits-gaza-border/",
+      "headline": "Formula 1 Champion Lewis Hamilton Visits Egyptian Border Near Gaza",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Lewis Hamilton arrived in El Arish, Egypt, to observe international humanitarian aid efforts.",
+        "The North Sinai Governor provided a briefing on the coordination of supplies moving through the Rafah crossing."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/esporte/2026/11/hamilton-visita-posto-de-fronteira-para-conhecer-esforcos-de-ajuda-a-gaza.shtml"
+      }
+    },
+    {
+      "slug": "biden-heckled-pro-palestine-protesters-dublin",
+      "canonicalPath": "/news/ps/biden-heckled-pro-palestine-protesters-dublin/",
+      "headline": "Pro-Palestinian Protesters Disrupt Joe Biden Event In Dublin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Joe Biden was targeted by demonstrators during a public appearance in Dublin.",
+        "Protesters threw milk and various objects in the direction of the former president."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/11/protesters-throw-milk-at-joe-biden-during-hunter-event-in-dublin?traffic_source=rss"
+      }
+    },
+    {
       "slug": "severe-storms-flood-gaza-refugee-tents",
       "canonicalPath": "/news/ps/severe-storms-flood-gaza-refugee-tents/",
       "headline": "Deadly Landslides And Flooding Destroy Refugee Tents Across Gaza",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Heavy rainfall and sandbank landslides have caused significant damage to makeshift refugee camps in the Gaza Strip.",
