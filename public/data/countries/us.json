@@ -3,25 +3,25 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 87,
+  "viralScore": 88,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-12T05:18:00Z",
+  "generatedAt": "2026-11-12T08:18:00Z",
   "clusters": [
     {
-      "slug": "brooklyn-building-collapse-rescue-efforts-2",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts-2/",
-      "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 84,
-      "intensityTier": "high",
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Nvidia Shares Decline Following Reports Of Potential CEO Removal",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 85,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
-        "Seventeen people, including seven children, sustained injuries during the incident."
+        "Nvidia stock experienced a sharp decline following reports that the board is preparing to dismiss CEO Jensen Huang.",
+        "Multiple media outlets indicate the potential ouster is linked to reports regarding a second affair."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-12/new-york-brooklyn-building-collapse-rescue/107376940"
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "Democrat Scott Colom Secures Historic Senate Victory In Mississippi",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 83,
+      "viralScore": 79,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democrat Scott Colom won the Mississippi Senate race after defeating incumbent Republican Cindy Hyde-Smith.",
@@ -42,12 +42,46 @@
       }
     },
     {
+      "slug": "brooklyn-building-collapse-rescue-efforts",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
+      "headline": "Brooklyn Building Collapse Leaves Two Dead And Seventeen Injured",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A three-storey residential structure in Brooklyn, New York, suffered a structural collapse on Wednesday.",
+        "Emergency response teams were dispatched to the site to conduct search and rescue operations through the debris."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
+      }
+    },
+    {
+      "slug": "brooklyn-building-collapse-rescue-efforts-2",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts-2/",
+      "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 76,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
+        "Seventeen people, including seven children, sustained injuries during the incident."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-12/new-york-brooklyn-building-collapse-rescue/107376940"
+      }
+    },
+    {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 77,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
@@ -55,24 +89,7 @@
       ],
       "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/breaking-down-hegseths-rebuke-of-impeachment-calls/"
-      }
-    },
-    {
-      "slug": "historic-ocean-liner-becomes-artificial-reef",
-      "canonicalPath": "/news/us/historic-ocean-liner-becomes-artificial-reef/",
-      "headline": "Historic Ocean Liner SS United States Sunk To Create Artificial Reef",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The 1,000-foot-long SS United States vessel was submerged off the Florida Gulf Coast on Wednesday.",
-        "The ship will serve as an artificial reef, intended to support marine life and function as a destination for divers."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/11/ss-united-states-sinks-florida-reef"
+        "articleUrl": "https://www.cbsnews.com/live-updates/congress-today-senate-house-leadership-elections/"
       }
     },
     {
@@ -81,7 +98,7 @@
       "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
@@ -93,13 +110,30 @@
       }
     },
     {
+      "slug": "historic-ocean-liner-becomes-artificial-reef",
+      "canonicalPath": "/news/us/historic-ocean-liner-becomes-artificial-reef/",
+      "headline": "Historic Ocean Liner SS United States Sunk To Create Artificial Reef",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The 1,000-foot-long SS United States vessel was submerged off the Florida Gulf Coast on Wednesday.",
+        "The ship will serve as an artificial reef, intended to support marine life and function as a destination for divers."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/11/ss-united-states-sinks-florida-reef"
+      }
+    },
+    {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
+      "viralScore": 65,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
         "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
@@ -110,20 +144,20 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Nvidia Shares Drop As Board Reportedly Considers Ousting Jensen Huang",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 56,
-      "intensityTier": "active",
+      "slug": "pope-leo-visits-peru",
+      "canonicalPath": "/news/us/pope-leo-visits-peru/",
+      "headline": "Pope Leo XIV Received By Millions During Official Visit To Peru",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 60,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "Nvidia stock values experienced a significant decline during after-hours trading sessions.",
-        "Reports indicate the board of directors is deliberating the removal of CEO Jensen Huang."
+        "Pope Leo XIV arrived in Peru to begin the concluding leg of his current diplomatic tour across South America.",
+        "The pontiff, previously known as Padre Robert during his time as a missionary and bishop, refers to the country as his second homeland."
       ],
       "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261111-pope-leo-xiv-returns-to-second-homeland-peru-to-a-nationwide-welcome"
       }
     },
     {
@@ -132,7 +166,7 @@
       "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 52,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
@@ -141,40 +175,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
-      }
-    },
-    {
-      "slug": "brooklyn-building-collapse-rescue-efforts",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
-      "headline": "Brooklyn Three-Storey Building Collapse Results In Multiple Deaths",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A three-storey structure in Brooklyn suffered a collapse.",
-        "Emergency services have confirmed at least two fatalities."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
-      }
-    },
-    {
-      "slug": "house-republicans-elect-jim-jordan-leader",
-      "canonicalPath": "/news/us/house-republicans-elect-jim-jordan-leader/",
-      "headline": "House Republicans Select Jim Jordan As New Minority Leader",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ohio Representative Jim Jordan was chosen as the next House Republican minority leader.",
-        "Jordan secured the position by defeating incumbent Majority Leader Steve Scalise in an internal party vote."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/10/jim-jordan-house-republican-leader"
       }
     }
   ]

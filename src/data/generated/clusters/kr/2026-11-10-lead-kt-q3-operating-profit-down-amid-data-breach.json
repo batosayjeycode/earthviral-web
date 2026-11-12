@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "economy-business",
   "categoryName": "Economy & Business",
-  "headline": "South Korean Corporations Report Mixed Financial Results For Q3",
-  "seoTitle": "South Korean Firms See Mixed Q3 Results",
-  "metaDescription": "Major South Korean corporations disclose varied third-quarter financial performances, ranging from profit dips at retailers to gains in the gaming sector.",
+  "headline": "South Korean Major Corporations Report Varied Third Quarter Results",
+  "seoTitle": "South Korea Q3 Corporate Financial Earnings Summary",
+  "metaDescription": "Major South Korean corporations announce diverse Q3 financial outcomes, showing profit dips in energy and retail alongside growth in specific sectors.",
   "aiSummaryBullets": [
-    "Gaming firm NC Corp. reported a return to operating profit during the third quarter.",
-    "Emart Inc. experienced a significant decline in net profit, attributed largely to losses accounted for through the equity method.",
-    "Other major firms including Krafton, KT, CJ Cheiljedang, and CJ Logistics saw operating profit or net income decreases due to increased costs and other factors."
+    "State-run energy entities experienced divergent results, with KEPCO reporting a significant profit drop due to fuel costs while KOGAS saw gains.",
+    "Technology and gaming firms, including Naver, KT, and Krafton, reported lower operating profits attributed to rising AI investments and operational challenges.",
+    "Retail and logistics companies faced sharp declines in net profits, whereas top exporters maintained a significant share of the national market."
   ],
-  "aiContextParagraph": "Major South Korean corporations have released their financial results for the third quarter of 2026, revealing a diverse economic landscape. While some entities, such as the gaming developer NC Corp., shifted to operating profitability, others faced substantial financial setbacks. Emart Inc. recorded a net profit drop of 99.8 percent, linked to equity-method losses, while CJ Cheiljedang and CJ Logistics reported net income declines attributed to rising operational costs. Telecommunications provider KT saw its operating profit decrease, citing expenditures on artificial intelligence and impacts from a data breach. Furthermore, Krafton reported an operating profit drop exceeding 35 percent, despite an overall increase in sales figures. Broadly, data indicates that the top ten South Korean firms accounted for more than 60 percent of the nation's total exports during this quarter, a trend bolstered by performance in the semiconductor sector.",
-  "whyItIsViral": "The story is trending due to widespread media coverage of various major South Korean corporations releasing their third-quarter earnings simultaneously, creating a composite picture of the national economy.",
-  "viralScore": 26,
+  "aiContextParagraph": "Major South Korean firms have released their financial results for the third quarter of 2026, revealing a complex economic landscape across various industries. State-run Korea Electric Power Corp. saw its net profit decrease by 78 percent, a shift attributed to elevated fuel costs, while Korea Gas Corp. reported that its net profit more than tripled, helped by equity gains and reduced costs. The technology and gaming sectors, including companies like Naver, KT, and Krafton, faced reduced operating profits, with expenditures on artificial intelligence initiatives and other operational factors cited as primary contributors. In the retail and logistics sectors, firms such as Emart and CJ Cheiljedang reported substantial net profit plunges linked to equity-method losses and higher costs. Meanwhile, data indicates that the top 10 firms continue to command over 60 percent of South Korea's total exports, largely bolstered by the ongoing semiconductor sector boom.",
+  "whyItIsViral": "The reporting of varied quarterly earnings across several major industry sectors has driven consistent news coverage in South Korea.",
+  "viralScore": 42,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 18,
+    "coverageVelocityScore": 52,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-10T01:36:21Z",
-  "lastUpdatedBatchAt": "2026-11-12T02:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-12T08:18:00Z",
   "sources": [
     {
       "publisherName": "Yonhap",
@@ -84,34 +84,48 @@
       "articleTitle": "(LEAD) Naver Q3 operating profit down over 20 pct on AI investments",
       "articleUrl": "https://en.yna.co.kr/view/AEN20261112001451320",
       "publishedAt": "2026-11-12T00:25:42Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) KOGAS Q3 net more than triples on equity gains, lower costs",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261112006951320",
+      "publishedAt": "2026-11-12T06:00:55Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) KEPCO Q3 net plunges 78 pct on higher fuel costs",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261112009651320",
+      "publishedAt": "2026-11-12T07:21:03Z"
     }
   ],
   "entityTags": [
     {
-      "name": "NC Corp",
-      "slug": "nc-corp"
+      "name": "KEPCO",
+      "slug": "kepco"
     },
     {
-      "name": "Emart Inc",
-      "slug": "emart-inc"
+      "name": "KOGAS",
+      "slug": "kogas"
     },
     {
-      "name": "Krafton",
-      "slug": "krafton"
+      "name": "Naver",
+      "slug": "naver"
     },
     {
-      "name": "KT",
-      "slug": "kt"
+      "name": "South Korea Corporate Finance",
+      "slug": "south-korea-corporate-finance"
     }
   ],
   "relatedInCountrySlugs": [
-    "south-korean-political-and-border-tensions",
     "south-korea-fines-fifteen-bond-dealers",
-    "bus-collision-bundang-south-korea"
+    "south-korean-political-and-border-tensions",
+    "south-korea-football-team-disputes"
   ],
   "relatedInCategorySlugs": [
     "nvidia-investigates-ceo-espionage-allegations",
-    "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
-    "cruise-ship-odyssey-detained-singapore"
+    "nvidia-board-considers-ousting-ceo-huang",
+    "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to"
   ]
 }
