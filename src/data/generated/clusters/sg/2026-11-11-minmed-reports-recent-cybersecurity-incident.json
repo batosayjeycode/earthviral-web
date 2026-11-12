@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "crime-law",
   "categoryName": "Crime & Law",
-  "headline": "Healthcare Provider Minmed Reports Malicious Cybersecurity Incident",
-  "seoTitle": "Minmed Reports Cybersecurity Incident",
-  "metaDescription": "Minmed has reported a cybersecurity breach impacting its teleconsultation and health screening systems, with no clinical records currently affected.",
+  "headline": "Cybersecurity Breaches Impact Multiple Singapore Healthcare Groups",
+  "seoTitle": "Singapore Healthcare Cybersecurity Breaches",
+  "metaDescription": "Recent cybersecurity incidents have affected AIC and Minmed, compromising staff data while officials confirm that patient care remains unaffected.",
   "aiSummaryBullets": [
-    "Minmed disclosed a malicious cybersecurity incident affecting its teleconsultation and health screening platforms.",
-    "The healthcare provider stated that patient clinical records have remained secure during the breach.",
-    "This event marks the third cyberattack on a Singapore healthcare provider within the last seven days."
+    "The Integrated Health Information Systems (AIC) reported a security breach affecting the personal data of over 4,000 healthcare staff.",
+    "Exposed information includes names, NRIC numbers, contact details, and email addresses, according to reports.",
+    "The Ministry of Health stated that these incidents, involving six different healthcare entities, have not disrupted patient services."
   ],
-  "aiContextParagraph": "The healthcare sector in Singapore has experienced a series of security challenges, with Minmed being the latest provider to report a malicious cybersecurity incident. This disruption impacts both its teleconsultation services and health screening systems. According to the organization, there is no evidence that clinical records have been compromised by the unauthorized access. This incident follows similar disclosures made recently by Fullerton Health and Doctor Anywhere, contributing to a cluster of reports concerning the cybersecurity posture of medical service providers. As digital platforms become increasingly integrated into healthcare delivery, authorities and organizations are facing heightened pressure to secure patient data and maintain service availability. Minmed is currently addressing the situation, though the specific nature of the unauthorized activity remains under internal review as the firm works to restore its affected operational functions while monitoring for further technical vulnerabilities.",
-  "whyItIsViral": "The story is trending due to the high frequency of similar incidents across the healthcare sector, resulting in significant public search interest.",
-  "viralScore": 31,
+  "aiContextParagraph": "In November 2026, Singapore's healthcare sector faced a series of cybersecurity incidents across multiple organizations. Among the affected entities is the healthcare provider Minmed, which confirmed a malicious breach impacting its teleconsultation and health screening systems. Additionally, a system used by the Integrated Health Information Systems (AIC) was targeted, potentially exposing the personal identification and contact information of approximately 4,000 employees working in healthcare and community care settings. The Ministry of Health has addressed the situation, confirming that while these breaches involve several distinct entities, there is currently no evidence indicating that patient safety or the delivery of care has been compromised. Authorities are investigating these events as the sector navigates the fallout from the unauthorized access, which highlights ongoing challenges in protecting sensitive data within interconnected digital medical infrastructure across the nation.",
+  "whyItIsViral": "The story is trending due to reports across major local news outlets regarding potential data exposure within the national healthcare system.",
+  "viralScore": 59,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 2,
+    "coverageVelocityScore": 63,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-11T11:16:16Z",
-  "lastUpdatedBatchAt": "2026-11-11T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-12T11:18:00Z",
   "sources": [
     {
       "publisherName": "The Straits Times",
@@ -42,9 +42,38 @@
       "articleTitle": "Minmed reports 'malicious cybersecurity incident' involving teleconsult, health screening system",
       "articleUrl": "https://www.channelnewsasia.com/singapore/minmed-cybersecurity-data-breach-healthcare-6542761",
       "publishedAt": "2026-11-11T11:17:00Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Recent cybersecurity incidents involving 6 healthcare entities did not disrupt patient care: MOH",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/moh-cybersecurity-cyber-attacks-healthcare-6545706",
+      "publishedAt": "2026-11-12T10:03:00Z"
+    },
+    {
+      "publisherName": "The Straits Times",
+      "publisherDomain": "straitstimes.com",
+      "articleTitle": "Data breaches: Patient care not affected, says MOH; AIC latest to report cybersecurity incident",
+      "articleUrl": "https://www.straitstimes.com/singapore/data-of-4000-healthcare-staff-may-have-been-compromised-after-cyberbreach-of-system-used-by-aic",
+      "publishedAt": "2026-11-12T10:08:43Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Data of over 4,000 healthcare, community care employees potentially accessed in AIC cybersecurity incident",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/aic-cybersecurity-cyber-attack-healthcare-6545671",
+      "publishedAt": "2026-11-12T10:17:00Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Ministry of Health",
+      "slug": "ministry-of-health"
+    },
+    {
+      "name": "AIC",
+      "slug": "aic"
+    },
     {
       "name": "Minmed",
       "slug": "minmed"
@@ -52,10 +81,6 @@
     {
       "name": "Cybersecurity",
       "slug": "cybersecurity"
-    },
-    {
-      "name": "Healthcare Sector",
-      "slug": "healthcare-sector"
     }
   ],
   "relatedInCountrySlugs": [
@@ -65,7 +90,7 @@
   ],
   "relatedInCategorySlugs": [
     "france-blames-iran-supermarket-cyberattack",
-    "gunman-opens-fire-krakow-market-square",
-    "mass-shooting-krakow-market-square"
+    "kapolri-addresses-illegal-presidential-wiretapping-allegations",
+    "indonesian-citizens-recruited-as-russian-soldiers"
   ]
 }

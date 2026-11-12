@@ -3,25 +3,25 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 52,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-12T08:18:00Z",
+  "viralScore": 62,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-12T11:18:00Z",
   "clusters": [
     {
-      "slug": "singapore-tests-remote-flood-pump-rover",
-      "canonicalPath": "/news/sg/singapore-tests-remote-flood-pump-rover/",
-      "headline": "Singapore Public Utilities Board Trials New Remote Flood Pump Rover",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 49,
+      "slug": "minmed-reports-recent-cybersecurity-incident",
+      "canonicalPath": "/news/sg/minmed-reports-recent-cybersecurity-incident/",
+      "headline": "Cybersecurity Breaches Impact Multiple Singapore Healthcare Groups",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 59,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Singapore's Public Utilities Board is trialing a remote-controlled vehicle designed to pump water from flooded locations.",
-        "The rover is engineered to navigate stairs and uneven terrain that are difficult for traditional pumping equipment to access."
+        "The Integrated Health Information Systems (AIC) reported a security breach affecting the personal data of over 4,000 healthcare staff.",
+        "Exposed information includes names, NRIC numbers, contact details, and email addresses, according to reports."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/environment/pub-trials-rover-to-pump-out-floodwater-in-inaccessible-spaces-ahead-of-year-end-rainy-season"
+        "articleUrl": "https://www.straitstimes.com/singapore/healthcare-group-minmed-reports-cybersecurity-incident-affecting-teleconsultation-screening-services"
       }
     },
     {
@@ -42,12 +42,29 @@
       }
     },
     {
+      "slug": "singapore-tests-remote-flood-pump-rover",
+      "canonicalPath": "/news/sg/singapore-tests-remote-flood-pump-rover/",
+      "headline": "Singapore Public Utilities Board Trials New Remote Flood Pump Rover",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Singapore's Public Utilities Board is trialing a remote-controlled vehicle designed to pump water from flooded locations.",
+        "The rover is engineered to navigate stairs and uneven terrain that are difficult for traditional pumping equipment to access."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/environment/pub-trials-rover-to-pump-out-floodwater-in-inaccessible-spaces-ahead-of-year-end-rainy-season"
+      }
+    },
+    {
       "slug": "wheelock-place-rebranded-landmark-orchard",
       "canonicalPath": "/news/sg/wheelock-place-rebranded-landmark-orchard/",
       "headline": "Wheelock Place Rebranded As Landmark Orchard After Acquisition",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 42,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Hongkong Land has completed the acquisition of the Orchard Road commercial building.",
@@ -64,7 +81,7 @@
       "headline": "Dementia Singapore App Users Face Potential Personal Data Breach",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A cyber incident has impacted the CARA SG mobile application.",
@@ -81,7 +98,7 @@
       "headline": "Singapore Airlines Flight Diverted Following Reported Cabin Smoke",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A flight operated by Singapore Airlines en route to Singapore from Brisbane was diverted mid-journey.",
@@ -90,57 +107,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/sia-flight-from-brisbane-to-singapore-diverted-to-rockhampton-due-to-cabin-smoke"
-      }
-    },
-    {
-      "slug": "fullerton-health-cybersecurity-incident",
-      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
-      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
-        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
-      }
-    },
-    {
-      "slug": "minmed-reports-recent-cybersecurity-incident",
-      "canonicalPath": "/news/sg/minmed-reports-recent-cybersecurity-incident/",
-      "headline": "Healthcare Provider Minmed Reports Malicious Cybersecurity Incident",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Minmed disclosed a malicious cybersecurity incident affecting its teleconsultation and health screening platforms.",
-        "The healthcare provider stated that patient clinical records have remained secure during the breach."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/healthcare-group-minmed-reports-cybersecurity-incident-affecting-teleconsultation-screening-services"
-      }
-    },
-    {
-      "slug": "four-men-charged-singapore-mortgage-fraud",
-      "canonicalPath": "/news/sg/four-men-charged-singapore-mortgage-fraud/",
-      "headline": "Four Men Face Charges Over Alleged Six Million Dollar Mortgage Fraud",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Four individuals are being charged for an alleged scheme involving six million dollars in fraudulent home loans.",
-        "The suspects reportedly utilized forged documents to leverage a residential property as collateral without the homeowner's knowledge."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/four-men-set-to-be-charged-over-ruse-to-get-6m-in-home-loans-with-victims-home-as-collateral"
       }
     },
     {
@@ -175,6 +141,40 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/meal-ordering-app-tappee-suffers-cyber-breach-says-sats-four-schools-affected"
+      }
+    },
+    {
+      "slug": "fullerton-health-cybersecurity-incident",
+      "canonicalPath": "/news/sg/fullerton-health-cybersecurity-incident/",
+      "headline": "Fullerton Health Reports Cybersecurity Incident Affecting Data",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A cybersecurity incident at Fullerton Health has impacted a server dedicated to a migrant worker care programme.",
+        "The breach potentially exposed names, foreign identification numbers, and mobile phone numbers."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451"
+      }
+    },
+    {
+      "slug": "four-men-charged-singapore-mortgage-fraud",
+      "canonicalPath": "/news/sg/four-men-charged-singapore-mortgage-fraud/",
+      "headline": "Four Men Face Charges Over Alleged Six Million Dollar Mortgage Fraud",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Four individuals are being charged for an alleged scheme involving six million dollars in fraudulent home loans.",
+        "The suspects reportedly utilized forged documents to leverage a residential property as collateral without the homeowner's knowledge."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/four-men-set-to-be-charged-over-ruse-to-get-6m-in-home-loans-with-victims-home-as-collateral"
       }
     }
   ]
