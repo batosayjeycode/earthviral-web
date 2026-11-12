@@ -3,10 +3,27 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 51,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-12T20:18:00Z",
+  "viralScore": 62,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-12T23:18:00Z",
   "clusters": [
+    {
+      "slug": "south-korean-political-and-border-tensions",
+      "canonicalPath": "/news/kr/south-korean-political-and-border-tensions/",
+      "headline": "Diverse Political And Social Issues Under Debate In South Korea",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "South Korean editorials are debating the need to revise plans for military academy restructuring.",
+        "Public discourse includes concerns over criminal justice and the conduct of political figures regarding verbal mistakes."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110000700320"
+      }
+    },
     {
       "slug": "bus-collision-bundang-south-korea",
       "canonicalPath": "/news/kr/bus-collision-bundang-south-korea/",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "south-korean-political-and-border-tensions",
-      "canonicalPath": "/news/kr/south-korean-political-and-border-tensions/",
-      "headline": "Diverse Political And Security Challenges Emerged In South Korea",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Democratic Party aims to enact stricter legislation regarding controversial political policy proposals.",
-        "The Financial Security Institute has reported a security breach raising concerns over national data integrity."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110000700320"
-      }
-    },
-    {
       "slug": "south-korea-football-team-disputes",
       "canonicalPath": "/news/kr/south-korea-football-team-disputes/",
       "headline": "Son Heung-min Addresses Internal Divisions Within South Korean Team",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 34,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Captain Son Heung-min stated that recent internal player conflicts within the South Korean national football team have been resolved.",
@@ -64,7 +64,7 @@
       "headline": "K-pop Group Cortis Achieves Significant Streaming Milestone",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The boy band Cortis has officially reached 1.5 billion total streams on the Spotify platform.",
@@ -98,7 +98,7 @@
       "headline": "South Korean Major Corporations Report Varied Third Quarter Results",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 22,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "State-run energy entities experienced divergent results, with KEPCO reporting a significant profit drop due to fuel costs while KOGAS saw gains.",
