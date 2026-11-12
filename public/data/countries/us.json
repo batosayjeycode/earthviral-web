@@ -3,25 +3,42 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 93,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-11T23:18:00Z",
+  "generatedAt": "2026-11-12T02:18:00Z",
   "clusters": [
+    {
+      "slug": "scott-colom-wins-mississippi-senate-race",
+      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
+      "headline": "Democrat Scott Colom Secures Historic Senate Victory In Mississippi",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 90,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Democrat Scott Colom won the Mississippi Senate race after defeating incumbent Republican Cindy Hyde-Smith.",
+        "The result marks the first time Mississippi has elected a Black U.S. senator since the Reconstruction era."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
+      }
+    },
     {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 98,
+      "viralScore": 85,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
         "Republican lawmakers successfully killed the resolution during a key procedural vote on Tuesday evening."
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261110-us-pentagon-chief-pete-hegseth-calls-impeachment-moves-a-farce"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/breaking-down-hegseths-rebuke-of-impeachment-calls/"
       }
     },
     {
@@ -30,32 +47,15 @@
       "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 76,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
         "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
       ],
       "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/trump-says-he-wants-ufc-chief-dana-white-white-house-press-secretary-6533411"
-      }
-    },
-    {
-      "slug": "scott-colom-wins-mississippi-senate-race",
-      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
-      "headline": "Democrat Scott Colom Secures Senate Victory In Mississippi Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 76,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in the Mississippi U.S. Senate race.",
-        "The election results mark the eighth seat flipped by the Democratic Party during the current cycle."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms"
       }
     },
     {
@@ -64,8 +64,8 @@
       "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
         "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
@@ -76,29 +76,12 @@
       }
     },
     {
-      "slug": "us-soldier-arrested-for-russian-espionage",
-      "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
-      "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
-        "The arrest follows allegations that the individual engaged in espionage activities while stationed in the United Kingdom."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
-      }
-    },
-    {
       "slug": "hegseth-reprimanded-tomb-unknown-soldier",
       "canonicalPath": "/news/us/hegseth-reprimanded-tomb-unknown-soldier/",
       "headline": "Defense Secretary Pete Hegseth Reprimanded At Tomb Of Unknown Soldier",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Defense Secretary Pete Hegseth and members of his staff were admonished by a sentry while visiting the Tomb of the Unknown Soldier.",
@@ -110,12 +93,46 @@
       }
     },
     {
+      "slug": "us-soldier-arrested-for-russian-espionage",
+      "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
+      "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
+        "The arrest follows allegations that the individual engaged in espionage activities while stationed in the United Kingdom."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
+      }
+    },
+    {
+      "slug": "brooklyn-building-collapse-rescue-efforts",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
+      "headline": "Brooklyn Three-Storey Building Collapse Results In Multiple Deaths",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A three-storey structure in Brooklyn suffered a collapse.",
+        "Emergency services have confirmed at least two fatalities."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/12/three-storey-building-collapses-in-brooklyn?traffic_source=rss"
+      }
+    },
+    {
       "slug": "house-republicans-elect-jim-jordan-leader",
       "canonicalPath": "/news/us/house-republicans-elect-jim-jordan-leader/",
       "headline": "House Republicans Select Jim Jordan As New Minority Leader",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Ohio Representative Jim Jordan was chosen as the next House Republican minority leader.",
@@ -127,37 +144,20 @@
       }
     },
     {
-      "slug": "us-soccer-targets-pep-guardiola-coach",
-      "canonicalPath": "/news/us/us-soccer-targets-pep-guardiola-coach/",
-      "headline": "United States Soccer Federation Targets Pep Guardiola As New Manager",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 54,
+      "slug": "brooklyn-building-collapse-rescue-efforts-2",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts-2/",
+      "headline": "Casualties Reported Following Building Collapse In Brooklyn New York",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The United States Soccer Federation has reportedly identified Pep Guardiola as a primary candidate for the men's national team head coach position.",
-        "This potential appointment follows the current tenure of Mauricio Pochettino as the leader of the national squad."
+        "A three-story structure collapsed near a construction site in Brooklyn, New York.",
+        "Emergency personnel are currently searching for individuals potentially trapped in the debris."
       ],
       "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5848087/timnas-amerika-serikat-bidik-pep-guardiola-untuk-gantikan-pochettino"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-investigation-espionage-allegations",
-      "canonicalPath": "/news/us/nvidia-ceo-investigation-espionage-allegations/",
-      "headline": "Nvidia Launches Independent Review Into CEO Relationship Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nvidia's board has commissioned Wachtell, Lipton, Rosen & Katz to conduct an independent investigation into CEO Jensen Huang.",
-        "The probe follows media reports linking the chief executive to an individual alleged to be a Chinese spy."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/nvidia-short-seller-culper-jensen-huang/"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-12/new-york-brooklyn-building-collapse-rescue/107376940"
       }
     },
     {
