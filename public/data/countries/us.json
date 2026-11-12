@@ -3,18 +3,86 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 97,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-12T14:18:00Z",
+  "generatedAt": "2026-11-12T17:18:00Z",
   "clusters": [
+    {
+      "slug": "police-respond-to-washington-dc-shooting",
+      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
+      "headline": "Shooting In Washington DC Leaves One Dead And Four Others Injured",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 94,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "One person was killed and four others were wounded during a shooting at a gym in the Logan Circle area of Washington DC.",
+        "Law enforcement officials confirmed the suspected shooter died after apparently shooting himself following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+      }
+    },
+    {
+      "slug": "scott-colom-wins-mississippi-senate-race",
+      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
+      "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 91,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Scott Colom defeated incumbent Republican Senator Cindy Hyde-Smith in the Mississippi Senate race.",
+        "Colom is the first African American elected to represent Mississippi in the US Senate since the 1800s."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
+      }
+    },
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Nvidia CEO Jensen Huang Resigns Following Espionage Allegations",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 89,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Jensen Huang has stepped down as CEO of Nvidia following reports of an alleged affair with a suspected Chinese intelligence operative.",
+        "The announcement triggered a significant decline in Nvidia's market valuation and stock price."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 79,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
+        "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/identity-crisis-can-democrats-deliver-following-their-historic-once-in-a-generation-victory"
+      }
+    },
     {
       "slug": "brooklyn-building-collapse-rescue-efforts",
       "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
       "headline": "Death Toll Rises To Eight Following Brooklyn Building Collapse",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 99,
-      "intensityTier": "surge",
+      "viralScore": 77,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "A three-story residential building in the Flatbush neighborhood of Brooklyn collapsed on Wednesday afternoon.",
         "Official figures indicate that at least eight people have died and seventeen others sustained injuries during the event."
@@ -25,63 +93,12 @@
       }
     },
     {
-      "slug": "scott-colom-wins-mississippi-senate-race",
-      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
-      "headline": "Democrat Scott Colom Wins Historic Senate Election In Mississippi",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 91,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a narrowly contested U.S. Senate race.",
-        "The victory makes Colom the first Black individual to hold a Senate seat in Mississippi since 1875."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
-      }
-    },
-    {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Nvidia CEO Jensen Huang Resigns Amid Scandal Involving Espionage",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 82,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Jensen Huang has officially resigned from his role as CEO of Nvidia.",
-        "The board of directors confirmed his departure following news reports regarding a personal relationship with a suspected Chinese intelligence asset."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
-      }
-    },
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 81,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
-        "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "brooklyn-building-collapse-rescue-efforts-2",
       "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts-2/",
       "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 70,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
@@ -93,37 +110,37 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
-        "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/2026-midterm-election-results-where-democrats-won/"
-      }
-    },
-    {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
         "Republican lawmakers successfully killed the resolution during a key procedural vote on Tuesday evening."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/live-updates/congress-today-senate-house-leadership-elections/"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
+        "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -132,8 +149,8 @@
       "headline": "Historic Ocean Liner SS United States Sunk To Create Artificial Reef",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The 1,000-foot-long SS United States vessel was submerged off the Florida Gulf Coast on Wednesday.",
         "The ship will serve as an artificial reef, intended to support marine life and function as a destination for divers."
@@ -149,7 +166,7 @@
       "headline": "Pope Leo XIV Received By Millions During Official Visit To Peru",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 55,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Peru to begin the concluding leg of his current diplomatic tour across South America.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/americas/20261111-pope-leo-xiv-returns-to-second-homeland-peru-to-a-nationwide-welcome"
-      }
-    },
-    {
-      "slug": "police-respond-to-washington-dc-shooting",
-      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Law Enforcement Responds To Multiple Shooting In Washington D.C.",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Law enforcement units are currently at the scene of a shooting in the Logan Circle area.",
-        "The incident occurred near the intersection of 15th and P Street."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
       }
     }
   ]

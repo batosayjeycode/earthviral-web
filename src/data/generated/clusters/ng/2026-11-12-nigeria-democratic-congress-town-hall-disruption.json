@@ -6,27 +6,8 @@
   "countryName": "Nigeria",
   "countrySlug": "nigeria",
   "region": "Africa",
-  "firstDetectedAt": "2026-11-12T13:23:25Z",
-  "lastUpdatedBatchAt": "2026-11-12T14:18:00Z",
-  "sources": [
-    {
-      "publisherName": "Punch",
-      "publisherDomain": "punchng.com",
-      "articleTitle": "VIDEO: Thugs invade NDC town hall meeting in Lagos",
-      "articleUrl": "https://punchng.com/video-thugs-invade-ndc-town-hall-meeting-in-lagos/",
-      "publishedAt": "2026-11-12T13:23:25Z"
-    }
-  ],
-  "relatedInCountrySlugs": [
-    "fatal-truck-accident-lagos-gbagada",
-    "african-democratic-congress-abuja-protest",
-    "apc-prepares-for-2027-general-elections"
-  ],
-  "relatedInCategorySlugs": [
-    "democrats-swept-the-midterms-what-comes-next-for-the",
-    "joko-widodo-responds-to-gibran-resignation",
-    "vice-president-gibran-meets-president-prabowo"
-  ],
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
   "headline": "Nigeria Democratic Congress Town Hall Disrupted By Unknown Thugs",
   "seoTitle": "Nigeria Democratic Congress Town Hall Meeting Disrupted",
   "metaDescription": "A town hall meeting hosted by the Nigeria Democratic Congress in Lagos was interrupted by unidentified individuals, causing attendees to leave.",
@@ -37,8 +18,32 @@
   ],
   "aiContextParagraph": "The Nigeria Democratic Congress held a town hall meeting in the Oregun district of Lagos State. During the course of the event, the gathering was interrupted by a group of unidentified individuals, whom reports described as thugs. The disturbance occurred during the meeting, resulting in the forced evacuation of attendees who fled the location to ensure their safety. There is no official statement regarding the identities of the individuals responsible for the disruption or the specific objectives of the town hall gathering prior to the incident. Local media coverage has noted the sudden nature of the intrusion, which halted proceedings entirely. Law enforcement has not yet provided further details on the security situation surrounding the event or any potential follow-up investigations into the conduct of the individuals involved in the disturbance within the Lagos area.",
   "whyItIsViral": "The story gained traction due to a high volume of search interest regarding the acronym NDC, indicating significant public curiosity about the disruption.",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
+  "viralScore": 48,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 40,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Emerging Coverage"
+  },
+  "firstDetectedAt": "2026-11-12T13:23:25Z",
+  "lastUpdatedBatchAt": "2026-11-12T17:18:00Z",
+  "sources": [
+    {
+      "publisherName": "Punch",
+      "publisherDomain": "punchng.com",
+      "articleTitle": "VIDEO: Thugs invade NDC town hall meeting in Lagos",
+      "articleUrl": "https://punchng.com/video-thugs-invade-ndc-town-hall-meeting-in-lagos/",
+      "publishedAt": "2026-11-12T13:23:25Z"
+    },
+    {
+      "publisherName": "Premium Times",
+      "publisherDomain": "premiumtimesng.com",
+      "articleTitle": "Suspected thugs attack NDC town hall venue in Lagos, damage vehicles",
+      "articleUrl": "https://www.premiumtimesng.com/news/top-news/924677-suspected-thugs-attack-ndc-town-hall-venue-in-lagos-damage-vehicles.html",
+      "publishedAt": "2026-11-12T15:30:24Z"
+    }
+  ],
   "entityTags": [
     {
       "name": "Nigeria Democratic Congress",
@@ -53,12 +58,14 @@
       "slug": "oregun"
     }
   ],
-  "viralScore": 41,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 29,
-    "publicSearchSignalScore": 64,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "african-democratic-congress-abuja-protest",
+    "nigerian-parliament-probes-political-judicial-safety",
+    "apc-prepares-for-2027-general-elections"
+  ],
+  "relatedInCategorySlugs": [
+    "democrats-swept-the-midterms-what-comes-next-for-the",
+    "protests-at-vice-presidential-palace",
+    "joko-widodo-responds-to-gibran-resignation"
+  ]
 }
