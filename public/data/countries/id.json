@@ -3,38 +3,21 @@
   "name": "Indonesia",
   "slug": "indonesia",
   "region": "Asia",
-  "viralScore": 100,
+  "viralScore": 94,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-12T17:18:00Z",
+  "generatedAt": "2026-11-12T20:18:00Z",
   "clusters": [
-    {
-      "slug": "protests-at-vice-presidential-palace",
-      "canonicalPath": "/news/id/protests-at-vice-presidential-palace/",
-      "headline": "Indonesian Vice President Gibran Rakabuming Raka Submits Resignation",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Vice President Gibran Rakabuming Raka has officially submitted his resignation letter to the People's Consultative Assembly and the President.",
-        "The resignation follows mounting political pressure, including an initiative from eight parliamentary factions to pursue impeachment proceedings."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261112143722-4-784679/yusril-sebut-surat-gibran-cuma-5-paragraf-ada-alasan-pengunduran-diri"
-      }
-    },
     {
       "slug": "joko-widodo-responds-to-gibran-resignation",
       "canonicalPath": "/news/id/joko-widodo-responds-to-gibran-resignation/",
-      "headline": "Gibran Rakabuming Raka Steps Down From Indonesian Vice Presidency",
+      "headline": "Indonesian Vice President Gibran Rakabuming Raka Resigns From Office",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 100,
+      "viralScore": 91,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Gibran Rakabuming Raka officially vacated his position as the Vice President of Indonesia on November 12, 2026.",
-        "President Prabowo Subianto cited educational and constitutional requirements as the reason, while Gibran denied that the resignation is linked to academic credentials."
+        "Gibran Rakabuming Raka officially announced his resignation from the position of Vice President of Indonesia.",
+        "The former Vice President stated his decision was unrelated to academic credential concerns, contradicting some recent public speculation."
       ],
       "primarySource": {
         "publisherName": "Republika",
@@ -44,18 +27,35 @@
     {
       "slug": "vice-president-gibran-meets-president-prabowo",
       "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
-      "headline": "Indonesian Political Leaders Prepare Process To Select New Vice President",
+      "headline": "Indonesian Officials Initiate Selection For New Vice President Post",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 92,
+      "viralScore": 89,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Gibran Rakabuming Raka has formally departed the vice presidential palace following his resignation.",
-        "President Prabowo Subianto is currently consulting with political coalition partners to determine a replacement."
+        "Gibran Rakabuming Raka has officially vacated the Vice Presidential office following his resignation.",
+        "President Prabowo Subianto is expected to consult with coalition party leaders regarding the nomination of potential replacements."
       ],
       "primarySource": {
         "publisherName": "CNN Indonesia",
         "articleUrl": "https://www.cnnindonesia.com/nasional/20261112140704-32-1426385/mpr-rapat-gabungan-bahas-jadwal-paripurna-wapres-pengganti-gibran-esok"
+      }
+    },
+    {
+      "slug": "protests-at-vice-presidential-palace",
+      "canonicalPath": "/news/id/protests-at-vice-presidential-palace/",
+      "headline": "Indonesian Vice President Gibran Rakabuming Raka Resigns Office",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Gibran Rakabuming Raka has officially submitted his resignation letter to the People's Consultative Assembly.",
+        "President Prabowo Subianto acknowledged the resignation, while political factions expressed differing views on the nature of the departure."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261112143722-4-784679/yusril-sebut-surat-gibran-cuma-5-paragraf-ada-alasan-pengunduran-diri"
       }
     },
     {
@@ -64,8 +64,8 @@
       "headline": "Indonesian National Police Investigate Brigadier General In Wiretap",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 89,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "A brigadier general identified by initials TK is currently undergoing questioning by the professional ethics division.",
         "Police leadership has indicated that the directive for the surveillance operation was allegedly issued verbally by Listyo Sigit."
@@ -76,12 +76,46 @@
       }
     },
     {
+      "slug": "former-customs-officials-sentenced-graft-case",
+      "canonicalPath": "/news/id/former-customs-officials-sentenced-graft-case/",
+      "headline": "Indonesian Customs Officials Sentenced In Bribery And Graft Case",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Three former customs officials received prison sentences ranging from six to nine years.",
+        "The officials were found guilty of accepting bribes and gratuities linked to PT BlueRay Cargo."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8750240/eks-pejabat-bea-cukai-divonis-9-tahun-penjara-dan-bayar-rp-15-7-m"
+      }
+    },
+    {
+      "slug": "indonesian-football-clubs-training-break",
+      "canonicalPath": "/news/id/indonesian-football-clubs-training-break/",
+      "headline": "Indonesian Football Clubs Utilize FIFA Matchday Break For Training",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "PSS Sleman is prioritizing physical conditioning and defensive improvements during the FIFA Matchday break.",
+        "Barito Putera is focusing on evaluating team weaknesses, specifically aiming to enhance their finishing abilities."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5850583/pss-sleman-fokus-benahi-fisik-dan-pertahanan-selama-jeda-kompetisi"
+      }
+    },
+    {
       "slug": "jensen-huang-resigns-as-nvidia-ceo",
       "canonicalPath": "/news/id/jensen-huang-resigns-as-nvidia-ceo/",
       "headline": "Jensen Huang Steps Down From Nvidia Amid Spying And Affair Reports",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang has officially resigned from his roles as CEO, president, and board member of the semiconductor firm Nvidia.",
@@ -89,7 +123,24 @@
       ],
       "primarySource": {
         "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8750649/jensen-huang-mundur-usai-selingkuh-sosok-ini-ditunjuk-jadi-bos-baru-nvidia"
+        "articleUrl": "https://news.detik.com/dw/d-8750359/nasib-jensen-huang-di-ujung-tanduk-nvidia-pertimbangkan-pemecatan"
+      }
+    },
+    {
+      "slug": "muhammadiyah-tanwir-calls-for-national-unity",
+      "canonicalPath": "/news/id/muhammadiyah-tanwir-calls-for-national-unity/",
+      "headline": "Muhammadiyah Tanwir And National Unity Calls In Indonesia",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Muhammadiyah held its Tanwir event and 114th anniversary celebration in Palu with a focus on national unity.",
+        "Minister of Basic and Secondary Education Abdul Mu'ti urged the public to strengthen national cohesion during the event."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5850471/pemerhati-minta-elite-politik-jaga-persatuan-terkait-gibran-berhenti"
       }
     },
     {
@@ -98,7 +149,7 @@
       "headline": "Gibran Rakabuming Raka Resigns From Indonesian Vice Presidency Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Gibran Rakabuming Raka has officially resigned from his post as the Vice President of Indonesia.",
@@ -115,8 +166,8 @@
       "headline": "Gibran Rakabuming Raka Resigns From Office Following Degree Revocation",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Ministry of Basic and Secondary Education has officially revoked the diploma equivalence certificate issued to Gibran Rakabuming Raka.",
         "Following the ministry's administrative decision, Gibran Rakabuming Raka announced his resignation from the position of Vice President."
@@ -124,57 +175,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/berita/d-8749499/kemendikdasmen-resmi-cabut-suket-penyetaraan-pendidikan-gibran"
-      }
-    },
-    {
-      "slug": "indonesian-lawmakers-initiate-gibran-impeachment-process",
-      "canonicalPath": "/news/id/indonesian-lawmakers-initiate-gibran-impeachment-process/",
-      "headline": "Indonesian Vice President Gibran Rakabuming Raka Resigns From Office",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Vice President Gibran Rakabuming Raka has formally resigned from his position of his own volition.",
-        "The resignation has resulted in the immediate termination of the impeachment proceedings previously initiated in the House of Representatives."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8747059/doli-ungkap-ada-legislator-golkar-ikut-teken-hak-menyatakan-pendapat-gibran"
-      }
-    },
-    {
-      "slug": "indonesia-vice-president-gibran-rakabuming-resigns",
-      "canonicalPath": "/news/id/indonesia-vice-president-gibran-rakabuming-resigns/",
-      "headline": "Indonesian Vice President Gibran Rakabuming Raka Resigns From Post",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Vice President Gibran Rakabuming Raka stepped down following public scrutiny over his overseas education credentials.",
-        "The resignation is linked to reports that a submitted certificate failed to confirm his equivalence to a local vocational high school diploma."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro"
-      }
-    },
-    {
-      "slug": "former-customs-officials-sentenced-graft-case",
-      "canonicalPath": "/news/id/former-customs-officials-sentenced-graft-case/",
-      "headline": "Indonesian Customs Officials Sentenced In Bribery And Graft Case",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Three former customs officials received prison sentences ranging from six to nine years.",
-        "The officials were found guilty of accepting bribes and gratuities linked to PT BlueRay Cargo."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8750240/eks-pejabat-bea-cukai-divonis-9-tahun-penjara-dan-bayar-rp-15-7-m"
       }
     }
   ]

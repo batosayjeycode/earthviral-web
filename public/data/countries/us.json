@@ -3,25 +3,93 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 97,
+  "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-12T17:18:00Z",
+  "generatedAt": "2026-11-12T20:18:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Nvidia CEO Jensen Huang Resigns Amid Espionage Allegations And Crisis",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Jensen Huang has officially resigned from his position as CEO of Nvidia following public reports of an espionage investigation.",
+        "The executive's departure follows allegations involving the recruitment of his relative, Alice Huang, by intelligence entities in Beijing."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
+      }
+    },
     {
       "slug": "police-respond-to-washington-dc-shooting",
       "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Shooting In Washington DC Leaves One Dead And Four Others Injured",
+      "headline": "Suspect Found Dead Following Deadly Logan Circle Shooting In DC",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 94,
+      "viralScore": 96,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "One person was killed and four others were wounded during a shooting at a gym in the Logan Circle area of Washington DC.",
-        "Law enforcement officials confirmed the suspected shooter died after apparently shooting himself following the incident."
+        "A shooting incident in Washington DC's Logan Circle left one individual dead and four others wounded.",
+        "The suspected gunman barricaded himself inside a nearby apartment before taking his own life, according to authorities."
       ],
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure House Control And Outline New Congressional Agenda",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 93,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Democratic candidates secured control of the House of Representatives by flipping over 40 seats previously held by Republicans.",
+        "Lawmakers are planning legislative agendas that include investigations into the Trump administration and scrutiny of the pardon process."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+      }
+    },
+    {
+      "slug": "thomas-massie-files-hegseth-impeachment",
+      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
+      "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
+        "Republican lawmakers successfully killed the resolution during a key procedural vote on Tuesday evening."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/what-to-know-as-house-consideres-impeachment/"
+      }
+    },
+    {
+      "slug": "brooklyn-building-collapse-rescue-efforts",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
+      "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 84,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
+        "Official reports confirm at least eight fatalities, including six adults and two children, with seventeen individuals reported injured."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
       }
     },
     {
@@ -30,8 +98,8 @@
       "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 91,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Scott Colom defeated incumbent Republican Senator Cindy Hyde-Smith in the Mississippi Senate race.",
         "Colom is the first African American elected to represent Mississippi in the US Senate since the 1800s."
@@ -42,54 +110,20 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Nvidia CEO Jensen Huang Resigns Following Espionage Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 89,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Jensen Huang has stepped down as CEO of Nvidia following reports of an alleged affair with a suspected Chinese intelligence operative.",
-        "The announcement triggered a significant decline in Nvidia's market valuation and stock price."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/nvidias-shares-plunge-as-us-tech-giants-board-reportedly-weighs-ousting-ceo-jensen-huang/"
-      }
-    },
-    {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Congressional Democrats Outline Legislative Agenda After Midterms",
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 79,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Congressional Democrats are proposing legislation to increase oversight of presidential pardon authorities.",
-        "Lawmakers are facing pressure to address immigration enforcement practices, specifically regarding the detention of minors."
+        "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
+        "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
       ],
       "primarySource": {
         "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/identity-crisis-can-democrats-deliver-following-their-historic-once-in-a-generation-victory"
-      }
-    },
-    {
-      "slug": "brooklyn-building-collapse-rescue-efforts",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
-      "headline": "Death Toll Rises To Eight Following Brooklyn Building Collapse",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 77,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A three-story residential building in the Flatbush neighborhood of Brooklyn collapsed on Wednesday afternoon.",
-        "Official figures indicate that at least eight people have died and seventeen others sustained injuries during the event."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
+        "articleUrl": "https://www.france24.com/en/americas/20261107-a-violent-fighter-and-warrior-trump-offers-press-secretary-role-to-ufc-chief-dana-white"
       }
     },
     {
@@ -98,7 +132,7 @@
       "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 72,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
@@ -110,54 +144,20 @@
       }
     },
     {
-      "slug": "thomas-massie-files-hegseth-impeachment",
-      "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
-      "headline": "United States House Rejects Impeachment Motion For Pete Hegseth",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 71,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The US House of Representatives blocked a formal attempt to impeach Defense Secretary Pete Hegseth.",
-        "Republican lawmakers successfully killed the resolution during a key procedural vote on Tuesday evening."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "Dana White Rejects White House Offer As Tensions With Congress Rise",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "UFC chief Dana White has officially declined an offer from Donald Trump to serve as the White House press secretary.",
-        "White House counsel Will Scharf has issued warnings regarding potential criminal investigations into Democratic-led oversight efforts."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "historic-ocean-liner-becomes-artificial-reef",
       "canonicalPath": "/news/us/historic-ocean-liner-becomes-artificial-reef/",
-      "headline": "Historic Ocean Liner SS United States Sunk To Create Artificial Reef",
+      "headline": "Historic SS United States Sunk To Form World's Largest Reef",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 57,
-      "intensityTier": "active",
+      "viralScore": 61,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "The 1,000-foot-long SS United States vessel was submerged off the Florida Gulf Coast on Wednesday.",
-        "The ship will serve as an artificial reef, intended to support marine life and function as a destination for divers."
+        "The former luxury liner SS United States was sunk off the coast of Florida to serve as an artificial reef.",
+        "The vessel previously held the record as the world's fastest ocean liner during its service period."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/11/ss-united-states-sinks-florida-reef"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/the-sinking-of-the-ss-united-states-the-worlds-fastest-ocean-liner/"
       }
     },
     {
@@ -166,7 +166,7 @@
       "headline": "Pope Leo XIV Received By Millions During Official Visit To Peru",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 49,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Peru to begin the concluding leg of his current diplomatic tour across South America.",
