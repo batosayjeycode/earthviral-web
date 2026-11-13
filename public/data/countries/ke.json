@@ -3,17 +3,68 @@
   "name": "Kenya",
   "slug": "kenya",
   "region": "Africa",
-  "viralScore": 56,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-13T05:18:00Z",
+  "viralScore": 68,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-13T08:18:00Z",
   "clusters": [
+    {
+      "slug": "microsoft-services-experience-global-outage",
+      "canonicalPath": "/news/ke/microsoft-services-experience-global-outage/",
+      "headline": "Microsoft Reports Global Service Outages Affecting Multiple Platforms",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Microsoft is addressing a significant global disruption impacting multiple core service platforms.",
+        "Services experiencing connectivity issues include Microsoft Teams, Outlook, and the Copilot artificial intelligence software."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/microsoft-says-attempts-to-fix-global-outage-not-going-as-expected/"
+      }
+    },
+    {
+      "slug": "nairobi-police-raid-illicit-alcohol-site",
+      "canonicalPath": "/news/ke/nairobi-police-raid-illicit-alcohol-site/",
+      "headline": "Nairobi Police Conduct Raid On Illegal Alcohol Production Site",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Law enforcement officials in Nairobi confiscated 2,060 litres of illicit alcohol.",
+        "The operation occurred in the Soweto area of Kahawa West on November 12."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/police-seize-2000-litres-of-kangara-in-soweto-alcohol-crackdown/"
+      }
+    },
+    {
+      "slug": "nairobi-police-recover-homemade-firearm",
+      "canonicalPath": "/news/ke/nairobi-police-recover-homemade-firearm/",
+      "headline": "Nairobi Authorities Arrest Robbery Suspect And Recover Firearm",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Police from the South B Station arrested one suspect involved in an armed robbery.",
+        "Officers recovered a loaded homemade firearm during a search following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/nairobi-police-arrest-suspect-recover-loaded-homemade-pistol/"
+      }
+    },
     {
       "slug": "kenya-begins-countdown-ebola-free-status",
       "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
       "headline": "Kenya Discharges Final Ebola Patient As Disease-Free Status Nears",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Kenya has successfully discharged the last of its nine confirmed Ebola patients from hospital care.",
@@ -30,7 +81,7 @@
       "headline": "Missing Kenyan Lawyer Abshir Abdi Found Alive In Northern Region",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawyer Abshir Abdi has been located alive after a period of disappearance.",
@@ -59,23 +110,6 @@
       }
     },
     {
-      "slug": "aisha-jumwa-rejoins-uda-party",
-      "canonicalPath": "/news/ke/aisha-jumwa-rejoins-uda-party/",
-      "headline": "Former Cabinet Secretary Aisha Jumwa Rejoins United Democratic Party",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Aisha Jumwa has formally returned to President William Ruto's United Democratic Alliance party.",
-        "The move follows her three-month departure to join the Wiper party."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/jumwa-returns-to-uda-after-three-month-stint-in-wiper/"
-      }
-    },
-    {
       "slug": "ruto-brands-gachagua-chief-extortionist",
       "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
       "headline": "President Ruto Criticizes Gachagua Regarding Young Political Leaders",
@@ -93,12 +127,29 @@
       }
     },
     {
+      "slug": "aisha-jumwa-rejoins-uda-party",
+      "canonicalPath": "/news/ke/aisha-jumwa-rejoins-uda-party/",
+      "headline": "Former Cabinet Secretary Aisha Jumwa Rejoins United Democratic Party",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Aisha Jumwa has formally returned to President William Ruto's United Democratic Alliance party.",
+        "The move follows her three-month departure to join the Wiper party."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/jumwa-returns-to-uda-after-three-month-stint-in-wiper/"
+      }
+    },
+    {
       "slug": "ruto-begins-four-day-gusii-development-tour",
       "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
       "headline": "President Ruto Concludes Gusii Tour Amidst Heated Political Debate",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President William Ruto concluded a four-day development tour of the Gusii region.",
@@ -107,57 +158,6 @@
       "primarySource": {
         "publisherName": "KBC",
         "articleUrl": "https://www.kbc.co.ke/president-ruto-begins-four-day-development-tour-in-gusii-region/"
-      }
-    },
-    {
-      "slug": "armed-attack-mandera-road-project",
-      "canonicalPath": "/news/ke/armed-attack-mandera-road-project/",
-      "headline": "Armed Ambush On Road Construction Team Kills Seven In Mandera County",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Seven individuals were killed during an armed attack in Mandera County.",
-        "The victims included five civilian construction workers and two National Police Reservists."
-      ],
-      "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/counties/mandera/seven-killed-in-mandera-shabaab-terror-attack-5665168"
-      }
-    },
-    {
-      "slug": "linda-mwananchi-movement-national-delegates-conference",
-      "canonicalPath": "/news/ke/linda-mwananchi-movement-national-delegates-conference/",
-      "headline": "Linda Mwananchi Movement Schedules Closed National Delegates Event",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Linda Mwananchi Movement scheduled its National Delegates Conference for November 13.",
-        "Organizers confirmed the event will be held behind closed doors with no media access allowed."
-      ],
-      "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/news/politics/linda-mwananchi-ndc-will-be-a-closed-door-affair-no-media-coverage--5668716"
-      }
-    },
-    {
-      "slug": "tifa-poll-kenya-2027-presidential-race",
-      "canonicalPath": "/news/ke/tifa-poll-kenya-2027-presidential-race/",
-      "headline": "TIFA Survey Reveals Evolving Voter Preferences For 2027 Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Recent polling data shows a competitive landscape between political figures in regional strongholds.",
-        "Data indicates that approximately 15 percent of potential voters have not yet selected a preferred candidate."
-      ],
-      "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/news/politics/ruto-sifuna-tie-in-tifa-presidential-popularity-poll-5667976"
       }
     },
     {
