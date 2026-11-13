@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "politics-government",
   "categoryName": "Politics & Government",
-  "headline": "Iran Declares It Will Retain All Enriched Nuclear Material Stocks",
-  "seoTitle": "Iran Refuses to Relinquish Enriched Nuclear Material",
-  "metaDescription": "Iranian authorities state they will not export enriched uranium despite repeated concerns raised by U.S. President Donald Trump regarding the program.",
+  "headline": "IAEA Raises Concerns Over Lack Of Access To Iranian Nuclear Site",
+  "seoTitle": "IAEA Concerns Over Iran Nuclear Access",
+  "metaDescription": "The UN nuclear agency expresses growing concern regarding its inability to inspect a uranium enrichment facility in Iran, citing restricted access.",
   "aiSummaryBullets": [
-    "Iranian officials stated the nation will not surrender any of its enriched nuclear material.",
-    "The declaration comes amidst ongoing scrutiny of the country's nuclear program by the United States.",
-    "President Donald Trump has previously characterized the Iranian nuclear program as a primary justification for potential military conflict."
+    "The International Atomic Energy Agency reports growing concern over its lack of access to a nuclear site in Isfahan.",
+    "Inspectors state they have never gained entry to the specific uranium enrichment plant since its announcement over a year ago.",
+    "Officials indicate they cannot verify the presence of nuclear material at the underground facility."
   ],
-  "aiContextParagraph": "The status of Iran's nuclear program remains a point of significant international tension as the government in Tehran confirms its refusal to transfer any enriched uranium outside of its borders. This development follows recurring assertions by United States President Donald Trump, who has frequently identified Iran’s nuclear activities as a central factor in his rationale for potential military intervention. While international actors continue to monitor the situation, Iranian leadership has remained firm, declaring that not a single particle of their nuclear material will be relinquished. This public stance highlights the persistent geopolitical friction surrounding nuclear non-proliferation and national security policies between Washington and Tehran, as both parties maintain conflicting positions on the management and future of these materials. The situation continues to draw attention as diplomatic efforts and regional security concerns remain at the forefront of international discourse.",
-  "whyItIsViral": "The topic is trending due to reports from multiple international outlets focusing on high-stakes geopolitical tension between the United States and Iran.",
-  "viralScore": 30,
-  "intensityTier": "active",
+  "aiContextParagraph": "The International Atomic Energy Agency (IAEA) has voiced increasing alarm regarding its inability to monitor nuclear facilities within Iran. A leaked report highlights that inspectors have been denied access to a uranium enrichment plant located in Isfahan, a facility that was disclosed by Iranian authorities more than a year ago. Because of these restrictions, the U.N. watchdog stated it is currently unable to verify whether the underground site contains nuclear material or if it remains active. This development follows recent official statements from Iran, in which the government asserted its intention to retain all stockpiles of enriched nuclear material within the country and refused to relinquish any portion of its current inventory. The situation remains a point of international scrutiny as diplomatic tensions continue to surround Iran's nuclear activities and its obligations to allow inspections by the global oversight body.",
+  "whyItIsViral": "The story is trending due to coordinated reports from four international news organizations highlighting an escalation in monitoring challenges by the IAEA.",
+  "viralScore": 71,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 0,
+    "verifiedPublisherCount": 4,
+    "coverageVelocityScore": 59,
     "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
+    "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-11T11:47:07Z",
-  "lastUpdatedBatchAt": "2026-11-11T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-13T14:18:00Z",
   "sources": [
     {
       "publisherName": "Times of India",
@@ -42,34 +42,51 @@
       "articleTitle": "Iran vows not to give up \"a single particle\" of nuclear material",
       "articleUrl": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
       "publishedAt": "2026-11-11T14:06:00Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "UN watchdog calls on Iran to reopen nuclear facilities to inspection",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/13/un-watchdog-calls-on-iran-to-reopen-nuclear-facilities-to-inspection?traffic_source=rss",
+      "publishedAt": "2026-11-13T11:51:57Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "UN watchdog 'increasingly concerned' over Iran nuclear site",
+      "articleUrl": "https://www.bbc.co.uk/news/articles/cm75261e3pdko",
+      "publishedAt": "2026-11-13T12:28:28Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "U.N. watchdog agency pushes for access to key Iran nuclear site",
+      "articleUrl": "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/",
+      "publishedAt": "2026-11-13T13:14:13Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "IAEA",
+      "slug": "iaea"
+    },
     {
       "name": "Iran",
       "slug": "iran"
     },
     {
-      "name": "Donald Trump",
-      "slug": "donald-trump"
-    },
-    {
-      "name": "Nuclear Program",
-      "slug": "nuclear-program"
-    },
-    {
-      "name": "Geopolitics",
-      "slug": "geopolitics"
+      "name": "Nuclear Energy",
+      "slug": "nuclear-energy"
     }
   ],
   "relatedInCountrySlugs": [
     "explosions-reported-strait-hormuz-iran",
-    "farage-says-he-is-worried-trump-will-step-up",
-    "iran-designates-argentine-military-terrorist"
+    "iran-designates-argentine-military-terrorist",
+    "treasury-secretary-bessent-iran-security-threats"
   ],
   "relatedInCategorySlugs": [
-    "democrats-swept-the-midterms-what-comes-next-for-the",
-    "trump-tariffs-mexico-migrant-caravans",
-    "trump-to-meet-xi-putin-apec"
+    "asean-leaders-discuss-regional-energy-security",
+    "vice-president-gibran-meets-president-prabowo",
+    "joko-widodo-responds-to-gibran-resignation"
   ]
 }
