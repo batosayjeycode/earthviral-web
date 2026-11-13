@@ -3,72 +3,38 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 90,
+  "viralScore": 87,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-13T17:18:00Z",
+  "generatedAt": "2026-11-13T20:18:00Z",
   "clusters": [
     {
       "slug": "nvidia-board-considers-ousting-ceo-huang",
       "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "US Senate Summons Jensen Huang And Howard Lutnick For Testimony",
+      "headline": "US Senate Orders Testimony From Jensen Huang And Howard Lutnick",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 87,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "The US Senate has scheduled hearings for December to question Jensen Huang and Howard Lutnick regarding recent developments at Nvidia.",
-        "Jensen Huang resigned as Nvidia CEO following reports of extramarital affairs, including allegations involving a suspected Chinese spy."
+        "Jensen Huang has resigned from his position as CEO of Nvidia amid ongoing scrutiny regarding personal associations and corporate leadership.",
+        "The US Senate has officially requested testimonies from both Huang and Commerce Secretary Howard Lutnick regarding the company's oversight."
       ],
       "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/"
-      }
-    },
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 82,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/the-great-white-mix-up-did-trump-offer-white-house-job-to-the-wrong-dana-white/articleshow/135653662.cms"
-      }
-    },
-    {
-      "slug": "police-respond-to-washington-dc-shooting",
-      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
-        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+        "articleUrl": "https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/"
       }
     },
     {
       "slug": "van-hollen-challenges-schumer-senate-leadership",
       "canonicalPath": "/news/us/van-hollen-challenges-schumer-senate-leadership/",
-      "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Leadership",
+      "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
+      "viralScore": 79,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Senator Chris Van Hollen of Maryland declared his intent to run against Chuck Schumer for the position of Senate majority leader.",
-        "The announcement follows the midterm elections, which Van Hollen describes as a public mandate for a change from the existing political status quo."
+        "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
+        "The leadership bid follows internal debate among Democratic members regarding the party's strategic direction following the recent presidential election."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
@@ -81,7 +47,7 @@
       "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
@@ -93,12 +59,46 @@
       }
     },
     {
+      "slug": "police-respond-to-washington-dc-shooting",
+      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
+      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
+        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+      }
+    },
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/the-great-white-mix-up-did-trump-offer-white-house-job-to-the-wrong-dana-white/articleshow/135653662.cms"
+      }
+    },
+    {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "Defense Secretary Pete Hegseth Awards Medal To Soldier At Arlington",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Secretary of Defense Pete Hegseth honored a soldier with a medal at Arlington National Cemetery.",
@@ -110,12 +110,29 @@
       }
     },
     {
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "Emergency Response Underway Following Mississippi River Ship Collision",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A tanker ship struck the American Heritage cruise vessel on the Mississippi River in New Orleans.",
+        "Emergency crews are conducting rescue operations as the cruise ship has reportedly taken on water and appears to be listing."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
+    {
       "slug": "scott-colom-wins-mississippi-senate-race",
       "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
       "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
@@ -127,12 +144,29 @@
       }
     },
     {
+      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
+      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
+      "headline": "Commerce Secretary Lutnick Faces Pressure Over Nvidia Spy Scandal",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Commerce Secretary Howard Lutnick is under scrutiny for his alleged inaction regarding security concerns involving Nvidia.",
+        "The chief executive of Nvidia has resigned from his position and is scheduled to provide testimony before the United States Congress."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss"
+      }
+    },
+    {
       "slug": "brooklyn-building-collapse-rescue-efforts",
       "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
       "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
@@ -141,40 +175,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
-      }
-    },
-    {
-      "slug": "brooklyn-building-collapse-rescue-efforts-2",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts-2/",
-      "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
-        "Seventeen people, including seven children, sustained injuries during the incident."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-12/new-york-brooklyn-building-collapse-rescue/107376940"
-      }
-    },
-    {
-      "slug": "us-treasury-chip-export-rate-policy",
-      "canonicalPath": "/news/us/us-treasury-chip-export-rate-policy/",
-      "headline": "US Treasury Official Addresses Chip Exports And Interest Rate Policy",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Treasury official Scott Bessent cautioned against increasing interest rates during energy shocks related to the US-Iran conflict.",
-        "Market forecasts from CME Fed Watch suggest a December rate hike remains likely despite Treasury warnings."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
       }
     }
   ]

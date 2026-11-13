@@ -3,17 +3,34 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 80,
+  "viralScore": 82,
   "intensityTier": "high",
-  "generatedAt": "2026-11-13T17:18:00Z",
+  "generatedAt": "2026-11-13T20:18:00Z",
   "clusters": [
+    {
+      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+      "headline": "Indonesian Authorities Expose Syndicate Recruiting For Russian Army",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 80,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Law enforcement in Indonesia arrested eight suspects involved in a network that recruited citizens to serve in the Russian military.",
+        "Recruits were allegedly promised logistics jobs with monthly salaries of 50 million rupiah but were instead trained for combat roles."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
+      }
+    },
     {
       "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
       "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 77,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Ukraine and Russia have reached an agreement to include European countries in the next round of peace negotiations.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-      "headline": "Indonesian Authorities Dismantle International Mercenary Network",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Indonesian police arrested eight suspects, including two foreign nationals, for organizing a recruitment scheme for the Russian military.",
-        "Law enforcement agencies discovered a training site in Pemalang used to prepare Indonesian citizens for deployment."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
-      }
-    },
-    {
       "slug": "russian-missile-strikes-target-kyiv",
       "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
       "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 55,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian forces launched a series of overnight missile and drone attacks targeting Kyiv and its surrounding region.",
@@ -64,7 +64,7 @@
       "headline": "Finland Imposes Entry Restrictions On Russian Athletes For Sports",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Finland's foreign ministry announced that Russian athletes will be barred from entering the country.",
@@ -90,23 +90,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/americas/20261106-trump-stillborn-diesel-deal-why-russian-oil-tankers-are-not-heading-to-the-us"
-      }
-    },
-    {
-      "slug": "russia-bans-two-french-lawmakers-and-two-journalists-from",
-      "canonicalPath": "/news/ru/russia-bans-two-french-lawmakers-and-two-journalists-from/",
-      "headline": "Russia bans two French lawmakers and two journalists from entry",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "France 24 reports: Russia bans two French lawmakers and two journalists from entry",
-        "Al Jazeera reports: Russia bans two French lawmakers, two journalists in tit-for-tat move"
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss"
       }
     },
     {
@@ -141,6 +124,23 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/2026-midterms-russia-hopes-trump-continues-peace-efforts-despite-democrats-victory_6773534_4.html"
+      }
+    },
+    {
+      "slug": "russia-bans-two-french-lawmakers-and-two-journalists-from",
+      "canonicalPath": "/news/ru/russia-bans-two-french-lawmakers-and-two-journalists-from/",
+      "headline": "Russia bans two French lawmakers and two journalists from entry",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "France 24 reports: Russia bans two French lawmakers and two journalists from entry",
+        "Al Jazeera reports: Russia bans two French lawmakers, two journalists in tit-for-tat move"
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss"
       }
     }
   ]

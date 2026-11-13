@@ -3,10 +3,27 @@
   "name": "Brazil",
   "slug": "brazil",
   "region": "South America",
-  "viralScore": 51,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-13T17:18:00Z",
+  "viralScore": 64,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-13T20:18:00Z",
   "clusters": [
+    {
+      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
+      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
+      "headline": "Brazilian Government Navigates Fiscal Reforms And Political Demands",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Government ministers are urging the Chamber of Deputies to prioritize voting on the fiscal adjustment package following Senate review.",
+        "Financial analysts indicate the proposed fiscal measures are compatible with the president's current administrative campaign commitments."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/plano-de-ajuste-do-governo-lula-retoma-medida-ja-rejeitada-pelo-congresso.shtml"
+      }
+    },
     {
       "slug": "brazil-fines-meta-electoral-court-ruling",
       "canonicalPath": "/news/br/brazil-fines-meta-electoral-court-ruling/",
@@ -25,12 +42,46 @@
       }
     },
     {
+      "slug": "banco-do-brasil-rural-debt-defaults",
+      "canonicalPath": "/news/br/banco-do-brasil-rural-debt-defaults/",
+      "headline": "Banco Do Brasil Reports Thousands Of Rural Producers In Default",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Banco do Brasil CEO Tarciana Medeiros reported that 31,000 rural producers are currently in default.",
+        "The figure represents approximately 5.5% of the total 566,000 rural clients with active credit operations at the state-owned institution."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-tem-31-mil-produtores-rurais-inadimplentes-diz-ceo.shtml"
+      }
+    },
+    {
+      "slug": "marcos-pitombo-returns-to-tv-globo",
+      "canonicalPath": "/news/br/marcos-pitombo-returns-to-tv-globo/",
+      "headline": "Marcos Pitombo Returns To TV Globo For Upcoming Evening Telenovela",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Actor Marcos Pitombo has signed on to appear in the new TV Globo production titled Elas que Lutem.",
+        "This role marks the actor's return to the network's telenovela lineup after an absence that began in 2020."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/colunistas/outro-canal/2026/11/marcos-pitombo-volta-a-globo-apos-sete-anos-para-fazer-nova-novela-das-sete.shtml"
+      }
+    },
+    {
       "slug": "former-nanny-ordered-to-pay-damages",
       "canonicalPath": "/news/br/former-nanny-ordered-to-pay-damages/",
       "headline": "Former Nanny Ordered To Pay Damages To Jason Sudeikis And Olivia Wilde",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 42,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A former nanny has lost a legal case brought against Jason Sudeikis and Olivia Wilde.",
@@ -42,29 +93,12 @@
       }
     },
     {
-      "slug": "gerard-depardieu-drops-sexual-assault-appeal",
-      "canonicalPath": "/news/br/gerard-depardieu-drops-sexual-assault-appeal/",
-      "headline": "Actor Gérard Depardieu Drops Appeal In Sexual Assault Conviction",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "French actor Gérard Depardieu has abandoned his legal challenge against a sexual assault conviction.",
-        "The case involved allegations made by two women during a 2021 film production."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/gerard-depardieu-desiste-de-recorrer-de-condenacao-por-agressoes-sexuais.shtml"
-      }
-    },
-    {
       "slug": "fifa-brazil-womens-world-cup-tickets",
       "canonicalPath": "/news/br/fifa-brazil-womens-world-cup-tickets/",
       "headline": "Fifa Announces Starting Ticket Prices For Women's World Cup Brazil",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 40,
+      "viralScore": 26,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Fifa confirmed that tickets for the 2027 Women's World Cup hosted in Brazil will start at a price of five dollars.",
@@ -76,20 +110,20 @@
       }
     },
     {
-      "slug": "quem-ama-cuida-series-updates",
-      "canonicalPath": "/news/br/quem-ama-cuida-series-updates/",
-      "headline": "Plot Developments In Television Drama Series Quem Ama Cuida",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 33,
+      "slug": "gerard-depardieu-drops-sexual-assault-appeal",
+      "canonicalPath": "/news/br/gerard-depardieu-drops-sexual-assault-appeal/",
+      "headline": "Actor Gérard Depardieu Drops Appeal In Sexual Assault Conviction",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 26,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Felipe discovers that Mau Mau is the brother of Adriana.",
-        "Brigitte initiates legal action against Pilar to recover stolen inheritance funds."
+        "French actor Gérard Depardieu has abandoned his legal challenge against a sexual assault conviction.",
+        "The case involved allegations made by two women during a 2021 film production."
       ],
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/televisao/2026/11/apos-entrar-na-justica-contra-pilar-brigitte-vai-reaver-dinheiro-de-heranca-em-quem-ama-cuida.shtml"
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/gerard-depardieu-desiste-de-recorrer-de-condenacao-por-agressoes-sexuais.shtml"
       }
     },
     {
@@ -98,8 +132,8 @@
       "headline": "Brazilian Senate Begins Voting On The Moretti Fiscal Adjustment Plan",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 27,
-      "intensityTier": "active",
+      "viralScore": 24,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Senate President Davi Alcolumbre moved to begin the voting process on the federal government's proposed fiscal adjustment.",
         "A request for urgent consideration of the Moretti plan was approved by the Senate chamber."
@@ -107,40 +141,6 @@
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
         "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/senado-inicia-votacao-do-plano-moretti-de-ajuste-fiscal-apesar-de-protesto-da-oposicao.shtml"
-      }
-    },
-    {
-      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
-      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
-      "headline": "Brazilian Administration Faces Fiscal Package Opposition In Congress",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 26,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The administration's initial fiscal adjustment proposal is meeting resistance from both left-wing and right-wing congressional members.",
-        "Parties including the Republicanos and PP are seeking to secure more significant cabinet positions in exchange for parliamentary loyalty."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/plano-de-ajuste-do-governo-lula-retoma-medida-ja-rejeitada-pelo-congresso.shtml"
-      }
-    },
-    {
-      "slug": "former-officer-alleges-assault-by-colonel",
-      "canonicalPath": "/news/br/former-officer-alleges-assault-by-colonel/",
-      "headline": "Former Officer Accuses Military Police Colonel Of Physical Assault",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 21,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A former military police officer alleges she was assaulted by a police colonel.",
-        "The incident reportedly followed the discovery of a list containing 14 women's names in the colonel's personal records."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/ex-pm-relata-ter-sido-agredida-por-coronel-apos-achar-lista-de-mulheres.shtml"
       }
     },
     {

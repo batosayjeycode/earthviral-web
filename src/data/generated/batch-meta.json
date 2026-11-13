@@ -1,26 +1,24 @@
 {
-  "batchId": "batch-202611131718",
-  "generatedAt": "2026-11-13T17:18:00Z",
-  "nextUpdateAt": "2026-11-13T20:17:00Z",
+  "batchId": "batch-202611132018",
+  "generatedAt": "2026-11-13T20:18:00Z",
+  "nextUpdateAt": "2026-11-13T23:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 34,
     "viralTopics": 166,
-    "globalIndex": 86
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 29,
+    "feedsOk": 31,
     "feedsFailed": [
-      "nation-ke: HTTP 404 for https://nation.africa/kenya/rss.xml",
-      "detik: fetch failed",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1068,
+    "articlesFetched": 1200,
     "newClusters": 10,
-    "updatedClusters": 35,
+    "updatedClusters": 29,
     "retiredClusters": 9,
     "aiCalls": 23,
-    "durationMs": 173907
+    "durationMs": 112350
   }
 }
