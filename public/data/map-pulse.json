@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611131418",
-  "generatedAt": "2026-11-13T14:18:00Z",
-  "nextUpdateAt": "2026-11-13T17:17:00Z",
+  "batchId": "batch-202611131718",
+  "generatedAt": "2026-11-13T17:18:00Z",
+  "nextUpdateAt": "2026-11-13T20:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -12,16 +12,16 @@
         117,
         -2.5
       ],
-      "viralScore": 100,
+      "viralScore": 95,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
         "slug": "vice-president-gibran-meets-president-prabowo",
         "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
-        "headline": "Indonesian MPR Schedules December Vice President Selection Process",
+        "headline": "President Prabowo Initiates Selection Process For New Vice President",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 100,
+        "viralScore": 92,
         "intensityTier": "surge"
       }
     },
@@ -34,7 +34,7 @@
         -98.5,
         39.5
       ],
-      "viralScore": 100,
+      "viralScore": 90,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
@@ -43,7 +43,29 @@
         "headline": "US Senate Summons Jensen Huang And Howard Lutnick For Testimony",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 97,
+        "viralScore": 87,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 89,
+      "intensityTier": "surge",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Arabia Defeats South Korea In Recent International Match",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 88,
         "intensityTier": "surge"
       }
     },
@@ -56,16 +78,38 @@
         104,
         35
       ],
-      "viralScore": 93,
+      "viralScore": 89,
       "intensityTier": "surge",
-      "topicCount": 9,
+      "topicCount": 8,
       "topTopic": {
         "slug": "nvidia-investigates-ceo-espionage-allegations",
         "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
         "headline": "Jensen Huang Resigns Amid Inquiries Into Nvidia China Chip Access",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 90,
+        "viralScore": 86,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 89,
+      "intensityTier": "surge",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "david-walliams-faces-misconduct-allegations-2",
+        "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
+        "headline": "Metropolitan Police Open Investigation Into Comedian David Walliams",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 86,
         "intensityTier": "surge"
       }
     },
@@ -78,16 +122,16 @@
         53.7,
         32.4
       ],
-      "viralScore": 83,
-      "intensityTier": "high",
+      "viralScore": 87,
+      "intensityTier": "surge",
       "topicCount": 6,
       "topTopic": {
         "slug": "farage-says-he-is-worried-trump-will-step-up",
         "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Iran Reports Attack On Bahrain Radar Site Amid Shifting US Stance",
+        "headline": "Iran Claims Attack On US Radar System Located In Bahrain Territory",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 80,
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
@@ -100,38 +144,38 @@
         31.2,
         49
       ],
-      "viralScore": 82,
-      "intensityTier": "high",
+      "viralScore": 86,
+      "intensityTier": "surge",
       "topicCount": 2,
       "topTopic": {
         "slug": "european-leaders-seek-ukraine-peace-influence",
         "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
-        "headline": "European Nations Prepare To Join Ukraine And Russia Peace Negotiations",
+        "headline": "European Leaders Seek Representation In Russia-Ukraine Peace Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 81,
-        "intensityTier": "high"
+        "viralScore": 85,
+        "intensityTier": "surge"
       }
     },
     {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
       "centroid": [
-        -2,
-        53.5
+        79,
+        22
       ],
-      "viralScore": 81,
+      "viralScore": 80,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "pochettino-linked-to-manchester-united-manager",
-        "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
-        "headline": "Mauricio Pochettino Appointed As New Manchester United Manager",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 78,
+        "slug": "fatal-bus-collision-assam-kaziranga",
+        "canonicalPath": "/news/in/fatal-bus-collision-assam-kaziranga/",
+        "headline": "Twenty Four People Die Following Bus Collision In Assam India",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 77,
         "intensityTier": "high"
       }
     },
@@ -158,50 +202,6 @@
       }
     },
     {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 77,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "modi-pitroda-public-exchange",
-        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
-        "headline": "Narendra Modi Leads Bengaluru Metro Launch Amidst Political Discord",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 74,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "PH",
-      "isoNumeric": "608",
-      "name": "Philippines",
-      "slug": "philippines",
-      "centroid": [
-        122,
-        12.5
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "asean-leaders-discuss-regional-energy-security",
-        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
-        "headline": "Asean Leaders Address Regional Energy Crisis At Manila Summit",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 73,
-        "intensityTier": "high"
-      }
-    },
-    {
       "code": "NG",
       "isoNumeric": "566",
       "name": "Nigeria",
@@ -210,60 +210,38 @@
         8.1,
         9.6
       ],
-      "viralScore": 73,
+      "viralScore": 72,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "Oyo Governor Seyi Makinde Announces 2027 Challenge To President Tinubu",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 70,
+        "slug": "nigeria-tanzania-afcon-qualifier-draw",
+        "canonicalPath": "/news/ng/nigeria-tanzania-afcon-qualifier-draw/",
+        "headline": "Super Eagles Hold Draw Against Tanzania In AFCON Qualifying Match",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 69,
         "intensityTier": "high"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
-        37.9,
-        0.2
+        35.2,
+        31.9
       ],
       "viralScore": 69,
       "intensityTier": "high",
-      "topicCount": 9,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "syokimau-building-collapse-casualties-reported",
-        "canonicalPath": "/news/ke/syokimau-building-collapse-casualties-reported/",
-        "headline": "Six People Confirmed Dead After Building Collapses In Syokimau",
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 66,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 63,
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
@@ -276,103 +254,103 @@
         134,
         -25.5
       ],
-      "viralScore": 63,
+      "viralScore": 68,
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
-        "slug": "australian-organisations-affected-by-microsoft-outage",
-        "canonicalPath": "/news/au/australian-organisations-affected-by-microsoft-outage/",
-        "headline": "Australian Government Services Face Disruptions During Microsoft Outage",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
+        "slug": "australian-teen-rescued-from-bush",
+        "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
+        "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
+      "centroid": [
+        122,
+        12.5
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "asean-leaders-discuss-regional-energy-security",
+        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
+        "headline": "Asean Leaders Address Regional Energy Crisis At Manila Summit",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "foreign-nationals-arrested-south-africa-airport",
+        "canonicalPath": "/news/za/foreign-nationals-arrested-south-africa-airport/",
+        "headline": "Foreign Nationals Arrested At South African Airport Over Ukraine",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "kenya-begins-countdown-ebola-free-status",
+        "canonicalPath": "/news/ke/kenya-begins-countdown-ebola-free-status/",
+        "headline": "Kenya Discharges Final Ebola Patient As Disease-Free Status Nears",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 60,
         "intensityTier": "high"
       }
     },
     {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
       "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "french-students-block-schools-protest",
-        "canonicalPath": "/news/fr/french-students-block-schools-protest/",
-        "headline": "French Students Organize Blockades Across Numerous Secondary Schools",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
+        10.4,
+        51.1
       ],
       "viralScore": 58,
       "intensityTier": "active",
-      "topicCount": 9,
+      "topicCount": 4,
       "topTopic": {
-        "slug": "singapore-systems-impacted-by-microsoft-outage",
-        "canonicalPath": "/news/sg/singapore-systems-impacted-by-microsoft-outage/",
-        "headline": "Singapore Government Systems Impacted By Recent Microsoft Outage",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Arabia Intercepts Houthi Missiles Near Makkah And Riyadh",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
+        "slug": "merz-nominates-aigner-for-german-president",
+        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
+        "headline": "Chancellor Merz Advances Ilse Aigner For German Presidential Role",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 56,
         "intensityTier": "active"
       }
@@ -422,6 +400,28 @@
       }
     },
     {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 57,
+      "intensityTier": "active",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "French Protests Persist Amid Disagreements Over Turnout Figures",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "TR",
       "isoNumeric": "792",
       "name": "Turkey",
@@ -440,6 +440,28 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 55,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "spain-general-strike-over-housing-crisis",
+        "canonicalPath": "/news/es/spain-general-strike-over-housing-crisis/",
+        "headline": "Nationwide General Strike In Spain Targets Housing And Cost Crisis",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -488,46 +510,24 @@
       }
     },
     {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
       "centroid": [
-        24.7,
-        -29
+        103.82,
+        1.35
       ],
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
-      "topicCount": 1,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
-        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
-        "headline": "African National Congress Faces Losses In South African Local Polls",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AE",
-      "isoNumeric": "784",
-      "name": "United Arab Emirates",
-      "slug": "united-arab-emirates",
-      "centroid": [
-        54,
-        24
-      ],
-      "viralScore": 52,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
-        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
-        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 52,
+        "slug": "singapore-bars-alice-huang-megaspeed-probe",
+        "canonicalPath": "/news/sg/singapore-bars-alice-huang-megaspeed-probe/",
+        "headline": "Singapore Bars Alice Huang Over Deceptive Information In Probe",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 50,
         "intensityTier": "active"
       }
     },
@@ -549,50 +549,6 @@
         "headline": "Brazilian Electoral Court Issues Fine Against Meta For Noncompliance",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 51,
-      "intensityTier": "active",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "bus-collision-bundang-south-korea",
-        "canonicalPath": "/news/kr/bus-collision-bundang-south-korea/",
-        "headline": "Dozens Injured After Bus Collides With Thirty Two Vehicles In Bundang",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
-      ],
-      "viralScore": 50,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "nigeria-japan-u17-womens-world-cup-final",
-        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
-        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
         "viralScore": 48,
         "intensityTier": "active"
       }
@@ -620,24 +576,68 @@
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
       "centroid": [
-        102.3,
-        3.8
+        138.5,
+        36.5
       ],
-      "viralScore": 44,
+      "viralScore": 48,
       "intensityTier": "active",
       "topicCount": 5,
       "topTopic": {
-        "slug": "malaysia-probes-speedmatrix-ai-chip-diversion",
-        "canonicalPath": "/news/my/malaysia-probes-speedmatrix-ai-chip-diversion/",
-        "headline": "Malaysia Probes SpeedMatrix Over Potential AI Chip Diversion Claims",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 42,
+        "slug": "nigeria-japan-u17-womens-world-cup-final",
+        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
+        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 46,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "AE",
+      "isoNumeric": "784",
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
+      "centroid": [
+        54,
+        24
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
+        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
+        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 47,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PK",
+      "isoNumeric": "586",
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "centroid": [
+        69.3,
+        30
+      ],
+      "viralScore": 46,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "pakistan-security-incidents-casualties-reported",
+        "canonicalPath": "/news/pk/pakistan-security-incidents-casualties-reported/",
+        "headline": "Casualties Reported In Pakistan Following Security Incidents",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
@@ -664,6 +664,50 @@
       }
     },
     {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 40,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 41,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "south-korea-football-team-disputes",
+        "canonicalPath": "/news/kr/south-korea-football-team-disputes/",
+        "headline": "Son Heung-min Addresses Internal Divisions Within South Korean Team",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 39,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "MX",
       "isoNumeric": "484",
       "name": "Mexico",
@@ -672,7 +716,7 @@
         -102.5,
         23.6
       ],
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -681,28 +725,6 @@
         "headline": "Donald Trump Threatens Mexico With Tariffs Over Migrant Caravans",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 34,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
-      "centroid": [
-        10.4,
-        51.1
-      ],
-      "viralScore": 33,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "mercedes-benz-halts-german-facility-investments",
-        "canonicalPath": "/news/de/mercedes-benz-halts-german-facility-investments/",
-        "headline": "Mercedes-Benz Pauses German Site Investments Amid Cost Pressures",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
         "viralScore": 32,
         "intensityTier": "active"
       }
@@ -738,9 +760,9 @@
         106.3,
         16
       ],
-      "viralScore": 19,
+      "viralScore": 18,
       "intensityTier": "quiet",
-      "topicCount": 3,
+      "topicCount": 1,
       "topTopic": {
         "slug": "ahmad-luthfi-criticizes-vietnam-licensing-speed",
         "canonicalPath": "/news/vn/ahmad-luthfi-criticizes-vietnam-licensing-speed/",

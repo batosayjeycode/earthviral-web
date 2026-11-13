@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 90,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-13T14:18:00Z",
+  "generatedAt": "2026-11-13T17:18:00Z",
   "clusters": [
     {
       "slug": "nvidia-board-considers-ousting-ceo-huang",
@@ -13,15 +13,15 @@
       "headline": "US Senate Summons Jensen Huang And Howard Lutnick For Testimony",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 97,
+      "viralScore": 87,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "The US Senate Banking Committee has issued a request for testimony from former Nvidia CEO Jensen Huang and Commerce Secretary Howard Lutnick.",
-        "Lawmakers are investigating security concerns following allegations involving the former tech executive and a suspected intelligence operative."
+        "The US Senate has scheduled hearings for December to question Jensen Huang and Howard Lutnick regarding recent developments at Nvidia.",
+        "Jensen Huang resigned as Nvidia CEO following reports of extramarital affairs, including allegations involving a suspected Chinese spy."
       ],
       "primarySource": {
-        "publisherName": "aol.com",
-        "articleUrl": "https://www.aol.com/articles/warren-buffett-1991-playbook-points-022606000.html"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "White House Faces Administrative Shifts And Political Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 78,
+      "viralScore": 82,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
@@ -42,12 +42,29 @@
       }
     },
     {
+      "slug": "police-respond-to-washington-dc-shooting",
+      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
+      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 74,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
+        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+      }
+    },
+    {
       "slug": "van-hollen-challenges-schumer-senate-leadership",
       "canonicalPath": "/news/us/van-hollen-challenges-schumer-senate-leadership/",
       "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Leadership",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 75,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Senator Chris Van Hollen of Maryland declared his intent to run against Chuck Schumer for the position of Senate majority leader.",
@@ -64,32 +81,15 @@
       "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
         "The party secured significant electoral victories, including flipping over 40 House seats and retaining the governorship in Kansas."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph"
-      }
-    },
-    {
-      "slug": "police-respond-to-washington-dc-shooting",
-      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
-        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
-      ],
-      "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+        "articleUrl": "https://www.cbsnews.com/news/trump-60-minutes-sunday-midterms/"
       }
     },
     {
@@ -98,7 +98,7 @@
       "headline": "Defense Secretary Pete Hegseth Awards Medal To Soldier At Arlington",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Secretary of Defense Pete Hegseth honored a soldier with a medal at Arlington National Cemetery.",
@@ -115,8 +115,8 @@
       "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
         "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
@@ -132,7 +132,7 @@
       "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 58,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
@@ -149,7 +149,7 @@
       "headline": "Two Confirmed Dead In Three-Storey Apartment Collapse In Brooklyn",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 56,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "At least two individuals were killed following the collapse of a three-storey apartment building in Brooklyn on Wednesday.",
@@ -161,20 +161,20 @@
       }
     },
     {
-      "slug": "us-world-war-two-remains-repatriation",
-      "canonicalPath": "/news/us/us-world-war-two-remains-repatriation/",
-      "headline": "Indonesian And American Officials Conduct World War II Repatriation",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 53,
+      "slug": "us-treasury-chip-export-rate-policy",
+      "canonicalPath": "/news/us/us-treasury-chip-export-rate-policy/",
+      "headline": "US Treasury Official Addresses Chip Exports And Interest Rate Policy",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Indonesian and U.S. defense officials held a formal repatriation ceremony at Halim Perdanakusuma Air Force Base in Jakarta.",
-        "The remains belong to a soldier who lost their life during the Second World War."
+        "Treasury official Scott Bessent cautioned against increasing interest rates during energy shocks related to the US-Iran conflict.",
+        "Market forecasts from CME Fed Watch suggest a December rate hike remains likely despite Treasury warnings."
       ],
       "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/foto-news/d-8751208/jenazah-prajurit-as-era-perang-dunia-ii-dipulangkan-dari-lanud-halim"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
       }
     }
   ]

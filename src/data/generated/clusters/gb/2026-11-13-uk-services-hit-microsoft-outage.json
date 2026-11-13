@@ -8,26 +8,26 @@
   "region": "Europe",
   "categorySlug": "technology-ai",
   "categoryName": "Technology & AI",
-  "headline": "UK Public Services Face Disruption Due To Microsoft System Outage",
-  "seoTitle": "UK Public Services Hit By Microsoft Outage",
-  "metaDescription": "Hospitals, police forces, and pharmacies across the United Kingdom report technical disruptions following a widespread Microsoft system outage.",
+  "headline": "UK Public Services Warned Of Scam Risks Amid Microsoft System Outage",
+  "seoTitle": "UK Authorities Warn Of Scams During Microsoft Outage",
+  "metaDescription": "UK officials issue warnings regarding fraudulent IT support calls as a global Microsoft system failure disrupts hospitals, schools, and police services.",
   "aiSummaryBullets": [
-    "NHS services are experiencing widespread and serious technical disruptions across the United Kingdom.",
-    "Police forces across the country have reported that their internal systems are currently impacted.",
-    "The government is conducting an assessment of the situation while major airports and intelligence services remain unaffected."
+    "A global Microsoft system disruption has affected essential services in the UK including hospitals, police departments, and educational institutions.",
+    "The National Cyber Security Centre has issued an official warning against fraudulent individuals attempting to contact citizens while posing as IT support.",
+    "Microsoft officials report that efforts are currently underway to restore connectivity to affected platforms such as Teams and Outlook."
   ],
-  "aiContextParagraph": "A widespread Microsoft technical failure has impacted critical infrastructure across the United Kingdom, leading to significant service disruptions. The National Health Service (NHS) is experiencing what sources describe as serious issues affecting both hospitals and general practitioner surgeries, which may result in delays for patient prescriptions and other medical services. In addition to health facilities, various police forces across the nation have reported that their operational systems are affected by the outage. Government authorities are actively monitoring the situation to determine the full scope of the impact on public services. Despite the breadth of these technical difficulties, major transportation hubs such as airports and national intelligence agencies have not reported any interruptions to their operations. Technical teams are currently working to restore systems to full functionality as the government assesses the long-term impact of the event.",
-  "whyItIsViral": "The event is trending due to simultaneous reports from two major independent news outlets concerning the disruption of essential national infrastructure.",
-  "viralScore": 63,
+  "aiContextParagraph": "A widespread technical disruption involving Microsoft systems has impacted various sectors across the United Kingdom, leading to operational challenges for general practitioners, hospitals, pharmacies, and police services. While the technology company works to rectify the software issues affecting platforms like Outlook and Teams, the National Cyber Security Centre has advised the public to exercise caution. Officials indicate that opportunistic scammers may attempt to impersonate legitimate IT support technicians to exploit those affected by the service outages. At this time, the technical instability is not reported as being the result of a cyber-attack. The incident has caused noticeable service delays, particularly in the healthcare sector, where patient referral processes and administrative systems have faced significant interruptions. The situation continues to evolve as Microsoft prioritizes the restoration of their global digital infrastructure.",
+  "whyItIsViral": "The story is trending due to significant service disruptions across multiple UK public sectors, garnering attention from several national media outlets.",
+  "viralScore": 68,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 54,
+    "coverageVelocityScore": 66,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-13T10:11:39Z",
-  "lastUpdatedBatchAt": "2026-11-13T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-13T17:18:00Z",
   "sources": [
     {
       "publisherName": "The Guardian",
@@ -49,6 +49,20 @@
       "articleTitle": "Microsoft outage disrupts UK health services, delays patient referrals",
       "articleUrl": "https://punchng.com/microsoft-outage-disrupts-uk-health-services-delays-patient-referrals/",
       "publishedAt": "2026-11-13T13:21:55Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+      "articleUrl": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "publishedAt": "2026-11-13T14:56:42Z"
+    },
+    {
+      "publisherName": "Punch",
+      "publisherDomain": "punchng.com",
+      "articleTitle": "Microsoft outage: UK warns of fake IT support calls",
+      "articleUrl": "https://punchng.com/microsoft-outage-uk-warns-of-fake-it-support-calls/",
+      "publishedAt": "2026-11-13T16:23:55Z"
     }
   ],
   "entityTags": [
@@ -57,18 +71,22 @@
       "slug": "microsoft"
     },
     {
-      "name": "NHS",
-      "slug": "nhs"
+      "name": "National Cyber Security Centre",
+      "slug": "national-cyber-security-centre"
     },
     {
-      "name": "UK Police",
-      "slug": "uk-police"
+      "name": "IT Support Scams",
+      "slug": "it-support-scams"
+    },
+    {
+      "name": "Public Services",
+      "slug": "public-services"
     }
   ],
   "relatedInCountrySlugs": [
-    "uk-eu-negotiations-parliamentary-oversight",
-    "uk-arrests-us-soldier-espionage",
-    "pochettino-linked-to-manchester-united-manager"
+    "david-walliams-faces-misconduct-allegations-2",
+    "pochettino-linked-to-manchester-united-manager",
+    "uk-eu-negotiations-parliamentary-oversight"
   ],
   "relatedInCategorySlugs": [
     "australian-organisations-affected-by-microsoft-outage",
