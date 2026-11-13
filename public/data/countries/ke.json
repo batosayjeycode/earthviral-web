@@ -3,9 +3,9 @@
   "name": "Kenya",
   "slug": "kenya",
   "region": "Africa",
-  "viralScore": 68,
+  "viralScore": 62,
   "intensityTier": "high",
-  "generatedAt": "2026-11-13T08:18:00Z",
+  "generatedAt": "2026-11-13T11:18:00Z",
   "clusters": [
     {
       "slug": "microsoft-services-experience-global-outage",
@@ -13,8 +13,8 @@
       "headline": "Microsoft Reports Global Service Outages Affecting Multiple Platforms",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Microsoft is addressing a significant global disruption impacting multiple core service platforms.",
         "Services experiencing connectivity issues include Microsoft Teams, Outlook, and the Copilot artificial intelligence software."
@@ -22,40 +22,6 @@
       "primarySource": {
         "publisherName": "KBC",
         "articleUrl": "https://www.kbc.co.ke/microsoft-says-attempts-to-fix-global-outage-not-going-as-expected/"
-      }
-    },
-    {
-      "slug": "nairobi-police-raid-illicit-alcohol-site",
-      "canonicalPath": "/news/ke/nairobi-police-raid-illicit-alcohol-site/",
-      "headline": "Nairobi Police Conduct Raid On Illegal Alcohol Production Site",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Law enforcement officials in Nairobi confiscated 2,060 litres of illicit alcohol.",
-        "The operation occurred in the Soweto area of Kahawa West on November 12."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/police-seize-2000-litres-of-kangara-in-soweto-alcohol-crackdown/"
-      }
-    },
-    {
-      "slug": "nairobi-police-recover-homemade-firearm",
-      "canonicalPath": "/news/ke/nairobi-police-recover-homemade-firearm/",
-      "headline": "Nairobi Authorities Arrest Robbery Suspect And Recover Firearm",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Police from the South B Station arrested one suspect involved in an armed robbery.",
-        "Officers recovered a loaded homemade firearm during a search following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/nairobi-police-arrest-suspect-recover-loaded-homemade-pistol/"
       }
     },
     {
@@ -76,12 +42,46 @@
       }
     },
     {
+      "slug": "syokimau-building-collapse-casualties-reported",
+      "canonicalPath": "/news/ke/syokimau-building-collapse-casualties-reported/",
+      "headline": "Casualties Reported Following Building Collapse In Syokimau, Kenya",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An eight-storey building under construction collapsed near the SGR access road in Syokimau, Machakos County.",
+        "Emergency response teams, including the Kenya Red Cross, were deployed to perform search and rescue operations at the site."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/5-killed-1-missing-after-building-collapses-near-syokimau-sgr-road/"
+      }
+    },
+    {
+      "slug": "nairobi-police-recover-homemade-firearm",
+      "canonicalPath": "/news/ke/nairobi-police-recover-homemade-firearm/",
+      "headline": "Nairobi Authorities Arrest Robbery Suspect And Recover Firearm",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Police from the South B Station arrested one suspect involved in an armed robbery.",
+        "Officers recovered a loaded homemade firearm during a search following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/nairobi-police-arrest-suspect-recover-loaded-homemade-pistol/"
+      }
+    },
+    {
       "slug": "lawyer-abshir-abdi-found-alive",
       "canonicalPath": "/news/ke/lawyer-abshir-abdi-found-alive/",
       "headline": "Missing Kenyan Lawyer Abshir Abdi Found Alive In Northern Region",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawyer Abshir Abdi has been located alive after a period of disappearance.",
@@ -93,20 +93,37 @@
       }
     },
     {
-      "slug": "ruto-nominates-data-commissioner-and-ceos",
-      "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
-      "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "slug": "nairobi-police-raid-illicit-alcohol-site",
+      "canonicalPath": "/news/ke/nairobi-police-raid-illicit-alcohol-site/",
+      "headline": "Nairobi Police Conduct Raid On Illegal Alcohol Production Site",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President William Ruto has nominated Lydia Sitienei Chelagat to serve as the new Data Commissioner.",
-        "The nomination has been submitted to the Kenyan Parliament for formal review and consideration."
+        "Law enforcement officials in Nairobi confiscated 2,060 litres of illicit alcohol.",
+        "The operation occurred in the Soweto area of Kahawa West on November 12."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/police-seize-2000-litres-of-kangara-in-soweto-alcohol-crackdown/"
+      }
+    },
+    {
+      "slug": "ruto-begins-four-day-gusii-development-tour",
+      "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
+      "headline": "President Ruto Concludes Gusii Tour Amidst Heated Political Debate",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President William Ruto concluded a four-day development tour of the Gusii region.",
+        "The President criticized former President Uhuru Kenyatta, describing him as a political broker for the opposition."
       ],
       "primarySource": {
         "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/president-ruto-appoints-five-ceos-to-state-corporations-nominates-data-commissioner/"
+        "articleUrl": "https://www.kbc.co.ke/president-ruto-begins-four-day-development-tour-in-gusii-region/"
       }
     },
     {
@@ -127,37 +144,20 @@
       }
     },
     {
-      "slug": "aisha-jumwa-rejoins-uda-party",
-      "canonicalPath": "/news/ke/aisha-jumwa-rejoins-uda-party/",
-      "headline": "Former Cabinet Secretary Aisha Jumwa Rejoins United Democratic Party",
+      "slug": "ruto-nominates-data-commissioner-and-ceos",
+      "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
+      "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Aisha Jumwa has formally returned to President William Ruto's United Democratic Alliance party.",
-        "The move follows her three-month departure to join the Wiper party."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/jumwa-returns-to-uda-after-three-month-stint-in-wiper/"
-      }
-    },
-    {
-      "slug": "ruto-begins-four-day-gusii-development-tour",
-      "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
-      "headline": "President Ruto Concludes Gusii Tour Amidst Heated Political Debate",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President William Ruto concluded a four-day development tour of the Gusii region.",
-        "The President criticized former President Uhuru Kenyatta, describing him as a political broker for the opposition."
+        "President William Ruto has nominated Lydia Sitienei Chelagat to serve as the new Data Commissioner.",
+        "The nomination has been submitted to the Kenyan Parliament for formal review and consideration."
       ],
       "primarySource": {
         "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/president-ruto-begins-four-day-development-tour-in-gusii-region/"
+        "articleUrl": "https://www.kbc.co.ke/president-ruto-appoints-five-ceos-to-state-corporations-nominates-data-commissioner/"
       }
     },
     {

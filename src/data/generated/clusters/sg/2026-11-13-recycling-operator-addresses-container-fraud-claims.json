@@ -6,8 +6,28 @@
   "countryName": "Singapore",
   "countrySlug": "singapore",
   "region": "Asia",
+  "categorySlug": "social-issues",
+  "categoryName": "Social Issues",
+  "headline": "Operator Addresses Fraud Concerns Over Return Container Scheme Use",
+  "seoTitle": "Operator Addresses Fraud Concerns Over Container Scheme",
+  "metaDescription": "The operator of the beverage container return scheme is addressing reports of alleged misuse after viral footage showed a user scanning one item.",
+  "aiSummaryBullets": [
+    "BCRS Ltd stated that maintaining the integrity and fairness of the container return scheme is a primary operational objective.",
+    "The operator responded to public attention following a video showing a person repeatedly scanning a single container at a machine.",
+    "The organization has declined to provide specific details regarding the incident while emphasizing that fraudulent activity is taken seriously."
+  ],
+  "aiContextParagraph": "The beverage container return scheme in Singapore has faced public scrutiny after video footage emerged online depicting an individual repeatedly scanning the same container at a Return Right machine. The scheme, managed by BCRS Ltd, provides incentives for the return of empty beverage containers to encourage recycling. Following the circulation of the video, BCRS Ltd issued a statement confirming that it monitors for misuse to ensure the system operates reliably. The operator noted that it views reports of potential fraud with seriousness, aiming to maintain a fair environment for all participants. However, the organization stated it is unable to offer further details or commentary on the specific incident shown in the footage. The incident has drawn significant public attention as users seek clarity on the security measures and operational policies governing these automated recycling collection systems within the national initiative.",
+  "whyItIsViral": "The story gained traction due to high public interest in the integrity of the recycling program, evidenced by a search signal of 76/100.",
+  "viralScore": 61,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 43,
+    "publicSearchSignalScore": 76,
+    "confidenceLabel": "Emerging Coverage"
+  },
   "firstDetectedAt": "2026-11-13T02:30:16Z",
-  "lastUpdatedBatchAt": "2026-11-13T08:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-13T11:18:00Z",
   "sources": [
     {
       "publisherName": "The Straits Times",
@@ -15,34 +35,30 @@
       "articleTitle": "BCRS operator says fraud taken seriously, after viral video of man repeatedly scanning same container",
       "articleUrl": "https://www.straitstimes.com/singapore/bcrs-operator-says-fraud-taken-seriously-after-viral-video-of-man-repeatedly-scanning-same-container",
       "publishedAt": "2026-11-13T02:30:16Z"
+    },
+    {
+      "publisherName": "The Straits Times",
+      "publisherDomain": "straitstimes.com",
+      "articleTitle": "BCRS operator says fraud taken seriously, after viral video of man repeatedly scanning same container",
+      "articleUrl": "https://www.straitstimes.com/singapore/environment/bcrs-operator-says-fraud-taken-seriously-after-viral-video-of-man-repeatedly-scanning-same-container",
+      "publishedAt": "2026-11-13T02:30:16Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Fraudulent claims taken seriously after video shows alleged misuse of Return Right machine: BCRS operator",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/fraud-claims-after-video-man-allegedly-misuse-bcrs-machine-6549181",
+      "publishedAt": "2026-11-13T10:55:00Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "singapore-bars-alice-huang-megaspeed-probe",
-    "singapore-woman-sentenced-child-abuse-case",
-    "singapore-systems-impacted-by-microsoft-outage"
-  ],
-  "relatedInCategorySlugs": [
-    "argentina-secures-pope-leo-xiv-visit",
-    "australian-teen-rescued-from-bush",
-    "spain-general-strike-over-housing-crisis"
-  ],
-  "headline": "Operator Addresses Fraud Concerns Following Beverage Container Scam",
-  "seoTitle": "Operator Addresses Beverage Container Scam",
-  "metaDescription": "A recycling operator is addressing claims of fraud after a viral video emerged showing a person repeatedly scanning a single container in Singapore.",
-  "aiSummaryBullets": [
-    "A video showing a man repeatedly scanning the same beverage container at a reverse vending machine has circulated online.",
-    "The operator of the beverage container return system stated that it takes reports of potential fraud seriously.",
-    "The recycling system operator declined to provide additional details regarding the specific incident."
-  ],
-  "aiContextParagraph": "The Beverage Container Return Scheme (BCRS) in Singapore has come under scrutiny after a social media video appeared to show an individual exploiting the system. In the footage, a person is seen repeatedly using the same container to receive credit from an automated reverse vending machine. The operator responsible for managing these machines responded to the incident by emphasizing that allegations of fraudulent behavior are taken seriously. While the company acknowledged the situation, it stated that it could not comment on the specific details or outcomes of this case. The event has gained public interest, reflected in a notable increase in search activity related to reverse vending machine operations and the integrity of the deposit refund process. Such systems are designed to encourage recycling by providing monetary incentives, and this incident highlights potential vulnerabilities in automated collection protocols within the retail and waste management infrastructure.",
-  "whyItIsViral": "The story gained traction due to a high volume of public search queries following the circulation of a viral video showing suspected system abuse.",
-  "categorySlug": "social-issues",
-  "categoryName": "Social Issues",
   "entityTags": [
     {
-      "name": "Beverage Container Return Scheme",
-      "slug": "beverage-container-return-scheme"
+      "name": "BCRS Ltd",
+      "slug": "bcrs-ltd"
+    },
+    {
+      "name": "Return Right",
+      "slug": "return-right"
     },
     {
       "name": "Singapore",
@@ -53,12 +69,14 @@
       "slug": "recycling"
     }
   ],
-  "viralScore": 35,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 14,
-    "publicSearchSignalScore": 72,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "singapore-systems-impacted-by-microsoft-outage",
+    "singapore-bars-alice-huang-megaspeed-probe",
+    "singapore-market-expansion-and-data-risks"
+  ],
+  "relatedInCategorySlugs": [
+    "argentina-secures-pope-leo-xiv-visit",
+    "australian-teen-rescued-from-bush",
+    "spain-general-strike-over-housing-crisis"
+  ]
 }
