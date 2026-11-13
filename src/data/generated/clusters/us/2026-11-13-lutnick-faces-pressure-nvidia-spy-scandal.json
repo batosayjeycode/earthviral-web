@@ -6,15 +6,49 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "US Treasury Department Criticizes Commerce Agency Over Nvidia Exports",
+  "seoTitle": "Treasury Criticizes Commerce Over Nvidia Export Issues",
+  "metaDescription": "Treasury Secretary Scott Bessent has criticized the Commerce Department and Secretary Lutnick regarding alleged oversight in Nvidia's chip exports.",
+  "aiSummaryBullets": [
+    "Treasury Secretary Scott Bessent has publicly questioned the Commerce Department's handling of chip export regulations.",
+    "Allegations of significant leakage in technology exports have prompted scrutiny of Secretary Howard Lutnick's agency.",
+    "Concerns regarding the oversight of Nvidia's international trade activities continue to drive discussions among US officials."
+  ],
+  "aiContextParagraph": "The United States Treasury Department has leveled criticism at the Department of Commerce, specifically targeting Secretary Howard Lutnick, regarding the management of technology export controls. Treasury Secretary Scott Bessent expressed concern over significant leakage in the export of advanced semiconductor chips, specifically citing Nvidia. These remarks highlight growing inter-agency friction regarding the enforcement of trade policies intended to restrict sensitive technology flows. The situation has raised questions about future regulatory actions and the potential impact on major tech firms operating under these export guidelines. As the situation evolves, observers are monitoring how both agencies will coordinate their responses to these alleged oversight failures. This development occurs concurrently with broader concerns about national security, energy market stability during geopolitical tensions, and ongoing economic forecasts regarding interest rates and national financial health.",
+  "whyItIsViral": "The story has gained traction across three major international news outlets due to the high-profile nature of the government officials involved and the implications for major technology corporations.",
+  "viralScore": 61,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 50,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-13T13:36:19Z",
-  "lastUpdatedBatchAt": "2026-11-13T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-13T23:18:00Z",
   "sources": [
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "US treasury secy flags 'lots of leakage' in US chip exports, slams Nvidia & Lutnick",
+      "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms",
+      "publishedAt": "2026-11-13T13:27:53Z"
+    },
     {
       "publisherName": "Al Jazeera",
       "publisherDomain": "aljazeera.com",
       "articleTitle": "Nvidia scandal: What’s next for the US tech company?",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
       "publishedAt": "2026-11-13T13:36:19Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "US Treasury warns against rate hikes during US-Iran war energy ‘shock’",
+      "articleUrl": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock?traffic_source=rss",
+      "publishedAt": "2026-11-13T16:22:33Z"
     },
     {
       "publisherName": "Al Jazeera",
@@ -31,29 +65,11 @@
       "publishedAt": "2026-11-13T19:51:28Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "nvidia-board-considers-ousting-ceo-huang",
-    "armed-suspect-arrested-near-white-house",
-    "thomas-massie-files-hegseth-impeachment"
-  ],
-  "relatedInCategorySlugs": [
-    "farage-says-he-is-worried-trump-will-step-up",
-    "cop31-climate-summit-begins-turkey",
-    "vice-president-gibran-meets-president-prabowo"
-  ],
-  "headline": "Commerce Secretary Lutnick Faces Pressure Over Nvidia Spy Scandal",
-  "seoTitle": "Lutnick Faces Pressure Over Nvidia Scandal",
-  "metaDescription": "US Commerce Secretary Howard Lutnick faces scrutiny following allegations of espionage involving Nvidia, prompting calls for executive accountability.",
-  "aiSummaryBullets": [
-    "Commerce Secretary Howard Lutnick is under scrutiny for his alleged inaction regarding security concerns involving Nvidia.",
-    "The chief executive of Nvidia has resigned from his position and is scheduled to provide testimony before the United States Congress.",
-    "Officials within the administration have publicly questioned the awareness and response of the Department of Commerce to these events."
-  ],
-  "aiContextParagraph": "The United States technology sector is currently facing significant scrutiny following allegations involving Nvidia and an alleged Chinese spy. Within the federal government, Department of Commerce Secretary Howard Lutnick is encountering mounting pressure and criticism from other officials, including the Treasury chief, regarding his department's response to the situation. Critics have raised concerns over the extent of knowledge held by senior members of the administration concerning the ties between the alleged spy and Nvidia's leadership. Amid these developments, the company's chief executive officer has resigned and is preparing to address Congress to discuss the implications of the scandal. Observers note that the potential fallout from this controversy is expected to impact the broader Silicon Valley landscape, as federal authorities weigh the appropriate course of action for one of the world's most valuable technology firms.",
-  "whyItIsViral": "The story has gained traction due to reports from multiple independent outlets and growing political scrutiny within the current administration.",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
   "entityTags": [
+    {
+      "name": "Scott Bessent",
+      "slug": "scott-bessent"
+    },
     {
       "name": "Howard Lutnick",
       "slug": "howard-lutnick"
@@ -63,20 +79,18 @@
       "slug": "nvidia"
     },
     {
-      "name": "United States Department of Commerce",
-      "slug": "united-states-department-of-commerce"
-    },
-    {
-      "name": "United States Congress",
-      "slug": "united-states-congress"
+      "name": "US Treasury",
+      "slug": "us-treasury"
     }
   ],
-  "viralScore": 56,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 56,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "nvidia-board-considers-ousting-ceo-huang",
+    "armed-suspect-arrested-near-white-house",
+    "us-nationwide-flight-ground-stop"
+  ],
+  "relatedInCategorySlugs": [
+    "treasury-secretary-bessent-iran-security-threats",
+    "farage-says-he-is-worried-trump-will-step-up",
+    "vice-president-gibran-meets-president-prabowo"
+  ]
 }

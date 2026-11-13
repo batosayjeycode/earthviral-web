@@ -3,17 +3,34 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 55,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-13T20:18:00Z",
+  "viralScore": 68,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-13T23:18:00Z",
   "clusters": [
+    {
+      "slug": "cruise-ship-odyssey-detained-singapore",
+      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
+      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
+        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
+      }
+    },
     {
       "slug": "nvidia-ceo-jensen-huang-resigns-2",
       "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
       "headline": "Nvidia Leadership Changes Following Resignation Of Jensen Huang",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 52,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang has stepped down as CEO of Nvidia amid reports of relationships with company employees.",
@@ -30,7 +47,7 @@
       "headline": "Singapore Bars Alice Huang Over Deceptive Information In Probe",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore authorities have issued an entry ban against Chinese entrepreneur Alice Huang.",
@@ -42,46 +59,12 @@
       }
     },
     {
-      "slug": "singapore-systems-impacted-by-microsoft-outage",
-      "canonicalPath": "/news/sg/singapore-systems-impacted-by-microsoft-outage/",
-      "headline": "Singapore Government Systems Impacted By Recent Microsoft Outage",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Government Technology Agency of Singapore confirmed that certain government systems are experiencing disruptions.",
-        "Officials stated that the Singpass digital identity platform remains unaffected by the technical issue."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/microsoft-outage-govtech-6548566"
-      }
-    },
-    {
-      "slug": "recycling-operator-addresses-container-fraud-claims",
-      "canonicalPath": "/news/sg/recycling-operator-addresses-container-fraud-claims/",
-      "headline": "Operator Addresses Fraud Concerns Over Return Container Scheme Use",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "BCRS Ltd stated that maintaining the integrity and fairness of the container return scheme is a primary operational objective.",
-        "The operator responded to public attention following a video showing a person repeatedly scanning a single container at a machine."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/bcrs-operator-says-fraud-taken-seriously-after-viral-video-of-man-repeatedly-scanning-same-container"
-      }
-    },
-    {
       "slug": "singapore-loses-friendly-match-to-paraguay",
       "canonicalPath": "/news/sg/singapore-loses-friendly-match-to-paraguay/",
       "headline": "Singapore Men's Football Team Defeated By Paraguay In Tournament",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 35,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore lost 4-1 to Paraguay in the opening match of a friendly football tournament.",
@@ -93,12 +76,63 @@
       }
     },
     {
+      "slug": "singapore-systems-impacted-by-microsoft-outage",
+      "canonicalPath": "/news/sg/singapore-systems-impacted-by-microsoft-outage/",
+      "headline": "Singapore Government Systems Impacted By Recent Microsoft Outage",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Government Technology Agency of Singapore confirmed that certain government systems are experiencing disruptions.",
+        "Officials stated that the Singpass digital identity platform remains unaffected by the technical issue."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/singapore/microsoft-outage-govtech-6548566"
+      }
+    },
+    {
+      "slug": "germany-serbia-football-match-result",
+      "canonicalPath": "/news/sg/germany-serbia-football-match-result/",
+      "headline": "Germany Secures Victory Over Serbia In Recent International Match",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Germany won their match against Serbia.",
+        "The Netherlands achieved a 7-0 victory over Greece in a separate fixture."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/reijnders-hat-trick-fires-dutch-7-0-rout-greece-germany-beat-serbia-6550706"
+      }
+    },
+    {
+      "slug": "recycling-operator-addresses-container-fraud-claims",
+      "canonicalPath": "/news/sg/recycling-operator-addresses-container-fraud-claims/",
+      "headline": "Operator Addresses Fraud Concerns Over Return Container Scheme Use",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 34,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "BCRS Ltd stated that maintaining the integrity and fairness of the container return scheme is a primary operational objective.",
+        "The operator responded to public attention following a video showing a person repeatedly scanning a single container at a machine."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/bcrs-operator-says-fraud-taken-seriously-after-viral-video-of-man-repeatedly-scanning-same-container"
+      }
+    },
+    {
       "slug": "singapore-market-expansion-and-data-risks",
       "canonicalPath": "/news/sg/singapore-market-expansion-and-data-risks/",
       "headline": "Singapore Businesses Explore China Markets And Data Security Risks",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore-based companies are increasingly entering the Chinese market by offering immersive dining and interactive exhibit services.",
@@ -141,40 +175,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/cyclist-dies-after-accident-in-katong-tipper-truck-driver-arrested"
-      }
-    },
-    {
-      "slug": "microsoft-outlook-outage-cloud-risks",
-      "canonicalPath": "/news/sg/microsoft-outlook-outage-cloud-risks/",
-      "headline": "Microsoft Outlook Outage Sparks Discussion On Cloud Dependence",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 22,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Microsoft Outlook experienced a service outage that prompted public interest in current platform reliability.",
-        "Experts have noted that contemporary society relies heavily on a concentrated number of primary cloud technology providers."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/microsoft-outlook-outage-risks-limitations-gaps-6549346"
-      }
-    },
-    {
-      "slug": "cruise-ship-odyssey-detained-singapore",
-      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
-      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
-        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
       }
     }
   ]

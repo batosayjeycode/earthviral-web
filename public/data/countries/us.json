@@ -3,17 +3,68 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 87,
+  "viralScore": 98,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-13T20:18:00Z",
+  "generatedAt": "2026-11-13T23:18:00Z",
   "clusters": [
+    {
+      "slug": "faa-issues-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+      "headline": "Federal Aviation Administration Issues Nationwide Flight Ground Stop",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 95,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "The Federal Aviation Administration ordered a total ground stop for all departing flights across the United States on Friday.",
+        "Officials identified a widespread telecommunications outage as the cause of the operational disruption, impacting over 11,000 flights."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports"
+      }
+    },
+    {
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "US Aviation Authorities Issue Nationwide Ground Stop For Flights",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 92,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "A nationwide ground stop has been issued for all flights departing from airports across the United States.",
+        "Regulators cite a communications disruption affecting air traffic control systems as the primary cause for the suspension."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+      }
+    },
+    {
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "Rescue Operations Underway After Tanker Hits Cruise Ship In Louisiana",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 84,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A tanker vessel collided with a passenger cruise ship docked on the Mississippi River near the Port of New Orleans on Friday.",
+        "The cruise ship, identified as the American Heritage, sustained damage and has become partially submerged following the impact."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
     {
       "slug": "nvidia-board-considers-ousting-ceo-huang",
       "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
       "headline": "US Senate Orders Testimony From Jensen Huang And Howard Lutnick",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 84,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang has resigned from his position as CEO of Nvidia amid ongoing scrutiny regarding personal associations and corporate leadership.",
@@ -30,7 +81,7 @@
       "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 79,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
@@ -42,29 +93,12 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
-        "The party secured significant electoral victories, including flipping over 40 House seats and retaining the governorship in Kansas."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/trump-60-minutes-sunday-midterms/"
-      }
-    },
-    {
       "slug": "police-respond-to-washington-dc-shooting",
       "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
       "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
@@ -81,7 +115,7 @@
       "headline": "White House Faces Administrative Shifts And Political Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
@@ -93,13 +127,47 @@
       }
     },
     {
+      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
+      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
+      "headline": "US Treasury Department Criticizes Commerce Agency Over Nvidia Exports",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Treasury Secretary Scott Bessent has publicly questioned the Commerce Department's handling of chip export regulations.",
+        "Allegations of significant leakage in technology exports have prompted scrutiny of Secretary Howard Lutnick's agency."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
+        "The party secured significant electoral victories, including flipping over 40 House seats and retaining the governorship in Kansas."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/trump-60-minutes-sunday-midterms/"
+      }
+    },
+    {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "Defense Secretary Pete Hegseth Awards Medal To Soldier At Arlington",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Secretary of Defense Pete Hegseth honored a soldier with a medal at Arlington National Cemetery.",
         "The recipient had previously reprimanded Hegseth and his party for excessive noise near the Tomb of the Unknown Soldier."
@@ -107,74 +175,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/world/us-house-representatives-block-path-impeach-defense-secretary-pete-hegseth-6540901"
-      }
-    },
-    {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "Emergency Response Underway Following Mississippi River Ship Collision",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A tanker ship struck the American Heritage cruise vessel on the Mississippi River in New Orleans.",
-        "Emergency crews are conducting rescue operations as the cruise ship has reportedly taken on water and appears to be listing."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
-      }
-    },
-    {
-      "slug": "scott-colom-wins-mississippi-senate-race",
-      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
-      "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
-        "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
-      }
-    },
-    {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "Commerce Secretary Lutnick Faces Pressure Over Nvidia Spy Scandal",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Commerce Secretary Howard Lutnick is under scrutiny for his alleged inaction regarding security concerns involving Nvidia.",
-        "The chief executive of Nvidia has resigned from his position and is scheduled to provide testimony before the United States Congress."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "brooklyn-building-collapse-rescue-efforts",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
-      "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
-        "Official reports confirm at least eight fatalities, including six adults and two children, with seventeen individuals reported injured."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
       }
     }
   ]
