@@ -8,26 +8,26 @@
   "region": "Oceania",
   "categorySlug": "technology-ai",
   "categoryName": "Technology & AI",
-  "headline": "Australian Organisations Affected By Widespread Microsoft Outage",
-  "seoTitle": "Australian Microsoft Services Experience Major Outage",
-  "metaDescription": "Major disruptions to Microsoft platforms are impacting businesses and government agencies in Australia, with cyber security authorities investigating.",
+  "headline": "Australian Government Services Face Disruptions During Microsoft Outage",
+  "seoTitle": "Australia Faces Major Microsoft Service Disruption",
+  "metaDescription": "Critical infrastructure including courts, schools, and government agencies face operational delays following a widespread global Microsoft platform outage.",
   "aiSummaryBullets": [
-    "Microsoft users across Australia are experiencing significant service disruptions.",
-    "The outage has impacted functionality for various businesses, government agencies, and email platforms.",
-    "Cyber security officials have initiated an investigation while the company works to resolve the technical issues."
+    "Government agencies, schools, and legal institutions in Australia are experiencing significant service disruptions due to an ongoing Microsoft outage.",
+    "The technical issues are affecting primary communication tools, specifically impacting Microsoft Outlook and Microsoft Teams connectivity.",
+    "Federal authorities, including the Home Affairs Minister, report that Microsoft has indicated the incident is not the result of a cyber attack."
   ],
-  "aiContextParagraph": "A widespread service disruption affecting Microsoft platforms is currently impacting users across Australia. Reports indicate that businesses and government entities are facing significant difficulties accessing essential digital tools, including email systems like Outlook. The scale of the service failure has prompted an official response from Australia's cyber security leadership, who have begun an investigation into the cause of the system collapse. Microsoft has stated they are aggressively pursuing a solution to restore connectivity and functionality for all affected clients. As the situation remains ongoing, organizations are waiting for services to return to normal operations. Public interest in the incident is marked by increased search activity regarding the status of these updates, as users and entities attempt to mitigate the effects of the software outage on their daily workflows and administrative capacities.",
-  "whyItIsViral": "The story has gained significant attention due to widespread service disruptions impacting national infrastructure and high public search interest regarding the outage status.",
-  "viralScore": 32,
-  "intensityTier": "active",
+  "aiContextParagraph": "Major digital service interruptions have impacted significant portions of Australian infrastructure, forcing government departments and public services to revert to manual business processes. The technical failure involves core Microsoft platforms, hindering standard operations such as email correspondence and virtual meeting capabilities. High-level security officials, including the national cyber security chief, have initiated assessments of the situation to determine the scope of the impact within the country. While the disruption is widespread, the Home Affairs Minister, Tony Burke, stated that Microsoft has provided assurances that the root cause is not attributed to a malicious cyber security event. The company is reportedly working to resolve the connectivity issues, though internal updates have noted that recovery efforts have not proceeded at the expected speed. Public entities, including educational and judicial bodies, remain under operational strain as stakeholders manage the transition to offline alternatives.",
+  "whyItIsViral": "The story has gained significant coverage across major media outlets as the disruption impacts critical government and educational functions on a national scale.",
+  "viralScore": 64,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 30,
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 58,
     "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
+    "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-12T20:31:31Z",
-  "lastUpdatedBatchAt": "2026-11-12T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-13T05:18:00Z",
   "sources": [
     {
       "publisherName": "ABC",
@@ -42,6 +42,20 @@
       "articleTitle": "Australia's cyber security chief looking into Microsoft outage",
       "articleUrl": "https://www.abc.net.au/news/2026-11-13/microsoft-outage-teams-outlook-copilot/107381196",
       "publishedAt": "2026-11-12T22:25:47Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Australia's spy agency, federal police hit by Microsoft outage",
+      "articleUrl": "https://www.channelnewsasia.com/world/australia-spy-agency-federal-police-microsoft-outage-6548446",
+      "publishedAt": "2026-11-13T03:08:00Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
+      "articleUrl": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
+      "publishedAt": "2026-11-13T04:40:14Z"
     }
   ],
   "entityTags": [
@@ -50,22 +64,26 @@
       "slug": "microsoft"
     },
     {
+      "name": "Tony Burke",
+      "slug": "tony-burke"
+    },
+    {
       "name": "Cyber Security",
       "slug": "cyber-security"
     },
     {
-      "name": "Outlook",
-      "slug": "outlook"
+      "name": "Australian Government",
+      "slug": "australian-government"
     }
   ],
   "relatedInCountrySlugs": [
     "australian-teen-rescued-from-bush",
-    "australia-to-adopt-mandatory-ai-safeguards",
-    "usman-khawaja-claims-ball-tampering-knowledge"
+    "usman-khawaja-claims-ball-tampering-knowledge",
+    "australia-to-adopt-mandatory-ai-safeguards"
   ],
   "relatedInCategorySlugs": [
-    "microsoft-outlook-email-service-outage",
+    "singapore-systems-impacted-by-microsoft-outage",
     "nvidia-investigates-ceo-espionage-allegations",
-    "isro-tests-modified-pslv-stage"
+    "dementia-singapore-app-data-breach"
   ]
 }
