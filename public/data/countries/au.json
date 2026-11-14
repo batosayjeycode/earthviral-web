@@ -3,9 +3,9 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 64,
+  "viralScore": 61,
   "intensityTier": "high",
-  "generatedAt": "2026-11-14T11:18:00Z",
+  "generatedAt": "2026-11-14T14:18:00Z",
   "clusters": [
     {
       "slug": "australian-teen-rescued-from-bush",
@@ -13,8 +13,8 @@
       "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A 17-year-old boy was located alive by search crews after being missing for six days.",
         "The teenager was discovered during an aerial operation following a fall near a riverbed."
@@ -30,7 +30,7 @@
       "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 59,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pat Cummins characterized Usman Khawaja's recent claims about the 2018 ball-tampering scandal as complete and utter nonsense.",
@@ -42,12 +42,29 @@
       }
     },
     {
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Jillaroos And Kiwis Advance To Rugby League World Cup Grand Finals",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Jillaroos qualified for the Rugby League World Cup final after defeating Fiji at Sydney Football Stadium.",
+        "Fiji put up a competitive challenge against the Jillaroos during their tournament debut performance."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+      }
+    },
+    {
       "slug": "australian-organisations-affected-by-microsoft-outage",
       "canonicalPath": "/news/au/australian-organisations-affected-by-microsoft-outage/",
       "headline": "Australian Government Services Face Disruptions During Microsoft Outage",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Government agencies, schools, and legal institutions in Australia are experiencing significant service disruptions due to an ongoing Microsoft outage.",
@@ -76,40 +93,6 @@
       }
     },
     {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Jillaroos And Kiwis Advance To Rugby League World Cup Grand Finals",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Jillaroos qualified for the Rugby League World Cup final after defeating Fiji at Sydney Football Stadium.",
-        "Fiji put up a competitive challenge against the Jillaroos during their tournament debut performance."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
-      }
-    },
-    {
-      "slug": "sydney-homicide-investigation-human-remains",
-      "canonicalPath": "/news/au/sydney-homicide-investigation-human-remains/",
-      "headline": "Homicide Investigation Initiated After Remains Found In Sydney",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "New South Wales authorities have opened a homicide inquiry following a discovery in Sydney's Lane Cove North bushland.",
-        "The remains were found inside a sofa that had been discarded in the area on Wednesday afternoon."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-12/human-remains-torso-found-in-sofa-in-sydney-bushland-lane-cove/107376074"
-      }
-    },
-    {
       "slug": "australia-ends-indonesia-wildfire-mission",
       "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
       "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
@@ -132,7 +115,7 @@
       "headline": "Camping, sightseeing booking portal disabled while data breach investigated",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 23,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "ABC reports: Camping, sightseeing booking portal disabled while data breach investigated"
@@ -174,6 +157,23 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384"
+      }
+    },
+    {
+      "slug": "sydney-homicide-investigation-human-remains",
+      "canonicalPath": "/news/au/sydney-homicide-investigation-human-remains/",
+      "headline": "Homicide Investigation Initiated After Remains Found In Sydney",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "New South Wales authorities have opened a homicide inquiry following a discovery in Sydney's Lane Cove North bushland.",
+        "The remains were found inside a sofa that had been discarded in the area on Wednesday afternoon."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-12/human-remains-torso-found-in-sofa-in-sydney-bushland-lane-cove/107376074"
       }
     }
   ]

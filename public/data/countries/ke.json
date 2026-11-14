@@ -3,18 +3,35 @@
   "name": "Kenya",
   "slug": "kenya",
   "region": "Africa",
-  "viralScore": 67,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-14T11:18:00Z",
+  "generatedAt": "2026-11-14T14:18:00Z",
   "clusters": [
+    {
+      "slug": "ruto-nominates-data-commissioner-and-ceos",
+      "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
+      "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President William Ruto has nominated Lydia Sitienei Chelagat to serve as the new Data Commissioner.",
+        "The nomination has been submitted to the Kenyan Parliament for formal review and consideration."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/president-ruto-appoints-five-ceos-to-state-corporations-nominates-data-commissioner/"
+      }
+    },
     {
       "slug": "kenyan-cult-leader-receives-prison-sentence",
       "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
       "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 54,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Paul Mackenzie was sentenced to 200 years in prison for his role in the deaths of 191 individuals.",
         "The judicial decision follows a conviction on 191 counts of murder issued by the court on October 19, 2026."
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "Capital FM",
         "articleUrl": "https://capitalfm.africa/paul-mackenzie-sentenced-to-200-years-in-prison-over-shakahola-deaths/"
-      }
-    },
-    {
-      "slug": "nairobi-riverside-construction-wall-collapse",
-      "canonicalPath": "/news/ke/nairobi-riverside-construction-wall-collapse/",
-      "headline": "Three Dead And Eleven Injured In Nairobi Riverside Wall Collapse",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A wall at a construction site in Nairobi's Riverside district collapsed during excavation work.",
-        "Emergency response teams and the Kenya Red Cross confirmed three fatalities and eleven injuries."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/wall-collapses-on-workers-at-nairobis-riverside-excavation-site/"
       }
     },
     {
@@ -64,7 +64,7 @@
       "headline": "Lawyer Abshir Abdi Testifies Following Abduction And Rescue",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 52,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawyer Abshir Abdi appeared at the Milimani Law Courts to recount his experience following his recent abduction.",
@@ -76,12 +76,46 @@
       }
     },
     {
+      "slug": "nairobi-riverside-construction-wall-collapse",
+      "canonicalPath": "/news/ke/nairobi-riverside-construction-wall-collapse/",
+      "headline": "Three Dead And Eleven Injured In Nairobi Riverside Wall Collapse",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A wall at a construction site in Nairobi's Riverside district collapsed during excavation work.",
+        "Emergency response teams and the Kenya Red Cross confirmed three fatalities and eleven injuries."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/wall-collapses-on-workers-at-nairobis-riverside-excavation-site/"
+      }
+    },
+    {
+      "slug": "bishop-obanyi-appointed-eldoret-archbishop",
+      "canonicalPath": "/news/ke/bishop-obanyi-appointed-eldoret-archbishop/",
+      "headline": "Pope Francis Names Bishop Obanyi As Archbishop Of Eldoret Province",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Pope Francis has formally elevated the Diocese of Eldoret to the status of a Metropolitan Archdiocese.",
+        "Bishop Obanyi has been named as the inaugural Metropolitan Archbishop to lead the newly created ecclesiastical province."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/eldoret-elevated-to-metropolitan-archdiocese-as-pope-appoints-obanyi-first-archbishop/"
+      }
+    },
+    {
       "slug": "ruto-brands-gachagua-chief-extortionist",
       "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
       "headline": "President Ruto Criticizes Gachagua Regarding Young Political Leaders",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President William Ruto publicly urged former Deputy President Rigathi Gachagua to cease interfering with the careers of young politicians.",
@@ -90,40 +124,6 @@
       "primarySource": {
         "publisherName": "Capital FM",
         "articleUrl": "https://capitalfm.africa/ruto-calls-gachagua-chief-extortionist-in-fresh-attack/"
-      }
-    },
-    {
-      "slug": "leaders-plan-historic-china-summit",
-      "canonicalPath": "/news/ke/leaders-plan-historic-china-summit/",
-      "headline": "US, Russia, and China Leaders to Hold Joint Talks at APEC Summit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump is traveling to Shenzhen, China, to attend the 21-member APEC summit.",
-        "The White House confirmed plans for a meeting between the leaders of the US, Russia, and China."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/trump-putin-and-xi-plan-historic-joint-meeting-in-china-next-week-white-house-says/"
-      }
-    },
-    {
-      "slug": "ruto-nominates-data-commissioner-and-ceos",
-      "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
-      "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President William Ruto has nominated Lydia Sitienei Chelagat to serve as the new Data Commissioner.",
-        "The nomination has been submitted to the Kenyan Parliament for formal review and consideration."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/president-ruto-appoints-five-ceos-to-state-corporations-nominates-data-commissioner/"
       }
     },
     {
@@ -144,37 +144,37 @@
       }
     },
     {
-      "slug": "ruto-begins-four-day-gusii-development-tour",
-      "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
-      "headline": "President Ruto Concludes Gusii Tour Amidst Heated Political Debate",
+      "slug": "leaders-plan-historic-china-summit",
+      "canonicalPath": "/news/ke/leaders-plan-historic-china-summit/",
+      "headline": "US, Russia, and China Leaders to Hold Joint Talks at APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President William Ruto concluded a four-day development tour of the Gusii region.",
-        "The President criticized former President Uhuru Kenyatta, describing him as a political broker for the opposition."
+        "President Donald Trump is traveling to Shenzhen, China, to attend the 21-member APEC summit.",
+        "The White House confirmed plans for a meeting between the leaders of the US, Russia, and China."
       ],
       "primarySource": {
         "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/president-ruto-begins-four-day-development-tour-in-gusii-region/"
+        "articleUrl": "https://www.kbc.co.ke/trump-putin-and-xi-plan-historic-joint-meeting-in-china-next-week-white-house-says/"
       }
     },
     {
-      "slug": "kenya-backs-african-union-funding-plan",
-      "canonicalPath": "/news/ke/kenya-backs-african-union-funding-plan/",
-      "headline": "Kenyan Officials Support New African Union Financial Framework",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
+      "slug": "kenya-fuel-prices-remain-unchanged",
+      "canonicalPath": "/news/ke/kenya-fuel-prices-remain-unchanged/",
+      "headline": "Energy Regulator Maintains Current Fuel Prices In Kenya Monthly Review",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Prime Cabinet Secretary Musalia Mudavadi and Treasury CS John Mbadi advocate for AU financial independence.",
-        "A proposed financing framework includes a 0.2 percent levy on eligible imports."
+        "The Energy and Petroleum Regulatory Authority announced that fuel prices will stay at current levels in Nairobi.",
+        "Petrol will continue to retail at Sh226.96 per litre for motorists."
       ],
       "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/mudavadi-mbadi-back-increased-african-funding-to-reduce-aus-reliance-on-donors/"
+        "publisherName": "The Standard",
+        "articleUrl": "https://www.standardmedia.co.ke/article/2001562270/no-relief-for-motorists-as-fuel-prices-remain-unchanged"
       }
     }
   ]
