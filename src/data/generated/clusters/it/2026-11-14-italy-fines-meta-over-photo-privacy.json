@@ -6,8 +6,28 @@
   "countryName": "Italy",
   "countrySlug": "italy",
   "region": "Europe",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "Italian Authorities Impose Massive Fine On Meta Over Photo Access",
+  "seoTitle": "Italy Fines Meta €805 Million Over Photo Privacy",
+  "metaDescription": "Italian data regulators have issued an €805 million penalty to Meta, citing unauthorized access to Android users' photos and multimedia content.",
+  "aiSummaryBullets": [
+    "Italian authorities issued an €805 million penalty against Meta regarding data privacy.",
+    "Regulators stated the company accessed Android users' photos without obtaining specific consent.",
+    "Meta has not yet provided a response to the allegations or the fine imposed by the national data protection authority."
+  ],
+  "aiContextParagraph": "The Italian data protection authority has levied a significant financial penalty against Meta, totaling approximately €805 million. The regulatory action centers on allegations that the company improperly accessed multimedia content, specifically photographs, belonging to users of the Facebook application on Android mobile devices. According to the findings released by Italian officials, this access occurred without the users providing specific consent as required under privacy regulations. While multiple international news outlets have confirmed the enforcement action, Meta has yet to issue an official statement addressing the specific claims or the substantial monetary fine imposed by the Italian government. The move marks a notable development in ongoing European efforts to enforce strict data privacy standards against large technology corporations operating within the region, focusing on how personal multimedia data is collected and managed by social media platforms on mobile operating systems.",
+  "whyItIsViral": "The story is trending due to high-velocity coverage across six international outlets, reflecting significant interest in European data privacy enforcement.",
+  "viralScore": 83,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 6,
+    "coverageVelocityScore": 73,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-14T13:07:30Z",
-  "lastUpdatedBatchAt": "2026-11-14T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-14T20:18:00Z",
   "sources": [
     {
       "publisherName": "CNA",
@@ -36,30 +56,22 @@
       "articleTitle": "Italy fines Meta €805m over accessing users' photos",
       "articleUrl": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o",
       "publishedAt": "2026-11-14T16:29:48Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Italy fines Meta $880 million over accessing users' photos",
+      "articleUrl": "https://www.cbsnews.com/news/italy-fines-meta-880-million-users-photos/",
+      "publishedAt": "2026-11-14T18:33:08Z"
+    },
+    {
+      "publisherName": "Deutsche Welle",
+      "publisherDomain": "dw.com",
+      "articleTitle": "Italy slaps Meta with €805mn fine over access to Android photos",
+      "articleUrl": "https://www.dw.com/en/italy-slaps-meta-with-%E2%82%AC805mn-fine-over-access-to-android-photos/a-79949032?maca=en-rss-en-all-1573-xml-mrss",
+      "publishedAt": "2026-11-14T18:41:00Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "italian-schools-evacuated-after-bomb-threats",
-    "mbappe-out-france-italy-match",
-    "italian-foreign-minister-personal-data-leak"
-  ],
-  "relatedInCategorySlugs": [
-    "meta-launches-muse-ai-in-mexico",
-    "singapore-firms-report-data-breaches",
-    "australian-organisations-affected-by-microsoft-outage"
-  ],
-  "headline": "Italian Authorities Impose Significant Penalty On Meta Over Privacy",
-  "seoTitle": "Italy Fines Meta For Photo Data Access",
-  "metaDescription": "Italian data regulators have issued a massive fine against Meta following allegations that the company improperly accessed user photo data without consent.",
-  "aiSummaryBullets": [
-    "Italian data protection regulators fined Meta over 800 million euros regarding user data access.",
-    "The enforcement action focuses on the unauthorized collection of photos from approximately 20 million users.",
-    "Regulators cited a lack of transparency and insufficient cooperation from the technology company as key factors in the penalty."
-  ],
-  "aiContextParagraph": "Italy's national data protection authority has issued a substantial financial penalty against Meta, the parent organization of Facebook. The regulatory body determined that the company improperly accessed personal photo data belonging to approximately 20 million users. According to the findings released by the authority, Meta failed to secure explicit consent from these individuals and neglected to provide adequate notification regarding the scope of data collection. Reports indicate that the final amount of the fine, cited as approximately 805 million euros or 880 million dollars by various news outlets, was significantly influenced by the scale of the affected user base. Additionally, officials identified a lack of cooperation from the corporation during the investigative process as a primary reason for the severity of the sanction. The incident highlights ongoing tensions regarding digital privacy protocols and the operational practices of large social media entities within the European market.",
-  "whyItIsViral": "The story has gained significant traction across multiple international news outlets, achieving a high viral activity score due to the substantial nature of the fine.",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
   "entityTags": [
     {
       "name": "Meta",
@@ -70,16 +82,22 @@
       "slug": "data-privacy"
     },
     {
-      "name": "Italy",
-      "slug": "italy"
+      "name": "Android",
+      "slug": "android"
+    },
+    {
+      "name": "European Regulation",
+      "slug": "european-regulation"
     }
   ],
-  "viralScore": 75,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 69,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "italian-authority-fines-meta-photos",
+    "italian-schools-evacuated-after-bomb-threats",
+    "mbappe-out-france-italy-match"
+  ],
+  "relatedInCategorySlugs": [
+    "meta-launches-muse-ai-in-mexico",
+    "singapore-firms-report-data-breaches",
+    "australian-organisations-affected-by-microsoft-outage"
+  ]
 }
