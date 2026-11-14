@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611141418",
-  "generatedAt": "2026-11-14T14:18:00Z",
-  "nextUpdateAt": "2026-11-14T17:17:00Z",
+  "batchId": "batch-202611141718",
+  "generatedAt": "2026-11-14T17:18:00Z",
+  "nextUpdateAt": "2026-11-14T20:17:00Z",
   "countries": [
     {
       "code": "US",
@@ -12,16 +12,16 @@
         -98.5,
         39.5
       ],
-      "viralScore": 96,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
         "slug": "faa-issues-nationwide-flight-ground-stop",
         "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-        "headline": "US Aviation Authorities Address System Failure Following Flight Halt",
+        "headline": "Aviation Authorities Address System Failure Following Flight Halt",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 93,
+        "viralScore": 98,
         "intensityTier": "surge"
       }
     },
@@ -34,16 +34,16 @@
         117,
         -2.5
       ],
-      "viralScore": 90,
+      "viralScore": 94,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
         "slug": "prabowo-attends-muhammadiyah-event-palu",
         "canonicalPath": "/news/id/prabowo-attends-muhammadiyah-event-palu/",
-        "headline": "President Prabowo Subianto Opens Muhammadiyah Anniversary In Palu",
+        "headline": "President Prabowo Subianto Opens Muhammadiyah 114th Anniversary",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 87,
+        "viralScore": 91,
         "intensityTier": "surge"
       }
     },
@@ -56,16 +56,16 @@
         122,
         12.5
       ],
-      "viralScore": 86,
+      "viralScore": 89,
       "intensityTier": "surge",
       "topicCount": 1,
       "topTopic": {
         "slug": "asean-leaders-discuss-regional-energy-security",
         "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
-        "headline": "Regional Leaders Arrive In Manila For The 49th ASEAN Summit Event",
+        "headline": "Regional Leaders Gather In Manila For The 49th ASEAN Summit Event",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 86,
+        "viralScore": 89,
         "intensityTier": "surge"
       }
     },
@@ -78,7 +78,7 @@
         31.2,
         49
       ],
-      "viralScore": 84,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
@@ -87,51 +87,29 @@
         "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 83,
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
     {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
       "centroid": [
-        104,
-        35
+        12.6,
+        42.8
       ],
-      "viralScore": 82,
+      "viralScore": 76,
       "intensityTier": "high",
-      "topicCount": 7,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "Leaders Of US, China, And Russia To Hold Trilateral Meeting In China",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "France Faces Fifth Consecutive Weekend Of Widespread Public Protests",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 77,
+        "slug": "italy-fines-meta-over-photo-privacy",
+        "canonicalPath": "/news/it/italy-fines-meta-over-photo-privacy/",
+        "headline": "Italian Authorities Impose Significant Penalty On Meta Over Privacy",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -144,7 +122,7 @@
         53.7,
         32.4
       ],
-      "viralScore": 75,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -153,29 +131,95 @@
         "headline": "Iran Reports Strike On US Radar Installation Located In Bahrain",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
+        "viralScore": 74,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 76,
+      "intensityTier": "high",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "trump-to-meet-xi-putin-apec",
+        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+        "headline": "Leaders Of US, China, And Russia To Hold Trilateral Meeting In China",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
       "centroid": [
-        8.1,
-        9.6
+        79,
+        22
       ],
-      "viralScore": 75,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "President Tinubu Prepares For 2027 Elections Amid Political Debates",
+        "slug": "bjp-criticizes-rahul-gandhi-recent-comments",
+        "canonicalPath": "/news/in/bjp-criticizes-rahul-gandhi-recent-comments/",
+        "headline": "Political Debate Escalates Over Rahul Gandhi Recent Public Remarks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 72,
+        "viralScore": 73,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "France Faces Fifth Consecutive Weekend Of Widespread Public Protests",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 72,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "ruto-brands-gachagua-chief-extortionist",
+        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
+        "headline": "President Ruto Criticizes Gachagua Regarding Young Political Leaders",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 69,
         "intensityTier": "high"
       }
     },
@@ -192,9 +236,9 @@
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
-        "slug": "david-walliams-faces-misconduct-allegations-2",
-        "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
-        "headline": "Metropolitan Police Launch Investigation Into Comedian David Walliams",
+        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+        "headline": "British Comedian Russell Brand Sentenced To Ten Years In Prison",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
         "viralScore": 66,
@@ -202,23 +246,23 @@
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
       "centroid": [
-        37.9,
-        0.2
+        134,
+        -25.5
       ],
       "viralScore": 65,
       "intensityTier": "high",
-      "topicCount": 10,
+      "topicCount": 7,
       "topTopic": {
-        "slug": "ruto-nominates-data-commissioner-and-ceos",
-        "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
-        "headline": "President Ruto Nominates New Data Commissioner And State CEOs",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+        "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
         "viralScore": 62,
         "intensityTier": "high"
       }
@@ -232,7 +276,7 @@
         35.2,
         39
       ],
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -241,30 +285,30 @@
         "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 63,
+        "viralScore": 60,
         "intensityTier": "high"
       }
     },
     {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
       "centroid": [
-        60,
-        58
+        8.1,
+        9.6
       ],
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
-      "topicCount": 6,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-        "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
-        "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "President Tinubu Prepares For 2027 Elections Amid Political Debates",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
@@ -276,7 +320,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -285,72 +329,50 @@
         "headline": "Gadi Eisenkot Proposes October 7 Inquiry Amid Government Formation",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "foreign-nationals-arrested-south-africa-airport",
-        "canonicalPath": "/news/za/foreign-nationals-arrested-south-africa-airport/",
-        "headline": "Foreign Nationals Arrested At South African Airport Over Ukraine",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 7,
-      "topTopic": {
-        "slug": "australian-teen-rescued-from-bush",
-        "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
-        "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
         "viralScore": 58,
         "intensityTier": "active"
       }
     },
     {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        79,
-        22
+        60,
+        58
       ],
-      "viralScore": 61,
+      "viralScore": 60,
       "intensityTier": "high",
-      "topicCount": 10,
+      "topicCount": 6,
       "topTopic": {
-        "slug": "delhi-air-quality-grap-iii-restrictions",
-        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
-        "headline": "Delhi Air Quality Reaches Hazardous Levels Following Deepavali",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
+        "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
+        "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
+        "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 57,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "nigeria-japan-u17-womens-world-cup-final",
+        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
+        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
         "viralScore": 58,
         "intensityTier": "active"
       }
@@ -364,7 +386,7 @@
         45,
         24
       ],
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -373,51 +395,7 @@
         "headline": "Recent Developments Involving Saudi Arabia Security And Athletics",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "singapore-loses-friendly-match-to-paraguay",
-        "canonicalPath": "/news/sg/singapore-loses-friendly-match-to-paraguay/",
-        "headline": "Singapore Men's Football Team Defeated By Paraguay In Tournament",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 53,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -444,24 +422,24 @@
       }
     },
     {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
-        12.6,
-        42.8
+        35.2,
+        31.9
       ],
-      "viralScore": 54,
+      "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "italian-schools-evacuated-after-bomb-threats",
-        "canonicalPath": "/news/it/italian-schools-evacuated-after-bomb-threats/",
-        "headline": "Italian Schools Evacuated Amidst Widespread European Bomb Hoaxes",
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 53,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -488,23 +466,45 @@
       }
     },
     {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
+      "code": "SD",
+      "isoNumeric": "729",
+      "name": "Sudan",
+      "slug": "sudan",
       "centroid": [
-        138.5,
-        36.5
+        30.2,
+        15.6
       ],
-      "viralScore": 49,
+      "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "nigeria-japan-u17-womens-world-cup-final",
-        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
-        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
+        "slug": "south-sudan-postpones-first-national-elections-to-february-2027",
+        "canonicalPath": "/news/sd/south-sudan-postpones-first-national-elections-to-february-2027/",
+        "headline": "South Sudan postpones first national elections to February 2027",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 52,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 51,
+      "intensityTier": "active",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "singapore-bars-alice-huang-megaspeed-probe",
+        "canonicalPath": "/news/sg/singapore-bars-alice-huang-megaspeed-probe/",
+        "headline": "Singapore Bars Alice Huang Over Deceptive Information In Probe",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
         "viralScore": 48,
         "intensityTier": "active"
       }
@@ -532,6 +532,28 @@
       }
     },
     {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 49,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
+        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
+        "headline": "African National Congress Faces Losses In South African Local Polls",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 48,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "AR",
       "isoNumeric": "032",
       "name": "Argentina",
@@ -540,7 +562,7 @@
         -63.6,
         -38.4
       ],
-      "viralScore": 48,
+      "viralScore": 45,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -549,7 +571,7 @@
         "headline": "Argentina Defeated By Uruguay In First Match Without Lionel Messi",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 47,
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
@@ -562,7 +584,7 @@
         54,
         24
       ],
-      "viralScore": 48,
+      "viralScore": 45,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -571,7 +593,7 @@
         "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 48,
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
@@ -584,7 +606,7 @@
         5.3,
         52.2
       ],
-      "viralScore": 46,
+      "viralScore": 43,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -593,29 +615,7 @@
         "headline": "Tijjani Reijnders Scores Hat-Trick In Netherlands Seven Goal Win",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SD",
-      "isoNumeric": "729",
-      "name": "Sudan",
-      "slug": "sudan",
-      "centroid": [
-        30.2,
-        15.6
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "south-sudan-postpones-first-national-elections-to-february-2027",
-        "canonicalPath": "/news/sd/south-sudan-postpones-first-national-elections-to-february-2027/",
-        "headline": "South Sudan postpones first national elections to February 2027",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 46,
+        "viralScore": 43,
         "intensityTier": "active"
       }
     },
@@ -642,6 +642,28 @@
       }
     },
     {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 34,
+      "intensityTier": "active",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "senate-debates-moretti-fiscal-plan",
+        "canonicalPath": "/news/br/senate-debates-moretti-fiscal-plan/",
+        "headline": "Brazilian Senate Begins Voting On The Moretti Fiscal Adjustment Plan",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 31,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "MX",
       "isoNumeric": "484",
       "name": "Mexico",
@@ -654,9 +676,9 @@
       "intensityTier": "active",
       "topicCount": 5,
       "topTopic": {
-        "slug": "authenticity-debate-mexico-beach-towns",
-        "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
-        "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
+        "slug": "quintonil-named-best-latin-america-restaurant",
+        "canonicalPath": "/news/mx/quintonil-named-best-latin-america-restaurant/",
+        "headline": "Quintonil Restaurant In Mexico City Earns Top Latin America Honor",
         "categorySlug": "lifestyle-culture",
         "categoryName": "Lifestyle & Culture",
         "viralScore": 31,
@@ -694,7 +716,7 @@
         101,
         15.5
       ],
-      "viralScore": 28,
+      "viralScore": 29,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -703,30 +725,8 @@
         "headline": "Will the Eurovision Song Contest succeed in Asia?",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 28,
+        "viralScore": 29,
         "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 26,
-      "intensityTier": "active",
-      "topicCount": 7,
-      "topTopic": {
-        "slug": "banco-do-brasil-rural-debt-defaults",
-        "canonicalPath": "/news/br/banco-do-brasil-rural-debt-defaults/",
-        "headline": "Banco Do Brasil Reports Thousands Of Rural Producers In Default",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 23,
-        "intensityTier": "quiet"
       }
     },
     {

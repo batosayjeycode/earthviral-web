@@ -1,38 +1,24 @@
 {
-  "batchId": "batch-202611141418",
-  "generatedAt": "2026-11-14T14:18:00Z",
-  "nextUpdateAt": "2026-11-14T17:17:00Z",
+  "batchId": "batch-202611141718",
+  "generatedAt": "2026-11-14T17:18:00Z",
+  "nextUpdateAt": "2026-11-14T20:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 33,
-    "viralTopics": 158,
-    "globalIndex": 80
+    "viralTopics": 159,
+    "globalIndex": 81
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 30,
+    "feedsOk": 31,
     "feedsFailed": [
-      "detik: fetch failed",
       "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1097,
-    "newClusters": 14,
-    "updatedClusters": 27,
-    "retiredClusters": 12,
-    "aiCalls": 21,
-    "aiFailures": {
-      "rate-limit": 2
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      }
-    ],
-    "durationMs": 113843
+    "articlesFetched": 1189,
+    "newClusters": 10,
+    "updatedClusters": 30,
+    "retiredClusters": 9,
+    "aiCalls": 20,
+    "durationMs": 199262
   }
 }

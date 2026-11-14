@@ -3,44 +3,10 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 56,
+  "viralScore": 51,
   "intensityTier": "active",
-  "generatedAt": "2026-11-14T14:18:00Z",
+  "generatedAt": "2026-11-14T17:18:00Z",
   "clusters": [
-    {
-      "slug": "singapore-loses-friendly-match-to-paraguay",
-      "canonicalPath": "/news/sg/singapore-loses-friendly-match-to-paraguay/",
-      "headline": "Singapore Men's Football Team Defeated By Paraguay In Tournament",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Singapore lost 4-1 to Paraguay in the opening match of a friendly football tournament.",
-        "The Singaporean team managed to remain competitive against their opponents during the first half of the game."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/singapore-paraguay-friendly-tournament-mizuho-blue-challenge-6548866"
-      }
-    },
-    {
-      "slug": "cruise-ship-odyssey-detained-singapore",
-      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
-      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
-        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
-      }
-    },
     {
       "slug": "singapore-bars-alice-huang-megaspeed-probe",
       "canonicalPath": "/news/sg/singapore-bars-alice-huang-megaspeed-probe/",
@@ -59,20 +25,88 @@
       }
     },
     {
-      "slug": "singapore-billion-dollar-money-laundering-case",
-      "canonicalPath": "/news/sg/singapore-billion-dollar-money-laundering-case/",
-      "headline": "Insights Into The Billion Dollar Singapore Money Laundering Probe",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "singapore-firms-report-data-breaches",
+      "canonicalPath": "/news/sg/singapore-firms-report-data-breaches/",
+      "headline": "Multiple Singapore Organizations Report Recent Customer Data Breaches",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
       "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "A multi-part documentary series provides an investigation into the S$3 billion money laundering scandal in Singapore.",
-        "Investigators describe one primary suspect as maintaining a calm and friendly demeanor while being evasive during questioning."
+        "Fullerton Health reported a data breach impacting approximately 140,000 migrant workers.",
+        "Clothing retailer Our Second Nature experienced an incident exposing customer contact details and addresses."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/courts-crime/cool-friendly-evasive-cad-investigator-on-suspect-arrested-in-3b-money-laundering-probe"
+        "articleUrl": "https://www.straitstimes.com/singapore/local-clothing-brand-our-second-nature-hit-by-data-breach-customer-details-exposed"
+      }
+    },
+    {
+      "slug": "cruise-ship-odyssey-detained-singapore",
+      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
+      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
+        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-resigns-2",
+      "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
+      "headline": "Nvidia Leadership Changes Following Resignation Of Jensen Huang",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Jensen Huang has stepped down as CEO of Nvidia amid reports of relationships with company employees.",
+        "The company has appointed longtime Chief Financial Officer Colette Kress to serve as interim chief executive."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/world/nvidia-ceo-jensen-huang-resigns-6546526"
+      }
+    },
+    {
+      "slug": "wales-beats-new-zealand-rugby",
+      "canonicalPath": "/news/sg/wales-beats-new-zealand-rugby/",
+      "headline": "Wales Secures Historic Rugby Victory Against New Zealand In Match",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Wales achieved their first rugby win against New Zealand in 73 years.",
+        "The outcome marks a notable shift in the historical record between the two national teams."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/inspired-wales-beat-new-zealand-first-time-in-73-years-6552006"
+      }
+    },
+    {
+      "slug": "singapore-loses-friendly-match-to-paraguay",
+      "canonicalPath": "/news/sg/singapore-loses-friendly-match-to-paraguay/",
+      "headline": "Singapore Men's Football Team Defeated By Paraguay In Tournament",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Singapore lost 4-1 to Paraguay in the opening match of a friendly football tournament.",
+        "The Singaporean team managed to remain competitive against their opponents during the first half of the game."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/singapore-paraguay-friendly-tournament-mizuho-blue-challenge-6548866"
       }
     },
     {
@@ -81,7 +115,7 @@
       "headline": "Singapore Government Outlook Services Restored After Microsoft Outage",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 42,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Government services in Singapore, specifically Outlook, have returned to normal operation after a prolonged global service failure.",
@@ -98,7 +132,7 @@
       "headline": "Barisan Nasional And Perikatan Nasional Win Melaka State Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The alliance of Barisan Nasional and Perikatan Nasional achieved a landslide victory in the Melaka state election.",
@@ -110,29 +144,12 @@
       }
     },
     {
-      "slug": "singapore-gaza-humanitarian-aid-logistics",
-      "canonicalPath": "/news/sg/singapore-gaza-humanitarian-aid-logistics/",
-      "headline": "Singapore Expands Humanitarian Networks For Aid Delivery Into Gaza",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Singapore is developing a new network to enhance the efficiency of last-mile aid delivery to Gaza.",
-        "Acting Minister-in-charge of Muslim Affairs Zaqy Mohamad noted ongoing logistical hurdles while visiting Egypt."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/politics/spore-deepens-overseas-partnerships-to-boost-gaza-aid"
-      }
-    },
-    {
       "slug": "first-eurovision-asia-contest-begins",
       "canonicalPath": "/news/sg/first-eurovision-asia-contest-begins/",
       "headline": "First Eurovision Song Contest In Asia Commences With Eleven Nations",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 40,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The inaugural Eurovision Asia competition features musical talent from eleven participating nations.",
@@ -144,37 +161,20 @@
       }
     },
     {
-      "slug": "singapore-firms-report-data-breaches",
-      "canonicalPath": "/news/sg/singapore-firms-report-data-breaches/",
-      "headline": "Multiple Singapore Organizations Report Recent Customer Data Breaches",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 39,
+      "slug": "singapore-gaza-humanitarian-aid-logistics",
+      "canonicalPath": "/news/sg/singapore-gaza-humanitarian-aid-logistics/",
+      "headline": "Singapore Expands Humanitarian Networks For Aid Delivery Into Gaza",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Fullerton Health reported a data breach impacting approximately 140,000 migrant workers.",
-        "Clothing retailer Our Second Nature experienced an incident exposing customer contact details and addresses."
+        "Singapore is developing a new network to enhance the efficiency of last-mile aid delivery to Gaza.",
+        "Acting Minister-in-charge of Muslim Affairs Zaqy Mohamad noted ongoing logistical hurdles while visiting Egypt."
       ],
       "primarySource": {
         "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/local-clothing-brand-our-second-nature-hit-by-data-breach-customer-details-exposed"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-resigns-2",
-      "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
-      "headline": "Nvidia Leadership Changes Following Resignation Of Jensen Huang",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang has stepped down as CEO of Nvidia amid reports of relationships with company employees.",
-        "The company has appointed longtime Chief Financial Officer Colette Kress to serve as interim chief executive."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/world/nvidia-ceo-jensen-huang-resigns-6546526"
+        "articleUrl": "https://www.straitstimes.com/singapore/politics/spore-deepens-overseas-partnerships-to-boost-gaza-aid"
       }
     }
   ]
