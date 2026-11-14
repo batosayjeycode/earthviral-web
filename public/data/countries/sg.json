@@ -3,34 +3,17 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 61,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-14T05:18:00Z",
+  "viralScore": 59,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-14T08:18:00Z",
   "clusters": [
-    {
-      "slug": "cruise-ship-odyssey-detained-singapore",
-      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
-      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
-        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
-      }
-    },
     {
       "slug": "singapore-systems-impacted-by-microsoft-outage",
       "canonicalPath": "/news/sg/singapore-systems-impacted-by-microsoft-outage/",
       "headline": "Singapore Government Outlook Services Restored After Microsoft Outage",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 54,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Government services in Singapore, specifically Outlook, have returned to normal operation after a prolonged global service failure.",
@@ -47,7 +30,7 @@
       "headline": "Insights Into The Billion Dollar Singapore Money Laundering Probe",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 49,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A multi-part documentary series provides an investigation into the S$3 billion money laundering scandal in Singapore.",
@@ -56,6 +39,40 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/courts-crime/cool-friendly-evasive-cad-investigator-on-suspect-arrested-in-3b-money-laundering-probe"
+      }
+    },
+    {
+      "slug": "cruise-ship-odyssey-detained-singapore",
+      "canonicalPath": "/news/sg/cruise-ship-odyssey-detained-singapore/",
+      "headline": "Singapore Authorities Detain MV Odyssey Following Financial Crisis",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Legal authorities have detained the cruise vessel MV Odyssey while it is docked at a Singapore port.",
+        "The ship arrest serves as a court-ordered measure resulting from outstanding maritime claims."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/"
+      }
+    },
+    {
+      "slug": "singapore-gaza-humanitarian-aid-logistics",
+      "canonicalPath": "/news/sg/singapore-gaza-humanitarian-aid-logistics/",
+      "headline": "Singapore Expands Humanitarian Networks For Aid Delivery Into Gaza",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Singapore is developing a new network to enhance the efficiency of last-mile aid delivery to Gaza.",
+        "Acting Minister-in-charge of Muslim Affairs Zaqy Mohamad noted ongoing logistical hurdles while visiting Egypt."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/politics/spore-deepens-overseas-partnerships-to-boost-gaza-aid"
       }
     },
     {
@@ -93,12 +110,29 @@
       }
     },
     {
+      "slug": "singapore-regulator-issues-simba-show-cause-notice",
+      "canonicalPath": "/news/sg/singapore-regulator-issues-simba-show-cause-notice/",
+      "headline": "Singapore Telecom Regulator Issues Show-Cause Notice To Simba",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 36,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Infocomm Media Development Authority has issued a show-cause notice to the telecommunications provider Simba.",
+        "Industry experts characterize the issuance of such a notice as a significant regulatory action."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/tech/singapore-has-suspended-a-telco-licence-in-the-past-but-will-simba-be-next"
+      }
+    },
+    {
       "slug": "nvidia-ceo-jensen-huang-resigns-2",
       "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
       "headline": "Nvidia Leadership Changes Following Resignation Of Jensen Huang",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang has stepped down as CEO of Nvidia amid reports of relationships with company employees.",
@@ -115,7 +149,7 @@
       "headline": "Singapore Men's Football Team Defeated By Paraguay In Tournament",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 37,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Singapore lost 4-1 to Paraguay in the opening match of a friendly football tournament.",
@@ -132,7 +166,7 @@
       "headline": "Singapore Concludes Youth Olympic Games With Three Total Medals",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 35,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The national contingent finished the competition with a total of three medals.",
@@ -141,40 +175,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/singapore/youth-olympic-games-team-singapore-medals-sports-6550241"
-      }
-    },
-    {
-      "slug": "recycling-operator-addresses-container-fraud-claims",
-      "canonicalPath": "/news/sg/recycling-operator-addresses-container-fraud-claims/",
-      "headline": "Operator Addresses Fraud Concerns Over Return Container Scheme Use",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "BCRS Ltd stated that maintaining the integrity and fairness of the container return scheme is a primary operational objective.",
-        "The operator responded to public attention following a video showing a person repeatedly scanning a single container at a machine."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/bcrs-operator-says-fraud-taken-seriously-after-viral-video-of-man-repeatedly-scanning-same-container"
-      }
-    },
-    {
-      "slug": "singapore-market-expansion-and-data-risks",
-      "canonicalPath": "/news/sg/singapore-market-expansion-and-data-risks/",
-      "headline": "Singapore Businesses Explore China Markets And Data Security Risks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Singapore-based companies are increasingly entering the Chinese market by offering immersive dining and interactive exhibit services.",
-        "Data security incidents are rising in Singapore as artificial intelligence tools enable faster identification of system vulnerabilities."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/tech/why-data-breaches-are-surging-in-singapore-and-why-firms-owe-victims-more-than-an-apology"
       }
     }
   ]
