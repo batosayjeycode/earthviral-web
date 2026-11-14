@@ -8,26 +8,26 @@
   "region": "North America",
   "categorySlug": "disasters-world-events",
   "categoryName": "Disasters & World Events",
-  "headline": "Federal Aviation Administration Resolves Nationwide Flight Grounding",
-  "seoTitle": "US Flights Resume After Nationwide Grounding",
-  "metaDescription": "US aviation authorities have lifted a nationwide ground stop following a major communication failure that disrupted travel for 1.5 million passengers.",
+  "headline": "Aviation Authorities Restore US Flights After Significant Outage",
+  "seoTitle": "US Air Traffic System Restored Following Major Outage",
+  "metaDescription": "Air travel has resumed across the United States after a major technical failure grounded flights, with officials citing infrastructure complications.",
   "aiSummaryBullets": [
-    "A widespread communication failure at the Federal Aviation Administration led to a national ground stop for all departing US flights.",
-    "The disruption resulted in the cancellation of approximately 8,000 flights and affected roughly 1.5 million travelers across the country.",
-    "Operations have gradually resumed, though airlines continue to manage a backlog of cancellations and residual travel delays."
+    "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
+    "The Federal Aviation Administration attributed the incident to infrastructure issues following router installations by contractor L3Harris.",
+    "Operations have gradually resumed, though officials warn that travel disruptions and flight cancellations are expected to continue through the weekend."
   ],
-  "aiContextParagraph": "On November 13, 2026, the Federal Aviation Administration (FAA) issued an unprecedented nationwide ground stop for all departing US flights due to a significant communication failure within its air traffic control systems. This event marks the second time such a comprehensive grounding has been ordered in US airspace since the September 11, 2001, terrorist attacks. The incident caused widespread chaos, leading to nearly 6,000 flight cancellations on Friday and an additional 2,000 following the initial stoppage. Approximately 1.5 million passengers were impacted by the event, which authorities have attributed to outdated infrastructure. While flight operations have since begun to resume, airlines are still working to normalize schedules after the longest nationwide ground stop in 25 years. Transportation officials are currently reviewing the incident to address the underlying technological vulnerabilities revealed by the sudden network crisis.",
-  "whyItIsViral": "The event generated significant interest due to its scale, marking the longest nationwide US flight grounding in 25 years and affecting 1.5 million passengers.",
-  "viralScore": 72,
-  "intensityTier": "high",
+  "aiContextParagraph": "The United States aviation system experienced a significant operational disruption that halted air travel nationwide. The shutdown, which affected both domestic and international flights, was traced back to technical difficulties linked to the installation of new routing equipment by the contractor L3Harris at a remote facility. As flights begin to resume, air travel remains strained, with thousands of delays and cancellations reported globally. The incident has drawn attention to the aging state of the national air traffic control infrastructure, leading to discussions regarding future funding and system modernization. Government officials are actively working to clear the backlog, though experts warn that the effects of the ground stop will likely impact air travel schedules for several days. This event highlights vulnerabilities in the technological framework currently supporting the American aviation industry, prompting scrutiny of both existing air traffic control systems and the management of outsourced technical maintenance projects.",
+  "whyItIsViral": "The story has achieved a high viral activity score due to extensive international coverage across eight major outlets and significant public search interest regarding flight status and the cause of the disruption.",
+  "viralScore": 92,
+  "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 8,
-    "coverageVelocityScore": 42,
-    "publicSearchSignalScore": 0,
+    "coverageVelocityScore": 63,
+    "publicSearchSignalScore": 76,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-13T21:07:41Z",
-  "lastUpdatedBatchAt": "2026-11-14T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-14T23:18:00Z",
   "sources": [
     {
       "publisherName": "Times of India",
@@ -133,6 +133,27 @@
       "articleTitle": "Thousands of US flights canceled, delayed as air travel system slowly recovers from shutdown",
       "articleUrl": "https://www.channelnewsasia.com/world/thousands-us-flights-canceled-delayed-air-travel-system-slowly-recovers-shutdown-6551971",
       "publishedAt": "2026-11-14T18:02:00Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "US air travel issues to persist well into Sunday, officials say, with thousands of flights affected",
+      "articleUrl": "https://www.channelnewsasia.com/world/us-air-travel-flight-shutdown-recovery-l3harris-router-6551971",
+      "publishedAt": "2026-11-14T18:02:00Z"
+    },
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "5 AI flights landed in US on schedule despite outage",
+      "articleUrl": "https://timesofindia.indiatimes.com/india/ai-delhi-sfo-was-2-5-hours-away-from-destination-when-us-atc-failed-all-5-ai-flights-landed-on-time/articleshow/135840878.cms",
+      "publishedAt": "2026-11-14T18:36:14Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "US flights resume after ageing technology blamed for outage",
+      "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/14/us-flights-resume-after-ageing-technology-blamed-for-outage?traffic_source=rss",
+      "publishedAt": "2026-11-14T21:36:19Z"
     }
   ],
   "entityTags": [
@@ -141,12 +162,16 @@
       "slug": "federal-aviation-administration"
     },
     {
-      "name": "Air Traffic Control",
+      "name": "L3Harris",
+      "slug": "l3harris"
+    },
+    {
+      "name": "air traffic control",
       "slug": "air-traffic-control"
     },
     {
-      "name": "Aviation Safety",
-      "slug": "aviation-safety"
+      "name": "aviation",
+      "slug": "aviation"
     }
   ],
   "relatedInCountrySlugs": [
