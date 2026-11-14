@@ -3,35 +3,18 @@
   "name": "New Zealand",
   "slug": "new-zealand",
   "region": "Oceania",
-  "viralScore": 55,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-14T08:18:00Z",
+  "viralScore": 23,
+  "intensityTier": "quiet",
+  "generatedAt": "2026-11-14T11:18:00Z",
   "clusters": [
-    {
-      "slug": "new-zealand-election-too-close",
-      "canonicalPath": "/news/nz/new-zealand-election-too-close/",
-      "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "New Zealand's main political parties are separated by fewer than 4,000 votes after over 95% of ballots were processed.",
-        "Major news outlets report no clear winner has emerged from the general election, leaving the nation in a period of political uncertainty."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/new-zealand-election-too-close-to-call-with-over-95-of-votes-counted/a-79883056?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
     {
       "slug": "nz-rugby-league-ancestral-ties",
       "canonicalPath": "/news/nz/nz-rugby-league-ancestral-ties/",
       "headline": "Historical Connections Of New Zealand Rugby League Pioneers Noted",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 35,
-      "intensityTier": "active",
+      "viralScore": 22,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Descendants are reflecting on ancestral connections formed over a century ago.",
         "Rugby league served as the catalyst for travel between New Zealand and Australia."
@@ -47,7 +30,7 @@
       "headline": "New Zealand Secures Decisive Victory Over India In Fourth Cricket Test",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 19,
+      "viralScore": 18,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "New Zealand achieved a 244-run victory against India in the fourth match of their five-game series.",
@@ -56,6 +39,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/sports/2026/11/13/matt-henry-will-young-new-zealand-india-fourth-odi?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "new-zealand-election-too-close",
+      "canonicalPath": "/news/nz/new-zealand-election-too-close/",
+      "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "New Zealand's main political parties are separated by fewer than 4,000 votes after over 95% of ballots were processed.",
+        "Major news outlets report no clear winner has emerged from the general election, leaving the nation in a period of political uncertainty."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/new-zealand-election-too-close-to-call-with-over-95-of-votes-counted/a-79883056?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
