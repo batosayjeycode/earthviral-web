@@ -6,8 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
+  "categorySlug": "disasters-world-events",
+  "categoryName": "Disasters & World Events",
+  "headline": "Federal Aviation Administration Halts All Flights Across The United States",
+  "seoTitle": "US Flights Grounded Following FAA Communication Issue",
+  "metaDescription": "The Federal Aviation Administration has issued a nationwide ground stop for all departing flights across the United States citing communication failures.",
+  "aiSummaryBullets": [
+    "The Federal Aviation Administration issued a nationwide ground stop for all departing flights within the United States.",
+    "The disruption is attributed to a significant technical failure regarding air traffic control communications.",
+    "International airports in Australia, including Sydney and Melbourne, have reported delays and flight cancellations due to the American ground stop."
+  ],
+  "aiContextParagraph": "On November 13, 2026, the Federal Aviation Administration (FAA) initiated a mandatory ground stop affecting all departing flights throughout the United States. This regulatory action follows a widespread communications failure that impeded air traffic control operations, preventing aircraft from safely departing from domestic airports. The technical issue has caused significant logistical challenges across the aviation sector, resulting in both immediate flight cancellations and operational delays for international routes. Reports from airports in Sydney and Melbourne indicate that flights scheduled for departure to the United States were also impacted as a consequence of the American authorities' decision. As the situation remains ongoing, transit hubs continue to manage the fallout of the system error. This event represents a major disruption to standard aviation protocols and has necessitated a coordinated response to address the underlying communication failures within the national airspace infrastructure.",
+  "whyItIsViral": "The event is trending due to high-velocity reporting from at least eight international outlets and the critical, widespread impact on global air travel.",
+  "viralScore": 92,
+  "intensityTier": "surge",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 8,
+    "coverageVelocityScore": 87,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-13T21:07:41Z",
-  "lastUpdatedBatchAt": "2026-11-13T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-14T02:18:00Z",
   "sources": [
     {
       "publisherName": "Times of India",
@@ -57,54 +77,48 @@
       "articleTitle": "US grounds all departing flights over air traffic control glitch",
       "articleUrl": "https://punchng.com/us-grounds-all-departing-flights-over-air-traffic-control-glitch/",
       "publishedAt": "2026-11-13T23:18:00Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "FAA grounds all fights across the US over ‘telecommunication outage’",
+      "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/13/faa-grounds-all-fights-across-the-us-over-telecommunication?traffic_source=rss",
+      "publishedAt": "2026-11-13T23:45:22Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "US-bound flights out of Australia grounded as telecommunications outage affects American travel",
+      "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/14/us-bound-flights-out-of-australia-grounded-as-telecommunications-outage-affects-american-travel",
+      "publishedAt": "2026-11-14T01:54:25Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "faa-issues-nationwide-flight-ground-stop",
-    "nvidia-board-considers-ousting-ceo-huang",
-    "lutnick-faces-pressure-nvidia-spy-scandal"
-  ],
-  "relatedInCategorySlugs": [
-    "air-india-flights-suspended-hoax-threat",
-    "delhi-air-quality-grap-iii-restrictions",
-    "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish"
-  ],
-  "headline": "US Aviation Authorities Issue Nationwide Ground Stop For Flights",
-  "seoTitle": "US Grounds Flights Due To Technical Issues",
-  "metaDescription": "US aviation regulators have implemented a nationwide ground stop for departing flights following widespread air traffic control communications issues.",
-  "aiSummaryBullets": [
-    "A nationwide ground stop has been issued for all flights departing from airports across the United States.",
-    "Regulators cite a communications disruption affecting air traffic control systems as the primary cause for the suspension.",
-    "Transportation Secretary Sean Duffy stated that technical teams are investigating the outage, with authorities confirming no immediate security threats."
-  ],
-  "aiContextParagraph": "On November 13, 2026, aviation regulators in the United States initiated an immediate, nationwide ground stop affecting all departing commercial flights. The decision was prompted by persistent communication difficulties impacting air traffic control facilities across the country. Transportation Secretary Sean Duffy confirmed that federal aviation technicians are actively working to identify and resolve the nature of the technical failure. Following reports of the widespread grounding, Homeland Security lead Markwayne Mullin addressed public concern by stating that there is no evidence to suggest that the communication issues stem from an external threat or malicious act. The event has resulted in significant disruption to domestic travel operations, with aviation authorities providing updates as technicians continue their assessment of the infrastructure. Air traffic control remains the primary focus of the ongoing investigation into this rare and large-scale aviation incident.",
-  "whyItIsViral": "The story reached a high viral activity score of 92/100 due to rapid coverage across seven independent news outlets, indicating a significant impact on national infrastructure.",
-  "categorySlug": "disasters-world-events",
-  "categoryName": "Disasters & World Events",
   "entityTags": [
     {
       "name": "Federal Aviation Administration",
       "slug": "federal-aviation-administration"
     },
     {
-      "name": "Sean Duffy",
-      "slug": "sean-duffy"
-    },
-    {
-      "name": "Markwayne Mullin",
-      "slug": "markwayne-mullin"
+      "name": "Aviation",
+      "slug": "aviation"
     },
     {
       "name": "Air Traffic Control",
       "slug": "air-traffic-control"
+    },
+    {
+      "name": "Communication Failure",
+      "slug": "communication-failure"
     }
   ],
-  "viralScore": 92,
-  "intensityTier": "surge",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 7,
-    "coverageVelocityScore": 89,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "faa-issues-nationwide-flight-ground-stop",
+    "mississippi-river-ship-collision-new-orleans",
+    "democrats-swept-the-midterms-what-comes-next-for-the"
+  ],
+  "relatedInCategorySlugs": [
+    "air-india-flights-suspended-hoax-threat",
+    "delhi-air-quality-grap-iii-restrictions",
+    "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish"
+  ]
 }

@@ -3,21 +3,21 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 98,
+  "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-13T23:18:00Z",
+  "generatedAt": "2026-11-14T02:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Federal Aviation Administration Issues Nationwide Flight Ground Stop",
+      "headline": "Federal Aviation Administration Ends Nationwide Flight Ground Stop",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 95,
+      "viralScore": 98,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "The Federal Aviation Administration ordered a total ground stop for all departing flights across the United States on Friday.",
-        "Officials identified a widespread telecommunications outage as the cause of the operational disruption, impacting over 11,000 flights."
+        "The Federal Aviation Administration lifted a national ground stop on all departing flights following a major communications outage.",
+        "Administration officials stated that aging, overloaded systems were the primary cause of the technical failure."
       ],
       "primarySource": {
         "publisherName": "NPR",
@@ -27,14 +27,14 @@
     {
       "slug": "us-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "US Aviation Authorities Issue Nationwide Ground Stop For Flights",
+      "headline": "Federal Aviation Administration Halts All Flights Across The United States",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
       "viralScore": 92,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "A nationwide ground stop has been issued for all flights departing from airports across the United States.",
-        "Regulators cite a communications disruption affecting air traffic control systems as the primary cause for the suspension."
+        "The Federal Aviation Administration issued a nationwide ground stop for all departing flights within the United States.",
+        "The disruption is attributed to a significant technical failure regarding air traffic control communications."
       ],
       "primarySource": {
         "publisherName": "Times of India",
@@ -44,18 +44,35 @@
     {
       "slug": "mississippi-river-ship-collision-new-orleans",
       "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "Rescue Operations Underway After Tanker Hits Cruise Ship In Louisiana",
+      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 84,
+      "viralScore": 83,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "A tanker vessel collided with a passenger cruise ship docked on the Mississippi River near the Port of New Orleans on Friday.",
-        "The cruise ship, identified as the American Heritage, sustained damage and has become partially submerged following the impact."
+        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
+        "Emergency responders confirmed that all passengers have been accounted for following the incident."
       ],
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
+        "The party secured significant electoral victories, including flipping over 40 House seats and retaining the governorship in Kansas."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/middle-east-could-have-big-role-in-democrats-trump-corruption-inquiry/a-79877104?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -64,7 +81,7 @@
       "headline": "US Senate Orders Testimony From Jensen Huang And Howard Lutnick",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 76,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang has resigned from his position as CEO of Nvidia amid ongoing scrutiny regarding personal associations and corporate leadership.",
@@ -81,7 +98,7 @@
       "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 76,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
@@ -98,7 +115,7 @@
       "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 63,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
@@ -110,13 +127,30 @@
       }
     },
     {
+      "slug": "spacex-launches-fifteenth-starship-test-flight",
+      "canonicalPath": "/news/us/spacex-launches-fifteenth-starship-test-flight/",
+      "headline": "SpaceX Launches Starship On Its Fifteenth Experimental Test Flight",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "SpaceX launched its Starship megarocket from Starbase, Texas, for the fifteenth test flight mission.",
+        "The mission objectives included completing approximately 14 Earth orbits over a 22-hour duration."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/science/2026/nov/13/spacex-starship-megarocket-blasts-off-earth-orbit"
+      }
+    },
+    {
       "slug": "armed-suspect-arrested-near-white-house",
       "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
       "headline": "White House Faces Administrative Shifts And Political Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
         "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
@@ -127,46 +161,12 @@
       }
     },
     {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "US Treasury Department Criticizes Commerce Agency Over Nvidia Exports",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Treasury Secretary Scott Bessent has publicly questioned the Commerce Department's handling of chip export regulations.",
-        "Allegations of significant leakage in technology exports have prompted scrutiny of Secretary Howard Lutnick's agency."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Shape Governance Agenda Following Midterm Election Gains",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Democratic leadership is convening to finalize legislative priorities and governance strategies for the upcoming session of Congress.",
-        "The party secured significant electoral victories, including flipping over 40 House seats and retaining the governorship in Kansas."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/trump-60-minutes-sunday-midterms/"
-      }
-    },
-    {
       "slug": "thomas-massie-files-hegseth-impeachment",
       "canonicalPath": "/news/us/thomas-massie-files-hegseth-impeachment/",
       "headline": "Defense Secretary Pete Hegseth Awards Medal To Soldier At Arlington",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Secretary of Defense Pete Hegseth honored a soldier with a medal at Arlington National Cemetery.",

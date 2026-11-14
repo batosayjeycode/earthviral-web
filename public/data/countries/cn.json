@@ -3,17 +3,51 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 73,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-13T23:18:00Z",
+  "viralScore": 91,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-14T02:18:00Z",
   "clusters": [
+    {
+      "slug": "trump-to-meet-xi-putin-apec",
+      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+      "headline": "Donald Trump, Xi Jinping, And Vladimir Putin To Meet In Shenzhen",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 88,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "President Donald Trump, President Vladimir Putin, and leader Xi Jinping will hold a trilateral meeting during the upcoming APEC summit in Shenzhen.",
+        "Reported discussion topics include nuclear arsenal reduction and the ongoing conflict in Iran, with no discussions expected regarding Ukraine."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261109132631-4-783552/trump-bakal-bertemu-xi-jinping-putin-di-china-minggu-depan-ada-apa"
+      }
+    },
+    {
+      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
+      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
+      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
+        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8744272/bos-nvidia-akui-selingkuh-usai-ramai-isu-punya-hubungan-dengan-mata-mata-china"
+      }
+    },
     {
       "slug": "nvidia-investigates-ceo-espionage-allegations",
       "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
       "headline": "Jensen Huang Resigns Amid Inquiries Into Nvidia China Chip Access",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 70,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang resigned as CEO of Nvidia amid allegations involving an affair with a Chinese businesswoman.",
@@ -42,46 +76,12 @@
       }
     },
     {
-      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
-      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
-      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
-        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8744272/bos-nvidia-akui-selingkuh-usai-ramai-isu-punya-hubungan-dengan-mata-mata-china"
-      }
-    },
-    {
-      "slug": "trump-to-meet-xi-putin-apec",
-      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-      "headline": "Donald Trump To Meet Xi Jinping And Vladimir Putin At APEC Summit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump stated he intends to hold discussions with both Xi Jinping and Vladimir Putin.",
-        "The proposed meetings are scheduled to occur during the upcoming APEC summit in China."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261109132631-4-783552/trump-bakal-bertemu-xi-jinping-putin-di-china-minggu-depan-ada-apa"
-      }
-    },
-    {
       "slug": "xi-jinping-to-host-apec-summit",
       "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
       "headline": "President Xi Jinping To Lead The 33rd APEC Summit In Shenzhen",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Xi Jinping will preside over the 33rd Asia-Pacific Economic Cooperation summit held in Shenzhen.",
@@ -115,7 +115,7 @@
       "headline": "China Declines Opportunity To Host The COP33 Climate Summit In 2028",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 34,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "China has officially ruled out hosting the 2028 UN climate conference known as COP33.",
@@ -132,7 +132,7 @@
       "headline": "Indonesian Authorities Uncover Human Trafficking Ring To China",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 31,
+      "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Police identified three Indonesian women victimized by a human trafficking syndicate.",
