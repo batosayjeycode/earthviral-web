@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "technology-ai",
   "categoryName": "Technology & AI",
-  "headline": "Singapore Government Systems Impacted By Recent Microsoft Outage",
-  "seoTitle": "Singapore Government Hit By Microsoft Outage",
-  "metaDescription": "Singapore's Government Technology Agency confirmed some systems are affected by a Microsoft outage, while essential services remain fully functional.",
+  "headline": "Singapore Government Outlook Services Restored After Microsoft Outage",
+  "seoTitle": "Singapore Government Outlook Services Restored",
+  "metaDescription": "Microsoft Outlook and Teams services have been fully restored for Singapore government systems following a major global outage lasting over 24 hours.",
   "aiSummaryBullets": [
-    "The Government Technology Agency of Singapore confirmed that certain government systems are experiencing disruptions.",
-    "Officials stated that the Singpass digital identity platform remains unaffected by the technical issue.",
-    "Emergency response services continue to operate without interruption according to government spokespeople."
+    "Government services in Singapore, specifically Outlook, have returned to normal operation after a prolonged global service failure.",
+    "The disruption affected Microsoft products across 74 countries and territories for more than a day before resolution.",
+    "Singapore's GovTech reported that while some government systems experienced issues, critical services like Singpass remained operational."
   ],
-  "aiContextParagraph": "On November 13, 2026, the Government Technology Agency of Singapore (GovTech) reported that a widespread Microsoft outage had impacted various government systems within the nation. The agency issued a statement to clarify the scope of the disruption and address public concerns regarding critical infrastructure. According to the government, while some digital services have encountered technical difficulties, essential operations, including emergency response systems, remain fully functional and have not been compromised. Furthermore, authorities explicitly confirmed that Singpass, the national digital identity platform used by residents for secure access to government and private sector services, is operating normally and remains unaffected by the current technical complications. The government continues to monitor the situation as Microsoft works to address the underlying causes of the disruption affecting various users globally and within Singapore's administrative digital landscape.",
-  "whyItIsViral": "The story reached a moderate viral score due to coordinated reporting from two major national news outlets following the immediate disruption of government systems.",
-  "viralScore": 38,
+  "aiContextParagraph": "A significant global outage affecting Microsoft software caused widespread disruptions to various services, including Outlook and Teams. In Singapore, the government's digital systems were among those impacted, though authorities confirmed that essential platforms like Singpass were not compromised during the event. Beyond government infrastructure, the outage also impacted private institutions, with several banks providing updates to customers regarding the status of their email services. The technical failure, which spanned 74 countries and territories, persisted for more than 24 hours. Microsoft subsequently expressed regret for the global instability caused by the software failure. Local authorities, represented by GovTech, have since confirmed that affected government services have been fully restored, and similar restorations have been noted across other sectors in the country as systems returned to normal performance levels following the technical disruption.",
+  "whyItIsViral": "The story gained traction through significant coverage across multiple major news outlets reporting on the restoration of critical government and financial infrastructure.",
+  "viralScore": 54,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 16,
+    "coverageVelocityScore": 54,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-13T04:27:00Z",
-  "lastUpdatedBatchAt": "2026-11-13T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-14T05:18:00Z",
   "sources": [
     {
       "publisherName": "CNA",
@@ -56,6 +56,20 @@
       "articleTitle": "Microsoft 'deeply sorry' as outage triggers global chaos",
       "articleUrl": "https://www.channelnewsasia.com/world/microsoft-outage-recovery-deeply-sorry-outlook-teams-6550421",
       "publishedAt": "2026-11-13T19:18:00Z"
+    },
+    {
+      "publisherName": "The Straits Times",
+      "publisherDomain": "straitstimes.com",
+      "articleTitle": "Microsoft Outlook services for S’pore Govt fully restored: GovTech",
+      "articleUrl": "https://www.straitstimes.com/singapore/most-microsoft-services-in-spore-restored-after-outage-that-lasted-more-than-24-hours",
+      "publishedAt": "2026-11-14T03:09:36Z"
+    },
+    {
+      "publisherName": "CNA",
+      "publisherDomain": "channelnewsasia.com",
+      "articleTitle": "Singapore government’s Outlook services fully restored after global Microsoft outage",
+      "articleUrl": "https://www.channelnewsasia.com/singapore/singapore-government-microsoft-outlook-services-fully-restored-6551261",
+      "publishedAt": "2026-11-14T05:04:55Z"
     }
   ],
   "entityTags": [
@@ -68,18 +82,18 @@
       "slug": "govtech"
     },
     {
-      "name": "Singpass",
-      "slug": "singpass"
+      "name": "Singapore Government",
+      "slug": "singapore-government"
     },
     {
-      "name": "Singapore",
-      "slug": "singapore"
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
     }
   ],
   "relatedInCountrySlugs": [
+    "singapore-market-expansion-and-data-risks",
     "cruise-ship-odyssey-detained-singapore",
-    "singapore-bars-alice-huang-megaspeed-probe",
-    "singapore-market-expansion-and-data-risks"
+    "singapore-bars-alice-huang-megaspeed-probe"
   ],
   "relatedInCategorySlugs": [
     "australian-organisations-affected-by-microsoft-outage",
