@@ -8,41 +8,27 @@
   "region": "North America",
   "categorySlug": "disasters-world-events",
   "categoryName": "Disasters & World Events",
-  "headline": "US Aviation Authorities Address System Failure Behind Flight Halt",
-  "seoTitle": "US Aviation System Failure Causes Flight Ground Stop",
-  "metaDescription": "US aviation authorities work to restore services following a nationwide flight ground stop attributed to outdated infrastructure and maintenance.",
+  "headline": "FAA Identifies Root Cause Of Nationwide Flight Grounding Incident",
+  "seoTitle": "FAA Explains Cause of Nationwide Flight Grounding",
+  "metaDescription": "US aviation officials report that a system upgrade at a remote facility triggered a significant nationwide flight ground stop.",
   "aiSummaryBullets": [
-    "A nationwide ground stop halted air departures across the US, marking the most significant aviation disruption since 2001.",
-    "Transportation Secretary Sean Duffy attributed the failure to maintenance errors performed by a contractor during a system upgrade.",
-    "Experts identified aging infrastructure, including outdated routers and copper lines, as contributing factors to the system instability."
+    "A four-hour nationwide ground stop was triggered by equipment upgrade issues at a remote site.",
+    "The disruption resulted from a surge in connection attempts coinciding with technical maintenance, affecting radar and communication.",
+    "Federal officials were briefed on the incident within thirty minutes of the grounding, which impacted flights across the United States."
   ],
-  "aiContextParagraph": "The United States aviation sector experienced a widespread operational failure that resulted in a comprehensive nationwide ground stop, grounding flights across the country. The disruption, which is being described as the longest of its kind in over two decades, caused extensive delays and required the rescheduling of numerous events, including college football games. Following the incident, government officials, including Transportation Secretary Sean Duffy, provided insight into the cause, pointing to a failed maintenance upgrade executed by a contractor. Industry analysts have further characterized the underlying technical environment as reliant on legacy hardware, such as 1980s-era copper cabling and obsolete networking equipment. As the system gradually returns to normal functionality, aviation authorities are conducting assessments to prevent future reoccurrences while managing the lingering effects on passengers and travel logistics nationwide.",
-  "whyItIsViral": "The story reached high viral activity due to its classification as the longest nationwide aviation ground stop since 2001 and extensive coverage across 11 major global news outlets.",
-  "viralScore": 93,
+  "aiContextParagraph": "On November 14, 2026, the United States experienced its most significant nationwide air traffic stoppage since 2001. The Federal Aviation Administration (FAA) issued a ground stop after encountering major failures within the air traffic control communication infrastructure. According to the Transportation Secretary and official reports, the event was caused by maintenance work involving the upgrade of outdated equipment at a remote site. This maintenance overlapped with an unexpected surge in connection requests, which created sporadic radar and communication challenges across multiple regional control centers. The disruption lasted more than four hours, leading to widespread flight delays and cancellations. President Trump was briefed on the technical failure shortly after the ground stop was initiated. Aviation experts are currently reviewing the incident as the industry works to recover from the operational instability caused by the system malfunction.",
+  "whyItIsViral": "The event generated widespread attention due to its scale as the longest nationwide ground stop in 25 years, drawing heavy traffic from ten global media outlets and significant public search activity.",
+  "viralScore": 100,
   "intensityTier": "surge",
   "signalBreakdown": {
-    "verifiedPublisherCount": 11,
-    "coverageVelocityScore": 85,
-    "publicSearchSignalScore": 0,
+    "verifiedPublisherCount": 10,
+    "coverageVelocityScore": 81,
+    "publicSearchSignalScore": 68,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-13T21:55:13Z",
-  "lastUpdatedBatchAt": "2026-11-15T02:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-15T05:18:00Z",
   "sources": [
-    {
-      "publisherName": "BBC",
-      "publisherDomain": "bbc.com",
-      "articleTitle": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
-      "articleUrl": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o",
-      "publishedAt": "2026-11-14T01:47:36Z"
-    },
-    {
-      "publisherName": "CBS News",
-      "publisherDomain": "cbsnews.com",
-      "articleTitle": "Nationwide ground stop lifted, Duffy calls for congressional funding to upgrade ATC system",
-      "articleUrl": "https://www.cbsnews.com/video/nationwide-ground-stop-lifted-duffy-calls-for-congressional-funding-to-upgrade-atc-system/",
-      "publishedAt": "2026-11-14T02:16:30Z"
-    },
     {
       "publisherName": "France 24",
       "publisherDomain": "france24.com",
@@ -238,6 +224,20 @@
       "articleTitle": "FAA ground stop disrupts college football",
       "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
       "publishedAt": "2026-11-15T01:13:59Z"
+    },
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "How a glitch on ground triggered chaos in sky: How US flight chaos unfolded",
+      "articleUrl": "https://timesofindia.indiatimes.com/world/us/how-a-glitch-on-ground-triggered-chaos-in-sky-inside-the-us-ground-stop/articleshow/135845489.cms",
+      "publishedAt": "2026-11-15T02:01:48Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "How Trump administration responded to FAA ground stop",
+      "articleUrl": "https://www.cbsnews.com/news/faa-ground-stop-trump-admin-response/",
+      "publishedAt": "2026-11-15T03:16:17Z"
     }
   ],
   "entityTags": [
@@ -246,22 +246,22 @@
       "slug": "federal-aviation-administration"
     },
     {
-      "name": "Sean Duffy",
-      "slug": "sean-duffy"
+      "name": "Air Traffic Control",
+      "slug": "air-traffic-control"
     },
     {
-      "name": "Aviation Infrastructure",
-      "slug": "aviation-infrastructure"
+      "name": "Transportation Department",
+      "slug": "transportation-department"
     }
   ],
   "relatedInCountrySlugs": [
     "us-nationwide-flight-ground-stop",
-    "us-air-traffic-disruption-resolution",
-    "us-flight-grounding-causes-travel-disruptions"
+    "us-flight-grounding-causes-travel-disruptions",
+    "judge-halts-washington-golf-course-renovation"
   ],
   "relatedInCategorySlugs": [
     "brazil-air-traffic-system-resilience",
-    "saudi-arabia-hajj-fraud-drone-interception",
-    "russian-missile-strikes-target-kyiv"
+    "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+    "military-operations-west-bank-reported"
   ]
 }
