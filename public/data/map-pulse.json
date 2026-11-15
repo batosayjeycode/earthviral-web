@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611151418",
-  "generatedAt": "2026-11-15T14:18:00Z",
-  "nextUpdateAt": "2026-11-15T17:17:00Z",
+  "batchId": "batch-202611151718",
+  "generatedAt": "2026-11-15T17:18:00Z",
+  "nextUpdateAt": "2026-11-15T20:17:00Z",
   "countries": [
     {
       "code": "PH",
@@ -12,7 +12,7 @@
         122,
         12.5
       ],
-      "viralScore": 100,
+      "viralScore": 99,
       "intensityTier": "surge",
       "topicCount": 3,
       "topTopic": {
@@ -21,7 +21,7 @@
         "headline": "Regional Leaders Gather In Manila For The 49th ASEAN Summit Event",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 100,
+        "viralScore": 98,
         "intensityTier": "surge"
       }
     },
@@ -34,38 +34,38 @@
         53.7,
         32.4
       ],
-      "viralScore": 93,
+      "viralScore": 91,
       "intensityTier": "surge",
-      "topicCount": 4,
+      "topicCount": 3,
       "topTopic": {
         "slug": "farage-says-he-is-worried-trump-will-step-up",
         "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Iran Conducts Second Drone Strike On US Airbase Within Bahrain",
+        "headline": "Iran Drone Strikes Target United States Airbase Located In Bahrain",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 91,
+        "viralScore": 90,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
       "centroid": [
-        127.8,
-        36.3
+        -98.5,
+        39.5
       ],
-      "viralScore": 87,
+      "viralScore": 88,
       "intensityTier": "surge",
-      "topicCount": 1,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "Top South Korean Tax Exam Scorer Confesses To AI-Assisted Cheating",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 87,
+        "slug": "faa-issues-nationwide-flight-ground-stop",
+        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+        "headline": "Transportation Secretary Links Flight Grounding To Outdated Network",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 85,
         "intensityTier": "surge"
       }
     },
@@ -78,8 +78,8 @@
         117,
         -2.5
       ],
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 82,
+      "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
         "slug": "gerindra-chapters-endorse-sufmi-dasco-vice-president",
@@ -87,95 +87,7 @@
         "headline": "Regional Gerindra Party Chapters Endorse Sufmi Dasco For Vice President",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 82,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 82,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "faa-issues-nationwide-flight-ground-stop",
-        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-        "headline": "FAA Identifies Root Cause Of Nationwide Flight Grounding Incident",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
         "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 81,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "Over One Hundred Thousand March Across France In Fifth Weekend",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 78,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 78,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "modi-pitroda-public-exchange",
-        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
-        "headline": "Prime Minister Modi Comments On Internal Security And Ideologies",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 75,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 75,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "israeli-airstrike-on-nasser-hospital",
-        "canonicalPath": "/news/il/israeli-airstrike-on-nasser-hospital/",
-        "headline": "Israel Targets Hamas Senior Commander During Gaza Military Strikes",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 73,
         "intensityTier": "high"
       }
     },
@@ -188,38 +100,148 @@
         104,
         35
       ],
-      "viralScore": 72,
+      "viralScore": 81,
       "intensityTier": "high",
       "topicCount": 7,
       "topTopic": {
         "slug": "nvidia-investigates-ceo-espionage-allegations",
         "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-        "headline": "Jensen Huang Resigns Amid Inquiries Into Nvidia China Chip Access",
+        "headline": "Megaspeed Scrutinized Following Resignation Of Nvidia's Ex-CEO",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 69,
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
     {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
       "centroid": [
-        -2,
-        53.5
+        127.8,
+        36.3
       ],
-      "viralScore": 72,
+      "viralScore": 79,
       "intensityTier": "high",
-      "topicCount": 7,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-        "headline": "UK Government Evaluates Age Of Consent Following Brand Allegations",
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "Top South Korean Tax Exam Scorer Confesses To AI-Assisted Cheating",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 69,
+        "viralScore": 79,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 76,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "israeli-airstrike-on-nasser-hospital",
+        "canonicalPath": "/news/il/israeli-airstrike-on-nasser-hospital/",
+        "headline": "Israel Targets Hamas Senior Commander During Gaza Military Strikes",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 74,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "Over One Hundred Thousand March Across France In Fifth Weekend",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 71,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 71,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "modi-pitroda-public-exchange",
+        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
+        "headline": "Prime Minister Modi Comments On Internal Security And Ideologies",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "estonia-to-close-russia-border-crossings",
+        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
+        "headline": "Estonia Plans To Close All Russian Border Crossings In December",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 64,
         "intensityTier": "high"
       }
     },
@@ -232,16 +254,16 @@
         134,
         -25.5
       ],
-      "viralScore": 68,
+      "viralScore": 65,
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
-        "slug": "ponga-leads-new-zealand-world-cup",
-        "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-        "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
+        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+        "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 65,
+        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -254,7 +276,7 @@
         37.9,
         0.2
       ],
-      "viralScore": 68,
+      "viralScore": 61,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -263,116 +285,6 @@
         "headline": "President Ruto Calls For Peaceful Elections And Addresses Criticism",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CA",
-      "isoNumeric": "124",
-      "name": "Canada",
-      "slug": "canada",
-      "centroid": [
-        -106.3,
-        56.1
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "soldier-dies-following-wainwright-base-fire",
-        "canonicalPath": "/news/ca/soldier-dies-following-wainwright-base-fire/",
-        "headline": "Death Toll Reaches Five Following Incident At CFB Wainwright Base",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "european-leaders-seek-ukraine-peace-influence",
-        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
-        "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "foreign-nationals-arrested-south-africa-airport",
-        "canonicalPath": "/news/za/foreign-nationals-arrested-south-africa-airport/",
-        "headline": "Recent Developments Involving South Africa Security And Diplomacy",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
-      "centroid": [
-        12.6,
-        42.8
-      ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "italy-fines-meta-over-photo-privacy",
-        "canonicalPath": "/news/it/italy-fines-meta-over-photo-privacy/",
-        "headline": "Italian Authorities Impose Massive Fine On Meta Over Photo Access",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 59,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 59,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
         "viralScore": 58,
         "intensityTier": "active"
       }
@@ -386,38 +298,126 @@
         8.1,
         9.6
       ],
-      "viralScore": 57,
-      "intensityTier": "active",
+      "viralScore": 60,
+      "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "Political Factions And Mobilization Grow Ahead Of 2027 Elections",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
+        "slug": "security-forces-confront-armed-groups-nigeria",
+        "canonicalPath": "/news/ng/security-forces-confront-armed-groups-nigeria/",
+        "headline": "Military Forces Engage Armed Groups Amidst Attacks In Northern Nigeria",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
       "centroid": [
-        103.82,
-        1.35
+        31.2,
+        49
       ],
-      "viralScore": 57,
+      "viralScore": 59,
       "intensityTier": "active",
-      "topicCount": 9,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "singapore-pm-outlines-asean-summit-priorities",
-        "canonicalPath": "/news/sg/singapore-pm-outlines-asean-summit-priorities/",
-        "headline": "Singapore Prime Minister Outlines Regional Goals At ASEAN Summit",
+        "slug": "european-leaders-seek-ukraine-peace-influence",
+        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
+        "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 54,
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+        "headline": "UK Government Evaluates Age Of Consent Following Brand Allegations",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
+        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
+        "headline": "Canary Islands Face Sharp Increase In Migrant Boat Arrivals",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
+      "centroid": [
+        12.6,
+        42.8
+      ],
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "italy-fines-meta-over-photo-privacy",
+        "canonicalPath": "/news/it/italy-fines-meta-over-photo-privacy/",
+        "headline": "Italian Authorities Impose Massive Fine On Meta Over Photo Access",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 57,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -444,46 +444,46 @@
       }
     },
     {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
       "centroid": [
-        35.2,
-        31.9
+        24.7,
+        -29
       ],
       "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
+        "slug": "foreign-nationals-arrested-south-africa-airport",
+        "canonicalPath": "/news/za/foreign-nationals-arrested-south-africa-airport/",
+        "headline": "Recent Developments Involving South Africa Security And Diplomacy",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
       "centroid": [
-        10.4,
-        51.1
+        103.82,
+        1.35
       ],
-      "viralScore": 54,
+      "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "merz-nominates-aigner-for-german-president",
-        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
-        "headline": "Chancellor Merz Advances Ilse Aigner For German Presidential Role",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 53,
+        "slug": "nvidia-ceo-jensen-huang-resigns-2",
+        "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
+        "headline": "Nvidia Leadership Changes Following Resignation Of Jensen Huang",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -510,65 +510,21 @@
       }
     },
     {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
       "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 53,
-      "intensityTier": "active",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-        "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
-        "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
+        10.4,
+        51.1
       ],
       "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "japan-wins-asia-professional-baseball-championship",
-        "canonicalPath": "/news/jp/japan-wins-asia-professional-baseball-championship/",
-        "headline": "Japan Defeats South Korea To Win Asia Professional Baseball Title",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SD",
-      "isoNumeric": "729",
-      "name": "Sudan",
-      "slug": "sudan",
-      "centroid": [
-        30.2,
-        15.6
-      ],
-      "viralScore": 51,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "south-sudan-postpones-first-national-elections-to-february-2027",
-        "canonicalPath": "/news/sd/south-sudan-postpones-first-national-elections-to-february-2027/",
-        "headline": "South Sudan postpones first national elections to February 2027",
+        "slug": "merz-nominates-aigner-for-german-president",
+        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
+        "headline": "Chancellor Merz Advances Ilse Aigner For German Presidential Role",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 51,
@@ -584,16 +540,82 @@
         54,
         24
       ],
+      "viralScore": 52,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "rory-mcilroy-race-to-dubai-title",
+        "canonicalPath": "/news/ae/rory-mcilroy-race-to-dubai-title/",
+        "headline": "Rory McIlroy Secures Record-Equalling Eighth Race To Dubai Title",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 51,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SD",
+      "isoNumeric": "729",
+      "name": "Sudan",
+      "slug": "sudan",
+      "centroid": [
+        30.2,
+        15.6
+      ],
+      "viralScore": 50,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "south-sudan-postpones-first-national-elections-to-february-2027",
+        "canonicalPath": "/news/sd/south-sudan-postpones-first-national-elections-to-february-2027/",
+        "headline": "South Sudan postpones first national elections to February 2027",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 50,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "CA",
+      "isoNumeric": "124",
+      "name": "Canada",
+      "slug": "canada",
+      "centroid": [
+        -106.3,
+        56.1
+      ],
       "viralScore": 49,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
-        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
-        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
-        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
+        "slug": "soldier-dies-following-wainwright-base-fire",
+        "canonicalPath": "/news/ca/soldier-dies-following-wainwright-base-fire/",
+        "headline": "Death Toll Reaches Five Following Incident At CFB Wainwright Base",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 49,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 46,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "nigeria-japan-u17-womens-world-cup-final",
+        "canonicalPath": "/news/jp/nigeria-japan-u17-womens-world-cup-final/",
+        "headline": "Nigeria And Japan To Compete In The FIFA U-17 Women World Cup Final",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 49,
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
@@ -606,7 +628,7 @@
         69.3,
         30
       ],
-      "viralScore": 49,
+      "viralScore": 43,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -615,51 +637,7 @@
         "headline": "Two Arrested In India Over Rajasthan Railway Track Explosion Case",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "NZ",
-      "isoNumeric": "554",
-      "name": "New Zealand",
-      "slug": "new-zealand",
-      "centroid": [
-        172,
-        -41.5
-      ],
-      "viralScore": 44,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "new-zealand-world-cup-cricket-final",
-        "canonicalPath": "/news/nz/new-zealand-world-cup-cricket-final/",
-        "headline": "New Zealand Performance Falls Short In World Cup Cricket Final",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 43,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 44,
-      "intensityTier": "active",
-      "topicCount": 7,
-      "topTopic": {
-        "slug": "curry-baker-film-obsession-success",
-        "canonicalPath": "/news/br/curry-baker-film-obsession-success/",
-        "headline": "Director Curry Baker Gains Global Attention For New Film Obsession",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
-        "viralScore": 41,
+        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -708,6 +686,50 @@
       }
     },
     {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 37,
+      "intensityTier": "active",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "banco-do-brasil-rural-debt-defaults",
+        "canonicalPath": "/news/br/banco-do-brasil-rural-debt-defaults/",
+        "headline": "Banco Do Brasil Reports Thousands Of Rural Producers In Default",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 34,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NZ",
+      "isoNumeric": "554",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "centroid": [
+        172,
+        -41.5
+      ],
+      "viralScore": 36,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "new-zealand-world-cup-cricket-final",
+        "canonicalPath": "/news/nz/new-zealand-world-cup-cricket-final/",
+        "headline": "New Zealand Performance Falls Short In World Cup Cricket Final",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 35,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "MX",
       "isoNumeric": "484",
       "name": "Mexico",
@@ -726,28 +748,6 @@
         "categorySlug": "technology-ai",
         "categoryName": "Technology & AI",
         "viralScore": 31,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 31,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
-        "headline": "Canary Islands’ El Hierro declares emergency amid migrant, refugee influx",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 30,
         "intensityTier": "active"
       }
     },

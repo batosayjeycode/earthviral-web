@@ -1,24 +1,25 @@
 {
-  "batchId": "batch-202611151418",
-  "generatedAt": "2026-11-15T14:18:00Z",
-  "nextUpdateAt": "2026-11-15T17:17:00Z",
+  "batchId": "batch-202611151718",
+  "generatedAt": "2026-11-15T17:18:00Z",
+  "nextUpdateAt": "2026-11-15T20:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 34,
-    "viralTopics": 151,
-    "globalIndex": 83
+    "viralTopics": 149,
+    "globalIndex": 81
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 31,
+    "feedsOk": 30,
     "feedsFailed": [
+      "tempo: HTTP 403 for https://rss.tempo.co/",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1062,
-    "newClusters": 10,
-    "updatedClusters": 24,
-    "retiredClusters": 8,
+    "articlesFetched": 1011,
+    "newClusters": 12,
+    "updatedClusters": 19,
+    "retiredClusters": 11,
     "aiCalls": 17,
-    "durationMs": 75301
+    "durationMs": 110371
   }
 }

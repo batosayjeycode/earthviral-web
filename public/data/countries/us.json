@@ -3,25 +3,25 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 82,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-15T14:18:00Z",
+  "viralScore": 88,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-15T17:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "FAA Identifies Root Cause Of Nationwide Flight Grounding Incident",
+      "headline": "Transportation Secretary Links Flight Grounding To Outdated Network",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 79,
-      "intensityTier": "high",
+      "viralScore": 85,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "A four-hour nationwide ground stop was triggered by equipment upgrade issues at a remote site.",
-        "The disruption resulted from a surge in connection attempts coinciding with technical maintenance, affecting radar and communication."
+        "Transportation Secretary Sean Duffy cited aging telecommunication networks as the core issue behind the recent nationwide flight stoppage.",
+        "The disruption, which grounded all flights across the United States, was attributed to a router switch failure within the legacy infrastructure."
       ],
       "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/us-flights-allowed-to-take-off-again-as-nationwide-ground-stop-lifted-but-delays-expected/"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/us-flight-disruptions-ground-stop-lifted-but-will-your-flight-take-off-trump-official-explains/articleshow/135821095.cms"
       }
     },
     {
@@ -30,15 +30,32 @@
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 82,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
         "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/usa-democrats-vow-to-investigate-donald-trump"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/ross-douthat-to-trump-can-you-work-with-democrats-without-insulting-them/"
+      }
+    },
+    {
+      "slug": "us-flight-grounding-causes-travel-disruptions",
+      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
+      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
+        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "Aviation Authorities Restore US Flights After Significant Outage",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
@@ -59,13 +76,30 @@
       }
     },
     {
+      "slug": "judge-halts-washington-golf-course-renovation",
+      "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
+      "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
+        "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
+      }
+    },
+    {
       "slug": "ukraine-nato-territory-exchange-proposal",
       "canonicalPath": "/news/us/ukraine-nato-territory-exchange-proposal/",
       "headline": "Proposed Ukraine NATO Membership Deal Involves Territorial Concession",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Reports suggest an informal proposal for Ukraine to exchange Donbas territory for formal NATO alliance membership.",
         "The Ukrainian president stated that any potential decision regarding such a territorial exchange would require consultation with his citizens."
@@ -73,23 +107,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo"
-      }
-    },
-    {
-      "slug": "us-flight-grounding-causes-travel-disruptions",
-      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
-      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
-        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
       }
     },
     {
@@ -115,7 +132,7 @@
       "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 51,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
@@ -132,7 +149,7 @@
       "headline": "SpaceX Successfully Recovers Starship Spacecraft From Earth Orbit",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "SpaceX completed the first-ever mid-air recovery of the Starship upper stage after a mission from orbit.",
@@ -141,23 +158,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch"
-      }
-    },
-    {
-      "slug": "judge-halts-washington-golf-course-renovation",
-      "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
-      "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
-        "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
       }
     },
     {
