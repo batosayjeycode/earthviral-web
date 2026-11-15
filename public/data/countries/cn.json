@@ -3,18 +3,35 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 64,
+  "viralScore": 72,
   "intensityTier": "high",
-  "generatedAt": "2026-11-15T11:18:00Z",
+  "generatedAt": "2026-11-15T14:18:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-investigates-ceo-espionage-allegations",
+      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+      "headline": "Jensen Huang Resigns Amid Inquiries Into Nvidia China Chip Access",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang resigned as CEO of Nvidia amid allegations involving an affair with a Chinese businesswoman.",
+        "US authorities are currently investigating whether the individual was an intelligence asset and if banned chips were diverted to China."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair"
+      }
+    },
     {
       "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
       "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
       "headline": "Hong Kong Markets See Fluctuating Debuts For Chinese Tech Firms",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Semiconductor firms Hosin, Amicro, Denglin, and Xinde recently debuted on the Hong Kong stock market with mixed trading performances.",
         "Alibaba's artificial intelligence chip division, T-Head, has submitted an application to launch an initial public offering in Hong Kong."
@@ -22,40 +39,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/05/asia-pacific/politics/joshua-wong-hong-kong-democracy-prison/"
-      }
-    },
-    {
-      "slug": "trump-to-meet-xi-putin-apec",
-      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-      "headline": "Leaders Of US, China, And Russia To Hold Trilateral Meeting In China",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump, President Xi Jinping, and President Vladimir Putin will convene for a trilateral meeting in China.",
-        "The White House confirmed the upcoming talks, which are expected to focus on the reduction of nuclear weapon stockpiles."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261109132631-4-783552/trump-bakal-bertemu-xi-jinping-putin-di-china-minggu-depan-ada-apa"
-      }
-    },
-    {
-      "slug": "nvidia-investigates-ceo-espionage-allegations",
-      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-      "headline": "Jensen Huang Resigns Amid Inquiries Into Nvidia China Chip Access",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang resigned as CEO of Nvidia amid allegations involving an affair with a Chinese businesswoman.",
-        "US authorities are currently investigating whether the individual was an intelligence asset and if banned chips were diverted to China."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/business/2026/11/12/tech/china-ai-nvidia-spy-us-chip-curbs/"
       }
     },
     {
@@ -76,12 +59,29 @@
       }
     },
     {
+      "slug": "trump-to-meet-xi-putin-apec",
+      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+      "headline": "Leaders Of US, China, And Russia To Hold Trilateral Meeting In China",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Donald Trump, President Xi Jinping, and President Vladimir Putin will convene for a trilateral meeting in China.",
+        "The White House confirmed the upcoming talks, which are expected to focus on the reduction of nuclear weapon stockpiles."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261109132631-4-783552/trump-bakal-bertemu-xi-jinping-putin-di-china-minggu-depan-ada-apa"
+      }
+    },
+    {
       "slug": "xi-jinping-to-host-apec-summit",
       "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
       "headline": "President Xi Jinping To Lead The 33rd APEC Summit In Shenzhen",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Xi Jinping will preside over the 33rd Asia-Pacific Economic Cooperation summit held in Shenzhen.",
@@ -98,7 +98,7 @@
       "headline": "Beijing Implements Comprehensive Ban On Private Drone Ownership",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Beijing officials have enacted a total prohibition on private drone ownership within the municipality.",
@@ -115,7 +115,7 @@
       "headline": "Regional Concerns Grow Regarding China's Military Activity In Laos",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "China continues to deepen its established economic ties with various Southeast Asian nations.",

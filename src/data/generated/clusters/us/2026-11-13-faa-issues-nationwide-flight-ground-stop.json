@@ -18,24 +18,17 @@
   ],
   "aiContextParagraph": "On November 14, 2026, the United States experienced its most significant nationwide air traffic stoppage since 2001. The Federal Aviation Administration (FAA) issued a ground stop after encountering major failures within the air traffic control communication infrastructure. According to the Transportation Secretary and official reports, the event was caused by maintenance work involving the upgrade of outdated equipment at a remote site. This maintenance overlapped with an unexpected surge in connection requests, which created sporadic radar and communication challenges across multiple regional control centers. The disruption lasted more than four hours, leading to widespread flight delays and cancellations. President Trump was briefed on the technical failure shortly after the ground stop was initiated. Aviation experts are currently reviewing the incident as the industry works to recover from the operational instability caused by the system malfunction.",
   "whyItIsViral": "The event generated widespread attention due to its scale as the longest nationwide ground stop in 25 years, drawing heavy traffic from ten global media outlets and significant public search activity.",
-  "viralScore": 90,
-  "intensityTier": "surge",
+  "viralScore": 79,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 10,
-    "coverageVelocityScore": 59,
-    "publicSearchSignalScore": 64,
+    "coverageVelocityScore": 56,
+    "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-13T21:55:13Z",
-  "lastUpdatedBatchAt": "2026-11-15T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-15T14:18:00Z",
   "sources": [
-    {
-      "publisherName": "Times of India",
-      "publisherDomain": "timesofindia.indiatimes.com",
-      "articleTitle": "US flight disruptions: Nationwide ground stop ordered for only the second time since 9/11",
-      "articleUrl": "https://timesofindia.indiatimes.com/world/us/us-flight-disruptions-nationwide-ground-stop-ordered-for-only-the-second-time-since-9/11/articleshow/135820238.cms",
-      "publishedAt": "2026-11-14T02:37:59Z"
-    },
     {
       "publisherName": "Capital FM",
       "publisherDomain": "capitalfm.co.ke",
@@ -238,6 +231,13 @@
       "articleTitle": "What forced the US to ground all planes? A router switch, we now know",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know?traffic_source=rss",
       "publishedAt": "2026-11-15T09:17:49Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Air travel issues persist in the US after nationwide ground stop",
+      "articleUrl": "https://www.france24.com/en/air-travel-issues-persist-in-the-us-after-nationwide-ground-stop",
+      "publishedAt": "2026-11-15T12:12:28Z"
     }
   ],
   "entityTags": [
@@ -257,11 +257,11 @@
   "relatedInCountrySlugs": [
     "us-nationwide-flight-ground-stop",
     "us-flight-grounding-causes-travel-disruptions",
-    "ukraine-nato-territory-exchange-proposal"
+    "democrats-swept-the-midterms-what-comes-next-for-the"
   ],
   "relatedInCategorySlugs": [
     "brazil-air-traffic-system-resilience",
-    "indigo-flight-returns-to-pune-airport",
-    "farage-says-he-is-worried-trump-will-step-up"
+    "farage-says-he-is-worried-trump-will-step-up",
+    "indigo-flight-returns-to-pune-airport"
   ]
 }

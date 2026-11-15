@@ -3,18 +3,35 @@
   "name": "Nigeria",
   "slug": "nigeria",
   "region": "Africa",
-  "viralScore": 68,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-15T11:18:00Z",
+  "viralScore": 57,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-15T14:18:00Z",
   "clusters": [
+    {
+      "slug": "apc-prepares-for-2027-general-elections",
+      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+      "headline": "Political Factions And Mobilization Grow Ahead Of 2027 Elections",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "State governors and local party leaders are actively organizing regional campaigns and setting electoral vote targets for President Tinubu's 2027 re-election bid.",
+        "Internal disputes have emerged within the All Progressives Congress in Benue State, where rival factions are clashing over the structure of campaign support."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/2027-tinubu-support-group-targets-20-million-votes/"
+      }
+    },
     {
       "slug": "nigeria-tanzania-afcon-qualifier-draw",
       "canonicalPath": "/news/ng/nigeria-tanzania-afcon-qualifier-draw/",
       "headline": "Super Eagles Focus On Securing Back-To-Back Wins Against Tanzania",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 48,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Super Eagles recently secured a 3-1 victory over Tanzania, bolstered by a brace from Tolu Arokodare.",
         "Coach Chelle has emphasized the necessity of achieving consecutive wins as the team continues their AFCON qualification campaign."
@@ -25,46 +42,12 @@
       }
     },
     {
-      "slug": "serap-ultimatum-to-inec-election-violence",
-      "canonicalPath": "/news/ng/serap-ultimatum-to-inec-election-violence/",
-      "headline": "SERAP Issues Ultimatum To INEC Over 2027 Election Violence Cases",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Socio-Economic Rights and Accountability Project issued a seven-day deadline to the electoral commission.",
-        "The organization is demanding that police files be secured to initiate prosecutions for violence during the 2027 election period."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/more-news/925228-2027-serap-asks-inec-to-prosecute-electoral-violence-suspects.html"
-      }
-    },
-    {
-      "slug": "apc-prepares-for-2027-general-elections",
-      "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-      "headline": "Political Mobilization Intensifies For Nigeria's 2027 Election Cycle",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "State leaders and support groups across Nigeria are initiating campaigns to secure votes for President Tinubu in the 2027 general elections.",
-        "Internal political dynamics are under scrutiny, including reports of meetings between high-profile party figures despite alleged interpersonal rifts."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/news/top-news/924505-2027-at-akure-campaign-rally-tinubu-demands-no-less-than-1-2m-votes-from-ondo-voters.html"
-      }
-    },
-    {
       "slug": "nigeria-democratic-congress-town-hall-disruption",
       "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
       "headline": "Political Tensions Escalate In Nigeria Following Lagos Event Attack",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A Lagos campaign event for the Nigeria Democratic Congress was disrupted by individuals wielding weapons, resulting in property damage.",
@@ -76,12 +59,46 @@
       }
     },
     {
+      "slug": "serap-ultimatum-to-inec-election-violence",
+      "canonicalPath": "/news/ng/serap-ultimatum-to-inec-election-violence/",
+      "headline": "SERAP Issues Ultimatum To INEC Over 2027 Election Violence Cases",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Socio-Economic Rights and Accountability Project issued a seven-day deadline to the electoral commission.",
+        "The organization is demanding that police files be secured to initiate prosecutions for violence during the 2027 election period."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/news/more-news/925228-2027-serap-asks-inec-to-prosecute-electoral-violence-suspects.html"
+      }
+    },
+    {
+      "slug": "fani-kayode-declines-sabc-interview-invitation",
+      "canonicalPath": "/news/ng/fani-kayode-declines-sabc-interview-invitation/",
+      "headline": "High Commissioner Femi Fani-Kayode Declines SABC Interview Request",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The South African Broadcasting Corporation reported that Femi Fani-Kayode refused an interview request.",
+        "The official's decision followed an alleged exclusion from a previous livestream event."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/fani-kayode-refuses-interview-invitation-after-livestream-exclusion-sabc/"
+      }
+    },
+    {
       "slug": "kano-governor-wife-divorce-filing-arrests",
       "canonicalPath": "/news/ng/kano-governor-wife-divorce-filing-arrests/",
       "headline": "Arrests Reported Following Divorce Filing In Kano Governor Family",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A divorce petition filed by the niece of political figure Rabiu Kwankwaso against the Kano State Governor has prompted reports of arrests.",
@@ -98,7 +115,7 @@
       "headline": "President Tinubu Pledges Reconstruction Efforts In Plateau State",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Bola Tinubu announced plans to reconstruct communities in Plateau State impacted by long-term violence.",
@@ -107,57 +124,6 @@
       "primarySource": {
         "publisherName": "Punch",
         "articleUrl": "https://punchng.com/2027-tinubu-promises-to-rebuild-plateau-communities/"
-      }
-    },
-    {
-      "slug": "nigeria-upgrades-health-centers-policy-goals",
-      "canonicalPath": "/news/ng/nigeria-upgrades-health-centers-policy-goals/",
-      "headline": "Nigerian Federal Government Addresses Public Claims and Initiatives",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Officials officially refuted viral claims asserting the existence of 2,000 fake universities and 100 fraudulent professors.",
-        "A travel warning was issued for citizens traveling to Ethiopia following 16 reported deaths attributed to high-altitude health issues."
-      ],
-      "primarySource": {
-        "publisherName": "Premium Times",
-        "articleUrl": "https://www.premiumtimesng.com/health/health-news/924170-nigeria-targets-90-functional-health-centres-40-health-insurance-coverage-by-2031.html"
-      }
-    },
-    {
-      "slug": "nigeria-addis-ababa-airport-health-advisory",
-      "canonicalPath": "/news/ng/nigeria-addis-ababa-airport-health-advisory/",
-      "headline": "Nigeria Issues Health Advisory For Travelers Using Addis Ababa Airport",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Nigerian government has issued a travel warning regarding the altitude of Ethiopia’s main international airport.",
-        "The advisory specifically targets travelers with existing medical conditions who plan to transit through Addis Ababa."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo"
-      }
-    },
-    {
-      "slug": "nigeria-2027-election-ai-disinformation-risks",
-      "canonicalPath": "/news/ng/nigeria-2027-election-ai-disinformation-risks/",
-      "headline": "Rising Concerns Over AI Disinformation In Nigeria 2027 Elections",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Artificial intelligence is reportedly being used to influence the electoral environment in Nigeria ahead of the 2027 general elections.",
-        "Media outlets have highlighted growing concerns regarding the impact of synthetic content on the integrity of the democratic process."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/nigeria-s-upcoming-election-marred-by-rising-ai-disinformation/a-79946897?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -175,6 +141,40 @@
       "primarySource": {
         "publisherName": "Premium Times",
         "articleUrl": "https://www.premiumtimesng.com/news/top-news/924672-four-unn-students-die-of-hard-drug-overdose.html"
+      }
+    },
+    {
+      "slug": "nigeria-upgrades-health-centers-policy-goals",
+      "canonicalPath": "/news/ng/nigeria-upgrades-health-centers-policy-goals/",
+      "headline": "Nigerian Federal Government Addresses Public Claims and Initiatives",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Officials officially refuted viral claims asserting the existence of 2,000 fake universities and 100 fraudulent professors.",
+        "A travel warning was issued for citizens traveling to Ethiopia following 16 reported deaths attributed to high-altitude health issues."
+      ],
+      "primarySource": {
+        "publisherName": "Premium Times",
+        "articleUrl": "https://www.premiumtimesng.com/health/health-news/924170-nigeria-targets-90-functional-health-centres-40-health-insurance-coverage-by-2031.html"
+      }
+    },
+    {
+      "slug": "nigeria-addis-ababa-airport-health-advisory",
+      "canonicalPath": "/news/ng/nigeria-addis-ababa-airport-health-advisory/",
+      "headline": "Nigeria Issues Health Advisory For Travelers Using Addis Ababa Airport",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Nigerian government has issued a travel warning regarding the altitude of Ethiopia’s main international airport.",
+        "The advisory specifically targets travelers with existing medical conditions who plan to transit through Addis Ababa."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo"
       }
     }
   ]

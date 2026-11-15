@@ -3,17 +3,34 @@
   "name": "New Zealand",
   "slug": "new-zealand",
   "region": "Oceania",
-  "viralScore": 33,
+  "viralScore": 44,
   "intensityTier": "active",
-  "generatedAt": "2026-11-15T11:18:00Z",
+  "generatedAt": "2026-11-15T14:18:00Z",
   "clusters": [
+    {
+      "slug": "new-zealand-world-cup-cricket-final",
+      "canonicalPath": "/news/nz/new-zealand-world-cup-cricket-final/",
+      "headline": "New Zealand Performance Falls Short In World Cup Cricket Final",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "New Zealand was defeated in the World Cup final held at Lang Park in Brisbane.",
+        "The team failed to meet expectations and did not perform as anticipated during the match."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/rugby-league-world-cup-final-australia-new-zealand/107388030"
+      }
+    },
     {
       "slug": "nz-rugby-league-ancestral-ties",
       "canonicalPath": "/news/nz/nz-rugby-league-ancestral-ties/",
       "headline": "Historical Connections Of New Zealand Rugby League Pioneers Noted",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 32,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Descendants are reflecting on ancestral connections formed over a century ago.",
@@ -25,30 +42,13 @@
       }
     },
     {
-      "slug": "new-zealand-india-cricket-match-result",
-      "canonicalPath": "/news/nz/new-zealand-india-cricket-match-result/",
-      "headline": "New Zealand Secures Decisive Victory Over India In Fourth Cricket Test",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "New Zealand achieved a 244-run victory against India in the fourth match of their five-game series.",
-        "The performance by Matt Henry and Will Young was highlighted as a key factor in the outcome."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/sports/2026/11/13/matt-henry-will-young-new-zealand-india-fourth-odi?traffic_source=rss"
-      }
-    },
-    {
       "slug": "new-zealand-election-too-close",
       "canonicalPath": "/news/nz/new-zealand-election-too-close/",
       "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
-      "intensityTier": "active",
+      "viralScore": 64,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "New Zealand's main political parties are separated by fewer than 4,000 votes after over 95% of ballots were processed.",
         "Major news outlets report no clear winner has emerged from the general election, leaving the nation in a period of political uncertainty."
@@ -90,6 +90,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/7/governing-party-leads-in-new-zealands-knife-edge-vote-early-results?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "new-zealand-india-cricket-match-result",
+      "canonicalPath": "/news/nz/new-zealand-india-cricket-match-result/",
+      "headline": "New Zealand Secures Decisive Victory Over India In Fourth Cricket Test",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "New Zealand achieved a 244-run victory against India in the fourth match of their five-game series.",
+        "The performance by Matt Henry and Will Young was highlighted as a key factor in the outcome."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/sports/2026/11/13/matt-henry-will-young-new-zealand-india-fourth-odi?traffic_source=rss"
       }
     }
   ]
