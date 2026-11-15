@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 86,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-15T05:18:00Z",
+  "generatedAt": "2026-11-15T08:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
@@ -13,8 +13,8 @@
       "headline": "FAA Identifies Root Cause Of Nationwide Flight Grounding Incident",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 100,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "A four-hour nationwide ground stop was triggered by equipment upgrade issues at a remote site.",
         "The disruption resulted from a surge in connection attempts coinciding with technical maintenance, affecting radar and communication."
@@ -30,7 +30,7 @@
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 76,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
@@ -47,7 +47,7 @@
       "headline": "Aviation Authorities Restore US Flights After Significant Outage",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 66,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
@@ -59,64 +59,13 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
-      }
-    },
-    {
-      "slug": "judge-halts-washington-golf-course-renovation",
-      "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
-      "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
-        "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
-      }
-    },
-    {
-      "slug": "spacex-starship-orbital-recovery-success",
-      "canonicalPath": "/news/us/spacex-starship-orbital-recovery-success/",
-      "headline": "SpaceX Successfully Recovers Starship Spacecraft From Earth Orbit",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "SpaceX completed the first-ever mid-air recovery of the Starship upper stage after a mission from orbit.",
-        "The spacecraft was successfully captured by the launch tower's mechanical arms at the company's Texas facility."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch"
-      }
-    },
-    {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
         "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
@@ -127,13 +76,30 @@
       }
     },
     {
+      "slug": "judge-halts-washington-golf-course-renovation",
+      "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
+      "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 57,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
+        "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
+      }
+    },
+    {
       "slug": "mississippi-river-ship-collision-new-orleans",
       "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
       "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
         "Emergency responders confirmed that all passengers have been accounted for following the incident."
@@ -144,20 +110,20 @@
       }
     },
     {
-      "slug": "united-states-loses-measles-elimination-status",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status/",
-      "headline": "United States Loses Official Measles Elimination Status After Decades",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 57,
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "International health authorities have reportedly stripped the U.S. of its measles-elimination designation.",
-        "The loss of status marks the first time the country has failed to meet elimination criteria in 26 years."
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
       ],
       "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/us-loses-measles-elimination-status-after-26-years-wsj-reports/a-79946974?maca=en-rss-en-all-1573-xml-mrss"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
       }
     },
     {
@@ -175,6 +141,40 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/world/us-house-representatives-block-path-impeach-defense-secretary-pete-hegseth-6540901"
+      }
+    },
+    {
+      "slug": "spacex-starship-orbital-recovery-success",
+      "canonicalPath": "/news/us/spacex-starship-orbital-recovery-success/",
+      "headline": "SpaceX Successfully Recovers Starship Spacecraft From Earth Orbit",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "SpaceX completed the first-ever mid-air recovery of the Starship upper stage after a mission from orbit.",
+        "The spacecraft was successfully captured by the launch tower's mechanical arms at the company's Texas facility."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status/",
+      "headline": "United States Loses Official Measles Elimination Status After Decades",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "International health authorities have reportedly stripped the U.S. of its measles-elimination designation.",
+        "The loss of status marks the first time the country has failed to meet elimination criteria in 26 years."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/us-loses-measles-elimination-status-after-26-years-wsj-reports/a-79946974?maca=en-rss-en-all-1573-xml-mrss"
       }
     }
   ]
