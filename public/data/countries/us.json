@@ -3,42 +3,42 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 96,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-14T23:18:00Z",
+  "generatedAt": "2026-11-15T02:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "US Aviation Authorities Identify Cause Of Major Flight Ground Stop",
+      "headline": "US Aviation Authorities Address System Failure Behind Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 100,
+      "viralScore": 93,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "A major nationwide ground stop halted air departures across the United States for several hours.",
-        "Federal aviation officials attributed the disruption to an equipment failure occurring during a telecommunications network upgrade."
+        "A nationwide ground stop halted air departures across the US, marking the most significant aviation disruption since 2001.",
+        "Transportation Secretary Sean Duffy attributed the failure to maintenance errors performed by a contractor during a system upgrade."
       ],
       "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/us-lifts-nationwide-ground-stop-for-airports-hours-after-halting-all-departures/a-79945062?maca=en-rss-en-all-1573-xml-mrss"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o"
       }
     },
     {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Authorities Restore US Flights After Significant Outage",
+      "slug": "us-flight-grounding-causes-travel-disruptions",
+      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
+      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 92,
-      "intensityTier": "surge",
+      "viralScore": 82,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
-        "The Federal Aviation Administration attributed the incident to infrastructure issues following router installations by contractor L3Harris."
+        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
+        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
       }
     },
     {
@@ -47,7 +47,7 @@
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 81,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
@@ -59,20 +59,20 @@
       }
     },
     {
-      "slug": "us-flight-grounding-causes-travel-disruptions",
-      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
-      "headline": "US Transportation Infrastructure Suffers Major Nationwide Halt",
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Authorities Restore US Flights After Significant Outage",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 71,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "A massive communications failure caused widespread flight cancellations and delays across the United States.",
-        "President Trump confirmed the grounding was caused by outdated technology rather than cyberattacks or artificial intelligence."
+        "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
+        "The Federal Aviation Administration attributed the incident to infrastructure issues following router installations by contractor L3Harris."
       ],
       "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "SpaceX Successfully Recovers Starship Spacecraft From Earth Orbit",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 67,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "SpaceX completed the first-ever mid-air recovery of the Starship upper stage after a mission from orbit.",
@@ -98,7 +98,7 @@
       "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 63,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
@@ -110,12 +110,29 @@
       }
     },
     {
+      "slug": "united-states-loses-measles-elimination-status",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status/",
+      "headline": "United States Loses Official Measles Elimination Status After Decades",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "International health authorities have reportedly stripped the U.S. of its measles-elimination designation.",
+        "The loss of status marks the first time the country has failed to meet elimination criteria in 26 years."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/us-loses-measles-elimination-status-after-26-years-wsj-reports/a-79946974?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "armed-suspect-arrested-near-white-house",
       "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
       "headline": "White House Faces Administrative Shifts And Political Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
@@ -124,23 +141,6 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status/",
-      "headline": "United States Loses Official Measles Elimination Status After Decades",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "International health authorities have reportedly stripped the U.S. of its measles-elimination designation.",
-        "The loss of status marks the first time the country has failed to meet elimination criteria in 26 years."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/us-loses-measles-elimination-status-after-26-years-wsj-reports/a-79946974?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -161,20 +161,20 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "US Senate Orders Testimony From Jensen Huang And Howard Lutnick",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "us-air-traffic-disruption-resolution",
+      "canonicalPath": "/news/us/us-air-traffic-disruption-resolution/",
+      "headline": "United States Air Traffic Resumes Following Operational Disruptions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Jensen Huang has resigned from his position as CEO of Nvidia amid ongoing scrutiny regarding personal associations and corporate leadership.",
-        "The US Senate has officially requested testimonies from both Huang and Commerce Secretary Howard Lutnick regarding the company's oversight."
+        "Aviation operations across the United States have officially returned to normal status.",
+        "US Secretary of Transportation Sean Duffy confirmed safety measures despite ongoing flight cancellations and delays."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/"
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261114101007-4-785205/bantah-ada-serangan-siber-penerbangan-di-as-mulai-kembali-dibuka"
       }
     }
   ]

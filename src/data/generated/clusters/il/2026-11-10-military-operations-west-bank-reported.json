@@ -6,28 +6,28 @@
   "countryName": "Israel",
   "countrySlug": "israel",
   "region": "Asia",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Reports Emerge Regarding Military Operations Within The West Bank",
-  "seoTitle": "Military Operations Reported In West Bank",
-  "metaDescription": "Recent reports from the West Bank detail military operations, including a fatal shooting of a Palestinian minor and analysis of settler-soldier dynamics.",
+  "categorySlug": "disasters-world-events",
+  "categoryName": "Disasters & World Events",
+  "headline": "Hamas Confirms Death Of Senior Commander In Gaza Airstrike Event",
+  "seoTitle": "Hamas Commander Killed in Gaza Airstrike",
+  "metaDescription": "Hamas reports the death of a senior commander following an Israeli airstrike in the Mawasi area of Khan Younis, escalating regional tensions.",
   "aiSummaryBullets": [
-    "A Palestinian youth was killed by Israeli military personnel in the West Bank.",
-    "The Israeli military stated that troops fired at individuals suspected of planning to throw stones at a road.",
-    "Media investigations have alleged a overlap between Israeli military service and settlement activities in the region."
+    "Hamas confirmed that senior commander Samir Abu Younis died in an Israeli airstrike located in the Mawasi area of Khan Younis.",
+    "The commander was allegedly involved in the planning of the October 7, 2025 assault on Israel.",
+    "Recent military operations in the region have also included airstrikes near hospital facilities and increased activity in the West Bank."
   ],
-  "aiContextParagraph": "Tensions in the West Bank remain a focus of international reporting following recent violent incidents. A spokesperson for the Israeli military confirmed that soldiers engaged individuals accused of preparing to throw stones at a road frequently used by Israelis, resulting in the death of a Palestinian minor. The Palestinian Ministry of Health documented the fatality following the encounter. Separately, independent media analysis has examined the relationship between Israeli military personnel and the settler population in the West Bank. These reports suggest that the roles of soldiers and settlers are increasingly blurred, claiming that this proximity contributes to broader patterns of violence and displacement within the occupied territory. These reports highlight ongoing concerns regarding the security environment and the administrative status of regions within the West Bank as military actions continue to impact local communities and civilians in the area.",
-  "whyItIsViral": "The story is trending due to reports from multiple international outlets regarding recent fatalities and structural concerns in the West Bank.",
-  "viralScore": 49,
-  "intensityTier": "active",
+  "aiContextParagraph": "The conflict in the region has remained active following the October 2025 ceasefire, with multiple incidents reported across Gaza and the West Bank. In recent days, Hamas confirmed the death of Samir Abu Younis, a commander of the Rafah brigade, during an Israeli airstrike in the Mawasi area of Khan Younis. Regional reporting also highlights ongoing military actions elsewhere, including an airstrike near Nasser hospital that resulted in six deaths, including a surgeon. Furthermore, tensions remain high in the West Bank, where reports have emerged regarding the occupation of private property, violent clashes involving settlers near Nablus, and the death of a Palestinian youth at the hands of security forces. The United Nations has also issued statements suggesting that current policies have exacerbated the humanitarian impact of winter weather conditions for the local population.",
+  "whyItIsViral": "The report gained traction due to a steady velocity of coverage from five independent international news outlets monitoring regional military developments.",
+  "viralScore": 72,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 12,
+    "verifiedPublisherCount": 5,
+    "coverageVelocityScore": 54,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-10T11:23:18Z",
-  "lastUpdatedBatchAt": "2026-11-14T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-15T02:18:00Z",
   "sources": [
     {
       "publisherName": "BBC",
@@ -84,30 +84,48 @@
       "articleTitle": "Jerusalem Daily: Israeli forces occupy Palestinian-American’s home",
       "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/14/jerusalem-daily-israeli-forces-occupy-palestinian-americans-home?traffic_source=rss",
       "publishedAt": "2026-11-14T15:36:37Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "Israeli air strike kills senior Hamas commander in Gaza",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza?traffic_source=rss",
+      "publishedAt": "2026-11-15T01:00:42Z"
+    },
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "Hamas confirms death of senior commander Samir Abu Younis in Israeli airstrike",
+      "articleUrl": "https://timesofindia.indiatimes.com/world/middle-east/hamas-confirms-death-of-senior-commander-samir-abu-younis-in-israeli-airstrike/articleshow/135845432.cms",
+      "publishedAt": "2026-11-15T01:54:27Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Hamas",
+      "slug": "hamas"
+    },
+    {
+      "name": "Gaza Strip",
+      "slug": "gaza-strip"
+    },
     {
       "name": "West Bank",
       "slug": "west-bank"
     },
     {
-      "name": "Israeli Military",
-      "slug": "israeli-military"
-    },
-    {
-      "name": "Palestinian Ministry of Health",
-      "slug": "palestinian-ministry-of-health"
+      "name": "Israel",
+      "slug": "israel"
     }
   ],
   "relatedInCountrySlugs": [
-    "gadi-eisenkot-tasked-form-israeli-government",
-    "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-    "israeli-airstrike-on-nasser-hospital"
+    "israeli-airstrike-on-nasser-hospital",
+    "israel-knesset-political-power-transition",
+    "gadi-eisenkot-tasked-form-israeli-government"
   ],
   "relatedInCategorySlugs": [
-    "france-considers-west-bank-trade-restrictions",
-    "arrmanatha-nasir-stresses-asean-unity",
-    "democrats-swept-the-midterms-what-comes-next-for-the"
+    "severe-gaza-flooding-humanitarian-crisis",
+    "gaza-displacement-camps-flooded-by-rain",
+    "severe-storms-flood-gaza-refugee-tents"
   ]
 }
