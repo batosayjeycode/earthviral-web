@@ -84,7 +84,7 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
   - `retryDelay` / `Retry-After` hints are honoured
 - **Re-summarising:** `--resummarize-fallback` re-summarises stories that still have non-AI text. It's also available as a checkbox on the manual workflow form.
 - **Staleness watchdog:** an hourly workflow that opens or closes a `stale-data` GitHub issue when data is more than 9 h old. The site shows a **"Data delayed"** badge in the same situation.
-- **Feeds:** Tempo's blocked section feed was replaced with its main feed, and Capital FM and KBC were added for Kenya.
+- **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone.
 
 ---
 

@@ -8,12 +8,15 @@
  * articles are kept only when a country can be detected.
  *
  * Not included (probed and unavailable): Kompas (no public feed), The Jakarta Post,
- * The Star (404), Globo g1 (403), Korea Herald (empty feed), Tempo's section feeds such as
- * rss.tempo.co/nasional (403 since 2026-11-06 — its main feed is used instead).
+ * The Star (404), Globo g1 (403), Korea Herald (empty feed), Tribunnews (403), Tempo.
  *
- * Re-checked 2026-11-07: Tempo's main feed (English edition, still Indonesia-focused) and
- * Nation Africa (an intermittent 404 on 2026-11-06) work; Capital FM and KBC were added
- * so Kenya keeps coverage when one outlet is down.
+ * Tempo: since 2026-11-16 every tempo.co feed URL answers with a Cloudflare "Attention
+ * Required" challenge (HTTP 403) for any automated client, whatever its user agent. That is
+ * a deliberate block, so the source was removed rather than worked around; VIVA and
+ * Okezone replace it. Re-add Tempo only if they allowlist EarthViralBot.
+ *
+ * Re-checked 2026-11-07: Nation Africa (an intermittent 404 on 2026-11-06) works; Capital FM
+ * and KBC were added so Kenya keeps coverage when one outlet is down.
  */
 export interface RssSource {
   id: string;
@@ -43,15 +46,6 @@ export const RSS_SOURCES: RssSource[] = [
     language: 'id',
   },
   {
-    id: 'tempo',
-    publisherName: 'Tempo',
-    publisherDomain: 'tempo.co',
-    // Main feed: Tempo's English edition. Section feeds return 403.
-    url: 'https://rss.tempo.co/',
-    homeCountry: 'ID',
-    language: 'en',
-  },
-  {
     id: 'cnn-id',
     publisherName: 'CNN Indonesia',
     publisherDomain: 'cnnindonesia.com',
@@ -72,6 +66,25 @@ export const RSS_SOURCES: RssSource[] = [
     publisherName: 'Republika',
     publisherDomain: 'republika.co.id',
     url: 'https://www.republika.co.id/rss',
+    homeCountry: 'ID',
+    language: 'id',
+  },
+  {
+    id: 'viva',
+    publisherName: 'VIVA',
+    publisherDomain: 'viva.co.id',
+    // All sections, ~100 latest items. Probed 2026-11-17.
+    url: 'https://www.viva.co.id/get/all',
+    homeCountry: 'ID',
+    language: 'id',
+  },
+  {
+    id: 'okezone',
+    publisherName: 'Okezone',
+    publisherDomain: 'okezone.com',
+    // Syndication feed across sections (news, economy, sports, celebrity); article links use
+    // section subdomains such as news.okezone.com. Probed 2026-11-17.
+    url: 'https://sindikasi.okezone.com/index.php/rss/0/RSS2.0',
     homeCountry: 'ID',
     language: 'id',
   },
