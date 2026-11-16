@@ -3,25 +3,25 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 80,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-15T23:18:00Z",
+  "viralScore": 100,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-16T02:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Transportation Secretary Links Flight Grounding To Outdated Network",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 77,
-      "intensityTier": "high",
+      "headline": "President Trump Seeks 50 Billion Dollars For Aviation Infrastructure",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 99,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy cited aging telecommunication networks as the core issue behind the recent nationwide flight stoppage.",
-        "The disruption, which grounded all flights across the United States, was attributed to a router switch failure within the legacy infrastructure."
+        "President Trump requested 50 billion dollars to modernize air traffic control systems following a national flight ground stop.",
+        "Democratic lawmakers are calling for increased transparency regarding how the requested funds would be utilized for infrastructure."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next?traffic_source=rss"
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/passenger-delays-as-us-flights-resume-after-nationwide-ground-stop/"
       }
     },
     {
@@ -30,8 +30,8 @@
       "headline": "Aviation Authorities Restore US Flights After Significant Outage",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 76,
-      "intensityTier": "high",
+      "viralScore": 89,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
         "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
         "The Federal Aviation Administration attributed the incident to infrastructure issues following router installations by contractor L3Harris."
@@ -47,7 +47,7 @@
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 67,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
@@ -59,13 +59,47 @@
       }
     },
     {
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
+        "Emergency responders confirmed that all passengers have been accounted for following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
+    {
+      "slug": "pope-leo-demands-amazon-justice",
+      "canonicalPath": "/news/us/pope-leo-demands-amazon-justice/",
+      "headline": "Pope Leo XIV Demands Justice For Slain Amazon Environmental Defenders",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Pope Leo XIV condemned the killings of individuals who died protecting the Amazon rainforest from exploitation.",
+        "The religious leader emphasized that illegal mining, deforestation, and pollution pose significant threats to the region."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/pope-leo-heads-to-the-amazon-on-the-final-leg-of-his-south-american-tour/a-79952884?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
         "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
@@ -81,8 +115,8 @@
       "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
         "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
@@ -90,23 +124,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
-      }
-    },
-    {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
-        "Emergency responders confirmed that all passengers have been accounted for following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
       }
     },
     {
@@ -127,29 +144,12 @@
       }
     },
     {
-      "slug": "us-treasury-demands-nvidia-export-compliance",
-      "canonicalPath": "/news/us/us-treasury-demands-nvidia-export-compliance/",
-      "headline": "US Treasury Department Demands Compliance Review From Nvidia Board",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Treasury Secretary Scott Bessent has issued a ten-day deadline for the Nvidia board to demonstrate adherence to export regulations.",
-        "The directive follows allegations that the company's advanced artificial intelligence chips reached China through Southeast Asian intermediaries."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/world/us-treasury-chief-nvidia-ai-chips-china-jensen-huang-6553411"
-      }
-    },
-    {
       "slug": "ukraine-nato-territory-exchange-proposal",
       "canonicalPath": "/news/us/ukraine-nato-territory-exchange-proposal/",
       "headline": "Proposed Ukraine NATO Membership Deal Involves Territorial Concession",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Reports suggest an informal proposal for Ukraine to exchange Donbas territory for formal NATO alliance membership.",

@@ -3,18 +3,35 @@
   "name": "India",
   "slug": "india",
   "region": "Asia",
-  "viralScore": 66,
+  "viralScore": 76,
   "intensityTier": "high",
-  "generatedAt": "2026-11-15T23:18:00Z",
+  "generatedAt": "2026-11-16T02:18:00Z",
   "clusters": [
+    {
+      "slug": "india-pakistan-u19-cricket-controversy",
+      "canonicalPath": "/news/in/india-pakistan-u19-cricket-controversy/",
+      "headline": "India Secures Under-19 Asia Cup Title Amidst On-Field Controversy",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "India secured a narrow one-wicket victory against Pakistan in the Under-19 Asia Cup final while chasing 337 runs.",
+        "Aaryavir Sehwag finished the tournament as the leading scorer after his match-winning performance in the final."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo"
+      }
+    },
     {
       "slug": "delhi-air-quality-grap-iii-restrictions",
       "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
       "headline": "Delhi Air Quality Remains In Very Poor To Severe Categories",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Most monitoring stations in Delhi continue to record air quality levels classified as very poor or severe.",
         "Specific locations including IIT-Delhi have reported air quality index readings exceeding 400."
@@ -30,7 +47,7 @@
       "headline": "Sonia Gandhi Memoir Sparks Political Debate And Personal Revelations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The memoir Belonging: A Journey of Love provides insights into historical political moments, including the 1969 Presidential elections and the 1999 Congress revolt.",
@@ -47,7 +64,7 @@
       "headline": "Prime Minister Modi Comments On Internal Security And Ideologies",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Modi accused ideological supporters of Naxalism of infiltrating political and social organizations.",
@@ -56,57 +73,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/india/some-people-think-democracy-is-in-their-pockets-says-pm-modi/articleshow/135781976.cms"
-      }
-    },
-    {
-      "slug": "india-pakistan-u19-cricket-controversy",
-      "canonicalPath": "/news/in/india-pakistan-u19-cricket-controversy/",
-      "headline": "India Under-19 Asia Cup Victory Followed By On-Field Controversy",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "India's Under-19 team achieved a victory in the Asia Cup tournament.",
-        "Player Lakshya Raichandani credited Aaryavir Sehwag for his critical batting performance during the team's successful run chase."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo"
-      }
-    },
-    {
-      "slug": "amit-shah-responds-rahul-gandhi",
-      "canonicalPath": "/news/in/amit-shah-responds-rahul-gandhi/",
-      "headline": "Amit Shah Responds To Criticism From Congress Leader Rahul Gandhi",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Amit Shah rejected remarks made by Rahul Gandhi regarding India's international standing.",
-        "Congress party representatives requested that Amit Shah take action to address the grievances of backward classes."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/andhra-pradesh/congress-leader-urges-amit-shah-to-address-concerns-of-bcs/article71705438.ece"
-      }
-    },
-    {
-      "slug": "india-government-healthcare-spending-increase",
-      "canonicalPath": "/news/in/india-government-healthcare-spending-increase/",
-      "headline": "Indian Government Healthcare Spending Increases Triple Since 2013",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Government healthcare expenditure rose to 4.14 lakh crore in the 2023-24 fiscal year.",
-        "Household out-of-pocket medical costs decreased from 64.2% to 42.7% over the last decade."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/indias-health-spending-triples-to-414-lakh-crore-but-out-of-pocket-share-drops-to-427-nha/article71705136.ece"
       }
     },
     {
@@ -127,12 +93,46 @@
       }
     },
     {
+      "slug": "amit-shah-responds-rahul-gandhi",
+      "canonicalPath": "/news/in/amit-shah-responds-rahul-gandhi/",
+      "headline": "Amit Shah Responds To Criticism From Congress Leader Rahul Gandhi",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Amit Shah rejected remarks made by Rahul Gandhi regarding India's international standing.",
+        "Congress party representatives requested that Amit Shah take action to address the grievances of backward classes."
+      ],
+      "primarySource": {
+        "publisherName": "The Hindu",
+        "articleUrl": "https://www.thehindu.com/news/national/andhra-pradesh/congress-leader-urges-amit-shah-to-address-concerns-of-bcs/article71705438.ece"
+      }
+    },
+    {
+      "slug": "india-government-healthcare-spending-increase",
+      "canonicalPath": "/news/in/india-government-healthcare-spending-increase/",
+      "headline": "Indian Government Healthcare Spending Increases Triple Since 2013",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 40,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Government healthcare expenditure rose to 4.14 lakh crore in the 2023-24 fiscal year.",
+        "Household out-of-pocket medical costs decreased from 64.2% to 42.7% over the last decade."
+      ],
+      "primarySource": {
+        "publisherName": "The Hindu",
+        "articleUrl": "https://www.thehindu.com/news/national/indias-health-spending-triples-to-414-lakh-crore-but-out-of-pocket-share-drops-to-427-nha/article71705136.ece"
+      }
+    },
+    {
       "slug": "diljit-dosanjh-indore-concert-threats",
       "canonicalPath": "/news/in/diljit-dosanjh-indore-concert-threats/",
       "headline": "Diljit Dosanjh Performs In Indore Amidst Threats Of Concert Cancellation",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 44,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Punjabi artist Diljit Dosanjh proceeded with his Indore concert despite facing opposition and threats to his performance.",
@@ -149,7 +149,7 @@
       "headline": "Prince William And Kate Middleton To Attend Earthshot Prize In Mumbai",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 40,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prince William and Kate Middleton are traveling to Mumbai for the sixth annual Earthshot Prize ceremony.",
@@ -166,7 +166,7 @@
       "headline": "India And United States Reach Agreement On Preferential Market Access",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Commerce Minister Piyush Goyal stated that India and the U.S. have finalized an agreement regarding preferential market access for Indian exports.",
