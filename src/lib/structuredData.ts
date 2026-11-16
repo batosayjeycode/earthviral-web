@@ -6,6 +6,7 @@
  */
 import type { ViralClusterStaticRecord } from './types.ts';
 import { SITE, absoluteUrl } from './site.ts';
+import { redistributableSources } from './publisherPolicy.ts';
 
 const CONTEXT = 'https://schema.org';
 const ORG_ID = `${SITE.url}/#organization`;
@@ -123,7 +124,7 @@ export function newsArticleGraph(c: ViralClusterStaticRecord, breadcrumbs: Bread
         author: { '@type': 'Organization', name: SITE.desk, url: absoluteUrl('/about/') },
         publisher: organization(),
         contentLocation: { '@type': 'Country', name: c.countryName },
-        isBasedOn: c.sources.map((s) => s.articleUrl),
+        isBasedOn: redistributableSources(c.sources).map((s) => s.articleUrl),
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       },
       breadcrumbList(breadcrumbs),

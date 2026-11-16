@@ -32,12 +32,14 @@ const {
   ogImage = '/og/default.png',
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-// Seed batches contain fictional sample stories — keep them out of every index.
-const robots = batchMeta.isSeed
-  ? 'noindex, nofollow'
-  : noindex
-    ? 'noindex, follow'
-    : 'index, follow, max-image-preview:large';
+// Seed batches contain fictional sample stories and staging is a protected test site —
+// keep both out of every index.
+const robots =
+  batchMeta.isSeed || SITE.isStaging
+    ? 'noindex, nofollow'
+    : noindex
+      ? 'noindex, follow'
+      : 'index, follow, max-image-preview:large';
 ---
 
 <!doctype html>
@@ -90,6 +92,15 @@ const robots = batchMeta.isSeed
       Skip to content
     </a>
     <div class="sticky top-0 z-40">
+      {SITE.isStaging && (
+        <div
+          data-environment-banner="staging"
+          data-pagefind-ignore
+          class="bg-amber-400 px-4 py-1 text-center text-xs font-bold tracking-wide text-black"
+        >
+          STAGING — test environment, not the public EarthViral site
+        </div>
+      )}
       <Header />
       <TelemetryBar meta={batchMeta} />
     </div>

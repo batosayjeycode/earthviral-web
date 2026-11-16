@@ -26,15 +26,24 @@
  *                          (CI uploads it as an artifact so clustering can be replayed)
  *
  * Env: GEMINI_API_KEY, GEMINI_MODEL (default gemini-3.1-flash-lite), OPENAI_API_KEY, OPENAI_MODEL (default gpt-5-mini)
+ *      SITE_ENV=staging  staging batch: fetches staging-only feeds too, and makes no AI calls
+ *                        unless --provider is given explicitly (never inferred from keys)
+ *
+ * Publisher content policies (src/lib/publisherPolicy.ts) are enforced at ingestion,
+ * summary input, story selection and publication — see the plan's Phase 4.
  */
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { categoryBySlug } from '../src/lib/taxonomy.ts';
 import { VAS } from '../src/lib/scoring.ts';
 import type { ViralClusterStaticRecord } from '../src/lib/types.ts';
+import { resolveSiteEnvironment } from '../src/lib/environment.ts';
+import { hasDerivableCoverage } from '../src/lib/publisherPolicy.ts';
 import { COUNTRIES, COUNTRY_BY_CODE } from './lib/countries.ts';
 import { mapLimit } from './lib/http.ts';
-import { RSS_SOURCES } from './lib/fetchers/rssSources.ts';
+import { activeSources } from './lib/fetchers/rssSources.ts';
+import { applyIngestionPolicy, cleanStoredStories } from './lib/policy/applyContentPolicy.ts';
+import { summaryInput } from './lib/intelligence/summaryInput.ts';
 import { fetchAllRss, type RawArticle } from './lib/fetchers/fetchRss.ts';
 import { fetchGoogleTrends, type TrendSignal } from './lib/fetchers/fetchGoogleTrends.ts';
 import { fetchGdelt } from './lib/fetchers/fetchGdelt.ts';
@@ -50,7 +59,6 @@ import {
   createSummarizer,
   isFallbackSummary,
   resolveProvider,
-  type SummaryInput,
   type AiFailure,
   type AiFailureCategory,
   type SummaryOutput,
@@ -84,8 +92,13 @@ const intOption = (name: string, fallback: number) => {
   return n;
 };
 
+const ENVIRONMENT = resolveSiteEnvironment(process.env.SITE_ENV);
+const RSS_SOURCES = activeSources(ENVIRONMENT);
+
 const OPTS = {
-  provider: resolveProvider(option('provider')),
+  // Staging never infers an AI provider from whatever keys are present: AI is opt-in there.
+  provider:
+    ENVIRONMENT === 'staging' && !option('provider') ? 'none' : resolveProvider(option('provider')),
   dryRun: flag('dry-run'),
   snapshot: option('snapshot'),
   maxNew: intOption('max-new', 60),
@@ -150,38 +163,6 @@ function uniqueSlug(base: string, taken: Set<string>): string {
   return slug;
 }
 
-function summaryInput(cluster: WorkingCluster, score: ViralScore): SummaryInput {
-  const country = COUNTRY_BY_CODE.get(cluster.countryCode)!;
-  // Newest first so the model sees the latest developments; one article per publisher first.
-  const ordered = [...cluster.articles].sort(
-    (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt),
-  );
-  const seen = new Set<string>();
-  const primary = ordered.filter((a) =>
-    seen.has(a.publisherDomain) ? false : (seen.add(a.publisherDomain), true),
-  );
-  const rest = ordered.filter((a) => !primary.includes(a));
-  return {
-    countryCode: country.code,
-    countryName: country.name,
-    articles: [...primary, ...rest].map((a) => ({
-      publisherName: a.publisherName,
-      title: a.title,
-      snippet: a.snippet,
-      publishedAt: a.publishedAt,
-    })),
-    metrics: {
-      viralScore: score.viralScore,
-      publishers: score.publishers,
-      velocity: score.velocity,
-      search: score.search,
-      trendKeyword: score.matchedTrend?.keyword ?? null,
-    },
-    // A repaired story's stored headline describes the event it drifted onto.
-    previousHeadline: cluster.pruned > 0 ? undefined : cluster.existing?.headline,
-  };
-}
-
 function sourcesOf(cluster: WorkingCluster): ViralClusterStaticRecord['sources'] {
   return [...cluster.articles]
     .sort((a, b) => Date.parse(a.publishedAt) - Date.parse(b.publishedAt))
@@ -232,7 +213,9 @@ async function main() {
   const batchId = `batch-${iso(now).slice(0, 16).replace(/[-T:]/g, '')}`;
   const summarizer = createSummarizer(OPTS.provider);
 
-  log(`▶ EarthViral batch ${batchId}${OPTS.dryRun ? ' (dry run)' : ''}`);
+  log(
+    `▶ EarthViral batch ${batchId}${OPTS.dryRun ? ' (dry run)' : ''} [${ENVIRONMENT} environment]`,
+  );
   log(`  provider: ${summarizer.provider}${summarizer.model ? ` (${summarizer.model})` : ''}`);
   if (summarizer.provider === 'none') {
     log(
@@ -250,6 +233,16 @@ async function main() {
   const retentionCutoff = now.getTime() - RETENTION_DAYS * 24 * HOUR;
   const expired = existing.filter((c) => Date.parse(c.lastUpdatedBatchAt) < retentionCutoff);
   existing = existing.filter((c) => !expired.includes(c));
+  // Publisher policies on stored data: removed publishers' sources are deleted, and stories
+  // left without publishable coverage are withdrawn (→ 301 to their country page).
+  const policy = cleanStoredStories(existing);
+  existing = policy.kept;
+  const withdrawn = policy.unpublishable;
+  if (policy.removedSources > 0 || withdrawn.length > 0) {
+    log(
+      `  content policy: ${policy.removedSources} stored sources of removed publishers deleted; ${withdrawn.length} stories withdrawn`,
+    );
+  }
   log(
     `  existing clusters: ${existing.length} kept, ${expired.length} expired (> ${RETENTION_DAYS} days)`,
   );
@@ -281,7 +274,9 @@ async function main() {
   log(`  GDELT: ${gdelt.articles.length} articles${OPTS.gdelt ? '' : ' (skipped)'}`);
   for (const f of feedsFailed) log(`  ! ${f}`);
 
-  const articles = assignCountries([...rss.articles, ...gdelt.articles]);
+  // Publisher policies at ingestion (RSS and GDELT alike): removed publishers dropped,
+  // descriptions blanked for headline-only publishers.
+  const articles = assignCountries(applyIngestionPolicy([...rss.articles, ...gdelt.articles]));
   log(`  ${articles.length} articles attributed to a tracked country`);
   if (OPTS.snapshot) {
     // Raw inputs aren't otherwise kept (stories store only their own sources), so without
@@ -311,7 +306,10 @@ async function main() {
   const fresh = scored
     .filter(
       ({ cluster, score }) =>
-        !cluster.existing && (score.publishers >= VAS.minPublishers || score.matchedTrend),
+        !cluster.existing &&
+        (score.publishers >= VAS.minPublishers || score.matchedTrend) &&
+        // Never publish a story covered only by headline-only publishers.
+        hasDerivableCoverage(cluster.articles),
     )
     .sort((a, b) => b.score.viralScore - a.score.viralScore);
   const perCountry = new Map<string, number>();
@@ -342,7 +340,7 @@ async function main() {
   // coverage are retired (→ 301 to their country page) when over the limit.
   const budgetForExisting =
     OPTS.maxStoredStories > 0 ? OPTS.maxStoredStories - selectedNew.length : Infinity;
-  const { kept: carried, dropped: overBudget } = retireOldest(
+  const { kept: carriedAll, dropped: overBudget } = retireOldest(
     existingScored.map((x) => {
       // New coverage this batch makes a story current again.
       const lastUpdatedAt =
@@ -351,6 +349,9 @@ async function main() {
     }),
     budgetForExisting,
   );
+  // A stored story whose publishable sources were all pruned (drift repair) is withdrawn too.
+  const carried = carriedAll.filter(({ cluster }) => hasDerivableCoverage(cluster.articles));
+  const lostCoverage = carriedAll.filter((x) => !carried.includes(x));
   const retiredNow = overBudget.map((x) => x.cluster.existing!);
   const updated = carried.filter(({ cluster }) => newArticleCount(cluster) > 0);
   log(
@@ -431,6 +432,7 @@ async function main() {
   const previousRetired = previousMeta?.isSeed ? [] : await loadRetiredStories();
   const takenSlugs = new Set([
     ...existing.map((c) => c.slug),
+    ...withdrawn.map((c) => c.slug),
     ...previousRetired.map((r) => r.path.split('/').filter(Boolean).at(-1)!),
   ]);
   const records: ViralClusterStaticRecord[] = [];
@@ -477,12 +479,15 @@ async function main() {
   buildInternalLinks(records, now);
   const retired = mergeRetired(
     previousRetired,
-    // Stories over the site size budget and past the retention window both redirect.
-    [...retiredNow, ...expired].map((c) => ({
-      path: c.canonicalPath,
-      redirectTo: `/country/${c.countrySlug}/`,
-      retiredAt: iso(now),
-    })),
+    // Stories over the site size budget, past the retention window or withdrawn by a
+    // publisher content policy all redirect.
+    [...retiredNow, ...expired, ...withdrawn, ...lostCoverage.map((x) => x.cluster.existing!)].map(
+      (c) => ({
+        path: c.canonicalPath,
+        redirectTo: `/country/${c.countrySlug}/`,
+        retiredAt: iso(now),
+      }),
+    ),
     new Set(records.map((r) => r.canonicalPath)),
     now,
   );

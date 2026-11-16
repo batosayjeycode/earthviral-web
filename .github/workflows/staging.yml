@@ -1,0 +1,110 @@
+# EarthViral staging (EarthViral_Staging_Environment_PLAN.md §5, Phase 2–3).
+#
+# Builds the `staging` branch as a staging site (SITE_ENV=staging: noindex everywhere,
+# STAGING banner, robots.txt disallows all, no ads / IndexNow) and deploys it to the separate
+# Cloudflare Pages project `earthviral-staging` (https://staging.earthviral.com, behind
+# Cloudflare Access). Production (ci.yml → Pages project earthviral-web) is never touched.
+#
+#   push to staging      → test, build, deploy the committed data
+#   Run workflow (manual) → optionally run a staging batch first (no AI by default)
+#
+# Isolation: read-only repository token, nothing committed or pushed (staging batch output
+# lives only in this run and its artifacts), no schedule, only STAGING_* secrets from the
+# `staging` GitHub environment. scripts/staging-guard.ts enforces all of this at run time.
+#
+# Settings → Environments → staging (deployment branches: staging only; optional reviewers):
+#   secrets: STAGING_CLOUDFLARE_API_TOKEN, STAGING_CLOUDFLARE_ACCOUNT_ID
+#            STAGING_GEMINI_API_KEY / STAGING_OPENAI_API_KEY (optional, only for AI test runs)
+name: Staging
+
+on:
+  push:
+    branches: [staging]
+  workflow_dispatch:
+    inputs:
+      run_batch:
+        description: 'Run a staging batch (fetch feeds incl. staging-only sources) before building'
+        type: boolean
+        default: false
+      provider:
+        description: 'Summary provider for the staging batch (none = no AI calls)'
+        type: choice
+        options: [none, gemini, openai]
+        default: none
+      deploy:
+        description: 'Deploy to staging.earthviral.com'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: staging
+  cancel-in-progress: false
+
+env:
+  SITE_ENV: staging
+  PAGES_PROJECT: earthviral-staging
+
+jobs:
+  staging:
+    # Only the staging branch, whatever ref "Run workflow" was started from.
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: staging
+      url: https://staging.earthviral.com
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Staging guard
+        run: node scripts/staging-guard.ts
+
+      - run: npm ci
+
+      - name: Pipeline and policy unit tests
+        run: npm run test:unit
+
+      - name: Staging batch (manual only, never committed)
+        if: github.event_name == 'workflow_dispatch' && inputs.run_batch
+        env:
+          PROVIDER: ${{ inputs.provider }}
+          GEMINI_API_KEY: ${{ inputs.provider == 'gemini' && secrets.STAGING_GEMINI_API_KEY || '' }}
+          OPENAI_API_KEY: ${{ inputs.provider == 'openai' && secrets.STAGING_OPENAI_API_KEY || '' }}
+        run: npm run update:viral -- --provider "$PROVIDER" --snapshot batch-snapshot/articles.json
+
+      - name: Upload staging data
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.run_batch
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-data-${{ github.run_id }}
+          path: |
+            src/data/generated
+            public/data
+            batch-snapshot/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - run: npm run build
+
+      # SEO / integrity tests in staging mode (noindex, staging origin, publisher policy).
+      - run: npm run test:dist
+
+      - name: Verify dist is a staging build
+        run: node scripts/staging-guard.ts --verify-dist
+
+      - name: Deploy to staging Pages project
+        if: github.event_name == 'push' || inputs.deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.STAGING_CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.STAGING_CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=earthviral-staging --branch=staging

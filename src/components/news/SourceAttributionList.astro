@@ -5,6 +5,11 @@
  */
 import type { ViralClusterStaticRecord } from '../../lib/types.ts';
 import { formatDateWib, formatTimeWib } from '../../lib/format.ts';
+import { isRestricted } from '../../lib/publisherPolicy.ts';
+
+// Sources arrive already filtered by publisher policy (src/lib/data.ts getClusters). Headlines
+// of restricted (headline-only) publishers appear only here, as attributed links, and are kept
+// out of the search index.
 
 interface Props {
   sources: ViralClusterStaticRecord['sources'];
@@ -25,7 +30,11 @@ const sources = [...Astro.props.sources].sort(
   </p>
   <ol class="mt-5 border-l border-line">
     {sources.map((s) => (
-      <li class="relative pb-5 pl-6 last:pb-0">
+      <li
+        class="relative pb-5 pl-6 last:pb-0"
+        data-pagefind-ignore={isRestricted(s.publisherDomain) ? 'all' : undefined}
+        data-source-policy={isRestricted(s.publisherDomain) ? 'restricted' : undefined}
+      >
         <span
           class="absolute top-1.5 -left-[5px] size-2.5 rounded-full border-2 border-void bg-cyan"
           aria-hidden="true"

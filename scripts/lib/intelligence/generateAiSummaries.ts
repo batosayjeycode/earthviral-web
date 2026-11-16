@@ -14,13 +14,21 @@ import { CATEGORIES, CATEGORY_SLUGS, type CategorySlug } from '../../../src/lib/
 import { COUNTRIES } from '../countries.ts';
 import { HttpError, fetchWithRetry } from '../http.ts';
 import { tokenize, truncate } from './text.ts';
+import { ContentPolicyViolation, assertDerivable } from '../../../src/lib/publisherPolicy.ts';
 
 export type ProviderName = 'gemini' | 'openai' | 'none';
 
 export interface SummaryInput {
   countryCode: string;
   countryName: string;
-  articles: Array<{ publisherName: string; title: string; snippet: string; publishedAt: string }>;
+  /** Only publishers whose policy allows AI use (see summaryInput.ts); enforced below. */
+  articles: Array<{
+    publisherName: string;
+    publisherDomain: string;
+    title: string;
+    snippet: string;
+    publishedAt: string;
+  }>;
   metrics: {
     viralScore: number;
     publishers: number;
@@ -128,7 +136,9 @@ Field requirements:
 - categorySlug: exactly one of: ${CATEGORIES.map((c) => `${c.slug} (${c.name})`).join(', ')}.
 - entityTags: 2–4 recurring named entities (organisations, places, events, public figures, topics). No country names alone.`;
 
+/** Shared by both provider payload builders, so the policy check runs before any payload exists. */
 function userPrompt(input: SummaryInput): string {
+  assertDerivable(input.articles, 'AI provider payload');
   const lines = input.articles
     .slice(0, 12)
     .map(
@@ -595,6 +605,8 @@ export function describeAttention(input: Pick<SummaryInput, 'countryName' | 'met
 }
 
 export function heuristicSummary(input: SummaryInput): SummaryOutput {
+  // Non-AI text quotes source headlines, so the same publisher policy applies.
+  assertDerivable(input.articles, 'Generated summary text');
   const publishers = [...new Set(input.articles.map((a) => a.publisherName))];
   // Representative headline: the article sharing the most tokens with the rest of the cluster.
   const tokenSets = input.articles.map((a) => new Set(tokenize(a.title)));
@@ -752,6 +764,8 @@ export function createSummarizer(provider: ProviderName): Summarizer {
       try {
         raw = await call(input, apiKey, model);
       } catch (err) {
+        // Never fall back silently on a policy violation: fail the batch.
+        if (err instanceof ContentPolicyViolation) throw err;
         return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
       }
       const parsed = outputSchema.safeParse(normalizeModelOutput(raw));

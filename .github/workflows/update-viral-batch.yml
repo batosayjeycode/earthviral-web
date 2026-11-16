@@ -43,6 +43,9 @@ concurrency:
 
 jobs:
   batch:
+    # Production only: a "Run workflow" started from another branch (e.g. staging) is skipped
+    # instead of running — and pushing — a production batch. Staging batches use staging.yml.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

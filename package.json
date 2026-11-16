@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
+    "build:staging": "SITE_ENV=staging npm run build",
     "preview": "astro preview --port 4321",
     "typecheck": "astro check",
     "lint": "eslint .",
@@ -24,6 +25,8 @@
     "generate:viral": "node --env-file-if-exists=.env scripts/generate-viral-batch.ts",
     "indexnow": "node --env-file-if-exists=.env scripts/indexnow.ts",
     "restore:retired": "node scripts/restore-retired-stories.ts",
+    "remove:publisher": "node scripts/remove-publisher.ts",
+    "staging:guard": "node scripts/staging-guard.ts",
     "geo:sync": "node scripts/sync-geo.ts",
     "predev": "node scripts/sync-geo.ts",
     "prebuild": "node scripts/sync-geo.ts",

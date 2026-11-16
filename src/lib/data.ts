@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import batchMetaJson from '../data/generated/batch-meta.json';
+import { displayableSources, hasDerivableCoverage } from './publisherPolicy.ts';
 import type { BatchMeta, CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
 
 export const batchMeta = batchMetaJson as BatchMeta;
@@ -7,10 +8,17 @@ export const batchMeta = batchMetaJson as BatchMeta;
 let clusterCache: ViralClusterStaticRecord[] | undefined;
 let countryCache: CountryMasterRecord[] | undefined;
 
-/** All clusters, highest viral score first. */
+/**
+ * All publishable clusters, highest viral score first. Publisher content policies apply here,
+ * so every page, feed and sitemap sees the same data: sources a policy hides are dropped
+ * (removed publishers; headline-only publishers without other coverage), and a story with no
+ * publishable coverage left is not built at all.
+ */
 export async function getClusters(): Promise<ViralClusterStaticRecord[]> {
   clusterCache ??= (await getCollection('clusters'))
     .map((entry) => entry.data as ViralClusterStaticRecord)
+    .filter((c) => hasDerivableCoverage(displayableSources(c.sources)))
+    .map((c) => ({ ...c, sources: displayableSources(c.sources) }))
     .sort((a, b) => b.viralScore - a.viralScore);
   return clusterCache;
 }

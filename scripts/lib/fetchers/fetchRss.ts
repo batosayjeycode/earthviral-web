@@ -2,6 +2,7 @@
 import { XMLParser } from 'fast-xml-parser';
 import { fetchText, mapLimit } from '../http.ts';
 import type { RssSource } from './rssSources.ts';
+import { policyForDomain } from '../../../src/lib/publisherPolicy.ts';
 
 export interface RawArticle {
   url: string;
@@ -101,6 +102,11 @@ export function parseFeed(xml: string, source: RssSource, now: Date): RawArticle
   const rssItems = asArray(doc.rss?.channel?.item ?? doc['rdf:RDF']?.item);
   const atomEntries = asArray(doc.feed?.entry);
   const out: RawArticle[] = [];
+  const policy = policyForDomain(source.publisherDomain);
+  if (policy.mode === 'removed') return out;
+  // Headline-only publishers: description/content/summary are never read, so they cannot be
+  // stored, logged or sent anywhere. Only title, link and date are taken from each item.
+  const body = (value: () => string) => (policy.useDescription ? value() : '');
 
   const push = (title: string, link: string, description: string, date: string) => {
     const url = cleanUrl(link);
@@ -126,7 +132,7 @@ export function parseFeed(xml: string, source: RssSource, now: Date): RawArticle
     push(
       text(item.title),
       text(item.link) || text(item.guid),
-      text(item.description),
+      body(() => text(item.description)),
       text(item.pubDate) || text(item['dc:date']),
     );
   }
@@ -138,7 +144,7 @@ export function parseFeed(xml: string, source: RssSource, now: Date): RawArticle
     push(
       text(entry.title),
       href ?? '',
-      text(entry.summary) || text(entry.content),
+      body(() => text(entry.summary) || text(entry.content)),
       text(entry.published) || text(entry.updated),
     );
   }

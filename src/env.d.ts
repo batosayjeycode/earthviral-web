@@ -4,6 +4,8 @@ interface ImportMetaEnv {
   readonly PUBLIC_ADSENSE_SLOT_HUB?: string;
   readonly PUBLIC_CONTACT_EMAIL?: string;
   readonly INDEXNOW_KEY?: string;
+  /** "staging" builds the protected staging site; unset = production. */
+  readonly SITE_ENV?: string;
 }
 
 interface ImportMeta {

@@ -26,6 +26,7 @@ import type {
   ViralClusterStaticRecord,
 } from '../../../src/lib/types.ts';
 import { COUNTRY_BY_CODE } from '../countries.ts';
+import { redistributableSources } from '../../../src/lib/publisherPolicy.ts';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 export const GENERATED_DIR = join(ROOT, 'src', 'data', 'generated');
@@ -286,9 +287,11 @@ export async function writeStaticJson(
       .map((cl) => ({
         ...toSummary(cl),
         aiSummaryBullets: cl.aiSummaryBullets.slice(0, 2),
-        primarySource: cl.sources[0]
-          ? { publisherName: cl.sources[0].publisherName, articleUrl: cl.sources[0].articleUrl }
-          : null,
+        // Public JSON: only publishers that allow redistribution (not headline-only ones).
+        primarySource: ((s) =>
+          s ? { publisherName: s.publisherName, articleUrl: s.articleUrl } : null)(
+          redistributableSources(cl.sources)[0],
+        ),
       })),
   }));
 

@@ -162,6 +162,16 @@ Keep the crons in `wrangler.toml` in sync with the workflow files and `VAS.batch
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.
 
+### Staging
+
+`staging.earthviral.com` is a separate, Access-protected Cloudflare Pages project
+(`earthviral-staging`) built from the `staging` branch by `.github/workflows/staging.yml`
+with `SITE_ENV=staging` (noindex everywhere, STAGING banner, no ads/IndexNow). Staging batches
+run only manually, make no AI calls by default and never commit data. Locally:
+`npm run build:staging`, then `SITE_ENV=staging npm run test:dist`. Publisher content policies
+(e.g. Joho no Todai, headline-only) live in `src/lib/publisherPolicy.ts`. Setup, isolation
+rules and the removal procedure: `EarthViral_Staging_Environment_PLAN.md` §12.
+
 ## Project structure
 
 ```text

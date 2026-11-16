@@ -4,11 +4,12 @@ import ProsePage from '../components/layout/ProsePage.astro';
 import { VAS } from '../lib/scoring.ts';
 import { INTENSITY_TIERS, TIER_META, CATEGORIES } from '../lib/taxonomy.ts';
 import { SITE } from '../lib/site.ts';
-import { RSS_SOURCES } from '../../scripts/lib/fetchers/rssSources.ts';
+import { activeSources } from '../../scripts/lib/fetchers/rssSources.ts';
 import { COUNTRIES } from '../../scripts/lib/countries.ts';
 
-const publishers = [...new Set(RSS_SOURCES.map((s) => s.publisherName))].sort((a, b) =>
-  a.localeCompare(b),
+// Feeds the batch reads in this environment (staging-only sources are not listed in production).
+const publishers = [...new Set(activeSources(SITE.environment).map((s) => s.publisherName))].sort(
+  (a, b) => a.localeCompare(b),
 );
 const w = VAS.weights;
 ---

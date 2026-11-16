@@ -368,12 +368,14 @@ describe('fallback summary', () => {
       articles: [
         {
           publisherName: 'Antara',
+          publisherDomain: 'antaranews.com',
           title: 'Bank Indonesia Pertahankan Suku Bunga',
           snippet: '',
           publishedAt: hoursAgo(2),
         },
         {
           publisherName: 'CNBC Indonesia',
+          publisherDomain: 'cnbcindonesia.com',
           title: 'Bank Indonesia Tahan Suku Bunga Acuan',
           snippet: '',
           publishedAt: hoursAgo(1),
@@ -417,6 +419,7 @@ describe('AI providers (fetch stubbed)', async () => {
     articles: [
       {
         publisherName: 'Antara',
+        publisherDomain: 'antaranews.com',
         title: 'Bank Indonesia holds benchmark rate at 5.75 percent',
         snippet: '',
         publishedAt: hoursAgo(1),
@@ -689,6 +692,7 @@ describe('AI failure classification', async () => {
     articles: [
       {
         publisherName: 'Antara',
+        publisherDomain: 'antaranews.com',
         title: 'A headline long enough to keep',
         snippet: '',
         publishedAt: hoursAgo(1),
@@ -781,6 +785,7 @@ describe('fallback detection', async () => {
       articles: [
         {
           publisherName: 'Antara',
+          publisherDomain: 'antaranews.com',
           title: 'A headline long enough to keep',
           snippet: '',
           publishedAt: hoursAgo(1),
@@ -892,6 +897,7 @@ describe('model output normalisation', async () => {
         articles: [
           {
             publisherName: 'Antara',
+            publisherDomain: 'antaranews.com',
             title: 'Bank Indonesia holds rate',
             snippet: '',
             publishedAt: hoursAgo(1),

@@ -17,7 +17,14 @@
  *
  * Re-checked 2026-11-07: Nation Africa (an intermittent 404 on 2026-11-06) works; Capital FM
  * and KBC were added so Kenya keeps coverage when one outlet is down.
+ *
+ * Content policies are per publisher domain (src/lib/publisherPolicy.ts) and apply to every
+ * article from that domain, including GDELT ones. `environments` limits where a feed is
+ * fetched: a source under review is listed for 'staging' only, so production never reads it.
  */
+import type { SiteEnvironment } from '../../../src/lib/environment.ts';
+import { policyForDomain, type PolicyRegistries } from '../../../src/lib/publisherPolicy.ts';
+
 export interface RssSource {
   id: string;
   publisherName: string;
@@ -25,6 +32,22 @@ export interface RssSource {
   url: string;
   homeCountry: string | null;
   language: 'id' | 'en' | 'pt' | 'fr';
+  /** Environments whose batch fetches this feed (default: all). */
+  environments?: readonly SiteEnvironment[];
+}
+
+/** Feeds fetched by the batch in `environment`; removed publishers are never fetched. */
+export function activeSources(
+  environment: SiteEnvironment,
+  sources: readonly RssSource[] = RSS_SOURCES,
+  registries: PolicyRegistries = {},
+): RssSource[] {
+  return sources.filter(
+    (s) =>
+      (s.environments ?? ['production', 'staging']).includes(environment) &&
+      policyForDomain(s.publisherDomain, registries.policies, registries.removed).mode !==
+        'removed',
+  );
 }
 
 export const RSS_SOURCES: RssSource[] = [
@@ -291,5 +314,21 @@ export const RSS_SOURCES: RssSource[] = [
     url: 'https://feeds.folha.uol.com.br/emcimadahora/rss091.xml',
     homeCountry: 'BR',
     language: 'pt',
+  },
+
+  // ── Under review: staging only ────────────────────────────────────────────
+  {
+    // Headline-only terms (src/lib/publisherPolicy.ts HEADLINE_ONLY_POLICY): name, headline,
+    // date and URL only; never sent to AI; shown only beside other publishers' coverage.
+    // Do not add 'production' until every check in the staging plan §7 has passed review.
+    // homeCountry null: AI/tech news is global, so articles are kept only when a tracked
+    // country is named.
+    id: 'joho-no-todai-en',
+    publisherName: 'Joho no Todai',
+    publisherDomain: 'joho-todai.com',
+    url: 'https://joho-todai.com/en/rss/',
+    homeCountry: null,
+    language: 'en',
+    environments: ['staging'],
   },
 ];

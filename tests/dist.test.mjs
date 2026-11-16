@@ -11,8 +11,13 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, test } from 'node:test';
 import { fileURLToPath } from 'node:url';
+import { ENVIRONMENTS, resolveSiteEnvironment } from '../src/lib/environment.ts';
+import { isRestricted } from '../src/lib/publisherPolicy.ts';
 
-const ORIGIN = 'https://earthviral.com';
+// Run with the same SITE_ENV as the build (staging.yml sets SITE_ENV=staging for both).
+const ENVIRONMENT = resolveSiteEnvironment(process.env.SITE_ENV);
+const STAGING = ENVIRONMENT === 'staging';
+const ORIGIN = ENVIRONMENTS[ENVIRONMENT].url;
 const dist = fileURLToPath(new URL('../dist', import.meta.url));
 
 assert.ok(existsSync(dist), 'dist/ is missing: run `npm run build` first');
@@ -43,6 +48,8 @@ const pages = walk(dist)
 
 const isNoindex = (html) => /<meta name="robots" content="noindex/.test(html);
 const indexable = pages.filter((p) => !isNoindex(p.html));
+// Staging is noindex everywhere; its would-be-indexable pages are the ones with a canonical.
+const canonicalPages = STAGING ? pages.filter((p) => /rel="canonical"/.test(p.html)) : indexable;
 const stories = pages.filter((p) => p.path.startsWith('/news/'));
 const hubs = pages.filter((p) => /^\/(country|category|region|topic)\//.test(p.path));
 
@@ -172,7 +179,7 @@ describe('canonical and social metadata', () => {
   const titles = new Map();
   const descriptions = new Map();
 
-  for (const page of indexable) {
+  for (const page of canonicalPages) {
     test(`${page.path} canonical, Open Graph and Twitter`, () => {
       const canonical = page.html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
       assert.equal(canonical, `${ORIGIN}${page.path}`);
@@ -215,6 +222,110 @@ describe('canonical and social metadata', () => {
 
   test('sample-data builds are noindex everywhere', { skip: !isSeed }, () => {
     for (const page of pages) assert.ok(isNoindex(page.html), page.path);
+  });
+});
+
+describe('environment isolation', () => {
+  const headers = readFileSync(join(dist, '_headers'), 'utf8');
+  const textFiles = walk(dist).filter(
+    (f) => /\.(html|xml|txt|json)$/.test(f) && !f.includes(`${join(dist, 'pagefind')}`),
+  );
+
+  test(
+    'staging: every page is noindex, nofollow and shows the STAGING banner',
+    { skip: !STAGING },
+    () => {
+      for (const page of pages) {
+        assert.match(page.html, /<meta name="robots" content="noindex, nofollow"/, page.path);
+        assert.match(page.html, /data-environment-banner="staging"/, page.path);
+      }
+    },
+  );
+
+  test('staging: site-wide X-Robots-Tag noindex header', { skip: !STAGING }, () => {
+    assert.match(headers, /^\/\*\s+X-Robots-Tag: noindex, nofollow$/m);
+  });
+
+  test('staging: no ads, no IndexNow key, never the production origin', { skip: !STAGING }, () => {
+    for (const page of pages) {
+      assert.doesNotMatch(
+        page.html,
+        /pagead2\.googlesyndication\.com|<ins class="adsbygoogle/,
+        page.path,
+      );
+      assert.doesNotMatch(
+        page.html,
+        /<link rel="canonical" href="https:\/\/earthviral\.com/,
+        page.path,
+      );
+    }
+    const keyFiles = readdirSync(dist).filter((f) => /^[a-zA-Z0-9-]{8,128}\.txt$/.test(f));
+    assert.deepEqual(
+      keyFiles.filter((f) => f !== 'robots.txt'),
+      [],
+    );
+  });
+
+  test(
+    'production: no staging URL, banner or site-wide noindex anywhere',
+    { skip: STAGING },
+    () => {
+      for (const file of textFiles) {
+        const body = readFileSync(file, 'utf8');
+        assert.ok(!body.includes(ENVIRONMENTS.staging.url), `${file} references staging`);
+        assert.ok(!body.includes('data-environment-banner'), `${file} has the staging banner`);
+      }
+      assert.doesNotMatch(headers, /^\/\*\s+X-Robots-Tag/m);
+    },
+  );
+});
+
+describe('publisher content policy', () => {
+  // Restricted (headline-only) sources present in the committed data, if any.
+  const clustersDir = fileURLToPath(new URL('../src/data/generated/clusters', import.meta.url));
+  const restricted = (existsSync(clustersDir) ? walk(clustersDir) : [])
+    .filter((f) => f.endsWith('.json'))
+    .flatMap((f) => JSON.parse(readFileSync(f, 'utf8')).sources)
+    .filter((s) => isRestricted(s.publisherDomain));
+  const read = (path) =>
+    existsSync(join(dist, path)) ? readFileSync(join(dist, path), 'utf8') : '';
+  const downstream = [
+    read('rss.xml'),
+    ...walk(dist)
+      .filter((f) => /sitemap.*\.xml$/.test(f) || f.includes(`${join(dist, 'data')}`))
+      .map((f) => readFileSync(f, 'utf8')),
+  ].join('\n');
+
+  test('restricted headlines never appear in RSS, sitemaps or public JSON', () => {
+    for (const s of restricted) {
+      assert.ok(!downstream.includes(s.articleTitle), `redistributed: ${s.articleTitle}`);
+      assert.ok(!downstream.includes(s.articleUrl), `redistributed: ${s.articleUrl}`);
+    }
+  });
+
+  const restrictedItems = (html) =>
+    html.match(/<li[^>]*data-source-policy="restricted"[^>]*>[\s\S]*?<\/li>/g) ?? [];
+
+  test('restricted headlines appear only as attributed source links, outside search and JSON-LD', () => {
+    for (const page of pages) {
+      const ld = jsonLd(page.html)
+        .map((d) => JSON.stringify(d))
+        .join('');
+      for (const s of restricted) {
+        assert.ok(!ld.includes(s.articleUrl), `${page.path}: restricted URL in JSON-LD`);
+        const href = s.articleUrl.replaceAll('&', '&amp;');
+        if (!page.html.includes(href)) continue;
+        const items = restrictedItems(page.html);
+        assert.ok(
+          items.some((li) => li.includes(href) && li.includes(s.publisherName)),
+          `${page.path}: restricted source without an attributed source item`,
+        );
+        for (const li of items) assert.match(li, /data-pagefind-ignore="all"/, page.path);
+        // Outside those items the headline and URL appear nowhere on the page.
+        const rest = items.reduce((html, li) => html.replace(li, ''), page.html);
+        assert.ok(!rest.includes(href), `${page.path}: restricted URL outside its source item`);
+      }
+    }
   });
 });
 
@@ -289,11 +400,14 @@ describe('sitemaps, robots and feeds', () => {
   });
 
   test('sitemaps list exactly the indexable pages', { skip: isSeed }, () => {
-    assert.deepEqual([...all].sort(), indexable.map((p) => `${ORIGIN}${p.path}`).sort());
+    assert.deepEqual([...all].sort(), canonicalPages.map((p) => `${ORIGIN}${p.path}`).sort());
   });
 
-  test('sitemap URLs are canonical (https, apex, trailing slash)', () => {
-    for (const loc of all) assert.match(loc, /^https:\/\/earthviral\.com\/([a-z0-9-]+\/)*$/);
+  test('sitemap URLs are canonical (https, own origin, trailing slash)', () => {
+    for (const loc of all) {
+      assert.ok(loc.startsWith(`${ORIGIN}/`), loc);
+      assert.match(new URL(loc).pathname, /^\/([a-z0-9-]+\/)*$/);
+    }
   });
 
   test('Google News sitemap only lists stories from the last 48 hours', () => {
@@ -307,7 +421,10 @@ describe('sitemaps, robots and feeds', () => {
 
   test('robots.txt matches the data mode', () => {
     const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
-    if (isSeed) {
+    if (STAGING) {
+      assert.match(robots, /^Disallow: \/$/m);
+      assert.doesNotMatch(robots, /Sitemap:/);
+    } else if (isSeed) {
       assert.match(robots, /^Disallow: \/$/m);
     } else {
       assert.doesNotMatch(robots, /^Disallow:\s*\/\s*$/m);
