@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 96,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-16T02:18:00Z",
+  "generatedAt": "2026-11-16T05:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
@@ -13,7 +13,7 @@
       "headline": "President Trump Seeks 50 Billion Dollars For Aviation Infrastructure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 99,
+      "viralScore": 93,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "President Trump requested 50 billion dollars to modernize air traffic control systems following a national flight ground stop.",
@@ -30,8 +30,8 @@
       "headline": "Aviation Authorities Restore US Flights After Significant Outage",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 89,
-      "intensityTier": "surge",
+      "viralScore": 71,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "A widespread technical failure caused a temporary grounding of all departing flights across the United States.",
         "The Federal Aviation Administration attributed the incident to infrastructure issues following router installations by contractor L3Harris."
@@ -42,50 +42,16 @@
       }
     },
     {
-      "slug": "us-flight-grounding-causes-travel-disruptions",
-      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
-      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 73,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
-        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
-      }
-    },
-    {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
-        "Emergency responders confirmed that all passengers have been accounted for following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
-      }
-    },
-    {
       "slug": "pope-leo-demands-amazon-justice",
       "canonicalPath": "/news/us/pope-leo-demands-amazon-justice/",
-      "headline": "Pope Leo XIV Demands Justice For Slain Amazon Environmental Defenders",
+      "headline": "Pope Leo XIV Calls For Justice During Final Leg Of South American Tour",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "viralScore": 69,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "Pope Leo XIV condemned the killings of individuals who died protecting the Amazon rainforest from exploitation.",
-        "The religious leader emphasized that illegal mining, deforestation, and pollution pose significant threats to the region."
+        "Pope Leo XIV visited Peru as part of the final segment of his 12-day diplomatic tour of South America.",
+        "The pontiff issued a demand for justice regarding the killings of activists who worked to protect the Amazon rainforest."
       ],
       "primarySource": {
         "publisherName": "Deutsche Welle",
@@ -98,8 +64,8 @@
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
         "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
@@ -110,12 +76,63 @@
       }
     },
     {
+      "slug": "us-flight-grounding-causes-travel-disruptions",
+      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
+      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
+        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+      }
+    },
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
+      }
+    },
+    {
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
+        "Emergency responders confirmed that all passengers have been accounted for following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
+    {
       "slug": "judge-halts-washington-golf-course-renovation",
       "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
       "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
@@ -127,37 +144,20 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "slug": "united-states-air-travel-system-disruption",
+      "canonicalPath": "/news/us/united-states-air-travel-system-disruption/",
+      "headline": "United States Air Travel Disrupted Following Systemic Flight Failure",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+        "A massive failure in the United States air traffic control system led to thousands of flight cancellations nationwide.",
+        "Federal officials stated that the outage resulted from aging equipment struggling with high load demands rather than a cyberattack."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary"
-      }
-    },
-    {
-      "slug": "ukraine-nato-territory-exchange-proposal",
-      "canonicalPath": "/news/us/ukraine-nato-territory-exchange-proposal/",
-      "headline": "Proposed Ukraine NATO Membership Deal Involves Territorial Concession",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Reports suggest an informal proposal for Ukraine to exchange Donbas territory for formal NATO alliance membership.",
-        "The Ukrainian president stated that any potential decision regarding such a territorial exchange would require consultation with his citizens."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo"
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261115084653-4-785320/penyebab-bandara-lumpuh-total-20000-penerbangan-batal-di-as"
       }
     },
     {
@@ -166,8 +166,8 @@
       "headline": "Defense Secretary Pete Hegseth Awards Medal To Soldier At Arlington",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Secretary of Defense Pete Hegseth honored a soldier with a medal at Arlington National Cemetery.",
         "The recipient had previously reprimanded Hegseth and his party for excessive noise near the Tomb of the Unknown Soldier."

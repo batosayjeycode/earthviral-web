@@ -1,44 +1,26 @@
 {
-  "batchId": "batch-202611160218",
-  "generatedAt": "2026-11-16T02:18:00Z",
-  "nextUpdateAt": "2026-11-16T05:17:00Z",
+  "batchId": "batch-202611160518",
+  "generatedAt": "2026-11-16T05:18:00Z",
+  "nextUpdateAt": "2026-11-16T08:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 34,
-    "viralTopics": 147,
-    "globalIndex": 81
+    "viralTopics": 153,
+    "globalIndex": 86
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 29,
+    "feedsOk": 30,
     "feedsFailed": [
       "tempo: HTTP 403 for https://rss.tempo.co/",
-      "antara: readTagExp returned undefined at position 75466. Context: \"rsa cawapres, ini kata PDIP</media:title>\n        <media:descrip\"",
-      "gdelt-indonesia: The operation was aborted due to timeout",
+      "gdelt-indonesia: fetch failed",
       "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 980,
-    "newClusters": 17,
-    "updatedClusters": 24,
-    "retiredClusters": 17,
-    "aiCalls": 26,
-    "aiFailures": {
-      "rate-limit": 3
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      }
-    ],
-    "durationMs": 180310
+    "articlesFetched": 1070,
+    "newClusters": 23,
+    "updatedClusters": 26,
+    "retiredClusters": 19,
+    "aiCalls": 32,
+    "durationMs": 179343
   }
 }
