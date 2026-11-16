@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 94,
+  "viralScore": 86,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-16T17:18:00Z",
+  "generatedAt": "2026-11-16T20:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
@@ -13,8 +13,8 @@
       "headline": "Aviation Infrastructure Questions Persist After Nationwide FAA Stop",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 91,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "A nationwide FAA ground stop triggered significant flight delays and passenger frustration across the United States.",
         "The incident has prompted wider scrutiny regarding the reliability and resilience of national aviation infrastructure."
@@ -30,7 +30,7 @@
       "headline": "President Trump Supports Potential Reinstatement Of Jensen Huang",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 80,
+      "viralScore": 79,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump stated he would not object to the reinstatement of former Nvidia CEO Jensen Huang.",
@@ -38,7 +38,24 @@
       ],
       "primarySource": {
         "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/jensen-huang-spy-row-second-affair-leaves-nvidia-without-its-rockstar-ceo/a-79926972?maca=en-rss-en-all-1573-xml-mrss"
+        "articleUrl": "https://www.dw.com/en/jensen-huang-spy-row-affairs-leave-nvidia-without-its-rockstar-ceo/a-79926972?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 78,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -59,12 +76,29 @@
       }
     },
     {
+      "slug": "us-flight-grounding-causes-travel-disruptions",
+      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
+      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
+        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+      }
+    },
+    {
       "slug": "lindsay-clancy-to-be-retried-on-first-degree-murder",
       "canonicalPath": "/news/us/lindsay-clancy-to-be-retried-on-first-degree-murder/",
       "headline": "Lindsay Clancy to be retried on first-degree murder charges in March",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 72,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "CBS News reports: Lindsay Clancy to be retried on first-degree murder charges in March",
@@ -76,30 +110,13 @@
       }
     },
     {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
-        "Emergency responders confirmed that all passengers have been accounted for following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
-      }
-    },
-    {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
         "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
@@ -110,20 +127,20 @@
       }
     },
     {
-      "slug": "supreme-court-allows-texas-border-wall",
-      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
-      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
-        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
+        "Emergency responders confirmed that all passengers have been accounted for following the incident."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
       }
     },
     {
@@ -132,8 +149,8 @@
       "headline": "Pope Leo XIV Calls For Justice During Final Leg Of South American Tour",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV visited Peru as part of the final segment of his 12-day diplomatic tour of South America.",
         "The pontiff issued a demand for justice regarding the killings of activists who worked to protect the Amazon rainforest."
@@ -144,114 +161,12 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
-        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "united-states-gas-prices-decline",
-      "canonicalPath": "/news/us/united-states-gas-prices-decline/",
-      "headline": "United States Diesel Prices Fall Below Six Dollars Per Gallon",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Average diesel prices in the United States have decreased to 5.99 dollars per gallon according to AAA data.",
-        "This decline marks the first time diesel costs have dropped below the six-dollar threshold since September."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/10/nx-s1-6034518/inflation-consumer-prices-economy-gas-prices"
-      }
-    },
-    {
-      "slug": "brooklyn-building-collapse-rescue-efforts",
-      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
-      "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
-        "Official reports confirm at least eight fatalities, including six adults and two children, with seventeen individuals reported injured."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
-      }
-    },
-    {
-      "slug": "us-flight-grounding-causes-travel-disruptions",
-      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
-      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
-        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
-      }
-    },
-    {
-      "slug": "american-basketball-player-arrested-nigeria-marijuana",
-      "canonicalPath": "/news/us/american-basketball-player-arrested-nigeria-marijuana/",
-      "headline": "American Basketball Player Detained In Nigeria For Drug Possession",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A 28-year-old American basketball player from Georgia was taken into custody at an airport in Lagos, Nigeria.",
-        "The National Drug Law Enforcement Agency reports the discovery of approximately 34 kilograms of cannabis within the athlete's luggage."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cj93rggenq4xo"
-      }
-    },
-    {
-      "slug": "van-hollen-challenges-schumer-senate-leadership",
-      "canonicalPath": "/news/us/van-hollen-challenges-schumer-senate-leadership/",
-      "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
-        "The leadership bid follows internal debate among Democratic members regarding the party's strategic direction following the recent presidential election."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/12/chris-van-hollen-chuck-schumer-senate-majority-leader"
-      }
-    },
-    {
       "slug": "warren-buffett-donates-billions-to-charity",
       "canonicalPath": "/news/us/warren-buffett-donates-billions-to-charity/",
       "headline": "Warren Buffett Announces Major Donation To Four Family Foundations",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 53,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Warren Buffett donated approximately 5.5 billion dollars worth of Berkshire Hathaway stock to four charitable foundations.",
@@ -263,20 +178,122 @@
       }
     },
     {
-      "slug": "united-states-air-travel-system-disruption",
-      "canonicalPath": "/news/us/united-states-air-travel-system-disruption/",
-      "headline": "US Aviation Systems Experience Prolonged Operational Disruptions",
+      "slug": "supreme-court-allows-texas-border-wall",
+      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
+      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
+        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+      }
+    },
+    {
+      "slug": "brooklyn-building-collapse-rescue-efforts",
+      "canonicalPath": "/news/us/brooklyn-building-collapse-rescue-efforts/",
+      "headline": "Brooklyn Building Collapse Results In Eight Confirmed Fatalities",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A three-story residential building located on Flatbush Avenue in Brooklyn collapsed on Wednesday afternoon.",
+        "Official reports confirm at least eight fatalities, including six adults and two children, with seventeen individuals reported injured."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/firefighters-dig-rubble-collapsed-brooklyn-building/"
+      }
+    },
+    {
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
+        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "van-hollen-challenges-schumer-senate-leadership",
+      "canonicalPath": "/news/us/van-hollen-challenges-schumer-senate-leadership/",
+      "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Widespread flight cancellations and groundings have resulted in significant passenger delays and baggage accumulation at major airports.",
-        "President Donald Trump has attributed the system failures to the previous administration under Joe Biden."
+        "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
+        "The leadership bid follows internal debate among Democratic members regarding the party's strategic direction following the recent presidential election."
       ],
       "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261115084653-4-785320/penyebab-bandara-lumpuh-total-20000-penerbangan-batal-di-as"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/12/chris-van-hollen-chuck-schumer-senate-majority-leader"
+      }
+    },
+    {
+      "slug": "united-states-gas-prices-decline",
+      "canonicalPath": "/news/us/united-states-gas-prices-decline/",
+      "headline": "United States Diesel Prices Fall Below Six Dollars Per Gallon",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Average diesel prices in the United States have decreased to 5.99 dollars per gallon according to AAA data.",
+        "This decline marks the first time diesel costs have dropped below the six-dollar threshold since September."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/10/nx-s1-6034518/inflation-consumer-prices-economy-gas-prices"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
+        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "american-basketball-player-arrested-nigeria-marijuana",
+      "canonicalPath": "/news/us/american-basketball-player-arrested-nigeria-marijuana/",
+      "headline": "American Basketball Player Detained In Nigeria For Drug Possession",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 28-year-old American basketball player from Georgia was taken into custody at an airport in Lagos, Nigeria.",
+        "The National Drug Law Enforcement Agency reports the discovery of approximately 34 kilograms of cannabis within the athlete's luggage."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cj93rggenq4xo"
       }
     },
     {
@@ -297,6 +314,23 @@
       }
     },
     {
+      "slug": "united-states-air-travel-system-disruption",
+      "canonicalPath": "/news/us/united-states-air-travel-system-disruption/",
+      "headline": "US Aviation Systems Experience Prolonged Operational Disruptions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Widespread flight cancellations and groundings have resulted in significant passenger delays and baggage accumulation at major airports.",
+        "President Donald Trump has attributed the system failures to the previous administration under Joe Biden."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261115084653-4-785320/penyebab-bandara-lumpuh-total-20000-penerbangan-batal-di-as"
+      }
+    },
+    {
       "slug": "spacex-starship-orbital-recovery-success",
       "canonicalPath": "/news/us/spacex-starship-orbital-recovery-success/",
       "headline": "SpaceX Successfully Recovers Starship Spacecraft From Earth Orbit",
@@ -311,40 +345,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch"
-      }
-    },
-    {
-      "slug": "ukraine-nato-territory-exchange-proposal",
-      "canonicalPath": "/news/us/ukraine-nato-territory-exchange-proposal/",
-      "headline": "Proposed Ukraine NATO Membership Deal Involves Territorial Concession",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Reports suggest an informal proposal for Ukraine to exchange Donbas territory for formal NATO alliance membership.",
-        "The Ukrainian president stated that any potential decision regarding such a territorial exchange would require consultation with his citizens."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo"
-      }
-    },
-    {
-      "slug": "uss-theodore-roosevelt-middle-east-deployment",
-      "canonicalPath": "/news/us/uss-theodore-roosevelt-middle-east-deployment/",
-      "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
-        "The deployment occurs against a backdrop of heightened geopolitical friction involving Iran."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116002600320"
       }
     }
   ]

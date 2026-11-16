@@ -1,47 +1,33 @@
 {
-  "batchId": "batch-202611161718",
-  "generatedAt": "2026-11-16T17:18:00Z",
-  "nextUpdateAt": "2026-11-16T20:17:00Z",
+  "batchId": "batch-202611162018",
+  "generatedAt": "2026-11-16T20:18:00Z",
+  "nextUpdateAt": "2026-11-16T23:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 33,
-    "viralTopics": 396,
-    "globalIndex": 81
+    "activeCountries": 34,
+    "viralTopics": 420,
+    "globalIndex": 80
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 29,
+    "feedsOk": 32,
     "feedsFailed": [
-      "tempo: HTTP 403 for https://rss.tempo.co/",
-      "detik: The operation was aborted due to timeout",
-      "gdelt-indonesia: fetch failed",
-      "gdelt-unitedstates: The operation was aborted due to timeout",
-      "gdelt-unitedkingdom: fetch failed",
-      "gdelt-india: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1063,
-    "newClusters": 17,
-    "updatedClusters": 105,
+    "articlesFetched": 1290,
+    "newClusters": 11,
+    "updatedClusters": 76,
     "retiredClusters": 0,
-    "aiCalls": 44,
+    "aiCalls": 32,
     "aiFailures": {
-      "server-error": 2,
-      "timeout": 1
+      "rate-limit": 1
     },
     "aiFailureSamples": [
       {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-      },
-      {
-        "category": "timeout",
-        "detail": "The operation was aborted due to timeout"
-      },
-      {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
       }
     ],
-    "durationMs": 645913
+    "durationMs": 157117
   }
 }
