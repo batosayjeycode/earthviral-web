@@ -18,11 +18,19 @@ export const VAS = {
   /** Days without new coverage before a story is removed. */
   retentionDays: 30,
   /**
-   * Stories kept per country (highest current score wins). The site is static, so this
-   * bounds its size. Override per run with --max-stories-per-country or the
+   * Stories per country that can be *live* (active) at once — new candidates compete with
+   * active stories on current score. Existing stories are never removed by this cap; they
+   * stay published as archive pages. Override per run with --max-stories-per-country or the
    * MAX_STORIES_PER_COUNTRY env var; 0 = no cap.
    */
   maxStoriesPerCountry: 10,
+  /**
+   * Total stories kept on the site; beyond this the oldest (by last coverage) are retired.
+   * Bounds the static build: each story costs ~5 files (page, OG image, search index) and
+   * Cloudflare Pages allows 20,000 files per deployment on the free plan (100,000 on paid).
+   * Override per run with --max-stored-stories or MAX_STORED_STORIES; 0 = no limit.
+   */
+  maxStoredStories: 2500,
   /** How long a removed story's URL keeps redirecting to its country page. */
   redirectRetentionDays: 90,
   /**

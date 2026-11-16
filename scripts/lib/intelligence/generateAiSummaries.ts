@@ -115,7 +115,7 @@ Rules:
 - Attribute contested claims ("according to …", "officials said …").
 - Do not name private individuals; public figures and institutions are fine.
 - Write in clear English, even when sources are in Indonesian or another language.
-- "whyItIsViral" explains the attention using the supplied coverage metrics (number of outlets, coverage pace, search interest) — not the story's moral importance.
+- "whyItIsViral" explains the attention using the supplied coverage metrics (number of outlets, coverage pace, search interest) — not the story's moral importance. Describe the metrics in words ("covered by four outlets", "strong search interest"); never quote a score or "/100" figure — scores are recalculated every batch, so a quoted number goes stale.
 
 Field requirements:
 - headline: 55–70 characters, factual, title case.
@@ -576,6 +576,24 @@ export function isFallbackSummary(story: { aiContextParagraph: string }): boolea
   return story.aiContextParagraph.includes(FALLBACK_MARKER);
 }
 
+/** Matches a quoted score ("71/100", "a viral activity score of 52", "search signal score 84"). */
+const SCORE_CLAIM = /\b\d{1,3}\s*\/\s*100\b|\b(?:score|signal)\b[^.]{0,25}?\b\d{1,3}\b/i;
+
+export function hasScoreClaim(text: string): boolean {
+  return SCORE_CLAIM.test(text);
+}
+
+/** Metric-based "why it is viral" sentence with no score figures (they change every batch). */
+export function describeAttention(input: Pick<SummaryInput, 'countryName' | 'metrics'>): string {
+  return (
+    `${input.metrics.publishers} independent ${input.metrics.publishers === 1 ? 'outlet is' : 'outlets are'} covering this story` +
+    (input.metrics.velocity >= 50 ? ', with coverage accelerating in the latest batch' : '') +
+    (input.metrics.trendKeyword
+      ? `, and "${input.metrics.trendKeyword}" is trending in Google searches in ${input.countryName}.`
+      : '.')
+  );
+}
+
 export function heuristicSummary(input: SummaryInput): SummaryOutput {
   const publishers = [...new Set(input.articles.map((a) => a.publisherName))];
   // Representative headline: the article sharing the most tokens with the rest of the cluster.
@@ -598,12 +616,7 @@ export function heuristicSummary(input: SummaryInput): SummaryOutput {
     return `${name} reports: ${truncate(article.title, 180)}`;
   });
   const firstSeen = input.articles.map((a) => a.publishedAt).sort()[0]!;
-  const why =
-    `${input.metrics.publishers} independent ${input.metrics.publishers === 1 ? 'outlet is' : 'outlets are'} covering this story` +
-    (input.metrics.velocity >= 50 ? ', with coverage accelerating in the latest batch' : '') +
-    (input.metrics.trendKeyword
-      ? `, and "${input.metrics.trendKeyword}" is trending in Google searches in ${input.countryName}.`
-      : '.');
+  const why = describeAttention(input);
   const context =
     `This story about ${input.countryName} has been reported by ${formatList(publishers.slice(0, 5))}` +
     `${publishers.length > 5 ? ` and ${publishers.length - 5} other outlets` : ''} since ${firstSeen.slice(0, 10)}. ` +
@@ -742,7 +755,14 @@ export function createSummarizer(provider: ProviderName): Summarizer {
         return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
       }
       const parsed = outputSchema.safeParse(normalizeModelOutput(raw));
-      if (parsed.success) return { output: parsed.data, usedAi: true };
+      if (parsed.success) {
+        // Quoted scores go stale as soon as the next batch rescoring runs; use the
+        // metric-free deterministic sentence instead.
+        const output = hasScoreClaim(parsed.data.whyItIsViral)
+          ? { ...parsed.data, whyItIsViral: describeAttention(input) }
+          : parsed.data;
+        return { output, usedAi: true };
+      }
       // Name the failing fields (e.g. "headline: Too big") instead of Zod's JSON dump.
       const detail = parsed.error.issues
         .slice(0, 3)

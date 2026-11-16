@@ -61,7 +61,15 @@ const contextHtml = linkifyFirstMentions(c.aiContextParagraph, [
   ...topics.map((t) => ({ term: t.name, href: `/topic/${t.slug}/` })),
 ]);
 
-const title = `${c.headline} — Viral in ${c.countryName} (Score: ${c.viralScore}/100) | EarthViral`;
+// The pipeline writes a search-length seoTitle (≤ 60 chars) so the full title fits in results.
+// Two stories can share one (the same event in two countries): then add country and date so
+// every page keeps a unique title.
+const sharesTitle = clusters.some(
+  (x) => x !== c && x.seoTitle.trim().toLowerCase() === c.seoTitle.trim().toLowerCase(),
+);
+const title = sharesTitle
+  ? `${c.seoTitle} — ${c.countryName}, ${formatDateWib(c.firstDetectedAt)} | EarthViral`
+  : `${c.seoTitle} | EarthViral`;
 const countryCategoryHref = `/country/${c.countrySlug}/${c.categorySlug}/`;
 const jsonLd = newsArticleGraph(c, [
   { name: c.countryName, path: `/country/${c.countrySlug}/` },

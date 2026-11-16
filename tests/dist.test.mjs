@@ -335,7 +335,7 @@ describe('hosting configuration', () => {
     assert.match(headers, /https:\/\/:version\.:project\.pages\.dev\/\*\s+X-Robots-Tag: noindex/);
   });
 
-  test('generated redirects point at real country pages and never shadow a live page', () => {
+  test('generated redirects point at real country or story pages and never shadow a live page', () => {
     const file = join(dist, '_redirects');
     if (!existsSync(file)) return; // only written by the batch pipeline
     for (const line of readFileSync(file, 'utf8').split('\n')) {
@@ -344,7 +344,8 @@ describe('hosting configuration', () => {
       assert.equal(status, '301', line);
       assert.match(from, /^\/news\/[a-z]{2}\/[a-z0-9-]+\/$/, line);
       assert.ok(!existsSync(fileForPath(from)), `redirect shadows a live page: ${from}`);
-      assert.match(to, /^\/country\/[a-z-]+\/$/, line);
+      // Country hub, or the live story that covers the same event (deduplicated stories).
+      assert.match(to, /^\/(country\/[a-z-]+|news\/[a-z]{2}\/[a-z0-9-]+)\/$/, line);
       assert.ok(existsSync(fileForPath(to)), `redirect target missing: ${to}`);
     }
   });

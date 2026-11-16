@@ -616,6 +616,69 @@ describe('per-country story cap', async () => {
   });
 });
 
+describe('story retention', async () => {
+  const { retireOldest } = await import('./intelligence/selectStories.ts');
+  const { mergeRetired } = await import('./builders/writeStaticJson.ts');
+  const story = (id: string, lastUpdatedAt: string) => ({ id, lastUpdatedAt });
+
+  it('retires the stories with the oldest coverage when over budget, keeping input order', () => {
+    const items = [
+      story('new', '2026-11-16T00:00:00Z'),
+      story('oldest', '2026-11-01T00:00:00Z'),
+      story('mid', '2026-11-10T00:00:00Z'),
+    ];
+    const { kept, dropped } = retireOldest(items, 2);
+    assert.deepEqual(
+      kept.map((x) => x.id),
+      ['new', 'mid'],
+    );
+    assert.deepEqual(
+      dropped.map((x) => x.id),
+      ['oldest'],
+    );
+  });
+
+  it('keeps everything within budget or with no limit, and drops all with a zero budget', () => {
+    const items = [story('a', '2026-11-01T00:00:00Z'), story('b', '2026-11-02T00:00:00Z')];
+    assert.equal(retireOldest(items, 5).kept.length, 2);
+    assert.equal(retireOldest(items, Infinity).kept.length, 2);
+    assert.equal(retireOldest(items, 0).dropped.length, 2);
+  });
+
+  it('re-points a redirect to a story at the country hub once that story is gone', () => {
+    const at = new Date('2026-11-16T00:00:00Z');
+    const dup = {
+      path: '/news/id/event-2/',
+      redirectTo: '/news/id/event/',
+      retiredAt: '2026-11-15T00:00:00Z',
+    };
+    const live = mergeRetired([dup], [], new Set(['/news/id/event/']), at);
+    assert.equal(live[0]!.redirectTo, '/news/id/event/');
+    const gone = mergeRetired([dup], [], new Set(), at);
+    assert.equal(gone[0]!.redirectTo, '/country/indonesia/');
+  });
+});
+
+describe('score claims in "why it is viral"', async () => {
+  const { hasScoreClaim, describeAttention } =
+    await import('./intelligence/generateAiSummaries.ts');
+
+  it('flags quoted score figures', () => {
+    assert.ok(hasScoreClaim('It reached a viral activity score of 71/100.'));
+    assert.ok(hasScoreClaim('High interest, reflected by an 84/100 search signal score.'));
+    assert.ok(hasScoreClaim('The story has reached a viral activity score of 52 today.'));
+  });
+
+  it('accepts metric descriptions without figures', () => {
+    assert.ok(!hasScoreClaim('Four independent outlets are covering this story within hours.'));
+    const sentence = describeAttention({
+      countryName: 'Indonesia',
+      metrics: { publishers: 3, velocity: 80, search: 70, viralScore: 75, trendKeyword: 'banjir' },
+    });
+    assert.ok(!hasScoreClaim(sentence), sentence);
+  });
+});
+
 describe('AI failure classification', async () => {
   const { createSummarizer, classifyAiError } =
     await import('./intelligence/generateAiSummaries.ts');

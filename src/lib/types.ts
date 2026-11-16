@@ -157,7 +157,10 @@ export interface CountryPayload {
 export interface RetiredStory {
   /** Old canonical path, e.g. "/news/id/some-story/". */
   path: string;
-  /** Redirect target, the country hub, e.g. "/country/indonesia/". */
+  /**
+   * Redirect target: the country hub ("/country/indonesia/"), or the live story covering the
+   * same event when this one was a duplicate ("/news/id/other-story/").
+   */
   redirectTo: string;
   retiredAt: string; // ISO-8601
 }

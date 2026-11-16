@@ -9,9 +9,12 @@
  *   --provider gemini|openai|none   default: gemini if GEMINI_API_KEY, else openai if OPENAI_API_KEY, else none
  *   --max-new <n>          new clusters per batch (default 60)
  *   --max-per-country <n>  new clusters per country per batch (default 8)
- *   --max-stories-per-country <n>  stories kept per country in total (default 10, env
- *                          MAX_STORIES_PER_COUNTRY; 0 = no cap). Lower-ranked stories are
- *                          removed and their URLs 301-redirect to the country page.
+ *   --max-stories-per-country <n>  live (active) stories per country (default 10, env
+ *                          MAX_STORIES_PER_COUNTRY; 0 = no cap). Only limits which new
+ *                          stories are admitted; existing stories are never removed by it.
+ *   --max-stored-stories <n>  stories kept on the site in total (default 2500, env
+ *                          MAX_STORED_STORIES; 0 = no limit). Beyond it the stories with the
+ *                          oldest coverage are removed and 301-redirect to their country page.
  *   --max-ai <n>           LLM calls per batch (default 80)
  *   --resummarize-fallback re-summarise kept stories that still have non-AI fallback text
  *                          (e.g. from runs without an API key); counts toward --max-ai
@@ -53,10 +56,11 @@ import {
   type SummaryOutput,
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
-import { selectTopPerCountry } from './lib/intelligence/selectStories.ts';
+import { retireOldest, selectTopPerCountry } from './lib/intelligence/selectStories.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
+  isActive,
   iso,
   loadBatchMeta,
   loadExistingClusters,
@@ -91,6 +95,12 @@ const OPTS = {
     process.env.MAX_STORIES_PER_COUNTRY?.trim()
       ? Number.parseInt(process.env.MAX_STORIES_PER_COUNTRY, 10)
       : VAS.maxStoriesPerCountry,
+  ),
+  maxStoredStories: intOption(
+    'max-stored-stories',
+    process.env.MAX_STORED_STORIES?.trim()
+      ? Number.parseInt(process.env.MAX_STORED_STORIES, 10)
+      : VAS.maxStoredStories,
   ),
   maxAi: intOption('max-ai', 80),
   resummarizeFallback: flag('resummarize-fallback'),
@@ -314,26 +324,40 @@ async function main() {
     })
     .slice(0, OPTS.maxNew);
 
-  // Per-country cap: existing stories and new candidates compete on current score, and only
-  // the top N per country are kept — decided before summarising so no AI call is wasted.
-  const { kept, dropped } = selectTopPerCountry(
+  // Admission: new candidates compete with each country's *active* stories on current score;
+  // only the top N per country are admitted — decided before summarising so no AI call is
+  // wasted. Existing stories are never dropped here: published URLs stay up as archive pages.
+  const existingScored = scored.filter(({ cluster }) => cluster.existing);
+  const { kept } = selectTopPerCountry(
     [
-      ...scored.filter(({ cluster }) => cluster.existing).map((x) => ({ ...x, isExisting: true })),
+      ...existingScored
+        .filter(({ cluster }) => isActive(cluster.existing!, now))
+        .map((x) => ({ ...x, isExisting: true })),
       ...candidatesNew.map((x) => ({ ...x, isExisting: false })),
     ].map((x) => ({ ...x, countryCode: x.cluster.countryCode, viralScore: x.score.viralScore })),
     OPTS.maxStoriesPerCountry,
   );
   const selectedNew = kept.filter((x) => !x.isExisting);
-  const carried = kept.filter((x) => x.isExisting);
-  const retiredNow = dropped.filter((x) => x.isExisting).map((x) => x.cluster.existing!);
+  // Site size budget: new stories take their slots first; the stories with the oldest
+  // coverage are retired (→ 301 to their country page) when over the limit.
+  const budgetForExisting =
+    OPTS.maxStoredStories > 0 ? OPTS.maxStoredStories - selectedNew.length : Infinity;
+  const { kept: carried, dropped: overBudget } = retireOldest(
+    existingScored.map((x) => {
+      // New coverage this batch makes a story current again.
+      const lastUpdatedAt =
+        newArticleCount(x.cluster) > 0 ? iso(now) : x.cluster.existing!.lastUpdatedBatchAt;
+      return { ...x, lastUpdatedAt };
+    }),
+    budgetForExisting,
+  );
+  const retiredNow = overBudget.map((x) => x.cluster.existing!);
   const updated = carried.filter(({ cluster }) => newArticleCount(cluster) > 0);
   log(
     `  ${working.length - existing.length} candidate new clusters → ${selectedNew.length} selected; ${updated.length} existing clusters received new coverage`,
   );
   log(
-    OPTS.maxStoriesPerCountry > 0
-      ? `  per-country cap ${OPTS.maxStoriesPerCountry}: ${retiredNow.length} existing stories retired (→ 301 to country page)`
-      : '  per-country cap: off',
+    `  live cap ${OPTS.maxStoriesPerCountry || 'off'} per country; site budget ${OPTS.maxStoredStories || 'off'} stories: ${retiredNow.length} oldest retired (→ 301 to country page)`,
   );
 
   // Stories whose stored sources had drifted onto other events were pruned while clustering;
@@ -453,7 +477,7 @@ async function main() {
   buildInternalLinks(records, now);
   const retired = mergeRetired(
     previousRetired,
-    // Capped-out stories and stories past the 30-day retention both redirect.
+    // Stories over the site size budget and past the retention window both redirect.
     [...retiredNow, ...expired].map((c) => ({
       path: c.canonicalPath,
       redirectTo: `/country/${c.countrySlug}/`,

@@ -90,7 +90,15 @@ npm run update:viral -- --no-trends --no-gdelt
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
 
-**Per-country cap.** Because every story is a static page (HTML, OG image, search index), each country keeps only its **10** highest-scoring stories by default. Existing stories and new candidates are ranked together every batch, before summarising, so no AI call is spent on a story that won't be kept. Removed stories, whether capped or expired, get a `301` redirect to their country page in the generated `public/_redirects` for 90 days, so links never 404. Change the limit with `--max-stories-per-country`, the `MAX_STORIES_PER_COUNTRY` env var, or the GitHub repository variable of the same name; `0` turns the cap off.
+**Story admission and retention.** Published story URLs stay up for as long as possible, so pages keep the search rankings they earn.
+
+- **Live cap per country** (default **10**): new candidates compete with each country's _active_ stories (updated in the last 48 h) on current score, before summarising, so no AI call is spent on a story that won't be added. Existing stories are never removed by this cap; they stay published as archive pages. Change it with `--max-stories-per-country`, the `MAX_STORIES_PER_COUNTRY` env var or repository variable; `0` turns it off.
+- **Site budget** (default **2,500** stories): every story costs ~4 files (HTML, OG image, search index) and Cloudflare Pages allows 20,000 files per deployment on the free plan. Over budget, the stories with the oldest coverage are removed. Change it with `--max-stored-stories` or `MAX_STORED_STORIES`; `0` turns it off.
+- **Retention**: stories are removed after 30 days without new coverage.
+
+Removed stories get a `301` in the generated `public/_redirects` for 90 days, to their country page (or to the live story covering the same event, for duplicates), so links never 404.
+
+`npm run restore:retired` is a one-off migration that restored the stories removed by the old top-10-per-country cap from git history.
 
 ## Configuration
 

@@ -7,13 +7,17 @@ interface Props {
   title: string;
   clusters: ViralClusterStaticRecord[];
   emptyText?: string;
+  /** Cards shown; hubs list the highest-scoring stories (archive pages stay in the sitemaps). */
+  limit?: number;
 }
 
 const {
   title,
   clusters,
   emptyText = 'No viral stories in this batch. Check back after the next 3-hour update.',
+  limit = 60,
 } = Astro.props;
+const shown = clusters.slice(0, limit);
 const id = `grid-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 ---
 
@@ -23,7 +27,7 @@ const id = `grid-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
   </h2>
   {clusters.length > 0 ? (
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {clusters.map((c) => (
+      {shown.map((c) => (
         <NewsCard cluster={c} referenceIso={batchMeta.generatedAt} />
       ))}
     </div>
