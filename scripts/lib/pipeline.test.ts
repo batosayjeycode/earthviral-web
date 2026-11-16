@@ -5,13 +5,16 @@ import { detectCountry, mentionedCountries } from './intelligence/detectCountry.
 import {
   clusterArticles,
   dedupeArticles,
+  hasDrifted,
   type CountryArticle,
 } from './intelligence/deduplicateAndCluster.ts';
 import {
   computeViralScore,
   coverageScore,
+  matchTrend,
   velocityScore,
 } from './intelligence/computeViralScore.ts';
+import type { ViralClusterStaticRecord } from '../../src/lib/types.ts';
 import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
@@ -108,6 +111,167 @@ describe('clustering', () => {
   it('dedupes identical URLs and same-publisher reposts', () => {
     const a = article({ title: 'Same headline here today', publisherDomain: 'x.com' });
     assert.equal(dedupeArticles([a, { ...a }, { ...a, url: 'https://x.com/other' }]).length, 1);
+  });
+});
+
+/** Minimal published story for clustering: only the fields clustering reads. */
+function story(
+  countryCode: string,
+  slug: string,
+  headline: string,
+  titles: string[],
+): ViralClusterStaticRecord {
+  return {
+    countryCode,
+    slug,
+    headline,
+    sources: titles.map((t, i) => ({
+      publisherName: `p${i}`,
+      publisherDomain: `p${i}.com`,
+      articleTitle: t,
+      articleUrl: `https://p${i}.com/${i}`,
+      publishedAt: hoursAgo(48 - i),
+    })),
+  } as unknown as ViralClusterStaticRecord;
+}
+
+describe('story drift', () => {
+  // Real batches hold 1,000+ headlines, so a country's name is a rare, heavily weighted word.
+  // Without other countries' headlines in the corpus, "South Africa" would weigh almost
+  // nothing and these tests could not reproduce the drift.
+  const filler = [
+    'Parliament passes budget bill after long debate',
+    'Central bank holds interest rates steady',
+    'Storm cuts power to coastal towns',
+    'Football club appoints new head coach',
+    'Tech firm unveils new smartphone lineup',
+    'Teachers strike over pay dispute',
+    'Wildfire forces evacuations in hills',
+    'Court jails former minister for graft',
+    'Airline cancels flights amid strike',
+    'Election commission sets vote date',
+    'Oil prices climb on supply fears',
+    'Hospital workers demand better conditions',
+  ].map((title, i) =>
+    article({ countryCode: 'GB', title, publisherDomain: `f${i}.com`, publishedAt: hoursAgo(5) }),
+  );
+  const airport = (
+    titles: string[],
+    headline = 'Foreign Nationals Arrested At South African Airport',
+  ) =>
+    story('ZA', 'foreign-nationals-arrested-south-africa-airport', headline, [
+      'Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine',
+      ...titles,
+    ]);
+
+  it("doesn't attach unrelated news that only shares the country's name", () => {
+    const clusters = clusterArticles(
+      [
+        article({
+          countryCode: 'ZA',
+          title: '17 dead as 2 mass shootings rock South Africa',
+          publisherDomain: 'a.com',
+        }),
+        article({
+          countryCode: 'ZA',
+          title: 'South Africa releases speech after protest',
+          publisherDomain: 'b.com',
+        }),
+        ...filler,
+      ],
+      // Two sources that both say "South Africa" pull the cluster centroid towards the name;
+      // before the fix both unrelated articles above attached to this story.
+      [airport(['South Africa detains foreigners suspected of heading to join Russian forces'])],
+    );
+    const existing = clusters.find((c) => c.existing)!;
+    assert.equal(existing.articles.filter((a) => a.isNew).length, 0);
+    assert.equal(clusters.filter((c) => c.countryCode === 'ZA').length, 3);
+  });
+
+  it('still attaches genuine follow-up coverage', () => {
+    const clusters = clusterArticles(
+      [
+        article({
+          countryCode: 'ZA',
+          title: 'Nine foreigners caught at airport trying to fight in Ukraine appear in court',
+          publisherDomain: 'a.com',
+        }),
+      ],
+      [airport([])],
+    );
+    assert.equal(clusters.length, 1);
+    assert.equal(clusters[0]!.articles.length, 2);
+  });
+
+  it('does not let one stray word become an attach point (no snowballing)', () => {
+    const clusters = clusterArticles(
+      [
+        article({
+          title: 'Banjir rendam ribuan rumah di Bekasi',
+          publisherDomain: 'a.com',
+          publishedAt: hoursAgo(4),
+        }),
+        // Joins the flood story, and brings "warga" (residents) with it.
+        article({
+          title: 'Banjir Bekasi, ribuan warga mengungsi',
+          publisherDomain: 'b.com',
+          publishedAt: hoursAgo(3),
+        }),
+        // Shares only "ribuan" (thousands) and "warga" with the flood story; before the fix
+        // "warga" counted as an attach point once one member used it, and the concert joined.
+        article({
+          title: 'Ribuan warga padati konser musik',
+          publisherDomain: 'c.com',
+          publishedAt: hoursAgo(1),
+        }),
+        ...filler,
+      ],
+      [],
+    );
+    const flood = clusters.filter((c) => c.countryCode === 'ID');
+    assert.deepEqual(flood.map((c) => c.articles.length).sort(), [1, 2]);
+  });
+
+  it('repairs a story that drifted onto another event, around the source matching its URL', () => {
+    const drifted = airport(
+      [
+        'South Africa releases speech after protest',
+        'Pan-African solidarity call condemns Afrophobia in South Africa',
+        '17 dead as 2 mass shootings rock South Africa within 24 hours',
+        'South Africa: 17 killed in separate mass shooting incidents',
+      ],
+      'Mass Shooting Incidents Result In Seventeen Deaths In South Africa',
+    );
+    assert.ok(hasDrifted(drifted));
+    const [cluster] = clusterArticles([], [drifted]);
+    assert.equal(cluster!.pruned, 4);
+    assert.match(cluster!.articles[0]!.title, /Nine foreigners/);
+  });
+
+  it('leaves an evolving but on-topic story alone', () => {
+    const protests = story(
+      'FR',
+      'france-more-than-600-000-protest-as-anger-grows',
+      'Over One Hundred Thousand March Across France In Fifth Weekend',
+      [
+        'France: More than 600,000 protest as anger grows over cost of living',
+        'France faces fifth weekend of protests',
+        'More than 100,000 protest across France for fifth consecutive weekend',
+      ],
+    );
+    assert.ok(hasDrifted(protests)); // headline wording changed…
+    const [cluster] = clusterArticles([], [protests]);
+    assert.equal(cluster!.pruned, 0); // …but the sources are still the same story
+  });
+
+  it("doesn't match a search trend on the country's name alone", () => {
+    const [cluster] = clusterArticles([], [airport([])]);
+    assert.equal(
+      matchTrend(cluster!, [
+        { country: 'ZA', keyword: 'south africa', traffic: 50_000, newsTitles: [] },
+      ]),
+      null,
+    );
   });
 });
 

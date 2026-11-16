@@ -167,7 +167,8 @@ function summaryInput(cluster: WorkingCluster, score: ViralScore): SummaryInput 
       search: score.search,
       trendKeyword: score.matchedTrend?.keyword ?? null,
     },
-    previousHeadline: cluster.existing?.headline,
+    // A repaired story's stored headline describes the event it drifted onto.
+    previousHeadline: cluster.pruned > 0 ? undefined : cluster.existing?.headline,
   };
 }
 
@@ -335,20 +336,32 @@ async function main() {
       : '  per-country cap: off',
   );
 
+  // Stories whose stored sources had drifted onto other events were pruned while clustering;
+  // their text describes the wrong event, so it is always rewritten.
+  const repaired = carried.filter(({ cluster }) => cluster.pruned > 0);
+  if (repaired.length > 0) {
+    log(
+      `  repaired ${repaired.length} drifted stories (${repaired.reduce((n, { cluster }) => n + cluster.pruned, 0)} unrelated sources pruned)`,
+    );
+  }
+
   // 4. Summarise (within the AI budget, highest scores first) ─────────────────
-  // New clusters always need text; existing ones are re-summarised after ≥ 2 new articles,
-  // or — with --resummarize-fallback and an AI provider — when they still have non-AI text.
+  // New and repaired clusters always need text; existing ones are re-summarised after ≥ 2 new
+  // articles, or — with --resummarize-fallback and an AI provider — when they still have
+  // non-AI text.
   const resummarize = carried.filter(
     ({ cluster }) =>
       OPTS.resummarizeFallback &&
       summarizer.provider !== 'none' &&
       newArticleCount(cluster) < 2 &&
+      cluster.pruned === 0 &&
       isFallbackSummary(cluster.existing!),
   );
   const needsText = [
     ...selectedNew.map((x) => ({ ...x, isNew: true })),
+    ...repaired.map((x) => ({ ...x, isNew: true })),
     ...updated
-      .filter(({ cluster }) => newArticleCount(cluster) >= 2)
+      .filter(({ cluster }) => newArticleCount(cluster) >= 2 && cluster.pruned === 0)
       .map((x) => ({ ...x, isNew: false })),
     ...resummarize.map((x) => ({ ...x, isNew: false })),
   ].sort((a, b) => b.score.viralScore - a.score.viralScore);
@@ -401,6 +414,7 @@ async function main() {
   for (const { cluster, score } of carried) {
     const record: ViralClusterStaticRecord = structuredClone(cluster.existing!);
     applyScore(record, score);
+    if (cluster.pruned > 0) record.sources = sourcesOf(cluster);
     if (newArticleCount(cluster) > 0) {
       record.sources = sourcesOf(cluster);
       record.lastUpdatedBatchAt = iso(now);
