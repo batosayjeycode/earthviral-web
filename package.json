@@ -23,6 +23,7 @@
     "update:viral": "node --env-file-if-exists=.env scripts/generate-viral-batch.ts",
     "generate:viral": "node --env-file-if-exists=.env scripts/generate-viral-batch.ts",
     "indexnow": "node --env-file-if-exists=.env scripts/indexnow.ts",
+    "restore:retired": "node scripts/restore-retired-stories.ts",
     "geo:sync": "node scripts/sync-geo.ts",
     "predev": "node scripts/sync-geo.ts",
     "prebuild": "node scripts/sync-geo.ts",

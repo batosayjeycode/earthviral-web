@@ -53,8 +53,26 @@ export interface TopicRecord {
   peakScore: number;
 }
 
-/** Entity-tag topics aggregated across every cluster (feeds /topic/[tagSlug]/). */
+/**
+ * A topic page is built only once this many stories share the tag. Single-story topics
+ * would be near-duplicates of the story itself — hundreds of thin pages that dilute how
+ * search engines rate the site and waste crawl budget. Tags below the threshold render as
+ * plain text instead of links.
+ */
+export const MIN_TOPIC_STORIES = 3;
+
+let topicCache: TopicRecord[] | undefined;
+
+/**
+ * Entity-tag topics aggregated across every cluster, limited to tags with at least
+ * MIN_TOPIC_STORIES stories (feeds /topic/[tagSlug]/).
+ */
 export async function getTopics(): Promise<TopicRecord[]> {
+  topicCache ??= await buildTopics();
+  return topicCache;
+}
+
+async function buildTopics(): Promise<TopicRecord[]> {
   const bySlug = new Map<string, TopicRecord>();
   for (const cluster of await getClusters()) {
     for (const tag of cluster.entityTags) {
@@ -69,7 +87,7 @@ export async function getTopics(): Promise<TopicRecord[]> {
       bySlug.set(tag.slug, topic);
     }
   }
-  return [...bySlug.values()].sort(
-    (a, b) => b.peakScore - a.peakScore || a.name.localeCompare(b.name),
-  );
+  return [...bySlug.values()]
+    .filter((t) => t.clusters.length >= MIN_TOPIC_STORIES)
+    .sort((a, b) => b.peakScore - a.peakScore || a.name.localeCompare(b.name));
 }

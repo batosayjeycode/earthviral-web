@@ -76,7 +76,8 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 ### Later additions
 
-- **Per-country cap:** each country keeps its **top 10 stories** (configurable). Removed and expired stories get a **301 to their country page** through a generated `public/_redirects`, kept for 90 days.
+- **Story retention:** story pages stay published for 30 days after their last coverage, within a site budget of **2,500 stories** (oldest removed first). At most **10 stories per country** are live at once, which limits how many new stories are added (configurable). Removed stories get a **301 to their country page** through a generated `public/_redirects`, kept for 90 days.
+- **Topic pages** are built only for tags shared by at least 3 stories; other tags render as plain text.
 - **AI reliability:**
   - failure reasons are categorised (`rate-limit`, `schema`, `timeout`, …) and recorded in `batch-meta.json`
   - AI calls run 2 at a time

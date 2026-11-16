@@ -7,7 +7,7 @@
 #
 # Repository settings needed:
 #   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI)
-#   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10),
+#   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10), MAX_STORED_STORIES (default 2500),
 #                    AI_CONCURRENCY (default 2)
 name: Update viral batch
 
@@ -84,6 +84,7 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           # Stories kept per country (default 10; 0 = no cap). Set as a repository variable.
           MAX_STORIES_PER_COUNTRY: ${{ vars.MAX_STORIES_PER_COUNTRY }}
+          MAX_STORED_STORIES: ${{ vars.MAX_STORED_STORIES }}
           # Parallel AI calls (default 2). Keep low on free tiers, which rate-limit per minute.
           AI_CONCURRENCY: ${{ vars.AI_CONCURRENCY }}
           PROVIDER: ${{ inputs.provider || 'auto' }}
