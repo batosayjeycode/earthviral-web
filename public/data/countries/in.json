@@ -3,17 +3,34 @@
   "name": "India",
   "slug": "india",
   "region": "Asia",
-  "viralScore": 70,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-16T11:18:00Z",
+  "generatedAt": "2026-11-16T14:18:00Z",
   "clusters": [
+    {
+      "slug": "sonia-gandhi-releases-new-political-memoir",
+      "canonicalPath": "/news/in/sonia-gandhi-releases-new-political-memoir/",
+      "headline": "Sonia Gandhi Memoir Sparks Political Debate And Personal Revelations",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The memoir Belonging: A Journey of Love provides insights into historical political moments, including the 1969 Presidential elections and the 1999 Congress revolt.",
+        "Personal anecdotes in the book range from Sonia Gandhi's 1978 visit to Indira Gandhi in Tihar Jail to her reflections on interactions with Pranab Mukherjee."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/09/this-is-india-sonia-gandhi-memoir-belonging"
+      }
+    },
     {
       "slug": "delhi-air-quality-grap-iii-restrictions",
       "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
       "headline": "Delhi Air Quality Remains In Very Poor To Severe Categories",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 67,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Most monitoring stations in Delhi continue to record air quality levels classified as very poor or severe.",
@@ -25,13 +42,30 @@
       }
     },
     {
+      "slug": "political-tensions-amid-global-tech-deals",
+      "canonicalPath": "/news/in/political-tensions-amid-global-tech-deals/",
+      "headline": "India Joins Global Coalition To Secure Artificial Intelligence Supply",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "India joined a ten-nation coalition led by the United States to secure artificial intelligence supply chains against competition from China.",
+        "The European Union imposed anti-dumping duties on steel exports arriving from India and four other nations."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/india-business/did-nvidia-row-push-for-a-united-anti-china-stance-us-india-sign-accord-to-protect-ai-supply-chain-report/articleshow/135874055.cms"
+      }
+    },
+    {
       "slug": "modi-pitroda-public-exchange",
       "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
       "headline": "Prime Minister Modi Comments On Internal Security And Ideologies",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
-      "intensityTier": "high",
+      "viralScore": 52,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Modi accused ideological supporters of Naxalism of infiltrating political and social organizations.",
         "The Prime Minister observed 'Janjatiya Gaurav Diwas' in memory of Birsa Munda and stated tribal communities suffered under previous administrations."
@@ -42,46 +76,12 @@
       }
     },
     {
-      "slug": "prince-william-kate-mumbai-visit",
-      "canonicalPath": "/news/in/prince-william-kate-mumbai-visit/",
-      "headline": "Prince William And Princess Catherine Arrive In Mumbai For Earthshot",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Prince William and Princess Catherine have begun a three-day official visit to India starting in Mumbai.",
-        "The couple is scheduled to attend the sixth annual Earthshot Prize ceremony, which recognizes climate change innovation."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/maharashtra/mumbai-police-announce-traffic-diversion-ahead-ofbritains-prince-william-visit/article71702944.ece"
-      }
-    },
-    {
-      "slug": "sonia-gandhi-releases-new-political-memoir",
-      "canonicalPath": "/news/in/sonia-gandhi-releases-new-political-memoir/",
-      "headline": "Sonia Gandhi Memoir Sparks Political Debate And Personal Revelations",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The memoir Belonging: A Journey of Love provides insights into historical political moments, including the 1969 Presidential elections and the 1999 Congress revolt.",
-        "Personal anecdotes in the book range from Sonia Gandhi's 1978 visit to Indira Gandhi in Tihar Jail to her reflections on interactions with Pranab Mukherjee."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/books/books-authors/sonia-gandhi-on-her-memoir-belonging-a-journey-of-love/article71655899.ece"
-      }
-    },
-    {
       "slug": "security-operation-kulgam-militant-engagement",
       "canonicalPath": "/news/in/security-operation-kulgam-militant-engagement/",
       "headline": "Security Operation In Kulgam Follows Recent Attack On Security Forces",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 58,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Security forces engaged in a counter-terror operation in Kulgam, resulting in the death of an alleged militant.",
@@ -93,12 +93,29 @@
       }
     },
     {
+      "slug": "supreme-court-criticizes-yamuna-river-pollution",
+      "canonicalPath": "/news/in/supreme-court-criticizes-yamuna-river-pollution/",
+      "headline": "Supreme Court Criticizes Lack Of Progress In Yamuna Cleaning Efforts",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Supreme Court observed that the Yamuna River's health remains poor despite significant financial allocations for cleaning.",
+        "Judges linked the river's condition to systemic failures in municipal administration across cities, towns, and villages along its banks."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/india/520-drains-discharge-wastewater-in-the-yamuna-sc-raps-admin-over-rising-pollution-despite-huge-spending/articleshow/135887789.cms"
+      }
+    },
+    {
       "slug": "political-debate-yamuna-river-chhath-puja",
       "canonicalPath": "/news/in/political-debate-yamuna-river-chhath-puja/",
       "headline": "Political Debate Erupts Over Yamuna River Status During Chhath Puja",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Political parties in Delhi have exchanged criticisms over the condition of the Yamuna River during the Chhath Puja festival.",
@@ -115,7 +132,7 @@
       "headline": "India Secures Under-19 Asia Cup Title Amidst On-Field Controversy",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 50,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "India secured a narrow one-wicket victory against Pakistan in the Under-19 Asia Cup final while chasing 337 runs.",
@@ -127,12 +144,29 @@
       }
     },
     {
+      "slug": "prince-william-kate-mumbai-visit",
+      "canonicalPath": "/news/in/prince-william-kate-mumbai-visit/",
+      "headline": "Prince William And Princess Catherine Arrive In Mumbai For Earthshot",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Prince William and Princess Catherine have begun a three-day official visit to India starting in Mumbai.",
+        "The couple is scheduled to attend the sixth annual Earthshot Prize ceremony, which recognizes climate change innovation."
+      ],
+      "primarySource": {
+        "publisherName": "The Hindu",
+        "articleUrl": "https://www.thehindu.com/news/national/maharashtra/mumbai-police-announce-traffic-diversion-ahead-ofbritains-prince-william-visit/article71702944.ece"
+      }
+    },
+    {
       "slug": "supreme-court-grants-bilkis-bano-bail",
       "canonicalPath": "/news/in/supreme-court-grants-bilkis-bano-bail/",
       "headline": "Supreme Court Grants Bail To Two Convicts In Bilkis Bano Case",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 50,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Supreme Court of India has officially suspended the life sentences of two men convicted in the Bilkis Bano case.",
@@ -141,40 +175,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/india/bilkis-bano-gangrape-case-sc-suspends-life-sentence-of-two-convicts-grants-bail/articleshow/135878052.cms"
-      }
-    },
-    {
-      "slug": "political-tensions-amid-global-tech-deals",
-      "canonicalPath": "/news/in/political-tensions-amid-global-tech-deals/",
-      "headline": "BJP Criticizes Opposition During Global Technology Policy Shifts",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The BJP has publicly criticized Rahul Gandhi regarding the hosting of a summit in Hyderabad.",
-        "India has formally committed to the San Francisco Declaration to secure critical global technology supply chains."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/india-business/did-nvidia-row-push-for-a-united-anti-china-stance-us-india-sign-accord-to-protect-ai-supply-chain-report/articleshow/135874055.cms"
-      }
-    },
-    {
-      "slug": "chath-puja-rituals-public-disputes",
-      "canonicalPath": "/news/in/chath-puja-rituals-public-disputes/",
-      "headline": "Public Controversy Erupts Over Chhath Puja Ritual Restrictions",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A political party circulated footage of a deceased animal in an Uttar Pradesh canal during Chhath Puja observations.",
-        "Residents in Palghar gained unauthorized entry to Nagela lake by removing a lock after officials enforced a ban on rituals."
-      ],
-      "primarySource": {
-        "publisherName": "The Hindu",
-        "articleUrl": "https://www.thehindu.com/news/national/maharashtra/devotees-break-lock-of-lake-gate-in-palghar-after-chhath-puja-ban/article71704125.ece"
       }
     }
   ]

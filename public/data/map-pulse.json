@@ -1,27 +1,27 @@
 {
-  "batchId": "batch-202611161118",
-  "generatedAt": "2026-11-16T11:18:00Z",
-  "nextUpdateAt": "2026-11-16T14:17:00Z",
+  "batchId": "batch-202611161418",
+  "generatedAt": "2026-11-16T14:18:00Z",
+  "nextUpdateAt": "2026-11-16T17:17:00Z",
   "countries": [
     {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
       "centroid": [
-        117,
-        -2.5
+        -98.5,
+        39.5
       ],
-      "viralScore": 94,
+      "viralScore": 95,
       "intensityTier": "surge",
-      "topicCount": 10,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "mpr-discusses-vice-president-election-date",
-        "canonicalPath": "/news/id/mpr-discusses-vice-president-election-date/",
-        "headline": "MPR Sets December 9 Date For Presidential Request On Vice President",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 91,
+        "slug": "faa-issues-nationwide-flight-ground-stop",
+        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+        "headline": "FAA Works To Restore Operations Following Major Aviation Shutdown",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 92,
         "intensityTier": "surge"
       }
     },
@@ -34,16 +34,38 @@
         104,
         35
       ],
-      "viralScore": 89,
+      "viralScore": 94,
       "intensityTier": "surge",
       "topicCount": 10,
       "topTopic": {
         "slug": "trump-to-meet-xi-putin-apec",
         "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "China Confirms Upcoming Trilateral Summit With Xi Trump And Putin",
+        "headline": "China Confirms Trilateral Summit With Xi Trump And Vladimir Putin",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 86,
+        "viralScore": 91,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "centroid": [
+        117,
+        -2.5
+      ],
+      "viralScore": 93,
+      "intensityTier": "surge",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "vice-president-gibran-meets-president-prabowo",
+        "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
+        "headline": "Indonesian President To Submit Vice Presidential Nominees By Late November",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 90,
         "intensityTier": "surge"
       }
     },
@@ -56,7 +78,7 @@
         122,
         12.5
       ],
-      "viralScore": 88,
+      "viralScore": 89,
       "intensityTier": "surge",
       "topicCount": 4,
       "topTopic": {
@@ -65,52 +87,8 @@
         "headline": "Regional Leaders Gather In Manila For The 49th ASEAN Summit Event",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 86,
+        "viralScore": 87,
         "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "South Korea Enhances Security Measures To Prevent AI Exam Cheating",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "faa-issues-nationwide-flight-ground-stop",
-        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-        "headline": "President Trump Seeks 50 Billion Dollars For Aviation Infrastructure",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 80,
-        "intensityTier": "high"
       }
     },
     {
@@ -122,7 +100,7 @@
         24.7,
         -29
       ],
-      "viralScore": 81,
+      "viralScore": 83,
       "intensityTier": "high",
       "topicCount": 1,
       "topTopic": {
@@ -131,7 +109,7 @@
         "headline": "Mass Shooting Incidents Result In Seventeen Deaths In South Africa",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 81,
+        "viralScore": 83,
         "intensityTier": "high"
       }
     },
@@ -144,170 +122,38 @@
         -2,
         53.5
       ],
-      "viralScore": 78,
+      "viralScore": 80,
       "intensityTier": "high",
-      "topicCount": 6,
+      "topicCount": 5,
       "topTopic": {
         "slug": "prime-minister-burnham-addresses-brexit-impact",
         "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
         "headline": "Prime Minister Burnham Critiques Brexit Ahead Of Key EU Summit Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 75,
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
       "centroid": [
-        45,
-        24
+        127.8,
+        36.3
       ],
-      "viralScore": 71,
+      "viralScore": 77,
       "intensityTier": "high",
-      "topicCount": 4,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 71,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "helen-haines-discharged-from-hospital",
-        "canonicalPath": "/news/au/helen-haines-discharged-from-hospital/",
-        "headline": "Independent MP Helen Haines Discharged From Hospital After Accident",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 68,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 71,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "South Korea Enhances Security Measures To Prevent AI Exam Cheating",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 68,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
-        "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "TH",
-      "isoNumeric": "764",
-      "name": "Thailand",
-      "slug": "thailand",
-      "centroid": [
-        101,
-        15.5
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "fatal-phuket-shophouse-fire-thailand",
-        "canonicalPath": "/news/th/fatal-phuket-shophouse-fire-thailand/",
-        "headline": "Eleven Dead Following Devastating Fire At Phuket Shophouse Complex",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "delhi-air-quality-grap-iii-restrictions",
-        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
-        "headline": "Delhi Air Quality Remains In Very Poor To Severe Categories",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 67,
-      "intensityTier": "high",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "President Bola Tinubu Advances Re-Election Bid And Security Reforms",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 64,
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -320,60 +166,38 @@
         34.9,
         31.3
       ],
-      "viralScore": 65,
+      "viralScore": 74,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Proposes October 7 Inquiry Amid Government Formation",
+        "slug": "israel-knesset-political-power-transition",
+        "canonicalPath": "/news/il/israel-knesset-political-power-transition/",
+        "headline": "Israeli Political Tensions Rise Amid Allegations Against Netanyahu",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 63,
+        "viralScore": 72,
         "intensityTier": "high"
       }
     },
     {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
       "centroid": [
-        60,
-        58
+        31.2,
+        49
       ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-        "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
-        "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 63,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 64,
+      "viralScore": 73,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
-        "slug": "farage-says-he-is-worried-trump-will-step-up",
-        "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-        "headline": "Regional Tensions Escalate As Iran Targets US Base In Bahrain",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 63,
+        "slug": "ukraine-drone-strikes-crimea-moscow",
+        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
+        "headline": "Ukraine Launches Large-Scale Drone Attacks On Crimea And Moscow",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 72,
         "intensityTier": "high"
       }
     },
@@ -386,13 +210,123 @@
         2.4,
         46.6
       ],
-      "viralScore": 64,
+      "viralScore": 71,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
-        "slug": "teddy-riner-announces-french-presidential-bid",
-        "canonicalPath": "/news/fr/teddy-riner-announces-french-presidential-bid/",
-        "headline": "Judo Champion Teddy Riner Distances Campaign From Emmanuel Macron",
+        "slug": "francophonie-summit-leadership-tensions",
+        "canonicalPath": "/news/fr/francophonie-summit-leadership-tensions/",
+        "headline": "Francophonie Summit Postpones Leadership Vote Amid Diplomatic Rift",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 69,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 69,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "iran-refuses-transfer-enriched-nuclear-material",
+        "canonicalPath": "/news/ir/iran-refuses-transfer-enriched-nuclear-material/",
+        "headline": "IAEA Raises Concerns Over Lack Of Access To Iranian Nuclear Site",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 69,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "estonia-to-close-russia-border-crossings",
+        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
+        "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "kenyan-cult-leader-receives-prison-sentence",
+        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
+        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "helen-haines-discharged-from-hospital",
+        "canonicalPath": "/news/au/helen-haines-discharged-from-hospital/",
+        "headline": "Independent MP Helen Haines Discharged From Hospital After Accident",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 62,
@@ -400,25 +334,69 @@
       }
     },
     {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
       "centroid": [
-        90.3,
-        23.7
+        79,
+        22
       ],
-      "viralScore": 59,
-      "intensityTier": "active",
-      "topicCount": 1,
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 10,
       "topTopic": {
-        "slug": "sheikh-hasina-seeks-passport-for-return",
-        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
-        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "slug": "sonia-gandhi-releases-new-political-memoir",
+        "canonicalPath": "/news/in/sonia-gandhi-releases-new-political-memoir/",
+        "headline": "Sonia Gandhi Memoir Sparks Political Debate And Personal Revelations",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 59,
-        "intensityTier": "active"
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "singapore-electronic-road-pricing-rate-adjustments",
+        "canonicalPath": "/news/sg/singapore-electronic-road-pricing-rate-adjustments/",
+        "headline": "Singapore Announces Electronic Road Pricing Rate Adjustments For 2027",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "TH",
+      "isoNumeric": "764",
+      "name": "Thailand",
+      "slug": "thailand",
+      "centroid": [
+        101,
+        15.5
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "fatal-phuket-shophouse-fire-thailand",
+        "canonicalPath": "/news/th/fatal-phuket-shophouse-fire-thailand/",
+        "headline": "Eleven Dead Following Devastating Fire At Phuket Shophouse Complex",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 62,
+        "intensityTier": "high"
       }
     },
     {
@@ -430,13 +408,35 @@
         10.4,
         51.1
       ],
-      "viralScore": 59,
-      "intensityTier": "active",
-      "topicCount": 2,
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 4,
       "topTopic": {
         "slug": "merz-nominates-aigner-for-german-president",
         "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
         "headline": "Chancellor Merz Advances Ilse Aigner For German Presidential Role",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 61,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "President Bola Tinubu Advances Re-Election Bid And Security Reforms",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 58,
@@ -444,23 +444,23 @@
       }
     },
     {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
       "centroid": [
-        -102.5,
-        23.6
+        45,
+        24
       ],
       "viralScore": 59,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
-        "slug": "guadalajara-cartel-leader-gallardo-dies",
-        "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
-        "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
+        "slug": "saudi-arabia-hajj-fraud-drone-interception",
+        "canonicalPath": "/news/sa/saudi-arabia-hajj-fraud-drone-interception/",
+        "headline": "Saudi Authorities Address Security And Regional Military Operations",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 57,
         "intensityTier": "active"
       }
@@ -474,60 +474,60 @@
         138.5,
         36.5
       ],
-      "viralScore": 58,
+      "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 4,
+      "topicCount": 5,
       "topTopic": {
         "slug": "japan-economy-contracts-third-quarter",
         "canonicalPath": "/news/jp/japan-economy-contracts-third-quarter/",
         "headline": "Japan Records Economic Contraction In Third Quarter Of This Year",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 56,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        103.82,
-        1.35
+        -51.9,
+        -10.5
       ],
-      "viralScore": 58,
+      "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 9,
+      "topicCount": 7,
       "topTopic": {
-        "slug": "singapore-electronic-road-pricing-rate-adjustments",
-        "canonicalPath": "/news/sg/singapore-electronic-road-pricing-rate-adjustments/",
-        "headline": "Singapore Announces Electronic Road Pricing Rate Adjustments For 2027",
+        "slug": "anitta-nominated-for-2027-grammy-award",
+        "canonicalPath": "/news/br/anitta-nominated-for-2027-grammy-award/",
+        "headline": "Anitta Receives Nomination For The 68th Annual Grammy Awards 2027",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "european-leaders-seek-ukraine-peace-influence",
-        "canonicalPath": "/news/ua/european-leaders-seek-ukraine-peace-influence/",
-        "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -540,7 +540,7 @@
         35.2,
         31.9
       ],
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -549,28 +549,6 @@
         "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "cop31-climate-summit-begins-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-begins-turkey/",
-        "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
         "viralScore": 54,
         "intensityTier": "active"
       }
@@ -598,6 +576,50 @@
       }
     },
     {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "guadalajara-cartel-leader-gallardo-dies",
+        "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
+        "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "cop31-climate-summit-begins-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-begins-turkey/",
+        "headline": "United Nations COP31 Climate Summit Begins In Antalya Turkey",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "MY",
       "isoNumeric": "458",
       "name": "Malaysia",
@@ -606,38 +628,38 @@
         102.3,
         3.8
       ],
-      "viralScore": 51,
+      "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 6,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "high-court-najib-house-arrest-order",
-        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
+        "slug": "indonesia-malaysia-cross-border-contraband-seizures",
+        "canonicalPath": "/news/my/indonesia-malaysia-cross-border-contraband-seizures/",
+        "headline": "Indonesian Authorities Intercept Cross-Border Contraband Traffic",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 50,
         "intensityTier": "active"
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
+      "code": "PL",
+      "isoNumeric": "616",
+      "name": "Poland",
+      "slug": "poland",
       "centroid": [
-        -51.9,
-        -10.5
+        19.4,
+        52.1
       ],
-      "viralScore": 48,
+      "viralScore": 49,
       "intensityTier": "active",
-      "topicCount": 7,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "confira-o-gabarito-extraoficial-do-2-dia-do-enem",
-        "canonicalPath": "/news/br/confira-o-gabarito-extraoficial-do-2-dia-do-enem/",
-        "headline": "Confira o gabarito extraoficial do 2� dia do Enem 2026",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 45,
+        "slug": "polish-teens-detained-neo-nazi-plot",
+        "canonicalPath": "/news/pl/polish-teens-detained-neo-nazi-plot/",
+        "headline": "Polish Security Agencies Detain Three Teens For Alleged Terror Plot",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 49,
         "intensityTier": "active"
       }
     },
@@ -773,20 +795,6 @@
       "centroid": [
         30.8,
         26.8
-      ],
-      "viralScore": 0,
-      "intensityTier": "quiet",
-      "topicCount": 0,
-      "topTopic": null
-    },
-    {
-      "code": "PL",
-      "isoNumeric": "616",
-      "name": "Poland",
-      "slug": "poland",
-      "centroid": [
-        19.4,
-        52.1
       ],
       "viralScore": 0,
       "intensityTier": "quiet",
