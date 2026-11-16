@@ -138,7 +138,7 @@ function userPrompt(input: SummaryInput): string {
     .join('\n');
   return `Country: ${input.countryName} (${input.countryCode})
 Coverage metrics: ${input.metrics.publishers} independent outlets; coverage velocity ${input.metrics.velocity}/100; public search signal ${input.metrics.search}/100${input.metrics.trendKeyword ? ` (matched Google Trends search: "${input.metrics.trendKeyword}")` : ''}; Viral Activity Score ${input.metrics.viralScore}/100.
-${input.previousHeadline ? `Previous headline for this story (update it if the new coverage changes the picture): ${input.previousHeadline}\n` : ''}
+${input.previousHeadline ? `Previous headline for this story: ${input.previousHeadline}\nThis page's URL is fixed to that event: keep the headline about the same event, updating only details the new coverage changes. Ignore any article that is about a different event.\n` : ''}
 Coverage in this cluster:
 ${lines}
 

@@ -19,8 +19,7 @@ import { TIER_META, tierForScore, type IntensityTier } from '../../../src/lib/ta
 import { VAS } from '../../../src/lib/scoring.ts';
 import type { TrendSignal } from '../fetchers/fetchGoogleTrends.ts';
 import type { WorkingCluster } from './deduplicateAndCluster.ts';
-import { publisherCount } from './deduplicateAndCluster.ts';
-import { tokenize } from './text.ts';
+import { eventTokens, publisherCount } from './deduplicateAndCluster.ts';
 
 export const WEIGHTS = VAS.weights;
 
@@ -53,16 +52,20 @@ export function searchScore(traffic: number): number {
 /**
  * A trend matches when ≥ 60% of its keyword tokens appear in the cluster's titles, or
  * when one of the trend's attached news headlines shares ≥ 3 tokens with the cluster.
+ * The country's own names don't count: a "south africa" search says nothing about which
+ * South Africa story people are looking for.
  */
 export function matchTrend(cluster: WorkingCluster, trends: TrendSignal[]): TrendSignal | null {
   let best: TrendSignal | null = null;
   for (const t of trends) {
     if (t.country !== cluster.countryCode) continue;
-    const kw = tokenize(t.keyword);
+    const kw = eventTokens(t.keyword, cluster.countryCode);
     const kwHit =
-      kw.length > 0 && kw.filter((x) => cluster.tokens.has(x)).length / kw.length >= 0.6;
+      kw.length > 0 && kw.filter((x) => cluster.tokenCounts.has(x)).length / kw.length >= 0.6;
     const newsHit = t.newsTitles.some(
-      (title) => tokenize(title).filter((x) => cluster.tokens.has(x)).length >= 3,
+      (title) =>
+        eventTokens(title, cluster.countryCode).filter((x) => cluster.tokenCounts.has(x)).length >=
+        3,
     );
     if ((kwHit || newsHit) && (!best || t.traffic > best.traffic)) best = t;
   }
