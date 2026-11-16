@@ -22,12 +22,12 @@
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 13,
+    "coverageVelocityScore": 12,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-14T16:31:30Z",
-  "lastUpdatedBatchAt": "2026-11-15T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-16T17:18:00Z",
   "sources": [
     {
       "publisherName": "BBC",
@@ -56,6 +56,13 @@
       "articleTitle": "Cold and health alerts issued for Scotland and northern England as snow and ice expected",
       "articleUrl": "https://www.theguardian.com/uk-news/2026/nov/15/uk-weather-cold-health-alerts-scotland-northern-england-snow-ice",
       "publishedAt": "2026-11-15T13:30:18Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "Yellow weather warnings issued for snow as temperatures plummet",
+      "articleUrl": "https://www.bbc.co.uk/weather/articles/c6y97j2xq531o",
+      "publishedAt": "2026-11-16T10:02:04Z"
     }
   ],
   "entityTags": [
@@ -80,6 +87,6 @@
   "relatedInCategorySlugs": [
     "singapore-motorists-warned-flash-floods",
     "singapore-heavy-rain-flash-flood",
-    "jakarta-air-quality-national-rainfall-forecast"
+    "faa-issues-nationwide-flight-ground-stop"
   ]
 }

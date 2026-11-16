@@ -6,28 +6,28 @@
   "countryName": "Indonesia",
   "countrySlug": "indonesia",
   "region": "Asia",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Indonesian Authorities Investigate Alleged Treason In Wiretap Case",
-  "seoTitle": "Treason Investigation Follows Indonesian Wiretap Case",
-  "metaDescription": "Indonesian investigators are probing potential treason charges in a wiretap scandal involving several police generals targeting the President.",
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
+  "headline": "Bareskrim Polri Expands Victim List In Former Police Chief Case",
+  "seoTitle": "Bareskrim Expands Wiretap Victim List",
+  "metaDescription": "Indonesian investigators have identified new individuals targeted in a wiretapping case involving former National Police Chief Listyo Sigit.",
   "aiSummaryBullets": [
-    "Police investigators have expanded the scope of the wiretapping case against four police generals to include allegations of treason.",
-    "Multiple public officials and figures have identified themselves as subjects of the unauthorized surveillance conducted by the suspects.",
-    "Legislators are considering expediting new surveillance legislation in response to the ongoing legal proceedings."
+    "Bareskrim Polri identified additional victims of unauthorized wiretapping involving former National Police Chief Listyo Sigit.",
+    "The list of individuals allegedly targeted includes prominent public figures such as Raffi Ahmad, Nagita Slavina, and Najwa Shihab.",
+    "Previous investigations into the case explored allegations of treason related to the surveillance of high-ranking state officials."
   ],
-  "aiContextParagraph": "The investigation into unauthorized surveillance involving four police generals, including former police leadership, has intensified as Indonesian authorities explore potential connections to treason. National police investigators and intelligence officials have indicated that the scope of the inquiry has expanded beyond the act of wiretapping itself. Several government ministers and public figures have confirmed they were among those monitored by the group, with claims suggesting the surveillance activities date back to the 2024 presidential election. While some political groups have condemned the actions as a direct threat to state stability, others within the government have denied personal involvement in the events. The case has prompted the Indonesian House of Representatives to review the possibility of accelerating a bill on surveillance regulations to address perceived vulnerabilities in national security and privacy oversight exposed by the scandal.",
-  "whyItIsViral": "The story has achieved high viral activity due to the involvement of high-ranking law enforcement officials and the significant escalation from wiretapping to treason allegations.",
-  "viralScore": 55,
+  "aiContextParagraph": "The Indonesian National Police's Criminal Investigation Agency, Bareskrim Polri, continues to investigate a high-profile case involving alleged illegal surveillance conducted by former National Police Chief Listyo Sigit and his associates. Initial inquiries into the matter were prompted by accusations that the group surveilled state officials, including President Prabowo Subianto, during and after the 2024 presidential election period. Several public figures and officials, including Erick Thohir and labor leader Said Iqbal, have publicly claimed to be on the list of monitored individuals. While some officials have denied involvement in the activity, authorities are currently working to determine the origin of the orders that authorized these surveillance operations. The ongoing investigation has sparked significant public and political debate, with discussions focused on the legality of the wiretaps and the potential political implications for the individuals identified in the case files.",
+  "whyItIsViral": "The story is being covered by three independent news outlets following updates from Bareskrim Polri, maintaining moderate media attention.",
+  "viralScore": 41,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 37,
+    "coverageVelocityScore": 7,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-06T05:00:11Z",
-  "lastUpdatedBatchAt": "2026-11-08T08:17:00Z",
+  "lastUpdatedBatchAt": "2026-11-16T17:18:00Z",
   "sources": [
     {
       "publisherName": "CNN Indonesia",
@@ -154,34 +154,48 @@
       "articleTitle": "Pengusaha Jadi Was-was Usai Kasus Penyadapan Listyo Sigit Cs Terungkap",
       "articleUrl": "https://www.cnbcindonesia.com/news/20261104160716-4-782325/pengusaha-jadi-was-was-usai-kasus-penyadapan-listyo-sigit-cs-terungkap",
       "publishedAt": "2026-11-08T05:45:10Z"
+    },
+    {
+      "publisherName": "CNN Indonesia",
+      "publisherDomain": "cnnindonesia.com",
+      "articleTitle": "Nagita Slavina Ikut Jadi Korban Penyadapan Listyo Sigit Cs",
+      "articleUrl": "https://www.cnnindonesia.com/nasional/20261116071848-12-1427487/najwa-shihab-hingga-raffi-ahmad-jadi-korban-penyadapan-listyo-cs",
+      "publishedAt": "2026-11-16T00:52:52Z"
+    },
+    {
+      "publisherName": "CNBC Indonesia",
+      "publisherDomain": "cnbcindonesia.com",
+      "articleTitle": "Bareskrim Update Korban Penyadapan Listyo Cs: Raffi Ahmad Hingga Najwa",
+      "articleUrl": "https://www.cnbcindonesia.com/news/20261116105624-4-785503/bareskrim-update-korban-penyadapan-listyo-cs-raffi-ahmad-hingga-najwa",
+      "publishedAt": "2026-11-16T03:58:50Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Bareskrim Polri",
+      "slug": "bareskrim-polri"
+    },
+    {
+      "name": "Listyo Sigit",
+      "slug": "listyo-sigit"
+    },
     {
       "name": "Prabowo Subianto",
       "slug": "prabowo-subianto"
     },
     {
-      "name": "Listyo Sigit Prabowo",
-      "slug": "listyo-sigit-prabowo"
-    },
-    {
-      "name": "Polri",
-      "slug": "polri"
-    },
-    {
-      "name": "Treason",
-      "slug": "treason"
+      "name": "Wiretapping Investigation",
+      "slug": "wiretapping-investigation"
     }
   ],
   "relatedInCountrySlugs": [
-    "indonesian-police-investigate-treason-allegations",
     "listyo-sigit-investigation-wiretapping-allegations",
+    "peran-irjen-slamet-uliandi-tersangka-baru-di-kasus-penyadapan",
     "indonesian-police-conduct-ethics-hearing-listyo-sigit"
   ],
   "relatedInCategorySlugs": [
-    "asean-leaders-discuss-regional-energy-security",
-    "prabowo-advocates-asean-china-cooperation",
-    "trump-to-meet-xi-putin-apec"
+    "indonesian-human-trafficking-ring-uncovered",
+    "gerard-depardieu-drops-sexual-assault-appeal-2",
+    "australian-police-investigate-two-fatal-shootings"
   ]
 }

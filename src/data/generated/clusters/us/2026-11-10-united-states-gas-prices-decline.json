@@ -8,26 +8,26 @@
   "region": "North America",
   "categorySlug": "economy-business",
   "categoryName": "Economy & Business",
-  "headline": "United States Gasoline Costs Decrease Below Four Dollars Per Gallon",
-  "seoTitle": "Gas Prices Fall Below Four Dollars In The United States",
-  "metaDescription": "United States fuel prices have dropped below four dollars per gallon for the first time since July, though overall inflation levels remain elevated.",
+  "headline": "United States Diesel Prices Fall Below Six Dollars Per Gallon",
+  "seoTitle": "US Diesel Prices Drop Below Six Dollars",
+  "metaDescription": "Average US diesel costs have declined to under six dollars per gallon, even as high inflation continues to impact overall holiday travel plans.",
   "aiSummaryBullets": [
-    "Average gasoline costs across the United States have decreased to under four dollars per gallon.",
-    "The current pricing shift marks the lowest recorded rates for fuel since July.",
-    "Experts anticipate further reductions in gasoline prices leading into the Thanksgiving holiday period."
+    "Average diesel prices in the United States have decreased to 5.99 dollars per gallon according to AAA data.",
+    "This decline marks the first time diesel costs have dropped below the six-dollar threshold since September.",
+    "Higher costs for fuel and airfare are anticipated to influence travel habits for the upcoming Thanksgiving holiday."
   ],
-  "aiContextParagraph": "Gasoline prices in the United States have recently fallen below the four-dollar threshold for the first time in three months, marking a notable shift in national energy costs. Despite this decline in fuel prices, analysts observe that the broader cost of living and general inflation rates persist at elevated levels, indicating that the reduction in gas costs has not yet mitigated broader economic pressures. Petroleum analyst Patrick De Haan projects that the downward trend for fuel prices will likely continue in the coming weeks, potentially reaching 3.75 dollars per gallon by the time of the Thanksgiving holiday. The current economic climate remains characterized by these contrasting developments, where temporary relief at the pump coincides with ongoing concerns regarding domestic inflationary trends. These updates provide a snapshot of current retail energy market conditions in the context of persistent macroeconomic challenges faced by households.",
-  "whyItIsViral": "This story is trending due to the intersection of widespread consumer interest in fuel costs and the release of data across multiple major news networks.",
-  "viralScore": 60,
-  "intensityTier": "high",
+  "aiContextParagraph": "The cost of diesel fuel in the United States has experienced a downward trend, falling to an average of 5.99 dollars per gallon. This figure represents a notable decrease from the record high of 6.53 dollars reported in September. While gasoline prices have also seen reductions, dipping below the four-dollar mark for the first time since July, broader economic concerns remain. Analysts indicate that inflation continues to persist at elevated levels throughout the country. As the Thanksgiving holiday approaches, industry experts from AAA suggest that the combined impact of expensive air travel and fuel costs may cause a slight decrease in overall holiday travel volume. Despite these financial pressures, travel infrastructure is still expected to experience significant usage, with high levels of traffic on highways and at airport security checkpoints anticipated during the holiday period.",
+  "whyItIsViral": "The story is being tracked by three independent outlets and is seeing moderate coverage velocity as energy prices remain a central concern for the American public.",
+  "viralScore": 57,
+  "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 47,
+    "coverageVelocityScore": 40,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-10T14:35:50Z",
-  "lastUpdatedBatchAt": "2026-11-10T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-16T17:18:00Z",
   "sources": [
     {
       "publisherName": "NPR",
@@ -49,34 +49,48 @@
       "articleTitle": "US petrol prices are down, but elevated inflation continues",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/10/us-petrol-prices-are-down-but-elevated-inflation-continues?traffic_source=rss",
       "publishedAt": "2026-11-10T17:40:35Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Thanksgiving travel likely to dip a bit due to prices, AAA says",
+      "articleUrl": "https://www.cbsnews.com/news/thanksgiving-travel-likely-dip-prices/",
+      "publishedAt": "2026-11-16T11:48:36Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Diesel prices dip below $6 a gallon for first time since September",
+      "articleUrl": "https://www.cbsnews.com/news/diesel-prices-fall-below-6-gallon/",
+      "publishedAt": "2026-11-16T16:38:07Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Gasoline Prices",
-      "slug": "gasoline-prices"
+      "name": "AAA",
+      "slug": "aaa"
+    },
+    {
+      "name": "United States",
+      "slug": "united-states"
+    },
+    {
+      "name": "Diesel Fuel",
+      "slug": "diesel-fuel"
     },
     {
       "name": "Inflation",
       "slug": "inflation"
-    },
-    {
-      "name": "United States Economy",
-      "slug": "united-states-economy"
-    },
-    {
-      "name": "Patrick De Haan",
-      "slug": "patrick-de-haan"
     }
   ],
   "relatedInCountrySlugs": [
-    "democrats-swept-the-midterms-what-comes-next-for-the",
-    "us-air-traffic-disruption-resolution",
-    "us-flight-grounding-causes-travel-disruptions"
+    "us-flight-grounding-causes-travel-disruptions",
+    "ukraine-nato-territory-exchange-proposal",
+    "us-russia-ukraine-abu-dhabi-talks"
   ],
   "relatedInCategorySlugs": [
     "japan-economy-contracts-third-quarter",
-    "nvidia-investigates-ceo-espionage-allegations",
+    "kenya-fuel-prices-remain-unchanged",
     "india-us-preferential-trade-agreement"
   ]
 }
