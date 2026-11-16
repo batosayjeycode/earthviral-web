@@ -3,9 +3,9 @@
   "name": "Mexico",
   "slug": "mexico",
   "region": "North America",
-  "viralScore": 49,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-16T20:18:00Z",
+  "viralScore": 62,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-16T23:18:00Z",
   "clusters": [
     {
       "slug": "guadalajara-cartel-leader-gallardo-dies",
@@ -13,8 +13,8 @@
       "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 47,
-      "intensityTier": "active",
+      "viralScore": 60,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Miguel Angel Felix Gallardo, founder of the Guadalajara Cartel, died in a hospital at the age of 80.",
         "Jalisco state security officials reported that his death resulted from multiple organ failure."
@@ -25,12 +25,46 @@
       }
     },
     {
+      "slug": "trump-tariffs-mexico-migrant-caravans",
+      "canonicalPath": "/news/mx/trump-tariffs-mexico-migrant-caravans/",
+      "headline": "Donald Trump Threatens Mexico With Tariffs Over Migrant Caravans",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Donald Trump threatened to double tariffs on Mexican goods following reports of a new migrant caravan traveling through Chiapas.",
+        "President Claudia Sheinbaum rejected the claims, asserting that no migrant caravans have arrived at the U.S. border during the current administration."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/"
+      }
+    },
+    {
+      "slug": "sixteenth-century-sailors-mexico-canada-journey",
+      "canonicalPath": "/news/mx/sixteenth-century-sailors-mexico-canada-journey/",
+      "headline": "Historical Account Details 16th Century Journey To North America",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A historical analysis confirms that a 16th-century journey involving three English sailors was a factual event.",
+        "The account details a 5,000-kilometer trek that spanned from Mexico to Canada during the Elizabethan era."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/culture/three-elizabethan-sailors-walk-mexico-canada/"
+      }
+    },
+    {
       "slug": "guadalajara-cultural-events-infrastructure-updates",
       "canonicalPath": "/news/mx/guadalajara-cultural-events-infrastructure-updates/",
       "headline": "Guadalajara Highlights Cultural Events And Local Infrastructure Updates",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 32,
+      "viralScore": 27,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Jalisco Philharmonic Orchestra is holding performances at the Degollado Theater.",
@@ -42,30 +76,13 @@
       }
     },
     {
-      "slug": "spacex-starship-booster-recovery-aborted",
-      "canonicalPath": "/news/mx/spacex-starship-booster-recovery-aborted/",
-      "headline": "SpaceX Aborts Attempt To Recover Starship Rocket Booster Stage",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "SpaceX conducted the 15th test flight of its Starship rocket with the goal of recovering both the booster and the spacecraft.",
-        "A technical issue prevented the booster from performing a controlled landing, leading to its destruction over the Gulf of Mexico."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "mexico-california-high-speed-rail-projects",
       "canonicalPath": "/news/mx/mexico-california-high-speed-rail-projects/",
       "headline": "Progress Reported On Mexico And California High Speed Rail Projects",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 29,
-      "intensityTier": "active",
+      "viralScore": 18,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "The Querétaro-Irapuato train line in Mexico has reached 25 percent completion.",
         "The California high-speed rail project reports a negative 25 percent progress metric relative to its planned schedule."
@@ -73,23 +90,6 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/el-jalapeno/el-jalapeno-high-speed-rail-project/"
-      }
-    },
-    {
-      "slug": "authenticity-debate-mexico-beach-towns",
-      "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
-      "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Journalistic commentary examines the cultural distinction between tourist-focused coastal areas and other regions of Mexico.",
-        "The analysis questions the criteria used to determine what constitutes an authentic experience for those living in or visiting the country."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/mexico-living/archive-is-beach-real-mexico/"
       }
     },
     {
@@ -110,54 +110,20 @@
       }
     },
     {
-      "slug": "trump-tariffs-mexico-migrant-caravans",
-      "canonicalPath": "/news/mx/trump-tariffs-mexico-migrant-caravans/",
-      "headline": "Donald Trump Threatens Mexico With Tariffs Over Migrant Caravans",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "spacex-starship-booster-recovery-aborted",
+      "canonicalPath": "/news/mx/spacex-starship-booster-recovery-aborted/",
+      "headline": "SpaceX Aborts Attempt To Recover Starship Rocket Booster Stage",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Donald Trump threatened to double tariffs on Mexican goods following reports of a new migrant caravan traveling through Chiapas.",
-        "President Claudia Sheinbaum rejected the claims, asserting that no migrant caravans have arrived at the U.S. border during the current administration."
+        "SpaceX conducted the 15th test flight of its Starship rocket with the goal of recovering both the booster and the spacecraft.",
+        "A technical issue prevented the booster from performing a controlled landing, leading to its destruction over the Gulf of Mexico."
       ],
       "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/"
-      }
-    },
-    {
-      "slug": "silvana-estrada-la-philharmonic-appointment",
-      "canonicalPath": "/news/mx/silvana-estrada-la-philharmonic-appointment/",
-      "headline": "Silvana Estrada Named First Latin Music Chair For LA Philharmonic",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 29,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Silvana Estrada has been appointed as the inaugural Latin music chair for the Los Angeles Philharmonic.",
-        "The 29-year-old musician is a Latin Grammy Award winner originally from Coatepec, Veracruz."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/culture/mexican-singer-songwriter-silvana-estrada-tapped-la-philharmonics-first-latin-music-chair/"
-      }
-    },
-    {
-      "slug": "rafa-marquez-mexico-jamaica-match",
-      "canonicalPath": "/news/mx/rafa-marquez-mexico-jamaica-match/",
-      "headline": "Rafa Márquez Leads Mexico In Official Match Against Jamaica",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 28,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Head coach Rafa Márquez leads the Mexican national football team in his first official competition.",
-        "Mexico enters the Concacaf Nations League quarterfinals following a period of two ties in four recent friendlies."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/lifestyle/el-tri-back-in-action-saturday-first-official-match-rafa-marquez-era/"
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -243,6 +209,40 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/culture/quintonil-best-restaurant-latin-america/"
+      }
+    },
+    {
+      "slug": "silvana-estrada-la-philharmonic-appointment",
+      "canonicalPath": "/news/mx/silvana-estrada-la-philharmonic-appointment/",
+      "headline": "Silvana Estrada Named First Latin Music Chair For LA Philharmonic",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Silvana Estrada has been appointed as the inaugural Latin music chair for the Los Angeles Philharmonic.",
+        "The 29-year-old musician is a Latin Grammy Award winner originally from Coatepec, Veracruz."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/culture/mexican-singer-songwriter-silvana-estrada-tapped-la-philharmonics-first-latin-music-chair/"
+      }
+    },
+    {
+      "slug": "authenticity-debate-mexico-beach-towns",
+      "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
+      "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Journalistic commentary examines the cultural distinction between tourist-focused coastal areas and other regions of Mexico.",
+        "The analysis questions the criteria used to determine what constitutes an authentic experience for those living in or visiting the country."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/mexico-living/archive-is-beach-real-mexico/"
       }
     },
     {
