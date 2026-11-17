@@ -3,10 +3,27 @@
   "name": "Kenya",
   "slug": "kenya",
   "region": "Africa",
-  "viralScore": 57,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-17T20:18:00Z",
+  "viralScore": 62,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-17T23:18:00Z",
   "clusters": [
+    {
+      "slug": "regina-re-daughter-murder-charges",
+      "canonicalPath": "/news/ke/regina-re-daughter-murder-charges/",
+      "headline": "DPP Sanctions Murder Charges Against Daughter Of Actress Regina Re",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Director of Public Prosecutions has authorized murder charges against Thandie Malaika Wanjiko Gitao.",
+        "Actress Regina Re is expected to face a charge of being an accessory to the alleged crime."
+      ],
+      "primarySource": {
+        "publisherName": "Nation Africa",
+        "articleUrl": "https://nation.africa/kenya/news/actress-regina-re-s-daughter-to-be-charged-with-murder--5673618"
+      }
+    },
     {
       "slug": "kenyan-cult-leader-receives-prison-sentence",
       "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
@@ -25,20 +42,20 @@
       }
     },
     {
-      "slug": "regina-re-daughter-murder-charges",
-      "canonicalPath": "/news/ke/regina-re-daughter-murder-charges/",
-      "headline": "DPP Sanctions Murder Charges Against Daughter Of Actress Regina Re",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
+      "slug": "president-ruto-state-nation-address",
+      "canonicalPath": "/news/ke/president-ruto-state-nation-address/",
+      "headline": "President Ruto To Deliver Annual State Of The Nation Address",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Director of Public Prosecutions has authorized murder charges against Thandie Malaika Wanjiko Gitao.",
-        "Actress Regina Re is expected to face a charge of being an accessory to the alleged crime."
+        "President William Ruto is set to address Parliament to review his administration's progress since taking office in 2022.",
+        "The address is a constitutional requirement under Article 132 of the Kenyan Constitution."
       ],
       "primarySource": {
-        "publisherName": "Nation Africa",
-        "articleUrl": "https://nation.africa/kenya/news/actress-regina-re-s-daughter-to-be-charged-with-murder--5673618"
+        "publisherName": "The Standard",
+        "articleUrl": "https://www.standardmedia.co.ke/article/2001562474/what-kenyans-expect-from-ruto-s-state-of-the-nation-address"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "Teachers Service Commission Announces Cheptumo Ayabei As New CEO",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Teachers Service Commission has named Cheptumo Ayabei as its new Secretary and Chief Executive Officer.",
@@ -56,23 +73,6 @@
       "primarySource": {
         "publisherName": "Capital FM",
         "articleUrl": "https://capitalfm.africa/tsc-appoints-cheptumo-ayabei-as-new-ceo/"
-      }
-    },
-    {
-      "slug": "nairobi-water-rationing-ndakaini-levels",
-      "canonicalPath": "/news/ke/nairobi-water-rationing-ndakaini-levels/",
-      "headline": "Nairobi Implements Water Rationing Amid Low Reservoir Capacity",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nairobi City Water and Sewerage Company scheduled a 24-hour supply shutdown beginning November 9.",
-        "Water levels at the Ndakaini reservoir have dropped by 35 percent, prompting regional rationing measures."
-      ],
-      "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/nairobi-water-announces-24-hour-shutdown-affecting-westlands-kilimani-langata-and-other-areas/"
       }
     },
     {
@@ -110,12 +110,46 @@
       }
     },
     {
+      "slug": "nairobi-water-rationing-ndakaini-levels",
+      "canonicalPath": "/news/ke/nairobi-water-rationing-ndakaini-levels/",
+      "headline": "Nairobi Implements Water Rationing Amid Low Reservoir Capacity",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Nairobi City Water and Sewerage Company scheduled a 24-hour supply shutdown beginning November 9.",
+        "Water levels at the Ndakaini reservoir have dropped by 35 percent, prompting regional rationing measures."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/nairobi-water-announces-24-hour-shutdown-affecting-westlands-kilimani-langata-and-other-areas/"
+      }
+    },
+    {
+      "slug": "kenya-defence-forces-recruitment-announcement",
+      "canonicalPath": "/news/ke/kenya-defence-forces-recruitment-announcement/",
+      "headline": "Kenya Defence Forces Announces Nationwide Recruitment For December",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Kenya Defence Forces has scheduled a nationwide recruitment drive to take place throughout December 2026.",
+        "The process is open to university graduates, specialist officers, officer cadets, and general duty personnel."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/kdf-announces-december-recruitment-sets-december-12-application-deadline/"
+      }
+    },
+    {
       "slug": "kra-employee-faces-forgery-fraud-charges",
       "canonicalPath": "/news/ke/kra-employee-faces-forgery-fraud-charges/",
       "headline": "Kenya Revenue Authority Official Faces Forgery And Fraud Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A Kenya Revenue Authority employee has been formally charged with forging a university degree certificate.",
@@ -127,20 +161,20 @@
       }
     },
     {
-      "slug": "ruto-odm-coalition-talks-kenya",
-      "canonicalPath": "/news/ke/ruto-odm-coalition-talks-kenya/",
-      "headline": "President William Ruto And ODM Leaders Discuss Potential Coalition",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "slug": "arsenal-legends-play-harambee-stars",
+      "canonicalPath": "/news/ke/arsenal-legends-play-harambee-stars/",
+      "headline": "Harambee Stars Prepare For Bafana Bafana Match In Nairobi",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President William Ruto and members of the ODM party have initiated meetings to discuss a possible formal political partnership.",
-        "The ODM leadership states that any support for the President's re-election must involve a formal power-sharing agreement."
+        "The Harambee Stars are seeking their inaugural victory in the ongoing qualification campaign.",
+        "The team currently holds two points from their first three matches and occupies third place."
       ],
       "primarySource": {
-        "publisherName": "Capital FM",
-        "articleUrl": "https://capitalfm.africa/junet-odm-is-not-an-ngo-must-share-power-in-uda-govt/"
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/kanu-leads-arsenal-fc-against-wanyamas-harambee-stars-for-legends-cup-in-nairobi/"
       }
     },
     {
@@ -149,7 +183,7 @@
       "headline": "Former Cabinet Secretary Aisha Jumwa Rejoins United Democratic Party",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Aisha Jumwa has formally returned to President William Ruto's United Democratic Alliance party.",
@@ -158,57 +192,6 @@
       "primarySource": {
         "publisherName": "Capital FM",
         "articleUrl": "https://capitalfm.africa/jumwa-returns-to-uda-after-three-month-stint-in-wiper/"
-      }
-    },
-    {
-      "slug": "kenyan-leaders-address-global-hunger-crisis",
-      "canonicalPath": "/news/ke/kenyan-leaders-address-global-hunger-crisis/",
-      "headline": "Kenyan Leaders Call For Urgent Global Action To Combat World Hunger",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "National Assembly Speaker Moses Wetang’ula urged international parliaments to prioritize legislative action and funding for food security.",
-        "President William Ruto emphasized the necessity of increasing food production while ensuring that healthy, nutritious diets remain accessible."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/ruto-calls-for-investment-in-nutritious-food-to-tackle-hunger-malnutrition/"
-      }
-    },
-    {
-      "slug": "martha-koome-honorary-doctorate-kemu",
-      "canonicalPath": "/news/ke/martha-koome-honorary-doctorate-kemu/",
-      "headline": "Chief Justice Martha Koome Receives Honorary Degree From KeMU",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kenya Methodist University granted an honorary Doctor of Letters to Chief Justice Martha Koome.",
-        "The award was presented to the Chief Justice during the institution's 26th graduation ceremony in Meru."
-      ],
-      "primarySource": {
-        "publisherName": "The Standard",
-        "articleUrl": "https://www.standardmedia.co.ke/article/2001561640/goon-financiers-should-be-cursed-and-sent-to-hell-chief-justice-koome-says"
-      }
-    },
-    {
-      "slug": "safaricom-reports-significant-half-year-profit-growth",
-      "canonicalPath": "/news/ke/safaricom-reports-significant-half-year-profit-growth/",
-      "headline": "Safaricom Group Reports Significant Half-Year Profit Growth In 2026",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Safaricom Group reported a 35.9 percent increase in net income, reaching KSh 58.2 billion for the first half of the 2026/2027 financial year.",
-        "Group service revenue experienced a 13.1 percent rise, totaling KSh 226.1 billion during the reported period."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/safaricom-group-net-income-rises-36-to-ksh58-2-billion-as-ethiopia-operations-near-break-even/"
       }
     },
     {
@@ -246,6 +229,23 @@
       }
     },
     {
+      "slug": "kenyan-leaders-address-global-hunger-crisis",
+      "canonicalPath": "/news/ke/kenyan-leaders-address-global-hunger-crisis/",
+      "headline": "Kenyan Leaders Call For Urgent Global Action To Combat World Hunger",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "National Assembly Speaker Moses Wetang’ula urged international parliaments to prioritize legislative action and funding for food security.",
+        "President William Ruto emphasized the necessity of increasing food production while ensuring that healthy, nutritious diets remain accessible."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/ruto-calls-for-investment-in-nutritious-food-to-tackle-hunger-malnutrition/"
+      }
+    },
+    {
       "slug": "kenyan-leaders-advocate-food-security-legislation",
       "canonicalPath": "/news/ke/kenyan-leaders-advocate-food-security-legislation/",
       "headline": "Kenyan Leaders Call For Legislative Focus On Global Food Security",
@@ -263,12 +263,63 @@
       }
     },
     {
+      "slug": "martha-koome-honorary-doctorate-kemu",
+      "canonicalPath": "/news/ke/martha-koome-honorary-doctorate-kemu/",
+      "headline": "Chief Justice Martha Koome Receives Honorary Degree From KeMU",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Kenya Methodist University granted an honorary Doctor of Letters to Chief Justice Martha Koome.",
+        "The award was presented to the Chief Justice during the institution's 26th graduation ceremony in Meru."
+      ],
+      "primarySource": {
+        "publisherName": "The Standard",
+        "articleUrl": "https://www.standardmedia.co.ke/article/2001561640/goon-financiers-should-be-cursed-and-sent-to-hell-chief-justice-koome-says"
+      }
+    },
+    {
+      "slug": "ruto-odm-coalition-talks-kenya",
+      "canonicalPath": "/news/ke/ruto-odm-coalition-talks-kenya/",
+      "headline": "President William Ruto And ODM Leaders Discuss Potential Coalition",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President William Ruto and members of the ODM party have initiated meetings to discuss a possible formal political partnership.",
+        "The ODM leadership states that any support for the President's re-election must involve a formal power-sharing agreement."
+      ],
+      "primarySource": {
+        "publisherName": "Capital FM",
+        "articleUrl": "https://capitalfm.africa/junet-odm-is-not-an-ngo-must-share-power-in-uda-govt/"
+      }
+    },
+    {
+      "slug": "safaricom-reports-significant-half-year-profit-growth",
+      "canonicalPath": "/news/ke/safaricom-reports-significant-half-year-profit-growth/",
+      "headline": "Safaricom Group Reports Significant Half-Year Profit Growth In 2026",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 36,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Safaricom Group reported a 35.9 percent increase in net income, reaching KSh 58.2 billion for the first half of the 2026/2027 financial year.",
+        "Group service revenue experienced a 13.1 percent rise, totaling KSh 226.1 billion during the reported period."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/safaricom-group-net-income-rises-36-to-ksh58-2-billion-as-ethiopia-operations-near-break-even/"
+      }
+    },
+    {
       "slug": "linda-mwananchi-movement-national-delegates-conference",
       "canonicalPath": "/news/ke/linda-mwananchi-movement-national-delegates-conference/",
       "headline": "Linda Mwananchi Movement Schedules Closed National Delegates Event",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 37,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Linda Mwananchi Movement scheduled its National Delegates Conference for November 13.",
@@ -277,57 +328,6 @@
       "primarySource": {
         "publisherName": "Nation Africa",
         "articleUrl": "https://nation.africa/kenya/news/politics/linda-mwananchi-ndc-will-be-a-closed-door-affair-no-media-coverage--5668716"
-      }
-    },
-    {
-      "slug": "arsenal-legends-play-harambee-stars",
-      "canonicalPath": "/news/ke/arsenal-legends-play-harambee-stars/",
-      "headline": "Harambee Stars Prepare For Bafana Bafana Match In Nairobi",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 35,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Harambee Stars are seeking their inaugural victory in the ongoing qualification campaign.",
-        "The team currently holds two points from their first three matches and occupies third place."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/kanu-leads-arsenal-fc-against-wanyamas-harambee-stars-for-legends-cup-in-nairobi/"
-      }
-    },
-    {
-      "slug": "police-officer-charged-prison-job-fraud",
-      "canonicalPath": "/news/ke/police-officer-charged-prison-job-fraud/",
-      "headline": "Administration Police Officer Charged In Kenya Prisons Recruitment Scam",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A police officer from Gatundu South was charged with defrauding a man of over 1.5 million shillings.",
-        "The defendant allegedly promised to secure employment within the Kenya Prisons Service for three individuals."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/police-officer-charged-with-ksh1-5m-prison-jobs-scam/"
-      }
-    },
-    {
-      "slug": "knchr-appoints-new-chief-executive",
-      "canonicalPath": "/news/ke/knchr-appoints-new-chief-executive/",
-      "headline": "Kenya National Commission On Human Rights Appoints New Chief Executive",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 33,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Kenya National Commission on Human Rights has appointed Dr. Mary Kimari as its new Chief Executive Officer and Commission Secretary.",
-        "The appointment follows a competitive and transparent recruitment process conducted by the commission."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/knchr-appoints-dr-mary-kimari-as-new-ceo/"
       }
     },
     {

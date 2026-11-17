@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611172018",
-  "generatedAt": "2026-11-17T20:18:00Z",
-  "nextUpdateAt": "2026-11-17T23:17:00Z",
+  "batchId": "batch-202611172318",
+  "generatedAt": "2026-11-17T23:18:00Z",
+  "nextUpdateAt": "2026-11-18T02:17:00Z",
   "countries": [
+    {
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "centroid": [
+        117,
+        -2.5
+      ],
+      "viralScore": 95,
+      "intensityTier": "surge",
+      "topicCount": 124,
+      "topTopic": {
+        "slug": "indonesia-javan-rhino-relocation-controversy",
+        "canonicalPath": "/news/id/indonesia-javan-rhino-relocation-controversy/",
+        "headline": "Government Denies Mining At Ujung Kulon Amid Rhino Relocation Debate",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 92,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "US",
       "isoNumeric": "840",
@@ -14,37 +36,37 @@
       ],
       "viralScore": 94,
       "intensityTier": "surge",
-      "topicCount": 38,
+      "topicCount": 37,
       "topTopic": {
-        "slug": "nvidia-board-considers-ousting-ceo-huang",
-        "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-        "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
+        "slug": "faa-issues-nationwide-flight-ground-stop",
+        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+        "headline": "FAA Halts Hardware Upgrades Following Nationwide Flight Grounding",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 91,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
       "centroid": [
-        117,
-        -2.5
+        34.9,
+        31.3
       ],
-      "viralScore": 93,
+      "viralScore": 85,
       "intensityTier": "surge",
-      "topicCount": 125,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "indonesian-police-conduct-ethics-hearing-listyo-sigit",
-        "canonicalPath": "/news/id/indonesian-police-conduct-ethics-hearing-listyo-sigit/",
-        "headline": "Indonesian Police Dismiss General Eko Hadi Over Illegal Wiretapping",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 90,
-        "intensityTier": "surge"
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Israeli Parliament Elects Matan Kahana As New Speaker For Knesset",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 83,
+        "intensityTier": "high"
       }
     },
     {
@@ -56,8 +78,8 @@
         31.2,
         49
       ],
-      "viralScore": 92,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
         "slug": "ukraine-drone-strikes-crimea-moscow",
@@ -65,29 +87,7 @@
         "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 91,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "PH",
-      "isoNumeric": "608",
-      "name": "Philippines",
-      "slug": "philippines",
-      "centroid": [
-        122,
-        12.5
-      ],
-      "viralScore": 84,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "asean-leaders-discuss-regional-energy-security",
-        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
-        "headline": "Global Leaders Convene In Manila For The 49th Annual ASEAN Summit",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 82,
+        "viralScore": 83,
         "intensityTier": "high"
       }
     },
@@ -100,148 +100,38 @@
         104,
         35
       ],
-      "viralScore": 83,
+      "viralScore": 84,
       "intensityTier": "high",
       "topicCount": 16,
       "topTopic": {
-        "slug": "xi-jinping-to-host-apec-summit",
-        "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
-        "headline": "Leaders Arrive In Shenzhen As China Hosts 2026 APEC Summit",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 80,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 77,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "(LEAD) PM vows to mobilize all national capabilities to prevent AI cheating on college entrance exam",
+        "slug": "nvidia-investigates-ceo-espionage-allegations",
+        "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+        "headline": "Nvidia Rejects Reinstating Jensen Huang Amid Ongoing AI Scandals",
         "categorySlug": "technology-ai",
         "categoryName": "Technology & AI",
-        "viralScore": 74,
+        "viralScore": 81,
         "intensityTier": "high"
       }
     },
     {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
       "centroid": [
-        2.4,
-        46.6
+        122,
+        12.5
       ],
-      "viralScore": 74,
-      "intensityTier": "high",
-      "topicCount": 16,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 71,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 74,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
-        "slug": "trump-addresses-iran-dirty-bomb-threat",
-        "canonicalPath": "/news/ir/trump-addresses-iran-dirty-bomb-threat/",
-        "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
+        "slug": "asean-leaders-discuss-regional-energy-security",
+        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
+        "headline": "Global Leaders Convene In Manila For The 49th Annual ASEAN Summit",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 71,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 56,
-      "topTopic": {
-        "slug": "nigeria-tanzania-afcon-qualifier-draw",
-        "canonicalPath": "/news/ng/nigeria-tanzania-afcon-qualifier-draw/",
-        "headline": "Super Eagles Held To Goalless Draw By Tanzania In AFCON Qualifier",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 70,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 69,
-      "intensityTier": "high",
-      "topicCount": 44,
-      "topTopic": {
-        "slug": "modi-pitroda-public-exchange",
-        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
-        "headline": "Prime Minister Modi Addresses Quad And ASEAN Summits In Manila",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 66,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 24,
-      "topTopic": {
-        "slug": "uk-arrests-us-soldier-espionage",
-        "canonicalPath": "/news/gb/uk-arrests-us-soldier-espionage/",
-        "headline": "UK Court Convicts Iranian Men Of Espionage Targeting Journalists",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 62,
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
@@ -254,60 +144,236 @@
         60,
         58
       ],
-      "viralScore": 63,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
-        "slug": "estonia-to-close-russia-border-crossings",
-        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
-        "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
+        "slug": "russian-military-plane-crash-siberia",
+        "canonicalPath": "/news/ru/russian-military-plane-crash-siberia/",
+        "headline": "Russian Military Transport Plane Crash In Siberia Claims Nineteen",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 60,
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
       "centroid": [
-        10.4,
-        51.1
+        103.82,
+        1.35
       ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 5,
+      "viralScore": 71,
+      "intensityTier": "high",
+      "topicCount": 42,
       "topTopic": {
-        "slug": "germany-eu-rwanda-migration-hubs",
-        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
-        "headline": "Germany to join other EU states in announcing Rwanda deportation hub",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 55,
-        "intensityTier": "active"
+        "slug": "nvidia-ceo-jensen-huang-resigns-2",
+        "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
+        "headline": "Nvidia Board Rejects Reinstating Jensen Huang As Chief Executive",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 68,
+        "intensityTier": "high"
       }
     },
     {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
       "centroid": [
-        34.9,
-        31.3
+        127.8,
+        36.3
       ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 5,
+      "viralScore": 70,
+      "intensityTier": "high",
+      "topicCount": 11,
       "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Moves To Form New Government Following October 7 Probe",
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "(LEAD) PM vows to mobilize all national capabilities to prevent AI cheating on college entrance exam",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 69,
+      "intensityTier": "high",
+      "topicCount": 25,
+      "topTopic": {
+        "slug": "uk-arrests-us-soldier-espionage",
+        "canonicalPath": "/news/gb/uk-arrests-us-soldier-espionage/",
+        "headline": "UK Court Convicts Iranian Men Of Espionage Targeting Journalists",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 16,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "hajime-moriyasu-tenure-ends-japan",
+        "canonicalPath": "/news/jp/hajime-moriyasu-tenure-ends-japan/",
+        "headline": "Hajime Moriyasu Concludes Tenure Following Defeat Against Paraguay",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "trump-addresses-iran-dirty-bomb-threat",
+        "canonicalPath": "/news/ir/trump-addresses-iran-dirty-bomb-threat/",
+        "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 55,
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 58,
+      "topTopic": {
+        "slug": "nigeria-democratic-congress-town-hall-disruption",
+        "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
+        "headline": "Political Tensions Mount In Nigeria Following Kano Party Clashes",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 42,
+      "topTopic": {
+        "slug": "india-pakistan-u19-cricket-controversy",
+        "canonicalPath": "/news/in/india-pakistan-u19-cricket-controversy/",
+        "headline": "India Secures Under-19 Asia Cup Title Amidst On-Field Controversy",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 61,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 27,
+      "topTopic": {
+        "slug": "melbourne-cup-horse-found-skip-bin",
+        "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
+        "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 59,
         "intensityTier": "active"
       }
     },
@@ -320,38 +386,16 @@
         37.9,
         0.2
       ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 27,
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 29,
       "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
+        "slug": "regina-re-daughter-murder-charges",
+        "canonicalPath": "/news/ke/regina-re-daughter-murder-charges/",
+        "headline": "DPP Sanctions Murder Charges Against Daughter Of Actress Regina Re",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
+        "viralScore": 59,
         "intensityTier": "active"
       }
     },
@@ -378,68 +422,68 @@
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
       "centroid": [
-        103.82,
-        1.35
+        10.4,
+        51.1
       ],
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
-      "topicCount": 40,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "singapore-pm-outlines-asean-summit-priorities",
-        "canonicalPath": "/news/sg/singapore-pm-outlines-asean-summit-priorities/",
-        "headline": "Prime Minister Lawrence Wong Outlines ASEAN Leadership Priorities",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "slug": "germany-eu-rwanda-migration-hubs",
+        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
+        "headline": "Germany to join other EU states in announcing Rwanda deportation hub",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
         "viralScore": 52,
         "intensityTier": "active"
       }
     },
     {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        134,
-        -25.5
+        -51.9,
+        -10.5
       ],
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 28,
+      "topicCount": 48,
       "topTopic": {
-        "slug": "melbourne-cup-horse-found-skip-bin",
-        "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
-        "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
+        "slug": "fifa-brazil-womens-world-cup-tickets",
+        "canonicalPath": "/news/br/fifa-brazil-womens-world-cup-tickets/",
+        "headline": "Fifa Announces Starting Ticket Prices For Women's World Cup Brazil",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 51,
+        "viralScore": 49,
         "intensityTier": "active"
       }
     },
     {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
       "centroid": [
-        -3.7,
-        40.2
+        12.6,
+        42.8
       ],
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "slug": "mbappe-out-france-italy-match",
+        "canonicalPath": "/news/it/mbappe-out-france-italy-match/",
+        "headline": "Kylian Mbappe To Miss France Nations League Match Against Italy",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 53,
+        "viralScore": 51,
         "intensityTier": "active"
       }
     },
@@ -474,9 +518,9 @@
         -102.5,
         23.6
       ],
-      "viralScore": 51,
+      "viralScore": 50,
       "intensityTier": "active",
-      "topicCount": 6,
+      "topicCount": 5,
       "topTopic": {
         "slug": "guadalajara-cartel-leader-gallardo-dies",
         "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
@@ -488,68 +532,24 @@
       }
     },
     {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
-      "centroid": [
-        12.6,
-        42.8
-      ],
-      "viralScore": 50,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "mbappe-out-france-italy-match",
-        "canonicalPath": "/news/it/mbappe-out-france-italy-match/",
-        "headline": "Kylian Mbappe To Miss France Nations League Match Against Italy",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 49,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
         35.2,
-        39
+        31.9
       ],
-      "viralScore": 48,
+      "viralScore": 49,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
-        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
-        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
-        "headline": "Authorities take over Turkey's last pro-opposition broadcaster Sozcu TV",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 47,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 7,
-      "topTopic": {
-        "slug": "japan-protests-russian-airspace-violation",
-        "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
-        "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 43,
+        "slug": "palestinian-woman-shot-west-bank",
+        "canonicalPath": "/news/ps/palestinian-woman-shot-west-bank/",
+        "headline": "Palestinian Woman Fatally Shot During Incident In The West Bank",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },
@@ -598,6 +598,28 @@
       }
     },
     {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
+        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
+        "headline": "Authorities take over Turkey's last pro-opposition broadcaster Sozcu TV",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 41,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "AE",
       "isoNumeric": "784",
       "name": "United Arab Emirates",
@@ -606,7 +628,7 @@
         54,
         24
       ],
-      "viralScore": 43,
+      "viralScore": 42,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -615,51 +637,7 @@
         "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 43,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 42,
-      "intensityTier": "active",
-      "topicCount": 48,
-      "topTopic": {
-        "slug": "raoni-metuktire-hospitalized-mato-grosso",
-        "canonicalPath": "/news/br/raoni-metuktire-hospitalized-mato-grosso/",
-        "headline": "Indigenous Leader Raoni Metuktire Discharged From Hospital Facility",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 39,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 39,
-      "intensityTier": "active",
-      "topicCount": 19,
-      "topTopic": {
-        "slug": "macron-visit-malaysia-rare-earth",
-        "canonicalPath": "/news/my/macron-visit-malaysia-rare-earth/",
-        "headline": "President Macron To Visit Malaysia For Rare Earth Supply Security",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 36,
+        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -682,6 +660,28 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 39,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 37,
+      "intensityTier": "active",
+      "topicCount": 19,
+      "topTopic": {
+        "slug": "macron-visit-malaysia-rare-earth",
+        "canonicalPath": "/news/my/macron-visit-malaysia-rare-earth/",
+        "headline": "President Macron To Visit Malaysia For Rare Earth Supply Security",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 34,
         "intensityTier": "active"
       }
     },
@@ -716,8 +716,8 @@
         -106.3,
         56.1
       ],
-      "viralScore": 25,
-      "intensityTier": "active",
+      "viralScore": 23,
+      "intensityTier": "quiet",
       "topicCount": 1,
       "topTopic": {
         "slug": "canada-explores-chinese-automotive-sector-partnerships",
@@ -725,8 +725,8 @@
         "headline": "Canada Considers Partnerships With Chinese Automotive Manufacturers",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 25,
-        "intensityTier": "active"
+        "viralScore": 23,
+        "intensityTier": "quiet"
       }
     },
     {

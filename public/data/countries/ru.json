@@ -3,18 +3,52 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 63,
+  "viralScore": 79,
   "intensityTier": "high",
-  "generatedAt": "2026-11-17T20:18:00Z",
+  "generatedAt": "2026-11-17T23:18:00Z",
   "clusters": [
+    {
+      "slug": "russian-military-plane-crash-siberia",
+      "canonicalPath": "/news/ru/russian-military-plane-crash-siberia/",
+      "headline": "Russian Military Transport Plane Crash In Siberia Claims Nineteen",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 76,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A military transport aircraft crashed in the Kemerovo region of Siberia.",
+        "Russian authorities confirmed that all nineteen people on the flight died."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms"
+      }
+    },
+    {
+      "slug": "south-korea-scrambles-jets-russian-incursion",
+      "canonicalPath": "/news/ru/south-korea-scrambles-jets-russian-incursion/",
+      "headline": "Russian Military Transport Plane Crashes In The Kemerovo Region",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "An Antonov An-12 military transport aircraft crashed in the Yagunovo settlement of the Kemerovo region.",
+        "Reports from local authorities and media provide conflicting fatality counts ranging from 17 to 19 people."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8756114/pesawat-militer-rusia-masuk-zona-pertahanan-udara-korsel-kerahkan-jet-tempur"
+      }
+    },
     {
       "slug": "estonia-to-close-russia-border-crossings",
       "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
       "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Estonia will close all land border crossings with Russia beginning December 1.",
         "The decision follows a failed arson attack on a drone manufacturing site in Viimsi."
@@ -30,7 +64,7 @@
       "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 57,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian forces launched a series of overnight missile and drone attacks targeting Kyiv and its surrounding region.",
@@ -59,40 +93,6 @@
       }
     },
     {
-      "slug": "russian-military-plane-crash-siberia",
-      "canonicalPath": "/news/ru/russian-military-plane-crash-siberia/",
-      "headline": "Russian Military Transport Plane Crashes In Kemerovo Region",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A Russian military transport plane crashed within the Kemerovo region of Siberia.",
-        "The Russian Ministry of Defence attributed the incident to a suspected technical failure."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms"
-      }
-    },
-    {
-      "slug": "deutsche-bank-internal-documents-leak-2",
-      "canonicalPath": "/news/ru/deutsche-bank-internal-documents-leak-2/",
-      "headline": "Deutsche Bank Faces Scrutiny Over Internal Records On Past Clients",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Deutsche Bank experienced a share price decrease of over 6% following reports detailing its historical business relationships.",
-        "Leaked internal documents suggest the financial institution previously managed accounts for public figures and Russian oligarchs."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261117-deutsche-bank-shares-drop-after-reports-exposing-epstein-payments-russia-dealings"
-      }
-    },
-    {
       "slug": "finland-restricts-russian-athlete-entry",
       "canonicalPath": "/news/ru/finland-restricts-russian-athlete-entry/",
       "headline": "Finland Imposes Entry Restrictions On Russian Athletes For Sports",
@@ -107,6 +107,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine"
+      }
+    },
+    {
+      "slug": "deutsche-bank-internal-documents-leak-2",
+      "canonicalPath": "/news/ru/deutsche-bank-internal-documents-leak-2/",
+      "headline": "Deutsche Bank Faces Scrutiny Over Internal Records On Past Clients",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Deutsche Bank experienced a share price decrease of over 6% following reports detailing its historical business relationships.",
+        "Leaked internal documents suggest the financial institution previously managed accounts for public figures and Russian oligarchs."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/video/20261117-deutsche-bank-shares-drop-after-reports-exposing-epstein-payments-russia-dealings"
       }
     },
     {
@@ -127,29 +144,12 @@
       }
     },
     {
-      "slug": "south-korea-scrambles-jets-russian-incursion",
-      "canonicalPath": "/news/ru/south-korea-scrambles-jets-russian-incursion/",
-      "headline": "South Korea Scrambles Fighter Jets Following Russian Flight In KADIZ",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The South Korean military deployed fighter jets following the entry of a Russian aircraft into the Air Defense Identification Zone.",
-        "The Joint Chiefs of Staff confirmed the presence of the Russian plane but stated that it did not violate sovereign territorial airspace."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8756114/pesawat-militer-rusia-masuk-zona-pertahanan-udara-korsel-kerahkan-jet-tempur"
-      }
-    },
-    {
       "slug": "russia-reports-record-ukrainian-drone-attacks",
       "canonicalPath": "/news/ru/russia-reports-record-ukrainian-drone-attacks/",
       "headline": "Russia Reports Record Ukrainian Drone Activity Across Multiple Zones",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 31,
+      "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russia reported the interception of over 1,300 Ukrainian drones in a single day.",

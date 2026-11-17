@@ -6,8 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "National Security Agency Classified Network Experiences Outage",
+  "seoTitle": "NSA Classified Network Outage Explained",
+  "metaDescription": "The National Security Agency experienced a classified internal network outage, which the agency attributed to scheduled routine maintenance activities.",
+  "aiSummaryBullets": [
+    "A internal classified communications network at the National Security Agency experienced a period of downtime.",
+    "The agency stated that the disruption was caused by temporary degradation during routine maintenance.",
+    "The outage occurs amid a series of unrelated disruptions affecting various public and private sector communication and transportation services."
+  ],
+  "aiContextParagraph": "The National Security Agency reported a disruption to its classified internal communications network on Tuesday. While initial reports highlighted the outage of a high-security government system, the agency subsequently issued a formal statement clarifying that the incident was the result of temporary technical degradation related to scheduled maintenance procedures. This event has drawn attention due to its occurrence alongside a broader sequence of recent technical disruptions affecting several critical communication and transportation infrastructures across the United States. While some outlets have noted the timing of these incidents in relation to other sector-wide issues, official statements maintain that the agency's specific network issues were contained and routine in nature. The situation is being monitored as authorities continue to address infrastructure stability across various sectors within the United States.",
+  "whyItIsViral": "The event is considered viral due to coverage from five independent international news outlets and a high velocity of reporting within a single day.",
+  "viralScore": 79,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 5,
+    "coverageVelocityScore": 69,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-17T15:42:01Z",
-  "lastUpdatedBatchAt": "2026-11-17T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-17T23:18:00Z",
   "sources": [
     {
       "publisherName": "CNA",
@@ -31,55 +51,49 @@
       "publishedAt": "2026-11-17T18:29:36Z"
     },
     {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "NSA attributes US network outage to routine ‘maintenance’ activities",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/17/nsas-classified-internal-communications-network-reportedly-faces-outage?traffic_source=rss",
+      "publishedAt": "2026-11-17T19:03:14Z"
+    },
+    {
       "publisherName": "CBS News",
       "publisherDomain": "cbsnews.com",
       "articleTitle": "NSA's classified internal network goes down, sources say",
       "articleUrl": "https://www.cbsnews.com/news/nsa-network-down-classified-fort-meade/",
       "publishedAt": "2026-11-17T19:40:25Z"
+    },
+    {
+      "publisherName": "Le Monde",
+      "publisherDomain": "lemonde.fr",
+      "articleTitle": "Classified communications network at the National Security Agency goes down, US defense official says",
+      "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/17/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says_6782866_4.html",
+      "publishedAt": "2026-11-17T22:37:47Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "united-states-loses-measles-elimination-status-2",
-    "us-conducts-new-military-strikes-iran",
-    "us-soldier-arrested-for-russian-espionage"
-  ],
-  "relatedInCategorySlugs": [
-    "singapore-systems-impacted-by-microsoft-outage",
-    "singapore-cybersecurity-agency-urges-stronger-defenses",
-    "australia-to-adopt-mandatory-ai-safeguards"
-  ],
-  "headline": "Internal Classified Communication Network At The NSA Goes Offline",
-  "seoTitle": "NSA Classified Network Experiences Outage",
-  "metaDescription": "A primary internal network used by the National Security Agency for classified data has experienced an unexpected outage, according to U.S. officials.",
-  "aiSummaryBullets": [
-    "A secure internal network used by the National Security Agency to store and share classified intelligence has gone offline.",
-    "Multiple U.S. officials confirmed the status of the communications system.",
-    "Authorities have reported that there is currently no evidence indicating a cyberattack caused the disruption."
-  ],
-  "aiContextParagraph": "The National Security Agency (NSA) is currently dealing with an outage affecting an internal network designed for the storage and transmission of classified national security intelligence. Reports indicate that the system, which serves as a critical infrastructure component for federal communications, went offline on Tuesday. While the incident involves a highly sensitive piece of government technology, officials familiar with the internal situation have stated that no signs of a cyberattack have been detected at this time. The outage remains a developing situation as technical teams work to restore full functionality to the secure network. The NSA has not yet provided further technical details regarding the root cause of the connection failure, and operations continue to be monitored by relevant U.S. officials.",
-  "whyItIsViral": "This story is circulating due to reports from three independent news outlets regarding a high-level government communication failure.",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
   "entityTags": [
     {
       "name": "National Security Agency",
       "slug": "national-security-agency"
     },
     {
-      "name": "United States intelligence",
-      "slug": "united-states-intelligence"
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
     },
     {
-      "name": "cybersecurity",
-      "slug": "cybersecurity"
+      "name": "Critical Infrastructure",
+      "slug": "critical-infrastructure"
     }
   ],
-  "viralScore": 67,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 64,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "us-soldier-arrested-for-russian-espionage",
+    "faa-issues-nationwide-flight-ground-stop",
+    "united-airlines-widespread-system-outage"
+  ],
+  "relatedInCategorySlugs": [
+    "germany-expands-intelligence-agency-surveillance-powers",
+    "france-accuses-iran-supermarket-cyber-attacks",
+    "malaysia-cybersecurity-strengthens-austria-diplomacy"
+  ]
 }
