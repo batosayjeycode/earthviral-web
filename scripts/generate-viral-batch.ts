@@ -57,6 +57,7 @@ import {
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
 import { retireOldest, selectTopPerCountry } from './lib/intelligence/selectStories.ts';
+import { mergeDuplicateStories } from './lib/intelligence/mergeDuplicates.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
@@ -433,7 +434,8 @@ async function main() {
     ...existing.map((c) => c.slug),
     ...previousRetired.map((r) => r.path.split('/').filter(Boolean).at(-1)!),
   ]);
-  const records: ViralClusterStaticRecord[] = [];
+  let records: ViralClusterStaticRecord[] = [];
+  const newRecords = new Set<ViralClusterStaticRecord>();
 
   for (const { cluster, score } of carried) {
     const record: ViralClusterStaticRecord = structuredClone(cluster.existing!);
@@ -471,6 +473,20 @@ async function main() {
     applyText(record, text);
     applyScore(record, score);
     records.push(record);
+    newRecords.add(record);
+  }
+
+  // Same event, two stories: the AI-written headlines of separately clustered reports come
+  // out near-identical, so duplicates are merged here (see mergeDuplicates.ts). Published
+  // duplicates redirect to the story that absorbed them.
+  const merged = mergeDuplicateStories(records, (r) => newRecords.has(r));
+  records = merged.records;
+  const mergedAway = merged.merges.filter((m) => m.retired);
+  if (merged.merges.length > 0) {
+    log(
+      `  merged ${merged.merges.length} duplicate stories (${merged.merges.length - mergedAway.length} new, ${mergedAway.length} published → 301 to the surviving story)`,
+    );
+    for (const m of merged.merges) log(`    ${m.from.canonicalPath} → ${m.into.canonicalPath}`);
   }
 
   // 6. Link graph + write ────────────────────────────────────────────────────
@@ -478,11 +494,18 @@ async function main() {
   const retired = mergeRetired(
     previousRetired,
     // Stories over the site size budget and past the retention window both redirect.
-    [...retiredNow, ...expired].map((c) => ({
-      path: c.canonicalPath,
-      redirectTo: `/country/${c.countrySlug}/`,
-      retiredAt: iso(now),
-    })),
+    [
+      ...[...retiredNow, ...expired].map((c) => ({
+        path: c.canonicalPath,
+        redirectTo: `/country/${c.countrySlug}/`,
+        retiredAt: iso(now),
+      })),
+      ...mergedAway.map((m) => ({
+        path: m.from.canonicalPath,
+        redirectTo: m.into.canonicalPath,
+        retiredAt: iso(now),
+      })),
+    ],
     new Set(records.map((r) => r.canonicalPath)),
     now,
   );
@@ -501,9 +524,10 @@ async function main() {
         feedsOk: rss.ok.length,
         feedsFailed,
         articlesFetched: rss.articles.length + gdelt.articles.length,
-        newClusters: selectedNew.length,
+        newClusters: selectedNew.length - (merged.merges.length - mergedAway.length),
         updatedClusters: updated.length,
         retiredClusters: retiredNow.length,
+        ...(merged.merges.length ? { mergedDuplicates: merged.merges.length } : {}),
         aiCalls,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,

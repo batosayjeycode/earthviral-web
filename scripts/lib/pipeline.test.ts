@@ -275,6 +275,83 @@ describe('story drift', () => {
   });
 });
 
+describe('duplicate stories', async () => {
+  const { mergeDuplicateStories, isDuplicate } = await import('./intelligence/mergeDuplicates.ts');
+  const rec = (over: Partial<ViralClusterStaticRecord> & { slug: string; headline: string }) =>
+    ({
+      id: over.slug,
+      countryCode: 'PH',
+      seoTitle: over.headline.slice(0, 60),
+      canonicalPath: `/news/ph/${over.slug}/`,
+      firstDetectedAt: '2026-11-17T04:00:00Z',
+      lastUpdatedBatchAt: '2026-11-17T08:18:00Z',
+      viralScore: 50,
+      signalBreakdown: { verifiedPublisherCount: 1 },
+      sources: [
+        {
+          publisherName: over.slug,
+          publisherDomain: `${over.slug}.com`,
+          articleTitle: over.headline,
+          articleUrl: `https://${over.slug}.com/a`,
+          publishedAt: '2026-11-17T04:00:00Z',
+        },
+      ],
+      ...over,
+    }) as unknown as ViralClusterStaticRecord;
+
+  it('merges a new story into the published one covering the same event', () => {
+    const published = rec({
+      slug: 'prime-minister-modi-manila-gurudwara-visit',
+      headline: 'Prime Minister Narendra Modi Visits Historic Manila Gurudwara',
+    });
+    const fresh = rec({
+      slug: 'prime-minister-modi-philippines-gurudwara-visit',
+      headline: 'Prime Minister Narendra Modi Visits Historic Gurudwara In Manila',
+      firstDetectedAt: '2026-11-17T08:06:00Z',
+    });
+    const { records, merges } = mergeDuplicateStories([published, fresh], (r) => r === fresh);
+    assert.deepEqual(records, [published]);
+    assert.equal(merges[0]!.retired, false); // never published: no redirect needed
+    assert.equal(published.sources.length, 2);
+    assert.equal(published.signalBreakdown.verifiedPublisherCount, 2);
+  });
+
+  it('retires the published duplicate whose URL fits the event worse, with a redirect', () => {
+    const early = rec({
+      slug: 'protests-at-vice-presidential-palace',
+      headline: 'Vice President Gibran Rakabuming Raka Formally Resigns From Office',
+      countryCode: 'ID',
+      firstDetectedAt: '2026-11-15T00:00:00Z',
+    });
+    const named = rec({
+      slug: 'gibran-rakabuming-raka-resigns-vice-presidency',
+      headline: 'Vice President Gibran Rakabuming Raka Resigns From Office',
+      countryCode: 'ID',
+      firstDetectedAt: '2026-11-16T00:00:00Z',
+    });
+    const { records, merges } = mergeDuplicateStories([early, named], () => false);
+    assert.deepEqual(records, [named]);
+    assert.equal(merges[0]!.from, early);
+    assert.equal(merges[0]!.retired, true);
+  });
+
+  it('keeps different events, other countries and old stories apart', () => {
+    const semi = rec({
+      slug: 'a',
+      headline: 'Mirra Andreeva Secures WTA Finals Semifinal Spot In Riyadh',
+    });
+    const title = rec({
+      slug: 'b',
+      headline: 'Mirra Andreeva Secures WTA Finals Title In Her Debut',
+    });
+    assert.ok(!isDuplicate(semi, title));
+    const same = rec({ slug: 'c', headline: semi.headline });
+    assert.ok(isDuplicate(semi, same));
+    assert.ok(!isDuplicate(semi, { ...same, countryCode: 'SA' }));
+    assert.ok(!isDuplicate(semi, { ...same, firstDetectedAt: '2026-11-25T00:00:00Z' }));
+  });
+});
+
 describe('viral score', () => {
   it('rises with publisher breadth and recency', () => {
     assert.ok(coverageScore(8) > coverageScore(3));
