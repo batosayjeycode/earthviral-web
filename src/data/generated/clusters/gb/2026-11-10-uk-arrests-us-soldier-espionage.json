@@ -18,16 +18,16 @@
   ],
   "aiContextParagraph": "The legal landscape in the United Kingdom has seen two significant security-related developments this week. In a high-profile case involving international espionage, a London court reached a verdict against two Iranian nationals found guilty of tracking and monitoring journalists associated with a Persian-language news organization critical of Iran. Authorities determined that these individuals operated with the intent to facilitate harm, with one defendant explicitly tasked with planning a violent assault. Concurrently, UK counter-terrorism authorities have been managing a separate investigation involving a senior United States Army soldier arrested on suspicion of espionage linked to Russia. While the espionage cases involve different geopolitical actors, both events highlight ongoing security operations conducted by British police to address foreign influence and surveillance activities occurring within the country.",
   "whyItIsViral": "5 independent outlets are covering this story.",
-  "viralScore": 48,
-  "intensityTier": "active",
+  "viralScore": 62,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 5,
-    "coverageVelocityScore": 0,
+    "coverageVelocityScore": 32,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-10T19:35:00Z",
-  "lastUpdatedBatchAt": "2026-11-12T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-17T20:18:00Z",
   "sources": [
     {
       "publisherName": "Deutsche Welle",
@@ -77,6 +77,13 @@
       "articleTitle": "UK court convicts 2 Iranian men of spying on journalists",
       "articleUrl": "https://www.dw.com/en/uk-court-convicts-2-iranian-men-of-spying-on-journalists/a-79931583?maca=en-rss-en-all-1573-xml-mrss",
       "publishedAt": "2026-11-12T15:23:00Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+      "articleUrl": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo",
+      "publishedAt": "2026-11-17T20:07:08Z"
     }
   ],
   "entityTags": [
@@ -99,12 +106,12 @@
   ],
   "relatedInCountrySlugs": [
     "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-    "uk-sanctions-israeli-firms-west-bank",
-    "ukhsa-issues-cold-weather-alerts"
+    "ukhsa-issues-cold-weather-alerts",
+    "uk-sanctions-israeli-firms-west-bank"
   ],
   "relatedInCategorySlugs": [
-    "men-convicted-spying-on-uk-journalists",
     "us-soldier-arrested-for-russian-espionage",
+    "men-convicted-spying-on-uk-journalists",
     "nigerian-army-operations-plateau-state"
   ]
 }
