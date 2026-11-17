@@ -3,17 +3,34 @@
   "name": "Iran",
   "slug": "iran",
   "region": "Asia",
-  "viralScore": 67,
+  "viralScore": 82,
   "intensityTier": "high",
-  "generatedAt": "2026-11-17T14:18:00Z",
+  "generatedAt": "2026-11-17T17:18:00Z",
   "clusters": [
+    {
+      "slug": "trump-addresses-iran-dirty-bomb-threat",
+      "canonicalPath": "/news/ir/trump-addresses-iran-dirty-bomb-threat/",
+      "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 79,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump stated that the U.S. is treating reports of a potential Iranian radioactive bomb threat against Washington, D.C. with high importance.",
+        "The allegations, which cite unnamed U.S. officials, suggest Iran is developing plans to target senior members of the current U.S. administration."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/iran-dismisses-report-of-alleged-dirty-bomb-attack-on-washington/a-79970741?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
     {
       "slug": "explosions-reported-strait-hormuz-iran",
       "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
       "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 65,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Explosions were reported on Qeshm Island and on tankers following encounters with sea mines in the Strait of Hormuz.",
@@ -30,8 +47,8 @@
       "headline": "Regional Tensions Escalate As Iran Targets US Base In Bahrain",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Iranian forces conducted a drone attack targeting a United States military installation in Bahrain.",
         "The USS Theodore Roosevelt has arrived in the Middle East as Iran states it may preemptively strike if threatened."
@@ -59,12 +76,29 @@
       }
     },
     {
+      "slug": "iran-foreign-activities-and-domestic-emigration",
+      "canonicalPath": "/news/ir/iran-foreign-activities-and-domestic-emigration/",
+      "headline": "Iran Faces Rising Internal Migration And External Tensions In Europe",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 36,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "European officials report an increase in covert Iranian operations intended to discourage European support for the United States.",
+        "The Iranian government aims to demonstrate the geopolitical costs of aligning with Washington through these actions."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/iran-s-growing-exodus-of-young-talent/a-79960368?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "houthi-forces-advance-in-yemen",
       "canonicalPath": "/news/ir/houthi-forces-advance-in-yemen/",
       "headline": "Houthi Forces Advance In Southern Yemen As Regional Tensions Persist",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Houthi fighters aligned with Iran have continued a territorial push across southern regions of Yemen.",

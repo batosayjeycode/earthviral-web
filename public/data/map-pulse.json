@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611171418",
-  "generatedAt": "2026-11-17T14:18:00Z",
-  "nextUpdateAt": "2026-11-17T17:17:00Z",
+  "batchId": "batch-202611171718",
+  "generatedAt": "2026-11-17T17:18:00Z",
+  "nextUpdateAt": "2026-11-17T20:17:00Z",
   "countries": [
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "topicCount": 36,
+      "topTopic": {
+        "slug": "united-states-loses-measles-elimination-status-2",
+        "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+        "headline": "United States Loses Official Measles Elimination Status After Surge",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 100,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -12,16 +34,16 @@
         117,
         -2.5
       ],
-      "viralScore": 100,
+      "viralScore": 98,
       "intensityTier": "surge",
       "topicCount": 123,
       "topTopic": {
         "slug": "indonesian-police-conduct-ethics-hearing-listyo-sigit",
         "canonicalPath": "/news/id/indonesian-police-conduct-ethics-hearing-listyo-sigit/",
         "headline": "Indonesian Police Dismiss General Eko Hadi Over Illegal Wiretapping",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 100,
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 95,
         "intensityTier": "surge"
       }
     },
@@ -34,16 +56,16 @@
         31.2,
         49
       ],
-      "viralScore": 94,
+      "viralScore": 93,
       "intensityTier": "surge",
       "topicCount": 3,
       "topTopic": {
         "slug": "ukraine-drone-strikes-crimea-moscow",
         "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
-        "headline": "Ukrainian Forces Strike Kerch Bridge Linking Russia To Crimea",
+        "headline": "Ukrainian Military Forces Reportedly Damage Key Kerch Bridge Link",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 93,
+        "viralScore": 92,
         "intensityTier": "surge"
       }
     },
@@ -56,7 +78,7 @@
         127.8,
         36.3
       ],
-      "viralScore": 92,
+      "viralScore": 85,
       "intensityTier": "surge",
       "topicCount": 8,
       "topTopic": {
@@ -65,50 +87,6 @@
         "headline": "(LEAD) PM vows to mobilize all national capabilities to prevent AI cheating on college entrance exam",
         "categorySlug": "technology-ai",
         "categoryName": "Technology & AI",
-        "viralScore": 89,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 86,
-      "intensityTier": "surge",
-      "topicCount": 13,
-      "topTopic": {
-        "slug": "french-football-chief-challenges-fifa-presidency",
-        "canonicalPath": "/news/fr/french-football-chief-challenges-fifa-presidency/",
-        "headline": "Philippe Diallo Gains UEFA Backing For FIFA Presidential Election",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "topicCount": 40,
-      "topTopic": {
-        "slug": "modi-pitroda-public-exchange",
-        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
-        "headline": "Prime Minister Modi Addresses Quad And ASEAN Summits In Manila",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
         "viralScore": 82,
         "intensityTier": "high"
       }
@@ -122,13 +100,35 @@
         104,
         35
       ],
-      "viralScore": 82,
+      "viralScore": 84,
       "intensityTier": "high",
       "topicCount": 16,
       "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "Xi Jinping, Donald Trump And Vladimir Putin To Meet In Shenzhen",
+        "slug": "xi-jinping-to-host-apec-summit",
+        "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
+        "headline": "Leaders Arrive In Shenzhen As China Hosts 2026 APEC Summit",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 81,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 82,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "trump-addresses-iran-dirty-bomb-threat",
+        "canonicalPath": "/news/ir/trump-addresses-iran-dirty-bomb-threat/",
+        "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 79,
@@ -144,60 +144,60 @@
         122,
         12.5
       ],
-      "viralScore": 76,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
         "slug": "asean-leaders-discuss-regional-energy-security",
         "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
-        "headline": "Global Leaders Gather In Manila For The 49th Annual ASEAN Summit",
+        "headline": "Global Leaders Convene In Manila For The 49th Annual ASEAN Summit",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 77,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 78,
+      "intensityTier": "high",
+      "topicCount": 14,
+      "topTopic": {
+        "slug": "french-football-chief-challenges-fifa-presidency",
+        "canonicalPath": "/news/fr/french-football-chief-challenges-fifa-presidency/",
+        "headline": "Philippe Diallo Gains UEFA Backing For FIFA Presidential Election",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 75,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 77,
+      "intensityTier": "high",
+      "topicCount": 41,
+      "topTopic": {
+        "slug": "modi-pitroda-public-exchange",
+        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
+        "headline": "Prime Minister Modi Addresses Quad And ASEAN Summits In Manila",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 74,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 75,
-      "intensityTier": "high",
-      "topicCount": 22,
-      "topTopic": {
-        "slug": "potential-candidates-for-next-james-bond",
-        "canonicalPath": "/news/gb/potential-candidates-for-next-james-bond/",
-        "headline": "British Actor Robert Pattinson Confirmed As The Next James Bond",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
-        "viralScore": 72,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 74,
-      "intensityTier": "high",
-      "topicCount": 33,
-      "topTopic": {
-        "slug": "major-us-banks-experience-service-outages",
-        "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-        "headline": "Customers Report Widespread Service Outages At Major American Banks",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 71,
         "intensityTier": "high"
       }
     },
@@ -210,79 +210,57 @@
         8.1,
         9.6
       ],
-      "viralScore": 70,
+      "viralScore": 76,
       "intensityTier": "high",
-      "topicCount": 49,
+      "topicCount": 48,
       "topTopic": {
         "slug": "nigeria-tanzania-afcon-qualifier-draw",
         "canonicalPath": "/news/ng/nigeria-tanzania-afcon-qualifier-draw/",
-        "headline": "Super Eagles Face Tanzania In Upcoming Africa Cup Nations Qualifier",
+        "headline": "Super Eagles Held To Goalless Draw By Tanzania In AFCON Qualifier",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 67,
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
       "centroid": [
-        10.4,
-        51.1
+        -2,
+        53.5
       ],
-      "viralScore": 68,
+      "viralScore": 69,
       "intensityTier": "high",
-      "topicCount": 4,
+      "topicCount": 23,
       "topTopic": {
-        "slug": "germany-eu-rwanda-migration-hubs",
-        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
-        "headline": "Germany to join other EU states in announcing Rwanda deportation hub",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
+        "slug": "potential-candidates-for-next-james-bond",
+        "canonicalPath": "/news/gb/potential-candidates-for-next-james-bond/",
+        "headline": "British Actor Robert Pattinson Confirmed As The Next James Bond",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
         "viralScore": 66,
         "intensityTier": "high"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        103.82,
-        1.35
+        60,
+        58
       ],
       "viralScore": 68,
       "intensityTier": "high",
-      "topicCount": 42,
+      "topicCount": 7,
       "topTopic": {
-        "slug": "singapore-pm-outlines-asean-summit-priorities",
-        "canonicalPath": "/news/sg/singapore-pm-outlines-asean-summit-priorities/",
-        "headline": "Prime Minister Lawrence Wong Outlines ASEAN Leadership Priorities",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 67,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
+        "slug": "estonia-to-close-russia-border-crossings",
+        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
+        "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 65,
@@ -298,7 +276,7 @@
         -3.7,
         40.2
       ],
-      "viralScore": 66,
+      "viralScore": 63,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -307,8 +285,52 @@
         "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 65,
+        "viralScore": 62,
         "intensityTier": "high"
+      }
+    },
+    {
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
+      "centroid": [
+        10.4,
+        51.1
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "germany-eu-rwanda-migration-hubs",
+        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
+        "headline": "Germany to join other EU states in announcing Rwanda deportation hub",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 61,
+      "intensityTier": "high",
+      "topicCount": 40,
+      "topTopic": {
+        "slug": "singapore-pm-outlines-asean-summit-priorities",
+        "canonicalPath": "/news/sg/singapore-pm-outlines-asean-summit-priorities/",
+        "headline": "Prime Minister Lawrence Wong Outlines ASEAN Leadership Priorities",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
@@ -320,8 +342,8 @@
         134,
         -25.5
       ],
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "topicCount": 27,
       "topTopic": {
         "slug": "melbourne-cup-horse-found-skip-bin",
@@ -329,29 +351,7 @@
         "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 61,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 59,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
-        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
-        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 57,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -400,24 +400,24 @@
       }
     },
     {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
       "centroid": [
-        60,
-        58
+        45,
+        24
       ],
       "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 7,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "estonia-to-close-russia-border-crossings",
-        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
-        "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 53,
+        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
+        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
+        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -444,45 +444,23 @@
       }
     },
     {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        138.5,
-        36.5
+        -51.9,
+        -10.5
       ],
-      "viralScore": 52,
+      "viralScore": 54,
       "intensityTier": "active",
-      "topicCount": 7,
+      "topicCount": 46,
       "topTopic": {
-        "slug": "japan-protests-russian-airspace-violation",
-        "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
-        "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 49,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AE",
-      "isoNumeric": "784",
-      "name": "United Arab Emirates",
-      "slug": "united-arab-emirates",
-      "centroid": [
-        54,
-        24
-      ],
-      "viralScore": 52,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
-        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
-        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
+        "slug": "hunger-games-dawn-of-harvest-release",
+        "canonicalPath": "/news/br/hunger-games-dawn-of-harvest-release/",
+        "headline": "New Hunger Games Franchise Entry Debuts With Familiar Storytelling",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
         "viralScore": 51,
         "intensityTier": "active"
       }
@@ -520,58 +498,58 @@
       ],
       "viralScore": 51,
       "intensityTier": "active",
-      "topicCount": 5,
+      "topicCount": 6,
       "topTopic": {
         "slug": "guadalajara-cartel-leader-gallardo-dies",
         "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
         "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 49,
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },
     {
-      "code": "PK",
-      "isoNumeric": "586",
-      "name": "Pakistan",
-      "slug": "pakistan",
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
       "centroid": [
-        69.3,
-        30
+        138.5,
+        36.5
       ],
       "viralScore": 48,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 7,
       "topTopic": {
-        "slug": "former-pakistan-leader-seeks-medical-care",
-        "canonicalPath": "/news/pk/former-pakistan-leader-seeks-medical-care/",
-        "headline": "Former Pakistan Prime Minister Requests Urgent Medical Assistance",
+        "slug": "japan-protests-russian-airspace-violation",
+        "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
+        "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 47,
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "AE",
+      "isoNumeric": "784",
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
       "centroid": [
-        102.3,
-        3.8
+        54,
+        24
       ],
       "viralScore": 47,
       "intensityTier": "active",
-      "topicCount": 20,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "macron-visit-malaysia-rare-earth",
-        "canonicalPath": "/news/my/macron-visit-malaysia-rare-earth/",
-        "headline": "President Macron To Visit Malaysia For Rare Earth Supply Security",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 44,
+        "slug": "fia-confirms-qatar-abu-dhabi-grand-prix",
+        "canonicalPath": "/news/ae/fia-confirms-qatar-abu-dhabi-grand-prix/",
+        "headline": "FIA President Confirms Qatar And Abu Dhabi Grand Prix Will Proceed",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
@@ -598,24 +576,68 @@
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
+      "code": "PK",
+      "isoNumeric": "586",
+      "name": "Pakistan",
+      "slug": "pakistan",
       "centroid": [
-        -51.9,
-        -10.5
+        69.3,
+        30
+      ],
+      "viralScore": 46,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "former-pakistan-leader-seeks-medical-care",
+        "canonicalPath": "/news/pk/former-pakistan-leader-seeks-medical-care/",
+        "headline": "Former Pakistan Prime Minister Requests Urgent Medical Assistance",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 46,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
       ],
       "viralScore": 42,
       "intensityTier": "active",
-      "topicCount": 40,
+      "topicCount": 20,
       "topTopic": {
-        "slug": "brazil-national-team-victory-singapore",
-        "canonicalPath": "/news/br/brazil-national-team-victory-singapore/",
-        "headline": "Brazil National Team Concludes Season With Seven Goal Victory",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
+        "slug": "macron-visit-malaysia-rare-earth",
+        "canonicalPath": "/news/my/macron-visit-malaysia-rare-earth/",
+        "headline": "President Macron To Visit Malaysia For Rare Earth Supply Security",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 39,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "CA",
+      "isoNumeric": "124",
+      "name": "Canada",
+      "slug": "canada",
+      "centroid": [
+        -106.3,
+        56.1
+      ],
+      "viralScore": 40,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "canada-explores-chinese-automotive-sector-partnerships",
+        "canonicalPath": "/news/ca/canada-explores-chinese-automotive-sector-partnerships/",
+        "headline": "Canada Considers Partnerships With Chinese Automotive Manufacturers",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 40,
         "intensityTier": "active"
       }
     },
@@ -674,7 +696,7 @@
       ],
       "viralScore": 32,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 2,
       "topTopic": {
         "slug": "gta-six-release-fan-planning",
         "canonicalPath": "/news/nz/gta-six-release-fan-planning/",
@@ -779,20 +801,6 @@
       "centroid": [
         30.2,
         15.6
-      ],
-      "viralScore": 0,
-      "intensityTier": "quiet",
-      "topicCount": 0,
-      "topTopic": null
-    },
-    {
-      "code": "CA",
-      "isoNumeric": "124",
-      "name": "Canada",
-      "slug": "canada",
-      "centroid": [
-        -106.3,
-        56.1
       ],
       "viralScore": 0,
       "intensityTier": "quiet",
