@@ -18,6 +18,7 @@ import {
   batchMeta,
   getClusters,
   getCountries,
+  getStoryTitles,
   getTopics,
   resolveClusters,
 } from '../../../lib/data.ts';
@@ -62,14 +63,8 @@ const contextHtml = linkifyFirstMentions(c.aiContextParagraph, [
 ]);
 
 // The pipeline writes a search-length seoTitle (≤ 60 chars) so the full title fits in results.
-// Two stories can share one (the same event in two countries): then add country and date so
-// every page keeps a unique title.
-const sharesTitle = clusters.some(
-  (x) => x !== c && x.seoTitle.trim().toLowerCase() === c.seoTitle.trim().toLowerCase(),
-);
-const title = sharesTitle
-  ? `${c.seoTitle} — ${c.countryName}, ${formatDateWib(c.firstDetectedAt)} | EarthViral`
-  : `${c.seoTitle} | EarthViral`;
+// Unique across all stories even when two share a seoTitle (see getStoryTitles).
+const title = `${(await getStoryTitles()).get(c.id)} | EarthViral`;
 const countryCategoryHref = `/country/${c.countrySlug}/${c.categorySlug}/`;
 const jsonLd = newsArticleGraph(c, [
   { name: c.countryName, path: `/country/${c.countrySlug}/` },
