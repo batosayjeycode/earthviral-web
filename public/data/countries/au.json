@@ -3,17 +3,51 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 61,
+  "viralScore": 71,
   "intensityTier": "high",
-  "generatedAt": "2026-11-17T08:18:00Z",
+  "generatedAt": "2026-11-17T11:18:00Z",
   "clusters": [
+    {
+      "slug": "melbourne-cup-horse-found-skip-bin",
+      "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
+      "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A racehorse that previously competed in the Melbourne Cup was discovered in a skip bin.",
+        "Reports indicate the horse died from a colic-related condition on Monday."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/dead-melbourne-cup-runner-so-you-are-found-in-sydney-skip-bin/107395274"
+      }
+    },
+    {
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
+        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+      }
+    },
     {
       "slug": "man-charged-murder-fatal-home-invasion",
       "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
       "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 58,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A 23-year-old man was arrested in connection with the death of a 15-day-old infant.",
@@ -30,7 +64,7 @@
       "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 57,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pat Cummins characterized Usman Khawaja's recent claims about the 2018 ball-tampering scandal as complete and utter nonsense.",
@@ -39,40 +73,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-07/usman-khawaja-sandpapergate-ball-tampering-south-africa-cricket/107345086"
-      }
-    },
-    {
-      "slug": "melbourne-cup-horse-found-skip-bin",
-      "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
-      "headline": "Melbourne Cup Horse So You Are Discovered In A Sydney Skip Bin",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The racehorse known as So You Are passed away due to complications from colic.",
-        "The animal was a participant in the Melbourne Cup horse racing event."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/dead-melbourne-cup-runner-so-you-are-found-in-sydney-skip-bin/107395274"
-      }
-    },
-    {
-      "slug": "australian-pilots-survive-borneo-helicopter-crash",
-      "canonicalPath": "/news/au/australian-pilots-survive-borneo-helicopter-crash/",
-      "headline": "Two Australian Pilots Survive Helicopter Crash In South Kalimantan",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Two Australian pilots survived a helicopter crash in the South Kalimantan province of Indonesia.",
-        "The aircraft was performing water-bombing operations when it lost control and descended into a river."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384"
       }
     },
     {
@@ -93,29 +93,12 @@
       }
     },
     {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
-        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
-      }
-    },
-    {
       "slug": "australia-ends-indonesia-wildfire-mission",
       "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
       "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The aerial firefighting mission involving an Australian Hercules C-130 air tanker has concluded.",
@@ -132,7 +115,7 @@
       "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Adelaide council voted to repeal a recently passed motion that intended to restrict fossil fuel-related advertising on municipal land.",
@@ -149,7 +132,7 @@
       "headline": "Australian Prime Minister Faces Scrutiny Following COP31 Remarks",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Anthony Albanese is facing public criticism after being recorded making an unprofessional remark to the climate minister.",
@@ -166,7 +149,7 @@
       "headline": "President Prabowo Subianto Discusses ASEAN-Australia Partnerships",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Prabowo Subianto advocated for robust ASEAN institutional mechanisms to manage regional crises.",
@@ -175,40 +158,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/berita/d-8755884/prabowo-di-ktt-asean-australia-kemitraan-strategis-harus-sejahterakan-rakyat"
-      }
-    },
-    {
-      "slug": "neurological-conditions-in-perth-double-murder",
-      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
-      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
-        "Evidence suggests the perpetrator engaged in high-level planning for the event."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
-      }
-    },
-    {
-      "slug": "persebaya-surabaya-defeats-western-australia",
-      "canonicalPath": "/news/au/persebaya-surabaya-defeats-western-australia/",
-      "headline": "Persebaya Surabaya Secures Victory Against Western Australia Team",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Persebaya Surabaya won a high-scoring international friendly match against Western Australia with a final score of 4-3.",
-        "The match, held at Gelora Bung Tomo Stadium, featured consecutive second-half goals from substitutes Risto Mitrevski and Alfan Suaib."
-      ],
-      "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/video/5856095/tujuh-gol-tercipta-saat-persebaya-kalahkan-western-australia-4-3"
       }
     },
     {
@@ -243,23 +192,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/business/2026/nov/16/coles-cyber-attack-incident-data"
-      }
-    },
-    {
-      "slug": "national-medical-guidance-puberty-blockers",
-      "canonicalPath": "/news/au/national-medical-guidance-puberty-blockers/",
-      "headline": "National Medical Council Issues Guidance On Youth Puberty Blockers",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The National Health and Medical Research Council released new guidelines suggesting puberty blockers remain a clinical option for some children.",
-        "The recommendations follow a comprehensive year-long review of international evidence regarding the treatment of gender dysphoria."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-16/puberty-blockers-interim-advice-health-medical-research-council/107376484"
       }
     },
     {
@@ -314,13 +246,81 @@
       }
     },
     {
+      "slug": "persebaya-surabaya-defeats-western-australia",
+      "canonicalPath": "/news/au/persebaya-surabaya-defeats-western-australia/",
+      "headline": "Persebaya Surabaya Secures Victory Against Western Australia Team",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Persebaya Surabaya won a high-scoring international friendly match against Western Australia with a final score of 4-3.",
+        "The match, held at Gelora Bung Tomo Stadium, featured consecutive second-half goals from substitutes Risto Mitrevski and Alfan Suaib."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/video/5856095/tujuh-gol-tercipta-saat-persebaya-kalahkan-western-australia-4-3"
+      }
+    },
+    {
+      "slug": "national-medical-guidance-puberty-blockers",
+      "canonicalPath": "/news/au/national-medical-guidance-puberty-blockers/",
+      "headline": "National Medical Council Issues Guidance On Youth Puberty Blockers",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The National Health and Medical Research Council released new guidelines suggesting puberty blockers remain a clinical option for some children.",
+        "The recommendations follow a comprehensive year-long review of international evidence regarding the treatment of gender dysphoria."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-16/puberty-blockers-interim-advice-health-medical-research-council/107376484"
+      }
+    },
+    {
+      "slug": "neurological-conditions-in-perth-double-murder",
+      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
+      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 26,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
+        "Evidence suggests the perpetrator engaged in high-level planning for the event."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
+      }
+    },
+    {
+      "slug": "bunnings-announces-hundred-job-redundancies",
+      "canonicalPath": "/news/au/bunnings-announces-hundred-job-redundancies/",
+      "headline": "Bunnings Announces Two Hundred Thirty Job Redundancies In Australia",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 23,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Bunnings is cutting 230 jobs within its corporate structure.",
+        "The layoffs are linked to a transition of technology department tasks."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/bunnings-layoffs-and-offshoring/107394860"
+      }
+    },
+    {
       "slug": "greens-propose-support-for-tax-changes",
       "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
       "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 26,
-      "intensityTier": "active",
+      "viralScore": 23,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "The Greens party has signaled potential support for legislative changes regarding tax policy.",
         "Proposed measures include a new minimum tax on trusts."
@@ -331,20 +331,20 @@
       }
     },
     {
-      "slug": "bunnings-announces-hundred-job-redundancies",
-      "canonicalPath": "/news/au/bunnings-announces-hundred-job-redundancies/",
-      "headline": "Bunnings Announces Two Hundred Thirty Job Redundancies In Australia",
+      "slug": "australian-truck-driver-fired-smartglasses",
+      "canonicalPath": "/news/au/australian-truck-driver-fired-smartglasses/",
+      "headline": "Australian Truck Driver Dismissed Over Smartglasses Use At Facility",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 25,
-      "intensityTier": "active",
+      "viralScore": 21,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "Bunnings is cutting 230 jobs within its corporate structure.",
-        "The layoffs are linked to a transition of technology department tasks."
+        "A Toll transport employee was dismissed in Victoria for wearing smartglasses at an LPG terminal.",
+        "The employer cited safety risks, noting that the device could potentially cause an electrical spark."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/bunnings-layoffs-and-offshoring/107394860"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/technology/2026/nov/17/toll-truck-driver-fired-sacked-smartglasses-australia-ntwnfb"
       }
     }
   ]
