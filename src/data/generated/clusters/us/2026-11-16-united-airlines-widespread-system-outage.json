@@ -6,8 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
+  "seoTitle": "United Airlines Resolves Flight System Outage",
+  "metaDescription": "United Airlines has resolved a widespread technical outage that disrupted flight departures, following a recent industry-wide ground stop event.",
+  "aiSummaryBullets": [
+    "United Airlines experienced a technical glitch that caused significant departure delays.",
+    "The airline confirmed that the system outage was resolved after a period of instability.",
+    "This incident occurred shortly after a separate nationwide ground stop affected the aviation industry."
+  ],
+  "aiContextParagraph": "United Airlines recently encountered a widespread system failure that impacted its ability to process flight departures. The disruption caused significant operational delays across the airline's network. Company representatives confirmed the outage on November 16, 2026, and worked to implement a fix. By late in the evening, the airline stated that the technical issues had been successfully resolved, allowing departures to resume. This technical incident comes as the aviation industry continues to recover from a separate, unrelated nationwide ground stop that halted flights across the United States for five hours just last week. While the specific cause of the United Airlines outage has not been detailed, it highlights the ongoing challenges airlines face regarding the stability of critical digital infrastructure used for flight operations and scheduling in a modern, highly interconnected aviation environment.",
+  "whyItIsViral": "The event is considered viral because it was covered by three independent news outlets with a rapid pace of reporting shortly after the initial incident.",
+  "viralScore": 73,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 77,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-16T22:19:48Z",
-  "lastUpdatedBatchAt": "2026-11-16T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-17T02:18:00Z",
   "sources": [
     {
       "publisherName": "The Guardian",
@@ -36,54 +56,44 @@
       "articleTitle": "United Airlines reports widespread tech outage affecting departures",
       "articleUrl": "https://www.dw.com/en/united-airlines-reports-widespread-tech-outage-affecting-departures/a-79964387?maca=en-rss-en-all-1573-xml-mrss",
       "publishedAt": "2026-11-16T23:13:00Z"
+    },
+    {
+      "publisherName": "Deutsche Welle",
+      "publisherDomain": "dw.com",
+      "articleTitle": "United Airlines resolves tech outage that delayed flights",
+      "articleUrl": "https://www.dw.com/en/united-airlines-resolves-tech-outage-that-delayed-flights/a-79964387?maca=en-rss-en-all-1573-xml-mrss",
+      "publishedAt": "2026-11-16T23:13:00Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "United Airlines resolved system outage that delayed many departures",
+      "articleUrl": "https://www.cbsnews.com/video/united-airlines-resolved-system-outage-delayed-many-departures/",
+      "publishedAt": "2026-11-17T00:41:21Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "us-nationwide-flight-ground-stop",
-    "us-flight-grounding-causes-travel-disruptions",
-    "faa-issues-nationwide-flight-ground-stop"
-  ],
-  "relatedInCategorySlugs": [
-    "singapore-airlines-business-class-feedback",
-    "singapore-airlines-new-seating-specifications",
-    "prepare-for-take-off-sia-unveils-new-seats-in"
-  ],
-  "headline": "United Airlines Reports A Widespread System Outage Affecting Flights",
-  "seoTitle": "United Airlines Faces Widespread System Outage",
-  "metaDescription": "United Airlines flights experienced widespread delays following a major technical system outage, with reports indicating a failure in calculation software.",
-  "aiSummaryBullets": [
-    "United Airlines experienced a widespread system outage that resulted in hundreds of flight delays.",
-    "The airline's pilots union identified the technical failure within the weight and balance calculation system.",
-    "United Airlines confirmed the issue was resolved shortly after reporting the disruption."
-  ],
-  "aiContextParagraph": "United Airlines reported a significant technical failure impacting its operations, leading to widespread flight delays across multiple airports including JFK, LaGuardia, and Newark Liberty. According to internal communications from the airline's pilots union, the source of the disruption was traced to the carrier's weight and balance calculation software. This event occurred shortly after a separate incident involving a nationwide ground stop issued by the Federal Aviation Administration, which had disrupted air travel across the United States only days prior. While the airline initially worked to address the system malfunction, official reports indicate the technical difficulties have since been resolved. The situation prompted attention across several major media outlets as the aviation industry faced back-to-back challenges involving large-scale infrastructure and software reliability. The airline provided updates to passengers throughout the period of the disruption as flights were temporarily halted or delayed during the system recovery process.",
-  "whyItIsViral": "The story is viral due to coverage by three independent outlets and a high velocity of reporting following a recent series of aviation disruptions.",
-  "categorySlug": "economy-business",
-  "categoryName": "Economy & Business",
   "entityTags": [
     {
       "name": "United Airlines",
       "slug": "united-airlines"
     },
     {
-      "name": "Federal Aviation Administration",
-      "slug": "federal-aviation-administration"
+      "name": "Aviation",
+      "slug": "aviation"
     },
     {
-      "name": "Aviation Technology",
-      "slug": "aviation-technology"
-    },
-    {
-      "name": "Flight Delays",
-      "slug": "flight-delays"
+      "name": "Technology Outage",
+      "slug": "technology-outage"
     }
   ],
-  "viralScore": 73,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 77,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "us-flight-grounding-causes-travel-disruptions",
+    "us-air-traffic-disruption-resolution",
+    "united-states-air-travel-system-disruption"
+  ],
+  "relatedInCategorySlugs": [
+    "singapore-airlines-business-class-feedback",
+    "singapore-airlines-cabin-design-review",
+    "santos-port-authority-systems-outage"
+  ]
 }

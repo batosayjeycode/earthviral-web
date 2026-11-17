@@ -3,9 +3,9 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 89,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-16T23:18:00Z",
+  "viralScore": 81,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-17T02:18:00Z",
   "clusters": [
     {
       "slug": "potential-candidates-for-next-james-bond",
@@ -13,8 +13,8 @@
       "headline": "British Actor Robert Pattinson Confirmed As The Next James Bond",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 86,
-      "intensityTier": "surge",
+      "viralScore": 78,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Actor Robert Pattinson has been officially selected to portray the character of James Bond.",
         "The casting decision concludes an extended period of industry speculation regarding Daniel Craig's successor."
@@ -25,13 +25,30 @@
       }
     },
     {
+      "slug": "pochettino-linked-to-manchester-united-manager",
+      "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
+      "headline": "Mauricio Pochettino Appointed As New Manchester United Head Coach",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Mauricio Pochettino has been named the new head coach of Manchester United.",
+        "The appointment includes a contract set to run through June 2029."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/sports/2026/11/11/why-is-pochettino-the-favourite-to-replace-carrick-at-manchester-united?traffic_source=rss"
+      }
+    },
+    {
       "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
       "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
       "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 71,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
         "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
@@ -42,20 +59,20 @@
       }
     },
     {
-      "slug": "pochettino-linked-to-manchester-united-manager",
-      "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
-      "headline": "Mauricio Pochettino Appointed As New Manchester United Head Coach",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "slug": "prime-minister-burnham-addresses-brexit-impact",
+      "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
+      "headline": "Prime Minister Burnham Critiques Brexit Ahead Of Key EU Summit Talks",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "Mauricio Pochettino has been named the new head coach of Manchester United.",
-        "The appointment includes a contract set to run through June 2029."
+        "Prime Minister Andy Burnham stated that the current Brexit arrangement has not been beneficial for the United Kingdom.",
+        "The government plans to negotiate a new deal with the European Union, which officials estimate could increase GDP by 0.4 percent."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/sports/2026/11/11/why-is-pochettino-the-favourite-to-replace-carrick-at-manchester-united?traffic_source=rss"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo"
       }
     },
     {
@@ -76,23 +93,6 @@
       }
     },
     {
-      "slug": "prime-minister-burnham-addresses-brexit-impact",
-      "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
-      "headline": "Prime Minister Burnham Critiques Brexit Ahead Of Key EU Summit Talks",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Andy Burnham stated that the current Brexit arrangement has not been beneficial for the United Kingdom.",
-        "The government plans to negotiate a new deal with the European Union, which officials estimate could increase GDP by 0.4 percent."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo"
-      }
-    },
-    {
       "slug": "harry-kane-sets-england-appearance-record",
       "canonicalPath": "/news/gb/harry-kane-sets-england-appearance-record/",
       "headline": "Harry Kane Scores Winner In Record Setting England Nations Match",
@@ -107,6 +107,23 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/12/soccer/kane-england-appearance-record/"
+      }
+    },
+    {
+      "slug": "uk-asylum-seekers-immediate-removal",
+      "canonicalPath": "/news/gb/uk-asylum-seekers-immediate-removal/",
+      "headline": "Proposed Home Office Rules Permit Immediate Removal Of Asylum Seekers",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Home Office plans to amend current legislation to remove a mandatory five-day notice period for rejected asylum seekers.",
+        "Proposed rules allow authorities a six-month window to execute removals without providing advance notification to the individuals involved."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/uk-news/2026/nov/16/failed-uk-asylum-seekers-to-lose-five-day-grace-period-and-face-immediate-removal"
       }
     },
     {
@@ -149,7 +166,7 @@
       "headline": "UK Government Announces Automatic Pardons For Abortion Convictions",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 35,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The government in England and Wales is implementing automatic pardons for women with past abortion-related convictions.",
@@ -158,23 +175,6 @@
       "primarySource": {
         "publisherName": "Punch",
         "articleUrl": "https://punchng.com/uk-pardons-women-convicted-of-abortion-offences/"
-      }
-    },
-    {
-      "slug": "uk-officials-address-sexual-misconduct-transparency",
-      "canonicalPath": "/news/gb/uk-officials-address-sexual-misconduct-transparency/",
-      "headline": "UK Officials Address Sexual Misconduct And Trial Transparency",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Stuart Sterling has stepped back from his position as head of the UK ethics watchdog following sexual misconduct allegations.",
-        "The accusations against the watchdog chief concern conduct reported to have occurred during the early 2000s."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o"
       }
     },
     {
@@ -192,23 +192,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/uk-news/2026/nov/15/trident-nuclear-submarine-hms-vengeance-record-tour"
-      }
-    },
-    {
-      "slug": "hms-vengeance-record-breaking-underwater-patrol",
-      "canonicalPath": "/news/gb/hms-vengeance-record-breaking-underwater-patrol/",
-      "headline": "HMS Vengeance Completes Longest Underwater Patrol In Naval History",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Trident nuclear submarine HMS Vengeance returned to Faslane base after a record-breaking 217-day continuous underwater patrol.",
-        "Defence Secretary Wes Streeting met the vessel upon its arrival at HM Naval Base Clyde to acknowledge the crew's seven-month mission."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c32l5ny1r7x9o"
       }
     },
     {
@@ -246,20 +229,37 @@
       }
     },
     {
-      "slug": "norway-defeats-wales-nations-league",
-      "canonicalPath": "/news/gb/norway-defeats-wales-nations-league/",
-      "headline": "Norway Maintains Quarterfinal Hopes After Defeating Wales 3-1",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "uk-officials-address-sexual-misconduct-transparency",
+      "canonicalPath": "/news/gb/uk-officials-address-sexual-misconduct-transparency/",
+      "headline": "UK Officials Address Sexual Misconduct And Trial Transparency",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Norway defeated Wales with a final score of 3-1 in a UEFA Nations League match.",
-        "The victory keeps Norway in contention for a spot in the tournament's quarterfinals."
+        "Stuart Sterling has stepped back from his position as head of the UK ethics watchdog following sexual misconduct allegations.",
+        "The accusations against the watchdog chief concern conduct reported to have occurred during the early 2000s."
       ],
       "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5854887/norwegia-jaga-peluang-lolos-perempat-final-setelah-kalahkan-wales-3-1"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o"
+      }
+    },
+    {
+      "slug": "hms-vengeance-record-breaking-underwater-patrol",
+      "canonicalPath": "/news/gb/hms-vengeance-record-breaking-underwater-patrol/",
+      "headline": "HMS Vengeance Completes Longest Underwater Patrol In Naval History",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Trident nuclear submarine HMS Vengeance returned to Faslane base after a record-breaking 217-day continuous underwater patrol.",
+        "Defence Secretary Wes Streeting met the vessel upon its arrival at HM Naval Base Clyde to acknowledge the crew's seven-month mission."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c32l5ny1r7x9o"
       }
     },
     {
@@ -268,7 +268,7 @@
       "headline": "Officers Face Misconduct Allegations Over Fatal Collision Inquiry",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 23,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "PC Richard Hardwick and PC Lauren Livingstone are the subjects of a gross misconduct hearing.",

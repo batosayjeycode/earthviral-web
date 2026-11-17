@@ -3,59 +3,25 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 92,
+  "viralScore": 91,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-16T23:18:00Z",
+  "generatedAt": "2026-11-17T02:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Aviation Infrastructure Funding Debated Following FAA Ground Stop",
+      "headline": "Aviation Infrastructure Upgrades Follow Nationwide FAA Ground Stop",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 89,
+      "viralScore": 88,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy identified overwhelmed communication equipment as a possible cause for the nationwide flight stoppage.",
-        "President Donald Trump has requested government funding to modernize air traffic control systems while stating he accepts no personal responsibility."
+        "A multi-agency task force has been established to prevent future nationwide air traffic disruptions.",
+        "Transportation officials report that modernization efforts to replace 60-year-old copper infrastructure with fiber-optic cables are underway."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/14/us-blames-system-upgrade-for-longest-nationwide-faa-ground-stop-since-9?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
-      }
-    },
-    {
-      "slug": "united-airlines-widespread-system-outage",
-      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
-      "headline": "United Airlines Reports A Widespread System Outage Affecting Flights",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 73,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "United Airlines experienced a widespread system outage that resulted in hundreds of flight delays.",
-        "The airline's pilots union identified the technical failure within the weight and balance calculation system."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/pilot-former-air-traffic-controller/"
       }
     },
     {
@@ -64,7 +30,7 @@
       "headline": "President Trump Supports Potential Reinstatement Of Jensen Huang",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 71,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump stated he would not object to the reinstatement of former Nvidia CEO Jensen Huang.",
@@ -81,7 +47,7 @@
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 65,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -93,12 +59,80 @@
       }
     },
     {
+      "slug": "united-airlines-widespread-system-outage",
+      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
+      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "United Airlines experienced a technical glitch that caused significant departure delays.",
+        "The airline confirmed that the system outage was resolved after a period of instability."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
+      }
+    },
+    {
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
+        "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/after-victory-in-the-midterms-what-next-for-us-democrats/a-79884957?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status After Case Surge",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Global health authorities have confirmed the United States no longer holds measles elimination status.",
+        "The country has recorded its highest number of measles cases in over three decades."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
       "slug": "pope-leo-latin-america-tour",
       "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
       "headline": "Pope Leo XIV Visits Argentina Following Successful Surgery Recovery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 64,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Argentina for the second leg of his South American tour after concluding a visit to Uruguay.",
@@ -115,8 +149,8 @@
       "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
         "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
@@ -127,30 +161,13 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
-        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "us-flight-grounding-causes-travel-disruptions",
       "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
         "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
@@ -161,71 +178,20 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
-        "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
+        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
+        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
       ],
       "primarySource": {
         "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/after-victory-in-the-midterms-what-next-for-us-democrats/a-79884957?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "lindsay-clancy-to-be-retried-on-first-degree-murder",
-      "canonicalPath": "/news/us/lindsay-clancy-to-be-retried-on-first-degree-murder/",
-      "headline": "Lindsay Clancy to be retried on first-degree murder charges in March",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CBS News reports: Lindsay Clancy to be retried on first-degree murder charges in March",
-        "Le Monde reports: US judge sets March date for Lindsay Clancy retrial over children's killing"
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/lindsay-clancy-will-be-retried-on-first-degree-murder-charges/"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
-        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
-        "Emergency responders confirmed that all passengers have been accounted for following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -246,12 +212,46 @@
       }
     },
     {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
+        "Despite the slight gain, the exchange rate remains elevated above the 18,000 Rupiah per dollar threshold."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+      }
+    },
+    {
+      "slug": "mississippi-river-ship-collision-new-orleans",
+      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
+      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
+        "Emergency responders confirmed that all passengers have been accounted for following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+      }
+    },
+    {
       "slug": "pope-leo-demands-amazon-justice",
       "canonicalPath": "/news/us/pope-leo-demands-amazon-justice/",
       "headline": "Pope Leo XIV Calls For Justice During Final Leg Of South American Tour",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV visited Peru as part of the final segment of his 12-day diplomatic tour of South America.",
@@ -263,20 +263,54 @@
       }
     },
     {
-      "slug": "uss-theodore-roosevelt-middle-east-deployment",
-      "canonicalPath": "/news/us/uss-theodore-roosevelt-middle-east-deployment/",
-      "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 53,
+      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
+      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
+      "headline": "California Voters Reject Ballot Measure To Tax Billionaire Wealth",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
-        "The deployment occurs against a backdrop of heightened geopolitical friction involving Iran."
+        "California voters officially defeated a proposed ballot initiative aimed at taxing individual net worth exceeding $1 billion.",
+        "The rejected measure would have implemented a one-time five percent levy on the wealth of residents categorized as billionaires."
       ],
       "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116002600320"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+      }
+    },
+    {
+      "slug": "lindsay-clancy-to-be-retried-on-first-degree-murder",
+      "canonicalPath": "/news/us/lindsay-clancy-to-be-retried-on-first-degree-murder/",
+      "headline": "Lindsay Clancy to be retried on first-degree murder charges in March",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "CBS News reports: Lindsay Clancy to be retried on first-degree murder charges in March",
+        "Le Monde reports: US judge sets March date for Lindsay Clancy retrial over children's killing"
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/lindsay-clancy-will-be-retried-on-first-degree-murder-charges/"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
+        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
       }
     },
     {
@@ -285,7 +319,7 @@
       "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",
@@ -294,23 +328,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/us-news/2026/nov/12/chris-van-hollen-chuck-schumer-senate-majority-leader"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Official Measles Elimination Status Amid Surge",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The United States no longer holds measles elimination status for the first time in 26 years.",
-        "Health authorities recorded 5,412 measles cases throughout 2026."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
-      }
-    },
-    {
-      "slug": "united-states-gas-prices-decline",
-      "canonicalPath": "/news/us/united-states-gas-prices-decline/",
-      "headline": "United States Diesel Prices Fall Below Six Dollars Per Gallon",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Average diesel prices in the United States have decreased to 5.99 dollars per gallon according to AAA data.",
-        "This decline marks the first time diesel costs have dropped below the six-dollar threshold since September."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/10/nx-s1-6034518/inflation-consumer-prices-economy-gas-prices"
       }
     }
   ]
