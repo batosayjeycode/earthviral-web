@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
 import batchMetaJson from '../data/generated/batch-meta.json';
 import type { BatchMeta, CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
+import { formatDateWib } from './format.ts';
 
 export const batchMeta = batchMetaJson as BatchMeta;
 
@@ -90,4 +91,41 @@ async function buildTopics(): Promise<TopicRecord[]> {
   return [...bySlug.values()]
     .filter((t) => t.clusters.length >= MIN_TOPIC_STORIES)
     .sort((a, b) => b.peakScore - a.peakScore || a.name.localeCompare(b.name));
+}
+
+let titleCache: Map<string, string> | undefined;
+
+/**
+ * A unique page title (without the " | EarthViral" suffix) for every story, by cluster id.
+ * Normally the generated seoTitle. Stories can share one (the same event reported twice,
+ * or in two countries): the earliest keeps it, the others use their headline, then
+ * "seoTitle — Country, date", then a number, whichever is still free. Duplicate titles
+ * would make search engines treat the pages as duplicates (and fail the dist tests).
+ */
+export async function getStoryTitles(): Promise<Map<string, string>> {
+  if (titleCache) return titleCache;
+  const key = (t: string) => t.trim().toLowerCase();
+  const clusters = [...(await getClusters())].sort(
+    (a, b) => a.firstDetectedAt.localeCompare(b.firstDetectedAt) || a.id.localeCompare(b.id),
+  );
+  const firstWithSeoTitle = new Map<string, ViralClusterStaticRecord>();
+  for (const c of clusters)
+    if (!firstWithSeoTitle.has(key(c.seoTitle))) firstWithSeoTitle.set(key(c.seoTitle), c);
+
+  const titles = new Map<string, string>();
+  const used = new Set<string>();
+  for (const c of firstWithSeoTitle.values()) {
+    titles.set(c.id, c.seoTitle.trim());
+    used.add(key(c.seoTitle));
+  }
+  for (const c of clusters) {
+    if (titles.has(c.id)) continue;
+    const base = `${c.seoTitle.trim()} — ${c.countryName}, ${formatDateWib(c.firstDetectedAt)}`;
+    let title = [c.headline.trim(), base].find((t) => !used.has(key(t)));
+    for (let n = 2; !title; n++) if (!used.has(key(`${base} (${n})`))) title = `${base} (${n})`;
+    titles.set(c.id, title);
+    used.add(key(title));
+  }
+  titleCache = titles;
+  return titles;
 }
