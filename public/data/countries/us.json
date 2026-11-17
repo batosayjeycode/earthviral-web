@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 84,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-17T05:07:00Z",
+  "viralScore": 94,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-17T05:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
@@ -13,8 +13,8 @@
       "headline": "Aviation Infrastructure Upgrades Follow Nationwide FAA Ground Stop",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 81,
-      "intensityTier": "high",
+      "viralScore": 91,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
         "A multi-agency task force has been established to prevent future nationwide air traffic disruptions.",
         "Transportation officials report that modernization efforts to replace 60-year-old copper infrastructure with fiber-optic cables are underway."
@@ -25,29 +25,12 @@
       }
     },
     {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 76,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
-      }
-    },
-    {
       "slug": "us-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 67,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -56,6 +39,23 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+      }
+    },
+    {
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 75,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "President Trump Supports Potential Reinstatement Of Jensen Huang",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 62,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump stated he would not object to the reinstatement of former Nvidia CEO Jensen Huang.",
@@ -115,7 +115,7 @@
       "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
@@ -161,23 +161,6 @@
       }
     },
     {
-      "slug": "us-judge-strikes-down-trump-visa-restrictions-on-foreign",
-      "canonicalPath": "/news/us/us-judge-strikes-down-trump-visa-restrictions-on-foreign/",
-      "headline": "US judge strikes down Trump visa restrictions on foreign students, journalists",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "France 24 reports: US judge strikes down Trump visa restrictions on foreign students, journalists",
-        "Times of India reports: US judge strikes down Trump rule restricting stays for foreign students, journalists"
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/16/us-judge-strikes-down-new-visa-rules-for-foreign-students-and-journalists_6782437_4.html"
-      }
-    },
-    {
       "slug": "united-states-loses-measles-elimination-status-2",
       "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
       "headline": "United States Loses Measles Elimination Status After Case Surge",
@@ -192,6 +175,23 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "us-judge-strikes-down-trump-visa-restrictions-on-foreign",
+      "canonicalPath": "/news/us/us-judge-strikes-down-trump-visa-restrictions-on-foreign/",
+      "headline": "US judge strikes down Trump visa restrictions on foreign students, journalists",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "France 24 reports: US judge strikes down Trump visa restrictions on foreign students, journalists",
+        "Times of India reports: US judge strikes down Trump rule restricting stays for foreign students, journalists"
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/16/us-judge-strikes-down-new-visa-rules-for-foreign-students-and-journalists_6782437_4.html"
       }
     },
     {
@@ -302,7 +302,7 @@
       "headline": "Senator Chris Van Hollen Challenges Chuck Schumer For Party Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Senator Chris Van Hollen has formally declared his intention to challenge Chuck Schumer for the Democratic leadership in the Senate.",

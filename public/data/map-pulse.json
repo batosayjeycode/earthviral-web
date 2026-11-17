@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611170507",
-  "generatedAt": "2026-11-17T05:07:00Z",
-  "nextUpdateAt": "2026-11-17T05:17:00Z",
+  "batchId": "batch-202611170518",
+  "generatedAt": "2026-11-17T05:18:00Z",
+  "nextUpdateAt": "2026-11-17T08:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -12,16 +12,38 @@
         117,
         -2.5
       ],
-      "viralScore": 98,
+      "viralScore": 99,
       "intensityTier": "surge",
-      "topicCount": 103,
+      "topicCount": 107,
       "topTopic": {
         "slug": "vice-president-gibran-meets-president-prabowo",
         "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
         "headline": "Sufmi Dasco Ahmad Addresses Potential Vice Presidential Candidacy",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 95,
+        "viralScore": 96,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 94,
+      "intensityTier": "surge",
+      "topicCount": 29,
+      "topTopic": {
+        "slug": "faa-issues-nationwide-flight-ground-stop",
+        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+        "headline": "Aviation Infrastructure Upgrades Follow Nationwide FAA Ground Stop",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 91,
         "intensityTier": "surge"
       }
     },
@@ -56,7 +78,7 @@
         127.8,
         36.3
       ],
-      "viralScore": 86,
+      "viralScore": 85,
       "intensityTier": "surge",
       "topicCount": 6,
       "topTopic": {
@@ -65,29 +87,7 @@
         "headline": "South Korea Tightens Exam Security Amidst AI Cheating Scandals",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 84,
-      "intensityTier": "high",
-      "topicCount": 29,
-      "topTopic": {
-        "slug": "faa-issues-nationwide-flight-ground-stop",
-        "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-        "headline": "Aviation Infrastructure Upgrades Follow Nationwide FAA Ground Stop",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 81,
+        "viralScore": 82,
         "intensityTier": "high"
       }
     },
@@ -122,7 +122,7 @@
         2.4,
         46.6
       ],
-      "viralScore": 83,
+      "viralScore": 82,
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
@@ -131,29 +131,7 @@
         "headline": "UEFA Unanimously Supports Philippe Diallo In FIFA Presidency Race",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 80,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 78,
-      "intensityTier": "high",
-      "topicCount": 29,
-      "topTopic": {
-        "slug": "man-charged-murder-fatal-home-invasion",
-        "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-        "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 75,
+        "viralScore": 79,
         "intensityTier": "high"
       }
     },
@@ -166,38 +144,38 @@
         -2,
         53.5
       ],
-      "viralScore": 74,
+      "viralScore": 82,
       "intensityTier": "high",
-      "topicCount": 18,
+      "topicCount": 19,
       "topTopic": {
         "slug": "potential-candidates-for-next-james-bond",
         "canonicalPath": "/news/gb/potential-candidates-for-next-james-bond/",
         "headline": "British Actor Robert Pattinson Confirmed As The Next James Bond",
         "categorySlug": "entertainment-celebrity",
         "categoryName": "Entertainment & Celebrity",
-        "viralScore": 71,
+        "viralScore": 79,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
       "centroid": [
-        8.1,
-        9.6
+        134,
+        -25.5
       ],
-      "viralScore": 68,
+      "viralScore": 77,
       "intensityTier": "high",
-      "topicCount": 42,
+      "topicCount": 29,
       "topTopic": {
-        "slug": "nigeria-democratic-congress-town-hall-disruption",
-        "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
-        "headline": "Political Tensions Escalate In Nigeria Following Kano Party Clashes",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 65,
+        "slug": "man-charged-murder-fatal-home-invasion",
+        "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+        "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 74,
         "intensityTier": "high"
       }
     },
@@ -234,7 +212,7 @@
       ],
       "viralScore": 67,
       "intensityTier": "high",
-      "topicCount": 22,
+      "topicCount": 23,
       "topTopic": {
         "slug": "cheptumo-ayabei-appointed-tsc-ceo",
         "canonicalPath": "/news/ke/cheptumo-ayabei-appointed-tsc-ceo/",
@@ -246,21 +224,21 @@
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
       "centroid": [
-        10.4,
-        51.1
+        8.1,
+        9.6
       ],
-      "viralScore": 66,
+      "viralScore": 67,
       "intensityTier": "high",
-      "topicCount": 4,
+      "topicCount": 42,
       "topTopic": {
-        "slug": "germany-eu-rwanda-migration-hubs",
-        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
-        "headline": "Germany And Four EU Nations Plan Rwanda Migrant Return Facilities",
+        "slug": "nigeria-democratic-congress-town-hall-disruption",
+        "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
+        "headline": "Political Tensions Escalate In Nigeria Following Kano Party Clashes",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 64,
@@ -278,13 +256,57 @@
       ],
       "viralScore": 66,
       "intensityTier": "high",
-      "topicCount": 33,
+      "topicCount": 34,
       "topTopic": {
         "slug": "delhi-air-quality-grap-iii-restrictions",
         "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
         "headline": "Delhi Air Quality Remains In Very Poor To Severe Categories",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
+      "centroid": [
+        10.4,
+        51.1
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "germany-eu-rwanda-migration-hubs",
+        "canonicalPath": "/news/de/germany-eu-rwanda-migration-hubs/",
+        "headline": "Germany And Four EU Nations Plan Rwanda Migrant Return Facilities",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 63,
         "intensityTier": "high"
       }
@@ -307,28 +329,6 @@
         "headline": "Singapore Education Ministry Confirms PSLE Result Release Date",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 62,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
         "viralScore": 62,
         "intensityTier": "high"
       }
@@ -388,7 +388,7 @@
       ],
       "viralScore": 59,
       "intensityTier": "active",
-      "topicCount": 6,
+      "topicCount": 7,
       "topTopic": {
         "slug": "estonia-to-close-russia-border-crossings",
         "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
@@ -408,37 +408,15 @@
         45,
         24
       ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
-        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
-        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
-      "centroid": [
-        -102.5,
-        23.6
-      ],
       "viralScore": 55,
       "intensityTier": "active",
       "topicCount": 5,
       "topTopic": {
-        "slug": "guadalajara-cartel-leader-gallardo-dies",
-        "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
-        "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 53,
         "intensityTier": "active"
       }
@@ -488,6 +466,28 @@
       }
     },
     {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "guadalajara-cartel-leader-gallardo-dies",
+        "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
+        "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 52,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "JP",
       "isoNumeric": "392",
       "name": "Japan",
@@ -496,7 +496,7 @@
         138.5,
         36.5
       ],
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "topicCount": 5,
       "topTopic": {
@@ -505,29 +505,7 @@
         "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
-      "centroid": [
-        90.3,
-        23.7
-      ],
-      "viralScore": 51,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "sheikh-hasina-seeks-passport-for-return",
-        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
-        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 51,
+        "viralScore": 49,
         "intensityTier": "active"
       }
     },
@@ -549,6 +527,28 @@
         "headline": "Mass Shooting Incidents In South Africa Result In Seventeen Deaths",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
+        "viralScore": 50,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
+      ],
+      "viralScore": 50,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 50,
         "intensityTier": "active"
       }
@@ -576,28 +576,6 @@
       }
     },
     {
-      "code": "PK",
-      "isoNumeric": "586",
-      "name": "Pakistan",
-      "slug": "pakistan",
-      "centroid": [
-        69.3,
-        30
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "former-pakistan-leader-seeks-medical-care",
-        "canonicalPath": "/news/pk/former-pakistan-leader-seeks-medical-care/",
-        "headline": "Former Pakistan Prime Minister Requests Urgent Medical Assistance",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 45,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "MY",
       "isoNumeric": "458",
       "name": "Malaysia",
@@ -616,6 +594,28 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 42,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PK",
+      "isoNumeric": "586",
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "centroid": [
+        69.3,
+        30
+      ],
+      "viralScore": 45,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "former-pakistan-leader-seeks-medical-care",
+        "canonicalPath": "/news/pk/former-pakistan-leader-seeks-medical-care/",
+        "headline": "Former Pakistan Prime Minister Requests Urgent Medical Assistance",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
