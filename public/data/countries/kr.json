@@ -3,25 +3,25 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 85,
+  "viralScore": 97,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-17T05:18:00Z",
+  "generatedAt": "2026-11-17T08:18:00Z",
   "clusters": [
     {
       "slug": "south-korean-tax-exam-ai-scandal",
       "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-      "headline": "South Korea Tightens Exam Security Amidst AI Cheating Scandals",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 82,
-      "intensityTier": "high",
+      "headline": "South Korea Implements New Anti-Cheating Rules For College Exams",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 94,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Authorities are implementing stricter screening for smart wearables and glasses after a top-scoring candidate admitted to AI-assisted cheating.",
-        "Police have recovered miniature camera equipment used in the tax accountancy examination incident currently under investigation."
+        "Prime Minister Han Seong-sook unveiled a new regulatory package aimed at preventing AI-assisted cheating during college entrance examinations.",
+        "The government plans to collaborate with global technology companies to develop detection tools for unauthorized AI use."
       ],
       "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261115000700315"
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/east-asia/south-korean-police-probes-top-exam-scorer-after-ai-cheating-confession-6552626"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "President Lee Jae Myung Attends ASEAN Summit To Discuss AI And Ties",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 40,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Lee Jae Myung proposed a regional initiative to promote equitable access to artificial intelligence benefits.",
@@ -47,7 +47,7 @@
       "headline": "President Prabowo Advocates For Stronger Regional Trade Agreements",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 35,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Prabowo Subianto emphasized the Regional Comprehensive Economic Partnership as a foundation for regional economic stability.",
@@ -76,12 +76,29 @@
       }
     },
     {
+      "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
+      "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
+      "headline": "South Korean Major Corporations Report Varied Third Quarter Results",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "South Korean stock markets experienced a decline of over 3 percent due to losses in the technology sector.",
+        "Major corporations reported mixed third-quarter financial results, with significant drops in net profit for several energy and retail entities."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320"
+      }
+    },
+    {
       "slug": "samsung-lions-win-korean-series-championship",
       "canonicalPath": "/news/kr/samsung-lions-win-korean-series-championship/",
       "headline": "Samsung Lions Claim First Korean Series Championship In Twelve Years",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 19,
+      "viralScore": 18,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "The Samsung Lions defeated the Wiz to secure their first Korean Series championship since 2014.",
@@ -259,23 +276,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261109005600320"
-      }
-    },
-    {
-      "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
-      "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
-      "headline": "South Korean Major Corporations Report Varied Third Quarter Results",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "State-run energy entities experienced divergent results, with KEPCO reporting a significant profit drop due to fuel costs while KOGAS saw gains.",
-        "Technology and gaming firms, including Naver, KT, and Krafton, reported lower operating profits attributed to rising AI investments and operational challenges."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320"
       }
     }
   ]
