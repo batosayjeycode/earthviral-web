@@ -71,6 +71,8 @@ export interface BatchMeta {
     updatedClusters: number;
     /** Stories dropped this batch by the per-country cap (now redirected). */
     retiredClusters?: number;
+    /** Duplicate stories merged into another story this batch. */
+    mergedDuplicates?: number;
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;
