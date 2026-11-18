@@ -1,26 +1,39 @@
 {
-  "batchId": "batch-202611181418",
-  "generatedAt": "2026-11-18T14:18:00Z",
-  "nextUpdateAt": "2026-11-18T17:17:00Z",
+  "batchId": "batch-202611181718",
+  "generatedAt": "2026-11-18T17:18:00Z",
+  "nextUpdateAt": "2026-11-18T20:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 33,
-    "viralTopics": 586,
-    "globalIndex": 83
+    "activeCountries": 31,
+    "viralTopics": 597,
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 31,
+    "feedsOk": 30,
     "feedsFailed": [
       "malay-mail: HTTP 404 for https://www.malaymail.com/feed/rss/malaysia",
+      "nation-ke: HTTP 404 for https://nation.africa/kenya/rss.xml",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1260,
-    "newClusters": 5,
-    "updatedClusters": 97,
+    "articlesFetched": 1237,
+    "newClusters": 21,
+    "updatedClusters": 72,
     "retiredClusters": 0,
-    "mergedDuplicates": 1,
-    "aiCalls": 30,
-    "durationMs": 210242
+    "aiCalls": 40,
+    "aiFailures": {
+      "server-error": 2
+    },
+    "aiFailureSamples": [
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      }
+    ],
+    "durationMs": 341954
   }
 }

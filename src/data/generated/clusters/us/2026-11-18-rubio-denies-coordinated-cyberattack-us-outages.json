@@ -6,28 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Secretary Of State Rubio Denies Links In Recent US Tech Outages",
-  "seoTitle": "Rubio Denies Links Between US Tech Outages",
-  "metaDescription": "Secretary of State Marco Rubio states there is no evidence linking recent service outages across the US to cyberattacks or coordinated activity.",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "Secretary Rubio Addresses Recent US Tech Outages Amid Public Concern",
+  "seoTitle": "Rubio Addresses US Tech Outages",
+  "metaDescription": "Secretary of State Rubio denies systemic cyberattack links regarding recent US tech outages as public concern grows following network disruptions.",
   "aiSummaryBullets": [
-    "Secretary of State Marco Rubio stated there is zero evidence that the recent series of technology outages are linked to each other.",
-    "The administration has explicitly denied that the country is currently under a systemic cyberattack.",
-    "Recent disruptions have impacted various sectors, including email services, flight operations, and classified communications at the NSA."
+    "Secretary of State Rubio stated there is no evidence linking recent network outages to a coordinated cyberattack or systemic threat.",
+    "House committee members received testimony confirming that current technical disruptions affecting major firms and banks appear unrelated.",
+    "Reports of increased panic buying at retail chains have emerged as public unease regarding the reliability of essential services persists."
   ],
-  "aiContextParagraph": "A series of widespread technology outages has disrupted various sectors across the United States over the past week, affecting commercial services such as email and flight operations. On Tuesday, these technical difficulties extended to the US National Security Agency, impacting classified communications. In response to the growing national concern, Secretary of State Marco Rubio informed the public that there is currently no evidence of a coordinated cyberattack or a connection between the individual failures. Officials have emphasized that the country is not under a systemic attack. Cloudflare CEO Matthew Prince has also engaged with media outlets to discuss the technical origins behind these recent service interruptions. The administration continues to monitor the situation as investigations into the root causes of these disparate technological failures remain ongoing.",
-  "whyItIsViral": "This story is trending due to rapid coverage across nine independent news outlets and high public interest in the stability of national infrastructure.",
+  "aiContextParagraph": "A series of widespread network outages affecting major platforms like Microsoft Outlook and various banking institutions has prompted a federal response. During a House committee hearing regarding global threats, Secretary of State Rubio explicitly ruled out the possibility of a systemic cyberattack, asserting that there is zero evidence to suggest the incidents are connected. Despite official assurances that the country is not under a coordinated assault, the frequency of the service disruptions has triggered localized public anxiety. This unease has reportedly manifested in increased consumer activity, with some analysts noting a surge in panic buying for emergency supplies at major retail outlets. Technology firms, including Cloudflare, are continuing to address the technical factors behind these failures while the government maintains its position that the events are not the result of malicious state-sponsored activity or interconnected digital sabotage.",
+  "whyItIsViral": "This story is viral due to high-velocity coverage across nine independent news outlets as public anxiety surrounding infrastructure stability continues to escalate.",
   "viralScore": 92,
   "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 9,
-    "coverageVelocityScore": 87,
+    "coverageVelocityScore": 85,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-18T01:17:59Z",
-  "lastUpdatedBatchAt": "2026-11-18T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-18T17:18:00Z",
   "sources": [
     {
       "publisherName": "CBS News",
@@ -133,6 +133,20 @@
       "articleTitle": "Cloudflare CEO on what's behind recent tech outages",
       "articleUrl": "https://www.cbsnews.com/video/cloudflare-ceo-on-whats-behind-recent-tech-outages/",
       "publishedAt": "2026-11-18T13:58:48Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Costco sees surge in panic buying after tech outages, report says",
+      "articleUrl": "https://www.cbsnews.com/news/costco-panic-buying-tech-outages-generators/",
+      "publishedAt": "2026-11-18T14:37:36Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "\"No indication\" outages are related to cyberattacks, officials say",
+      "articleUrl": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/",
+      "publishedAt": "2026-11-18T17:09:49Z"
     }
   ],
   "entityTags": [
@@ -141,26 +155,26 @@
       "slug": "marco-rubio"
     },
     {
-      "name": "National Security Agency",
-      "slug": "national-security-agency"
-    },
-    {
-      "name": "Cloudflare",
-      "slug": "cloudflare"
+      "name": "United States Government",
+      "slug": "united-states-government"
     },
     {
       "name": "Cybersecurity",
       "slug": "cybersecurity"
+    },
+    {
+      "name": "Technology Outages",
+      "slug": "technology-outages"
     }
   ],
   "relatedInCountrySlugs": [
-    "nsa-classified-network-goes-offline",
+    "faa-issues-nationwide-flight-ground-stop",
     "nsa-internal-network-communication-disruption",
-    "judge-halts-washington-golf-course-renovation"
+    "nsa-classified-network-goes-offline"
   ],
   "relatedInCategorySlugs": [
-    "france-accuses-iran-supermarket-cyber-attacks",
-    "g7-nations-convene-in-paris-talks",
-    "germany-expands-intelligence-agency-surveillance-powers"
+    "singapore-systems-impacted-by-microsoft-outage",
+    "malicious-javascript-targets-cryptocurrency",
+    "australia-to-adopt-mandatory-ai-safeguards"
   ]
 }

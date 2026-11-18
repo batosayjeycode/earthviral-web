@@ -6,27 +6,8 @@
   "countryName": "Spain",
   "countrySlug": "spain",
   "region": "Europe",
-  "firstDetectedAt": "2026-11-18T13:00:19Z",
-  "lastUpdatedBatchAt": "2026-11-18T14:18:00Z",
-  "sources": [
-    {
-      "publisherName": "Le Monde",
-      "publisherDomain": "lemonde.fr",
-      "articleTitle": "Spanish court opens sex abuse probe into Julio Iglesias",
-      "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/18/spanish-court-opens-sex-abuse-probe-into-julio-iglesias_6783461_4.html",
-      "publishedAt": "2026-11-18T13:00:19Z"
-    }
-  ],
-  "relatedInCountrySlugs": [
-    "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-    "real-madrid-la-liga-mbappe-controversy",
-    "police-officer-killed-oviedo-spain"
-  ],
-  "relatedInCategorySlugs": [
-    "indonesian-police-investigate-treason-allegations",
-    "investigation-into-kupang-regent-allegations",
-    "police-investigate-ketapang-child-abuse-case"
-  ],
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
   "headline": "Spanish Court Initiates Investigation Into Allegations Against Iglesias",
   "seoTitle": "Spanish Court Probes Julio Iglesias",
   "metaDescription": "A Spanish court has opened an investigation into allegations of sexual abuse against 83-year-old singer Julio Iglesias, who has denied the claims.",
@@ -37,8 +18,32 @@
   ],
   "aiContextParagraph": "The Spanish judicial system has opened an official investigation following accusations of sexual abuse directed at internationally recognized singer Julio Iglesias. The allegations involve events that purportedly occurred in 2021 at the artist's private residences located in the Caribbean. At 83 years old, the singer is a prominent figure in the global music industry, known for his extensive career and international presence. In response to the formal legal inquiry, the artist has issued a denial regarding the claims, stating that the accusations are categorically false. The case is currently being handled through official channels in Spain, though no further details regarding the specific evidence or legal timeline have been released by authorities. The situation remains a matter of active legal review as investigators examine the claims surrounding the incidents reported to have happened at the singer's overseas properties several years ago.",
   "whyItIsViral": "The story is trending due to strong public search interest regarding the prominent singer, despite limited coverage from mainstream news outlets.",
-  "categorySlug": "crime-law",
-  "categoryName": "Crime & Law",
+  "viralScore": 47,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 2,
+    "coverageVelocityScore": 37,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Emerging Coverage"
+  },
+  "firstDetectedAt": "2026-11-18T13:00:19Z",
+  "lastUpdatedBatchAt": "2026-11-18T17:18:00Z",
+  "sources": [
+    {
+      "publisherName": "Le Monde",
+      "publisherDomain": "lemonde.fr",
+      "articleTitle": "Spanish court opens sex abuse probe into Julio Iglesias",
+      "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/18/spanish-court-opens-sex-abuse-probe-into-julio-iglesias_6783461_4.html",
+      "publishedAt": "2026-11-18T13:00:19Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "Spanish court investigates Julio Iglesias over sexual abuse claims",
+      "articleUrl": "https://www.theguardian.com/world/2026/nov/18/spanish-court-investigates-julio-iglesias-two-women-allegations",
+      "publishedAt": "2026-11-18T14:55:32Z"
+    }
+  ],
   "entityTags": [
     {
       "name": "Julio Iglesias",
@@ -53,12 +58,14 @@
       "slug": "sexual-abuse-allegations"
     }
   ],
-  "viralScore": 42,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 28,
-    "publicSearchSignalScore": 76,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
+    "real-madrid-la-liga-mbappe-controversy",
+    "police-officer-killed-oviedo-spain"
+  ],
+  "relatedInCategorySlugs": [
+    "spanish-court-accepts-julio-iglesias-complaint",
+    "investigation-into-kupang-regent-allegations",
+    "police-investigate-ketapang-child-abuse-case"
+  ]
 }

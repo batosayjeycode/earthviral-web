@@ -8,26 +8,26 @@
   "region": "Asia",
   "categorySlug": "politics-government",
   "categoryName": "Politics & Government",
-  "headline": "Indonesian Officials Address Public Information Regarding Policy Issues",
-  "seoTitle": "Indonesian Officials Clarify Recent Policy News",
-  "metaDescription": "Indonesian government officials and authorities clarify reports concerning immigration status, driving licenses, and hajj pilgrimage health policies.",
+  "headline": "Indonesian Officials Clarify Government Policies And Public Rights",
+  "seoTitle": "Indonesian Officials Clarify Government Policies",
+  "metaDescription": "Indonesian officials address public concerns regarding citizens' rights to criticize, wildlife conservation, and various administrative policy updates.",
   "aiSummaryBullets": [
-    "Minister of Home Affairs Tito Karnavian denied rumors regarding travel restrictions imposed upon him.",
-    "The Traffic Corps clarified that driver's licenses require renewal every five years, rejecting claims of lifelong validity.",
-    "The Ministry of Hajj and Umrah stated that pilgrims with certain medical conditions may face permanent cancellation of their journey."
+    "Coordinating Minister for Political and Security Affairs Dudung Abdurachman stated that citizens possess the right to criticize government policies.",
+    "Government authorities confirmed that the potential relocation of Javan Rhinos remains contingent on comprehensive scientific assessment.",
+    "Officials addressed various administrative matters, including debunking misinformation regarding travel restrictions and identification document validity."
   ],
-  "aiContextParagraph": "Recent developments in Indonesia have seen government entities addressing various public reports and policy clarifications. Minister of Home Affairs Tito Karnavian officially denied circulating rumors regarding travel bans, emphasizing his focus on ministerial duties and clarifying that he has not been involved in police affairs since 2019. Concurrently, the National Police Traffic Corps issued a statement debunking social media claims that driver's licenses would be valid for life, reaffirming the mandatory five-year renewal policy. Furthermore, the Ministry of Hajj and Umrah has updated guidance for prospective pilgrims, noting that individuals diagnosed with nine specific medical conditions may be ineligible for the 2027 pilgrimage. Separately, groups of retired police officers have publicly declared their continued support for the administration of President Prabowo Subianto in its ongoing policy implementation efforts.",
-  "whyItIsViral": "This cluster is trending due to the coordinated output from three major independent news outlets covering official government rebuttals of misinformation and policy updates.",
-  "viralScore": 48,
-  "intensityTier": "active",
+  "aiContextParagraph": "The Indonesian government has recently issued several statements regarding public rights, environmental policy, and administrative procedures to ensure clarity on national issues. Minister Dudung Abdurachman emphasized that public criticism of government policy is permissible. In a separate development, environmental authorities stated that the Javan Rhino population will remain in Ujung Kulon until rigorous ecological studies support a move to Alas Purwo. Other officials have focused on clarifying administrative matters to maintain public order. This includes the Minister of Home Affairs Tito Karnavian addressing reports regarding his duties, while various government bodies have corrected misinformation concerning police-issued identification and travel status. These statements aim to define the current administration's stance on democratic engagement and procedural governance as authorities coordinate between different sectors of state responsibility.",
+  "whyItIsViral": "This story is tracked by five independent outlets with a moderate pace of coverage across various government policy updates.",
+  "viralScore": 64,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 9,
+    "verifiedPublisherCount": 5,
+    "coverageVelocityScore": 36,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-08T11:21:32Z",
-  "lastUpdatedBatchAt": "2026-11-18T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-18T17:18:00Z",
   "sources": [
     {
       "publisherName": "CNN Indonesia",
@@ -65,39 +65,53 @@
       "publishedAt": "2026-11-09T14:07:06Z"
     },
     {
+      "publisherName": "CNN Indonesia",
+      "publisherDomain": "cnnindonesia.com",
+      "articleTitle": "Pemerintah Tegaskan Pemindahan Badak Jawa Tergantung Kajian Ilmiah",
+      "articleUrl": "https://www.cnnindonesia.com/nasional/20261117183134-20-1428232/pemerintah-tegaskan-pemindahan-badak-jawa-tergantung-kajian-ilmiah",
+      "publishedAt": "2026-11-17T12:57:28Z"
+    },
+    {
       "publisherName": "CNBC Indonesia",
       "publisherDomain": "cnbcindonesia.com",
       "articleTitle": "Apresiasi Pemda Berprestasi, Mendagri Tito Tegaskan Hal Ini!",
       "articleUrl": "https://www.cnbcindonesia.com/news/20261118123809-4-786269/apresiasi-pemda-berprestasi-mendagri-tito-tegaskan-hal-ini",
       "publishedAt": "2026-11-18T05:41:56Z"
+    },
+    {
+      "publisherName": "VIVA",
+      "publisherDomain": "viva.co.id",
+      "articleTitle": "Menko Dudung Tegaskan Rakyat Bebas Kritik Pemerintah, Tapi Ingatkan Hal Ini",
+      "articleUrl": "https://www.viva.co.id/berita/nasional/1944700-menko-dudung-tegaskan-rakyat-bebas-kritik-pemerintah-tapi-ingatkan-hal-ini",
+      "publishedAt": "2026-11-18T17:05:00Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Dudung Abdurachman",
+      "slug": "dudung-abdurachman"
+    },
     {
       "name": "Tito Karnavian",
       "slug": "tito-karnavian"
     },
     {
-      "name": "Prabowo Subianto",
-      "slug": "prabowo-subianto"
+      "name": "Ujung Kulon",
+      "slug": "ujung-kulon"
     },
     {
-      "name": "Indonesian National Police",
-      "slug": "indonesian-national-police"
-    },
-    {
-      "name": "Hajj Pilgrimage",
-      "slug": "hajj-pilgrimage"
+      "name": "Government Policy",
+      "slug": "government-policy"
     }
   ],
   "relatedInCountrySlugs": [
+    "indonesia-2027-minimum-wage-policy",
     "president-prabowo-meets-former-police-chiefs",
-    "listyo-sigit-investigation-wiretapping-allegations",
-    "indonesian-police-conduct-ethics-hearing-listyo-sigit"
+    "indonesian-ministry-recognizes-regional-economic-growth"
   ],
   "relatedInCategorySlugs": [
-    "trump-prabowo-asean-us-summit-meeting",
-    "prabowo-asean-japan-economic-cooperation",
-    "prabowo-reaffirms-support-palestinian-independence"
+    "karnataka-government-policy-updates",
+    "modi-pitroda-public-exchange",
+    "nigeria-upgrades-health-centers-policy-goals"
   ]
 }
