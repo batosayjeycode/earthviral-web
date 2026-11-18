@@ -13,6 +13,7 @@ import SignalBreakdown from '../../../components/news/SignalBreakdown.astro';
 import LocatorGlobe from '../../../components/map/LocatorGlobe.astro';
 import AdSlot from '../../../components/ads/AdSlot.astro';
 import JsonLd from '../../../components/seo/JsonLd.astro';
+import { pageTitle } from '../../../lib/site.ts';
 import { newsArticleGraph } from '../../../lib/structuredData.ts';
 import {
   batchMeta,
@@ -64,7 +65,7 @@ const contextHtml = linkifyFirstMentions(c.aiContextParagraph, [
 
 // The pipeline writes a search-length seoTitle (≤ 60 chars) so the full title fits in results.
 // Unique across all stories even when two share a seoTitle (see getStoryTitles).
-const title = `${(await getStoryTitles()).get(c.id)} | EarthViral`;
+const title = pageTitle((await getStoryTitles()).get(c.id)!);
 const countryCategoryHref = `/country/${c.countrySlug}/${c.categorySlug}/`;
 const jsonLd = newsArticleGraph(c, [
   { name: c.countryName, path: `/country/${c.countrySlug}/` },

@@ -198,6 +198,15 @@ describe('canonical and social metadata', () => {
     });
   }
 
+  test('titles fit search results: the brand is added only when it fits, never after a cut', () => {
+    for (const page of indexable) {
+      const title = decode(page.html.match(/<title>([^<]+)<\/title>/)[1]);
+      if (title.endsWith(' | EarthViral'))
+        assert.ok(title.length <= 70, `${page.path}: ${title.length} chars: ${title}`);
+      assert.doesNotMatch(title, /… \| EarthViral$/, page.path);
+    }
+  });
+
   test('story pages use their own social card', () => {
     for (const page of stories) {
       assert.match(meta(page.html, 'og:image'), /\/og\/[a-z]{2}-\d{8}-[a-z0-9-]+\.png$/, page.path);
@@ -352,6 +361,35 @@ describe('hosting configuration', () => {
 
   test('batch data is never cached as immutable', () => {
     assert.match(headers, /\/data\/\*\s+Cache-Control: public, max-age=300, must-revalidate/);
+  });
+});
+
+describe('crawl paths', () => {
+  test('every story is linked from its country archive (home → country → archive → story)', () => {
+    const linked = new Set();
+    for (const page of pages.filter((p) => /^\/country\/[^/]+\/archive\/(\d+\/)?$/.test(p.path))) {
+      for (const [, href] of page.html.matchAll(/<a\b[^>]*href="(\/news\/[^"]+)"/g))
+        linked.add(href);
+    }
+    const missing = stories.filter((p) => !linked.has(p.path)).map((p) => p.path);
+    assert.deepEqual(missing.slice(0, 5), [], `${missing.length} stories missing from archives`);
+  });
+
+  test('every country hub links each of its archive pages, and home links every country hub', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    for (const page of pages.filter((p) => /^\/country\/[^/]+\/archive\/(\d+\/)?$/.test(p.path))) {
+      const hub = page.path.replace(/archive\/(\d+\/)?$/, '');
+      assert.ok(home.includes(`href="${hub}"`), `home does not link ${hub}`);
+      const hubHtml = pages.find((p) => p.path === hub)?.html ?? '';
+      assert.ok(hubHtml.includes(`href="${page.path}"`), `${hub} does not link ${page.path}`);
+    }
+  });
+
+  test('the homepage stays light: a capped story list, not the whole archive', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    const cards = (home.match(/<article\b[^>]*data-category=/g) ?? []).length;
+    assert.ok(cards <= 60, `homepage renders ${cards} story cards`);
+    assert.ok(home.length < 400_000, `homepage HTML is ${Math.round(home.length / 1024)} KB`);
   });
 });
 

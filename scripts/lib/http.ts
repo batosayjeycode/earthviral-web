@@ -63,8 +63,33 @@ export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Prom
   throw lastError;
 }
 
+/**
+ * Character set of a response body: the Content-Type `charset`, else the XML declaration's
+ * `encoding` (e.g. Folha's feed is `<?xml … encoding="ISO-8859-1"?>` served as plain
+ * `text/xml`), else UTF-8. `Response.text()` always assumes UTF-8, which turned every
+ * accented character of Latin-1 feeds into U+FFFD.
+ */
+export function detectCharset(contentType: string | null, head: Uint8Array): string {
+  const fromHeader = /charset\s*=\s*"?([\w.:-]+)/i.exec(contentType ?? '')?.[1];
+  if (fromHeader) return fromHeader.toLowerCase();
+  const prolog = new TextDecoder('latin1').decode(head.subarray(0, 256));
+  const fromXml = /^\s*<\?xml[^>]*\bencoding\s*=\s*["']([\w.:-]+)["']/i.exec(prolog)?.[1];
+  return (fromXml ?? 'utf-8').toLowerCase();
+}
+
+/** Decode bytes in `charset`, falling back to UTF-8 for labels the runtime doesn't know. */
+export function decodeBody(bytes: Uint8Array, charset: string): string {
+  try {
+    return new TextDecoder(charset).decode(bytes);
+  } catch {
+    return new TextDecoder('utf-8').decode(bytes);
+  }
+}
+
 export async function fetchText(url: string, opts?: FetchOptions): Promise<string> {
-  return (await fetchWithRetry(url, opts)).text();
+  const res = await fetchWithRetry(url, opts);
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  return decodeBody(bytes, detectCharset(res.headers.get('content-type'), bytes));
 }
 
 /** Run async tasks with a concurrency limit, preserving input order. */

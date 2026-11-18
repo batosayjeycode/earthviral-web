@@ -73,6 +73,8 @@ export interface BatchMeta {
     retiredClusters?: number;
     /** Duplicate stories merged into another story this batch. */
     mergedDuplicates?: number;
+    /** Stories still showing non-AI fallback text after this batch (retried automatically). */
+    fallbackSummaries?: number;
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;
