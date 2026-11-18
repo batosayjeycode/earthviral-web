@@ -105,22 +105,26 @@ let titleCache: Map<string, string> | undefined;
 export async function getStoryTitles(): Promise<Map<string, string>> {
   if (titleCache) return titleCache;
   const key = (t: string) => t.trim().toLowerCase();
+  // A seoTitle clipped with "…" (fallback text, or an over-long AI title) reads as broken in
+  // results; the full headline is the better title.
+  const seoTitle = (c: ViralClusterStaticRecord) =>
+    c.seoTitle.trim().endsWith('…') ? c.headline.trim() : c.seoTitle.trim();
   const clusters = [...(await getClusters())].sort(
     (a, b) => a.firstDetectedAt.localeCompare(b.firstDetectedAt) || a.id.localeCompare(b.id),
   );
   const firstWithSeoTitle = new Map<string, ViralClusterStaticRecord>();
   for (const c of clusters)
-    if (!firstWithSeoTitle.has(key(c.seoTitle))) firstWithSeoTitle.set(key(c.seoTitle), c);
+    if (!firstWithSeoTitle.has(key(seoTitle(c)))) firstWithSeoTitle.set(key(seoTitle(c)), c);
 
   const titles = new Map<string, string>();
   const used = new Set<string>();
   for (const c of firstWithSeoTitle.values()) {
-    titles.set(c.id, c.seoTitle.trim());
-    used.add(key(c.seoTitle));
+    titles.set(c.id, seoTitle(c));
+    used.add(key(seoTitle(c)));
   }
   for (const c of clusters) {
     if (titles.has(c.id)) continue;
-    const base = `${c.seoTitle.trim()} — ${c.countryName}, ${formatDateWib(c.firstDetectedAt)}`;
+    const base = `${seoTitle(c)} — ${c.countryName}, ${formatDateWib(c.firstDetectedAt)}`;
     let title = [c.headline.trim(), base].find((t) => !used.has(key(t)));
     for (let n = 2; !title; n++) if (!used.has(key(`${base} (${n})`))) title = `${base} (${n})`;
     titles.set(c.id, title);

@@ -4,7 +4,45 @@
  */
 import { CATEGORIES, REGIONS } from './taxonomy.ts';
 import { batchMeta, getClusters, getCountries, getTopics } from './data.ts';
-import type { ViralClusterStaticRecord } from './types.ts';
+import type { CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
+
+/** Stories per country archive page. */
+export const ARCHIVE_PAGE_SIZE = 48;
+
+export interface ArchivePage {
+  /** 1-based page number. */
+  n: number;
+  path: string;
+  stories: ViralClusterStaticRecord[];
+}
+
+/**
+ * A country's full story archive, newest first, split into pages:
+ * /country/[slug]/archive/, /country/[slug]/archive/2/, … Hubs and the homepage show only
+ * a selection, so these pages are what keeps every published story within three clicks of
+ * the homepage (home → country → archive page → story) and never orphaned.
+ */
+export function countryArchive(
+  country: Pick<CountryMasterRecord, 'code' | 'slug'>,
+  clusters: ViralClusterStaticRecord[],
+): ArchivePage[] {
+  const own = clusters
+    .filter((c) => c.countryCode === country.code)
+    .sort(
+      (a, b) =>
+        Date.parse(b.firstDetectedAt) - Date.parse(a.firstDetectedAt) || a.id.localeCompare(b.id),
+    );
+  const pages: ArchivePage[] = [];
+  for (let i = 0; i < own.length; i += ARCHIVE_PAGE_SIZE) {
+    const n = pages.length + 1;
+    pages.push({
+      n,
+      path: `/country/${country.slug}/archive/${n === 1 ? '' : `${n}/`}`,
+      stories: own.slice(i, i + ARCHIVE_PAGE_SIZE),
+    });
+  }
+  return pages;
+}
 
 export interface SitemapEntry {
   path: string;
@@ -42,6 +80,7 @@ export async function coreEntries(): Promise<SitemapEntry[]> {
       if (own.some((c) => c.categorySlug === cat.slug))
         entries.push(hub(`/country/${country.slug}/${cat.slug}/`, 0.7));
     }
+    for (const page of countryArchive(country, clusters)) entries.push(hub(page.path, 0.5));
   }
   for (const t of topics) entries.push(hub(`/topic/${t.slug}/`, 0.6));
   for (const path of ['/about/', '/contact/', '/privacy/', '/terms/'])

@@ -30,3 +30,18 @@ export const SITE = {
 } as const;
 
 export const absoluteUrl = (path: string) => new URL(path, SITE.url).href;
+
+/** Longest `<title>` kept whole in search results (Google cuts at ~600 px, roughly 60–70 chars). */
+export const MAX_TITLE = 70;
+
+/**
+ * `<title>` from candidate wordings, longest first: the first that fits within MAX_TITLE with
+ * " | EarthViral" appended, else the shortest without the brand (Google shows the site name
+ * next to results anyway). Keeps titles from being cut off mid-phrase.
+ */
+export function pageTitle(...variants: string[]): string {
+  const brand = ` | ${SITE.name}`;
+  const fit = variants.find((v) => v.length + brand.length <= MAX_TITLE);
+  if (fit) return fit + brand;
+  return variants.reduce((a, b) => (b.length < a.length ? b : a));
+}

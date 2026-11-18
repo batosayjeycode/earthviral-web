@@ -17,6 +17,8 @@ import {
 import type { ViralClusterStaticRecord } from '../../src/lib/types.ts';
 import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
+import { summaryQueue } from './intelligence/selectStories.ts';
+import { decodeBody, detectCharset, fetchText } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
 import { slugify, tokenize, truncate } from './intelligence/text.ts';
@@ -434,6 +436,78 @@ describe('feeds', () => {
       traffic: 200000,
       newsTitles: ['Timnas menang'],
     });
+  });
+});
+
+describe('fallback summary retries', () => {
+  const item = (id: string, viralScore: number) => ({ id, score: { viralScore } });
+  const required = [item('new-low', 40), item('new-high', 90), item('updated', 60)];
+  const fallback = [item('fb-a', 95), item('fb-b', 20), item('fb-c', 70)];
+  const ids = (xs: { id: string }[]) => xs.map((x) => x.id);
+
+  it('retries the top fallback stories after all required work, whatever their score', () => {
+    const { queue, retried } = summaryQueue(required, fallback, { all: false, auto: 2 });
+    assert.deepEqual(ids(queue), ['new-high', 'updated', 'new-low', 'fb-a', 'fb-c']);
+    assert.deepEqual(ids(retried), ['fb-a', 'fb-c']);
+  });
+
+  it('can be switched off, and never retries more than exist', () => {
+    assert.deepEqual(ids(summaryQueue(required, fallback, { all: false, auto: 0 }).queue), [
+      'new-high',
+      'updated',
+      'new-low',
+    ]);
+    assert.equal(summaryQueue(required, fallback, { all: false, auto: 50 }).retried.length, 3);
+  });
+
+  it('--resummarize-fallback ranks every fallback story together with required work', () => {
+    const { queue, retried } = summaryQueue(required, fallback, { all: true, auto: 2 });
+    assert.deepEqual(ids(queue), ['fb-a', 'new-high', 'fb-c', 'updated', 'new-low', 'fb-b']);
+    assert.equal(retried.length, 3);
+  });
+});
+
+describe('feed encodings', () => {
+  // "Relação" / "Escândalo" in ISO-8859-1 (one byte per accented letter).
+  const latin1Feed = Uint8Array.from(
+    Buffer.from(
+      '<?xml version="1.0" encoding="ISO-8859-1" ?><rss><channel><item><title>Relação e escândalo</title></item></channel></rss>',
+      'latin1',
+    ),
+  );
+
+  it('detects the charset from Content-Type, then the XML declaration, else UTF-8', () => {
+    assert.equal(detectCharset('text/xml; charset=windows-1252', latin1Feed), 'windows-1252');
+    assert.equal(detectCharset('application/rss+xml; charset="UTF-8"', latin1Feed), 'utf-8');
+    assert.equal(detectCharset('text/xml', latin1Feed), 'iso-8859-1');
+    assert.equal(detectCharset(null, new TextEncoder().encode('<rss></rss>')), 'utf-8');
+    assert.equal(
+      detectCharset(null, new TextEncoder().encode("<?xml version='1.0' encoding='utf-8'?><rss/>")),
+      'utf-8',
+    );
+  });
+
+  it('decodes Latin-1 without replacement characters, and survives unknown labels', () => {
+    const text = decodeBody(latin1Feed, 'iso-8859-1');
+    assert.match(text, /Relação e escândalo/);
+    assert.doesNotMatch(text, /\uFFFD/);
+    assert.equal(decodeBody(new TextEncoder().encode('Açaí'), 'x-unknown-charset'), 'Açaí');
+  });
+
+  it('fetchText decodes a Latin-1 feed served as plain text/xml (Folha)', async () => {
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = async () =>
+      new Response(latin1Feed, { headers: { 'content-type': 'text/xml' } });
+    try {
+      const xml = await fetchText('https://feeds.example/rss.xml');
+      assert.match(xml, /Relação e escândalo/);
+      const utf8 = new TextEncoder().encode('<rss><title>Açaí — São Paulo</title></rss>');
+      globalThis.fetch = async () =>
+        new Response(utf8, { headers: { 'content-type': 'application/xml; charset=utf-8' } });
+      assert.match(await fetchText('https://feeds.example/utf8.xml'), /Açaí — São Paulo/);
+    } finally {
+      globalThis.fetch = realFetch;
+    }
   });
 });
 

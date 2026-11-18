@@ -49,6 +49,7 @@ const PAGES = [
   '/',
   STORY,
   COUNTRY,
+  `${COUNTRY}archive/`,
   CATEGORY,
   '/about/',
   '/search/',

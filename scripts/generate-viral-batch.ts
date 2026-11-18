@@ -18,6 +18,8 @@
  *   --max-ai <n>           LLM calls per batch (default 80)
  *   --resummarize-fallback re-summarise kept stories that still have non-AI fallback text
  *                          (e.g. from runs without an API key); counts toward --max-ai
+ *   --auto-resummarize <n> otherwise, retry up to n such stories per batch with AI calls left
+ *                          over after new/updated stories (default 10, 0 = off)
  *   --ai-concurrency <n>   parallel LLM calls (default 2, env AI_CONCURRENCY); keep low on free
  *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
@@ -56,7 +58,11 @@ import {
   type SummaryOutput,
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
-import { retireOldest, selectTopPerCountry } from './lib/intelligence/selectStories.ts';
+import {
+  retireOldest,
+  selectTopPerCountry,
+  summaryQueue,
+} from './lib/intelligence/selectStories.ts';
 import { mergeDuplicateStories } from './lib/intelligence/mergeDuplicates.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
@@ -105,6 +111,7 @@ const OPTS = {
   ),
   maxAi: intOption('max-ai', 80),
   resummarizeFallback: flag('resummarize-fallback'),
+  autoResummarize: intOption('auto-resummarize', 10),
   aiConcurrency: Math.max(
     1,
     intOption(
@@ -374,24 +381,33 @@ async function main() {
   // New and repaired clusters always need text; existing ones are re-summarised after ≥ 2 new
   // articles, or — with --resummarize-fallback and an AI provider — when they still have
   // non-AI text.
-  const resummarize = carried.filter(
+  // Kept stories still showing non-AI fallback text (an AI call failed or was over budget).
+  // --resummarize-fallback queues all of them; otherwise a few are retried every batch with
+  // leftover AI calls (see summaryQueue).
+  const fallbackKept = carried.filter(
     ({ cluster }) =>
-      OPTS.resummarizeFallback &&
       summarizer.provider !== 'none' &&
       newArticleCount(cluster) < 2 &&
       cluster.pruned === 0 &&
       isFallbackSummary(cluster.existing!),
   );
-  const needsText = [
-    ...selectedNew.map((x) => ({ ...x, isNew: true })),
-    ...repaired.map((x) => ({ ...x, isNew: true })),
-    ...updated
-      .filter(({ cluster }) => newArticleCount(cluster) >= 2 && cluster.pruned === 0)
-      .map((x) => ({ ...x, isNew: false })),
-    ...resummarize.map((x) => ({ ...x, isNew: false })),
-  ].sort((a, b) => b.score.viralScore - a.score.viralScore);
+  const { queue: needsText, retried } = summaryQueue(
+    [
+      ...selectedNew.map((x) => ({ ...x, isNew: true })),
+      ...repaired.map((x) => ({ ...x, isNew: true })),
+      ...updated
+        .filter(({ cluster }) => newArticleCount(cluster) >= 2 && cluster.pruned === 0)
+        .map((x) => ({ ...x, isNew: false })),
+    ],
+    fallbackKept.map((x) => ({ ...x, isNew: false })),
+    { all: OPTS.resummarizeFallback, auto: OPTS.autoResummarize },
+  );
   if (OPTS.resummarizeFallback) {
-    log(`  --resummarize-fallback: ${resummarize.length} kept stories with non-AI text queued`);
+    log(`  --resummarize-fallback: ${retried.length} kept stories with non-AI text queued`);
+  } else if (fallbackKept.length) {
+    log(
+      `  auto re-summarise: ${retried.length} of ${fallbackKept.length} stories with non-AI text queued (uses leftover budget)`,
+    );
   }
 
   log(
@@ -529,6 +545,7 @@ async function main() {
         retiredClusters: retiredNow.length,
         ...(merged.merges.length ? { mergedDuplicates: merged.merges.length } : {}),
         aiCalls,
+        fallbackSummaries: records.filter(isFallbackSummary).length,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },

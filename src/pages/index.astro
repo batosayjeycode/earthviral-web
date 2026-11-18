@@ -14,9 +14,13 @@ const ref = batchMeta.generatedAt;
 
 // lg: feature card (2×2) + 2 beside it + two rows of 3 → 9 cards fill the 3-column grid exactly.
 const trending = clusters.slice(0, 9);
-const latest = [...clusters].sort(
-  (a, b) => Date.parse(b.firstDetectedAt) - Date.parse(a.firstDetectedAt),
-);
+// Newest stories only. The full archive (up to VAS.maxStoredStories) is reachable through the
+// country, category and topic hubs and the sitemaps; rendering all of it here made the
+// homepage ~1.9 MB with ~19k elements, which hurts Core Web Vitals and dilutes its links.
+const LATEST_LIMIT = 48;
+const latest = [...clusters]
+  .sort((a, b) => Date.parse(b.firstDetectedAt) - Date.parse(a.firstDetectedAt))
+  .slice(0, LATEST_LIMIT);
 const latestCategories = CATEGORIES.filter((cat) =>
   latest.some((c) => c.categorySlug === cat.slug),
 );
@@ -129,6 +133,28 @@ const regions = REGIONS.map((r) => {
         ))}
       </div>
     </section>
+
+    <!-- Every country hub one click from home (each hub links its full story archive). -->
+    <nav aria-labelledby="countries-heading" class="pt-16">
+      <h2 id="countries-heading" class="text-2xl font-bold text-white sm:text-3xl">
+        <span aria-hidden="true">🗺️</span> All Countries
+      </h2>
+      <ul class="mt-6 flex flex-wrap gap-2 text-sm">
+        {[...countries]
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((c) => (
+            <li>
+              <a
+                class="flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-ink-muted hover:border-cyan/40 hover:text-white"
+                href={`/country/${c.slug}/`}
+              >
+                <span aria-hidden="true">{flagEmoji(c.code)}</span>
+                {c.name}
+              </a>
+            </li>
+          ))}
+      </ul>
+    </nav>
   </div>
 </BaseLayout>
 

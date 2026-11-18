@@ -63,3 +63,23 @@ export function retireOldest<T extends { lastUpdatedAt: string }>(
   const dropped = new Set(byAge.slice(0, items.length - Math.max(0, max)));
   return { kept: items.filter((x) => !dropped.has(x)), dropped: [...dropped] };
 }
+
+/**
+ * Order of AI summary work for a batch. `required` (new, repaired and updated stories) and,
+ * with `all`, every story still on fallback text are ranked together by score. Otherwise up
+ * to `auto` fallback stories (highest score first) are appended after the required work, so
+ * they only use AI calls left over once everything else is summarised.
+ */
+export function summaryQueue<T extends { score: { viralScore: number } }>(
+  required: T[],
+  fallback: T[],
+  { all, auto }: { all: boolean; auto: number },
+): { queue: T[]; retried: T[] } {
+  const byScore = (a: T, b: T) => b.score.viralScore - a.score.viralScore;
+  if (all) {
+    const queue = [...required, ...fallback].sort(byScore);
+    return { queue, retried: [...fallback] };
+  }
+  const retried = [...fallback].sort(byScore).slice(0, Math.max(0, auto));
+  return { queue: [...[...required].sort(byScore), ...retried], retried };
+}
