@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 96,
+  "viralScore": 90,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-18T02:18:00Z",
+  "generatedAt": "2026-11-18T05:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
@@ -13,32 +13,49 @@
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 93,
+      "viralScore": 87,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
         "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/faa-ground-stop-trump-admin-response/"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know?traffic_source=rss"
       }
     },
     {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 83,
-      "intensityTier": "high",
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "Secretary Of State Rubio Dismisses Fears Of Coordinated Cyberattack",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 87,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+        "Secretary of State Marco Rubio stated there is no evidence that recent technology disruptions are linked or the result of a systemic cyberattack.",
+        "The outages have affected multiple critical sectors, including national aviation, banking institutions, government agencies, and major technology companies."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/heres-what-might-be-causing-the-string-of-tech-related-outages/"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 85,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
+        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/opinions/2026/11/8/there-is-reason-to-hope-that-the-democrats-might-deliver-this-time?traffic_source=rss"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 80,
+      "viralScore": 83,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
@@ -59,12 +76,46 @@
       }
     },
     {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Democrat Mary Peltola Wins Alaska Senate Seat In Historic Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 81,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Democrat Mary Peltola defeated incumbent Republican Dan Sullivan in Alaska's closely contested US Senate race.",
+        "Peltola is the first Alaska Native elected to represent the state in the US Senate."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 75,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
       "slug": "trump-prabowo-asean-us-summit-meeting",
       "canonicalPath": "/news/us/trump-prabowo-asean-us-summit-meeting/",
       "headline": "President Donald Trump Praises President Prabowo At ASEAN-US Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump praised President Prabowo Subianto during the special ASEAN-US Summit in Manila.",
@@ -76,12 +127,46 @@
       }
     },
     {
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
+        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+      }
+    },
+    {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
+        "Despite the slight gain, the exchange rate remains elevated above the 18,000 Rupiah per dollar threshold."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+      }
+    },
+    {
       "slug": "nsa-classified-network-goes-offline",
       "canonicalPath": "/news/us/nsa-classified-network-goes-offline/",
       "headline": "National Security Agency Classified Network Experiences Outage",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A internal classified communications network at the National Security Agency experienced a period of downtime.",
@@ -98,7 +183,7 @@
       "headline": "US Investigating Potential Iranian Plots Amid Terrorism Charges",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Donald Trump stated that his administration is monitoring allegations regarding a potential Iranian dirty bomb plot in Washington.",
@@ -110,30 +195,13 @@
       }
     },
     {
-      "slug": "nsa-internal-network-communication-disruption",
-      "canonicalPath": "/news/us/nsa-internal-network-communication-disruption/",
-      "headline": "National Security Agency Reports Temporary Internal Network Issues",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
-        "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
-      }
-    },
-    {
       "slug": "us-soldier-arrested-for-russian-espionage",
       "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
       "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
         "The arrest follows allegations that the individual engaged in espionage activities while stationed in the United Kingdom."
@@ -144,37 +212,20 @@
       }
     },
     {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "slug": "nsa-internal-network-communication-disruption",
+      "canonicalPath": "/news/us/nsa-internal-network-communication-disruption/",
+      "headline": "National Security Agency Reports Temporary Internal Network Issues",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
-        "Despite the slight gain, the exchange rate remains elevated above the 18,000 Rupiah per dollar threshold."
+        "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
+        "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack."
       ],
       "primarySource": {
         "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
-      }
-    },
-    {
-      "slug": "white-house-withdraws-heidi-overton-fda-nomination",
-      "canonicalPath": "/news/us/white-house-withdraws-heidi-overton-fda-nomination/",
-      "headline": "White House Withdraws The Nomination Of Heidi Overton For FDA Lead",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The White House has rescinded the nomination of Heidi Overton for the role of Food and Drug Administration commissioner.",
-        "The decision followed reports that the nominee was struggling to secure the necessary support from Republican senators."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda"
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
       }
     },
     {
@@ -183,7 +234,7 @@
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
@@ -195,29 +246,12 @@
       }
     },
     {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
       "slug": "pope-leo-latin-america-tour",
       "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
       "headline": "Pope Leo XIV Visits Argentina Following Successful Surgery Recovery",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pope Leo XIV arrived in Argentina for the second leg of his South American tour after concluding a visit to Uruguay.",
@@ -226,23 +260,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o"
-      }
-    },
-    {
-      "slug": "united-airlines-widespread-system-outage",
-      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
-      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "United Airlines experienced a technical glitch that caused significant departure delays.",
-        "The airline confirmed that the system outage was resolved after a period of instability."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
       }
     },
     {
@@ -268,7 +285,7 @@
       "headline": "Customers Report Widespread Service Outages At Major American Banks",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
@@ -280,71 +297,54 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
+      "slug": "white-house-withdraws-heidi-overton-fda-nomination",
+      "canonicalPath": "/news/us/white-house-withdraws-heidi-overton-fda-nomination/",
+      "headline": "White House Withdraws The Nomination Of Heidi Overton For FDA Lead",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Democratic lawmakers are establishing their legislative priorities after securing majorities in both the House and Senate.",
-        "The party faces immediate policy challenges including border management, potential investigations into Donald Trump, and defense funding debates."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/after-victory-in-the-midterms-what-next-for-us-democrats/a-79884957?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "United States Conducts Additional Targeted Military Strikes In Iran",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump announced the United States carried out limited strikes on an Iranian air defense system.",
-        "The military operation was focused on Qeshm Island, where local media reported hearing explosions."
+        "The White House has rescinded the nomination of Heidi Overton for the role of Food and Drug Administration commissioner.",
+        "The decision followed reports that the nominee was struggling to secure the necessary support from Republican senators."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda"
       }
     },
     {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Democrat Jonathan Kreiss-Tomkins Wins Alaska Gubernatorial Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "united-airlines-widespread-system-outage",
+      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
+      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Jonathan Kreiss-Tomkins has been elected governor of Alaska, ending nearly three decades of Republican leadership in the state's top office.",
-        "The 37-year-old former state legislator will become the youngest individual to serve as governor in the state's history."
+        "United Airlines experienced a technical glitch that caused significant departure delays.",
+        "The airline confirmed that the system outage was resolved after a period of instability."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
+      }
+    },
+    {
+      "slug": "supreme-court-allows-texas-border-wall",
+      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
+      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
+        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
       ],
       "primarySource": {
         "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
-        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
       }
     }
   ]

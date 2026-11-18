@@ -6,6 +6,26 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "National Security Agency Reports Temporary Internal Network Issues",
+  "seoTitle": "NSA Experiences Internal Network Disruption",
+  "metaDescription": "The US National Security Agency reported temporary disruptions to a secure internal communications network, though officials confirmed operations continue.",
+  "aiSummaryBullets": [
+    "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
+    "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack.",
+    "Operations related to national security remain functional despite the reported connectivity problems."
+  ],
+  "aiContextParagraph": "The National Security Agency (NSA) recently experienced interruptions within its internal, high-level communications infrastructure. Reports from sources familiar with the matter indicated that the agency initiated a yellow alert status following the connectivity issues. However, the agency publicly confirmed that the disruptions coincided with routine maintenance procedures rather than a hostile cyber intrusion. Despite speculation regarding the nature of the outage, the NSA maintains that its national security missions are operating at full capacity. The situation drew attention after multiple reports highlighted the internal communication hurdles faced by the intelligence organization. There have been no verified claims of external interference or compromise to the security protocols protecting classified information. The agency continues to monitor the situation while internal systems undergo recovery efforts to ensure stable operations across all intelligence sectors during and after the planned maintenance cycle.",
+  "whyItIsViral": "This event is currently trending due to coverage across three independent news outlets and a rapid pace of reporting within the initial hours of the incident.",
+  "viralScore": 58,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 43,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-18T00:00:00Z",
   "lastUpdatedBatchAt": "2026-11-18T02:18:00Z",
   "sources": [
@@ -31,28 +51,6 @@
       "publishedAt": "2026-11-18T01:20:45Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "nsa-classified-network-goes-offline",
-    "faa-issues-nationwide-flight-ground-stop",
-    "us-soldier-arrested-for-russian-espionage"
-  ],
-  "relatedInCategorySlugs": [
-    "germany-expands-intelligence-agency-surveillance-powers",
-    "france-accuses-iran-supermarket-cyber-attacks",
-    "indonesia-javan-rhino-relocation-controversy"
-  ],
-  "headline": "National Security Agency Reports Temporary Internal Network Issues",
-  "seoTitle": "NSA Experiences Internal Network Disruption",
-  "metaDescription": "The US National Security Agency reported temporary disruptions to a secure internal communications network, though officials confirmed operations continue.",
-  "aiSummaryBullets": [
-    "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
-    "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack.",
-    "Operations related to national security remain functional despite the reported connectivity problems."
-  ],
-  "aiContextParagraph": "The National Security Agency (NSA) recently experienced interruptions within its internal, high-level communications infrastructure. Reports from sources familiar with the matter indicated that the agency initiated a yellow alert status following the connectivity issues. However, the agency publicly confirmed that the disruptions coincided with routine maintenance procedures rather than a hostile cyber intrusion. Despite speculation regarding the nature of the outage, the NSA maintains that its national security missions are operating at full capacity. The situation drew attention after multiple reports highlighted the internal communication hurdles faced by the intelligence organization. There have been no verified claims of external interference or compromise to the security protocols protecting classified information. The agency continues to monitor the situation while internal systems undergo recovery efforts to ensure stable operations across all intelligence sectors during and after the planned maintenance cycle.",
-  "whyItIsViral": "This event is currently trending due to coverage across three independent news outlets and a rapid pace of reporting within the initial hours of the incident.",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
   "entityTags": [
     {
       "name": "National Security Agency",
@@ -67,12 +65,14 @@
       "slug": "united-states-government"
     }
   ],
-  "viralScore": 66,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 61,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "nsa-classified-network-goes-offline",
+    "rubio-denies-coordinated-cyberattack-us-outages",
+    "faa-issues-nationwide-flight-ground-stop"
+  ],
+  "relatedInCategorySlugs": [
+    "germany-expands-intelligence-agency-surveillance-powers",
+    "france-accuses-iran-supermarket-cyber-attacks",
+    "bulog-holds-cheap-food-market-events"
+  ]
 }
