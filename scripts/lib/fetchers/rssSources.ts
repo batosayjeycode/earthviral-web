@@ -8,7 +8,7 @@
  * articles are kept only when a country can be detected.
  *
  * Not included (probed and unavailable): Kompas (no public feed), The Jakarta Post,
- * The Star (404), Globo g1 (403), Korea Herald (empty feed), Tribunnews (403), Tempo.
+ * The Star (404), Globo g1 (403), Korea Herald (empty feed), Tribunnews (403), Tempo, Malay Mail.
  *
  * Tempo: since 2026-11-16 every tempo.co feed URL answers with a Cloudflare "Attention
  * Required" challenge (HTTP 403) for any automated client, whatever its user agent. That is
@@ -16,7 +16,15 @@
  * Okezone replace it. Re-add Tempo only if they allowlist EarthViralBot.
  *
  * Re-checked 2026-11-07: Nation Africa (an intermittent 404 on 2026-11-06) works; Capital FM
- * and KBC were added so Kenya keeps coverage when one outlet is down.
+ * and KBC were added so Kenya keeps coverage when one outlet is down. Nation Africa 404'd
+ * again on 2026-11-18 and was back the next day; it stays.
+ *
+ * Malaysia (2026-11-19): Malay Mail's feed now answers 404/403 on every URL, so it was
+ * replaced by Malaysiakini and theSun. Both robots.txt files allow automated readers, and
+ * theSun's explicitly welcomes user-triggered AI. Probed but left out: New Straits Times
+ * (robots.txt blocks ~20 AI agents, a clear "no AI use" signal even though EarthViralBot isn't
+ * named), Bernama (blocks AI crawlers; its feed also lacks dates and has mis-encoded text),
+ * Free Malaysia Today (403), The Star and The Edge (404).
  */
 export interface RssSource {
   id: string;
@@ -189,10 +197,20 @@ export const RSS_SOURCES: RssSource[] = [
     language: 'en',
   },
   {
-    id: 'malay-mail',
-    publisherName: 'Malay Mail',
-    publisherDomain: 'malaymail.com',
-    url: 'https://www.malaymail.com/feed/rss/malaysia',
+    id: 'malaysiakini',
+    publisherName: 'Malaysiakini',
+    publisherDomain: 'malaysiakini.com',
+    // English news, ~10 latest items. Probed 2026-11-19.
+    url: 'https://www.malaysiakini.com/rss/en/news.rss',
+    homeCountry: 'MY',
+    language: 'en',
+  },
+  {
+    id: 'thesun-my',
+    publisherName: 'theSun',
+    publisherDomain: 'thesun.my',
+    // All sections, ~10 latest items. Probed 2026-11-19.
+    url: 'https://thesun.my/rss',
     homeCountry: 'MY',
     language: 'en',
   },
