@@ -398,7 +398,41 @@ describe('header edition (geo)', () => {
 });
 
 describe('content honesty', () => {
-  const text = pages.map((p) => p.html.replace(/<[^>]+>/g, ' ')).join(' ');
+  // Site copy only: the static pages, the homepage minus its story cards, and the site-wide
+  // header and footer. Stories are AI summaries of real news and can legitimately say
+  // "new testimonials emerged" or "2 million users", so story text is out of scope.
+  const SITE_PAGES = new Set([
+    '/',
+    '/about/',
+    '/contact/',
+    '/privacy/',
+    '/terms/',
+    '/search/',
+    '/404/',
+  ]);
+  const toText = (html) =>
+    html
+      .replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ' ') // code isn't copy (and its `<` breaks tag stripping)
+      .replace(/<article\b[^>]*\bdata-category=[\s\S]*?<\/article>/g, ' ') // story cards (NewsCard)
+      .replace(/<[^>]+>/g, ' ');
+  const chrome = new Set(
+    pages.flatMap((p) =>
+      [
+        p.html.match(/<header class="glass[\s\S]*?<\/header>/)?.[0],
+        p.html.match(/<footer class="mt-24[\s\S]*?<\/footer>/)?.[0],
+      ].filter(Boolean),
+    ),
+  );
+  const text = [...pages.filter((p) => SITE_PAGES.has(p.path)).map((p) => p.html), ...chrome]
+    .map(toText)
+    .join(' ');
+
+  test('the site copy check covers the static pages and the shared chrome', () => {
+    assert.equal(pages.filter((p) => SITE_PAGES.has(p.path)).length, SITE_PAGES.size);
+    assert.ok(chrome.size >= 2, 'site header/footer not found');
+    assert.match(text, /Methodology/);
+    assert.doesNotMatch(text, /GEO_KEY/); // scripts are excluded
+  });
 
   test('no placeholder or fake-proof copy', () => {
     for (const phrase of [
