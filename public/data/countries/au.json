@@ -3,17 +3,51 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 59,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-18T20:18:00Z",
+  "viralScore": 64,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-18T23:18:00Z",
   "clusters": [
+    {
+      "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+      "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+      "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Pat Cummins characterized Usman Khawaja's recent claims about the 2018 ball-tampering scandal as complete and utter nonsense.",
+        "The Australian captain defended the integrity of the original Cricket Australia investigation conducted after the 2018 incident."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/usman-khawaja-sandpapergate-ball-tampering-south-africa-cricket/107345086"
+      }
+    },
+    {
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
+        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
     {
       "slug": "bancroft-alleges-team-wide-cricket-scandal",
       "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
       "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 56,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
@@ -25,29 +59,12 @@
       }
     },
     {
-      "slug": "advocates-call-for-improved-festival-accessibility",
-      "canonicalPath": "/news/au/advocates-call-for-improved-festival-accessibility/",
-      "headline": "Advocates Call For Enhanced Accessibility At Australian Festivals",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Individuals with disabilities are requesting improved accessibility standards at music festivals across Australia.",
-        "The call for greater inclusivity comes ahead of the International Day of People with Disability."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-19/international-day-of-people-with-disability-stories-2026/107232378"
-      }
-    },
-    {
       "slug": "man-charged-murder-fatal-home-invasion",
       "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
       "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A 23-year-old man was arrested in connection with the death of a 15-day-old infant.",
@@ -76,23 +93,6 @@
       }
     },
     {
-      "slug": "adelaide-council-reverses-fossil-fuel-ad-ban",
-      "canonicalPath": "/news/au/adelaide-council-reverses-fossil-fuel-ad-ban/",
-      "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Adelaide council voted to repeal a recently passed motion that intended to restrict fossil fuel-related advertising on municipal land.",
-        "The decision to overturn the ban follows specific concerns regarding the upcoming Tour Down Under sporting event."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/will-australia-push-for-fossil-fuel-exit-at-un-talks/a-79782066?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "melbourne-cup-horse-found-skip-bin",
       "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
       "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
@@ -110,12 +110,29 @@
       }
     },
     {
+      "slug": "adelaide-council-reverses-fossil-fuel-ad-ban",
+      "canonicalPath": "/news/au/adelaide-council-reverses-fossil-fuel-ad-ban/",
+      "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Adelaide council voted to repeal a recently passed motion that intended to restrict fossil fuel-related advertising on municipal land.",
+        "The decision to overturn the ban follows specific concerns regarding the upcoming Tour Down Under sporting event."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/will-australia-push-for-fossil-fuel-exit-at-un-talks/a-79782066?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "cricket-australia-sandpapergate-forum",
       "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -124,40 +141,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
-      }
-    },
-    {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
-        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
-      }
-    },
-    {
-      "slug": "australia-ends-indonesia-wildfire-mission",
-      "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
-      "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The aerial firefighting mission involving an Australian Hercules C-130 air tanker has concluded.",
-        "The Indonesian National Board for Disaster Management (BNPB) announced the formal end of the assistance period."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8751919/masa-kerja-sama-tuntas-australia-akhiri-misi-pemadaman-karhutla-di-kaltim"
       }
     },
     {
@@ -178,6 +161,23 @@
       }
     },
     {
+      "slug": "advocates-call-for-improved-festival-accessibility",
+      "canonicalPath": "/news/au/advocates-call-for-improved-festival-accessibility/",
+      "headline": "Advocates Call For Enhanced Accessibility At Australian Festivals",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Individuals with disabilities are requesting improved accessibility standards at music festivals across Australia.",
+        "The call for greater inclusivity comes ahead of the International Day of People with Disability."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-19/international-day-of-people-with-disability-stories-2026/107232378"
+      }
+    },
+    {
       "slug": "australian-prime-minister-cop31-remarks",
       "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
       "headline": "Australian Prime Minister Faces Scrutiny Following COP31 Remarks",
@@ -195,29 +195,12 @@
       }
     },
     {
-      "slug": "prabowo-addresses-asean-australia-summit",
-      "canonicalPath": "/news/au/prabowo-addresses-asean-australia-summit/",
-      "headline": "President Prabowo Subianto Discusses ASEAN-Australia Partnerships",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Prabowo Subianto advocated for robust ASEAN institutional mechanisms to manage regional crises.",
-        "The Indonesian leader emphasized that strategic partnerships between ASEAN and Australia should focus on public welfare."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8755884/prabowo-di-ktt-asean-australia-kemitraan-strategis-harus-sejahterakan-rakyat"
-      }
-    },
-    {
       "slug": "tame-impala-to-headline-coachella-festival",
       "canonicalPath": "/news/au/tame-impala-to-headline-coachella-festival/",
       "headline": "Tame Impala makes ARIA Awards history as acts make noise about AI",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 23,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "ABC reports: Tame Impala makes ARIA Awards history as acts make noise about AI"
@@ -233,7 +216,7 @@
       "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 20,
+      "viralScore": 19,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
@@ -242,40 +225,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
-      }
-    },
-    {
-      "slug": "child-protection-staffing-shortages-persist",
-      "canonicalPath": "/news/au/child-protection-staffing-shortages-persist/",
-      "headline": "Child Protection Staffing Shortages Persist Years After Tragedy",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 20,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Staffing capacity at Western Australia’s child protection agency remains inadequate.",
-        "Concerns regarding departmental resources persist four years after a triple murder in the Pilbara region."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/child-protection-staffing-problems-government-pledges-funding/107398656"
-      }
-    },
-    {
-      "slug": "australian-body-donation-policy-change",
-      "canonicalPath": "/news/au/australian-body-donation-policy-change/",
-      "headline": "Proposed Changes To Body Donation Procedures Following Recent Case",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A resident sought to donate his late wife's remains to a university research program.",
-        "The donation was declined because the medical facility could not process the body during the weekend."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/body-donations-for-scientific-research-university-of-wollongong/107350716"
       }
     },
     {
@@ -313,6 +262,23 @@
       }
     },
     {
+      "slug": "child-protection-staffing-shortages-persist",
+      "canonicalPath": "/news/au/child-protection-staffing-shortages-persist/",
+      "headline": "Child Protection Staffing Shortages Persist Years After Tragedy",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 19,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Staffing capacity at Western Australia’s child protection agency remains inadequate.",
+        "Concerns regarding departmental resources persist four years after a triple murder in the Pilbara region."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/child-protection-staffing-problems-government-pledges-funding/107398656"
+      }
+    },
+    {
       "slug": "russell-brand-found-guilty-of-rape-and-sexual-assault-2",
       "canonicalPath": "/news/au/russell-brand-found-guilty-of-rape-and-sexual-assault-2/",
       "headline": "Comedian Russell Brand Convicted Of Rape And Sexual Assault Charges",
@@ -344,6 +310,40 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
+    {
+      "slug": "australian-actor-joins-hunger-games-franchise",
+      "canonicalPath": "/news/au/australian-actor-joins-hunger-games-franchise/",
+      "headline": "Australian Actor Cast As The New Face Of The Hunger Games Series",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "A performer from Australia has been chosen to lead the latest installment of The Hunger Games.",
+        "The film franchise explores themes of rebellion against oppressive governing structures."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/sunrise-on-the-reaping-joseph-zada-hunger-games/107390762"
+      }
+    },
+    {
+      "slug": "australian-body-donation-policy-change",
+      "canonicalPath": "/news/au/australian-body-donation-policy-change/",
+      "headline": "Proposed Changes To Body Donation Procedures Following Recent Case",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "A resident sought to donate his late wife's remains to a university research program.",
+        "The donation was declined because the medical facility could not process the body during the weekend."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/body-donations-for-scientific-research-university-of-wollongong/107350716"
       }
     }
   ]

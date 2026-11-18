@@ -3,21 +3,21 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 99,
+  "viralScore": 97,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-18T20:18:00Z",
+  "generatedAt": "2026-11-18T23:18:00Z",
   "clusters": [
     {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
-      "headline": "US House Democrats Nominate Hakeem Jeffries For Speaker Position",
+      "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 96,
+      "viralScore": 94,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Hakeem Jeffries secured the Democratic nomination for House speaker in a secret ballot, receiving 251 votes.",
-        "The nomination positions the New York congressman to become the first Black person to hold the speaker role when the new Congress convenes in January."
+        "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
+        "If confirmed, Jeffries would become the first Black individual to serve as Speaker of the U.S. House of Representatives."
       ],
       "primarySource": {
         "publisherName": "Al Jazeera",
@@ -30,8 +30,8 @@
       "headline": "Secretary Rubio Addresses Recent US Tech Outages Amid Public Concern",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 95,
-      "intensityTier": "surge",
+      "viralScore": 76,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Secretary of State Rubio stated there is no evidence linking recent network outages to a coordinated cyberattack or systemic threat.",
         "House committee members received testimony confirming that current technical disruptions affecting major firms and banks appear unrelated."
@@ -47,8 +47,8 @@
       "headline": "Democrat Mary Peltola Secures Alaska Senate Seat For Democrats",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 88,
-      "intensityTier": "surge",
+      "viralScore": 69,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Democrat Mary Peltola defeated incumbent Republican Dan Sullivan in a closely contested Alaska Senate election.",
         "The victory represents the ninth seat flip for the Democratic Party during the midterm elections."
@@ -59,20 +59,54 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 77,
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
-        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
       ],
       "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123223/after-victory-in-the-midterms-what-next-for-us-democrats"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
+      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
+      "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
+        "The inquiry follows claims that the Commerce Department failed to address significant loopholes regarding high-end chip exports."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
+      }
+    },
+    {
+      "slug": "anthropic-sets-ipo-share-price",
+      "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
+      "headline": "Anthropic Sets Initial Public Offering Price At Eighty-Three Dollars",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The artificial intelligence company Anthropic priced its shares at 83 dollars for its initial public offering.",
+        "The final valuation exceeded the firm's initial target range of 70 to 78 dollars per share."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/business/anthropic-share-price-ipo-6563856"
       }
     },
     {
@@ -81,7 +115,7 @@
       "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 71,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
@@ -98,7 +132,7 @@
       "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
@@ -110,29 +144,12 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 68,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
-        "The former executive has formally agreed to testify before Congress following his resignation last week."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/what-we-know-about-jensen-huangs-resignation-so-far/"
-      }
-    },
-    {
       "slug": "us-flight-grounding-causes-travel-disruptions",
       "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
@@ -144,37 +161,71 @@
       }
     },
     {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 65,
+      "slug": "us-defense-secretary-venezuela-military-deal",
+      "canonicalPath": "/news/us/us-defense-secretary-venezuela-military-deal/",
+      "headline": "US Defense Secretary Pete Hegseth Signs Venezuela Military Pact",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+        "US Defense Secretary Pete Hegseth visited Caracas to formalize a new military agreement.",
+        "The pact includes provisions for joint military training and intelligence sharing between the two nations."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/us-pentagon-chief-hegseth-signs-military-deal-in-venezuela/a-79985607?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
-      "slug": "judge-halts-washington-golf-course-renovation",
-      "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
-      "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
-        "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
+        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
+        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123223/after-victory-in-the-midterms-what-next-for-us-democrats"
+      }
+    },
+    {
+      "slug": "nsa-classified-network-goes-offline",
+      "canonicalPath": "/news/us/nsa-classified-network-goes-offline/",
+      "headline": "National Security Agency Classified Network Experiences Outage",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A internal classified communications network at the National Security Agency experienced a period of downtime.",
+        "The agency stated that the disruption was caused by temporary degradation during routine maintenance."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/business/highly-classified-us-national-security-communications-network-down-cnn-reports-6559891"
+      }
+    },
+    {
+      "slug": "supreme-court-allows-texas-border-wall",
+      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
+      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
+        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
       }
     },
     {
@@ -183,8 +234,8 @@
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
         "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
@@ -200,7 +251,7 @@
       "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 58,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
@@ -209,6 +260,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+      }
+    },
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
+        "The former executive has formally agreed to testify before Congress following his resignation last week."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/what-we-know-about-jensen-huangs-resignation-so-far/"
       }
     },
     {
@@ -246,40 +314,6 @@
       }
     },
     {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "US Treasury Department Criticizes Commerce Agency Over Nvidia Exports",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Treasury Secretary Scott Bessent has publicly questioned the Commerce Department's handling of chip export regulations.",
-        "Allegations of significant leakage in technology exports have prompted scrutiny of Secretary Howard Lutnick's agency."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "trump-prabowo-asean-us-summit-meeting",
-      "canonicalPath": "/news/us/trump-prabowo-asean-us-summit-meeting/",
-      "headline": "President Donald Trump Praises President Prabowo At ASEAN-US Summit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump praised President Prabowo Subianto during the special ASEAN-US Summit in Manila.",
-        "Reports indicate that President Trump referred to the Indonesian leader as a great leader, a good person, and a modest individual."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8757533/trump-sapa-prabowo-di-ktt-khusus-asean-as-sahabat-saya-pemimpin-yang-hebat"
-      }
-    },
-    {
       "slug": "us-charges-three-over-iranian-plot",
       "canonicalPath": "/news/us/us-charges-three-over-iranian-plot/",
       "headline": "US Investigating Potential Iranian Plots Amid Terrorism Charges",
@@ -311,40 +345,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
-      }
-    },
-    {
-      "slug": "incoming-democratic-senators-dont-want-chuck-schumer-as-majority",
-      "canonicalPath": "/news/us/incoming-democratic-senators-dont-want-chuck-schumer-as-majority/",
-      "headline": "Incoming Democratic senators don’t want Chuck Schumer as majority leader",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Guardian reports: Incoming Democratic senators don’t want Chuck Schumer as majority leader",
-        "CBS News reports: Trump shakes up team as Democratic majority comes into focus"
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/"
-      }
-    },
-    {
-      "slug": "supreme-court-allows-texas-border-wall",
-      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
-      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
-        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
       }
     }
   ]
