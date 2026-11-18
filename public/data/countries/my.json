@@ -3,17 +3,34 @@
   "name": "Malaysia",
   "slug": "malaysia",
   "region": "Asia",
-  "viralScore": 44,
+  "viralScore": 56,
   "intensityTier": "active",
-  "generatedAt": "2026-11-18T19:26:00Z",
+  "generatedAt": "2026-11-18T20:18:00Z",
   "clusters": [
+    {
+      "slug": "madiun-immigration-monitors-foreign-nationals",
+      "canonicalPath": "/news/my/madiun-immigration-monitors-foreign-nationals/",
+      "headline": "Immigration Authorities In Madiun Monitor Hundreds Of Foreigners",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Madiun Class II Non-TPI Immigration Office is tracking 974 foreign nationals residing in its jurisdiction.",
+        "The majority of the monitored foreign population consists of students from Malaysia."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5863915/imigrasi-madiun-beri-pengawasan-974-wna-didominasi-santri-malaysia"
+      }
+    },
     {
       "slug": "high-court-najib-house-arrest-order",
       "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
       "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Home Minister Saifuddin Nasution Ismail is scheduled to address the Dewan Rakyat regarding the specific terms of the house arrest order.",
@@ -148,8 +165,8 @@
       "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
+      "viralScore": 60,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Najib Razak has been transferred from prison to his Kuala Lumpur residence to serve the remainder of his sentence under house arrest.",
         "Transport Minister Anthony Loke resigned from his position immediately following the court's decision to grant the house arrest order."
@@ -296,6 +313,23 @@
       }
     },
     {
+      "slug": "umno-dap-dialogue-najib-pardon",
+      "canonicalPath": "/news/my/umno-dap-dialogue-najib-pardon/",
+      "headline": "Umno Requests DAP Use Dialogue Regarding Najib Razak Pardon Row",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 28,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Umno officials asked DAP to address coalition disagreements through dialogue.",
+        "The request follows ongoing public friction concerning the Najib Razak pardon case."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/13/the-next-move-is-yours-umno-tells-dap-to-talk-not-threaten-amid-najib-pardon-row/243117"
+      }
+    },
+    {
       "slug": "opr-stays-at-2-75pc-as-bank-negara-sees",
       "canonicalPath": "/news/my/opr-stays-at-2-75pc-as-bank-negara-sees/",
       "headline": "Bank Negara Malaysia Maintains Overnight Policy Rate At 2.75 Percent",
@@ -310,40 +344,6 @@
       "primarySource": {
         "publisherName": "Malay Mail",
         "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/06/opr-stays-at-275pc-as-bank-negara-sees-no-need-to-tighten-monetary-policy-says-governor/242232"
-      }
-    },
-    {
-      "slug": "bukit-aman-investigates-hong-kong-arrest",
-      "canonicalPath": "/news/my/bukit-aman-investigates-hong-kong-arrest/",
-      "headline": "Bukit Aman Investigates Link Between Hong Kong Drug Bust And Malaysia",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A suspect was apprehended at Hong Kong International Airport for allegedly carrying one kilogram of cocaine in his footwear.",
-        "The Royal Malaysia Police (Bukit Aman) are examining whether this case is connected to recent drug enforcement operations in Malaysia."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/bukit-aman-over-6000-police-personnel-deployed-nationwide-to-step-up-deepavali-security-patrols/242314"
-      }
-    },
-    {
-      "slug": "dap-discusses-transport-minister-replacement-status",
-      "canonicalPath": "/news/my/dap-discusses-transport-minister-replacement-status/",
-      "headline": "DAP Party Has Not Discussed Replacing Minister Anthony Loke Yet",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "DAP leadership has not engaged in formal talks about a successor for Anthony Loke.",
-        "Anthony Loke currently serves as the Minister of Transport in Malaysia."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/dap-yet-to-discuss-replacing-anthony-loke-as-transport-minister-says-party-vice-chairman/242371"
       }
     }
   ]

@@ -6,9 +6,36 @@
   "countryName": "Israel",
   "countrySlug": "israel",
   "region": "Asia",
+  "categorySlug": "disasters-world-events",
+  "categoryName": "Disasters & World Events",
+  "headline": "Israeli Military Conducts Rare Ground Operation In Central Gaza Strip",
+  "seoTitle": "Israeli Military Launches Ground Operation In Central Gaza",
+  "metaDescription": "Israeli forces have initiated a military operation in central Gaza, crossing the Yellow Line and prompting civilians to evacuate nearby shelter areas.",
+  "aiSummaryBullets": [
+    "Israeli military forces initiated a ground operation in central Gaza that extends beyond the established Yellow Line.",
+    "The Israeli military stated the move is intended to dismantle a tunnel and mitigate threats against their personnel.",
+    "Palestinian civilians living in local tents and shelters have evacuated the area, and Hamas has described the action as a ceasefire violation."
+  ],
+  "aiContextParagraph": "The Israeli military has launched a ground operation into the central region of the Gaza Strip, specifically moving across the Yellow Line. This geographic boundary was established following the 2025 ceasefire agreement to separate Israeli and Hamas-controlled territories. According to reports from the Israel Defense Forces, the operation is targeted at removing a subterranean threat that posed a danger to soldiers currently active in the area. In response to the advancement of troops, civilians residing in nearby shelters and tent camps have fled the vicinity. Hamas has publically condemned the military activity, labeling the crossing of the Yellow Line as a flagrant breach of the existing ceasefire terms. This development marks a shift in the status quo for an area that had seen a withdrawal of military forces under previous ceasefire provisions.",
+  "whyItIsViral": "The story is trending due to coverage from four independent international outlets and a high velocity of news reporting regarding the ceasefire status.",
+  "viralScore": 78,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 4,
+    "coverageVelocityScore": 75,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-18T16:12:30Z",
-  "lastUpdatedBatchAt": "2026-11-18T19:26:00Z",
+  "lastUpdatedBatchAt": "2026-11-18T20:18:00Z",
   "sources": [
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Gazans flee shelters as Israeli army launches ground operation beyond Yellow Line",
+      "articleUrl": "https://www.france24.com/en/middle-east/20261118-gazans-flee-shelters-as-israeli-army-launches-ground-operation-beyond-yellow-line",
+      "publishedAt": "2026-11-18T16:03:21Z"
+    },
     {
       "publisherName": "France 24",
       "publisherDomain": "france24.com",
@@ -29,6 +56,31 @@
       "articleTitle": "Israel launches new ground operation in Gaza",
       "articleUrl": "https://www.dw.com/en/israel-launches-new-ground-operation-in-gaza/a-79984958?maca=en-rss-en-all-1573-xml-mrss",
       "publishedAt": "2026-11-18T18:29:00Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+      "articleUrl": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
+      "publishedAt": "2026-11-18T20:14:57Z"
+    }
+  ],
+  "entityTags": [
+    {
+      "name": "Israel Defense Forces",
+      "slug": "israel-defense-forces"
+    },
+    {
+      "name": "Gaza Strip",
+      "slug": "gaza-strip"
+    },
+    {
+      "name": "Hamas",
+      "slug": "hamas"
+    },
+    {
+      "name": "Ceasefire",
+      "slug": "ceasefire"
     }
   ],
   "relatedInCountrySlugs": [
@@ -40,43 +92,5 @@
     "gaza-displacement-camps-flooded-by-rain",
     "severe-storms-flood-gaza-refugee-tents",
     "severe-gaza-flooding-humanitarian-crisis"
-  ],
-  "headline": "Israeli Military Launches Ground Operation In Central Gaza Strip",
-  "seoTitle": "Israel Begins Central Gaza Ground Operation",
-  "metaDescription": "Israeli forces have initiated a new ground military operation in the central Gaza Strip targeting infrastructure, prompting warnings to local civilians.",
-  "aiSummaryBullets": [
-    "Israeli military forces have begun a ground operation in the central region of the Gaza Strip.",
-    "The mission is described as a targeted effort to dismantle infrastructure associated with Hamas.",
-    "Officials have issued guidance to civilians in the area to relocate for safety during the ongoing advancement."
-  ],
-  "aiContextParagraph": "On November 18, 2026, the Israeli military initiated a new ground operation in the central Gaza Strip. According to reports, military units and tanks have advanced into areas located west of what is referred to as the Yellow Line, which serves as a defined boundary for regions under Israeli control. The Israeli military stated that the operation is intended to target Hamas infrastructure and neutralize specific threats posed to their forces in the region. Witnesses confirmed the presence of tanks moving through the designated sector. Concurrently, instructions were issued to civilians in the vicinity to avoid the operational area, which remains characterized by significant challenges regarding the availability of food and adequate shelter for the Palestinian population. The current situation remains active as military forces continue to operate within the specified territory, marking a new phase in the ongoing conflict between Israel and Hamas within the Gaza Strip.",
-  "whyItIsViral": "The event is being tracked by three independent news outlets and is experiencing moderate viral activity, indicating a rapid release of information.",
-  "categorySlug": "disasters-world-events",
-  "categoryName": "Disasters & World Events",
-  "entityTags": [
-    {
-      "name": "Israel",
-      "slug": "israel"
-    },
-    {
-      "name": "Gaza Strip",
-      "slug": "gaza-strip"
-    },
-    {
-      "name": "Hamas",
-      "slug": "hamas"
-    },
-    {
-      "name": "IDF",
-      "slug": "idf"
-    }
-  ],
-  "viralScore": 65,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 3,
-    "coverageVelocityScore": 59,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  ]
 }
