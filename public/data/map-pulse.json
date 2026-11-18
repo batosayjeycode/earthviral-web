@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611181118",
-  "generatedAt": "2026-11-18T11:18:00Z",
-  "nextUpdateAt": "2026-11-18T14:17:00Z",
+  "batchId": "batch-202611181418",
+  "generatedAt": "2026-11-18T14:18:00Z",
+  "nextUpdateAt": "2026-11-18T17:17:00Z",
   "countries": [
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "topicCount": 11,
+      "topTopic": {
+        "slug": "trump-to-meet-xi-putin-apec",
+        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+        "headline": "President Trump Arrives In China For Trilateral Talks With Xi, Putin",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 98,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -12,16 +34,16 @@
         117,
         -2.5
       ],
-      "viralScore": 100,
+      "viralScore": 99,
       "intensityTier": "surge",
-      "topicCount": 136,
+      "topicCount": 137,
       "topTopic": {
         "slug": "video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
         "canonicalPath": "/news/id/video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr/",
-        "headline": "Indonesian Parliament Moves To Finalize Asset Seizure Bill",
+        "headline": "Indonesian Government And Parliament Finalize Asset Seizure Bill",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 100,
+        "viralScore": 96,
         "intensityTier": "surge"
       }
     },
@@ -34,105 +56,17 @@
         -98.5,
         39.5
       ],
-      "viralScore": 99,
+      "viralScore": 95,
       "intensityTier": "surge",
       "topicCount": 43,
       "topTopic": {
-        "slug": "democrat-wins-alaska-gubernatorial-election",
-        "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-        "headline": "Democrat Mary Peltola Wins Alaska Senate Seat To Expand Majority",
+        "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+        "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+        "headline": "Secretary Of State Rubio Denies Links In Recent US Tech Outages",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 96,
+        "viralScore": 92,
         "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 93,
-      "intensityTier": "surge",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "President Trump Arrives In China For High Stakes Trilateral Summit",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 90,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "ukraine-drone-strikes-crimea-moscow",
-        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
-        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 84,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 81,
-      "intensityTier": "high",
-      "topicCount": 11,
-      "topTopic": {
-        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-        "headline": "Families Speak Out Following Syndicate Recruitment Into Russian Army",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 78,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 29,
-      "topTopic": {
-        "slug": "prime-minister-burnham-addresses-brexit-impact",
-        "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
-        "headline": "Prime Minister Burnham Faces Calls To Rejoin European Union",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 76,
-        "intensityTier": "high"
       }
     },
     {
@@ -144,15 +78,37 @@
         122,
         12.5
       ],
-      "viralScore": 79,
-      "intensityTier": "high",
+      "viralScore": 86,
+      "intensityTier": "surge",
       "topicCount": 7,
       "topTopic": {
-        "slug": "asean-leaders-discuss-regional-energy-security",
-        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
-        "headline": "Global Leaders Conclude Discussions At The 49th ASEAN Summit Manila",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
+        "slug": "borneo-fc-faces-manila-digger-championship",
+        "canonicalPath": "/news/ph/borneo-fc-faces-manila-digger-championship/",
+        "headline": "Borneo FC Defeats Manila Digger In ASEAN Club Championship Group A",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 83,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 77,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "ukraine-drone-strikes-crimea-moscow",
+        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
+        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 76,
         "intensityTier": "high"
       }
@@ -166,13 +122,57 @@
         34.9,
         31.3
       ],
-      "viralScore": 74,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
         "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
         "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
         "headline": "Israeli Parliament Elects Matan Kahana As New Speaker For Knesset",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 74,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 76,
+      "intensityTier": "high",
+      "topicCount": 31,
+      "topTopic": {
+        "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+        "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+        "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 73,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 75,
+      "intensityTier": "high",
+      "topicCount": 62,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "Seyi Makinde Campaign Group Challenges Tinubu Recruitment Freeze",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 72,
@@ -202,6 +202,28 @@
       }
     },
     {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 28,
+      "topTopic": {
+        "slug": "bancroft-alleges-team-wide-cricket-scandal",
+        "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
+        "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
       "code": "KE",
       "isoNumeric": "404",
       "name": "Kenya",
@@ -224,6 +246,50 @@
       }
     },
     {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+        "headline": "Families Speak Out Following Syndicate Recruitment Into Russian Army",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 70,
+      "intensityTier": "high",
+      "topicCount": 15,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
       "code": "IR",
       "isoNumeric": "364",
       "name": "Iran",
@@ -232,7 +298,7 @@
         53.7,
         32.4
       ],
-      "viralScore": 71,
+      "viralScore": 64,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
@@ -241,7 +307,7 @@
         "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 68,
+        "viralScore": 61,
         "intensityTier": "high"
       }
     },
@@ -254,17 +320,39 @@
         127.8,
         36.3
       ],
-      "viralScore": 65,
+      "viralScore": 60,
       "intensityTier": "high",
-      "topicCount": 9,
+      "topicCount": 8,
       "topTopic": {
         "slug": "south-korean-tax-exam-ai-scandal",
         "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
         "headline": "South Korea Enhances Security Measures Against AI Exam Cheating",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 62,
-        "intensityTier": "high"
+        "viralScore": 57,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
+        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
+        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
@@ -276,104 +364,16 @@
         103.82,
         1.35
       ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 37,
-      "topTopic": {
-        "slug": "singapore-coe-premiums-decline-bidding",
-        "canonicalPath": "/news/sg/singapore-coe-premiums-decline-bidding/",
-        "headline": "Singapore COE Premiums Decline Following Recent Record Highs",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 60,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 14,
-      "topTopic": {
-        "slug": "high-court-najib-house-arrest-order",
-        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 59,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 29,
-      "topTopic": {
-        "slug": "cricket-australia-sandpapergate-forum",
-        "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
-        "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 59,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 58,
+      "viralScore": 52,
       "intensityTier": "active",
-      "topicCount": 15,
+      "topicCount": 35,
       "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 62,
-      "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "Seyi Makinde Campaign Group Challenges Tinubu Recruitment Freeze",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 52,
+        "slug": "two-women-charged-disrupting-crow-traps",
+        "canonicalPath": "/news/sg/two-women-charged-disrupting-crow-traps/",
+        "headline": "Two Women Charged With Disrupting Singapore Crow Trapping Efforts",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 49,
         "intensityTier": "active"
       }
     },
@@ -422,6 +422,50 @@
       }
     },
     {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 49,
+      "intensityTier": "active",
+      "topicCount": 50,
+      "topTopic": {
+        "slug": "professores-apontam-problemas-em-duas-quest-es-de-matem",
+        "canonicalPath": "/news/br/professores-apontam-problemas-em-duas-quest-es-de-matem/",
+        "headline": "Educators Identify Additional Issues In Enem 2026 Math Questions",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 46,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 12,
+      "topTopic": {
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "IT",
       "isoNumeric": "380",
       "name": "Italy",
@@ -430,60 +474,38 @@
         12.6,
         42.8
       ],
-      "viralScore": 49,
+      "viralScore": 46,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 1,
       "topTopic": {
         "slug": "mbappe-out-france-italy-match",
         "canonicalPath": "/news/it/mbappe-out-france-italy-match/",
         "headline": "Kylian Mbappe To Miss France Nations League Match Against Italy",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 48,
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
       "centroid": [
-        45,
-        24
+        -3.7,
+        40.2
       ],
-      "viralScore": 49,
+      "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
-        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
-        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TH",
-      "isoNumeric": "764",
-      "name": "Thailand",
-      "slug": "thailand",
-      "centroid": [
-        101,
-        15.5
-      ],
-      "viralScore": 48,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "thailand-arsenic-water-pollution-response",
-        "canonicalPath": "/news/th/thailand-arsenic-water-pollution-response/",
-        "headline": "Thai Authorities Respond To Arsenic Pollution In Mekong Tributary",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 48,
+        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
+        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
+        "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
@@ -496,60 +518,16 @@
         138.5,
         36.5
       ],
-      "viralScore": 47,
-      "intensityTier": "active",
-      "topicCount": 10,
-      "topTopic": {
-        "slug": "prabowo-asean-japan-economic-cooperation",
-        "canonicalPath": "/news/jp/prabowo-asean-japan-economic-cooperation/",
-        "headline": "President Prabowo Subianto Discusses ASEAN-Japan Economic Ties",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 44,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
-        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
-        "headline": "Authorities take over Turkey's last pro-opposition broadcaster Sozcu TV",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 45,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
       "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "seventeen-killed-in-south-africa-shootings",
-        "canonicalPath": "/news/za/seventeen-killed-in-south-africa-shootings/",
-        "headline": "Mass Shooting Incidents In South Africa Result In Seventeen Deaths",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 44,
+        "slug": "hajime-moriyasu-tenure-ends-japan",
+        "canonicalPath": "/news/jp/hajime-moriyasu-tenure-ends-japan/",
+        "headline": "Hajime Moriyasu Concludes Tenure Following Defeat Against Paraguay",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -576,24 +554,68 @@
       }
     },
     {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
       "centroid": [
-        -3.7,
-        40.2
+        24.7,
+        -29
       ],
       "viralScore": 44,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
-        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
-        "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
+        "slug": "seventeen-killed-in-south-africa-shootings",
+        "canonicalPath": "/news/za/seventeen-killed-in-south-africa-shootings/",
+        "headline": "Mass Shooting Incidents In South Africa Result In Seventeen Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
         "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TH",
+      "isoNumeric": "764",
+      "name": "Thailand",
+      "slug": "thailand",
+      "centroid": [
+        101,
+        15.5
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "thailand-arsenic-water-pollution-response",
+        "canonicalPath": "/news/th/thailand-arsenic-water-pollution-response/",
+        "headline": "Thai Authorities Respond To Arsenic Pollution In Mekong Tributary",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 42,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 41,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
+        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
+        "headline": "Authorities take over Turkey's last pro-opposition broadcaster Sozcu TV",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 40,
         "intensityTier": "active"
       }
     },
@@ -642,28 +664,6 @@
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 38,
-      "intensityTier": "active",
-      "topicCount": 50,
-      "topTopic": {
-        "slug": "former-stj-official-arrested-data-leak",
-        "canonicalPath": "/news/br/former-stj-official-arrested-data-leak/",
-        "headline": "Federal Police Arrest Former STJ Official Over Data Leak Allegations",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 35,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "PS",
       "isoNumeric": "275",
       "name": "Palestine",
@@ -672,7 +672,7 @@
         35.2,
         31.9
       ],
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -681,7 +681,7 @@
         "headline": "Palestinian Woman Fatally Shot During Incident In The West Bank",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 33,
+        "viralScore": 32,
         "intensityTier": "active"
       }
     },
@@ -716,7 +716,7 @@
         172,
         -41.5
       ],
-      "viralScore": 27,
+      "viralScore": 25,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -725,8 +725,8 @@
         "headline": "New Zealand Authorities Rescind Tsunami Alert After Underwater Event",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 25,
-        "intensityTier": "active"
+        "viralScore": 23,
+        "intensityTier": "quiet"
       }
     },
     {

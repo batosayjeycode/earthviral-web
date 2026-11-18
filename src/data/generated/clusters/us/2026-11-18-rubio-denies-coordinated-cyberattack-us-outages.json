@@ -8,26 +8,26 @@
   "region": "North America",
   "categorySlug": "politics-government",
   "categoryName": "Politics & Government",
-  "headline": "Secretary Of State Rubio Denies Coordination In Recent Tech Outages",
-  "seoTitle": "Rubio Rules Out Cyberattack Link To Recent US Tech Outages",
-  "metaDescription": "US Secretary of State Marco Rubio stated there is no evidence linking recent technology outages at major firms and agencies to a systemic cyberattack.",
+  "headline": "Secretary Of State Rubio Denies Links In Recent US Tech Outages",
+  "seoTitle": "Rubio Denies Links Between US Tech Outages",
+  "metaDescription": "Secretary of State Marco Rubio states there is no evidence linking recent service outages across the US to cyberattacks or coordinated activity.",
   "aiSummaryBullets": [
-    "Secretary of State Marco Rubio stated there is zero evidence connecting recent tech failures across the United States.",
-    "The remarks follow a series of disruptions impacting Microsoft, financial institutions, airlines, Apple, and the National Security Agency.",
-    "Official statements from Rubio and Director of National Intelligence Jay Clayton indicate the nation is not under a systemic cyberattack."
+    "Secretary of State Marco Rubio stated there is zero evidence that the recent series of technology outages are linked to each other.",
+    "The administration has explicitly denied that the country is currently under a systemic cyberattack.",
+    "Recent disruptions have impacted various sectors, including email services, flight operations, and classified communications at the NSA."
   ],
-  "aiContextParagraph": "A series of widespread technology outages has affected various sectors across the United States in recent days, including major financial institutions, airline operations, and technology firms such as Microsoft and Apple. Disruptions were also reported at the National Security Agency, impacting classified communication systems. These events prompted speculation regarding potential cybersecurity threats or coordinated attacks against national infrastructure. In response, Secretary of State Marco Rubio issued a public assurance, asserting there is zero evidence to suggest that the incidents are connected or represent a systemic attack. These comments were reiterated following assessments from the Director of National Intelligence, Jay Clayton. While the recent technical turmoil has caused significant operational challenges, officials currently characterize the events as unrelated failures rather than the result of malicious external interference.",
-  "whyItIsViral": "The story is viral due to rapid coverage across eight independent media outlets and sustained international interest regarding the security of critical US infrastructure.",
-  "viralScore": 90,
+  "aiContextParagraph": "A series of widespread technology outages has disrupted various sectors across the United States over the past week, affecting commercial services such as email and flight operations. On Tuesday, these technical difficulties extended to the US National Security Agency, impacting classified communications. In response to the growing national concern, Secretary of State Marco Rubio informed the public that there is currently no evidence of a coordinated cyberattack or a connection between the individual failures. Officials have emphasized that the country is not under a systemic attack. Cloudflare CEO Matthew Prince has also engaged with media outlets to discuss the technical origins behind these recent service interruptions. The administration continues to monitor the situation as investigations into the root causes of these disparate technological failures remain ongoing.",
+  "whyItIsViral": "This story is trending due to rapid coverage across nine independent news outlets and high public interest in the stability of national infrastructure.",
+  "viralScore": 92,
   "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 9,
-    "coverageVelocityScore": 81,
+    "coverageVelocityScore": 87,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-18T01:17:59Z",
-  "lastUpdatedBatchAt": "2026-11-18T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-18T14:18:00Z",
   "sources": [
     {
       "publisherName": "CBS News",
@@ -112,6 +112,27 @@
       "articleTitle": "Banks, flights, email… What’s behind series of US tech outages?",
       "articleUrl": "https://www.france24.com/en/video/20261118-banks-flights-email-what-s-behind-series-of-us-tech-outages",
       "publishedAt": "2026-11-18T10:49:26Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Rubio says 'zero' information that US tech outages are linked",
+      "articleUrl": "https://www.france24.com/en/video/20261118-rubio-says-zero-information-that-us-tech-outages-are-linked",
+      "publishedAt": "2026-11-18T11:39:21Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Concern grows over tech outages as Trump administration denies cyberattacks",
+      "articleUrl": "https://www.cbsnews.com/video/concern-grows-over-tech-outages-as-trump-administration-denies-cyberattacks/",
+      "publishedAt": "2026-11-18T13:47:39Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Cloudflare CEO on what's behind recent tech outages",
+      "articleUrl": "https://www.cbsnews.com/video/cloudflare-ceo-on-whats-behind-recent-tech-outages/",
+      "publishedAt": "2026-11-18T13:58:48Z"
     }
   ],
   "entityTags": [
@@ -120,12 +141,12 @@
       "slug": "marco-rubio"
     },
     {
-      "name": "Jay Clayton",
-      "slug": "jay-clayton"
-    },
-    {
       "name": "National Security Agency",
       "slug": "national-security-agency"
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare"
     },
     {
       "name": "Cybersecurity",
@@ -135,7 +156,7 @@
   "relatedInCountrySlugs": [
     "nsa-classified-network-goes-offline",
     "nsa-internal-network-communication-disruption",
-    "democrat-wins-alaska-gubernatorial-election"
+    "judge-halts-washington-golf-course-renovation"
   ],
   "relatedInCategorySlugs": [
     "france-accuses-iran-supermarket-cyber-attacks",
