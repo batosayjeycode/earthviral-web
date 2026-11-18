@@ -55,7 +55,7 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 ### Phase 3: AI batch pipeline (`npm run update:viral`)
 
-- **Sources:** 31 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sources:** 33 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
 - **Country attribution** across 41 tracked countries, in English and Bahasa Indonesia.
 - **Story grouping:** articles are grouped by TF-IDF headline similarity, with a second pass that merges fragments of the same event. Tuned on a real batch of 1,083 articles.
 - **Viral Activity Score (0–100):** `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
@@ -87,7 +87,7 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
   - `retryDelay` / `Retry-After` hints are honoured
 - **Re-summarising:** every batch retries up to 10 stories that still have non-AI fallback text (`--auto-resummarize <n>`), using only AI calls left over after new and updated stories; `pipeline.fallbackSummaries` in batch-meta tracks how many remain. `--resummarize-fallback` (also a checkbox on the manual workflow form) queues all of them at once.
 - **Staleness watchdog:** an hourly workflow that opens or closes a `stale-data` GitHub issue when data is more than 9 h old. The site shows a **"Data delayed"** badge in the same situation.
-- **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone.
+- **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone. Malay Mail's feed disappeared (404/403) and was replaced by Malaysiakini and theSun; outlets whose robots.txt opts out of AI use (e.g. New Straits Times) are not added.
 - **Header edition by location:** the header's country button shows the visitor's edition: their **manual pick** from the edition menu (kept until changed, with a "Use my location" reset), else their **detected country** when it has a page, else Indonesia. The country comes from `/api/geo`, a Cloudflare Pages Function (`functions/api/geo.ts`, the site's only dynamic route, `Cache-Control: private, no-store`), and is cached in the visitor's own localStorage for 1 day; failed lookups aren't cached. The HTML, and so what search engines index, is identical for everyone (Indonesia, menu built in the browser); `robots.txt` disallows `/api/`. Logic in `src/lib/edition.ts`; a small inline script right after the button restores a saved edition before first paint, so Indonesia never flashes.
 
 ---
