@@ -73,6 +73,9 @@ jobs:
       group: deploy-production
       cancel-in-progress: false
     steps:
+      # `pages deploy` bundles Pages Functions from ./functions (the /api/geo endpoint), and
+      # IndexNow below needs the scripts. Check out before downloading: checkout cleans the workspace.
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: web-dist
@@ -84,8 +87,6 @@ jobs:
           command: pages deploy dist --project-name=earthviral-web --branch=main
       # Plan §9.4 (5): submit this batch's new/updated story URLs to IndexNow once live.
       # Best-effort: skipped without INDEXNOW_KEY and never fails the deploy.
-      - uses: actions/checkout@v4
-        if: github.event_name == 'workflow_run'
       - uses: actions/setup-node@v4
         if: github.event_name == 'workflow_run'
         with:

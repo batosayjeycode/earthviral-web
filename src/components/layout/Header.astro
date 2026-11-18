@@ -1,5 +1,11 @@
 ---
+import { getCountries } from '../../lib/data.ts';
 import { CATEGORIES } from '../../lib/taxonomy.ts';
+
+// Countries with a hub page, for the edition button's geo swap: code → [slug, name].
+const editions = Object.fromEntries(
+  (await getCountries()).map((c) => [c.code, [c.slug, c.name]] as const),
+);
 ---
 
 <header class="glass border-x-0 border-t-0">
@@ -86,14 +92,188 @@ import { CATEGORIES } from '../../lib/taxonomy.ts';
         <span class="sr-only sm:not-sr-only">Search</span>
         <kbd class="tabular hidden rounded border border-line px-1 text-xs sm:inline">⌘K</kbd>
       </a>
-      <a
-        href="/country/indonesia/"
-        class="flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-sm text-ink hover:border-cyan/40"
-        aria-label="Indonesia edition"
-      >
-        <span aria-hidden="true">🇮🇩</span>
-        <span class="hidden sm:inline">Indonesia</span>
-      </a>
+      <!-- Edition. The HTML always says Indonesia (what crawlers and no-JS visitors get). With JS,
+           the script below shows the visitor's manual pick or detected country instead, and
+           reveals the "change edition" menu, which is built in the browser so the crawlable
+           HTML and its links stay the same. -->
+      <div class="relative flex items-center gap-1" data-edition-root>
+        <a
+          href="/country/indonesia/"
+          data-edition
+          data-current="ID"
+          data-editions={JSON.stringify(editions)}
+          class="flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-sm text-ink hover:border-cyan/40"
+          aria-label="Indonesia edition"
+        >
+          <span aria-hidden="true" data-edition-flag>
+            🇮🇩
+          </span>
+          <span class="hidden sm:inline" data-edition-name>
+            Indonesia
+          </span>
+        </a>
+        <button
+          type="button"
+          hidden
+          data-edition-toggle
+          aria-expanded="false"
+          aria-controls="edition-menu"
+          aria-label="Change edition"
+          class="flex items-center rounded-lg border border-line px-1.5 py-1.5 text-ink-muted hover:border-cyan/40 hover:text-white"
+        >
+          <svg aria-hidden="true" viewBox="0 0 20 20" class="size-4" fill="currentColor">
+            <path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"></path>
+          </svg>
+        </button>
+        <div
+          id="edition-menu"
+          hidden
+          data-edition-menu
+          class="absolute top-full right-0 z-50 mt-2 w-64 rounded-xl border border-line bg-ocean/97 p-2 shadow-2xl backdrop-blur"
+        >
+          <p class="px-3 py-1.5 text-xs font-semibold tracking-widest text-ink-faint uppercase">
+            Choose your edition
+          </p>
+          <button
+            type="button"
+            hidden
+            data-edition-auto
+            class="block w-full rounded-md px-3 py-2 text-left text-sm text-cyan hover:bg-white/5"
+          >
+            Use my location
+          </button>
+          <ul data-edition-list class="grid max-h-[60vh] gap-0.5 overflow-y-auto text-sm"></ul>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
+
+<script>
+  import {
+    GEO_KEY,
+    PICK_KEY,
+    readGeoCache,
+    resolveEdition,
+    writeGeoCache,
+    type Editions,
+  } from '../../lib/edition.ts';
+  import { flagEmoji } from '../../lib/taxonomy.ts';
+
+  // Edition = manual pick → detected country → Indonesia (see lib/edition.ts). The detected
+  // country comes from /api/geo (a Cloudflare Pages Function) and is cached in this visitor's
+  // localStorage for a day, so later pages switch without a request. Failures (local preview,
+  // offline, blocked) are not cached and leave the current edition.
+  const link = document.querySelector<HTMLAnchorElement>('[data-edition]');
+  const toggle = document.querySelector<HTMLButtonElement>('[data-edition-toggle]');
+  const menu = document.querySelector<HTMLElement>('[data-edition-menu]');
+  const auto = document.querySelector<HTMLButtonElement>('[data-edition-auto]');
+  const list = document.querySelector<HTMLUListElement>('[data-edition-list]');
+
+  const storage = {
+    get(key: string) {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    },
+    set(key: string, value: string | null) {
+      try {
+        if (value === null) localStorage.removeItem(key);
+        else localStorage.setItem(key, value);
+      } catch {
+        /* storage blocked: the choice lasts for this page only */
+      }
+    },
+  };
+
+  if (link && toggle && menu && auto && list) {
+    const editions = JSON.parse(link.dataset.editions ?? '{}') as Editions;
+    let detected: string | null | undefined = readGeoCache(
+      storage.get(GEO_KEY),
+      Date.now(),
+    )?.country;
+
+    const show = () => {
+      const code = resolveEdition(editions, storage.get(PICK_KEY), detected);
+      const [slug, name] = editions[code]!;
+      link.dataset.current = code;
+      link.href = `/country/${slug}/`;
+      link.setAttribute('aria-label', `${name} edition`);
+      link.querySelector('[data-edition-flag]')!.textContent = flagEmoji(code);
+      link.querySelector('[data-edition-name]')!.textContent = name;
+      for (const b of list.querySelectorAll<HTMLButtonElement>('[data-code]'))
+        b.setAttribute('aria-pressed', String(b.dataset.code === code));
+      auto.hidden = !storage.get(PICK_KEY);
+    };
+
+    const detect = () =>
+      fetch('/api/geo')
+        .then((r) => (r.ok ? (r.json() as Promise<{ country: string | null }>) : null))
+        .then((d) => {
+          if (!d) return;
+          detected = d.country;
+          storage.set(GEO_KEY, writeGeoCache(d.country, Date.now()));
+          show();
+        })
+        .catch(() => {});
+
+    const close = () => {
+      menu.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    // Menu: every edition, alphabetical. Picking one remembers it and opens that edition.
+    const sorted = Object.entries(editions).sort((a, b) => a[1][1].localeCompare(b[1][1]));
+    for (const [code, [, name]] of sorted) {
+      const li = document.createElement('li');
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.code = code;
+      b.className =
+        'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-ink-muted hover:bg-white/5 hover:text-white aria-pressed:bg-white/5 aria-pressed:font-semibold aria-pressed:text-white';
+      b.textContent = `${flagEmoji(code)} ${name}`;
+      li.append(b);
+      list.append(li);
+    }
+    list.addEventListener('click', (e) => {
+      const code = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-code]')?.dataset
+        .code;
+      if (!code) return;
+      storage.set(PICK_KEY, code);
+      show();
+      close();
+      location.assign(link.href);
+    });
+    auto.addEventListener('click', () => {
+      storage.set(PICK_KEY, null);
+      show();
+      close();
+      if (detected === undefined) void detect();
+    });
+
+    const open = () => {
+      menu.hidden = false;
+      toggle.setAttribute('aria-expanded', 'true');
+      list
+        .querySelector<HTMLButtonElement>('[aria-pressed="true"]')
+        ?.scrollIntoView({ block: 'nearest' });
+    };
+    toggle.addEventListener('click', () => (menu.hidden ? open() : close()));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.hidden) {
+        close();
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (!menu.hidden && !(e.target as Element).closest('[data-edition-root]')) close();
+    });
+
+    toggle.hidden = false;
+    show();
+    // Ask only when there is no manual pick and no fresh cached answer.
+    if (!storage.get(PICK_KEY) && detected === undefined) void detect();
+  }
+</script>

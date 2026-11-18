@@ -355,6 +355,48 @@ describe('hosting configuration', () => {
   });
 });
 
+describe('header edition (geo)', () => {
+  const countries = JSON.parse(
+    readFileSync(new URL('../src/data/generated/countries-master.json', import.meta.url), 'utf8'),
+  );
+
+  test('the HTML is the same for every visitor: Indonesia, with the picker hidden', () => {
+    for (const { path, html } of pages) {
+      const link = html.match(/<a\b[^>]*\bdata-edition\b[^>]*>/)?.[0];
+      assert.ok(link, `${path}: no edition link`);
+      assert.equal(attr(link, 'href'), '/country/indonesia/', path);
+      assert.equal(attr(link, 'data-current'), 'ID', path);
+      assert.match(html, /<button\b[^>]*\bhidden\b[^>]*\bdata-edition-toggle\b/, path);
+      // The menu is built in the browser: no per-country links are added to the HTML.
+      assert.match(html, /<ul\b[^>]*data-edition-list[^>]*><\/ul>/, path);
+    }
+  });
+
+  test('every tracked country with a hub page is an edition', () => {
+    const html = pages.find((p) => p.path === '/').html;
+    const link = html.match(/<a\b[^>]*\bdata-edition\b[^>]*>/)[0];
+    const editions = JSON.parse(attr(link, 'data-editions').replaceAll('&quot;', '"'));
+    assert.equal(Object.keys(editions).length, countries.length);
+    for (const c of countries) {
+      assert.deepEqual(editions[c.code], [c.slug, c.name], c.code);
+      assert.ok(existsSync(fileForPath(`/country/${c.slug}/`)), `missing hub for ${c.code}`);
+    }
+  });
+
+  test('robots.txt keeps crawlers off /api/ and nothing else', () => {
+    if (isSeed) return;
+    const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
+    assert.deepEqual(
+      robots.split('\n').filter((l) => /^(Allow|Disallow):/.test(l)),
+      ['Allow: /', 'Disallow: /api/'],
+    );
+  });
+
+  test('no static file is served under /api/ (it belongs to the Pages Function)', () => {
+    assert.ok(!existsSync(join(dist, 'api')));
+  });
+});
+
 describe('content honesty', () => {
   const text = pages.map((p) => p.html.replace(/<[^>]+>/g, ' ')).join(' ');
 
