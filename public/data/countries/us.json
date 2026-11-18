@@ -3,25 +3,25 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 94,
+  "viralScore": 96,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-17T23:18:00Z",
+  "generatedAt": "2026-11-18T02:18:00Z",
   "clusters": [
     {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "FAA Halts Hardware Upgrades Following Nationwide Flight Grounding",
+      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 91,
+      "viralScore": 93,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "The Federal Aviation Administration has paused the installation of specific routers potentially linked to a massive nationwide ground stop.",
-        "Transportation Secretary Sean Duffy is seeking fifty billion dollars in new funding for infrastructure while acknowledging the root cause remains unclear."
+        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
+        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/faa-ground-stop-trump-admin-response/"
       }
     },
     {
@@ -30,8 +30,8 @@
       "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 91,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
         "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
@@ -47,8 +47,8 @@
       "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 88,
-      "intensityTier": "surge",
+      "viralScore": 80,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
         "The former executive has formally agreed to testify before Congress following his resignation last week."
@@ -59,12 +59,29 @@
       }
     },
     {
+      "slug": "trump-prabowo-asean-us-summit-meeting",
+      "canonicalPath": "/news/us/trump-prabowo-asean-us-summit-meeting/",
+      "headline": "President Donald Trump Praises President Prabowo At ASEAN-US Summit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Donald Trump praised President Prabowo Subianto during the special ASEAN-US Summit in Manila.",
+        "Reports indicate that President Trump referred to the Indonesian leader as a great leader, a good person, and a modest individual."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8757533/trump-sapa-prabowo-di-ktt-khusus-asean-as-sahabat-saya-pemimpin-yang-hebat"
+      }
+    },
+    {
       "slug": "nsa-classified-network-goes-offline",
       "canonicalPath": "/news/us/nsa-classified-network-goes-offline/",
       "headline": "National Security Agency Classified Network Experiences Outage",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 79,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A internal classified communications network at the National Security Agency experienced a period of downtime.",
@@ -76,12 +93,46 @@
       }
     },
     {
+      "slug": "us-charges-three-over-iranian-plot",
+      "canonicalPath": "/news/us/us-charges-three-over-iranian-plot/",
+      "headline": "US Investigating Potential Iranian Plots Amid Terrorism Charges",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Donald Trump stated that his administration is monitoring allegations regarding a potential Iranian dirty bomb plot in Washington.",
+        "The White House clarified that there are currently no credible threats related to the alleged plot despite high-level administrative concern."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261110-us-iranian-operatives-raf-fairford-terror-plot"
+      }
+    },
+    {
+      "slug": "nsa-internal-network-communication-disruption",
+      "canonicalPath": "/news/us/nsa-internal-network-communication-disruption/",
+      "headline": "National Security Agency Reports Temporary Internal Network Issues",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
+        "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
+      }
+    },
+    {
       "slug": "us-soldier-arrested-for-russian-espionage",
       "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
       "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
@@ -93,13 +144,47 @@
       }
     },
     {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
+        "Despite the slight gain, the exchange rate remains elevated above the 18,000 Rupiah per dollar threshold."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+      }
+    },
+    {
+      "slug": "white-house-withdraws-heidi-overton-fda-nomination",
+      "canonicalPath": "/news/us/white-house-withdraws-heidi-overton-fda-nomination/",
+      "headline": "White House Withdraws The Nomination Of Heidi Overton For FDA Lead",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The White House has rescinded the nomination of Heidi Overton for the role of Food and Drug Administration commissioner.",
+        "The decision followed reports that the nominee was struggling to secure the necessary support from Republican senators."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda"
+      }
+    },
+    {
       "slug": "us-flight-grounding-causes-travel-disruptions",
       "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
         "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
@@ -110,29 +195,12 @@
       }
     },
     {
-      "slug": "united-airlines-widespread-system-outage",
-      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
-      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "United Airlines experienced a technical glitch that caused significant departure delays.",
-        "The airline confirmed that the system outage was resolved after a period of instability."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
-      }
-    },
-    {
       "slug": "us-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -141,57 +209,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
-      "slug": "us-charges-three-over-iranian-plot",
-      "canonicalPath": "/news/us/us-charges-three-over-iranian-plot/",
-      "headline": "US Investigating Potential Iranian Plots Amid Terrorism Charges",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Donald Trump stated that his administration is monitoring allegations regarding a potential Iranian dirty bomb plot in Washington.",
-        "The White House clarified that there are currently no credible threats related to the alleged plot despite high-level administrative concern."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261110-us-iranian-operatives-raf-fairford-terror-plot"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "United States Conducts Additional Targeted Military Strikes In Iran",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump announced the United States carried out limited strikes on an Iranian air defense system.",
-        "The military operation was focused on Qeshm Island, where local media reported hearing explosions."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
       }
     },
     {
@@ -212,20 +229,20 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "united-airlines-widespread-system-outage",
+      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
+      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
-        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
+        "United Airlines experienced a technical glitch that caused significant departure delays.",
+        "The airline confirmed that the system outage was resolved after a period of instability."
       ],
       "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
       }
     },
     {
@@ -246,6 +263,23 @@
       }
     },
     {
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
+      }
+    },
+    {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Democratic Party Outlines Legislative Priorities Following Midterms",
@@ -263,88 +297,54 @@
       }
     },
     {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "US Treasury Department Criticizes Commerce Agency Over Nvidia Exports",
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "United States Conducts Additional Targeted Military Strikes In Iran",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Treasury Secretary Scott Bessent has publicly questioned the Commerce Department's handling of chip export regulations.",
-        "Allegations of significant leakage in technology exports have prompted scrutiny of Secretary Howard Lutnick's agency."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "harmeet-dhillon-dojs-controversial-civil-rights-chief-resigns",
-      "canonicalPath": "/news/us/harmeet-dhillon-dojs-controversial-civil-rights-chief-resigns/",
-      "headline": "Harmeet Dhillon, DOJ's controversial civil rights chief, resigns",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CBS News reports: Harmeet Dhillon, DOJ's controversial civil rights chief, resigns",
-        "The Guardian reports: Harmeet Dhillon, controversial head of DoJ’s civil rights division, steps down"
+        "President Donald Trump announced the United States carried out limited strikes on an Iranian air defense system.",
+        "The military operation was focused on Qeshm Island, where local media reported hearing explosions."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/05/harmeet-dhillon-doj-resignation"
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
       }
     },
     {
-      "slug": "supreme-court-allows-texas-border-wall",
-      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
-      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Democrat Jonathan Kreiss-Tomkins Wins Alaska Gubernatorial Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
-        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+        "Jonathan Kreiss-Tomkins has been elected governor of Alaska, ending nearly three decades of Republican leadership in the state's top office.",
+        "The 37-year-old former state legislator will become the youngest individual to serve as governor in the state's history."
       ],
       "primarySource": {
         "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
       }
     },
     {
-      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
-      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
-      "headline": "California Voters Reject Ballot Measure To Tax Billionaire Wealth",
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "President Trump Travels To Asia For Trilateral Summit With Xi And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "California voters officially defeated a proposed ballot initiative aimed at taxing individual net worth exceeding $1 billion.",
-        "The rejected measure would have implemented a one-time five percent levy on the wealth of residents categorized as billionaires."
+        "President Trump is embarking on a multi-day trip to Asia for a trilateral meeting with leaders from China and Russia.",
+        "The summit is expected to focus on discussions regarding nuclear arms control among the three nations."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
-      }
-    },
-    {
-      "slug": "mississippi-river-ship-collision-new-orleans",
-      "canonicalPath": "/news/us/mississippi-river-ship-collision-new-orleans/",
-      "headline": "No Fatalities Reported Following Vessel Collision In New Orleans",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A tanker struck a river cruise ship on the Mississippi River near the port of New Orleans.",
-        "Emergency responders confirmed that all passengers have been accounted for following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-xml-mrss"
       }
     }
   ]

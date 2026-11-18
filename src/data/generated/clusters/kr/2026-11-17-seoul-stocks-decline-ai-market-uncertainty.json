@@ -6,8 +6,28 @@
   "countryName": "South Korea",
   "countrySlug": "south-korea",
   "region": "Asia",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "Seoul Stock Market Rises Following Positive Nvidia Earnings Report",
+  "seoTitle": "Seoul Stocks Rally Following Nvidia Earnings",
+  "metaDescription": "South Korean stocks rebounded on Wednesday as investors engaged in bargain hunting following the release of positive quarterly earnings from Nvidia.",
+  "aiSummaryBullets": [
+    "The Seoul stock market opened with significant gains during the Wednesday morning trading session.",
+    "The market recovery was driven by bargain hunting activities among investors following recent volatility.",
+    "The upward trend follows positive quarterly financial results reported by the technology firm Nvidia."
+  ],
+  "aiContextParagraph": "The South Korean financial markets experienced a notable reversal on Wednesday, opening significantly higher after a period of previous declines. This shift in market performance follows earlier investor concerns regarding the artificial intelligence sector, which had previously caused downward pressure on the Seoul stock exchange. Analysts linked the change in market sentiment directly to the latest financial disclosures from Nvidia, which were received positively by the market. This development marks a transition from the caution observed earlier in the week, when investors had anticipated both Nvidia’s earnings and the forthcoming public offering from Anthropic. The current activity reflects a broader trend of bargain hunting as participants recalibrate their positions based on the updated earnings data from major international technology corporations. The market volatility highlights the significant influence that global AI industry updates have on the performance of South Korean equity markets.",
+  "whyItIsViral": "This story is being covered by one independent news agency, reflecting moderate coverage velocity and stable interest in the wake of significant tech sector financial updates.",
+  "viralScore": 44,
+  "intensityTier": "active",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 1,
+    "coverageVelocityScore": 57,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Emerging Coverage"
+  },
   "firstDetectedAt": "2026-11-17T00:01:25Z",
-  "lastUpdatedBatchAt": "2026-11-17T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-18T02:18:00Z",
   "sources": [
     {
       "publisherName": "Yonhap",
@@ -29,50 +49,55 @@
       "articleTitle": "(LEAD) Seoul stocks open lower amid AI concerns ahead of Nvidia earnings, Anthropic IPO",
       "articleUrl": "https://en.yna.co.kr/view/AEN20261117001551320",
       "publishedAt": "2026-11-17T00:21:44Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(URGENT) Seoul stocks open sharply higher on bargain hunting after Nvidia earnings",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261118001900320",
+      "publishedAt": "2026-11-18T00:01:15Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "Seoul stocks open sharply higher on bargain hunting after upbeat Nvidia earnings",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261118001800320",
+      "publishedAt": "2026-11-18T00:02:32Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) Seoul stocks open sharply higher on bargain hunting after upbeat Nvidia earnings",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261118001851320",
+      "publishedAt": "2026-11-18T00:21:29Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "nvidia-reaffirms-gpu-supply-to-korea",
-    "lead-kt-q3-operating-profit-down-amid-data-breach",
-    "south-korean-tax-exam-ai-scandal"
-  ],
-  "relatedInCategorySlugs": [
-    "nvidia-crisis-impacts-brazilian-investors",
-    "nvidia-shares-drop-jensen-huang",
-    "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata"
-  ],
-  "headline": "Seoul Stock Market Declines Amid Anticipation Of AI Industry News",
-  "seoTitle": "Seoul Stocks Drop Ahead of AI Industry Milestones",
-  "metaDescription": "South Korean stock indices opened lower Tuesday as investors express caution regarding upcoming Nvidia earnings reports and the Anthropic IPO.",
-  "aiSummaryBullets": [
-    "South Korean equity markets experienced a decline at the start of the trading session on Tuesday.",
-    "Market participants are monitoring the technology sector ahead of the upcoming Nvidia financial results.",
-    "The pending initial public offering of Anthropic has contributed to broader investor caution in the region."
-  ],
-  "aiContextParagraph": "The Seoul stock market opened with lower figures on Tuesday, reflecting a trend of investor caution observed across international markets. Financial analysts attribute this downward movement to heightened concerns regarding the artificial intelligence sector, as stakeholders prepare for critical developments in the industry. Central to this market uncertainty is the upcoming release of quarterly earnings from Nvidia, a company that serves as a primary bellwether for AI hardware demand. Additionally, anticipation surrounding the initial public offering of the AI research firm Anthropic is influencing investor sentiment, leading to defensive positioning among traders. These events are viewed as significant indicators for the future valuation of technology companies globally, prompting localized market fluctuations in South Korea as investors await clearer data points to guide their financial decisions in the short term.",
-  "whyItIsViral": "This topic has generated strong search interest in South Korea, driven by widespread investor attention toward major upcoming technology market events.",
-  "categorySlug": "economy-business",
-  "categoryName": "Economy & Business",
   "entityTags": [
+    {
+      "name": "Seoul Stock Market",
+      "slug": "seoul-stock-market"
+    },
     {
       "name": "Nvidia",
       "slug": "nvidia"
     },
     {
-      "name": "Anthropic",
-      "slug": "anthropic"
+      "name": "Stock Exchange",
+      "slug": "stock-exchange"
     },
     {
-      "name": "Seoul Stock Market",
-      "slug": "seoul-stock-market"
+      "name": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
-  "viralScore": 30,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 1,
-    "coverageVelocityScore": 2,
-    "publicSearchSignalScore": 72,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "south-korean-tax-exam-ai-scandal",
+    "lee-jae-myung-asean-summit-manila",
+    "samsung-google-smart-glasses-preorder"
+  ],
+  "relatedInCategorySlugs": [
+    "nvidia-crisis-impacts-brazilian-investors",
+    "nvidia-shares-drop-jensen-huang",
+    "nvidia-investigates-ceo-espionage-allegations"
+  ]
 }
