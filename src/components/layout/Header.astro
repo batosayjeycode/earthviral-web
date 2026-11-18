@@ -1,5 +1,6 @@
 ---
 import { getCountries } from '../../lib/data.ts';
+import { GEO_KEY, GEO_TTL_MS, PICK_KEY } from '../../lib/edition.ts';
 import { CATEGORIES } from '../../lib/taxonomy.ts';
 
 // Countries with a hub page, for the edition button's geo swap: code → [slug, name].
@@ -125,6 +126,39 @@ const editions = Object.fromEntries(
             <path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"></path>
           </svg>
         </button>
+        <!-- Restores the saved edition while the page is still parsing, before first paint, so
+             Indonesia never flashes. Mirrors resolveEdition/readGeoCache in lib/edition.ts
+             (manual pick → detected country cached < 1 day → keep the HTML default); the
+             module script below then adds the menu and asks /api/geo when needed. Revealing
+             the menu button here too keeps the header from shifting later. -->
+        <script is:inline define:vars={{ GEO_KEY, PICK_KEY, GEO_TTL_MS }}>
+          try {
+            const a = document.querySelector('[data-edition]');
+            document.querySelector('[data-edition-toggle]').hidden = false;
+            const editions = JSON.parse(a.dataset.editions);
+            const pick = localStorage.getItem(PICK_KEY);
+            let geo = null;
+            try {
+              const cached = JSON.parse(localStorage.getItem(GEO_KEY));
+              const age = Date.now() - cached.at;
+              if (age >= 0 && age < GEO_TTL_MS) geo = cached.country;
+            } catch {
+              /* no usable geo cache */
+            }
+            const code = editions[pick] ? pick : editions[geo] ? geo : null;
+            if (code) {
+              a.dataset.current = code;
+              a.href = `/country/${editions[code][0]}/`;
+              a.setAttribute('aria-label', `${editions[code][1]} edition`);
+              a.querySelector('[data-edition-flag]').textContent = String.fromCodePoint(
+                ...[...code].map((ch) => 0x1f1a5 + ch.charCodeAt(0)),
+              );
+              a.querySelector('[data-edition-name]').textContent = editions[code][1];
+            }
+          } catch {
+            /* storage blocked or markup changed: the module script still applies the edition */
+          }
+        </script>
         <div
           id="edition-menu"
           hidden

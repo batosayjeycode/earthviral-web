@@ -310,6 +310,49 @@ try {
       await v.context.close();
     }
 
+    // No flash: a saved edition (manual pick, or a detected country cached < 1 day) is in
+    // place from the very first painted frame, and doesn't depend on the module script.
+    for (const [label, key, value, want] of [
+      ['manual pick', 'ev-edition', 'JP', 'JP'],
+      ['cached geo', 'ev-geo', null, 'GB'],
+    ]) {
+      const v = await visitor('US', async (page) => {
+        await page.addInitScript(
+          ([key, value]) => {
+            if (!sessionStorage.qaSeeded) {
+              sessionStorage.qaSeeded = '1';
+              localStorage[key] =
+                value ?? JSON.stringify({ country: 'GB', at: Date.now() - 3_600_000 });
+            }
+            // Edition shown in every animation frame (each frame is what gets painted).
+            window.__frames = [];
+            const tick = () => {
+              const a = document.querySelector('[data-edition]');
+              if (a) {
+                const shown = `${a.dataset.current}:${a.textContent.trim().replace(/\s+/g, ' ')}`;
+                if (window.__frames.at(-1) !== shown) window.__frames.push(shown);
+              }
+              if (document.readyState !== 'complete' || window.__frames.length === 0)
+                requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+          },
+          [key, value],
+        );
+      });
+      await go(v.page, '/about/');
+      const frames = await v.page.evaluate(() => window.__frames);
+      if (frames.length !== 1 || !frames[0].startsWith(`${want}:`))
+        fail(`${label}: header changed after first paint: ${JSON.stringify(frames)}`);
+      // Same page with every bundled module blocked: the inline restore alone must do it.
+      await v.page.route('**/_astro/*.js', (route) => route.abort());
+      await v.page.reload({ waitUntil: 'load' });
+      expectEdition(await edition(v.page), want, `${label} without module JS`);
+      if (!(await v.page.locator('[data-edition-toggle]').isVisible()))
+        fail(`${label}: menu button should be revealed by the inline script`);
+      await v.context.close();
+    }
+
     // 4. Unsupported or unknown locations and API failures fall back to Indonesia, and a
     //    failure is not cached (the next page retries). Blocking /api/geo is also what a
     //    crawler that obeys robots.txt (Disallow: /api/) sees.
