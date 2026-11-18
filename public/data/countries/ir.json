@@ -3,34 +3,17 @@
   "name": "Iran",
   "slug": "iran",
   "region": "Asia",
-  "viralScore": 77,
+  "viralScore": 66,
   "intensityTier": "high",
-  "generatedAt": "2026-11-18T05:18:00Z",
+  "generatedAt": "2026-11-18T08:18:00Z",
   "clusters": [
-    {
-      "slug": "farage-says-he-is-worried-trump-will-step-up",
-      "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
-      "headline": "Regional Tensions Surge As Iran Conducts Strikes In Gulf Nations",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Bahrain reported intercepting strikes, while Kuwait stated it was countering hostile drone attacks amid regional instability.",
-        "The escalation follows a reported American military attack on Iran's Qeshm Island."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/trump-vance-iran-talks/"
-      }
-    },
     {
       "slug": "trump-addresses-iran-dirty-bomb-threat",
       "canonicalPath": "/news/ir/trump-addresses-iran-dirty-bomb-threat/",
       "headline": "President Trump Addresses Reported Iran Radioactive Bomb Threat",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 70,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump stated that the U.S. is treating reports of a potential Iranian radioactive bomb threat against Washington, D.C. with high importance.",
@@ -47,7 +30,7 @@
       "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Explosions were reported on Qeshm Island and on tankers following encounters with sea mines in the Strait of Hormuz.",
@@ -76,23 +59,6 @@
       }
     },
     {
-      "slug": "houthi-forces-advance-in-yemen",
-      "canonicalPath": "/news/ir/houthi-forces-advance-in-yemen/",
-      "headline": "Houthi Forces Advance In Southern Yemen As Regional Tensions Persist",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Houthi fighters aligned with Iran have continued a territorial push across southern regions of Yemen.",
-        "Security analysts indicate that these military advances could potentially lead to wider regional destabilization."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy97qperq9eo"
-      }
-    },
-    {
       "slug": "iran-foreign-activities-and-domestic-emigration",
       "canonicalPath": "/news/ir/iran-foreign-activities-and-domestic-emigration/",
       "headline": "Iran Faces Rising Internal Migration And External Tensions In Europe",
@@ -107,6 +73,40 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/iran-s-growing-exodus-of-young-talent/a-79960368?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "farage-says-he-is-worried-trump-will-step-up",
+      "canonicalPath": "/news/ir/farage-says-he-is-worried-trump-will-step-up/",
+      "headline": "Donald Trump Adjusts Diplomacy Strategy Regarding Iran Policy",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Donald Trump has indicated that a formal agreement with Iran is currently not required.",
+        "JD Vance has been removed from his previous role in managing Iran-related diplomatic negotiations."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/trump-vance-iran-talks/"
+      }
+    },
+    {
+      "slug": "houthi-forces-advance-in-yemen",
+      "canonicalPath": "/news/ir/houthi-forces-advance-in-yemen/",
+      "headline": "Houthi Forces Advance In Southern Yemen As Regional Tensions Persist",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Houthi fighters aligned with Iran have continued a territorial push across southern regions of Yemen.",
+        "Security analysts indicate that these military advances could potentially lead to wider regional destabilization."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy97qperq9eo"
       }
     },
     {

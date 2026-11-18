@@ -3,18 +3,35 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 72,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-18T05:18:00Z",
+  "viralScore": 59,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-18T08:18:00Z",
   "clusters": [
+    {
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 23-year-old man was arrested in connection with the death of a 15-day-old infant.",
+        "The infant had been receiving care for critical injuries at a hospital before passing away."
+      ],
+      "primarySource": {
+        "publisherName": "dailyliberal.com.au",
+        "articleUrl": "https://www.dailyliberal.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
+      }
+    },
     {
       "slug": "cricket-australia-sandpapergate-forum",
       "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 69,
-      "intensityTier": "high",
+      "viralScore": 49,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
         "Former coach Darren Lehmann confirmed his participation, stating he has nothing to hide regarding the incident."
@@ -22,57 +39,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
-      }
-    },
-    {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
-        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
-      }
-    },
-    {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
-        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
-      }
-    },
-    {
-      "slug": "melbourne-cup-horse-found-skip-bin",
-      "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
-      "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A racehorse that previously competed in the Melbourne Cup was discovered in a skip bin.",
-        "Reports indicate the horse died from a colic-related condition on Monday."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/dead-melbourne-cup-runner-so-you-are-found-in-sydney-skip-bin/107395274"
       }
     },
     {
@@ -93,54 +59,71 @@
       }
     },
     {
-      "slug": "man-charged-murder-fatal-home-invasion",
-      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-      "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "melbourne-cup-horse-found-skip-bin",
+      "canonicalPath": "/news/au/melbourne-cup-horse-found-skip-bin/",
+      "headline": "Remains Of Melbourne Cup Horse Discovered In A Sydney Skip Bin",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A racehorse that previously competed in the Melbourne Cup was discovered in a skip bin.",
+        "Reports indicate the horse died from a colic-related condition on Monday."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/dead-melbourne-cup-runner-so-you-are-found-in-sydney-skip-bin/107395274"
+      }
+    },
+    {
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
       "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "A 23-year-old man was arrested in connection with the death of a 15-day-old infant.",
-        "The infant had been receiving care for critical injuries at a hospital before passing away."
+        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
+        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
       ],
       "primarySource": {
-        "publisherName": "dailyliberal.com.au",
-        "articleUrl": "https://www.dailyliberal.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
       }
     },
     {
-      "slug": "national-medical-guidance-puberty-blockers",
-      "canonicalPath": "/news/au/national-medical-guidance-puberty-blockers/",
-      "headline": "National Medical Council Issues Guidance On Youth Puberty Blockers",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
+        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
+    {
+      "slug": "coles-supermarket-cyber-attack-investigation",
+      "canonicalPath": "/news/au/coles-supermarket-cyber-attack-investigation/",
+      "headline": "Supermarket Giant Coles Investigates Reported Cyber Attack Incident",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
       "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The National Health and Medical Research Council released new guidelines suggesting puberty blockers remain a clinical option for some children.",
-        "The recommendations follow a comprehensive year-long review of international evidence regarding the treatment of gender dysphoria."
+        "Coles is currently investigating a cyber security incident reported on Monday morning.",
+        "The retailer states that there is no current evidence of customer, employee, or supplier data being compromised."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-16/puberty-blockers-interim-advice-health-medical-research-council/107376484"
-      }
-    },
-    {
-      "slug": "2026-aria-awards-sydney-ceremony",
-      "canonicalPath": "/news/au/2026-aria-awards-sydney-ceremony/",
-      "headline": "Australian Music Industry Figures Gather For Annual Aria Awards",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The annual Australian Recording Industry Association Awards are taking place at Sydney's Hordern Pavilion.",
-        "Musicians and industry figures have commenced their arrival at the event location."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/aria-awards-2026-red-carpet-fashion/107399278"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/business/2026/nov/16/coles-cyber-attack-incident-data"
       }
     },
     {
@@ -161,37 +144,20 @@
       }
     },
     {
-      "slug": "australian-gamers-await-gta-vi-launch",
-      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
-      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
+      "slug": "national-medical-guidance-puberty-blockers",
+      "canonicalPath": "/news/au/national-medical-guidance-puberty-blockers/",
+      "headline": "National Medical Council Issues Guidance On Youth Puberty Blockers",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
-        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
-      }
-    },
-    {
-      "slug": "neurological-conditions-in-perth-double-murder",
-      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
-      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 33,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
-        "Evidence suggests the perpetrator engaged in high-level planning for the event."
+        "The National Health and Medical Research Council released new guidelines suggesting puberty blockers remain a clinical option for some children.",
+        "The recommendations follow a comprehensive year-long review of international evidence regarding the treatment of gender dysphoria."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-16/puberty-blockers-interim-advice-health-medical-research-council/107376484"
       }
     },
     {
@@ -200,7 +166,7 @@
       "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 31,
+      "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Adelaide council voted to repeal a recently passed motion that intended to restrict fossil fuel-related advertising on municipal land.",
@@ -226,40 +192,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/more-important-than-heart-australian-pm-caught-making-genital-joke-with-climate-minister-at-cop31-watch/articleshow/135836793.cms"
-      }
-    },
-    {
-      "slug": "australian-surfers-win-world-surfing-gold",
-      "canonicalPath": "/news/au/australian-surfers-win-world-surfing-gold/",
-      "headline": "Australian Surfers Secure Gold Medals At World Surfing Games",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Leihani Zoric and Ethan Ewing secured gold medals for Australia at the World Surfing Games.",
-        "At 14 years old, Zoric became the youngest athlete to win the open women's title at the event."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/surfing-australians-zoric-ewing-take-world-surfing-games-gold-6553836"
-      }
-    },
-    {
-      "slug": "coles-supermarket-cyber-attack-investigation",
-      "canonicalPath": "/news/au/coles-supermarket-cyber-attack-investigation/",
-      "headline": "Supermarket Giant Coles Investigates Reported Cyber Attack Incident",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Coles is currently investigating a cyber security incident reported on Monday morning.",
-        "The retailer states that there is no current evidence of customer, employee, or supplier data being compromised."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/business/2026/nov/16/coles-cyber-attack-incident-data"
       }
     },
     {
@@ -297,12 +229,63 @@
       }
     },
     {
+      "slug": "neurological-conditions-in-perth-double-murder",
+      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
+      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 28,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
+        "Evidence suggests the perpetrator engaged in high-level planning for the event."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
+      }
+    },
+    {
+      "slug": "2026-aria-awards-sydney-ceremony",
+      "canonicalPath": "/news/au/2026-aria-awards-sydney-ceremony/",
+      "headline": "Australian Music Industry Figures Gather For Annual Aria Awards",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 26,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The annual Australian Recording Industry Association Awards are taking place at Sydney's Hordern Pavilion.",
+        "Musicians and industry figures have commenced their arrival at the event location."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/aria-awards-2026-red-carpet-fashion/107399278"
+      }
+    },
+    {
+      "slug": "australian-gamers-await-gta-vi-launch",
+      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
+      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 24,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
+        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
+      }
+    },
+    {
       "slug": "australian-body-donation-policy-change",
       "canonicalPath": "/news/au/australian-body-donation-policy-change/",
       "headline": "Proposed Changes To Body Donation Procedures Following Recent Case",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 23,
+      "viralScore": 21,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "A resident sought to donate his late wife's remains to a university research program.",
@@ -314,12 +297,29 @@
       }
     },
     {
+      "slug": "russell-brand-found-guilty-of-rape-and-sexual-assault-2",
+      "canonicalPath": "/news/au/russell-brand-found-guilty-of-rape-and-sexual-assault-2/",
+      "headline": "Comedian Russell Brand Convicted Of Rape And Sexual Assault Charges",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 20,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Russell Brand has been found guilty of rape and sexual assault charges.",
+        "The verdict follows legal proceedings brought against the media personality."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-06/russell-brand-jury-verdict/107353304"
+      }
+    },
+    {
       "slug": "victorian-state-election-campaign-launches",
       "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
       "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 22,
+      "viralScore": 20,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
@@ -331,20 +331,20 @@
       }
     },
     {
-      "slug": "russell-brand-found-guilty-of-rape-and-sexual-assault-2",
-      "canonicalPath": "/news/au/russell-brand-found-guilty-of-rape-and-sexual-assault-2/",
-      "headline": "Comedian Russell Brand Convicted Of Rape And Sexual Assault Charges",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 21,
+      "slug": "todd-russell-beaconsfield-mine-survivor-dies",
+      "canonicalPath": "/news/au/todd-russell-beaconsfield-mine-survivor-dies/",
+      "headline": "Beaconsfield Mine Collapse Survivor Todd Russell Passes Away At 54",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 18,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "Russell Brand has been found guilty of rape and sexual assault charges.",
-        "The verdict follows legal proceedings brought against the media personality."
+        "Todd Russell has died at 54 years old following a recent period of hospitalization.",
+        "Russell was one of two miners rescued from the Beaconsfield gold mine collapse in 2006."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-06/russell-brand-jury-verdict/107353304"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/todd-russell-beaconsfield-mine-disaster-survivor-dies/105147924"
       }
     }
   ]

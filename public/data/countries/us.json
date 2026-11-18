@@ -3,42 +3,42 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 90,
+  "viralScore": 95,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-18T05:18:00Z",
+  "generatedAt": "2026-11-18T08:18:00Z",
   "clusters": [
-    {
-      "slug": "faa-issues-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 87,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
-        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know?traffic_source=rss"
-      }
-    },
     {
       "slug": "rubio-denies-coordinated-cyberattack-us-outages",
       "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "Secretary Of State Rubio Dismisses Fears Of Coordinated Cyberattack",
+      "headline": "Secretary Of State Rubio Denies Coordination In Recent Tech Outages",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 87,
+      "viralScore": 92,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Secretary of State Marco Rubio stated there is no evidence that recent technology disruptions are linked or the result of a systemic cyberattack.",
-        "The outages have affected multiple critical sectors, including national aviation, banking institutions, government agencies, and major technology companies."
+        "Secretary of State Marco Rubio stated there is zero evidence connecting recent tech failures across the United States.",
+        "The remarks follow a series of disruptions impacting Microsoft, financial institutions, airlines, Apple, and the National Security Agency."
       ],
       "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/heres-what-might-be-causing-the-string-of-tech-related-outages/"
+        "articleUrl": "https://www.cbsnews.com/video/outages-hit-nsa-and-apple-latest-tech-turmoil/"
+      }
+    },
+    {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Democrat Mary Peltola Secures Alaska Senate Seat In Election Win",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 85,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Democrat Mary Peltola secured victory in the Alaska Senate race by receiving 50.1 percent of the vote.",
+        "The result unseats Republican incumbent Dan Sullivan and finalizes the United States midterm election outcomes."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
       }
     },
     {
@@ -47,8 +47,8 @@
       "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 76,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
         "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
@@ -59,63 +59,12 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 83,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
-        "The former executive has formally agreed to testify before Congress following his resignation last week."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/what-we-know-about-jensen-huangs-resignation-so-far/"
-      }
-    },
-    {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Democrat Mary Peltola Wins Alaska Senate Seat In Historic Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 81,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democrat Mary Peltola defeated incumbent Republican Dan Sullivan in Alaska's closely contested US Senate race.",
-        "Peltola is the first Alaska Native elected to represent the state in the US Senate."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
-      }
-    },
-    {
       "slug": "trump-prabowo-asean-us-summit-meeting",
       "canonicalPath": "/news/us/trump-prabowo-asean-us-summit-meeting/",
       "headline": "President Donald Trump Praises President Prabowo At ASEAN-US Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump praised President Prabowo Subianto during the special ASEAN-US Summit in Manila.",
@@ -127,20 +76,54 @@
       }
     },
     {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
+      "slug": "faa-issues-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
+        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
       "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
+        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
+        "The former executive has formally agreed to testify before Congress following his resignation last week."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/what-we-know-about-jensen-huangs-resignation-so-far/"
       }
     },
     {
@@ -149,8 +132,8 @@
       "headline": "Pertamina Addresses Exchange Rate Impact As Rupiah Fluctuates",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Indonesian Rupiah experienced a minor appreciation of 0.01 percent against the United States dollar during Friday morning trading.",
         "Despite the slight gain, the exchange rate remains elevated above the 18,000 Rupiah per dollar threshold."
@@ -166,8 +149,8 @@
       "headline": "National Security Agency Classified Network Experiences Outage",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A internal classified communications network at the National Security Agency experienced a period of downtime.",
         "The agency stated that the disruption was caused by temporary degradation during routine maintenance."
@@ -183,8 +166,8 @@
       "headline": "US Investigating Potential Iranian Plots Amid Terrorism Charges",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Donald Trump stated that his administration is monitoring allegations regarding a potential Iranian dirty bomb plot in Washington.",
         "The White House clarified that there are currently no credible threats related to the alleged plot despite high-level administrative concern."
@@ -200,7 +183,7 @@
       "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 59,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
@@ -212,29 +195,12 @@
       }
     },
     {
-      "slug": "nsa-internal-network-communication-disruption",
-      "canonicalPath": "/news/us/nsa-internal-network-communication-disruption/",
-      "headline": "National Security Agency Reports Temporary Internal Network Issues",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
-        "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
-      }
-    },
-    {
       "slug": "us-flight-grounding-causes-travel-disruptions",
       "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
@@ -243,6 +209,23 @@
       "primarySource": {
         "publisherName": "Tempo",
         "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+      }
+    },
+    {
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
+        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
       }
     },
     {
@@ -280,12 +263,29 @@
       }
     },
     {
+      "slug": "nsa-internal-network-communication-disruption",
+      "canonicalPath": "/news/us/nsa-internal-network-communication-disruption/",
+      "headline": "National Security Agency Reports Temporary Internal Network Issues",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A secure internal communications network used by the National Security Agency experienced a temporary period of disruption.",
+        "NSA officials stated that the issue occurred during scheduled maintenance and denied that the incident was caused by a cyberattack."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
+      }
+    },
+    {
       "slug": "major-us-banks-experience-service-outages",
       "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
       "headline": "Customers Report Widespread Service Outages At Major American Banks",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
@@ -294,40 +294,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
-      }
-    },
-    {
-      "slug": "white-house-withdraws-heidi-overton-fda-nomination",
-      "canonicalPath": "/news/us/white-house-withdraws-heidi-overton-fda-nomination/",
-      "headline": "White House Withdraws The Nomination Of Heidi Overton For FDA Lead",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The White House has rescinded the nomination of Heidi Overton for the role of Food and Drug Administration commissioner.",
-        "The decision followed reports that the nominee was struggling to secure the necessary support from Republican senators."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda"
-      }
-    },
-    {
-      "slug": "united-airlines-widespread-system-outage",
-      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
-      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "United Airlines experienced a technical glitch that caused significant departure delays.",
-        "The airline confirmed that the system outage was resolved after a period of instability."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
       }
     },
     {
@@ -345,6 +311,40 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+      }
+    },
+    {
+      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
+      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
+      "headline": "California Voters Reject Ballot Measure To Tax Billionaire Wealth",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "California voters officially defeated a proposed ballot initiative aimed at taxing individual net worth exceeding $1 billion.",
+        "The rejected measure would have implemented a one-time five percent levy on the wealth of residents categorized as billionaires."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+      }
+    },
+    {
+      "slug": "united-states-gas-prices-decline",
+      "canonicalPath": "/news/us/united-states-gas-prices-decline/",
+      "headline": "United States Diesel Prices Fall Below Six Dollars Per Gallon",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Average diesel prices in the United States have decreased to 5.99 dollars per gallon according to AAA data.",
+        "This decline marks the first time diesel costs have dropped below the six-dollar threshold since September."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/10/nx-s1-6034518/inflation-consumer-prices-economy-gas-prices"
       }
     }
   ]
