@@ -3,21 +3,38 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 89,
+  "viralScore": 93,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-18T08:18:00Z",
+  "generatedAt": "2026-11-18T11:18:00Z",
   "clusters": [
+    {
+      "slug": "trump-to-meet-xi-putin-apec",
+      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+      "headline": "President Trump Arrives In China For High Stakes Trilateral Summit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 90,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "President Trump was greeted on the airport tarmac by President Xi Jinping upon arriving in Shenzhen for a high-level visit.",
+        "The gesture marked the first time the Chinese president has personally welcomed a foreign leader at the airport since taking office in 2013."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/asia-pacific/20261114-china-to-host-first-ever-trilateral-meeting-between-trump-xi-and-putin-next-week-us-says"
+      }
+    },
     {
       "slug": "xi-jinping-to-host-apec-summit",
       "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
       "headline": "Leaders Convene In Shenzhen China For The 33rd Annual APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 86,
+      "viralScore": 90,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Global leaders are gathering in Shenzhen, China, for the 33rd Asia-Pacific Economic Cooperation (APEC) summit held from November 18 to 19, 2026.",
-        "President Xi Jinping has emphasized the importance of international cooperation regarding artificial intelligence development and free trade initiatives."
+        "President Xi Jinping advocates for open investment and free trade during the APEC summit in Shenzhen.",
+        "US President Donald Trump has arrived in the city to participate in discussions with international counterparts."
       ],
       "primarySource": {
         "publisherName": "Mexico News Daily",
@@ -30,15 +47,32 @@
       "headline": "Nvidia Posts Strong Q3 Results Following Jensen Huang Resignation",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 76,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Nvidia reported a doubling of its third-quarter revenue in its first financial statement since the resignation of Jensen Huang.",
         "The company's board of directors explicitly stated there are no plans to reinstate the former CEO following the espionage investigation."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/fired-nvidia-ceo-jensen-huang-agrees-to-testify-before-congress-top-republican-lawmaker-says-he-has-some-very-serious-/articleshow/135777905.cms"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
+      }
+    },
+    {
+      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
+      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
+      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
+        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8745936/serba-serbi-bos-nvidia-diduga-selingkuh-dengan-mata-mata-china"
       }
     },
     {
@@ -47,7 +81,7 @@
       "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump stated that North Korean leader Kim Jong Un has expressed interest in attending the APEC summit in China.",
@@ -59,63 +93,12 @@
       }
     },
     {
-      "slug": "trump-to-meet-xi-putin-apec",
-      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-      "headline": "Xi And Putin Meet Ahead Of High Stakes Trilateral Shenzhen Summit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 71,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Xi Jinping and Vladimir Putin held preliminary discussions in Shenzhen prior to the arrival of US President Donald Trump.",
-        "The upcoming trilateral meeting is expected to cover global peace and the conflict in Ukraine, among other high-stakes diplomatic topics."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261114001151315"
-      }
-    },
-    {
-      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
-      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
-      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
-        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261109175717-4-783668/fakta-bos-nvidia-selingkuh-dengan-agen-china-reaksi-trump-konsekuensi"
-      }
-    },
-    {
-      "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
-      "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
-      "headline": "Hong Kong Markets See Fluctuating Debuts For Chinese Tech Firms",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Semiconductor firms Hosin, Amicro, Denglin, and Xinde recently debuted on the Hong Kong stock market with mixed trading performances.",
-        "Alibaba's artificial intelligence chip division, T-Head, has submitted an application to launch an initial public offering in Hong Kong."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/05/asia-pacific/politics/joshua-wong-hong-kong-democracy-prison/"
-      }
-    },
-    {
       "slug": "asean-china-haze-maritime-negotiations",
       "canonicalPath": "/news/cn/asean-china-haze-maritime-negotiations/",
       "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 49,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
@@ -132,7 +115,7 @@
       "headline": "Shenzhen Implements Strict Noise And Drone Curbs For APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Authorities in Shenzhen have prohibited drone flights to prepare for the upcoming APEC forum.",
@@ -158,23 +141,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/berita/d-8754965/prabowo-dorong-negosiasi-laut-china-selatan-diselesaikan-efektif"
-      }
-    },
-    {
-      "slug": "international-leaders-visit-china-tech-hubs",
-      "canonicalPath": "/news/cn/international-leaders-visit-china-tech-hubs/",
-      "headline": "International Leaders Visit China To Tour Advanced Tech Hubs",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Global leaders are visiting Shenzhen to tour major technological developments in the region.",
-        "The city is being presented by Chinese authorities as a leading model for future high-tech progress."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm3eg3v9jkk8o"
       }
     },
     {
@@ -229,37 +195,37 @@
       }
     },
     {
-      "slug": "megaspeed-responds-to-nvidia-allegations",
-      "canonicalPath": "/news/cn/megaspeed-responds-to-nvidia-allegations/",
-      "headline": "Megaspeed Addresses Allegations Regarding Former Nvidia Executive",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Megaspeed maintains that its operations are lawful following reports of alleged espionage involving its former director, Alice Huang.",
-        "Jensen Huang resigned as the chief executive of Nvidia amid reports concerning his personal association with Alice Huang."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/technology/2026/nov/16/megaspeed-company-breaks-slience-nvidia-jensen-huang-alice-huang"
-      }
-    },
-    {
-      "slug": "singapore-pm-advocates-asean-china-cooperation",
-      "canonicalPath": "/news/cn/singapore-pm-advocates-asean-china-cooperation/",
-      "headline": "Singapore PM Advocates For Stronger ASEAN And China Cooperation",
+      "slug": "international-leaders-visit-china-tech-hubs",
+      "canonicalPath": "/news/cn/international-leaders-visit-china-tech-hubs/",
+      "headline": "International Leaders Visit China To Tour Advanced Tech Hubs",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Prime Minister Lawrence Wong emphasized the importance of reinforcing relationships between ASEAN members and China.",
-        "The summit highlighted potential for joint development in the sectors of digital technology and artificial intelligence."
+        "Global leaders are visiting Shenzhen to tour major technological developments in the region.",
+        "The city is being presented by Chinese authorities as a leading model for future high-tech progress."
       ],
       "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/singapore/asean-china-summit-lawrence-wong-6553926"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm3eg3v9jkk8o"
+      }
+    },
+    {
+      "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
+      "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
+      "headline": "Hong Kong Markets See Fluctuating Debuts For Chinese Tech Firms",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Semiconductor firms Hosin, Amicro, Denglin, and Xinde recently debuted on the Hong Kong stock market with mixed trading performances.",
+        "Alibaba's artificial intelligence chip division, T-Head, has submitted an application to launch an initial public offering in Hong Kong."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/05/asia-pacific/politics/joshua-wong-hong-kong-democracy-prison/"
       }
     },
     {
@@ -345,6 +311,40 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/12/china-rules-out-hosting-cop33-climate-summit-in-2028"
+      }
+    },
+    {
+      "slug": "dbs-paylah-expands-payment-services-china",
+      "canonicalPath": "/news/cn/dbs-paylah-expands-payment-services-china/",
+      "headline": "DBS PayLah Users Gain Access To QR Payments Across China Network",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "DBS PayLah users are now able to complete transactions at more than 100 million merchant locations throughout China.",
+        "The service allows users to pay by scanning merchant QR codes or by presenting their own codes for merchant processing."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/dbs-paylah-users-can-now-pay-at-more-than-100-million-merchants-across-china"
+      }
+    },
+    {
+      "slug": "indonesian-human-trafficking-ring-uncovered",
+      "canonicalPath": "/news/cn/indonesian-human-trafficking-ring-uncovered/",
+      "headline": "Indonesian Authorities Uncover Human Trafficking Ring To China",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Police identified three Indonesian women victimized by a human trafficking syndicate.",
+        "The network utilized a fraudulent marriage scheme to move individuals abroad."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8750233/3-wni-dijual-jadi-pengantin-pesanan-rp-500-juta-ke-china-mahar-rp-20-juta"
       }
     }
   ]
