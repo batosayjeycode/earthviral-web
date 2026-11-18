@@ -85,7 +85,7 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 - **Re-summarising:** `--resummarize-fallback` re-summarises stories that still have non-AI text. It's also available as a checkbox on the manual workflow form.
 - **Staleness watchdog:** an hourly workflow that opens or closes a `stale-data` GitHub issue when data is more than 9 h old. The site shows a **"Data delayed"** badge in the same situation.
 - **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone.
-- **Header edition by location:** the header's country button shows the visitor's own country (flag, name, link) when it has a page, and Indonesia otherwise. The country comes from `/api/geo`, a Cloudflare Pages Function (`functions/api/geo.ts`, the site's only dynamic route), and is cached in the browser for a day. The HTML, and so what search engines index, still says Indonesia; `robots.txt` disallows `/api/`.
+- **Header edition by location:** the header's country button shows the visitor's edition: their **manual pick** from the edition menu (kept until changed, with a "Use my location" reset), else their **detected country** when it has a page, else Indonesia. The country comes from `/api/geo`, a Cloudflare Pages Function (`functions/api/geo.ts`, the site's only dynamic route, `Cache-Control: private, no-store`), and is cached in the visitor's own localStorage for 1 day; failed lookups aren't cached. The HTML, and so what search engines index, is identical for everyone (Indonesia, menu built in the browser); `robots.txt` disallows `/api/`. Logic in `src/lib/edition.ts`.
 
 ---
 

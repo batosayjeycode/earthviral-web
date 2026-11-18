@@ -20,8 +20,10 @@ export const onRequestGet = ({ request }: { request: GeoRequest }): Response => 
     { country },
     {
       headers: {
-        // Per visitor: browsers may cache it for a day, shared caches must not.
-        'Cache-Control': 'private, max-age=86400',
+        // Per visitor, so never stored by shared caches (CDN, proxies). Not browser-cached
+        // either: the header keeps its own one-day copy in localStorage, and an HTTP cache on
+        // top would stretch that past a day.
+        'Cache-Control': 'private, no-store',
         'X-Robots-Tag': 'noindex',
       },
     },

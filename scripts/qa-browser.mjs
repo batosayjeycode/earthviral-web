@@ -189,43 +189,167 @@ try {
     await context.close();
   }
 
-  // ---------- Header edition follows the visitor's country ----------
+  // ---------- Header edition: geo detection, manual pick, cache, fallbacks ----------
   console.log('\n[geo edition]');
   {
     const before = failures.length;
-    const editionOf = (page) =>
+    const countries = JSON.parse(
+      await readFile(new URL('../src/data/generated/countries-master.json', import.meta.url)),
+    );
+    const flagOf = (code) =>
+      String.fromCodePoint(...[...code].map((ch) => 0x1f1a5 + ch.charCodeAt(0)));
+    const slugOf = Object.fromEntries(countries.map((c) => [c.code, c.slug]));
+    const edition = (page) =>
       page.locator('[data-edition]').evaluate((a) => ({
+        code: a.dataset.current,
         href: a.getAttribute('href'),
-        flag: a.querySelector('[data-edition-flag]')?.textContent,
+        flag: a.querySelector('[data-edition-flag]')?.textContent?.trim(),
+        name: a.querySelector('[data-edition-name]')?.textContent?.trim(),
       }));
-    const visit = async (country) => {
+    const expectEdition = (got, code, label) => {
+      const want = { code, href: `/country/${slugOf[code]}/`, flag: flagOf(code) };
+      if (got.code !== want.code || got.href !== want.href || got.flag !== want.flag)
+        fail(`${label}: expected ${JSON.stringify(want)}, got ${JSON.stringify(got)}`);
+    };
+    /** A fresh visitor (own browser storage) whose IP geolocates to `country`. */
+    const visitor = async (country, setup) => {
       const context = await browser.newContext({
         viewport: { width: 1440, height: 900 },
         extraHTTPHeaders: country ? { 'CF-IPCountry': country } : {},
       });
       const page = await context.newPage();
-      await page.goto(BASE + '/about/', { waitUntil: 'networkidle' });
-      const first = await editionOf(page);
-      // Second page: served from the cached answer, without another /api/geo call.
-      let calls = 0;
-      page.on('request', (r) => new URL(r.url()).pathname === '/api/geo' && calls++);
-      await page.goto(BASE + '/privacy/', { waitUntil: 'networkidle' });
-      const second = await editionOf(page);
-      await context.close();
-      return { first, second, calls };
+      const calls = { n: 0 };
+      page.on('request', (r) => new URL(r.url()).pathname === '/api/geo' && calls.n++);
+      if (setup) await setup(page, context);
+      return { context, page, calls };
     };
-    const us = await visit('US');
-    if (us.first.href !== '/country/united-states/' || us.first.flag !== '🇺🇸')
-      fail(`US visitor should see the US edition, got ${JSON.stringify(us.first)}`);
-    if (us.second.href !== '/country/united-states/' || us.calls)
-      fail(`cached geo not reused: ${JSON.stringify(us.second)}, ${us.calls} extra call(s)`);
-    for (const country of ['AQ', null]) {
-      const { first } = await visit(country);
-      if (first.href !== '/country/indonesia/')
-        fail(`${country ?? 'unknown'} visitor should keep Indonesia, got ${first.href}`);
+    const go = (page, path) => page.goto(BASE + path, { waitUntil: 'networkidle' });
+
+    // 1. Every tracked country maps to its own edition (separate visitors, in parallel).
+    const wrong = [];
+    for (let k = 0; k < countries.length; k += 8) {
+      await Promise.all(
+        countries.slice(k, k + 8).map(async ({ code }) => {
+          const v = await visitor(code);
+          await go(v.page, '/privacy/');
+          const got = await edition(v.page);
+          if (
+            got.code !== code ||
+            got.href !== `/country/${slugOf[code]}/` ||
+            got.flag !== flagOf(code)
+          )
+            wrong.push(`${code}→${JSON.stringify(got)}`);
+          await v.context.close();
+        }),
+      );
     }
+    if (wrong.length) fail(`geo mapping wrong for: ${wrong.join(', ')}`);
+
+    // 3. One /api/geo call per visitor per day; an expired entry is refreshed.
+    {
+      const v = await visitor('US');
+      await go(v.page, '/about/');
+      expectEdition(await edition(v.page), 'US', 'US visitor');
+      await go(v.page, '/privacy/');
+      await v.page.reload({ waitUntil: 'networkidle' });
+      if (v.calls.n !== 1) fail(`expected 1 /api/geo call across 3 loads, got ${v.calls.n}`);
+      const age = await v.page.evaluate(() => Date.now() - JSON.parse(localStorage['ev-geo']).at);
+      if (!(age >= 0 && age < 60_000)) fail(`geo cache timestamp off by ${age} ms`);
+      // Age the entry past one day: the next page asks again.
+      await v.page.evaluate(() => {
+        localStorage['ev-geo'] = JSON.stringify({ country: 'US', at: Date.now() - 86_400_001 });
+      });
+      await go(v.page, '/terms/');
+      if (v.calls.n !== 2)
+        fail(`expired geo cache should trigger a new call (calls: ${v.calls.n})`);
+      await v.context.close();
+    }
+    // A fresh cached answer is used as-is (no call), so storage is the per-visitor source.
+    {
+      const v = await visitor('US', (page) =>
+        page.addInitScript(() => {
+          if (!localStorage['ev-geo'])
+            localStorage['ev-geo'] = JSON.stringify({ country: 'JP', at: Date.now() - 3_600_000 });
+        }),
+      );
+      await go(v.page, '/about/');
+      expectEdition(await edition(v.page), 'JP', 'cached JP for a US IP');
+      if (v.calls.n) fail(`fresh cache should skip /api/geo (calls: ${v.calls.n})`);
+      await v.context.close();
+    }
+
+    // 2. A manual pick overrides geo, survives reloads and other pages, and can be undone.
+    {
+      const v = await visitor('US');
+      await go(v.page, '/about/');
+      await v.page.locator('[data-edition-toggle]').click();
+      if ((await v.page.locator('[data-edition-list] [data-code]').count()) !== countries.length)
+        fail('edition menu should list every tracked country');
+      await Promise.all([
+        v.page.waitForURL('**/country/japan/'),
+        v.page.locator('[data-edition-list] [data-code="JP"]').click(),
+      ]);
+      await v.page.waitForLoadState('networkidle');
+      expectEdition(await edition(v.page), 'JP', 'after picking Japan');
+      await v.page.reload({ waitUntil: 'networkidle' });
+      expectEdition(await edition(v.page), 'JP', 'manual pick after reload');
+      await go(v.page, '/privacy/');
+      expectEdition(await edition(v.page), 'JP', 'manual pick on another page');
+      if (v.calls.n !== 1) fail(`manual pick should not re-query geo (calls: ${v.calls.n})`);
+      await v.page.locator('[data-edition-toggle]').click();
+      await v.page.locator('[data-edition-auto]').click();
+      expectEdition(await edition(v.page), 'US', '"Use my location"');
+      await v.page.reload({ waitUntil: 'networkidle' });
+      expectEdition(await edition(v.page), 'US', '"Use my location" after reload');
+      if (await v.page.locator('[data-edition-auto]').isVisible())
+        fail('"Use my location" should hide once there is no manual pick');
+      // Keyboard: Escape closes the menu and returns focus to its button.
+      await v.page.locator('[data-edition-toggle]').click();
+      await v.page.keyboard.press('Escape');
+      if (await v.page.locator('[data-edition-menu]').isVisible()) fail('Escape did not close');
+      await v.context.close();
+    }
+
+    // 4. Unsupported or unknown locations and API failures fall back to Indonesia, and a
+    //    failure is not cached (the next page retries). Blocking /api/geo is also what a
+    //    crawler that obeys robots.txt (Disallow: /api/) sees.
+    for (const country of ['AQ', 'XX', null]) {
+      const v = await visitor(country);
+      await go(v.page, '/about/');
+      expectEdition(await edition(v.page), 'ID', `location ${country ?? 'missing'}`);
+      await v.context.close();
+    }
+    for (const [label, handler] of [
+      ['HTTP 500', (route) => route.fulfill({ status: 500, body: 'error' })],
+      ['network error', (route) => route.abort()],
+      ['invalid JSON', (route) => route.fulfill({ status: 200, body: '<html>' })],
+    ]) {
+      const v = await visitor('US', (page) => page.route('**/api/geo', handler));
+      await go(v.page, '/about/');
+      expectEdition(await edition(v.page), 'ID', label);
+      if (await v.page.evaluate(() => localStorage['ev-geo'] !== undefined))
+        fail(`${label}: a failed lookup must not be cached`);
+      await go(v.page, '/privacy/');
+      if (v.calls.n !== 2) fail(`${label}: the next page should retry (calls: ${v.calls.n})`);
+      await v.context.close();
+    }
+
+    // 6. Without JS (as in the raw HTML crawlers index) the header is the Indonesia link only.
+    {
+      const context = await browser.newContext({ javaScriptEnabled: false });
+      const page = await context.newPage();
+      await page.goto(BASE + '/about/');
+      expectEdition(await edition(page), 'ID', 'no-JS');
+      if (await page.locator('[data-edition-toggle]').isVisible())
+        fail('no-JS: the edition menu button should stay hidden');
+      await context.close();
+    }
+
     if (failures.length === before)
-      pass('US visitor gets the US edition (cached); unlisted/unknown keep Indonesia');
+      pass(
+        `all ${countries.length} countries map to their edition; manual pick persists and ` +
+          'overrides geo; 1 call per day; failures/unknown → Indonesia, not cached',
+      );
   }
 
   // ---------- Deferred map on touch devices ----------
