@@ -189,6 +189,45 @@ try {
     await context.close();
   }
 
+  // ---------- Header edition follows the visitor's country ----------
+  console.log('\n[geo edition]');
+  {
+    const before = failures.length;
+    const editionOf = (page) =>
+      page.locator('[data-edition]').evaluate((a) => ({
+        href: a.getAttribute('href'),
+        flag: a.querySelector('[data-edition-flag]')?.textContent,
+      }));
+    const visit = async (country) => {
+      const context = await browser.newContext({
+        viewport: { width: 1440, height: 900 },
+        extraHTTPHeaders: country ? { 'CF-IPCountry': country } : {},
+      });
+      const page = await context.newPage();
+      await page.goto(BASE + '/about/', { waitUntil: 'networkidle' });
+      const first = await editionOf(page);
+      // Second page: served from the cached answer, without another /api/geo call.
+      let calls = 0;
+      page.on('request', (r) => new URL(r.url()).pathname === '/api/geo' && calls++);
+      await page.goto(BASE + '/privacy/', { waitUntil: 'networkidle' });
+      const second = await editionOf(page);
+      await context.close();
+      return { first, second, calls };
+    };
+    const us = await visit('US');
+    if (us.first.href !== '/country/united-states/' || us.first.flag !== '🇺🇸')
+      fail(`US visitor should see the US edition, got ${JSON.stringify(us.first)}`);
+    if (us.second.href !== '/country/united-states/' || us.calls)
+      fail(`cached geo not reused: ${JSON.stringify(us.second)}, ${us.calls} extra call(s)`);
+    for (const country of ['AQ', null]) {
+      const { first } = await visit(country);
+      if (first.href !== '/country/indonesia/')
+        fail(`${country ?? 'unknown'} visitor should keep Indonesia, got ${first.href}`);
+    }
+    if (failures.length === before)
+      pass('US visitor gets the US edition (cached); unlisted/unknown keep Indonesia');
+  }
+
   // ---------- Deferred map on touch devices ----------
   console.log('\n[touch: deferred map]');
   {

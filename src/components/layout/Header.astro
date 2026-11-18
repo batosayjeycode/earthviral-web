@@ -1,5 +1,11 @@
 ---
+import { getCountries } from '../../lib/data.ts';
 import { CATEGORIES } from '../../lib/taxonomy.ts';
+
+// Countries with a hub page, for the edition button's geo swap: code → [slug, name].
+const editions = Object.fromEntries(
+  (await getCountries()).map((c) => [c.code, [c.slug, c.name]] as const),
+);
 ---
 
 <header class="glass border-x-0 border-t-0">
@@ -86,14 +92,71 @@ import { CATEGORIES } from '../../lib/taxonomy.ts';
         <span class="sr-only sm:not-sr-only">Search</span>
         <kbd class="tabular hidden rounded border border-line px-1 text-xs sm:inline">⌘K</kbd>
       </a>
+      <!-- Indonesia in the HTML (what crawlers and no-JS visitors get); the script below swaps
+           in the visitor's country when it has a page. -->
       <a
         href="/country/indonesia/"
+        data-edition
+        data-editions={JSON.stringify(editions)}
         class="flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-sm text-ink hover:border-cyan/40"
         aria-label="Indonesia edition"
       >
-        <span aria-hidden="true">🇮🇩</span>
-        <span class="hidden sm:inline">Indonesia</span>
+        <span aria-hidden="true" data-edition-flag>
+          🇮🇩
+        </span>
+        <span class="hidden sm:inline" data-edition-name>
+          Indonesia
+        </span>
       </a>
     </div>
   </nav>
 </header>
+
+<script>
+  import { flagEmoji } from '../../lib/taxonomy.ts';
+
+  // Visitor country from /api/geo (a Cloudflare Pages Function), remembered for a day so
+  // later pages switch before first paint of the button and the Function runs ~once a day
+  // per visitor. Failures (local preview, offline) leave the Indonesia default.
+  const KEY = 'ev-geo';
+  const DAY = 86_400_000;
+  const link = document.querySelector<HTMLAnchorElement>('[data-edition]');
+
+  function apply(code: string | null) {
+    if (!link || !code) return;
+    const editions = JSON.parse(link.dataset.editions ?? '{}') as Record<string, [string, string]>;
+    const edition = editions[code];
+    if (!edition) return;
+    const [slug, name] = edition;
+    link.href = `/country/${slug}/`;
+    link.setAttribute('aria-label', `${name} edition`);
+    link.querySelector('[data-edition-flag]')!.textContent = flagEmoji(code);
+    link.querySelector('[data-edition-name]')!.textContent = name;
+  }
+
+  function cached(): { country: string | null } | null {
+    try {
+      const v = JSON.parse(localStorage.getItem(KEY) ?? 'null');
+      return v && Date.now() - v.at < DAY ? v : null;
+    } catch {
+      return null;
+    }
+  }
+
+  const hit = cached();
+  if (hit) apply(hit.country);
+  else if (link) {
+    fetch('/api/geo')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { country: string | null } | null) => {
+        if (!d) return;
+        try {
+          localStorage.setItem(KEY, JSON.stringify({ country: d.country, at: Date.now() }));
+        } catch {
+          /* storage blocked: just refetch next time */
+        }
+        apply(d.country);
+      })
+      .catch(() => {});
+  }
+</script>

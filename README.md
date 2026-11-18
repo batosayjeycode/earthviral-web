@@ -162,6 +162,8 @@ Keep the crons in `wrangler.toml` in sync with the workflow files and `VAS.batch
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.
 
+`functions/api/geo.ts` is a Cloudflare Pages Function returning the visitor's country (`{"country":"US"}`); the header uses it to show the visitor's own country edition. It is the only dynamic route, so static pages never invoke it. CI deploys it with the site (the deploy job checks out the repo so `wrangler pages deploy` finds `functions/`). Locally, `npm run qa` stubs it and reads the `CF-IPCountry` request header.
+
 ## Project structure
 
 ```text
