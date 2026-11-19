@@ -3,17 +3,34 @@
   "name": "Saudi Arabia",
   "slug": "saudi-arabia",
   "region": "Asia",
-  "viralScore": 59,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-19T11:18:00Z",
+  "viralScore": 64,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-19T14:18:00Z",
   "clusters": [
+    {
+      "slug": "saudi-financial-district-missile-attack",
+      "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
+      "headline": "Saudi Financial District Struck By Debris Following Missile Attack",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Falling debris damaged the Aramco Tower in Riyadh's King Abdullah Financial District on Sunday.",
+        "The Saudi-led coalition reported the interception of two ballistic missiles aimed at the capital."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
+      }
+    },
     {
       "slug": "saudi-arabia-replaces-yemen-coalition-commander",
       "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
       "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Saudi Arabia has dismissed the commander of its coalition forces currently operating in Yemen.",
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/yemen/20261116-saudi-arabia-dismisses-commander-of-anti-houthi-coalition-as-rebels-advance"
-      }
-    },
-    {
-      "slug": "saudi-financial-district-missile-attack",
-      "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
-      "headline": "Saudi Financial District Struck By Debris Following Missile Attack",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Falling debris damaged the Aramco Tower in Riyadh's King Abdullah Financial District on Sunday.",
-        "The Saudi-led coalition reported the interception of two ballistic missiles aimed at the capital."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
       }
     },
     {
