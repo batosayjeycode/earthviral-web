@@ -3,9 +3,9 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 79,
+  "viralScore": 74,
   "intensityTier": "high",
-  "generatedAt": "2026-11-19T05:18:00Z",
+  "generatedAt": "2026-11-19T08:18:00Z",
   "clusters": [
     {
       "slug": "japan-pm-takaichi-diplomatic-summits",
@@ -13,7 +13,7 @@
       "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 76,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Prime Minister Sanae Takaichi held her first meeting with President Vladimir Putin in seven years on the sidelines of the APEC summit.",
@@ -30,8 +30,8 @@
       "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A 5.7-magnitude earthquake struck central Japan, causing structural damage and shaking streets.",
         "Local reports indicate that at least 22 people have sustained injuries following the tremors."
@@ -47,7 +47,7 @@
       "headline": "Magnitude 5.7 Earthquake Hits Kumamoto Prefecture In Japan",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 46,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A magnitude 5.7 earthquake impacted Kumamoto Prefecture, causing reported injuries among local residents.",
@@ -110,6 +110,23 @@
       }
     },
     {
+      "slug": "japan-education-programs-us-troops",
+      "canonicalPath": "/news/jp/japan-education-programs-us-troops/",
+      "headline": "Japan Proposes Education Initiatives For U.S. Troops In Okinawa",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Japan and U.S. officials have reached an agreement on measures to prevent the recurrence of criminal incidents.",
+        "The new initiatives include mandatory educational lectures for U.S. military personnel stationed in Okinawa."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
+      }
+    },
+    {
       "slug": "asean-japan-partnership-summit-meeting",
       "canonicalPath": "/news/jp/asean-japan-partnership-summit-meeting/",
       "headline": "ASEAN And Japan Reaffirm Partnership During The 49th ASEAN Summit",
@@ -127,23 +144,6 @@
       }
     },
     {
-      "slug": "news2u-holdings-group-business-restructuring",
-      "canonicalPath": "/news/jp/news2u-holdings-group-business-restructuring/",
-      "headline": "News2u Holdings Announces Group Business Restructuring In Japan",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 28,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "News2u Holdings is planning a reorganization of its group business operations.",
-        "The restructuring is scheduled to take effect in January 2027."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/press/2026/11/18/news2u-holdings-announces-group-business-restructuring-jp/"
-      }
-    },
-    {
       "slug": "malicious-javascript-targets-cryptocurrency",
       "canonicalPath": "/news/jp/malicious-javascript-targets-cryptocurrency/",
       "headline": "Malicious JavaScript Used To Target Cryptocurrency On Major Sites",
@@ -158,6 +158,23 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/18/world/crime-legal/websites-crypto-iphone-users/"
+      }
+    },
+    {
+      "slug": "news2u-holdings-group-business-restructuring",
+      "canonicalPath": "/news/jp/news2u-holdings-group-business-restructuring/",
+      "headline": "News2u Holdings Announces Group Business Restructuring In Japan",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "News2u Holdings is planning a reorganization of its group business operations.",
+        "The restructuring is scheduled to take effect in January 2027."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/press/2026/11/18/news2u-holdings-announces-group-business-restructuring-jp/"
       }
     },
     {
@@ -310,23 +327,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/business/2026/11/07/economy/china-japan-selective-economic-dependence/"
-      }
-    },
-    {
-      "slug": "japan-education-programs-us-troops",
-      "canonicalPath": "/news/jp/japan-education-programs-us-troops/",
-      "headline": "Japan Proposes Education Initiatives For U.S. Troops In Okinawa",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Japan and U.S. officials have reached an agreement on measures to prevent the recurrence of criminal incidents.",
-        "The new initiatives include mandatory educational lectures for U.S. military personnel stationed in Okinawa."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
       }
     },
     {

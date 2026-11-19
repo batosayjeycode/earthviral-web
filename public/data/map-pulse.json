@@ -1,30 +1,8 @@
 {
-  "batchId": "batch-202611190518",
-  "generatedAt": "2026-11-19T05:18:00Z",
-  "nextUpdateAt": "2026-11-19T08:17:00Z",
+  "batchId": "batch-202611190818",
+  "generatedAt": "2026-11-19T08:18:00Z",
+  "nextUpdateAt": "2026-11-19T11:17:00Z",
   "countries": [
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "topicCount": 13,
-      "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "Xi Jinping Hosts Donald Trump And Vladimir Putin For Shenzhen Summit",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 97,
-        "intensityTier": "surge"
-      }
-    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -36,14 +14,36 @@
       ],
       "viralScore": 100,
       "intensityTier": "surge",
-      "topicCount": 135,
+      "topicCount": 140,
       "topTopic": {
-        "slug": "video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
-        "canonicalPath": "/news/id/video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr/",
-        "headline": "Indonesian Parliament Formally Passes Asset Seizure Legislation",
+        "slug": "prabowo-addresses-forest-fire-prevention-summit",
+        "canonicalPath": "/news/id/prabowo-addresses-forest-fire-prevention-summit/",
+        "headline": "President Prabowo Subianto Engages Global Leaders At APEC Summit",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 97,
+        "viralScore": 100,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 96,
+      "intensityTier": "surge",
+      "topicCount": 14,
+      "topTopic": {
+        "slug": "trump-to-meet-xi-putin-apec",
+        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+        "headline": "Xi Jinping Hosts Donald Trump And Vladimir Putin For Shenzhen Summit",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 93,
         "intensityTier": "surge"
       }
     },
@@ -60,13 +60,35 @@
       "intensityTier": "surge",
       "topicCount": 41,
       "topTopic": {
-        "slug": "us-china-russia-trilateral-meeting",
-        "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-        "headline": "President Trump To Meet With Xi And Putin For Trilateral Summit",
+        "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+        "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+        "headline": "Secretary Rubio Addresses Ongoing Concerns Over US Tech Outages",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 89,
         "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 51,
+      "topTopic": {
+        "slug": "modi-pitroda-public-exchange",
+        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
+        "headline": "PM Modi Reviews Domestic Policy Priorities And Economic Progress",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 84,
+        "intensityTier": "high"
       }
     },
     {
@@ -78,60 +100,16 @@
         127.8,
         36.3
       ],
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "topicCount": 7,
       "topTopic": {
         "slug": "south-korean-tax-exam-ai-scandal",
         "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "South Korea Implements Strict Security During College Entrance Exams",
+        "headline": "South Korea College Entrance Exam Sees Smartphones And AI Probes",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 82,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "japan-pm-takaichi-diplomatic-summits",
-        "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
-        "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 76,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 78,
-      "intensityTier": "high",
-      "topicCount": 30,
-      "topTopic": {
-        "slug": "pochettino-linked-to-manchester-united-manager",
-        "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
-        "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 75,
+        "viralScore": 81,
         "intensityTier": "high"
       }
     },
@@ -144,60 +122,82 @@
         60,
         58
       ],
-      "viralScore": 72,
+      "viralScore": 77,
       "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
-        "slug": "traffic-suspended-following-crimean-bridge-attack",
-        "canonicalPath": "/news/ru/traffic-suspended-following-crimean-bridge-attack/",
-        "headline": "Traffic Suspended Following New Attack On Strategic Crimean Bridge",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
+        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+        "headline": "Immigration Authorities Halt Indonesians Joining Russian Military",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 74,
         "intensityTier": "high"
       }
     },
     {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
       "centroid": [
-        34.9,
-        31.3
+        138.5,
+        36.5
+      ],
+      "viralScore": 74,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "japan-pm-takaichi-diplomatic-summits",
+        "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
+        "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 71,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
       ],
       "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 5,
+      "topicCount": 27,
       "topTopic": {
-        "slug": "israel-launches-new-gaza-operation",
-        "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
-        "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
+        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
+        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
+        "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
       "centroid": [
-        37.9,
-        0.2
+        -2,
+        53.5
       ],
-      "viralScore": 69,
+      "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 26,
+      "topicCount": 29,
       "topTopic": {
-        "slug": "president-ruto-state-nation-address",
-        "canonicalPath": "/news/ke/president-ruto-state-nation-address/",
-        "headline": "President Ruto Delivers Fourth Annual State Of The Nation Address",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 66,
+        "slug": "pochettino-linked-to-manchester-united-manager",
+        "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
+        "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
@@ -214,12 +214,56 @@
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
-        "slug": "borneo-fc-faces-manila-digger-championship",
-        "canonicalPath": "/news/ph/borneo-fc-faces-manila-digger-championship/",
-        "headline": "Borneo FC Climbs To Third Place Following Victory Over Manila Digger",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
+        "slug": "asean-leaders-discuss-regional-energy-security",
+        "canonicalPath": "/news/ph/asean-leaders-discuss-regional-energy-security/",
+        "headline": "Global Leaders Conclude Discussions At The 49th ASEAN Summit Manila",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "israel-launches-new-gaza-operation",
+        "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
+        "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -232,7 +276,7 @@
         31.2,
         49
       ],
-      "viralScore": 67,
+      "viralScore": 63,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -241,51 +285,7 @@
         "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 65,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 67,
-      "intensityTier": "high",
-      "topicCount": 68,
-      "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "Seyi Makinde Campaign Group Challenges Tinubu Recruitment Freeze",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 64,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 25,
-      "topTopic": {
-        "slug": "usman-khawaja-claims-ball-tampering-knowledge",
-        "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
-        "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 62,
+        "viralScore": 61,
         "intensityTier": "high"
       }
     },
@@ -298,7 +298,7 @@
         53.7,
         32.4
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -307,73 +307,29 @@
         "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 60,
-        "intensityTier": "high"
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
       "centroid": [
-        79,
-        22
+        37.9,
+        0.2
       ],
       "viralScore": 60,
       "intensityTier": "high",
-      "topicCount": 49,
+      "topicCount": 29,
       "topTopic": {
-        "slug": "modi-pitroda-public-exchange",
-        "canonicalPath": "/news/in/modi-pitroda-public-exchange/",
-        "headline": "PM Modi Reviews Domestic Policy Priorities Following Regional Summits",
+        "slug": "president-ruto-state-nation-address",
+        "canonicalPath": "/news/ke/president-ruto-state-nation-address/",
+        "headline": "President Ruto Delivers Fourth Annual State Of The Nation Address",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 58,
-      "intensityTier": "active",
-      "topicCount": 13,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 53,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "real-madrid-extends-arda-guler-contract",
-        "canonicalPath": "/news/es/real-madrid-extends-arda-guler-contract/",
-        "headline": "Real Madrid Extends Midfielder Arda Guler Contract Until 2032",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -386,16 +342,82 @@
         102.3,
         3.8
       ],
-      "viralScore": 53,
+      "viralScore": 59,
       "intensityTier": "active",
       "topicCount": 12,
       "topTopic": {
-        "slug": "malaysia-arrests-tanker-owner-ketamine-smuggling",
-        "canonicalPath": "/news/my/malaysia-arrests-tanker-owner-ketamine-smuggling/",
-        "headline": "Malaysian Authorities Arrest Owner Of Tanker Linked To Ketamine",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 50,
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 70,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "Seyi Makinde Campaign Group Challenges Tinubu Recruitment Freeze",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 57,
+      "intensityTier": "active",
+      "topicCount": 13,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "saudi-financial-district-missile-attack",
+        "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
+        "headline": "Saudi Financial District Struck By Debris Following Missile Attack",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 53,
         "intensityTier": "active"
       }
     },
@@ -410,11 +432,11 @@
       ],
       "viralScore": 53,
       "intensityTier": "active",
-      "topicCount": 27,
+      "topicCount": 28,
       "topTopic": {
-        "slug": "singapore-mrt-escalator-refurbishment-project",
-        "canonicalPath": "/news/sg/singapore-mrt-escalator-refurbishment-project/",
-        "headline": "Singapore To Launch Major Refurbishment Of Over 500 MRT Escalators",
+        "slug": "singapore-mrt-reliability-performance-dip",
+        "canonicalPath": "/news/sg/singapore-mrt-reliability-performance-dip/",
+        "headline": "Singapore MRT Reliability Sees Marginal Decline In October Report",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
         "viralScore": 50,
@@ -422,24 +444,24 @@
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        45,
-        24
+        -51.9,
+        -10.5
       ],
       "viralScore": 50,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 59,
       "topTopic": {
-        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
-        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
-        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 49,
+        "slug": "senate-debates-moretti-fiscal-plan",
+        "canonicalPath": "/news/br/senate-debates-moretti-fiscal-plan/",
+        "headline": "Senate Approves Moretti Fiscal Plan As Chamber Debates Approach",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 47,
         "intensityTier": "active"
       }
     },
@@ -462,6 +484,28 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 48,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 48,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "real-madrid-extends-arda-guler-contract",
+        "canonicalPath": "/news/es/real-madrid-extends-arda-guler-contract/",
+        "headline": "Real Madrid Extends Midfielder Arda Guler Contract Until 2032",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 47,
         "intensityTier": "active"
       }
     },
@@ -506,72 +550,6 @@
         "categorySlug": "sports",
         "categoryName": "Sports",
         "viralScore": 44,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 43,
-      "intensityTier": "active",
-      "topicCount": 59,
-      "topTopic": {
-        "slug": "a-fazenda-18-elimination-update",
-        "canonicalPath": "/news/br/a-fazenda-18-elimination-update/",
-        "headline": "A Fazenda 18 Nominations Set For Eighth Weekly Elimination Round",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
-        "viralScore": 40,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "NZ",
-      "isoNumeric": "554",
-      "name": "New Zealand",
-      "slug": "new-zealand",
-      "centroid": [
-        172,
-        -41.5
-      ],
-      "viralScore": 41,
-      "intensityTier": "active",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "bumrah-leads-bowling-wellington-test",
-        "canonicalPath": "/news/nz/bumrah-leads-bowling-wellington-test/",
-        "headline": "Jasprit Bumrah Leads Bowling Attack In Wellington Cricket Match",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 39,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
-      "centroid": [
-        90.3,
-        23.7
-      ],
-      "viralScore": 38,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "bangladesh-garment-sector-labor-unrest",
-        "canonicalPath": "/news/bd/bangladesh-garment-sector-labor-unrest/",
-        "headline": "Bangladesh Garment Sector Faces Labor Unrest Amid Economic Strain",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 38,
         "intensityTier": "active"
       }
     },
@@ -664,6 +642,28 @@
       }
     },
     {
+      "code": "NZ",
+      "isoNumeric": "554",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "centroid": [
+        172,
+        -41.5
+      ],
+      "viralScore": 25,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "bumrah-leads-bowling-wellington-test",
+        "canonicalPath": "/news/nz/bumrah-leads-bowling-wellington-test/",
+        "headline": "Jasprit Bumrah Leads Bowling Attack In Wellington Cricket Match",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 23,
+        "intensityTier": "quiet"
+      }
+    },
+    {
       "code": "MX",
       "isoNumeric": "484",
       "name": "Mexico",
@@ -694,7 +694,7 @@
         24.7,
         -29
       ],
-      "viralScore": 20,
+      "viralScore": 19,
       "intensityTier": "quiet",
       "topicCount": 1,
       "topTopic": {
@@ -703,7 +703,7 @@
         "headline": "Jasper Wiese Withdrawn From South Africa Nations Championship Squad",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 20,
+        "viralScore": 19,
         "intensityTier": "quiet"
       }
     },
