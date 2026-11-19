@@ -27,6 +27,8 @@ export interface SummaryInput {
     velocity: number;
     search: number;
     trendKeyword: string | null;
+    /** The trending search to target in the title: set only when its words are in the coverage. */
+    searchQuery?: string | null;
   };
   previousHeadline?: string;
 }
@@ -115,6 +117,7 @@ Rules:
 - Attribute contested claims ("according to …", "officials said …").
 - Do not name private individuals; public figures and institutions are fine.
 - Write in clear English, even when sources are in Indonesian or another language.
+- If a "Trending search" is given, people are searching Google for exactly that right now. When it names something central to this story, use the searcher's wording for it in seoTitle and metaDescription (e.g. "emergency alerts" rather than "alert system"; names in their original spelling, untranslated). The title must still say what happened and who did it: never drop key names or shorten it to fit the search. If the search is only loosely related to the story, ignore it. Never stuff keywords or add anything the coverage does not support.
 - "whyItIsViral" explains the attention using the supplied coverage metrics (number of outlets, coverage pace, search interest) — not the story's moral importance. Describe the metrics in words ("covered by four outlets", "strong search interest"); never quote a score or "/100" figure — scores are recalculated every batch, so a quoted number goes stale.
 
 Field requirements:
@@ -138,7 +141,7 @@ function userPrompt(input: SummaryInput): string {
     .join('\n');
   return `Country: ${input.countryName} (${input.countryCode})
 Coverage metrics: ${input.metrics.publishers} independent outlets; coverage velocity ${input.metrics.velocity}/100; public search signal ${input.metrics.search}/100${input.metrics.trendKeyword ? ` (matched Google Trends search: "${input.metrics.trendKeyword}")` : ''}; Viral Activity Score ${input.metrics.viralScore}/100.
-${input.previousHeadline ? `Previous headline for this story: ${input.previousHeadline}\nThis page's URL is fixed to that event: keep the headline about the same event, updating only details the new coverage changes. Ignore any article that is about a different event.\n` : ''}
+${input.metrics.searchQuery ? `Trending search: "${input.metrics.searchQuery}" (see rules: use its wording only if it is central to this story).\n` : ''}${input.previousHeadline ? `Previous headline for this story: ${input.previousHeadline}\nThis page's URL is fixed to that event: keep the headline about the same event, updating only details the new coverage changes. Ignore any article that is about a different event.\n` : ''}
 Coverage in this cluster:
 ${lines}
 

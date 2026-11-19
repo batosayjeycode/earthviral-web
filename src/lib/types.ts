@@ -75,6 +75,8 @@ export interface BatchMeta {
     mergedDuplicates?: number;
     /** Stories still showing non-AI fallback text after this batch (retried automatically). */
     fallbackSummaries?: number;
+    /** AI summaries targeting a trending search this batch, and how many used it in the seoTitle. */
+    trendTitles?: { targeted: number; inTitle: number };
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;
