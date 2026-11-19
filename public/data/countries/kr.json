@@ -3,34 +3,17 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 77,
+  "viralScore": 69,
   "intensityTier": "high",
-  "generatedAt": "2026-11-19T20:18:00Z",
+  "generatedAt": "2026-11-19T23:18:00Z",
   "clusters": [
-    {
-      "slug": "supreme-court-overturns-former-pm-han-conviction",
-      "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
-      "headline": "South Korean Court Orders Retrial For Ex-PM Han In Insurrection Case",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Supreme Court vacated the 15-year prison sentence previously handed down to former Prime Minister Han Duck-soo.",
-        "Judges directed the Seoul High Court to conduct a retrial concerning the former official's alleged involvement in the 2024 martial law attempt."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261119001200315"
-      }
-    },
     {
       "slug": "south-korean-tax-exam-ai-scandal",
       "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
       "headline": "Ninety-Eight Students Penalized Following South Korea Exam Security",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 73,
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Officials identified 98 test-takers for cheating violations, with five individuals found using unauthorized smart devices during the examination.",
@@ -42,12 +25,29 @@
       }
     },
     {
+      "slug": "supreme-court-overturns-former-pm-han-conviction",
+      "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
+      "headline": "South Korean Court Orders Retrial For Ex-PM Han In Insurrection Case",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Supreme Court vacated the 15-year prison sentence previously handed down to former Prime Minister Han Duck-soo.",
+        "Judges directed the Seoul High Court to conduct a retrial concerning the former official's alleged involvement in the 2024 martial law attempt."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261119001200315"
+      }
+    },
+    {
       "slug": "lee-jae-myung-asean-summit-manila",
       "canonicalPath": "/news/kr/lee-jae-myung-asean-summit-manila/",
       "headline": "President Lee Jae Myung Returns Following APEC And ASEAN Summits",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Lee Jae Myung arrived back in Seoul on Thursday following his diplomatic tour for the ASEAN and APEC summits.",
@@ -59,29 +59,12 @@
       }
     },
     {
-      "slug": "south-korea-football-team-disputes",
-      "canonicalPath": "/news/kr/south-korea-football-team-disputes/",
-      "headline": "Son Heung-min Addresses Internal Divisions Within South Korean Team",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Captain Son Heung-min stated that recent internal player conflicts within the South Korean national football team have been resolved.",
-        "The statement followed public reports of a dressing room rift following the team's early exit from the World Cup."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/son-heung-min-says-divisions-heart-south-korea-team-resolved-6544996"
-      }
-    },
-    {
       "slug": "south-korea-fines-fifteen-bond-dealers",
       "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
       "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
@@ -90,6 +73,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
+      }
+    },
+    {
+      "slug": "earthquake-strikes-southeastern-south-korea",
+      "canonicalPath": "/news/kr/earthquake-strikes-southeastern-south-korea/",
+      "headline": "A 3.6 Magnitude Earthquake Strikes Southeastern South Korea Today",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A magnitude 3.6 earthquake occurred in the southeastern region of South Korea.",
+        "The seismic event was reported on November 17."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010900320"
       }
     },
     {
@@ -107,23 +107,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320"
-      }
-    },
-    {
-      "slug": "earthquake-strikes-southeastern-south-korea",
-      "canonicalPath": "/news/kr/earthquake-strikes-southeastern-south-korea/",
-      "headline": "A 3.6 Magnitude Earthquake Strikes Southeastern South Korea Today",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A magnitude 3.6 earthquake occurred in the southeastern region of South Korea.",
-        "The seismic event was reported on November 17."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010900320"
       }
     },
     {
@@ -158,6 +141,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261111003500315"
+      }
+    },
+    {
+      "slug": "south-korea-football-team-disputes",
+      "canonicalPath": "/news/kr/south-korea-football-team-disputes/",
+      "headline": "Son Heung-min Addresses Internal Divisions Within South Korean Team",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Captain Son Heung-min stated that recent internal player conflicts within the South Korean national football team have been resolved.",
+        "The statement followed public reports of a dressing room rift following the team's early exit from the World Cup."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/sport/son-heung-min-says-divisions-heart-south-korea-team-resolved-6544996"
       }
     },
     {

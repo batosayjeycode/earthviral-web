@@ -1,31 +1,40 @@
 {
-  "batchId": "batch-202611192018",
-  "generatedAt": "2026-11-19T20:18:00Z",
-  "nextUpdateAt": "2026-11-19T23:17:00Z",
+  "batchId": "batch-202611192318",
+  "generatedAt": "2026-11-19T23:18:00Z",
+  "nextUpdateAt": "2026-11-20T02:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
-    "viralTopics": 584,
-    "globalIndex": 81
+    "viralTopics": 578,
+    "globalIndex": 78
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 32,
+    "feedsOk": 33,
     "feedsFailed": [
-      "nation-ke: HTTP 404 for https://nation.africa/kenya/rss.xml",
-      "gdelt-indonesia: The operation was aborted due to timeout",
-      "gdelt-india: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-unitedstates: fetch failed",
+      "gdelt-india: fetch failed",
+      "gdelt-australia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aaustralia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1338,
-    "newClusters": 5,
-    "updatedClusters": 27,
+    "articlesFetched": 1340,
+    "newClusters": 4,
+    "updatedClusters": 62,
     "retiredClusters": 0,
-    "aiCalls": 11,
-    "fallbackSummaries": 0,
+    "aiCalls": 15,
+    "fallbackSummaries": 1,
     "trendTitles": {
-      "targeted": 3,
-      "inTitle": 3
+      "targeted": 2,
+      "inTitle": 2
     },
-    "durationMs": 132194
+    "aiFailures": {
+      "schema": 1
+    },
+    "aiFailureSamples": [
+      {
+        "category": "schema",
+        "detail": "seoTitle: Too small: expected string to have >=10 characters"
+      }
+    ],
+    "durationMs": 174267
   }
 }

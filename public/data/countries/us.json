@@ -3,25 +3,42 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 95,
+  "viralScore": 94,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-19T20:18:00Z",
+  "generatedAt": "2026-11-19T23:18:00Z",
   "clusters": [
     {
       "slug": "anthropic-sets-ipo-share-price",
       "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
-      "headline": "Anthropic Shares Surge To Two Trillion Dollar Value Following IPO",
+      "headline": "Protests Erupt As Anthropic Reaches Two Trillion Dollar Valuation",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 92,
+      "viralScore": 91,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Artificial intelligence company Anthropic launched its public offering, raising over 100 billion dollars.",
-        "Shares began trading at 111.50 dollars, resulting in a company valuation of two trillion dollars."
+        "Anthropic launched its initial public offering, achieving a record-breaking market valuation of two trillion dollars.",
+        "Demonstrators from anti-AI organizations gathered at the Nasdaq exchange in New York and the company's San Francisco headquarters."
       ],
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o"
+      }
+    },
+    {
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "Officials Address Tech Outage Concerns As Consumer Stockpiling Rises",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 79,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Government officials confirmed there is no evidence that recent widespread technical failures represent a coordinated systemic attack.",
+        "JPMorgan Chase confirmed a cyberattack resulted in the exposure of personal customer information."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/outages-hit-nsa-and-apple-latest-tech-turmoil/"
       }
     },
     {
@@ -30,15 +47,15 @@
       "headline": "President Trump Holds Historic Trilateral Summit With Xi And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 83,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump participated in a high-level face-to-face summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
         "The meeting focused on discussions regarding global stability and potential cooperation on nuclear arms negotiations."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect?traffic_source=rss"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 75,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
@@ -59,12 +76,46 @@
       }
     },
     {
+      "slug": "us-defense-secretary-venezuela-military-deal",
+      "canonicalPath": "/news/us/us-defense-secretary-venezuela-military-deal/",
+      "headline": "US Defense Secretary Pete Hegseth Signs Venezuela Military Pact",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "US Defense Secretary Pete Hegseth visited Caracas to formalize a new military agreement.",
+        "The pact includes provisions for joint military training and intelligence sharing between the two nations."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261118-hegseth-makes-surprise-trip-to-venezuela-renews-military-cooperation"
+      }
+    },
+    {
+      "slug": "thomas-markle-arrested-florida-abuse-charges",
+      "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
+      "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
+        "The arrest follows official allegations concerning the possession of child sexual abuse materials."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
+      }
+    },
+    {
       "slug": "denmark-ratifies-greenland-us-security-deal",
       "canonicalPath": "/news/us/denmark-ratifies-greenland-us-security-deal/",
       "headline": "Danish Parliament Unanimously Approves Greenland Security Pact",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Danish parliament voted unanimously to approve a new security agreement involving Denmark, Greenland, and the United States.",
@@ -81,7 +132,7 @@
       "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
@@ -93,20 +144,20 @@
       }
     },
     {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "Secretary Rubio Addresses Ongoing Concerns Over US Tech Outages",
+      "slug": "faa-issues-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Government officials stated there is no evidence connecting the recent series of major tech outages to coordinated cyberattacks.",
-        "Congressional hearings have been held to examine the causes of the disruptions, though some lawmakers expressed skepticism toward official reports."
+        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
+        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
       ],
       "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/outages-hit-nsa-and-apple-latest-tech-turmoil/"
+        "articleUrl": "https://www.cbsnews.com/video/ground-stop-proves-we-have-to-get-off-old-network-transportation-secretary-sean-duffy-says/"
       }
     },
     {
@@ -115,7 +166,7 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -132,8 +183,8 @@
       "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
         "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
@@ -144,13 +195,30 @@
       }
     },
     {
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
+        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
       "slug": "judge-halts-washington-golf-course-renovation",
       "canonicalPath": "/news/us/judge-halts-washington-golf-course-renovation/",
       "headline": "Federal Judge Temporarily Blocks East Potomac Golf Links Renovation",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "U.S. District Judge Ana Reyes ordered a two-week delay on construction plans for a public golf course.",
         "The ruling prevents the Trump administration from closing East Potomac Golf Links in Washington, D.C., for the immediate future."
@@ -158,40 +226,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
-      }
-    },
-    {
-      "slug": "us-defense-secretary-venezuela-military-deal",
-      "canonicalPath": "/news/us/us-defense-secretary-venezuela-military-deal/",
-      "headline": "US Defense Secretary Pete Hegseth Signs Venezuela Military Pact",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "US Defense Secretary Pete Hegseth visited Caracas to formalize a new military agreement.",
-        "The pact includes provisions for joint military training and intelligence sharing between the two nations."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261118-hegseth-makes-surprise-trip-to-venezuela-renews-military-cooperation"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
       }
     },
     {
@@ -209,23 +243,6 @@
       "primarySource": {
         "publisherName": "Tempo",
         "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
-        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
       }
     },
     {
@@ -263,12 +280,29 @@
       }
     },
     {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
@@ -277,23 +311,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Experiences Further Decline Against US Dollar",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Indonesian rupiah closed at 18,255 per US dollar on Thursday following a 22-point depreciation.",
-        "Currency values have experienced significant volatility throughout the week, fluctuating between 18,230 and 18,300 levels."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
       }
     },
     {
@@ -311,23 +328,6 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
-      "slug": "warren-buffett-donates-billions-to-charity",
-      "canonicalPath": "/news/us/warren-buffett-donates-billions-to-charity/",
-      "headline": "Warren Buffett Announces Major Donation To Four Family Foundations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Warren Buffett donated approximately 5.5 billion dollars worth of Berkshire Hathaway stock to four charitable foundations.",
-        "The recipient organizations are led by the investor's adult children."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/warren-buffett-donation-berkshire-hathaway-kindness/"
       }
     },
     {
