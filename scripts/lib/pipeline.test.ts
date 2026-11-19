@@ -277,6 +277,74 @@ describe('story drift', () => {
   });
 });
 
+describe('search trends', async () => {
+  const { searchQueryFor, usesSearchTerms } = await import('./intelligence/computeViralScore.ts');
+  /** The biggest cluster built from these GB headlines (one story). */
+  const story = (titles: string[]) =>
+    clusterArticles(
+      titles.map((title, i) =>
+        article({ title, countryCode: 'GB', publisherDomain: `outlet${i}.co.uk` }),
+      ),
+      [],
+    ).sort((a, b) => b.articles.length - a.articles.length)[0]!;
+  const trend = (keyword: string, newsTitles: string[] = []) => ({
+    country: 'GB',
+    keyword,
+    traffic: 100_000,
+    newsTitles,
+  });
+  const brexit = story([
+    'Boris Johnson says Britain would vote for Brexit again',
+    'Johnson defends Brexit and attacks Labour on zero-hours contracts',
+    'Brexit was right, Boris Johnson insists in new interview',
+  ]);
+
+  it('matches a search whose words are core to the story, and targets it in the title', () => {
+    const t = trend('brexit');
+    assert.equal(matchTrend(brexit, [t]), t);
+    assert.equal(searchQueryFor(brexit, t), 'brexit');
+  });
+
+  it('ignores a generic word that appears in only one headline', () => {
+    const s = story([
+      'Boris Johnson says Britain would vote for Brexit again',
+      'Boris Johnson says Brexit insurance against EU decline',
+      'Brexit was right, Boris Johnson insists in new interview',
+    ]);
+    assert.equal(s.articles.length, 3);
+    assert.equal(matchTrend(s, [trend('insurance')]), null);
+  });
+
+  it("doesn't match through Google's linked news titles when the search itself is unrelated", () => {
+    // "uson nevers rugby" was linked to French politics headlines and gave them a search bonus.
+    const t = trend('uson nevers rugby', [
+      'Boris Johnson says Britain would vote for Brexit again',
+    ]);
+    assert.equal(matchTrend(brexit, [t]), null);
+  });
+
+  it('treats plurals as the same word but not shared prefixes', () => {
+    const alerts = story([
+      'Government tests new emergency alert system on mobile phones',
+      'Emergency alert test to sound on phones across the country',
+      'Phones to receive emergency alert in nationwide test',
+    ]);
+    assert.equal(searchQueryFor(alerts, trend('emergency alerts')), 'emergency alerts');
+    const palmer = story([
+      'Cole Palmer injury blow for Chelsea ahead of derby',
+      'Chelsea sweat on Cole Palmer fitness',
+      'Palmer ruled out of Chelsea derby with groin injury',
+    ]);
+    assert.equal(matchTrend(palmer, [trend('palmeiras')]), null);
+  });
+
+  it('checks whether a title uses the search terms', () => {
+    assert.ok(usesSearchTerms('Iran Targets US Bases in Kuwait', 'kuwait', 'GB'));
+    assert.ok(usesSearchTerms('Emergency Alert Test Sounds Nationwide', 'emergency alerts', 'GB'));
+    assert.ok(!usesSearchTerms('Military Tensions Between Iran And US', 'kuwait', 'GB'));
+  });
+});
+
 describe('duplicate stories', async () => {
   const { mergeDuplicateStories, isDuplicate } = await import('./intelligence/mergeDuplicates.ts');
   const rec = (over: Partial<ViralClusterStaticRecord> & { slug: string; headline: string }) =>

@@ -47,7 +47,12 @@ import {
   type CountryArticle,
   type WorkingCluster,
 } from './lib/intelligence/deduplicateAndCluster.ts';
-import { computeViralScore, type ViralScore } from './lib/intelligence/computeViralScore.ts';
+import {
+  computeViralScore,
+  searchQueryFor,
+  usesSearchTerms,
+  type ViralScore,
+} from './lib/intelligence/computeViralScore.ts';
 import {
   createSummarizer,
   isFallbackSummary,
@@ -184,6 +189,7 @@ function summaryInput(cluster: WorkingCluster, score: ViralScore): SummaryInput 
       velocity: score.velocity,
       search: score.search,
       trendKeyword: score.matchedTrend?.keyword ?? null,
+      searchQuery: searchQueryFor(cluster, score.matchedTrend),
     },
     // A repaired story's stored headline describes the event it drifted onto.
     previousHeadline: cluster.pruned > 0 ? undefined : cluster.existing?.headline,
@@ -410,6 +416,22 @@ async function main() {
     );
   }
 
+  {
+    const matched = needsText.filter((x) => x.score.matchedTrend);
+    const usable = matched
+      .map((x) => searchQueryFor(x.cluster, x.score.matchedTrend))
+      .filter((q) => q !== null);
+    log(
+      `  ${matched.length} of ${needsText.length} stories match a Google Trends search; ${usable.length} usable as a title target${
+        usable.length
+          ? `: ${usable
+              .slice(0, 6)
+              .map((q) => `"${q}"`)
+              .join(', ')}`
+          : ''
+      }`,
+    );
+  }
   log(
     `▶ Summarising ${needsText.length} clusters (budget ${OPTS.maxAi} AI calls, ${OPTS.aiConcurrency} at a time)…`,
   );
@@ -437,6 +459,22 @@ async function main() {
     }
     texts.set(item.cluster, result.output);
   });
+  // Trending searches targeted in titles, and how many AI titles actually used them.
+  const targeted = needsText
+    .map((item) => ({ item, query: searchQueryFor(item.cluster, item.score.matchedTrend) }))
+    .filter((x): x is typeof x & { query: string } => x.query !== null)
+    .map(({ item, query }) => ({ item, query, out: texts.get(item.cluster) }))
+    .filter(({ out }) => out && !isFallbackSummary(out));
+  const trendTitles = {
+    targeted: targeted.length,
+    inTitle: targeted.filter(({ item, query, out }) =>
+      usesSearchTerms(out!.seoTitle, query, item.cluster.countryCode),
+    ).length,
+  };
+  if (trendTitles.targeted) {
+    log(`  trending searches in titles: ${trendTitles.inTitle}/${trendTitles.targeted}`);
+    for (const { query, out } of targeted.slice(0, 5)) log(`    "${query}" → ${out!.seoTitle}`);
+  }
   const aiFailureCount = [...aiFailures.values()].reduce((a, b) => a + b, 0);
   const aiFailureSummary = [...aiFailures.entries()]
     .sort((a, b) => b[1] - a[1])
@@ -546,6 +584,7 @@ async function main() {
         ...(merged.merges.length ? { mergedDuplicates: merged.merges.length } : {}),
         aiCalls,
         fallbackSummaries: records.filter(isFallbackSummary).length,
+        ...(trendTitles.targeted ? { trendTitles } : {}),
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },

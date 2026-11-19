@@ -55,18 +55,66 @@ export function searchScore(traffic: number): number {
  * The country's own names don't count: a "south africa" search says nothing about which
  * South Africa story people are looking for.
  */
+/**
+ * Word form for comparing search queries with coverage: whole words with plural endings
+ * dropped ("alerts" = "alert", "elections" = "election"). Prefix stems are too loose for
+ * short queries ("palmeiras" would match "Palmer", "clima" "climate").
+ */
+const singular = (t: string) => (t.length > 4 ? t.replace(/(?:es|s)$/, '') : t);
+
+/**
+ * How well a trending search's own words fit a story: `share` of its keywords (country names
+ * ignored) found in the coverage, and how many of those are core words of the story (in at
+ * least two source headlines, or the story's seed).
+ */
+function queryFit(cluster: WorkingCluster, keyword: string) {
+  const counts = new Map<string, number>();
+  for (const [t, n] of cluster.tokenCounts)
+    counts.set(singular(t), (counts.get(singular(t)) ?? 0) + n);
+  const seed = new Set([...cluster.seedTokens].map(singular));
+  const kw = [...new Set(eventTokens(keyword, cluster.countryCode).map(singular))];
+  const present = kw.filter((s) => counts.has(s));
+  const core = present.filter((s) => seed.has(s) || (counts.get(s) ?? 0) >= 2);
+  return { share: kw.length ? present.length / kw.length : 0, core: core.length };
+}
+
+/**
+ * The matched trending search, when its words fit the story well enough to put in its title
+ * (≥ 60% of the keywords in the coverage, at least one a core word). Otherwise null.
+ */
+export function searchQueryFor(cluster: WorkingCluster, trend: TrendSignal | null): string | null {
+  if (!trend) return null;
+  const fit = queryFit(cluster, trend.keyword);
+  return fit.share >= 0.6 && fit.core >= 1 ? trend.keyword : null;
+}
+
+/** Whether `text` (e.g. an seoTitle) contains most of the search query's keywords. */
+export function usesSearchTerms(text: string, query: string, countryCode: string): boolean {
+  const kw = [...new Set(eventTokens(query, countryCode).map(singular))];
+  const words = new Set(eventTokens(text, countryCode).map(singular));
+  return kw.length > 0 && kw.filter((w) => words.has(w)).length / kw.length >= 0.6;
+}
+
+/**
+ * The highest-traffic trending search in the story's country that is about this story: its
+ * keywords must be in the coverage (≥ 60%, one of them a core word), or ≥ 50% with one of
+ * Google's linked news titles sharing 3+ words with the story. A single generic word
+ * ("insurance", "airport") or a nearby news title alone no longer counts — those gave stories
+ * a search bonus, and a "strong search interest" line, they hadn't earned.
+ */
 export function matchTrend(cluster: WorkingCluster, trends: TrendSignal[]): TrendSignal | null {
   let best: TrendSignal | null = null;
   for (const t of trends) {
     if (t.country !== cluster.countryCode) continue;
-    const kw = eventTokens(t.keyword, cluster.countryCode);
-    const kwHit =
-      kw.length > 0 && kw.filter((x) => cluster.tokenCounts.has(x)).length / kw.length >= 0.6;
-    const newsHit = t.newsTitles.some(
-      (title) =>
-        eventTokens(title, cluster.countryCode).filter((x) => cluster.tokenCounts.has(x)).length >=
-        3,
-    );
+    const fit = queryFit(cluster, t.keyword);
+    const kwHit = fit.share >= 0.6 && fit.core >= 1;
+    const newsHit =
+      fit.share >= 0.5 &&
+      t.newsTitles.some(
+        (title) =>
+          eventTokens(title, cluster.countryCode).filter((x) => cluster.tokenCounts.has(x))
+            .length >= 3,
+      );
     if ((kwHit || newsHit) && (!best || t.traffic > best.traffic)) best = t;
   }
   return best;
