@@ -3,34 +3,17 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 94,
+  "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-19T01:54:00Z",
+  "generatedAt": "2026-11-19T02:18:00Z",
   "clusters": [
-    {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "Secretary Rubio Addresses Ongoing Concerns Over US Tech Outages",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 91,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Government officials stated there is no evidence connecting the recent series of major tech outages to coordinated cyberattacks.",
-        "Congressional hearings have been held to examine the causes of the disruptions, though some lawmakers expressed skepticism toward official reports."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/outages-hit-nsa-and-apple-latest-tech-turmoil/"
-      }
-    },
     {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 89,
+      "viralScore": 100,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
@@ -42,13 +25,30 @@
       }
     },
     {
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "Secretary Rubio Addresses Ongoing Concerns Over US Tech Outages",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 93,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Government officials stated there is no evidence connecting the recent series of major tech outages to coordinated cyberattacks.",
+        "Congressional hearings have been held to examine the causes of the disruptions, though some lawmakers expressed skepticism toward official reports."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/outages-hit-nsa-and-apple-latest-tech-turmoil/"
+      }
+    },
+    {
       "slug": "us-china-russia-trilateral-meeting",
       "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
       "headline": "President Trump Arrives In China For Trilateral Summit With Leaders",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 81,
-      "intensityTier": "high",
+      "viralScore": 85,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
         "President Trump reached China to participate in scheduled trilateral discussions with Chinese President Xi Jinping and Russian President Vladimir Putin.",
         "The summit occurs against a backdrop of ongoing international tensions, including reports of escalated military strikes between Ukraine and Russia."
@@ -59,114 +59,12 @@
       }
     },
     {
-      "slug": "anthropic-sets-ipo-share-price",
-      "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
-      "headline": "Anthropic Sets Initial Public Offering Price At Eighty-Three Dollars",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 70,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The artificial intelligence company Anthropic priced its shares at 83 dollars for its initial public offering.",
-        "The final valuation exceeded the firm's initial target range of 70 to 78 dollars per share."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/business/anthropic-share-price-ipo-6563856"
-      }
-    },
-    {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
-        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123223/after-victory-in-the-midterms-what-next-for-us-democrats"
-      }
-    },
-    {
-      "slug": "us-soldier-arrested-for-russian-espionage",
-      "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
-      "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 68,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
-        "The arrest follows allegations that the individual engaged in espionage activities while stationed in the United Kingdom."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 67,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "police-respond-to-washington-dc-shooting",
-      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
-        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
-      }
-    },
-    {
       "slug": "us-defense-secretary-venezuela-military-deal",
       "canonicalPath": "/news/us/us-defense-secretary-venezuela-military-deal/",
       "headline": "US Defense Secretary Pete Hegseth Signs Venezuela Military Pact",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "US Defense Secretary Pete Hegseth visited Caracas to formalize a new military agreement.",
@@ -178,29 +76,12 @@
       }
     },
     {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Democrat Mary Peltola Secures Alaska Senate Seat For Democrats",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democrat Mary Peltola defeated incumbent Republican Dan Sullivan in a closely contested Alaska Senate election.",
-        "The victory represents the ninth seat flip for the Democratic Party during the midterm elections."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
@@ -212,12 +93,114 @@
       }
     },
     {
+      "slug": "anthropic-sets-ipo-share-price",
+      "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
+      "headline": "Anthropic Sets Initial Public Offering Price At Eighty-Three Dollars",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The artificial intelligence company Anthropic priced its shares at 83 dollars for its initial public offering.",
+        "The final valuation exceeded the firm's initial target range of 70 to 78 dollars per share."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/business/anthropic-share-price-ipo-6563856"
+      }
+    },
+    {
+      "slug": "elon-musk-midterm-spending-comments",
+      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
+      "headline": "Elon Musk Expresses Regret Over Midterm Spending And Denies Maga",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Elon Musk stated he feels foolish for investing significant sums into 2026 midterm political campaigns.",
+        "The billionaire clarified that he does not identify with the Make America Great Again movement."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
+      }
+    },
+    {
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
+        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123223/after-victory-in-the-midterms-what-next-for-us-democrats"
+      }
+    },
+    {
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
+        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Democrat Mary Peltola Secures Alaska Senate Seat For Democrats",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Democrat Mary Peltola defeated incumbent Republican Dan Sullivan in a closely contested Alaska Senate election.",
+        "The victory represents the ninth seat flip for the Democratic Party during the midterm elections."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
+      }
+    },
+    {
       "slug": "trump-prabowo-asean-us-summit-meeting",
       "canonicalPath": "/news/us/trump-prabowo-asean-us-summit-meeting/",
       "headline": "President Donald Trump Praises President Prabowo At ASEAN-US Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Donald Trump praised President Prabowo Subianto during the special ASEAN-US Summit in Manila.",
@@ -243,6 +226,23 @@
       "primarySource": {
         "publisherName": "Tempo",
         "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+      }
+    },
+    {
+      "slug": "us-soldier-arrested-for-russian-espionage",
+      "canonicalPath": "/news/us/us-soldier-arrested-for-russian-espionage/",
+      "headline": "U.S. Army Officer Arrested In Britain Over Alleged Russian Spying",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 57,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A senior U.S. Army officer was taken into custody by British law enforcement near Gloucester.",
+        "The arrest follows allegations that the individual engaged in espionage activities while stationed in the United Kingdom."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmj4747le5kdo"
       }
     },
     {
@@ -277,6 +277,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/video/what-we-know-about-jensen-huangs-resignation-so-far/"
+      }
+    },
+    {
+      "slug": "police-respond-to-washington-dc-shooting",
+      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
+      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
+        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
-      "slug": "california-voters-reject-proposed-one-time-tax-on-billionaires",
-      "canonicalPath": "/news/us/california-voters-reject-proposed-one-time-tax-on-billionaires/",
-      "headline": "California Voters Reject Ballot Measure To Tax Billionaire Wealth",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "California voters officially defeated a proposed ballot initiative aimed at taxing individual net worth exceeding $1 billion.",
-        "The rejected measure would have implemented a one-time five percent levy on the wealth of residents categorized as billionaires."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
       }
     }
   ]

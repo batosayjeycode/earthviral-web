@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611190154",
-  "generatedAt": "2026-11-19T01:54:00Z",
-  "nextUpdateAt": "2026-11-19T02:17:00Z",
+  "batchId": "batch-202611190218",
+  "generatedAt": "2026-11-19T02:18:00Z",
+  "nextUpdateAt": "2026-11-19T05:17:00Z",
   "countries": [
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 100,
+      "intensityTier": "surge",
+      "topicCount": 40,
+      "topTopic": {
+        "slug": "hakeem-jeffries-nominated-for-house-speaker",
+        "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
+        "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 100,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -18,7 +40,7 @@
       "topTopic": {
         "slug": "video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
         "canonicalPath": "/news/id/video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr/",
-        "headline": "Indonesian Parliament Finalizes Asset Seizure Bill Today",
+        "headline": "Indonesian Parliament Moves To Pass Asset Seizure Bill In Plenary",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 96,
@@ -34,38 +56,16 @@
         104,
         35
       ],
-      "viralScore": 97,
+      "viralScore": 98,
       "intensityTier": "surge",
       "topicCount": 13,
       "topTopic": {
         "slug": "trump-to-meet-xi-putin-apec",
         "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "President Trump, Xi Jinping, And Vladimir Putin Meet In Shenzhen",
+        "headline": "Xi Jinping, Donald Trump, And Vladimir Putin Meet In Shenzhen",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 94,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 94,
-      "intensityTier": "surge",
-      "topicCount": 39,
-      "topTopic": {
-        "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-        "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-        "headline": "Secretary Rubio Addresses Ongoing Concerns Over US Tech Outages",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 91,
+        "viralScore": 95,
         "intensityTier": "surge"
       }
     },
@@ -78,7 +78,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 80,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -87,7 +87,7 @@
         "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 78,
+        "viralScore": 77,
         "intensityTier": "high"
       }
     },
@@ -100,7 +100,7 @@
         122,
         12.5
       ],
-      "viralScore": 78,
+      "viralScore": 77,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
@@ -109,28 +109,6 @@
         "headline": "Borneo FC Climbs To Third Place Following Victory Over Manila Digger",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 75,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 77,
-      "intensityTier": "high",
-      "topicCount": 7,
-      "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "South Korea Enhances Security Measures Against AI Exam Cheating",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
         "viralScore": 74,
         "intensityTier": "high"
       }
@@ -144,7 +122,7 @@
         37.9,
         0.2
       ],
-      "viralScore": 75,
+      "viralScore": 74,
       "intensityTier": "high",
       "topicCount": 28,
       "topTopic": {
@@ -153,7 +131,7 @@
         "headline": "President Ruto Delivers Fourth Annual State Of The Nation Address",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 72,
+        "viralScore": 71,
         "intensityTier": "high"
       }
     },
@@ -166,7 +144,7 @@
         -2,
         53.5
       ],
-      "viralScore": 74,
+      "viralScore": 73,
       "intensityTier": "high",
       "topicCount": 30,
       "topTopic": {
@@ -175,7 +153,7 @@
         "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 71,
+        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -188,7 +166,7 @@
         31.2,
         49
       ],
-      "viralScore": 73,
+      "viralScore": 72,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -197,7 +175,7 @@
         "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 71,
+        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -210,7 +188,7 @@
         138.5,
         36.5
       ],
-      "viralScore": 70,
+      "viralScore": 69,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
@@ -219,7 +197,29 @@
         "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 67,
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 69,
+      "intensityTier": "high",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "South Korea Enhances Security Measures Against AI Exam Cheating",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 66,
         "intensityTier": "high"
       }
     },
@@ -232,7 +232,7 @@
         60,
         58
       ],
-      "viralScore": 69,
+      "viralScore": 68,
       "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
@@ -241,7 +241,7 @@
         "headline": "Traffic Suspended Following New Attack On Strategic Crimean Bridge",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 66,
+        "viralScore": 65,
         "intensityTier": "high"
       }
     },
@@ -254,7 +254,7 @@
         53.7,
         32.4
       ],
-      "viralScore": 68,
+      "viralScore": 67,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
@@ -263,7 +263,7 @@
         "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 65,
+        "viralScore": 64,
         "intensityTier": "high"
       }
     },
@@ -290,28 +290,6 @@
       }
     },
     {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 64,
-      "intensityTier": "high",
-      "topicCount": 58,
-      "topTopic": {
-        "slug": "senate-debates-moretti-fiscal-plan",
-        "canonicalPath": "/news/br/senate-debates-moretti-fiscal-plan/",
-        "headline": "Chamber Of Deputies Sets Date To Debate The Moretti Fiscal Plan",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
-      }
-    },
-    {
       "code": "IN",
       "isoNumeric": "356",
       "name": "India",
@@ -320,17 +298,39 @@
         79,
         22
       ],
-      "viralScore": 64,
+      "viralScore": 65,
       "intensityTier": "high",
       "topicCount": 51,
       "topTopic": {
-        "slug": "recent-developments-in-tamil-nadu-india",
-        "canonicalPath": "/news/in/recent-developments-in-tamil-nadu-india/",
-        "headline": "Diverse Administrative and Legal Updates Across Tamil Nadu State",
+        "slug": "delhi-air-quality-grap-iii-restrictions",
+        "canonicalPath": "/news/in/delhi-air-quality-grap-iii-restrictions/",
+        "headline": "Delhi Air Quality Remains In Very Poor To Severe Categories",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
+        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
+        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 59,
+        "intensityTier": "active"
       }
     },
     {
@@ -342,7 +342,7 @@
         8.1,
         9.6
       ],
-      "viralScore": 61,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 67,
       "topTopic": {
@@ -351,7 +351,7 @@
         "headline": "Super Eagles Qualification Hopes Uncertain After Tanzania Draw",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 58,
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -364,8 +364,8 @@
         -3.7,
         40.2
       ],
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
         "slug": "real-madrid-extends-arda-guler-contract",
@@ -373,7 +373,7 @@
         "headline": "Real Madrid Extends Midfielder Arda Guler Contract Until 2032",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 59,
+        "viralScore": 58,
         "intensityTier": "active"
       }
     },
@@ -400,46 +400,24 @@
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        45,
-        24
+        -51.9,
+        -10.5
       ],
-      "viralScore": 50,
+      "viralScore": 51,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 59,
       "topTopic": {
-        "slug": "saudi-arabia-replaces-yemen-coalition-commander",
-        "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
-        "headline": "Saudi Arabia Dismisses Commander Of Yemen Coalition Amid Retreats",
+        "slug": "senate-debates-moretti-fiscal-plan",
+        "canonicalPath": "/news/br/senate-debates-moretti-fiscal-plan/",
+        "headline": "Chamber Of Deputies Sets Date To Debate The Moretti Fiscal Plan",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 49,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "malaysia-probes-speedmatrix-ai-chip-diversion",
-        "canonicalPath": "/news/my/malaysia-probes-speedmatrix-ai-chip-diversion/",
-        "headline": "Malaysia Probes SpeedMatrix Over Potential AI Chip Diversion Claims",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 46,
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },
@@ -462,6 +440,28 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 48,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 48,
+      "intensityTier": "active",
+      "topicCount": 12,
+      "topTopic": {
+        "slug": "malaysia-probes-speedmatrix-ai-chip-diversion",
+        "canonicalPath": "/news/my/malaysia-probes-speedmatrix-ai-chip-diversion/",
+        "headline": "Malaysia Probes SpeedMatrix Over Potential AI Chip Diversion Claims",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
@@ -524,7 +524,7 @@
       "topTopic": {
         "slug": "climate-talks-will-be-tougher-at-cop31-amid-heightened",
         "canonicalPath": "/news/sg/climate-talks-will-be-tougher-at-cop31-amid-heightened/",
-        "headline": "Climate talks will be tougher at COP31 amid heightened global tensions: Grace Fu",
+        "headline": "Grace Fu Highlights Growing Challenges For COP31 Climate Negotiations",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 38,
@@ -664,28 +664,6 @@
       }
     },
     {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 22,
-      "intensityTier": "quiet",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "jasper-wiese-nations-championship-suspension",
-        "canonicalPath": "/news/za/jasper-wiese-nations-championship-suspension/",
-        "headline": "Jasper Wiese Withdrawn From South Africa Nations Championship Squad",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 22,
-        "intensityTier": "quiet"
-      }
-    },
-    {
       "code": "NZ",
       "isoNumeric": "554",
       "name": "New Zealand",
@@ -704,6 +682,28 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 19,
+        "intensityTier": "quiet"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 21,
+      "intensityTier": "quiet",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "jasper-wiese-nations-championship-suspension",
+        "canonicalPath": "/news/za/jasper-wiese-nations-championship-suspension/",
+        "headline": "Jasper Wiese Withdrawn From South Africa Nations Championship Squad",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 21,
         "intensityTier": "quiet"
       }
     },

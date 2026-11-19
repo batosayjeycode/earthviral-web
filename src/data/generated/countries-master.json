@@ -1,5 +1,27 @@
 [
   {
+    "id": "us",
+    "code": "US",
+    "isoNumeric": "840",
+    "name": "United States",
+    "slug": "united-states",
+    "region": "North America",
+    "centroid": [
+      -98.5,
+      39.5
+    ],
+    "viralScore": 100,
+    "intensityTier": "surge",
+    "topicCount": 40,
+    "topClusterIds": [
+      "us-20261118-hakeem-jeffries-nominated-for-house-speaker",
+      "us-20261118-rubio-denies-coordinated-cyberattack-us-outages",
+      "us-20261114-us-china-russia-trilateral-meeting",
+      "us-20261118-us-defense-secretary-venezuela-military-deal",
+      "us-20261113-lutnick-faces-pressure-nvidia-spy-scandal"
+    ]
+  },
+  {
     "id": "id",
     "code": "ID",
     "isoNumeric": "360",
@@ -15,10 +37,10 @@
     "topicCount": 138,
     "topClusterIds": [
       "id-20261105-video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
-      "id-20261118-fatal-oil-refinery-explosion-blora",
       "id-20261112-indonesian-police-investigate-treason-allegations",
-      "id-20261115-indonesia-javan-rhino-relocation-controversy",
-      "id-20261118-bank-indonesia-raises-benchmark-interest-rate"
+      "id-20261118-fatal-oil-refinery-explosion-blora",
+      "id-20261112-vice-president-gibran-meets-president-prabowo",
+      "id-20261115-indonesia-javan-rhino-relocation-controversy"
     ]
   },
   {
@@ -32,7 +54,7 @@
       104,
       35
     ],
-    "viralScore": 97,
+    "viralScore": 98,
     "intensityTier": "surge",
     "topicCount": 13,
     "topClusterIds": [
@@ -41,28 +63,6 @@
       "cn-20261109-trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
       "cn-20261108-nvidia-investigates-ceo-espionage-allegations",
       "cn-20261116-trump-hints-kim-jong-un-meeting-china"
-    ]
-  },
-  {
-    "id": "us",
-    "code": "US",
-    "isoNumeric": "840",
-    "name": "United States",
-    "slug": "united-states",
-    "region": "North America",
-    "centroid": [
-      -98.5,
-      39.5
-    ],
-    "viralScore": 94,
-    "intensityTier": "surge",
-    "topicCount": 39,
-    "topClusterIds": [
-      "us-20261118-rubio-denies-coordinated-cyberattack-us-outages",
-      "us-20261118-hakeem-jeffries-nominated-for-house-speaker",
-      "us-20261114-us-china-russia-trilateral-meeting",
-      "us-20261118-anthropic-sets-ipo-share-price",
-      "us-20261105-democrats-swept-the-midterms-what-comes-next-for-the"
     ]
   },
   {
@@ -76,7 +76,7 @@
       34.9,
       31.3
     ],
-    "viralScore": 80,
+    "viralScore": 79,
     "intensityTier": "high",
     "topicCount": 5,
     "topClusterIds": [
@@ -98,7 +98,7 @@
       122,
       12.5
     ],
-    "viralScore": 78,
+    "viralScore": 77,
     "intensityTier": "high",
     "topicCount": 6,
     "topClusterIds": [
@@ -107,28 +107,6 @@
       "ph-20261114-philippines-wins-first-eurovision-asia-contest",
       "ph-20261117-trump-begins-asia-diplomatic-tour",
       "ph-20261118-philippine-police-pursue-thomas-markle-charges"
-    ]
-  },
-  {
-    "id": "kr",
-    "code": "KR",
-    "isoNumeric": "410",
-    "name": "South Korea",
-    "slug": "south-korea",
-    "region": "Asia",
-    "centroid": [
-      127.8,
-      36.3
-    ],
-    "viralScore": 77,
-    "intensityTier": "high",
-    "topicCount": 7,
-    "topClusterIds": [
-      "kr-20261115-south-korean-tax-exam-ai-scandal",
-      "kr-20261111-bus-collision-bundang-south-korea",
-      "kr-20261112-south-korea-football-team-disputes",
-      "kr-20261116-lee-jae-myung-asean-summit-manila",
-      "kr-20261105-lead-s-korea-to-expand-anti-piracy-mission-closer"
     ]
   },
   {
@@ -142,14 +120,14 @@
       37.9,
       0.2
     ],
-    "viralScore": 75,
+    "viralScore": 74,
     "intensityTier": "high",
     "topicCount": 28,
     "topClusterIds": [
       "ke-20261117-president-ruto-state-nation-address",
       "ke-20261109-ruto-brands-gachagua-chief-extortionist",
-      "ke-20261117-regina-re-daughter-murder-charges",
       "ke-20261109-ruto-nominates-data-commissioner-and-ceos",
+      "ke-20261117-regina-re-daughter-murder-charges",
       "ke-20261106-kenyan-cult-leader-receives-prison-sentence"
     ]
   },
@@ -164,7 +142,7 @@
       -2,
       53.5
     ],
-    "viralScore": 74,
+    "viralScore": 73,
     "intensityTier": "high",
     "topicCount": 30,
     "topClusterIds": [
@@ -186,7 +164,7 @@
       31.2,
       49
     ],
-    "viralScore": 73,
+    "viralScore": 72,
     "intensityTier": "high",
     "topicCount": 4,
     "topClusterIds": [
@@ -208,7 +186,7 @@
       138.5,
       36.5
     ],
-    "viralScore": 70,
+    "viralScore": 69,
     "intensityTier": "high",
     "topicCount": 10,
     "topClusterIds": [
@@ -217,6 +195,28 @@
       "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
       "jp-20261117-hajime-moriyasu-tenure-ends-japan",
       "jp-20261117-prabowo-asean-japan-economic-cooperation"
+    ]
+  },
+  {
+    "id": "kr",
+    "code": "KR",
+    "isoNumeric": "410",
+    "name": "South Korea",
+    "slug": "south-korea",
+    "region": "Asia",
+    "centroid": [
+      127.8,
+      36.3
+    ],
+    "viralScore": 69,
+    "intensityTier": "high",
+    "topicCount": 7,
+    "topClusterIds": [
+      "kr-20261115-south-korean-tax-exam-ai-scandal",
+      "kr-20261111-bus-collision-bundang-south-korea",
+      "kr-20261112-south-korea-football-team-disputes",
+      "kr-20261116-lee-jae-myung-asean-summit-manila",
+      "kr-20261105-lead-s-korea-to-expand-anti-piracy-mission-closer"
     ]
   },
   {
@@ -230,7 +230,7 @@
       60,
       58
     ],
-    "viralScore": 69,
+    "viralScore": 68,
     "intensityTier": "high",
     "topicCount": 9,
     "topClusterIds": [
@@ -252,7 +252,7 @@
       53.7,
       32.4
     ],
-    "viralScore": 68,
+    "viralScore": 67,
     "intensityTier": "high",
     "topicCount": 6,
     "topClusterIds": [
@@ -280,31 +280,9 @@
     "topClusterIds": [
       "au-20261119-australia-unemployment-rate-reaches-five-year-high",
       "au-20261106-usman-khawaja-claims-ball-tampering-knowledge",
-      "au-20261107-ponga-leads-new-zealand-world-cup",
       "au-20261110-australia-to-adopt-mandatory-ai-safeguards",
-      "au-20261112-australian-teen-rescued-from-bush"
-    ]
-  },
-  {
-    "id": "br",
-    "code": "BR",
-    "isoNumeric": "076",
-    "name": "Brazil",
-    "slug": "brazil",
-    "region": "South America",
-    "centroid": [
-      -51.9,
-      -10.5
-    ],
-    "viralScore": 64,
-    "intensityTier": "high",
-    "topicCount": 58,
-    "topClusterIds": [
-      "br-20261112-senate-debates-moretti-fiscal-plan",
-      "br-20261107-lando-norris-brazil-grand-prix-pole",
-      "br-20261111-brazil-fines-meta-electoral-court-ruling",
-      "br-20261107-wet-weather-impacts-brazilian-grand-prix",
-      "br-20261111-global-reporting-initiative-returns-brazil"
+      "au-20261112-australian-teen-rescued-from-bush",
+      "au-20261118-bancroft-alleges-team-wide-cricket-scandal"
     ]
   },
   {
@@ -318,15 +296,37 @@
       79,
       22
     ],
-    "viralScore": 64,
+    "viralScore": 65,
     "intensityTier": "high",
     "topicCount": 51,
     "topClusterIds": [
+      "in-20261107-delhi-air-quality-grap-iii-restrictions",
       "in-20261110-recent-developments-in-tamil-nadu-india",
       "in-20261110-sonia-gandhi-releases-new-political-memoir",
       "in-20261112-modi-pitroda-public-exchange",
-      "in-20261119-pew-research-india-religious-demographic-projections",
-      "in-20261107-delhi-air-quality-grap-iii-restrictions"
+      "in-20261111-ins-betwa-propulsion-upgrade-contract"
+    ]
+  },
+  {
+    "id": "sa",
+    "code": "SA",
+    "isoNumeric": "682",
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "region": "Asia",
+    "centroid": [
+      45,
+      24
+    ],
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 2,
+    "topClusterIds": [
+      "sa-20261116-saudi-arabia-replaces-yemen-coalition-commander",
+      "sa-20261105-saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+      "sa-20261107-fatal-airstrikes-clashes-reported-yemen",
+      "sa-20261108-saudi-financial-district-missile-attack",
+      "sa-20261110-saudi-arabia-prepares-hajj-2027-pilgrimage"
     ]
   },
   {
@@ -340,7 +340,7 @@
       8.1,
       9.6
     ],
-    "viralScore": 61,
+    "viralScore": 60,
     "intensityTier": "high",
     "topicCount": 67,
     "topClusterIds": [
@@ -362,8 +362,8 @@
       -3.7,
       40.2
     ],
-    "viralScore": 60,
-    "intensityTier": "high",
+    "viralScore": 59,
+    "intensityTier": "active",
     "topicCount": 2,
     "topClusterIds": [
       "es-20261118-real-madrid-extends-arda-guler-contract",
@@ -396,47 +396,25 @@
     ]
   },
   {
-    "id": "sa",
-    "code": "SA",
-    "isoNumeric": "682",
-    "name": "Saudi Arabia",
-    "slug": "saudi-arabia",
-    "region": "Asia",
+    "id": "br",
+    "code": "BR",
+    "isoNumeric": "076",
+    "name": "Brazil",
+    "slug": "brazil",
+    "region": "South America",
     "centroid": [
-      45,
-      24
+      -51.9,
+      -10.5
     ],
-    "viralScore": 50,
+    "viralScore": 51,
     "intensityTier": "active",
-    "topicCount": 2,
+    "topicCount": 59,
     "topClusterIds": [
-      "sa-20261105-saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-      "sa-20261116-saudi-arabia-replaces-yemen-coalition-commander",
-      "sa-20261107-fatal-airstrikes-clashes-reported-yemen",
-      "sa-20261108-saudi-financial-district-missile-attack",
-      "sa-20261110-saudi-arabia-prepares-hajj-2027-pilgrimage"
-    ]
-  },
-  {
-    "id": "my",
-    "code": "MY",
-    "isoNumeric": "458",
-    "name": "Malaysia",
-    "slug": "malaysia",
-    "region": "Asia",
-    "centroid": [
-      102.3,
-      3.8
-    ],
-    "viralScore": 49,
-    "intensityTier": "active",
-    "topicCount": 12,
-    "topClusterIds": [
-      "my-20261106-najib-razak-returns-to-kajang-prison",
-      "my-20261113-malaysia-probes-speedmatrix-ai-chip-diversion",
-      "my-20261118-madiun-immigration-monitors-foreign-nationals",
-      "my-20261118-malaysia-reviews-deutsche-bank-1mdb-files",
-      "my-20261106-high-court-najib-house-arrest-order"
+      "br-20261107-lando-norris-brazil-grand-prix-pole",
+      "br-20261111-brazil-fines-meta-electoral-court-ruling",
+      "br-20261112-senate-debates-moretti-fiscal-plan",
+      "br-20261118-miss-brazil-health-issues-miss-universe",
+      "br-20261107-wet-weather-impacts-brazilian-grand-prix"
     ]
   },
   {
@@ -459,6 +437,28 @@
       "de-20261113-germany-expands-intelligence-agency-surveillance-powers",
       "de-20261116-klopp-calls-for-fifa-president-replacement",
       "de-20261112-mercedes-benz-halts-german-facility-investments"
+    ]
+  },
+  {
+    "id": "my",
+    "code": "MY",
+    "isoNumeric": "458",
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "region": "Asia",
+    "centroid": [
+      102.3,
+      3.8
+    ],
+    "viralScore": 48,
+    "intensityTier": "active",
+    "topicCount": 12,
+    "topClusterIds": [
+      "my-20261106-najib-razak-returns-to-kajang-prison",
+      "my-20261113-malaysia-probes-speedmatrix-ai-chip-diversion",
+      "my-20261118-madiun-immigration-monitors-foreign-nationals",
+      "my-20261106-high-court-najib-house-arrest-order",
+      "my-20261118-malaysia-reviews-deutsche-bank-1mdb-files"
     ]
   },
   {
@@ -652,27 +652,6 @@
     ]
   },
   {
-    "id": "za",
-    "code": "ZA",
-    "isoNumeric": "710",
-    "name": "South Africa",
-    "slug": "south-africa",
-    "region": "Africa",
-    "centroid": [
-      24.7,
-      -29
-    ],
-    "viralScore": 22,
-    "intensityTier": "quiet",
-    "topicCount": 1,
-    "topClusterIds": [
-      "za-20261104-anc-faces-anger-over-poor-services-as-south-africans",
-      "za-20261116-seventeen-killed-in-south-africa-shootings",
-      "za-20261118-jasper-wiese-nations-championship-suspension",
-      "za-20261109-foreign-nationals-arrested-south-africa-airport"
-    ]
-  },
-  {
     "id": "nz",
     "code": "NZ",
     "isoNumeric": "554",
@@ -692,6 +671,27 @@
       "nz-20261107-new-zealand-2026-election-results",
       "nz-20261118-new-zealand-rescinds-tsunami-alert",
       "nz-20261118-tsunami-activity-detected-new-zealand"
+    ]
+  },
+  {
+    "id": "za",
+    "code": "ZA",
+    "isoNumeric": "710",
+    "name": "South Africa",
+    "slug": "south-africa",
+    "region": "Africa",
+    "centroid": [
+      24.7,
+      -29
+    ],
+    "viralScore": 21,
+    "intensityTier": "quiet",
+    "topicCount": 1,
+    "topClusterIds": [
+      "za-20261104-anc-faces-anger-over-poor-services-as-south-africans",
+      "za-20261116-seventeen-killed-in-south-africa-shootings",
+      "za-20261118-jasper-wiese-nations-championship-suspension",
+      "za-20261109-foreign-nationals-arrested-south-africa-airport"
     ]
   },
   {
