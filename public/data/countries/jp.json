@@ -3,17 +3,34 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 69,
+  "viralScore": 79,
   "intensityTier": "high",
-  "generatedAt": "2026-11-19T02:18:00Z",
+  "generatedAt": "2026-11-19T05:18:00Z",
   "clusters": [
+    {
+      "slug": "japan-pm-takaichi-diplomatic-summits",
+      "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
+      "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 76,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Prime Minister Sanae Takaichi held her first meeting with President Vladimir Putin in seven years on the sidelines of the APEC summit.",
+        "The discussions between Japan and Russia included the status of Japanese journalists."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010000315"
+      }
+    },
     {
       "slug": "seismic-activity-hits-kanto-region-japan",
       "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
       "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A 5.7-magnitude earthquake struck central Japan, causing structural damage and shaking streets.",
@@ -30,7 +47,7 @@
       "headline": "Magnitude 5.7 Earthquake Hits Kumamoto Prefecture In Japan",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 51,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A magnitude 5.7 earthquake impacted Kumamoto Prefecture, causing reported injuries among local residents.",
@@ -47,7 +64,7 @@
       "headline": "Hajime Moriyasu Concludes Tenure Following Defeat Against Paraguay",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Hajime Moriyasu has concluded his term as the head coach of Japan's national football team.",
@@ -93,23 +110,6 @@
       }
     },
     {
-      "slug": "japan-pm-takaichi-diplomatic-summits",
-      "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
-      "headline": "Japan Prime Minister Sanae Takaichi Conducts Recent Foreign Summits",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Sanae Takaichi held a bilateral summit with South Korean President Lee Jae Myung in Manila.",
-        "President Lee noted that diplomatic sentiment between the two nations has reached its highest level to date."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010000315"
-      }
-    },
-    {
       "slug": "asean-japan-partnership-summit-meeting",
       "canonicalPath": "/news/jp/asean-japan-partnership-summit-meeting/",
       "headline": "ASEAN And Japan Reaffirm Partnership During The 49th ASEAN Summit",
@@ -127,20 +127,20 @@
       }
     },
     {
-      "slug": "eu-nations-launch-migrant-return-hub",
-      "canonicalPath": "/news/jp/eu-nations-launch-migrant-return-hub/",
-      "headline": "European Union Nations Prepare Launch Of Migrant Return Facility",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
+      "slug": "news2u-holdings-group-business-restructuring",
+      "canonicalPath": "/news/jp/news2u-holdings-group-business-restructuring/",
+      "headline": "News2u Holdings Announces Group Business Restructuring In Japan",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 28,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "European Union countries are preparing to announce a new facility for returning migrants.",
-        "The initiative serves as the final step of a policy push for increased deportations that began in 2024."
+        "News2u Holdings is planning a reorganization of its group business operations.",
+        "The restructuring is scheduled to take effect in January 2027."
       ],
       "primarySource": {
         "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/16/world/politics/eu-migrant-return-hub-rwanda/"
+        "articleUrl": "https://www.japantimes.co.jp/press/2026/11/18/news2u-holdings-announces-group-business-restructuring-jp/"
       }
     },
     {
@@ -158,23 +158,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/18/world/crime-legal/websites-crypto-iphone-users/"
-      }
-    },
-    {
-      "slug": "news2u-holdings-group-business-restructuring",
-      "canonicalPath": "/news/jp/news2u-holdings-group-business-restructuring/",
-      "headline": "News2u Holdings Announces Group Business Restructuring In Japan",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "News2u Holdings is planning a reorganization of its group business operations.",
-        "The restructuring is scheduled to take effect in January 2027."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/press/2026/11/18/news2u-holdings-announces-group-business-restructuring-jp/"
       }
     },
     {
@@ -344,6 +327,22 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
+      }
+    },
+    {
+      "slug": "japan-eyes-early-contribution-payment-to-icc-as-court",
+      "canonicalPath": "/news/jp/japan-eyes-early-contribution-payment-to-icc-as-court/",
+      "headline": "Japan eyes early contribution payment to ICC as court faces U.S. sanctions",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Japan Times reports: Japan eyes early contribution payment to ICC as court faces U.S. sanctions"
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/politics/japan-contribution-icc-us-sanctions/"
       }
     }
   ]
