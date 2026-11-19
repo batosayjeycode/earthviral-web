@@ -3,18 +3,35 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 63,
+  "viralScore": 69,
   "intensityTier": "high",
-  "generatedAt": "2026-11-19T14:18:00Z",
+  "generatedAt": "2026-11-19T17:18:00Z",
   "clusters": [
+    {
+      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+      "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
+        "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6034335/british-comedian-russell-brand-sentenced"
+      }
+    },
     {
       "slug": "pochettino-linked-to-manchester-united-manager",
       "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
       "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Mauricio Pochettino has been officially appointed as the new Manchester United manager.",
         "The appointment follows the departure of Michael Carrick after a period of poor performance."
@@ -25,37 +42,20 @@
       }
     },
     {
-      "slug": "wales-defeat-all-blacks-rugby",
-      "canonicalPath": "/news/gb/wales-defeat-all-blacks-rugby/",
-      "headline": "Wales Clinches Historic Rugby Victory Against The All Blacks",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "prime-minister-burnham-addresses-brexit-impact",
+      "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
+      "headline": "Prime Minister Burnham Faces Calls To Rejoin European Union",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Wales achieved a 35-28 victory over the New Zealand All Blacks in the Nations Championship.",
-        "This win represents the first time Wales has defeated the All Blacks since 1953."
+        "Former Foreign Secretary David Lammy has encouraged the Prime Minister to campaign for rejoining the European Union in the next election.",
+        "Prime Minister Andy Burnham recently stated that the UK experienced more losses than gains following the departure from the EU."
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/sport/20261114-wales-claim-historic-victory-against-all-blacks-for-first-time-since-1953"
-      }
-    },
-    {
-      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-      "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
-        "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261106-british-comedian-russell-brand-found-guilty-of-rape-and-three-sexual-assaults"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo"
       }
     },
     {
@@ -76,20 +76,20 @@
       }
     },
     {
-      "slug": "potential-candidates-for-next-james-bond",
-      "canonicalPath": "/news/gb/potential-candidates-for-next-james-bond/",
-      "headline": "British Actor Robert Pattinson Confirmed As The Next James Bond",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 54,
+      "slug": "wales-defeat-all-blacks-rugby",
+      "canonicalPath": "/news/gb/wales-defeat-all-blacks-rugby/",
+      "headline": "Wales Clinches Historic Rugby Victory Against The All Blacks",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Actor Robert Pattinson has been officially selected to portray the character of James Bond.",
-        "The casting decision concludes an extended period of industry speculation regarding Daniel Craig's successor."
+        "Wales achieved a 35-28 victory over the New Zealand All Blacks in the Nations Championship.",
+        "This win represents the first time Wales has defeated the All Blacks since 1953."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/ck79p0lev47po"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/sport/20261114-wales-claim-historic-victory-against-all-blacks-for-first-time-since-1953"
       }
     },
     {
@@ -127,29 +127,12 @@
       }
     },
     {
-      "slug": "prime-minister-burnham-addresses-brexit-impact",
-      "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
-      "headline": "Prime Minister Burnham Faces Calls To Rejoin European Union",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Former Foreign Secretary David Lammy has encouraged the Prime Minister to campaign for rejoining the European Union in the next election.",
-        "Prime Minister Andy Burnham recently stated that the UK experienced more losses than gains following the departure from the EU."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo"
-      }
-    },
-    {
       "slug": "bayesian-superyacht-sinking-investigation-findings",
       "canonicalPath": "/news/gb/bayesian-superyacht-sinking-investigation-findings/",
       "headline": "Bayesian Superyacht Sinking Report Reveals Unidentified Weaknesses",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 34,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Investigators determined the Bayesian superyacht had an unidentified vulnerability to high winds while anchored.",
@@ -158,40 +141,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/19/mike-lynch-superyacht-bayesian-vulnerability-to-high-winds-report"
-      }
-    },
-    {
-      "slug": "uk-youth-social-media-study",
-      "canonicalPath": "/news/gb/uk-youth-social-media-study/",
-      "headline": "Large Scale UK Study To Evaluate Social Media Restrictions On Youth",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Over 300,000 young people across the United Kingdom are participating in a major study regarding social media use.",
-        "Ten distinct research teams are evaluating how adolescents manage mental health without access to social media platforms."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o"
-      }
-    },
-    {
-      "slug": "uk-eu-negotiations-parliamentary-oversight",
-      "canonicalPath": "/news/gb/uk-eu-negotiations-parliamentary-oversight/",
-      "headline": "UK Government Faces Scrutiny Over New Negotiations With European Union",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The UK government is engaging in negotiations with the European Union to establish a new bilateral agreement.",
-        "The Prime Minister has characterized the potential deal as aligning with public expectations regarding the 2016 referendum."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo"
       }
     },
     {
@@ -229,20 +178,20 @@
       }
     },
     {
-      "slug": "uk-inflation-rises-amid-energy-costs",
-      "canonicalPath": "/news/gb/uk-inflation-rises-amid-energy-costs/",
-      "headline": "UK Inflation Reaches 3.6% Amid Rising Fuel And Energy Costs",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
+      "slug": "uk-youth-social-media-study",
+      "canonicalPath": "/news/gb/uk-youth-social-media-study/",
+      "headline": "Large Scale UK Study To Evaluate Social Media Restrictions On Youth",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "UK inflation increased to 3.6% during October as petrol and diesel prices reached record levels.",
-        "The ongoing conflict in the Middle East has been identified as a factor driving up global oil costs."
+        "Over 300,000 young people across the United Kingdom are participating in a major study regarding social media use.",
+        "Ten distinct research teams are evaluating how adolescents manage mental health without access to social media platforms."
       ],
       "primarySource": {
         "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo"
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o"
       }
     },
     {
@@ -277,6 +226,23 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cwn70l1628l0o"
+      }
+    },
+    {
+      "slug": "uk-eu-negotiations-parliamentary-oversight",
+      "canonicalPath": "/news/gb/uk-eu-negotiations-parliamentary-oversight/",
+      "headline": "UK Government Faces Scrutiny Over New Negotiations With European Union",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The UK government is engaging in negotiations with the European Union to establish a new bilateral agreement.",
+        "The Prime Minister has characterized the potential deal as aligning with public expectations regarding the 2016 referendum."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo"
       }
     },
     {
@@ -345,6 +311,40 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/17/uk-sanctions-8-israeli-firms-over-occupied-west-bank-settlements-gaza-aid?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "uk-inflation-rises-amid-energy-costs",
+      "canonicalPath": "/news/gb/uk-inflation-rises-amid-energy-costs/",
+      "headline": "UK Inflation Reaches 3.6% Amid Rising Fuel And Energy Costs",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "UK inflation increased to 3.6% during October as petrol and diesel prices reached record levels.",
+        "The ongoing conflict in the Middle East has been identified as a factor driving up global oil costs."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo"
+      }
+    },
+    {
+      "slug": "young-people-should-have-legal-guarantee-to-job-or",
+      "canonicalPath": "/news/gb/young-people-should-have-legal-guarantee-to-job-or/",
+      "headline": "Review Recommends Legal Guarantees For Employment And Training",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "A recent review recommends establishing a legal right to employment or training for young people.",
+        "The initiative targets individuals not in education, employment, or training to address labor market participation."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c69vwp09d7vvo"
       }
     }
   ]
