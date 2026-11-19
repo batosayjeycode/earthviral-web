@@ -3,18 +3,35 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 64,
+  "viralScore": 66,
   "intensityTier": "high",
-  "generatedAt": "2026-11-18T23:18:00Z",
+  "generatedAt": "2026-11-19T01:54:00Z",
   "clusters": [
+    {
+      "slug": "australia-unemployment-rate-reaches-five-year-high",
+      "canonicalPath": "/news/au/australia-unemployment-rate-reaches-five-year-high/",
+      "headline": "Australian Unemployment Rate Reaches Five Year High At 4.9 Percent",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The national unemployment rate increased from 4.7 percent to 4.9 percent in October.",
+        "Data shows 43,500 fewer people are employed while the number of unemployed individuals grew by 17,800."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-19/unemployment-rate-jumps-in-october-in-australia/107399076"
+      }
+    },
     {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Pat Cummins Refutes Usman Khawaja Claims Regarding Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Pat Cummins characterized Usman Khawaja's recent claims about the 2018 ball-tampering scandal as complete and utter nonsense.",
         "The Australian captain defended the integrity of the original Cricket Australia investigation conducted after the 2018 incident."
@@ -25,20 +42,20 @@
       }
     },
     {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
-        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
+        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
+        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
       }
     },
     {
@@ -47,7 +64,7 @@
       "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 52,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
@@ -76,20 +93,20 @@
       }
     },
     {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Jillaroos Secure Rugby League World Cup Victory Against New Zealand",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Jillaroos defeated New Zealand 34-10 in the Rugby League World Cup final.",
-        "Jaime Chapman scored three tries to help secure the championship victory for Australia."
+        "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
+        "The former police officer stated he obtained a SIM card under a false name to report workplace bullying to the media."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
       }
     },
     {
@@ -115,7 +132,7 @@
       "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Adelaide council voted to repeal a recently passed motion that intended to restrict fossil fuel-related advertising on municipal land.",
@@ -132,7 +149,7 @@
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -141,6 +158,57 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
+      }
+    },
+    {
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 40,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
+        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
+    {
+      "slug": "afl-draft-prospects-knee-recovery",
+      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
+      "headline": "AFL Draft Prospects Continue Training Despite Serious Knee Injuries",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 33,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Young athletes aiming for the AFL draft remain candidates despite suffering ACL ruptures this year.",
+        "Prospects are seeking guidance from experienced peers who have successfully navigated similar injuries."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+      }
+    },
+    {
+      "slug": "australian-police-investigate-two-fatal-shootings",
+      "canonicalPath": "/news/au/australian-police-investigate-two-fatal-shootings/",
+      "headline": "Australian Police Investigate Separate Fatal Shooting Incidents",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 33,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A coronial inquest is reviewing a police shooting of a teenager who allegedly stabbed a stranger at a retail location.",
+        "Investigators have released CCTV footage of a vehicle linked to a separate fatal drive-by shooting in Logan."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-16/qld-logan-drive-by-shooting-cctv/107391630"
       }
     },
     {
@@ -161,12 +229,29 @@
       }
     },
     {
+      "slug": "australian-gamers-await-gta-vi-launch",
+      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
+      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 28,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
+        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
+      }
+    },
+    {
       "slug": "advocates-call-for-improved-festival-accessibility",
       "canonicalPath": "/news/au/advocates-call-for-improved-festival-accessibility/",
       "headline": "Advocates Call For Enhanced Accessibility At Australian Festivals",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 31,
+      "viralScore": 27,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Individuals with disabilities are requesting improved accessibility standards at music festivals across Australia.",
@@ -178,29 +263,12 @@
       }
     },
     {
-      "slug": "australian-prime-minister-cop31-remarks",
-      "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
-      "headline": "Australian Prime Minister Faces Scrutiny Following COP31 Remarks",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Anthony Albanese is facing public criticism after being recorded making an unprofessional remark to the climate minister.",
-        "The incident occurred during the ongoing COP31 United Nations climate conference."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/more-important-than-heart-australian-pm-caught-making-genital-joke-with-climate-minister-at-cop31-watch/articleshow/135836793.cms"
-      }
-    },
-    {
       "slug": "tame-impala-to-headline-coachella-festival",
       "canonicalPath": "/news/au/tame-impala-to-headline-coachella-festival/",
       "headline": "Tame Impala makes ARIA Awards history as acts make noise about AI",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 21,
+      "viralScore": 20,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "ABC reports: Tame Impala makes ARIA Awards history as acts make noise about AI"
@@ -245,23 +313,6 @@
       }
     },
     {
-      "slug": "australian-gamers-await-gta-vi-launch",
-      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
-      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
-        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
-      }
-    },
-    {
       "slug": "child-protection-staffing-shortages-persist",
       "canonicalPath": "/news/au/child-protection-staffing-shortages-persist/",
       "headline": "Child Protection Staffing Shortages Persist Years After Tragedy",
@@ -293,57 +344,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-06/russell-brand-jury-verdict/107353304"
-      }
-    },
-    {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
-        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
-      }
-    },
-    {
-      "slug": "australian-actor-joins-hunger-games-franchise",
-      "canonicalPath": "/news/au/australian-actor-joins-hunger-games-franchise/",
-      "headline": "Australian Actor Cast As The New Face Of The Hunger Games Series",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A performer from Australia has been chosen to lead the latest installment of The Hunger Games.",
-        "The film franchise explores themes of rebellion against oppressive governing structures."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/sunrise-on-the-reaping-joseph-zada-hunger-games/107390762"
-      }
-    },
-    {
-      "slug": "australian-body-donation-policy-change",
-      "canonicalPath": "/news/au/australian-body-donation-policy-change/",
-      "headline": "Proposed Changes To Body Donation Procedures Following Recent Case",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "A resident sought to donate his late wife's remains to a university research program.",
-        "The donation was declined because the medical facility could not process the body during the weekend."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/body-donations-for-scientific-research-university-of-wollongong/107350716"
       }
     }
   ]

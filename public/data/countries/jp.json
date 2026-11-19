@@ -3,17 +3,51 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 46,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-18T23:18:00Z",
+  "viralScore": 70,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-19T01:54:00Z",
   "clusters": [
+    {
+      "slug": "seismic-activity-hits-kanto-region-japan",
+      "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
+      "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A 5.7-magnitude earthquake struck central Japan, causing structural damage and shaking streets.",
+        "Local reports indicate that at least 22 people have sustained injuries following the tremors."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/magnitude-5-7-earthquake-hits-central-japan-dozens-reportedly-injured/articleshow/135648927.cms"
+      }
+    },
+    {
+      "slug": "gempa-m-5-7-guncang-jepang-warga-alami-luka",
+      "canonicalPath": "/news/jp/gempa-m-5-7-guncang-jepang-warga-alami-luka/",
+      "headline": "Magnitude 5.7 Earthquake Hits Kumamoto Prefecture In Japan",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A magnitude 5.7 earthquake impacted Kumamoto Prefecture, causing reported injuries among local residents.",
+        "Physical damage was observed, including broken glass in buildings and disruptions to high-speed rail services."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261108152147-4-783293/gempa-m-57-guncang-jepang-kaca-gedung-pecah-puluhan-orang-luka"
+      }
+    },
     {
       "slug": "hajime-moriyasu-tenure-ends-japan",
       "canonicalPath": "/news/jp/hajime-moriyasu-tenure-ends-japan/",
       "headline": "Hajime Moriyasu Concludes Tenure Following Defeat Against Paraguay",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 43,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Hajime Moriyasu has concluded his term as the head coach of Japan's national football team.",
@@ -93,30 +127,13 @@
       }
     },
     {
-      "slug": "malicious-javascript-targets-cryptocurrency",
-      "canonicalPath": "/news/jp/malicious-javascript-targets-cryptocurrency/",
-      "headline": "Malicious JavaScript Used To Target Cryptocurrency On Major Sites",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Malicious JavaScript was discovered on 178 different websites.",
-        "The attack targeted iPhone users to facilitate the theft of cryptocurrency."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/18/world/crime-legal/websites-crypto-iphone-users/"
-      }
-    },
-    {
       "slug": "news2u-holdings-group-business-restructuring",
       "canonicalPath": "/news/jp/news2u-holdings-group-business-restructuring/",
       "headline": "News2u Holdings Announces Group Business Restructuring In Japan",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 19,
-      "intensityTier": "quiet",
+      "viralScore": 29,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "News2u Holdings is planning a reorganization of its group business operations.",
         "The restructuring is scheduled to take effect in January 2027."
@@ -144,20 +161,20 @@
       }
     },
     {
-      "slug": "seismic-activity-hits-kanto-region-japan",
-      "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
-      "headline": "Magnitude 5.7 Earthquake Strikes Central Japan Causing Injuries",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 53,
-      "intensityTier": "active",
+      "slug": "malicious-javascript-targets-cryptocurrency",
+      "canonicalPath": "/news/jp/malicious-javascript-targets-cryptocurrency/",
+      "headline": "Malicious JavaScript Used To Target Cryptocurrency On Major Sites",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 18,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "A 5.7-magnitude earthquake struck central Japan, causing structural damage and shaking streets.",
-        "Local reports indicate that at least 22 people have sustained injuries following the tremors."
+        "Malicious JavaScript was discovered on 178 different websites.",
+        "The attack targeted iPhone users to facilitate the theft of cryptocurrency."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/magnitude-5-7-earthquake-hits-central-japan-dozens-reportedly-injured/articleshow/135648927.cms"
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/18/world/crime-legal/websites-crypto-iphone-users/"
       }
     },
     {
@@ -226,23 +243,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/06/japan/takaichi-cybersecurity-package/"
-      }
-    },
-    {
-      "slug": "gempa-m-5-7-guncang-jepang-warga-alami-luka",
-      "canonicalPath": "/news/jp/gempa-m-5-7-guncang-jepang-warga-alami-luka/",
-      "headline": "Gempa M 5,7 Guncang Jepang, Warga Alami Luka-luka",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Detik reports: Gempa M 5,7 Guncang Jepang, Warga Alami Luka-luka",
-        "CNBC Indonesia reports: Gempa M 5,7 Guncang Jepang, Kaca Gedung Pecah-Puluhan Orang Luka"
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261108152147-4-783293/gempa-m-57-guncang-jepang-kaca-gedung-pecah-puluhan-orang-luka"
       }
     },
     {

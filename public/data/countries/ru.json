@@ -3,18 +3,35 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 58,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-18T23:18:00Z",
+  "viralScore": 69,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-19T01:54:00Z",
   "clusters": [
+    {
+      "slug": "traffic-suspended-following-crimean-bridge-attack",
+      "canonicalPath": "/news/ru/traffic-suspended-following-crimean-bridge-attack/",
+      "headline": "Traffic Suspended Following New Attack On Strategic Crimean Bridge",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Regional authorities confirmed a new strike occurred on the bridge connecting Russia to the Crimean peninsula.",
+        "Traffic movement across the structure has been suspended as officials assess the extent of the damage."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/kerch-bridge-crimea-russia-attacked-again-ukraine"
+      }
+    },
     {
       "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
       "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
+      "viralScore": 63,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Ukraine and Russia have reached an agreement to include European countries in the next round of peace negotiations.",
         "The diplomatic shift follows recent US-led talks in Abu Dhabi that resulted in a major prisoner exchange deal."
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/europe/20261109-what-to-expect-as-russia-ukraine-and-us-hold-trilateral-talks-in-abu-dhabi"
-      }
-    },
-    {
-      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-      "headline": "Families Speak Out Following Syndicate Recruitment Into Russian Army",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Families of Indonesian citizens recruited by a mercenary syndicate have lost contact with relatives serving in Russia.",
-        "Police identified Pemalang, Central Java, as a recruitment and training site used by a syndicate targeting former gambling administrators."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
       }
     },
     {
@@ -56,6 +56,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261115000600315"
+      }
+    },
+    {
+      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+      "headline": "Families Speak Out Following Syndicate Recruitment Into Russian Army",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Families of Indonesian citizens recruited by a mercenary syndicate have lost contact with relatives serving in Russia.",
+        "Police identified Pemalang, Central Java, as a recruitment and training site used by a syndicate targeting former gambling administrators."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
       }
     },
     {
@@ -98,7 +115,7 @@
       "headline": "Deutsche Bank Faces Scrutiny Over Internal Records On Past Clients",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Deutsche Bank experienced a share price decrease of over 6% following reports detailing its historical business relationships.",
@@ -132,7 +149,7 @@
       "headline": "Russia And China Seek Closer Ties During The Ongoing APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Vladimir Putin and leader Xi Jinping met in Shenzhen to discuss strengthening bilateral political and military cooperation.",

@@ -3,51 +3,17 @@
   "name": "Mexico",
   "slug": "mexico",
   "region": "North America",
-  "viralScore": 51,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-18T23:18:00Z",
+  "viralScore": 23,
+  "intensityTier": "quiet",
+  "generatedAt": "2026-11-19T01:54:00Z",
   "clusters": [
-    {
-      "slug": "guadalajara-cartel-leader-gallardo-dies",
-      "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
-      "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Miguel Angel Felix Gallardo, founder of the Guadalajara Cartel, died in a hospital at the age of 80.",
-        "Jalisco state security officials reported that his death resulted from multiple organ failure."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261115-miguel-angel-felix-gallardo-mexican-drug-lord-dies"
-      }
-    },
-    {
-      "slug": "trump-tariffs-mexico-migrant-caravans",
-      "canonicalPath": "/news/mx/trump-tariffs-mexico-migrant-caravans/",
-      "headline": "Donald Trump Threatens Mexico With Tariffs Over Migrant Caravans",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump threatened to double tariffs on Mexican goods following reports of a new migrant caravan traveling through Chiapas.",
-        "President Claudia Sheinbaum rejected the claims, asserting that no migrant caravans have arrived at the U.S. border during the current administration."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/"
-      }
-    },
     {
       "slug": "mexico-state-records-rise-in-homicides",
       "canonicalPath": "/news/mx/mexico-state-records-rise-in-homicides/",
       "headline": "México State Records Increase In Homicides Amid National Decline",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 24,
+      "viralScore": 22,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "National homicide rates have decreased across all federal entities during the first ten months of 2026.",
@@ -56,23 +22,6 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/politics/homicides-mexico-state-rise-states-decline-mananera-tuesday/"
-      }
-    },
-    {
-      "slug": "sheinbaum-conducts-diplomatic-meetings-china",
-      "canonicalPath": "/news/mx/sheinbaum-conducts-diplomatic-meetings-china/",
-      "headline": "President Sheinbaum Conducts Diplomatic Meetings In China Summit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "President Sheinbaum and leader Xi Jinping committed to strengthening Mexico-China cooperation in trade, technology, and tourism.",
-        "During a meeting in China, President Sheinbaum and Mark Carney reaffirmed their ongoing support for the USMCA trade agreement."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/politics/sheinbaum-canadas-carney-meet-china/"
       }
     },
     {
@@ -93,20 +42,37 @@
       }
     },
     {
-      "slug": "sixteenth-century-sailors-mexico-canada-journey",
-      "canonicalPath": "/news/mx/sixteenth-century-sailors-mexico-canada-journey/",
-      "headline": "Historical Account Details 16th Century Journey To North America",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
+      "slug": "sheinbaum-conducts-diplomatic-meetings-china",
+      "canonicalPath": "/news/mx/sheinbaum-conducts-diplomatic-meetings-china/",
+      "headline": "President Sheinbaum Conducts Diplomatic Meetings In China Summit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 18,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "A historical analysis confirms that a 16th-century journey involving three English sailors was a factual event.",
-        "The account details a 5,000-kilometer trek that spanned from Mexico to Canada during the Elizabethan era."
+        "President Sheinbaum and leader Xi Jinping committed to strengthening Mexico-China cooperation in trade, technology, and tourism.",
+        "During a meeting in China, President Sheinbaum and Mark Carney reaffirmed their ongoing support for the USMCA trade agreement."
       ],
       "primarySource": {
         "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/culture/three-elizabethan-sailors-walk-mexico-canada/"
+        "articleUrl": "https://mexiconewsdaily.com/politics/sheinbaum-canadas-carney-meet-china/"
+      }
+    },
+    {
+      "slug": "guadalajara-cartel-leader-gallardo-dies",
+      "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
+      "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Miguel Angel Felix Gallardo, founder of the Guadalajara Cartel, died in a hospital at the age of 80.",
+        "Jalisco state security officials reported that his death resulted from multiple organ failure."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261115-miguel-angel-felix-gallardo-mexican-drug-lord-dies"
       }
     },
     {
@@ -124,6 +90,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "trump-tariffs-mexico-migrant-caravans",
+      "canonicalPath": "/news/mx/trump-tariffs-mexico-migrant-caravans/",
+      "headline": "Donald Trump Threatens Mexico With Tariffs Over Migrant Caravans",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Donald Trump threatened to double tariffs on Mexican goods following reports of a new migrant caravan traveling through Chiapas.",
+        "President Claudia Sheinbaum rejected the claims, asserting that no migrant caravans have arrived at the U.S. border during the current administration."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/el-bajio/mnd-local-guadalajara-concerts-airport-updates-vermouth/"
+      }
+    },
+    {
+      "slug": "mexico-china-yucatan-archaeological-collaboration",
+      "canonicalPath": "/news/mx/mexico-china-yucatan-archaeological-collaboration/",
+      "headline": "Mexico And China Initiate Joint Archaeology Project In Yucatan",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Mexican National Institute of Anthropology and History is partnering with Shandong University on a new research initiative.",
+        "The project focuses on preserving and studying cultural heritage sites in Yaxcopoil."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/culture/mexico-china-archaeological-project-yucatan/"
       }
     }
   ]
