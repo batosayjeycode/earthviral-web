@@ -3,9 +3,9 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 84,
+  "viralScore": 82,
   "intensityTier": "high",
-  "generatedAt": "2026-11-19T08:18:00Z",
+  "generatedAt": "2026-11-19T10:27:00Z",
   "clusters": [
     {
       "slug": "south-korean-tax-exam-ai-scandal",
@@ -13,32 +13,66 @@
       "headline": "South Korea College Entrance Exam Sees Smartphones And AI Probes",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 81,
+      "viralScore": 79,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Authorities identified 22 students possessing smartphones during the college entrance exam following disaster alert testing.",
         "Proposals are underway to implement a 10-year ban from the exam for individuals found using artificial intelligence to cheat."
       ],
       "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/east-asia/south-korea-national-exam-ai-cheating-scandal-6554101"
+      }
+    },
+    {
+      "slug": "supreme-court-overturns-former-pm-han-conviction",
+      "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
+      "headline": "Supreme Court Overturns Conviction Of Former South Korean PM Han",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Supreme Court of South Korea overturned a 15-year prison sentence previously handed to former Prime Minister Han Duck-so.",
+        "The legal proceedings involve the former official's alleged role in providing legitimacy to the 2024 martial law declaration."
+      ],
+      "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116005551315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261119001200315"
       }
     },
     {
       "slug": "lee-jae-myung-asean-summit-manila",
       "canonicalPath": "/news/kr/lee-jae-myung-asean-summit-manila/",
-      "headline": "President Lee Jae Myung Advances Regional Ties At APEC Summit",
+      "headline": "President Lee Jae Myung Concludes APEC Summit With Peace Initiatives",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 59,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Lee Jae Myung met with international leaders to discuss energy supply chains and regional economic cooperation.",
-        "The president advocated for constructive involvement in resolving Korean Peninsula issues and resuming dialogue with North Korea."
+        "President Lee Jae Myung concluded his attendance at the APEC summit in Shenzhen, China, and has departed for Seoul.",
+        "During the summit, Lee advocated for regional dialogue to achieve lasting peace and stability on the Korean Peninsula."
       ],
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/16/japan/politics/japan-takaichi-lee-south-korea-asean/"
+      }
+    },
+    {
+      "slug": "south-korea-fines-fifteen-bond-dealers",
+      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
+      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
+        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
       }
     },
     {
@@ -76,23 +110,6 @@
       }
     },
     {
-      "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
-      "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
-      "headline": "KDI Raises South Korea 2027 Economic Growth Forecast To 3.9 Percent",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Korea Development Institute (KDI) updated its 2027 economic growth projection for South Korea to 3.9 percent.",
-        "Growth expectations are bolstered by an ongoing boom in artificial intelligence-related industries and chip production."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320"
-      }
-    },
-    {
       "slug": "seoul-stocks-decline-ai-market-uncertainty",
       "canonicalPath": "/news/kr/seoul-stocks-decline-ai-market-uncertainty/",
       "headline": "Seoul Stock Market Rebounds Two Percent Following Nvidia Earnings",
@@ -107,6 +124,23 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261117001600320"
+      }
+    },
+    {
+      "slug": "lead-kt-q3-operating-profit-down-amid-data-breach",
+      "canonicalPath": "/news/kr/lead-kt-q3-operating-profit-down-amid-data-breach/",
+      "headline": "KDI Raises South Korea 2027 Economic Growth Forecast To 3.9 Percent",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Korea Development Institute (KDI) updated its 2027 economic growth projection for South Korea to 3.9 percent.",
+        "Growth expectations are bolstered by an ongoing boom in artificial intelligence-related industries and chip production."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110001551320"
       }
     },
     {
@@ -158,23 +192,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261105000700315"
-      }
-    },
-    {
-      "slug": "south-korea-fines-fifteen-bond-dealers",
-      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
-      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
-        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
       }
     },
     {

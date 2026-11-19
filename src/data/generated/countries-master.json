@@ -12,12 +12,12 @@
     ],
     "viralScore": 100,
     "intensityTier": "surge",
-    "topicCount": 140,
+    "topicCount": 137,
     "topClusterIds": [
       "id-20261115-prabowo-addresses-forest-fire-prevention-summit",
+      "id-20261119-defense-minister-sjafrie-visits-indonesian-parliament",
       "id-20261105-video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
-      "id-20261112-indonesian-police-investigate-treason-allegations",
-      "id-20261118-fatal-oil-refinery-explosion-blora",
+      "id-20261110-puan-maharani-denies-tni-commander-letter",
       "id-20261112-vice-president-gibran-meets-president-prabowo"
     ]
   },
@@ -32,9 +32,9 @@
       104,
       35
     ],
-    "viralScore": 96,
+    "viralScore": 99,
     "intensityTier": "surge",
-    "topicCount": 14,
+    "topicCount": 12,
     "topClusterIds": [
       "cn-20261109-trump-to-meet-xi-putin-apec",
       "cn-20261112-xi-jinping-to-host-apec-summit",
@@ -54,37 +54,15 @@
       -98.5,
       39.5
     ],
-    "viralScore": 92,
+    "viralScore": 96,
     "intensityTier": "surge",
-    "topicCount": 41,
+    "topicCount": 40,
     "topClusterIds": [
-      "us-20261118-rubio-denies-coordinated-cyberattack-us-outages",
       "us-20261114-us-china-russia-trilateral-meeting",
       "us-20261119-elon-musk-midterm-spending-comments",
-      "us-20261118-hakeem-jeffries-nominated-for-house-speaker",
+      "us-20261118-anthropic-sets-ipo-share-price",
+      "us-20261118-rubio-denies-coordinated-cyberattack-us-outages",
       "us-20261118-us-defense-secretary-venezuela-military-deal"
-    ]
-  },
-  {
-    "id": "in",
-    "code": "IN",
-    "isoNumeric": "356",
-    "name": "India",
-    "slug": "india",
-    "region": "Asia",
-    "centroid": [
-      79,
-      22
-    ],
-    "viralScore": 87,
-    "intensityTier": "surge",
-    "topicCount": 51,
-    "topClusterIds": [
-      "in-20261112-modi-pitroda-public-exchange",
-      "in-20261118-cyclone-akvan-heads-toward-india",
-      "in-20261113-fatal-bus-collision-assam-kaziranga",
-      "in-20261107-delhi-air-quality-grap-iii-restrictions",
-      "in-20261112-indian-officials-secure-custody-political-figures"
     ]
   },
   {
@@ -98,15 +76,15 @@
       127.8,
       36.3
     ],
-    "viralScore": 84,
+    "viralScore": 82,
     "intensityTier": "high",
-    "topicCount": 7,
+    "topicCount": 9,
     "topClusterIds": [
       "kr-20261115-south-korean-tax-exam-ai-scandal",
+      "kr-20261118-supreme-court-overturns-former-pm-han-conviction",
       "kr-20261116-lee-jae-myung-asean-summit-manila",
       "kr-20261111-bus-collision-bundang-south-korea",
-      "kr-20261112-south-korea-football-team-disputes",
-      "kr-20261105-lead-s-korea-to-expand-anti-piracy-mission-closer"
+      "kr-20261110-south-korea-fines-fifteen-bond-dealers"
     ]
   },
   {
@@ -120,7 +98,7 @@
       60,
       58
     ],
-    "viralScore": 77,
+    "viralScore": 81,
     "intensityTier": "high",
     "topicCount": 9,
     "topClusterIds": [
@@ -129,6 +107,28 @@
       "ru-20261109-russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "ru-20261115-estonia-to-close-russia-border-crossings",
       "ru-20261109-novaya-gazeta-closes-moscow-operations"
+    ]
+  },
+  {
+    "id": "in",
+    "code": "IN",
+    "isoNumeric": "356",
+    "name": "India",
+    "slug": "india",
+    "region": "Asia",
+    "centroid": [
+      79,
+      22
+    ],
+    "viralScore": 79,
+    "intensityTier": "high",
+    "topicCount": 52,
+    "topClusterIds": [
+      "in-20261118-cyclone-akvan-heads-toward-india",
+      "in-20261112-modi-pitroda-public-exchange",
+      "in-20261110-recent-developments-in-tamil-nadu-india",
+      "in-20261119-tvk-mla-vs-babu-passes-away",
+      "in-20261107-delhi-air-quality-grap-iii-restrictions"
     ]
   },
   {
@@ -142,37 +142,15 @@
       138.5,
       36.5
     ],
-    "viralScore": 74,
+    "viralScore": 78,
     "intensityTier": "high",
-    "topicCount": 10,
+    "topicCount": 9,
     "topClusterIds": [
       "jp-20261117-japan-pm-takaichi-diplomatic-summits",
       "jp-20261106-seismic-activity-hits-kanto-region-japan",
       "jp-20261108-gempa-m-5-7-guncang-jepang-warga-alami-luka",
       "jp-20261106-nigeria-japan-u17-womens-world-cup-final",
       "jp-20261117-hajime-moriyasu-tenure-ends-japan"
-    ]
-  },
-  {
-    "id": "au",
-    "code": "AU",
-    "isoNumeric": "036",
-    "name": "Australia",
-    "slug": "australia",
-    "region": "Oceania",
-    "centroid": [
-      134,
-      -25.5
-    ],
-    "viralScore": 71,
-    "intensityTier": "high",
-    "topicCount": 27,
-    "topClusterIds": [
-      "au-20261106-usman-khawaja-claims-ball-tampering-knowledge",
-      "au-20261119-general-pants-co-enters-voluntary-administration",
-      "au-20261108-man-charged-murder-fatal-home-invasion",
-      "au-20261110-australia-to-adopt-mandatory-ai-safeguards",
-      "au-20261112-australian-teen-rescued-from-bush"
     ]
   },
   {
@@ -186,123 +164,15 @@
       -2,
       53.5
     ],
-    "viralScore": 71,
+    "viralScore": 68,
     "intensityTier": "high",
     "topicCount": 29,
     "topClusterIds": [
       "gb-20261111-pochettino-linked-to-manchester-united-manager",
+      "gb-20261112-harry-kane-sets-england-appearance-record",
       "gb-20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual",
       "gb-20261108-uk-minister-warns-media-sexual-abuse",
-      "gb-20261109-potential-candidates-for-next-james-bond",
-      "gb-20261110-david-walliams-faces-misconduct-allegations-2"
-    ]
-  },
-  {
-    "id": "ph",
-    "code": "PH",
-    "isoNumeric": "608",
-    "name": "Philippines",
-    "slug": "philippines",
-    "region": "Asia",
-    "centroid": [
-      122,
-      12.5
-    ],
-    "viralScore": 68,
-    "intensityTier": "high",
-    "topicCount": 5,
-    "topClusterIds": [
-      "ph-20261111-asean-leaders-discuss-regional-energy-security",
-      "ph-20261117-borneo-fc-faces-manila-digger-championship",
-      "ph-20261114-philippines-wins-first-eurovision-asia-contest",
-      "ph-20261117-trump-begins-asia-diplomatic-tour",
-      "ph-20261118-philippine-police-pursue-thomas-markle-charges"
-    ]
-  },
-  {
-    "id": "il",
-    "code": "IL",
-    "isoNumeric": "376",
-    "name": "Israel",
-    "slug": "israel",
-    "region": "Asia",
-    "centroid": [
-      34.9,
-      31.3
-    ],
-    "viralScore": 64,
-    "intensityTier": "high",
-    "topicCount": 5,
-    "topClusterIds": [
-      "il-20261118-israel-launches-new-gaza-operation",
-      "il-20261105-israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-      "il-20261110-israel-knesset-political-power-transition",
-      "il-20261112-israeli-airstrike-on-nasser-hospital",
-      "il-20261107-gadi-eisenkot-tasked-form-israeli-government"
-    ]
-  },
-  {
-    "id": "bd",
-    "code": "BD",
-    "isoNumeric": "050",
-    "name": "Bangladesh",
-    "slug": "bangladesh",
-    "region": "Asia",
-    "centroid": [
-      90.3,
-      23.7
-    ],
-    "viralScore": 63,
-    "intensityTier": "high",
-    "topicCount": 3,
-    "topClusterIds": [
-      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
-      "bd-20261119-muhammad-yunus-home-set-ablaze",
-      "bd-20261111-bangladesh-garment-sector-labor-unrest"
-    ]
-  },
-  {
-    "id": "ua",
-    "code": "UA",
-    "isoNumeric": "804",
-    "name": "Ukraine",
-    "slug": "ukraine",
-    "region": "Europe",
-    "centroid": [
-      31.2,
-      49
-    ],
-    "viralScore": 63,
-    "intensityTier": "high",
-    "topicCount": 4,
-    "topClusterIds": [
-      "ua-20261116-ukraine-drone-strikes-crimea-moscow",
-      "ua-20261109-european-leaders-seek-ukraine-peace-influence",
-      "ua-20261107-russia-strikes-ukraine-energy-infrastructure",
-      "ua-20261118-european-commission-proposes-ukraine-loan",
-      "ua-20261115-prince-harry-visits-ukrainian-veterans"
-    ]
-  },
-  {
-    "id": "ir",
-    "code": "IR",
-    "isoNumeric": "364",
-    "name": "Iran",
-    "slug": "iran",
-    "region": "Asia",
-    "centroid": [
-      53.7,
-      32.4
-    ],
-    "viralScore": 60,
-    "intensityTier": "high",
-    "topicCount": 5,
-    "topClusterIds": [
-      "ir-20261107-explosions-reported-strait-hormuz-iran",
-      "ir-20261111-iran-refuses-transfer-enriched-nuclear-material",
-      "ir-20261117-trump-addresses-iran-dirty-bomb-threat",
-      "ir-20261111-treasury-secretary-bessent-iran-security-threats",
-      "ir-20261112-men-convicted-spying-on-uk-journalists"
+      "gb-20261109-potential-candidates-for-next-james-bond"
     ]
   },
   {
@@ -316,59 +186,167 @@
       37.9,
       0.2
     ],
-    "viralScore": 60,
+    "viralScore": 67,
     "intensityTier": "high",
-    "topicCount": 29,
+    "topicCount": 30,
     "topClusterIds": [
       "ke-20261117-president-ruto-state-nation-address",
-      "ke-20261117-regina-re-daughter-murder-charges",
+      "ke-20261113-syokimau-building-collapse-casualties-reported",
       "ke-20261106-kenyan-cult-leader-receives-prison-sentence",
-      "ke-20261118-ruto-highlights-agricultural-economic-impact",
-      "ke-20261106-safaricom-reports-significant-half-year-profit-growth"
+      "ke-20261119-ruto-advocates-for-equitable-kenyan-development",
+      "ke-20261106-kalonzo-disputes-official-homa-bay-rally-death-toll-demands"
     ]
   },
   {
-    "id": "my",
-    "code": "MY",
-    "isoNumeric": "458",
-    "name": "Malaysia",
-    "slug": "malaysia",
+    "id": "au",
+    "code": "AU",
+    "isoNumeric": "036",
+    "name": "Australia",
+    "slug": "australia",
+    "region": "Oceania",
+    "centroid": [
+      134,
+      -25.5
+    ],
+    "viralScore": 66,
+    "intensityTier": "high",
+    "topicCount": 28,
+    "topClusterIds": [
+      "au-20261106-usman-khawaja-claims-ball-tampering-knowledge",
+      "au-20261119-peres-jepchirchir-banned-doping-violation",
+      "au-20261108-man-charged-murder-fatal-home-invasion",
+      "au-20261110-australia-to-adopt-mandatory-ai-safeguards",
+      "au-20261112-australian-teen-rescued-from-bush"
+    ]
+  },
+  {
+    "id": "ua",
+    "code": "UA",
+    "isoNumeric": "804",
+    "name": "Ukraine",
+    "slug": "ukraine",
+    "region": "Europe",
+    "centroid": [
+      31.2,
+      49
+    ],
+    "viralScore": 61,
+    "intensityTier": "high",
+    "topicCount": 5,
+    "topClusterIds": [
+      "ua-20261116-ukraine-drone-strikes-crimea-moscow",
+      "ua-20261109-european-leaders-seek-ukraine-peace-influence",
+      "ua-20261107-russia-strikes-ukraine-energy-infrastructure",
+      "ua-20261119-european-leaders-meet-berlin-ukraine",
+      "ua-20261118-european-commission-proposes-ukraine-loan"
+    ]
+  },
+  {
+    "id": "bd",
+    "code": "BD",
+    "isoNumeric": "050",
+    "name": "Bangladesh",
+    "slug": "bangladesh",
     "region": "Asia",
     "centroid": [
-      102.3,
-      3.8
+      90.3,
+      23.7
     ],
-    "viralScore": 59,
-    "intensityTier": "active",
-    "topicCount": 12,
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 3,
     "topClusterIds": [
-      "my-20261106-high-court-najib-house-arrest-order",
-      "my-20261115-macron-visit-malaysia-rare-earth",
-      "my-20261106-najib-razak-returns-to-kajang-prison",
-      "my-20261113-malaysia-probes-speedmatrix-ai-chip-diversion",
-      "my-20261119-malaysia-arrests-tanker-owner-ketamine-smuggling"
+      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
+      "bd-20261119-muhammad-yunus-home-set-ablaze",
+      "bd-20261111-bangladesh-garment-sector-labor-unrest"
     ]
   },
   {
-    "id": "ng",
-    "code": "NG",
-    "isoNumeric": "566",
-    "name": "Nigeria",
-    "slug": "nigeria",
-    "region": "Africa",
+    "id": "sa",
+    "code": "SA",
+    "isoNumeric": "682",
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "region": "Asia",
     "centroid": [
-      8.1,
-      9.6
+      45,
+      24
+    ],
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 3,
+    "topClusterIds": [
+      "sa-20261116-saudi-arabia-replaces-yemen-coalition-commander",
+      "sa-20261108-saudi-financial-district-missile-attack",
+      "sa-20261105-saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+      "sa-20261107-fatal-airstrikes-clashes-reported-yemen",
+      "sa-20261110-saudi-arabia-prepares-hajj-2027-pilgrimage"
+    ]
+  },
+  {
+    "id": "il",
+    "code": "IL",
+    "isoNumeric": "376",
+    "name": "Israel",
+    "slug": "israel",
+    "region": "Asia",
+    "centroid": [
+      34.9,
+      31.3
+    ],
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 5,
+    "topClusterIds": [
+      "il-20261118-israel-launches-new-gaza-operation",
+      "il-20261105-israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+      "il-20261110-israel-knesset-political-power-transition",
+      "il-20261112-israeli-airstrike-on-nasser-hospital",
+      "il-20261107-gadi-eisenkot-tasked-form-israeli-government"
+    ]
+  },
+  {
+    "id": "ir",
+    "code": "IR",
+    "isoNumeric": "364",
+    "name": "Iran",
+    "slug": "iran",
+    "region": "Asia",
+    "centroid": [
+      53.7,
+      32.4
     ],
     "viralScore": 59,
     "intensityTier": "active",
-    "topicCount": 70,
+    "topicCount": 5,
     "topClusterIds": [
-      "ng-20261108-apc-prepares-for-2027-general-elections",
-      "ng-20261117-apc-launches-state-level-campaign-councils",
-      "ng-20261119-presidential-aide-criticizes-lagos-ibadan-expressway-contractor",
-      "ng-20261114-nigeria-addis-ababa-airport-health-advisory",
-      "ng-20261113-nigeria-tanzania-afcon-qualifier-draw"
+      "ir-20261107-explosions-reported-strait-hormuz-iran",
+      "ir-20261111-iran-refuses-transfer-enriched-nuclear-material",
+      "ir-20261117-trump-addresses-iran-dirty-bomb-threat",
+      "ir-20261111-treasury-secretary-bessent-iran-security-threats",
+      "ir-20261112-men-convicted-spying-on-uk-journalists"
+    ]
+  },
+  {
+    "id": "ph",
+    "code": "PH",
+    "isoNumeric": "608",
+    "name": "Philippines",
+    "slug": "philippines",
+    "region": "Asia",
+    "centroid": [
+      122,
+      12.5
+    ],
+    "viralScore": 57,
+    "intensityTier": "active",
+    "topicCount": 4,
+    "topClusterIds": [
+      "ph-20261111-asean-leaders-discuss-regional-energy-security",
+      "ph-20261117-borneo-fc-faces-manila-digger-championship",
+      "ph-20261114-philippines-wins-first-eurovision-asia-contest",
+      "ph-20261117-trump-begins-asia-diplomatic-tour",
+      "ph-20261118-philippine-police-pursue-thomas-markle-charges"
     ]
   },
   {
@@ -394,25 +372,47 @@
     ]
   },
   {
-    "id": "sa",
-    "code": "SA",
-    "isoNumeric": "682",
-    "name": "Saudi Arabia",
-    "slug": "saudi-arabia",
+    "id": "ng",
+    "code": "NG",
+    "isoNumeric": "566",
+    "name": "Nigeria",
+    "slug": "nigeria",
+    "region": "Africa",
+    "centroid": [
+      8.1,
+      9.6
+    ],
+    "viralScore": 57,
+    "intensityTier": "active",
+    "topicCount": 69,
+    "topClusterIds": [
+      "ng-20261117-fountain-of-life-church-leadership-dispute",
+      "ng-20261112-unn-confirms-four-students-dead-after-off-campus-party",
+      "ng-20261108-apc-prepares-for-2027-general-elections",
+      "ng-20261108-ogun-state-police-security-operations-update",
+      "ng-20261114-nigeria-addis-ababa-airport-health-advisory"
+    ]
+  },
+  {
+    "id": "my",
+    "code": "MY",
+    "isoNumeric": "458",
+    "name": "Malaysia",
+    "slug": "malaysia",
     "region": "Asia",
     "centroid": [
-      45,
-      24
+      102.3,
+      3.8
     ],
-    "viralScore": 54,
+    "viralScore": 55,
     "intensityTier": "active",
-    "topicCount": 3,
+    "topicCount": 13,
     "topClusterIds": [
-      "sa-20261105-saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-      "sa-20261108-saudi-financial-district-missile-attack",
-      "sa-20261116-saudi-arabia-replaces-yemen-coalition-commander",
-      "sa-20261107-fatal-airstrikes-clashes-reported-yemen",
-      "sa-20261110-saudi-arabia-prepares-hajj-2027-pilgrimage"
+      "my-20261106-high-court-najib-house-arrest-order",
+      "my-20261106-najib-razak-returns-to-kajang-prison",
+      "my-20261115-macron-visit-malaysia-rare-earth",
+      "my-20261113-malaysia-probes-speedmatrix-ai-chip-diversion",
+      "my-20261114-negeri-sembilan-menteri-besar-withdraws-letter"
     ]
   },
   {
@@ -428,13 +428,13 @@
     ],
     "viralScore": 53,
     "intensityTier": "active",
-    "topicCount": 28,
+    "topicCount": 27,
     "topClusterIds": [
-      "sg-20261119-singapore-mrt-reliability-performance-dip",
+      "sg-20261119-singapore-passenger-lawsuit-chicken-accident",
       "sg-20261112-singapore-bars-alice-huang-megaspeed-probe",
-      "sg-20261116-princess-aiko-visits-singapore",
+      "sg-20261119-singapore-mrt-reliability-performance-dip",
       "sg-20261108-cruise-ship-odyssey-detained-singapore",
-      "sg-20261119-singapore-mrt-escalator-refurbishment-project"
+      "sg-20261116-princess-aiko-visits-singapore"
     ]
   },
   {
@@ -448,15 +448,15 @@
       -51.9,
       -10.5
     ],
-    "viralScore": 50,
+    "viralScore": 52,
     "intensityTier": "active",
-    "topicCount": 59,
+    "topicCount": 60,
     "topClusterIds": [
       "br-20261107-lando-norris-brazil-grand-prix-pole",
+      "br-20261119-black-consciousness-day-sao-paulo",
       "br-20261111-brazil-fines-meta-electoral-court-ruling",
       "br-20261112-senate-debates-moretti-fiscal-plan",
-      "br-20261107-wet-weather-impacts-brazilian-grand-prix",
-      "br-20261111-a-fazenda-18-elimination-update"
+      "br-20261107-wet-weather-impacts-brazilian-grand-prix"
     ]
   },
   {
@@ -492,7 +492,7 @@
       -3.7,
       40.2
     ],
-    "viralScore": 48,
+    "viralScore": 46,
     "intensityTier": "active",
     "topicCount": 2,
     "topClusterIds": [
@@ -501,28 +501,6 @@
       "es-20261118-real-madrid-extends-arda-guler-contract",
       "es-20261108-canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
       "es-20261118-julio-iglesias-sex-abuse-investigation"
-    ]
-  },
-  {
-    "id": "pk",
-    "code": "PK",
-    "isoNumeric": "586",
-    "name": "Pakistan",
-    "slug": "pakistan",
-    "region": "Asia",
-    "centroid": [
-      69.3,
-      30
-    ],
-    "viralScore": 45,
-    "intensityTier": "active",
-    "topicCount": 3,
-    "topClusterIds": [
-      "pk-20261116-former-pakistan-leader-seeks-medical-care",
-      "pk-20261118-pakistani-man-sentenced-assassination-plot",
-      "pk-20261113-pakistan-security-incidents-casualties-reported",
-      "pk-20261115-india-railway-blast-arrests",
-      "pk-20261118-pakistani-man-sentenced-targeting-donald-trump"
     ]
   },
   {
@@ -545,6 +523,28 @@
       "it-20261112-mbappe-out-france-italy-match",
       "it-20261105-bomb-threats-disrupt-several-flights-across-europe",
       "it-20261107-italian-foreign-minister-personal-data-leak"
+    ]
+  },
+  {
+    "id": "pk",
+    "code": "PK",
+    "isoNumeric": "586",
+    "name": "Pakistan",
+    "slug": "pakistan",
+    "region": "Asia",
+    "centroid": [
+      69.3,
+      30
+    ],
+    "viralScore": 40,
+    "intensityTier": "active",
+    "topicCount": 2,
+    "topClusterIds": [
+      "pk-20261116-former-pakistan-leader-seeks-medical-care",
+      "pk-20261118-pakistani-man-sentenced-assassination-plot",
+      "pk-20261113-pakistan-security-incidents-casualties-reported",
+      "pk-20261115-india-railway-blast-arrests",
+      "pk-20261118-pakistani-man-sentenced-targeting-donald-trump"
     ]
   },
   {
@@ -641,8 +641,8 @@
       172,
       -41.5
     ],
-    "viralScore": 25,
-    "intensityTier": "active",
+    "viralScore": 24,
+    "intensityTier": "quiet",
     "topicCount": 4,
     "topClusterIds": [
       "nz-20261107-new-zealand-election-too-close",
@@ -663,7 +663,7 @@
       -102.5,
       23.6
     ],
-    "viralScore": 21,
+    "viralScore": 20,
     "intensityTier": "quiet",
     "topicCount": 3,
     "topClusterIds": [
