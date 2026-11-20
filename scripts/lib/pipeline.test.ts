@@ -19,6 +19,8 @@ import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
 import { summaryQueue } from './intelligence/selectStories.ts';
 import { keepStoryNames, namesAnchor, storyAnchors } from './intelligence/storyNames.ts';
+import { aiCompaniesBlocked, isAiOptOut } from './robotsPolicy.ts';
+import { RSS_SOURCES } from './fetchers/rssSources.ts';
 import { decodeBody, detectCharset, fetchText } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
@@ -1279,5 +1281,49 @@ describe('story names in titles', () => {
     });
     assert.equal(r.check, 'missing');
     assert.equal(r.output.seoTitle, 'Party Officials Resign');
+  });
+});
+
+describe('sourcing policy (robots.txt)', () => {
+  it('counts the AI companies whose agents are blocked from the whole site', () => {
+    const txt = `User-agent: *
+Disallow: /admin/
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: / # no AI
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Disallow: /private/`;
+    assert.deepEqual(aiCompaniesBlocked(txt), ['OpenAI', 'Anthropic']);
+    assert.ok(isAiOptOut(aiCompaniesBlocked(txt)));
+  });
+
+  it('one company, or none, is not an opt-out', () => {
+    assert.ok(!isAiOptOut(aiCompaniesBlocked('User-agent: GPTBot\nDisallow: /')));
+    assert.ok(!isAiOptOut(aiCompaniesBlocked('User-agent: *\nDisallow: /search')));
+    assert.deepEqual(aiCompaniesBlocked(''), []);
+  });
+
+  it('an explicit Allow: / for the agent wins', () => {
+    const txt = 'User-agent: ClaudeBot\nDisallow: /\nAllow: /\n\nUser-agent: GPTBot\nDisallow: /';
+    assert.deepEqual(aiCompaniesBlocked(txt), ['OpenAI']);
+  });
+
+  it('source ids are unique and every country keeps a source that allows AI', () => {
+    const ids = RSS_SOURCES.map((s) => s.id);
+    assert.equal(new Set(ids).size, ids.length);
+    const countries = new Set(RSS_SOURCES.map((s) => s.homeCountry).filter(Boolean));
+    for (const cc of countries)
+      assert.ok(
+        RSS_SOURCES.some((s) => s.homeCountry === cc && !s.aiOptOut),
+        `${cc} relies only on aiOptOut sources`,
+      );
   });
 });
