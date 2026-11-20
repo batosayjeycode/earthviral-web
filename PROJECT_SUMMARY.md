@@ -55,7 +55,7 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 ### Phase 3: AI batch pipeline (`npm run update:viral`)
 
-- **Sources:** 33 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sources:** 36 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
 - **Country attribution** across 41 tracked countries, in English and Bahasa Indonesia.
 - **Story grouping:** articles are grouped by TF-IDF headline similarity, with a second pass that merges fragments of the same event. Tuned on a real batch of 1,083 articles.
 - **Viral Activity Score (0–100):** `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
