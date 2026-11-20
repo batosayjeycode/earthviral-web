@@ -10,14 +10,14 @@
       117,
       -2.5
     ],
-    "viralScore": 100,
+    "viralScore": 98,
     "intensityTier": "surge",
     "topicCount": 136,
     "topClusterIds": [
-      "id-20261115-indonesia-javan-rhino-relocation-controversy",
       "id-20261105-video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
-      "id-20261115-prabowo-addresses-forest-fire-prevention-summit",
       "id-20261107-sabtu-bmkg-mayoritas-kota-besar-alami-cuaca-berawan-hujan",
+      "id-20261115-indonesia-javan-rhino-relocation-controversy",
+      "id-20261115-prabowo-addresses-forest-fire-prevention-summit",
       "id-20261112-vice-president-gibran-meets-president-prabowo"
     ]
   },
@@ -32,7 +32,7 @@
       104,
       35
     ],
-    "viralScore": 98,
+    "viralScore": 97,
     "intensityTier": "surge",
     "topicCount": 12,
     "topClusterIds": [
@@ -54,12 +54,12 @@
       -98.5,
       39.5
     ],
-    "viralScore": 94,
+    "viralScore": 96,
     "intensityTier": "surge",
-    "topicCount": 40,
+    "topicCount": 41,
     "topClusterIds": [
-      "us-20261114-us-china-russia-trilateral-meeting",
       "us-20261118-anthropic-sets-ipo-share-price",
+      "us-20261114-us-china-russia-trilateral-meeting",
       "us-20261118-rubio-denies-coordinated-cyberattack-us-outages",
       "us-20261119-elon-musk-midterm-spending-comments",
       "us-20261107-us-conducts-new-military-strikes-iran"
@@ -76,7 +76,7 @@
       79,
       22
     ],
-    "viralScore": 79,
+    "viralScore": 82,
     "intensityTier": "high",
     "topicCount": 60,
     "topClusterIds": [
@@ -98,7 +98,7 @@
       -2,
       53.5
     ],
-    "viralScore": 78,
+    "viralScore": 77,
     "intensityTier": "high",
     "topicCount": 26,
     "topClusterIds": [
@@ -120,7 +120,7 @@
       53.7,
       32.4
     ],
-    "viralScore": 70,
+    "viralScore": 69,
     "intensityTier": "high",
     "topicCount": 4,
     "topClusterIds": [
@@ -142,7 +142,7 @@
       31.2,
       49
     ],
-    "viralScore": 70,
+    "viralScore": 69,
     "intensityTier": "high",
     "topicCount": 5,
     "topClusterIds": [
@@ -151,6 +151,27 @@
       "ua-20261119-european-leaders-meet-berlin-ukraine",
       "ua-20261107-russia-strikes-ukraine-energy-infrastructure",
       "ua-20261118-european-commission-proposes-ukraine-loan"
+    ]
+  },
+  {
+    "id": "bd",
+    "code": "BD",
+    "isoNumeric": "050",
+    "name": "Bangladesh",
+    "slug": "bangladesh",
+    "region": "Asia",
+    "centroid": [
+      90.3,
+      23.7
+    ],
+    "viralScore": 67,
+    "intensityTier": "high",
+    "topicCount": 3,
+    "topClusterIds": [
+      "bd-20261119-icj-rules-myanmar-committed-genocide",
+      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
+      "bd-20261119-muhammad-yunus-home-set-ablaze",
+      "bd-20261111-bangladesh-garment-sector-labor-unrest"
     ]
   },
   {
@@ -164,7 +185,7 @@
       102.3,
       3.8
     ],
-    "viralScore": 66,
+    "viralScore": 65,
     "intensityTier": "high",
     "topicCount": 15,
     "topClusterIds": [
@@ -186,7 +207,7 @@
       8.1,
       9.6
     ],
-    "viralScore": 65,
+    "viralScore": 64,
     "intensityTier": "high",
     "topicCount": 61,
     "topClusterIds": [
@@ -208,7 +229,7 @@
       127.8,
       36.3
     ],
-    "viralScore": 64,
+    "viralScore": 63,
     "intensityTier": "high",
     "topicCount": 6,
     "topClusterIds": [
@@ -230,14 +251,14 @@
       60,
       58
     ],
-    "viralScore": 64,
+    "viralScore": 63,
     "intensityTier": "high",
     "topicCount": 7,
     "topClusterIds": [
       "ru-20261109-russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "ru-20261111-indonesian-citizens-recruited-as-russian-soldiers",
-      "ru-20261118-traffic-suspended-following-crimean-bridge-attack",
       "ru-20261115-estonia-to-close-russia-border-crossings",
+      "ru-20261118-traffic-suspended-following-crimean-bridge-attack",
       "ru-20261107-russian-missile-strikes-target-kyiv"
     ]
   },
@@ -252,7 +273,7 @@
       45,
       24
     ],
-    "viralScore": 62,
+    "viralScore": 61,
     "intensityTier": "high",
     "topicCount": 3,
     "topClusterIds": [
@@ -286,27 +307,6 @@
     ]
   },
   {
-    "id": "bd",
-    "code": "BD",
-    "isoNumeric": "050",
-    "name": "Bangladesh",
-    "slug": "bangladesh",
-    "region": "Asia",
-    "centroid": [
-      90.3,
-      23.7
-    ],
-    "viralScore": 60,
-    "intensityTier": "high",
-    "topicCount": 3,
-    "topClusterIds": [
-      "bd-20261119-icj-rules-myanmar-committed-genocide",
-      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
-      "bd-20261119-muhammad-yunus-home-set-ablaze",
-      "bd-20261111-bangladesh-garment-sector-labor-unrest"
-    ]
-  },
-  {
     "id": "es",
     "code": "ES",
     "isoNumeric": "724",
@@ -329,6 +329,28 @@
     ]
   },
   {
+    "id": "br",
+    "code": "BR",
+    "isoNumeric": "076",
+    "name": "Brazil",
+    "slug": "brazil",
+    "region": "South America",
+    "centroid": [
+      -51.9,
+      -10.5
+    ],
+    "viralScore": 60,
+    "intensityTier": "high",
+    "topicCount": 61,
+    "topClusterIds": [
+      "br-20261119-black-consciousness-day-sao-paulo",
+      "br-20261107-lando-norris-brazil-grand-prix-pole",
+      "br-20261111-brazil-fines-meta-electoral-court-ruling",
+      "br-20261111-global-reporting-initiative-returns-brazil",
+      "br-20261114-brazil-debates-six-one-work-schedule"
+    ]
+  },
+  {
     "id": "au",
     "code": "AU",
     "isoNumeric": "036",
@@ -339,7 +361,7 @@
       134,
       -25.5
     ],
-    "viralScore": 59,
+    "viralScore": 58,
     "intensityTier": "active",
     "topicCount": 32,
     "topClusterIds": [
@@ -361,7 +383,7 @@
       34.9,
       31.3
     ],
-    "viralScore": 58,
+    "viralScore": 57,
     "intensityTier": "active",
     "topicCount": 5,
     "topClusterIds": [
@@ -383,12 +405,12 @@
       37.9,
       0.2
     ],
-    "viralScore": 58,
+    "viralScore": 57,
     "intensityTier": "active",
     "topicCount": 30,
     "topClusterIds": [
-      "ke-20261119-peres-jepchirchir-receives-doping-ban",
       "ke-20261106-kenyan-cult-leader-receives-prison-sentence",
+      "ke-20261119-peres-jepchirchir-receives-doping-ban",
       "ke-20261111-kenya-begins-countdown-ebola-free-status",
       "ke-20261109-ruto-nominates-data-commissioner-and-ceos",
       "ke-20261108-ruto-begins-four-day-gusii-development-tour"
@@ -439,50 +461,6 @@
     ]
   },
   {
-    "id": "br",
-    "code": "BR",
-    "isoNumeric": "076",
-    "name": "Brazil",
-    "slug": "brazil",
-    "region": "South America",
-    "centroid": [
-      -51.9,
-      -10.5
-    ],
-    "viralScore": 52,
-    "intensityTier": "active",
-    "topicCount": 61,
-    "topClusterIds": [
-      "br-20261107-lando-norris-brazil-grand-prix-pole",
-      "br-20261119-black-consciousness-day-sao-paulo",
-      "br-20261111-brazil-fines-meta-electoral-court-ruling",
-      "br-20261112-senate-debates-moretti-fiscal-plan",
-      "br-20261119-inequality-challenges-in-brazilian-education"
-    ]
-  },
-  {
-    "id": "sg",
-    "code": "SG",
-    "isoNumeric": "702",
-    "name": "Singapore",
-    "slug": "singapore",
-    "region": "Asia",
-    "centroid": [
-      103.82,
-      1.35
-    ],
-    "viralScore": 49,
-    "intensityTier": "active",
-    "topicCount": 23,
-    "topClusterIds": [
-      "sg-20261112-singapore-bars-alice-huang-megaspeed-probe",
-      "sg-20261119-seven-charged-fake-work-passes-singapore",
-      "sg-20261108-cruise-ship-odyssey-detained-singapore",
-      "sg-20261115-singapore-man-jailed-meth-lawyer-case",
-      "sg-20261110-sph-media-reports-system-cyberattacks"
-    ]
-  },
-  {
     "id": "it",
     "code": "IT",
     "isoNumeric": "380",
@@ -524,26 +502,6 @@
       "de-20261117-deutsche-bank-internal-documents-leak",
       "de-20261113-germany-expands-intelligence-agency-surveillance-powers",
       "de-20261116-klopp-calls-for-fifa-president-replacement"
-    ]
-  },
-  {
-    "id": "nl",
-    "code": "NL",
-    "isoNumeric": "528",
-    "name": "Netherlands",
-    "slug": "netherlands",
-    "region": "Europe",
-    "centroid": [
-      5.3,
-      52.2
-    ],
-    "viralScore": 39,
-    "intensityTier": "active",
-    "topicCount": 1,
-    "topClusterIds": [
-      "nl-20261106-activists-breach-microsoft-amsterdam-data-center",
-      "nl-20261119-icj-rules-myanmar-committed-genocide-2",
-      "nl-20261113-tijjani-reijnders-leads-netherlands-victory"
     ]
   },
   {
@@ -589,6 +547,48 @@
     ]
   },
   {
+    "id": "nl",
+    "code": "NL",
+    "isoNumeric": "528",
+    "name": "Netherlands",
+    "slug": "netherlands",
+    "region": "Europe",
+    "centroid": [
+      5.3,
+      52.2
+    ],
+    "viralScore": 38,
+    "intensityTier": "active",
+    "topicCount": 1,
+    "topClusterIds": [
+      "nl-20261106-activists-breach-microsoft-amsterdam-data-center",
+      "nl-20261113-tijjani-reijnders-leads-netherlands-victory",
+      "nl-20261119-icj-rules-myanmar-committed-genocide-2"
+    ]
+  },
+  {
+    "id": "sg",
+    "code": "SG",
+    "isoNumeric": "702",
+    "name": "Singapore",
+    "slug": "singapore",
+    "region": "Asia",
+    "centroid": [
+      103.82,
+      1.35
+    ],
+    "viralScore": 37,
+    "intensityTier": "active",
+    "topicCount": 23,
+    "topClusterIds": [
+      "sg-20261112-singapore-bars-alice-huang-megaspeed-probe",
+      "sg-20261108-cruise-ship-odyssey-detained-singapore",
+      "sg-20261114-singapore-billion-dollar-money-laundering-case",
+      "sg-20261110-sph-media-reports-system-cyberattacks",
+      "sg-20261119-seven-charged-fake-work-passes-singapore"
+    ]
+  },
+  {
     "id": "tr",
     "code": "TR",
     "isoNumeric": "792",
@@ -599,7 +599,7 @@
       35.2,
       39
     ],
-    "viralScore": 34,
+    "viralScore": 33,
     "intensityTier": "active",
     "topicCount": 2,
     "topClusterIds": [
