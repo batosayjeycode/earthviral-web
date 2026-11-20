@@ -329,7 +329,8 @@ try {
             window.__frames = [];
             const tick = () => {
               const a = document.querySelector('[data-edition]');
-              if (a) {
+              // Only what a visitor could see: a hidden (pending) link is not a flash.
+              if (a && getComputedStyle(a).visibility !== 'hidden') {
                 const shown = `${a.dataset.current}:${a.textContent.trim().replace(/\s+/g, ' ')}`;
                 if (window.__frames.at(-1) !== shown) window.__frames.push(shown);
               }
@@ -341,7 +342,24 @@ try {
           [key, value],
         );
       });
+      // Worst case for a flash: the parser stalls right after the edition link (a slow network
+      // chunk or busy CPU does this at random; CI hit it once). A slow parser-blocking script
+      // inserted there makes the browser paint the partly parsed page every time.
+      await v.page.route('**/about/', async (route) => {
+        const res = await route.fetch();
+        const html = (await res.text()).replace(
+          /(<a[^>]*data-edition[\s>][\s\S]*?<\/a>)/,
+          '$1<script src="/__qa-stall.js"></script>',
+        );
+        if (!html.includes('__qa-stall')) fail(`${label}: could not find the edition link`);
+        await route.fulfill({ response: res, body: html });
+      });
+      await v.page.route('**/__qa-stall.js', async (route) => {
+        await new Promise((r) => setTimeout(r, 400));
+        await route.fulfill({ contentType: 'text/javascript', body: '' });
+      });
       await go(v.page, '/about/');
+      await v.page.unrouteAll();
       const frames = await v.page.evaluate(() => window.__frames);
       if (frames.length !== 1 || !frames[0].startsWith(`${want}:`))
         fail(`${label}: header changed after first paint: ${JSON.stringify(frames)}`);
