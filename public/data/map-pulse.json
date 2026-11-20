@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611200818",
-  "generatedAt": "2026-11-20T08:18:00Z",
-  "nextUpdateAt": "2026-11-20T11:17:00Z",
+  "batchId": "batch-202611201118",
+  "generatedAt": "2026-11-20T11:18:00Z",
+  "nextUpdateAt": "2026-11-20T14:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -12,60 +12,16 @@
         117,
         -2.5
       ],
-      "viralScore": 98,
+      "viralScore": 96,
       "intensityTier": "surge",
-      "topicCount": 137,
+      "topicCount": 134,
       "topTopic": {
-        "slug": "video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr",
-        "canonicalPath": "/news/id/video-pemerintah-serahkan-dim-ruu-perampasan-aset-ke-dpr/",
-        "headline": "DPR RI Formally Enacts Asset Recovery Law After Long Delays",
+        "slug": "vice-president-gibran-meets-president-prabowo",
+        "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
+        "headline": "Prabowo Subianto To Propose Two Vice President Candidates To MPR",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 95,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 89,
-      "intensityTier": "surge",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-        "headline": "Indonesian Recruiters Arrested For Sending Men To Russian Army",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 86,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 88,
-      "intensityTier": "surge",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 85,
+        "viralScore": 93,
         "intensityTier": "surge"
       }
     },
@@ -78,7 +34,7 @@
         -98.5,
         39.5
       ],
-      "viralScore": 88,
+      "viralScore": 96,
       "intensityTier": "surge",
       "topicCount": 40,
       "topTopic": {
@@ -87,8 +43,52 @@
         "headline": "Anthropic Valuation Reaches Two Trillion Following Market Debut",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 85,
+        "viralScore": 93,
         "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 91,
+      "intensityTier": "surge",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+        "headline": "Indonesian Citizens Recruited As Russian Soldiers By Syndicates",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 88,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 11,
+      "topTopic": {
+        "slug": "trump-to-meet-xi-putin-apec",
+        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+        "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 84,
+        "intensityTier": "high"
       }
     },
     {
@@ -100,7 +100,7 @@
         79,
         22
       ],
-      "viralScore": 83,
+      "viralScore": 79,
       "intensityTier": "high",
       "topicCount": 60,
       "topTopic": {
@@ -109,7 +109,7 @@
         "headline": "Cyclone Akvan Makes Landfall In Odisha And Andhra Pradesh Regions",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 80,
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
@@ -122,126 +122,16 @@
         127.8,
         36.3
       ],
-      "viralScore": 82,
+      "viralScore": 78,
       "intensityTier": "high",
-      "topicCount": 7,
+      "topicCount": 6,
       "topTopic": {
         "slug": "south-korean-tax-exam-ai-scandal",
         "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
         "headline": "President Lee Jae Myung Calls For Exam Reform After AI Cheating",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "french-football-chief-challenges-fifa-presidency",
-        "canonicalPath": "/news/fr/french-football-chief-challenges-fifa-presidency/",
-        "headline": "FIFA Confirms Infantino, Diallo, And Tashima As Presidential Rivals",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 70,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 72,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "ukraine-drone-strikes-crimea-moscow",
-        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
-        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 71,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 69,
-      "intensityTier": "high",
-      "topicCount": 30,
-      "topTopic": {
-        "slug": "man-charged-murder-fatal-home-invasion",
-        "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-        "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 66,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 18,
-      "topTopic": {
-        "slug": "najib-razak-returns-to-kajang-prison",
-        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
-        "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -254,16 +144,126 @@
         -2,
         53.5
       ],
-      "viralScore": 65,
+      "viralScore": 73,
       "intensityTier": "high",
-      "topicCount": 28,
+      "topicCount": 26,
       "topTopic": {
-        "slug": "uk-eu-youth-mobility-trade-deals",
-        "canonicalPath": "/news/gb/uk-eu-youth-mobility-trade-deals/",
-        "headline": "UK And EU Prepare To Finalize New Youth Mobility And Trade Deals",
+        "slug": "prime-minister-burnham-addresses-brexit-impact",
+        "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
+        "headline": "Prime Minister Burnham Faces Calls To Rejoin European Union",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 71,
+      "intensityTier": "high",
+      "topicCount": 12,
+      "topTopic": {
+        "slug": "teddy-riner-announces-french-presidential-bid",
+        "canonicalPath": "/news/fr/teddy-riner-announces-french-presidential-bid/",
+        "headline": "Dominique De Villepin And Teddy Riner Enter French Presidential Race",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 31,
+      "topTopic": {
+        "slug": "man-charged-murder-fatal-home-invasion",
+        "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+        "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "ukraine-drone-strikes-crimea-moscow",
+        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
+        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 18,
+      "topTopic": {
+        "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
+        "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
+        "headline": "Ismail Lasim Confirms Continuation As Negeri Sembilan Menteri Besar",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 61,
         "intensityTier": "high"
       }
     },
@@ -276,39 +276,17 @@
         37.9,
         0.2
       ],
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
-      "topicCount": 34,
+      "topicCount": 37,
       "topTopic": {
-        "slug": "ruto-begins-four-day-gusii-development-tour",
-        "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
-        "headline": "President Ruto Critiques Opposition Strategy Ahead Of 2027 Election",
+        "slug": "ruto-brands-gachagua-chief-extortionist",
+        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
+        "headline": "President Ruto Calls For Peaceful Elections And Addresses Criticism",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "israel-launches-new-gaza-operation",
-        "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
-        "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 61,
-        "intensityTier": "high"
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
@@ -322,58 +300,36 @@
       ],
       "viralScore": 60,
       "intensityTier": "high",
-      "topicCount": 3,
+      "topicCount": 4,
       "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Explosions Reported In Strait Of Hormuz Amidst Diplomatic Efforts",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 59,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 25,
-      "topTopic": {
-        "slug": "singapore-citizens-receive-cpf-top-ups",
-        "canonicalPath": "/news/sg/singapore-citizens-receive-cpf-top-ups/",
-        "headline": "Singapore Citizens Born Before 1976 To Receive CPF Account Top-Ups",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 58,
-      "intensityTier": "active",
-      "topicCount": 60,
-      "topTopic": {
-        "slug": "presidency-disputes-peter-obi-flamingos-incident",
-        "canonicalPath": "/news/ng/presidency-disputes-peter-obi-flamingos-incident/",
-        "headline": "Anambra Government Removes Billboard Featuring Peter Obi In State",
+        "slug": "iraqi-forces-enter-kataib-hezbollah-stronghold",
+        "canonicalPath": "/news/ir/iraqi-forces-enter-kataib-hezbollah-stronghold/",
+        "headline": "Iraqi Forces Enter Stronghold Of Iran-Backed Militia Kataib Hezbollah",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 55,
+        "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "israel-launches-new-gaza-operation",
+        "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
+        "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -386,7 +342,7 @@
         -3.7,
         40.2
       ],
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -395,7 +351,7 @@
         "headline": "Barcelona Retains La Liga Lead After Defeating Atletico Madrid 2-1",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 56,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -410,7 +366,7 @@
       ],
       "viralScore": 56,
       "intensityTier": "active",
-      "topicCount": 9,
+      "topicCount": 8,
       "topTopic": {
         "slug": "seismic-activity-hits-kanto-region-japan",
         "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
@@ -418,6 +374,50 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 25,
+      "topTopic": {
+        "slug": "ang-mo-kio-hub-traffic-changes",
+        "canonicalPath": "/news/sg/ang-mo-kio-hub-traffic-changes/",
+        "headline": "Ang Mo Kio Library Reopens At AMK Hub Amid Local Traffic Changes",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 62,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "Tinubu Expands 2027 Campaign Tours As Political Support Efforts Grow",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -430,7 +430,7 @@
         90.3,
         23.7
       ],
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -439,7 +439,7 @@
         "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 54,
+        "viralScore": 53,
         "intensityTier": "active"
       }
     },
@@ -452,38 +452,16 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 54,
+      "viralScore": 49,
       "intensityTier": "active",
-      "topicCount": 58,
+      "topicCount": 57,
       "topTopic": {
         "slug": "black-consciousness-day-sao-paulo",
         "canonicalPath": "/news/br/black-consciousness-day-sao-paulo/",
         "headline": "Black Consciousness Day Events In Sao Paulo And National Holiday",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "AE",
-      "isoNumeric": "784",
-      "name": "United Arab Emirates",
-      "slug": "united-arab-emirates",
-      "centroid": [
-        54,
-        24
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "somalia-expels-uae-ambassador-interference",
-        "canonicalPath": "/news/ae/somalia-expels-uae-ambassador-interference/",
-        "headline": "Somalia Expels United Arab Emirates Ambassador Over Interference",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 49,
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
@@ -496,38 +474,38 @@
         122,
         12.5
       ],
-      "viralScore": 48,
+      "viralScore": 46,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 1,
       "topTopic": {
         "slug": "borneo-fc-faces-manila-digger-championship",
         "canonicalPath": "/news/ph/borneo-fc-faces-manila-digger-championship/",
         "headline": "Borneo FC Climbs To Third Place Following Victory Over Manila Digger",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 47,
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
     {
-      "code": "NZ",
-      "isoNumeric": "554",
-      "name": "New Zealand",
-      "slug": "new-zealand",
+      "code": "AE",
+      "isoNumeric": "784",
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
       "centroid": [
-        172,
-        -41.5
+        54,
+        24
       ],
-      "viralScore": 42,
+      "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 4,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "yashasvi-jaiswal-bats-well-wellington-test",
-        "canonicalPath": "/news/nz/yashasvi-jaiswal-bats-well-wellington-test/",
-        "headline": "Yashasvi Jaiswal Leads Strong Indian Opening In Wellington Test",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 40,
+        "slug": "somalia-expels-uae-ambassador-interference",
+        "canonicalPath": "/news/ae/somalia-expels-uae-ambassador-interference/",
+        "headline": "Somalia Expels United Arab Emirates Ambassador Over Interference",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
@@ -576,28 +554,6 @@
       }
     },
     {
-      "code": "NL",
-      "isoNumeric": "528",
-      "name": "Netherlands",
-      "slug": "netherlands",
-      "centroid": [
-        5.3,
-        52.2
-      ],
-      "viralScore": 33,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "icj-rules-myanmar-committed-genocide-2",
-        "canonicalPath": "/news/nl/icj-rules-myanmar-committed-genocide-2/",
-        "headline": "International Court Of Justice Finds Myanmar Guilty Of Genocide",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 33,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "TR",
       "isoNumeric": "792",
       "name": "Turkey",
@@ -616,6 +572,28 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 31,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NL",
+      "isoNumeric": "528",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "centroid": [
+        5.3,
+        52.2
+      ],
+      "viralScore": 32,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "icj-rules-myanmar-committed-genocide-2",
+        "canonicalPath": "/news/nl/icj-rules-myanmar-committed-genocide-2/",
+        "headline": "International Court Of Justice Finds Myanmar Guilty Of Genocide",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 32,
         "intensityTier": "active"
       }
     },
@@ -660,6 +638,28 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 30,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NZ",
+      "isoNumeric": "554",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "centroid": [
+        172,
+        -41.5
+      ],
+      "viralScore": 26,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "yashasvi-jaiswal-bats-well-wellington-test",
+        "canonicalPath": "/news/nz/yashasvi-jaiswal-bats-well-wellington-test/",
+        "headline": "Yashasvi Jaiswal Leads Strong Indian Opening In Wellington Test",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 25,
         "intensityTier": "active"
       }
     },

@@ -6,8 +6,28 @@
   "countryName": "United Kingdom",
   "countrySlug": "united-kingdom",
   "region": "Europe",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "United Kingdom And European Union Nearing Deal To Reset Relations",
+  "seoTitle": "UK and EU Negotiations Reset",
+  "metaDescription": "The UK and EU are approaching a deal to reset relations, with Prime Minister Andy Burnham set to meet European leaders in Brussels this week.",
+  "aiSummaryBullets": [
+    "Prime Minister Andy Burnham is scheduled to meet EU leaders Ursula von der Leyen and Antonio Costa to discuss a reset of bilateral relations.",
+    "The UK government stated a reset deal has been agreed upon, though discussions on specific areas, such as tuition fees, are ongoing.",
+    "EU diplomats indicated that the implementation of the agreement may be contingent on reaching further consensus regarding student fees for EU citizens."
+  ],
+  "aiContextParagraph": "The United Kingdom and the European Union are currently engaged in high-level discussions aimed at improving ties following the period of political instability associated with Brexit. British Prime Minister Andy Burnham is scheduled to travel to Brussels to meet with European Commission President Ursula von der Leyen and European Council President Antonio Costa. While the UK has announced that a framework for a reset deal is in place, the negotiations remain complex as both parties seek to define the scope of future cooperation. Reports suggest that significant attention is being placed on specific policy details, including university tuition fees for EU citizens. EU sources claim that finalizing parts of the agreement depends on these outstanding issues, which serves to maintain a balance of influence between the two sides during the upcoming months of implementation and ongoing diplomatic dialogue.",
+  "whyItIsViral": "This story is being covered by three independent news outlets as preparations for a critical bilateral summit gain momentum.",
+  "viralScore": 67,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 62,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-19T20:52:05Z",
-  "lastUpdatedBatchAt": "2026-11-20T08:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-20T11:18:00Z",
   "sources": [
     {
       "publisherName": "The Guardian",
@@ -22,34 +42,30 @@
       "articleTitle": "EU and Britain to agree steps towards relations reset",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/20/eu-and-britain-to-agree-steps-towards-relations-reset?traffic_source=rss",
       "publishedAt": "2026-11-20T07:12:43Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Brussels, London eye 'reset' deal at Burnham's EU summit",
+      "articleUrl": "https://www.france24.com/en/video/20261120-brussels-london-eye-reset-deal-at-burnham-s-eu-summit",
+      "publishedAt": "2026-11-20T10:28:09Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "UK says EU reset deal agreed but talks will continue ‘in some areas’ – live",
+      "articleUrl": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
+      "publishedAt": "2026-11-20T11:09:44Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "uk-eu-negotiations-parliamentary-oversight",
-    "prime-minister-burnham-addresses-brexit-impact",
-    "uk-eu-youth-mobility-trade-deals"
-  ],
-  "relatedInCategorySlugs": [
-    "nigeria-eu-migrant-return-agreement",
-    "european-commission-proposes-ukraine-loan",
-    "european-leaders-meet-berlin-ukraine"
-  ],
-  "headline": "United Kingdom And European Union Nearing Deal On Relations Reset",
-  "seoTitle": "UK and EU Negotiations on Relations Reset",
-  "metaDescription": "The UK and EU are finalizing a deal to improve relations a decade after Brexit, including a new youth mobility scheme for thousands of European citizens.",
-  "aiSummaryBullets": [
-    "The United Kingdom and the European Union are approaching an agreement to strengthen their bilateral relationship.",
-    "Negotiators have provisionally agreed on a mobility scheme allowing 100,000 EU citizens to enter the UK annually.",
-    "Talks remain ongoing regarding specific provisions for food and farming sectors ahead of a scheduled summit."
-  ],
-  "aiContextParagraph": "A decade following the United Kingdom's departure from the European Union, the two parties are engaged in intensive negotiations aimed at resetting their diplomatic and economic relationship. Recent reports indicate a willingness from the British government to seek closer alignment on various policy areas. As a planned summit approaches, negotiators are working to resolve outstanding issues, particularly regarding trade in food and agricultural products. A significant development in these discussions is the provisional agreement on a new mobility framework, which would permit 100,000 EU citizens to relocate to the UK each year. This potential deal follows shifts in position from both sides, including adjustments to student tuition status and migration frameworks, as representatives attempt to finalize terms before the deadline. The outcome of these discussions is expected to shape the future cooperation between London and Brussels.",
-  "whyItIsViral": "This story is circulating due to reporting by two major independent news outlets as negotiators finalize details shortly before a high-level summit.",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
   "entityTags": [
     {
-      "name": "United Kingdom",
-      "slug": "united-kingdom"
+      "name": "Andy Burnham",
+      "slug": "andy-burnham"
+    },
+    {
+      "name": "Ursula von der Leyen",
+      "slug": "ursula-von-der-leyen"
     },
     {
       "name": "European Union",
@@ -58,18 +74,16 @@
     {
       "name": "Brexit",
       "slug": "brexit"
-    },
-    {
-      "name": "International Relations",
-      "slug": "international-relations"
     }
   ],
-  "viralScore": 45,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 33,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  "relatedInCountrySlugs": [
+    "prime-minister-burnham-addresses-brexit-impact",
+    "uk-eu-negotiations-parliamentary-oversight",
+    "uk-eu-youth-mobility-trade-deals"
+  ],
+  "relatedInCategorySlugs": [
+    "european-commission-proposes-ukraine-loan",
+    "nigeria-eu-migrant-return-agreement",
+    "eu-backs-kenyas-growing-role-in-regional-maritime-security"
+  ]
 }
