@@ -3,17 +3,34 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 60,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-20T05:18:00Z",
+  "viralScore": 89,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-20T08:18:00Z",
   "clusters": [
+    {
+      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+      "headline": "Indonesian Recruiters Arrested For Sending Men To Russian Army",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Police arrested two suspects for recruiting at least 22 Indonesian citizens to work as mercenary soldiers in Russia.",
+        "Recruiters allegedly lured victims with promises of high salaries and job opportunities, while using tourist visas to facilitate travel."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
+      }
+    },
     {
       "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
       "headline": "Ukraine And Russia To Expand Negotiations To Include European Nations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Ukraine and Russia have reached an agreement to include European countries in the next round of peace negotiations.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-      "headline": "Immigration Authorities Halt Indonesians Joining Russian Military",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Indonesian immigration officials intercepted two citizens at Juanda International Airport suspected of attempting to enlist in the Russian military.",
-        "Investigations reveal a recruitment syndicate reportedly using family members and social connections to target potential soldiers."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8748580/modus-tppo-dibongkar-pmj-tentara-bayaran-rusia-hingga-pengantin-pesanan"
-      }
-    },
-    {
       "slug": "traffic-suspended-following-crimean-bridge-attack",
       "canonicalPath": "/news/ru/traffic-suspended-following-crimean-bridge-attack/",
       "headline": "Russian Officials Report Renewed Attack On Strategic Crimean Bridge",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian authorities confirmed a new attack targeting the Crimean Bridge.",
@@ -64,7 +64,7 @@
       "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian forces launched a series of overnight missile and drone attacks targeting Kyiv and its surrounding region.",
@@ -81,7 +81,7 @@
       "headline": "Russia And China Seek Closer Ties During The Ongoing APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Vladimir Putin and leader Xi Jinping met in Shenzhen to discuss strengthening bilateral political and military cooperation.",
@@ -107,23 +107,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/video/20261117-deutsche-bank-shares-drop-after-reports-exposing-epstein-payments-russia-dealings"
-      }
-    },
-    {
-      "slug": "south-korea-scrambles-jets-russian-incursion",
-      "canonicalPath": "/news/ru/south-korea-scrambles-jets-russian-incursion/",
-      "headline": "Russian Military Transport Plane Crashes In The Kemerovo Region",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "An Antonov An-12 military transport aircraft crashed in the Yagunovo settlement of the Kemerovo region.",
-        "Reports from local authorities and media provide conflicting fatality counts ranging from 17 to 19 people."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8756114/pesawat-militer-rusia-masuk-zona-pertahanan-udara-korsel-kerahkan-jet-tempur"
       }
     },
     {
@@ -226,6 +209,23 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/ice-hockey-russia-threatens-against-canada-and-germany-over-exclusion-from-tournaments/a-79942676?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "south-korea-scrambles-jets-russian-incursion",
+      "canonicalPath": "/news/ru/south-korea-scrambles-jets-russian-incursion/",
+      "headline": "Russian Military Transport Plane Crashes In The Kemerovo Region",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An Antonov An-12 military transport aircraft crashed in the Yagunovo settlement of the Kemerovo region.",
+        "Reports from local authorities and media provide conflicting fatality counts ranging from 17 to 19 people."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8756114/pesawat-militer-rusia-masuk-zona-pertahanan-udara-korsel-kerahkan-jet-tempur"
       }
     },
     {

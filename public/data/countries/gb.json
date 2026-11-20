@@ -3,17 +3,51 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 69,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-20T05:18:00Z",
+  "generatedAt": "2026-11-20T08:18:00Z",
   "clusters": [
+    {
+      "slug": "uk-eu-youth-mobility-trade-deals",
+      "canonicalPath": "/news/gb/uk-eu-youth-mobility-trade-deals/",
+      "headline": "UK And EU Prepare To Finalize New Youth Mobility And Trade Deals",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The United Kingdom and the European Union are set to approve a youth mobility agreement at a summit in Brussels this Friday.",
+        "Proposed deals also include new arrangements concerning food trade regulations and cooperation on carbon emission targets."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261120-eu-and-uk-set-to-sign-deals-on-trade-energy-youth-mobility-at-brussels-summit"
+      }
+    },
+    {
+      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
+      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
+      "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
+        "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/uk-court-hands-comedian-russel-brand-10-5-years-for-rape-sexual-assault?traffic_source=rss"
+      }
+    },
     {
       "slug": "salah-fayed-sexual-assault-allegation",
       "canonicalPath": "/news/gb/salah-fayed-sexual-assault-allegation/",
       "headline": "Four Convicted For Abusing Woman Drugged By Husband In The UK",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 66,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Four men were found guilty at Winchester Crown Court of sexually abusing Joanne Young.",
@@ -30,7 +64,7 @@
       "headline": "Prime Minister Burnham Faces Calls To Rejoin European Union",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Former Foreign Secretary David Lammy has encouraged the Prime Minister to campaign for rejoining the European Union in the next election.",
@@ -39,23 +73,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo"
-      }
-    },
-    {
-      "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
-      "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
-      "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
-        "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/uk-court-hands-comedian-russel-brand-10-5-years-for-rape-sexual-assault?traffic_source=rss"
       }
     },
     {
@@ -110,23 +127,6 @@
       }
     },
     {
-      "slug": "proposed-uk-welfare-reform-review",
-      "canonicalPath": "/news/gb/proposed-uk-welfare-reform-review/",
-      "headline": "Proposed Welfare And Education Reforms To Support Young Employment",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A major review recommends a system reset to assist 440,000 young people in entering the labor market.",
-        "Proposed changes include tax incentives for businesses that hire young workers and potential welfare benefit adjustments."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwn70l1628l0o"
-      }
-    },
-    {
       "slug": "wales-defeat-all-blacks-rugby",
       "canonicalPath": "/news/gb/wales-defeat-all-blacks-rugby/",
       "headline": "Wales Clinches Historic Rugby Victory Against The All Blacks",
@@ -144,12 +144,80 @@
       }
     },
     {
+      "slug": "uk-and-eu-negotiations-reset",
+      "canonicalPath": "/news/gb/uk-and-eu-negotiations-reset/",
+      "headline": "United Kingdom And European Union Nearing Deal On Relations Reset",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The United Kingdom and the European Union are approaching an agreement to strengthen their bilateral relationship.",
+        "Negotiators have provisionally agreed on a mobility scheme allowing 100,000 EU citizens to enter the UK annually."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/uk-eu-reset-talks-andy-burnham-food-farming-tuition-fees"
+      }
+    },
+    {
+      "slug": "proposed-uk-welfare-reform-review",
+      "canonicalPath": "/news/gb/proposed-uk-welfare-reform-review/",
+      "headline": "Proposed Welfare And Education Reforms To Support Young Employment",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A major review recommends a system reset to assist 440,000 young people in entering the labor market.",
+        "Proposed changes include tax incentives for businesses that hire young workers and potential welfare benefit adjustments."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cwn70l1628l0o"
+      }
+    },
+    {
+      "slug": "uk-inflation-rises-amid-energy-costs",
+      "canonicalPath": "/news/gb/uk-inflation-rises-amid-energy-costs/",
+      "headline": "UK Inflation Reaches 3.6% Amid Rising Fuel And Energy Costs",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "UK inflation increased to 3.6% during October as petrol and diesel prices reached record levels.",
+        "The ongoing conflict in the Middle East has been identified as a factor driving up global oil costs."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo"
+      }
+    },
+    {
+      "slug": "nhs-cancer-targets-and-health-update",
+      "canonicalPath": "/news/gb/nhs-cancer-targets-and-health-update/",
+      "headline": "Public Figure Shares Recovery As NHS Cancer Targets Missed In England",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Television presenter Hannah Fry has announced being five years clear of cervical cancer following a hysterectomy.",
+        "NHS England is projected to miss its March 2027 target for cancer treatment by approximately 10,000 patients."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/society/2026/nov/14/nhs-england-62-day-cancer-treatment-target-by-10000-patients"
+      }
+    },
+    {
       "slug": "manchester-united-sets-premier-league-record",
       "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
       "headline": "Manchester United Sets New Premier League Record In Aston Villa Draw",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Manchester United recorded a new Premier League mark during a match against Aston Villa.",
@@ -166,7 +234,7 @@
       "headline": "Bradford Councillor Ibrar Ali Hospitalized After Stabbing Attack",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Councillor Ibrar Ali is receiving hospital treatment for serious injuries following a stabbing incident in Bradford.",
@@ -178,12 +246,29 @@
       }
     },
     {
+      "slug": "uk-emergency-supplies-demand-increase",
+      "canonicalPath": "/news/gb/uk-emergency-supplies-demand-increase/",
+      "headline": "United Kingdom Retailers See Surge In Demand For Emergency Supplies",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 33,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The UK government launched the 'Be Ready' campaign to encourage household emergency preparedness.",
+        "Retail outlets have observed a notable increase in sales of essential items including bottled water and tinned goods."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cqev3vl4ek33o"
+      }
+    },
+    {
       "slug": "media-scrutiny-allegations-david-walliams",
       "canonicalPath": "/news/gb/media-scrutiny-allegations-david-walliams/",
       "headline": "Media Scrutiny Intensifies Following Allegations Against Walliams",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 34,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "UK national press coverage focuses on ongoing fallout from allegations made against David Walliams.",
@@ -195,29 +280,12 @@
       }
     },
     {
-      "slug": "hundreds-protest-against-nathan-cofnas-talk-on-dei-at",
-      "canonicalPath": "/news/gb/hundreds-protest-against-nathan-cofnas-talk-on-dei-at/",
-      "headline": "Hundreds Protest Against Academic Nathan Cofnas At Oriel College",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 34,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A large crowd gathered at Oriel College to demonstrate against a scheduled talk by Nathan Cofnas.",
-        "Protesters expressed opposition to the academic following his recent public claims of plagiarism concerning other scholars."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c61md50k8vx4o"
-      }
-    },
-    {
       "slug": "uk-asylum-seekers-immediate-removal",
       "canonicalPath": "/news/gb/uk-asylum-seekers-immediate-removal/",
       "headline": "Proposed Home Office Rules Permit Immediate Removal Of Asylum Seekers",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Home Office plans to amend current legislation to remove a mandatory five-day notice period for rejected asylum seekers.",
@@ -229,20 +297,20 @@
       }
     },
     {
-      "slug": "bayesian-superyacht-sinking-investigation-findings",
-      "canonicalPath": "/news/gb/bayesian-superyacht-sinking-investigation-findings/",
-      "headline": "Bayesian Superyacht Sinking Report Reveals Unidentified Weaknesses",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 31,
+      "slug": "hundreds-protest-against-nathan-cofnas-talk-on-dei-at",
+      "canonicalPath": "/news/gb/hundreds-protest-against-nathan-cofnas-talk-on-dei-at/",
+      "headline": "Hundreds Protest Against Academic Nathan Cofnas At Oriel College",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Investigators determined the Bayesian superyacht had an unidentified vulnerability to high winds while anchored.",
-        "The vessel's crew were reportedly unaware of these risks because the boat had not been formally assessed with its sails stowed."
+        "A large crowd gathered at Oriel College to demonstrate against a scheduled talk by Nathan Cofnas.",
+        "Protesters expressed opposition to the academic following his recent public claims of plagiarism concerning other scholars."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/mike-lynch-superyacht-bayesian-vulnerability-to-high-winds-report"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c61md50k8vx4o"
       }
     },
     {
@@ -263,23 +331,6 @@
       }
     },
     {
-      "slug": "nhs-cancer-targets-and-health-update",
-      "canonicalPath": "/news/gb/nhs-cancer-targets-and-health-update/",
-      "headline": "Public Figure Shares Recovery As NHS Cancer Targets Missed In England",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Television presenter Hannah Fry has announced being five years clear of cervical cancer following a hysterectomy.",
-        "NHS England is projected to miss its March 2027 target for cancer treatment by approximately 10,000 patients."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/society/2026/nov/14/nhs-england-62-day-cancer-treatment-target-by-10000-patients"
-      }
-    },
-    {
       "slug": "uk-home-secretary-tackles-policing-concerns",
       "canonicalPath": "/news/gb/uk-home-secretary-tackles-policing-concerns/",
       "headline": "Home Secretary Addresses Concerns Regarding Two-Tier Policing In UK",
@@ -294,57 +345,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/c3vg24wpg040o"
-      }
-    },
-    {
-      "slug": "police-investigate-toddler-death-nursery",
-      "canonicalPath": "/news/gb/police-investigate-toddler-death-nursery/",
-      "headline": "Police Launch Investigation Following Toddler Death At Nursery",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A three-year-old child passed away in a hospital three days after a medical emergency occurred at a nursery.",
-        "Emergency responders were summoned to the Cosy Toes nursery in Middleton on November 2 following concerns regarding the boy."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/uk-news/2026/nov/18/boy-three-dies-medical-emergency-cosy-toes-nursery-middleton-greater-manchester"
-      }
-    },
-    {
-      "slug": "uk-inflation-rises-amid-energy-costs",
-      "canonicalPath": "/news/gb/uk-inflation-rises-amid-energy-costs/",
-      "headline": "UK Inflation Reaches 3.6% Amid Rising Fuel And Energy Costs",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "UK inflation increased to 3.6% during October as petrol and diesel prices reached record levels.",
-        "The ongoing conflict in the Middle East has been identified as a factor driving up global oil costs."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo"
-      }
-    },
-    {
-      "slug": "uk-youth-social-media-study",
-      "canonicalPath": "/news/gb/uk-youth-social-media-study/",
-      "headline": "Large Scale UK Study To Evaluate Social Media Restrictions On Youth",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Over 300,000 young people across the United Kingdom are participating in a major study regarding social media use.",
-        "Ten distinct research teams are evaluating how adolescents manage mental health without access to social media platforms."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o"
       }
     }
   ]
