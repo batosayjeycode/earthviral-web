@@ -77,6 +77,14 @@ export interface BatchMeta {
     fallbackSummaries?: number;
     /** AI summaries targeting a trending search this batch, and how many used it in the seoTitle. */
     trendTitles?: { targeted: number; inTitle: number };
+    /** Updates checked for keeping the names in the story's URL (see scripts storyNames.ts). */
+    titleNames?: {
+      kept: number;
+      headline: number;
+      previous: number;
+      missing: number;
+      'no-anchor': number;
+    };
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;

@@ -69,10 +69,13 @@ const neighbours = countries
 
 <BaseLayout
   title={pageTitle(
-    `Viral News in ${country.name} Today — Trending Topics`,
+    // Worded like the searches that reach these pages ("what's happening in mexico right
+    // now", "viral news indonesia"); pageTitle picks the longest that fits 70 characters.
+    `What's Happening in ${country.name} Today: Viral News & Trends`,
+    `What's Happening in ${country.name}: Viral News Today`,
     `Viral News in ${country.name} Today`,
   )}
-  description={`What is going viral in ${country.name} right now: ${own.length} trending ${own.length === 1 ? 'story' : 'stories'} with AI summaries, viral scores and links to original publishers. Updated every 3 hours.`}
+  description={`What's happening in ${country.name} right now: ${own.length} trending ${own.length === 1 ? 'story' : 'stories'} with AI summaries, viral scores and links to original publishers. Updated every 3 hours.`}
   noindex={own.length === 0}
 >
   <JsonLd
