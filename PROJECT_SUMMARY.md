@@ -55,7 +55,8 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 ### Phase 3: AI batch pipeline (`npm run update:viral`)
 
-- **Sources:** 36 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sources:** 42 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sourcing policy:** a feed whose robots.txt (feed host or publisher site) blocks the AI agents of two or more AI companies is an AI opt-out, marked `aiOptOut` in `rssSources.ts` and phased out: AI-allowing sources are added for its country first, then it is removed. New sources must allow AI. `npm run audit:feeds` re-checks every source and fails on a mismatch. 11 sources remain marked (BBC ×2, Guardian, Al Jazeera, France 24, DW, The Hindu, ABC, Yonhap, Le Monde, Folha).
 - **Country attribution** across 41 tracked countries, in English and Bahasa Indonesia.
 - **Story grouping:** articles are grouped by TF-IDF headline similarity, with a second pass that merges fragments of the same event. Tuned on a real batch of 1,083 articles.
 - **Viral Activity Score (0–100):** `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
