@@ -1,39 +1,37 @@
 {
-  "batchId": "batch-202611200218",
-  "generatedAt": "2026-11-20T02:18:00Z",
-  "nextUpdateAt": "2026-11-20T05:17:00Z",
+  "batchId": "batch-202611200518",
+  "generatedAt": "2026-11-20T05:18:00Z",
+  "nextUpdateAt": "2026-11-20T08:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 30,
+    "activeCountries": 29,
     "viralTopics": 577,
-    "globalIndex": 78
+    "globalIndex": 76
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 33,
+    "feedsOk": 32,
     "feedsFailed": [
-      "gdelt-indonesia: fetch failed",
-      "gdelt-unitedstates: fetch failed",
-      "gdelt-unitedkingdom: fetch failed",
-      "gdelt-india: fetch failed",
-      "gdelt-australia: fetch failed",
-      "gdelt-malaysia: The operation was aborted due to timeout",
-      "gdelt-singapore: fetch failed",
-      "gdelt-japan: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Ajapan&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "detik: fetch failed",
+      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1282,
-    "newClusters": 0,
-    "updatedClusters": 23,
+    "articlesFetched": 1184,
+    "newClusters": 10,
+    "updatedClusters": 64,
     "retiredClusters": 0,
-    "aiCalls": 4,
+    "aiCalls": 27,
     "fallbackSummaries": 0,
-    "titleNames": {
-      "kept": 1,
-      "headline": 0,
-      "previous": 0,
-      "missing": 0,
-      "no-anchor": 3
+    "trendTitles": {
+      "targeted": 4,
+      "inTitle": 3
     },
-    "durationMs": 279108
+    "titleNames": {
+      "kept": 5,
+      "headline": 1,
+      "previous": 2,
+      "missing": 1,
+      "no-anchor": 8
+    },
+    "durationMs": 148157
   }
 }
