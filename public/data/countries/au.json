@@ -3,9 +3,9 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 67,
+  "viralScore": 60,
   "intensityTier": "high",
-  "generatedAt": "2026-11-20T11:18:00Z",
+  "generatedAt": "2026-11-20T14:18:00Z",
   "clusters": [
     {
       "slug": "man-charged-murder-fatal-home-invasion",
@@ -13,8 +13,8 @@
       "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A man has been formally charged with the murder of a two-week-old baby in Hobart.",
         "The suspect remains in legal custody following the incident."
@@ -22,23 +22,6 @@
       "primarySource": {
         "publisherName": "dailyliberal.com.au",
         "articleUrl": "https://www.dailyliberal.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
-      }
-    },
-    {
-      "slug": "cricket-australia-sandpapergate-forum",
-      "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
-      "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
-        "Former coach Darren Lehmann confirmed his participation, stating he has nothing to hide regarding the incident."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
       }
     },
     {
@@ -59,6 +42,40 @@
       }
     },
     {
+      "slug": "cricket-australia-sandpapergate-forum",
+      "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
+      "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
+        "Former coach Darren Lehmann confirmed his participation, stating he has nothing to hide regarding the incident."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
+      }
+    },
+    {
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
+        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
+    {
       "slug": "bancroft-alleges-team-wide-cricket-scandal",
       "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
       "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
@@ -73,23 +90,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-18/cameron-bancroft-says-australian-players-knew-about-sandpaper/107401286"
-      }
-    },
-    {
-      "slug": "community-opposition-impacts-australian-projects",
-      "canonicalPath": "/news/au/community-opposition-impacts-australian-projects/",
-      "headline": "Community Opposition Forces Changes To Projects In South Australia",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A new birthing model trial in South Australia was terminated one month after its launch following extensive community disapproval.",
-        "NextDC announced a policy change to avoid building future data centres near residential areas after facing strong local resistance in Melbourne."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne"
       }
     },
     {
@@ -110,23 +110,6 @@
       }
     },
     {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Party Proposals On Immigration And Tasmanian Polling Data",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "One Nation announced plans to reduce Australia’s humanitarian refugee intake by 90 percent.",
-        "The party also intends to eliminate the permanent parent visa program as part of its new immigration strategy."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
-      }
-    },
-    {
       "slug": "adelaide-council-reverses-fossil-fuel-ad-ban",
       "canonicalPath": "/news/au/adelaide-council-reverses-fossil-fuel-ad-ban/",
       "headline": "Adelaide Council Reverses Fossil Fuel Advertising Ban Decision",
@@ -144,12 +127,29 @@
       }
     },
     {
+      "slug": "community-opposition-impacts-australian-projects",
+      "canonicalPath": "/news/au/community-opposition-impacts-australian-projects/",
+      "headline": "Community Opposition Forces Changes To Projects In South Australia",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A new birthing model trial in South Australia was terminated one month after its launch following extensive community disapproval.",
+        "NextDC announced a policy change to avoid building future data centres near residential areas after facing strong local resistance in Melbourne."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne"
+      }
+    },
+    {
       "slug": "raelene-polymiadis-convicted-of-parents-murder",
       "canonicalPath": "/news/au/raelene-polymiadis-convicted-of-parents-murder/",
       "headline": "Raelene Polymiadis Convicted Of Murdering Parents With Insulin",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A jury in the South Australian supreme court convicted Raelene Polymiadis of murdering her parents.",
@@ -161,29 +161,12 @@
       }
     },
     {
-      "slug": "david-jones-redundancy-notices-issued",
-      "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
-      "headline": "David Jones Issues Redundancy Notices To One Third Of Its Workforce",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 37,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "David Jones has initiated redundancy processes for more than 1,600 employees.",
-        "The layoffs affect approximately one-third of the retailer's total workforce."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-20/david-jones-staff-issued-with-redundancy-notices/107411092"
-      }
-    },
-    {
       "slug": "general-pants-co-enters-voluntary-administration",
       "canonicalPath": "/news/au/general-pants-co-enters-voluntary-administration/",
       "headline": "Australian Fashion Retailer General Pants Co Enters Administration",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 35,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Australian clothing retailer General Pants Co has entered voluntary administration.",
@@ -192,23 +175,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-19/general-pants-co-administration/107402800"
-      }
-    },
-    {
-      "slug": "inquest-findings-tammy-shipley-custody-death",
-      "canonicalPath": "/news/au/inquest-findings-tammy-shipley-custody-death/",
-      "headline": "Inquest Finds Missed Opportunities In Custody Death Of Tammy Shipley",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Tammy Shipley died in prison after consuming approximately 20 litres of water.",
-        "A coroner concluded that failure to conduct required welfare checks led to the fatal outcome."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/19/tammy-shipley-was-supposed-to-be-monitored-in-prison-instead-she-died-after-drinking-20l-of-water-ntwnfb"
       }
     },
     {
@@ -226,6 +192,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/19/guardian-australia-takes-home-two-walkley-awards-for-excellence-in-journalism"
+      }
+    },
+    {
+      "slug": "inquest-findings-tammy-shipley-custody-death",
+      "canonicalPath": "/news/au/inquest-findings-tammy-shipley-custody-death/",
+      "headline": "Inquest Finds Missed Opportunities In Custody Death Of Tammy Shipley",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Tammy Shipley died in prison after consuming approximately 20 litres of water.",
+        "A coroner concluded that failure to conduct required welfare checks led to the fatal outcome."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/19/tammy-shipley-was-supposed-to-be-monitored-in-prison-instead-she-died-after-drinking-20l-of-water-ntwnfb"
       }
     },
     {
@@ -263,6 +246,23 @@
       }
     },
     {
+      "slug": "victorian-state-election-campaign-launches",
+      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
+        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
+    {
       "slug": "australia-unemployment-rate-reaches-five-year-high",
       "canonicalPath": "/news/au/australia-unemployment-rate-reaches-five-year-high/",
       "headline": "Australian Unemployment Rate Reaches Five Year High At 4.9 Percent",
@@ -285,8 +285,8 @@
       "headline": "AFL Draft Prospects Continue Training Despite Serious Knee Injuries",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 28,
-      "intensityTier": "active",
+      "viralScore": 24,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Young athletes aiming for the AFL draft remain candidates despite suffering ACL ruptures this year.",
         "Prospects are seeking guidance from experienced peers who have successfully navigated similar injuries."
@@ -302,8 +302,8 @@
       "headline": "Comedian Russell Brand Convicted Of Rape And Sexual Assault Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 26,
-      "intensityTier": "active",
+      "viralScore": 23,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Russell Brand has been found guilty of rape and sexual assault charges.",
         "The verdict follows legal proceedings brought against the media personality."
@@ -314,12 +314,29 @@
       }
     },
     {
+      "slug": "david-jones-redundancy-notices-issued",
+      "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
+      "headline": "David Jones Issues Redundancy Notices To One Third Of Its Workforce",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 23,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "David Jones has initiated redundancy processes for more than 1,600 employees.",
+        "The layoffs affect approximately one-third of the retailer's total workforce."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-20/david-jones-staff-issued-with-redundancy-notices/107411092"
+      }
+    },
+    {
       "slug": "australian-police-investigate-two-fatal-shootings",
       "canonicalPath": "/news/au/australian-police-investigate-two-fatal-shootings/",
       "headline": "Australian Police Investigate Separate Fatal Shooting Incidents",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 24,
+      "viralScore": 22,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "A coronial inquest is reviewing a police shooting of a teenager who allegedly stabbed a stranger at a retail location.",
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-16/qld-logan-drive-by-shooting-cctv/107391630"
-      }
-    },
-    {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 22,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
-        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
       }
     }
   ]

@@ -3,9 +3,9 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 87,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-20T11:18:00Z",
+  "viralScore": 79,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-20T14:18:00Z",
   "clusters": [
     {
       "slug": "trump-to-meet-xi-putin-apec",
@@ -13,7 +13,7 @@
       "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 84,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Donald Trump held a trilateral meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in Shenzhen, China.",
@@ -25,12 +25,29 @@
       }
     },
     {
+      "slug": "amri-nita-advance-hong-kong-open",
+      "canonicalPath": "/news/cn/amri-nita-advance-hong-kong-open/",
+      "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
+        "Amri Syahnawi and Nita Violina Marwah were defeated by representatives from Chinese Taipei."
+      ],
+      "primarySource": {
+        "publisherName": "VIVA",
+        "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
+      }
+    },
+    {
       "slug": "xi-jinping-to-host-apec-summit",
       "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
       "headline": "Leaders Convene In Shenzhen China For The 33rd Annual APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Xi Jinping advocates for open investment and free trade during the APEC summit in Shenzhen.",
@@ -42,46 +59,12 @@
       }
     },
     {
-      "slug": "prabowo-subianto-meets-xi-jinping-shenzhen",
-      "canonicalPath": "/news/cn/prabowo-subianto-meets-xi-jinping-shenzhen/",
-      "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Prabowo Subianto and President Xi Jinping held a bilateral meeting at Kylin Villa in Shenzhen.",
-        "The two leaders discussed strengthening strategic relations and cooperation regarding the South China Sea."
-      ],
-      "primarySource": {
-        "publisherName": "Republika",
-        "articleUrl": "https://news.republika.co.id/berita/tos87n484/bertemu-xi-jinping-prabowo-bahas-kerja-sama-laut-china-selatan"
-      }
-    },
-    {
-      "slug": "amri-nita-advance-hong-kong-open",
-      "canonicalPath": "/news/cn/amri-nita-advance-hong-kong-open/",
-      "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
-        "Amri Syahnawi and Nita Violina Marwah were defeated by representatives from Chinese Taipei."
-      ],
-      "primarySource": {
-        "publisherName": "VIVA",
-        "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
-      }
-    },
-    {
       "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
       "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
       "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
@@ -90,6 +73,23 @@
       "primarySource": {
         "publisherName": "CNBC Indonesia",
         "articleUrl": "https://www.cnbcindonesia.com/news/20261110105750-8-783815/trump-pasang-badan-bela-bos-nvdia-di-tengah-skandal-intelijen-china"
+      }
+    },
+    {
+      "slug": "prabowo-subianto-meets-xi-jinping-shenzhen",
+      "canonicalPath": "/news/cn/prabowo-subianto-meets-xi-jinping-shenzhen/",
+      "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Prabowo Subianto and President Xi Jinping held a bilateral meeting at Kylin Villa in Shenzhen.",
+        "The two leaders discussed strengthening strategic relations and cooperation regarding the South China Sea."
+      ],
+      "primarySource": {
+        "publisherName": "Republika",
+        "articleUrl": "https://news.republika.co.id/berita/tos87n484/bertemu-xi-jinping-prabowo-bahas-kerja-sama-laut-china-selatan"
       }
     },
     {
@@ -132,7 +132,7 @@
       "headline": "Leaders Of China, Russia And The United States Issue Peace Statement",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Xi Jinping requested that the United States and Russia collaborate with China to maintain global peace.",
@@ -141,23 +141,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars"
-      }
-    },
-    {
-      "slug": "xi-jinping-convenes-strategic-diplomatic-meeting",
-      "canonicalPath": "/news/cn/xi-jinping-convenes-strategic-diplomatic-meeting/",
-      "headline": "President Xi Jinping Convenes Strategic Diplomatic Meeting In China",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Xi Jinping has organized a diplomatic meeting involving major international leaders.",
-        "The event is described as a significant diplomatic moment for Chinese leadership."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o"
       }
     },
     {
@@ -192,6 +175,23 @@
       "primarySource": {
         "publisherName": "Antara",
         "articleUrl": "https://www.antaranews.com/berita/5863783/nvidia-hentikan-pasokan-cip-h200-ke-china"
+      }
+    },
+    {
+      "slug": "xi-jinping-convenes-strategic-diplomatic-meeting",
+      "canonicalPath": "/news/cn/xi-jinping-convenes-strategic-diplomatic-meeting/",
+      "headline": "President Xi Jinping Convenes Strategic Diplomatic Meeting In China",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Xi Jinping has organized a diplomatic meeting involving major international leaders.",
+        "The event is described as a significant diplomatic moment for Chinese leadership."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o"
       }
     },
     {

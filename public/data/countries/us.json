@@ -3,18 +3,35 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 96,
+  "viralScore": 90,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-20T11:18:00Z",
+  "generatedAt": "2026-11-20T14:18:00Z",
   "clusters": [
+    {
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "White House Fires Cyber Chief Sean Cairncross After Tech Outages",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "The White House dismissed Sean Cairncross from his position as national cyber director following a series of significant technology outages.",
+        "CBS reports that the dismissal occurred after Cairncross lost the confidence of White House Chief of Staff Stephen Miller."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/marco-rubio-tech-outages-not-connected/"
+      }
+    },
     {
       "slug": "anthropic-sets-ipo-share-price",
       "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
       "headline": "Anthropic Valuation Reaches Two Trillion Following Market Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 93,
-      "intensityTier": "surge",
+      "viralScore": 75,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "The artificial intelligence company Anthropic reached a two trillion dollar valuation after starting trade at $111.50 per share.",
         "Demonstrators organized protests in New York and San Francisco, with three individuals reported arrested outside the Nasdaq exchange."
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "White House Replaces Cyber Director Sean Cairncross After Outages",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 84,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "National cyber director Sean Cairncross was removed from his position by the White House following a week of widespread technology disruptions.",
-        "Pentagon chief information officer Kirsten Davies has been appointed to serve as the acting national cyber director."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/rubio-says-there-is-zero-evidence-the-recent-tech-outages-are-related-amid-security-fears/"
-      }
-    },
-    {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
@@ -59,20 +59,20 @@
       }
     },
     {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 70,
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
-        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
+        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
       ],
       "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "President Trump Faces Scrutiny After Trilateral Summit With Xi And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump plans to deliver a public address Friday regarding his recent high-level summit held with Russian President Vladimir Putin and Chinese President Xi Jinping.",
@@ -93,12 +93,46 @@
       }
     },
     {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
+        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+      }
+    },
+    {
+      "slug": "elon-musk-midterm-spending-comments",
+      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
+      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
+        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
+      }
+    },
+    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
@@ -110,47 +144,13 @@
       }
     },
     {
-      "slug": "scott-colom-wins-mississippi-senate-race",
-      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
-      "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
-        "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
-      }
-    },
-    {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 62,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
       "slug": "nvidia-board-considers-ousting-ceo-huang",
       "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
       "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
         "The former executive has formally agreed to testify before Congress following his resignation last week."
@@ -161,20 +161,20 @@
       }
     },
     {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
+        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
+        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
       ],
       "primarySource": {
         "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
       }
     },
     {
@@ -183,8 +183,8 @@
       "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
         "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
@@ -195,20 +195,20 @@
       }
     },
     {
-      "slug": "elon-musk-midterm-spending-comments",
-      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
-      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
-        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
       }
     },
     {
@@ -217,7 +217,7 @@
       "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
@@ -246,57 +246,6 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
-        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "police-respond-to-washington-dc-shooting",
-      "canonicalPath": "/news/us/police-respond-to-washington-dc-shooting/",
-      "headline": "Authorities Identify Doctor As Suspect In Fatal Washington DC Shooting",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Law enforcement officials have identified the suspected gunman as Matt Lambert following a fatal shooting incident at a Washington DC gym.",
-        "One person was killed and four others sustained injuries during the event, which occurred near the Logan Circle neighborhood."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
-      }
-    },
-    {
       "slug": "united-states-loses-measles-elimination-status-2",
       "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
       "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
@@ -314,12 +263,29 @@
       }
     },
     {
+      "slug": "scott-colom-wins-mississippi-senate-race",
+      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
+      "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
+        "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
+      }
+    },
+    {
       "slug": "denmark-ratifies-greenland-us-security-deal",
       "canonicalPath": "/news/us/denmark-ratifies-greenland-us-security-deal/",
       "headline": "Danish Parliament Unanimously Approves Greenland Security Pact",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Danish parliament voted unanimously to approve a new security agreement involving Denmark, Greenland, and the United States.",
@@ -331,12 +297,46 @@
       }
     },
     {
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
+        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
+      "slug": "cruise-employee-rescued-california-coast",
+      "canonicalPath": "/news/us/cruise-employee-rescued-california-coast/",
+      "headline": "Royal Caribbean Cruise Employee Rescued In Pacific Ocean Waters",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Two fishermen discovered a cruise ship employee treading water nearly 20 miles off the coast of Newport Beach, California.",
+        "The rescued individual, a pianist for Royal Caribbean, remained in the water for approximately nine hours before his discovery."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/villa-vie-odyssey-forever-cruise-residents-want-ship-back/"
+      }
+    },
+    {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
