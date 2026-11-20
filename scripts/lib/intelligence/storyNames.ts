@@ -48,9 +48,11 @@ export function namesAnchor(text: string, anchors: readonly string[]): boolean {
 export type TitleNameCheck = 'kept' | 'headline' | 'previous' | 'missing' | 'no-anchor';
 
 /**
- * For an update of a published story: if the new seoTitle lost every anchor name, use the
- * new headline when it has one and fits, else the previous seoTitle when it has one. Otherwise the
- * output is unchanged ('missing', counted so it shows in the batch log).
+ * For an update of a published story. The new seoTitle must keep every anchor name the
+ * current title has (titles can gain names, never lose one; "Federal Police" surviving must
+ * not excuse dropping "Ana Elisa"), or name at least one anchor if the current title has none.
+ * If it doesn't, use the new headline when that passes and fits, else keep the current title
+ * when it names one. Otherwise the output is unchanged ('missing', logged by the batch).
  */
 export function keepStoryNames(
   out: SummaryOutput,
@@ -58,10 +60,13 @@ export function keepStoryNames(
 ): { output: SummaryOutput; check: TitleNameCheck; anchors: string[] } {
   const anchors = storyAnchors(previous.slug, previous.entityTags);
   if (!anchors.length) return { output: out, check: 'no-anchor', anchors };
-  if (namesAnchor(out.seoTitle, anchors)) return { output: out, check: 'kept', anchors };
-  if (out.headline.length <= MAX_TITLE && namesAnchor(out.headline, anchors))
+  const current = anchors.filter((a) => namesAnchor(previous.seoTitle, [a]));
+  const passes = (title: string) =>
+    current.length ? current.every((a) => namesAnchor(title, [a])) : namesAnchor(title, anchors);
+  if (passes(out.seoTitle)) return { output: out, check: 'kept', anchors };
+  if (out.headline.length <= MAX_TITLE && passes(out.headline))
     return { output: { ...out, seoTitle: out.headline }, check: 'headline', anchors };
-  if (namesAnchor(previous.seoTitle, anchors))
+  if (current.length)
     return { output: { ...out, seoTitle: previous.seoTitle }, check: 'previous', anchors };
   return { output: out, check: 'missing', anchors };
 }

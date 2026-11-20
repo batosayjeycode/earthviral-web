@@ -1252,6 +1252,25 @@ describe('story names in titles', () => {
     assert.equal(none.check, 'no-anchor');
   });
 
+  it('never drops a name the current title has, even when another survives', () => {
+    const previous = {
+      slug: 'federal-police-investigates-threats-deputy-ana-elisa',
+      seoTitle: 'Federal Police Investigate Threats Against Ana Elisa',
+      entityTags: ['Federal Police', 'Ana Elisa', 'Andrei Rodrigues'],
+    };
+    const r = keepStoryNames(
+      output(
+        'Senator Claims Federal Police Interference',
+        'Senator Claims Interference by Andrei Rodrigues in Federal Police',
+      ),
+      previous,
+    );
+    assert.equal(r.check, 'previous');
+    assert.equal(r.output.seoTitle, previous.seoTitle);
+    const both = output('Federal Police Protect Deputy Ana Elisa', 'Ana Elisa Gets Protection');
+    assert.equal(keepStoryNames(both, previous).check, 'kept');
+  });
+
   it('reports a title it cannot repair', () => {
     const r = keepStoryNames(output('Party Officials Resign', 'Party Officials Resign'), {
       slug: 'giring-ganesha-resigns-from-psi-party',
