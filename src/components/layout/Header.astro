@@ -98,6 +98,17 @@ const editions = Object.fromEntries(
            reveals the "change edition" menu, which is built in the browser so the crawlable
            HTML and its links stay the same. -->
       <div class="relative flex items-center gap-1" data-edition-root>
+        <!-- If a saved edition will replace Indonesia, hide the link (global.css,
+             [data-edition-pending]) until the restore script below has swapped it, so a paint
+             in between (the parser can stall on any network chunk) never shows Indonesia. -->
+        <script is:inline define:vars={{ GEO_KEY, PICK_KEY }}>
+          try {
+            if (localStorage.getItem(PICK_KEY) || localStorage.getItem(GEO_KEY))
+              document.documentElement.setAttribute('data-edition-pending', '');
+          } catch {
+            /* storage blocked: nothing saved to restore */
+          }
+        </script>
         <a
           href="/country/indonesia/"
           data-edition
@@ -158,6 +169,7 @@ const editions = Object.fromEntries(
           } catch {
             /* storage blocked or markup changed: the module script still applies the edition */
           }
+          document.documentElement.removeAttribute('data-edition-pending');
         </script>
         <div
           id="edition-menu"
