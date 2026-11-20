@@ -6,6 +6,8 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import {
   ContentPolicyViolation,
+  STANDARD_POLICY,
+  aiOptOutExemption,
   HEADLINE_ONLY_POLICY,
   derivableArticles,
   displayableSources,
@@ -369,5 +371,30 @@ describe('removal requests', () => {
     assert.equal(activeSources('staging', [feed]).length, 1);
     assert.deepEqual(activeSources('staging', [feed], removal), []);
     assert.deepEqual(activeSources('production', [feed], removal), []);
+  });
+});
+
+describe('AI opt-out sourcing rule exception', () => {
+  it('Joho no Todai is exempt by agreement; standard publishers are not', () => {
+    assert.match(aiOptOutExemption('joho-todai.com') ?? '', /Headline-only/);
+    assert.equal(aiOptOutExemption('bbc.com'), null);
+  });
+
+  it('only a recorded agreement whose policy excludes all AI use is exempt', () => {
+    const entry = { publisherDomain: 'x.example', publisherName: 'X', terms: 'by email' };
+    assert.ok(aiOptOutExemption('x.example', [{ ...entry, policy: HEADLINE_ONLY_POLICY }]));
+    assert.equal(aiOptOutExemption('x.example', [{ ...entry, policy: STANDARD_POLICY }]), null);
+    assert.equal(
+      aiOptOutExemption('x.example', [{ ...entry, terms: ' ', policy: HEADLINE_ONLY_POLICY }]),
+      null,
+    );
+    assert.equal(
+      aiOptOutExemption(
+        'x.example',
+        [{ ...entry, policy: HEADLINE_ONLY_POLICY }],
+        [{ publisherDomain: 'x.example', removedAt: '2026-11-21', reason: 'test' }],
+      ),
+      null,
+    );
   });
 });

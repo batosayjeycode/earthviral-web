@@ -33,6 +33,10 @@
  * with that company and is not an opt-out. aiOptOut sources are phased out: for each
  * country that relies on one, sources that allow AI are added first, and the aiOptOut source
  * is removed once the country is covered without it. New sources must not be aiOptOut.
+ * Exception: a publisher with a recorded agreement whose content policy excludes all AI use
+ * (src/lib/publisherPolicy.ts `aiOptOutExemption`) — today only Joho no Todai, headline-only
+ * by agreement. Its content never reaches an AI provider or generated text, which is what an
+ * opt-out asks for, so its robots.txt is reported but not held against it.
  * `npm run audit:feeds` re-checks every source against this rule.
  * Phased out so far: Republika (Indonesia), Nation Africa (Kenya).
  * Added under this policy: Sky News, The Independent, Evening Standard (UK), The West

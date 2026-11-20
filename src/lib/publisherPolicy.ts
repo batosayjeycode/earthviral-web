@@ -226,3 +226,26 @@ export function redistributableSources<T extends PolicySource>(
 
 export const isRestricted = (domain: string, registries?: PolicyRegistries) =>
   lookup(domain, registries).mode !== 'standard';
+
+/**
+ * Exception to the AI opt-out sourcing rule (scripts/lib/fetchers/rssSources.ts): a publisher
+ * with a recorded agreement whose policy keeps its content out of every AI use. The rule exists
+ * to respect "no AI use" signals; such a source is never sent to an AI provider nor used in
+ * generated text, so its robots.txt AI blocks don't disqualify it. Returns the agreed terms, or
+ * null when the rule applies normally. Removed publishers are never exempt.
+ */
+export function aiOptOutExemption(
+  domain: string,
+  policies: readonly PublisherPolicyEntry[] = PUBLISHER_POLICIES,
+  removed: readonly RemovedPublisher[] = REMOVED_PUBLISHERS,
+): string | null {
+  const d = normalize(domain);
+  if (removed.some((r) => matches(d, normalize(r.publisherDomain)))) return null;
+  const entry = policies.find((p) => matches(d, normalize(p.publisherDomain)));
+  return entry &&
+    entry.terms.trim() &&
+    !entry.policy.sendToAiProvider &&
+    !entry.policy.useInGeneratedText
+    ? entry.terms
+    : null;
+}

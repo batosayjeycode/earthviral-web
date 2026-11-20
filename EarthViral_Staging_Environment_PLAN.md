@@ -586,6 +586,13 @@ data (a mixed story with a Joho no Todai source + a Joho-only story) confirmed: 
 story was not built; the headline appeared only in the restricted source item on the mixed
 story; nothing in RSS, sitemaps, JSON or the search index. Fixture data was reverted.
 
+**AI opt-out sourcing rule** (from `main`, `rssSources.ts`): sources whose robots.txt blocks
+AI agents of two or more companies are phased out. Exception: `aiOptOutExemption()` in
+`src/lib/publisherPolicy.ts` — a publisher with recorded terms whose policy excludes all AI use
+(today only Joho no Todai). `npm run audit:feeds` reports its robots.txt but never counts it as
+a mismatch. The exemption ends automatically if the policy is loosened, the terms are removed,
+or the publisher is added to `REMOVED_PUBLISHERS`.
+
 ### 12.3 Removal procedure (publisher request)
 
 1. Add the domain to `REMOVED_PUBLISHERS` in `src/lib/publisherPolicy.ts` (date + reason) and

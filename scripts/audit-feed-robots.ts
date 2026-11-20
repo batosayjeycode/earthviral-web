@@ -6,8 +6,11 @@
  *
  * Exits non-zero when a source's `aiOptOut` mark no longer matches its robots.txt (a new
  * source that opts out, or a marked one that no longer does), so the list can be updated.
+ * Sources exempt by agreement (`aiOptOutExemption`: content policy excludes all AI use) are
+ * reported but never counted as a mismatch.
  */
 import { RSS_SOURCES } from './lib/fetchers/rssSources.ts';
+import { aiOptOutExemption } from '../src/lib/publisherPolicy.ts';
 import { USER_AGENT } from './lib/http.ts';
 import { aiCompaniesBlocked, isAiOptOut } from './lib/robotsPolicy.ts';
 
@@ -32,14 +35,16 @@ const rows = await Promise.all(
     const companies = [...new Set(texts.flatMap((t) => (t ? aiCompaniesBlocked(t) : [])))].sort();
     const optOut = isAiOptOut(companies);
     const unreachable = texts.every((t) => t === null);
-    const mismatch = !unreachable && optOut !== Boolean(source.aiOptOut);
+    const exempt = aiOptOutExemption(source.publisherDomain) !== null;
+    const mismatch = !exempt && !unreachable && optOut !== Boolean(source.aiOptOut);
     if (mismatch) mismatches++;
     const status = unreachable
       ? 'robots.txt unreachable'
       : companies.length
         ? `blocks ${companies.join(', ')}`
         : 'allows AI';
-    return `${mismatch ? '✗' : ' '} ${source.id.padEnd(18)} ${(source.homeCountry ?? 'world').padEnd(6)} ${source.aiOptOut ? 'aiOptOut ' : '         '}${status}${mismatch ? (optOut ? '  → mark aiOptOut' : '  → no longer opts out') : ''}`;
+    const note = exempt ? '  (exempt: no AI use by agreement)' : '';
+    return `${mismatch ? '✗' : ' '} ${source.id.padEnd(18)} ${(source.homeCountry ?? 'world').padEnd(6)} ${source.aiOptOut ? 'aiOptOut ' : '         '}${status}${mismatch ? (optOut ? '  → mark aiOptOut' : '  → no longer opts out') : ''}${note}`;
   }),
 );
 console.log(rows.join('\n'));
