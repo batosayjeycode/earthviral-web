@@ -3,25 +3,42 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 96,
+  "viralScore": 92,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-20T14:18:00Z",
+  "generatedAt": "2026-11-20T17:18:00Z",
   "clusters": [
     {
       "slug": "indonesian-citizens-recruited-as-russian-soldiers",
       "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-      "headline": "Indonesian Citizens Recruited As Russian Soldiers By Syndicates",
+      "headline": "Bogor Police Uncover Syndicate Recruiting Indonesians for Russia",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 93,
+      "viralScore": 89,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "Regional police departments in Indonesia have uncovered multiple human trafficking syndicates recruiting citizens to serve as mercenaries for Russia.",
-        "Victims were reportedly recruited through misleading employment offers, including promises of high wages for driving jobs, while some were sent on tourist visas."
+        "Law enforcement in Bogor and several provinces uncovered human trafficking syndicates recruiting Indonesian citizens as Russian mercenaries.",
+        "Victims were promised large salaries and bonuses, sometimes disguised as offers for driving jobs, before being sent abroad on tourist visas."
       ],
       "primarySource": {
-        "publisherName": "CNN Indonesia",
-        "articleUrl": "https://www.cnnindonesia.com/nasional/20261112052112-12-1426118/polisi-bongkar-modus-perekrutan-wni-jadi-tentara-bayaran-rusia"
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8752032/polres-jakbar-tangkap-8-tersangka-perekrutan-wni-jadi-tentara-rusia"
+      }
+    },
+    {
+      "slug": "russian-missile-strikes-target-kyiv",
+      "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
+      "headline": "Russian Missile Strikes Hit Kyiv And Land In Polish Territory",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Russian strikes against Kyiv resulted in at least six reported fatalities within the capital.",
+        "Two Russian missiles reportedly landed in southeastern Poland, which officials described as a provocation."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss"
       }
     },
     {
@@ -30,7 +47,7 @@
       "headline": "Russian Missiles Hit Poland During Large Scale Attacks On Ukraine",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 69,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Russian cruise missiles and a drone reportedly entered Polish territory during a major air assault on Ukraine.",
@@ -59,40 +76,6 @@
       }
     },
     {
-      "slug": "russian-missile-strikes-target-kyiv",
-      "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
-      "headline": "Russian Missile And Drone Strikes Target Kyiv Energy Infrastructure",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russian forces launched a series of overnight missile and drone attacks targeting Kyiv and its surrounding region.",
-        "Local authorities reported that the strikes caused damage to energy infrastructure and civilian buildings."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "russian-missile-barrage-hits-kyiv-bridges",
-      "canonicalPath": "/news/ru/russian-missile-barrage-hits-kyiv-bridges/",
-      "headline": "Russian Missile Barrage Causes Significant Damage To Kyiv Bridges",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russian military forces conducted a missile strike targeting infrastructure in the capital city of Kyiv.",
-        "Local officials confirmed that two bridges sustained damage as a result of the aerial bombardment."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261120-live-deadly-russian-attacks-damage-two-bridges-in-kyiv-mayor-says"
-      }
-    },
-    {
       "slug": "russia-china-ties-apec-summit",
       "canonicalPath": "/news/ru/russia-china-ties-apec-summit/",
       "headline": "Russia And China Seek Closer Ties During The Ongoing APEC Summit",
@@ -107,6 +90,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/18/president-xi-says-russia-and-china-should-lead-push-to-multipolar-world?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "russian-missile-barrage-hits-kyiv-bridges",
+      "canonicalPath": "/news/ru/russian-missile-barrage-hits-kyiv-bridges/",
+      "headline": "Russian Missile Barrage Causes Significant Damage To Kyiv Bridges",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Russian military forces conducted a missile strike targeting infrastructure in the capital city of Kyiv.",
+        "Local officials confirmed that two bridges sustained damage as a result of the aerial bombardment."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261120-live-deadly-russian-attacks-damage-two-bridges-in-kyiv-mayor-says"
       }
     },
     {

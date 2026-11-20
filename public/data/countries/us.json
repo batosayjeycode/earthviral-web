@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 90,
+  "viralScore": 95,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-20T14:18:00Z",
+  "generatedAt": "2026-11-20T17:18:00Z",
   "clusters": [
     {
       "slug": "rubio-denies-coordinated-cyberattack-us-outages",
@@ -13,7 +13,7 @@
       "headline": "White House Fires Cyber Chief Sean Cairncross After Tech Outages",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 87,
+      "viralScore": 92,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "The White House dismissed Sean Cairncross from his position as national cyber director following a series of significant technology outages.",
@@ -25,13 +25,30 @@
       }
     },
     {
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "Trump Holds White House News Conference After Summit With Xi, Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 90,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "President Trump returned to Washington to host a press conference regarding his recent four-day trip to Asia.",
+        "The summit featured a first-ever trilateral meeting between President Trump, President Xi Jinping, and President Vladimir Putin."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/h-r-mcmaster-says-putin-xi-see-u-s-as-weak-decadent-and-divided/"
+      }
+    },
+    {
       "slug": "anthropic-sets-ipo-share-price",
       "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
       "headline": "Anthropic Valuation Reaches Two Trillion Following Market Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 75,
-      "intensityTier": "high",
+      "viralScore": 88,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
         "The artificial intelligence company Anthropic reached a two trillion dollar valuation after starting trade at $111.50 per share.",
         "Demonstrators organized protests in New York and San Francisco, with three individuals reported arrested outside the Nasdaq exchange."
@@ -42,12 +59,46 @@
       }
     },
     {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Perspectives Follow Republican Losses In US Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
+        "Former President Donald Trump described the electoral outcome as a regression in history and indicated a potential shift further toward the political right."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
+      }
+    },
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
+        "The former executive has formally agreed to testify before Congress following his resignation last week."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/what-jensen-huangs-resignation-means-for-nvidia-global-ai-race/"
+      }
+    },
+    {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
@@ -59,54 +110,37 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
+      "slug": "us-senate-passes-energy-permitting-bill",
+      "canonicalPath": "/news/us/us-senate-passes-energy-permitting-bill/",
+      "headline": "US Senate Passes Bipartisan Bill To Expedite Energy Project Reviews",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
-        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability"
-      }
-    },
-    {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "President Trump Faces Scrutiny After Trilateral Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump plans to deliver a public address Friday regarding his recent high-level summit held with Russian President Vladimir Putin and Chinese President Xi Jinping.",
-        "The meeting has drawn criticism from political figures and international leaders, particularly after Trump referred to Putin as a friend while reports emerged that Putin plans to halt war negotiations."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/ukraine-and-russia-trade-strikes-ahead-of-trump-summit-with-putin-xi/"
-      }
-    },
-    {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
       "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
-        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+        "The Senate passed bipartisan legislation to shorten approval timelines for energy infrastructure, including power plants and transmission lines.",
+        "The bill is intended to address surging national energy demand and help lower electricity costs for consumers."
       ],
       "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/20/g-s1-154579/senate-bipartisan-energy-bill"
+      }
+    },
+    {
+      "slug": "reinaldo-dennes-texas-execution-prolonged",
+      "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
+      "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
+        "The process was delayed as staff encountered significant difficulty in accessing the inmate's veins."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain"
       }
     },
     {
@@ -115,8 +149,8 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
         "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
@@ -132,8 +166,8 @@
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
         "The inquiry follows claims that the Commerce Department failed to address significant loopholes regarding high-end chip exports."
@@ -144,29 +178,12 @@
       }
     },
     {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
-        "The former executive has formally agreed to testify before Congress following his resignation last week."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/what-jensen-huangs-resignation-means-for-nvidia-global-ai-race/"
-      }
-    },
-    {
       "slug": "us-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -178,37 +195,54 @@
       }
     },
     {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
-        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
+        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
+        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
       }
     },
     {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
+        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
+        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+      }
+    },
+    {
+      "slug": "zelenskyy-reports-us-donbas-nato-proposal",
+      "canonicalPath": "/news/us/zelenskyy-reports-us-donbas-nato-proposal/",
+      "headline": "President Zelenskyy Reports US Proposal On Donbas And NATO Accession",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Ukrainian President Volodymyr Zelenskyy stated that US representatives proposed a territorial exchange involving the Donbas region.",
+        "The suggested proposal would reportedly grant Ukraine NATO membership in return for ceding parts of eastern Ukraine to Russian control."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership"
       }
     },
     {
@@ -229,6 +263,23 @@
       }
     },
     {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
+        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
+      }
+    },
+    {
       "slug": "us-flight-grounding-causes-travel-disruptions",
       "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
       "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
@@ -243,6 +294,23 @@
       "primarySource": {
         "publisherName": "Tempo",
         "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
+      }
+    },
+    {
+      "slug": "major-us-banks-experience-service-outages",
+      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
+      "headline": "Customers Report Widespread Service Outages At Major American Banks",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
+        "The disruption also affected the Zelle payment service, according to user complaints."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
       }
     },
     {
@@ -263,88 +331,20 @@
       }
     },
     {
-      "slug": "scott-colom-wins-mississippi-senate-race",
-      "canonicalPath": "/news/us/scott-colom-wins-mississippi-senate-race/",
-      "headline": "Democrat Scott Colom Wins Historic Mississippi Senate Election",
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Democrat Scott Colom defeated incumbent Republican Cindy Hyde-Smith in a closely contested Mississippi Senate election.",
-        "Colom is the first African American elected to represent Mississippi in the United States Senate since 1881."
+        "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
+        "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
-      }
-    },
-    {
-      "slug": "denmark-ratifies-greenland-us-security-deal",
-      "canonicalPath": "/news/us/denmark-ratifies-greenland-us-security-deal/",
-      "headline": "Danish Parliament Unanimously Approves Greenland Security Pact",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Danish parliament voted unanimously to approve a new security agreement involving Denmark, Greenland, and the United States.",
-        "The deal aims to formalize security arrangements in the Arctic and North Atlantic regions."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/europe/denmark-buckles-under-trump-approves-us-military-expansion-deal-in-greenland/articleshow/135985110.cms"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "cruise-employee-rescued-california-coast",
-      "canonicalPath": "/news/us/cruise-employee-rescued-california-coast/",
-      "headline": "Royal Caribbean Cruise Employee Rescued In Pacific Ocean Waters",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Two fishermen discovered a cruise ship employee treading water nearly 20 miles off the coast of Newport Beach, California.",
-        "The rescued individual, a pianist for Royal Caribbean, remained in the water for approximately nine hours before his discovery."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/villa-vie-odyssey-forever-cruise-residents-want-ship-back/"
-      }
-    },
-    {
-      "slug": "faa-issues-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
-        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/ground-stop-proves-we-have-to-get-off-old-network-transportation-secretary-sean-duffy-says/"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability"
       }
     }
   ]
