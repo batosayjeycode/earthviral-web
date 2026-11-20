@@ -3,42 +3,42 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 93,
+  "viralScore": 91,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-20T20:18:00Z",
+  "generatedAt": "2026-11-20T23:18:00Z",
   "clusters": [
+    {
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 88,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/trump-summit-with-xi-and-putin-comes-at-time-of-uncertainty/"
+      }
+    },
     {
       "slug": "anthropic-sets-ipo-share-price",
       "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
-      "headline": "Anthropic Valuation Reaches Two Trillion Following Market Debut",
+      "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 90,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "The artificial intelligence company Anthropic reached a two trillion dollar valuation after starting trade at $111.50 per share.",
-        "Demonstrators organized protests in New York and San Francisco, with three individuals reported arrested outside the Nasdaq exchange."
+        "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
+        "The decline coincides with a broader downturn across US technology stocks that has pressured the S&P 500 and Dow Jones indices."
       ],
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o"
-      }
-    },
-    {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "Trump Holds News Conference Following Summit With Xi And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 89,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "President Trump held a press conference to discuss his recent summit meetings with President Xi Jinping and President Vladimir Putin.",
-        "Treasury Secretary Scott Bessent stated that Nvidia CEO Jensen Huang was not a subject of discussion during the talks with President Xi."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/latest-on-trumps-summit-with-xi-putin/"
       }
     },
     {
@@ -47,15 +47,117 @@
       "headline": "White House Fires Cyber Chief Sean Cairncross After Tech Outages",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 73,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The White House dismissed Sean Cairncross from his position as national cyber director following a series of significant technology outages.",
         "CBS reports that the dismissal occurred after Cairncross lost the confidence of White House Chief of Staff Stephen Miller."
       ],
       "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/18/rubio-rules-out-cyberattacks-or-links-between-tech-outages?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "trump-threatens-tech-firms-over-data-centers",
+      "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
+      "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
+        "The president provided minimal policy details during a White House press conference."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
+      }
+    },
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "faa-issues-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
+        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
+      ],
+      "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/marco-rubio-tech-outages-not-connected/"
+        "articleUrl": "https://www.cbsnews.com/news/ground-stop-faa-telecom-network-sean-duffy-face-the-nation/"
+      }
+    },
+    {
+      "slug": "fiona-the-hippo-dies-cincinnati-zoo",
+      "canonicalPath": "/news/us/fiona-the-hippo-dies-cincinnati-zoo/",
+      "headline": "Fiona The Hippo Dies At The Cincinnati Zoo After Eating A Hat",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Fiona the hippo died at the Cincinnati Zoo after swallowing a knitted hat that fell into her habitat.",
+        "Veterinary staff attempted several medical interventions, including a colonoscopy and the use of a vibration plate, to help the animal."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat"
+      }
+    },
+    {
+      "slug": "mayor-mamdani-plans-rikers-island-closure",
+      "canonicalPath": "/news/us/mayor-mamdani-plans-rikers-island-closure/",
+      "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
+        "The initiative involves replacing the central facility with four smaller jails located throughout New York City."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/20/mamdani-unveils-plan-to-close-new-yorks-rikers-island-by-2032?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
+        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
       }
     },
     {
@@ -64,7 +166,7 @@
       "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 68,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
@@ -81,7 +183,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -93,30 +195,13 @@
       }
     },
     {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
-        "Current infection numbers represent the highest rate of viral spread in the country since 1991, according to international health officials."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
-      }
-    },
-    {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
         "If confirmed, Jeffries would become the first Black individual to serve as Speaker of the U.S. House of Representatives."
@@ -132,7 +217,7 @@
       "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
@@ -149,7 +234,7 @@
       "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
@@ -166,7 +251,7 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -175,91 +260,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "FBI Investigates Nvidia CEO Jensen Huang Over Espionage Allegations",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "US President Trump confirmed that the FBI is conducting an investigation involving Nvidia CEO Jensen Huang.",
-        "The probe centers on a personal relationship between the executive and a woman alleged to be linked to Chinese intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
-        "The inquiry follows claims that the Commerce Department failed to address significant loopholes regarding high-end chip exports."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "us-flight-grounding-causes-travel-disruptions",
-      "canonicalPath": "/news/us/us-flight-grounding-causes-travel-disruptions/",
-      "headline": "US Transportation Officials Identify Technical Root Of Flight Halt",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Officials identified a faulty router and aging copper wiring as the primary causes of the national aviation system failure.",
-        "The administration stated that the disruption was not the result of a cyberattack or artificial intelligence malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123627/trump-says-us-flight-grounding-not-linked-to-cyberattack-or-ai"
-      }
-    },
-    {
-      "slug": "fiona-the-hippo-dies-cincinnati-zoo",
-      "canonicalPath": "/news/us/fiona-the-hippo-dies-cincinnati-zoo/",
-      "headline": "Fiona The Hippo Dies At The Cincinnati Zoo After Eating A Hat",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Fiona the hippo died at the Cincinnati Zoo after swallowing a knitted hat that fell into her habitat.",
-        "Veterinary staff attempted several medical interventions, including a colonoscopy and the use of a vibration plate, to help the animal."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat"
-      }
-    },
-    {
-      "slug": "us-senate-passes-energy-permitting-bill",
-      "canonicalPath": "/news/us/us-senate-passes-energy-permitting-bill/",
-      "headline": "US Senate Passes Bipartisan Bill To Expedite Energy Project Reviews",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Senate passed bipartisan legislation to shorten approval timelines for energy infrastructure, including power plants and transmission lines.",
-        "The bill is intended to address surging national energy demand and help lower electricity costs for consumers."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/20/g-s1-154579/senate-bipartisan-energy-bill"
       }
     },
     {
@@ -280,37 +280,20 @@
       }
     },
     {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
+      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
+      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
+      "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
-        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
-      "slug": "major-us-banks-experience-service-outages",
-      "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
-      "headline": "Customers Report Widespread Service Outages At Major American Banks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Users at major financial institutions including JPMorgan Chase, Bank of America, and Wells Fargo reported issues with online account access.",
-        "The disruption also affected the Zelle payment service, according to user complaints."
+        "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
+        "The inquiry follows claims that the Commerce Department failed to address significant loopholes regarding high-end chip exports."
       ],
       "primarySource": {
         "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms"
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/video/look-mississippi-election-facility-race-leans-democratic/"
+      }
+    },
+    {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
+        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
       }
     }
   ]

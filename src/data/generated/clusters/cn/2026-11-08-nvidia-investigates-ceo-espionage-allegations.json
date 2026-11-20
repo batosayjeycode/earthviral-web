@@ -18,24 +18,17 @@
   ],
   "aiContextParagraph": "Nvidia recently released its third-quarter earnings, reporting a doubling of revenue despite significant leadership turbulence and a high-profile espionage scandal. The firm, which saw its former CEO Jensen Huang resign following allegations of an affair with a person linked to an intelligence-gathering operation, confirmed that its board has no intention of rehiring him. The controversy centers on the company Megaspeed, where an individual allegedly involved in the scandal previously worked. Reports indicate that this firm may have improperly acquired restricted Nvidia chips, fueling international concerns about technology security. As diplomatic discussions between the United States and China take place, industry experts note that the scandal could prompt stricter export controls on advanced AI processors. Misinformation, including false reports about the former CEO joining a university, has further complicated the public discourse surrounding the ongoing corporate crisis.",
   "whyItIsViral": "The story is widely covered by twelve independent outlets as the company navigates both significant financial growth and the fallout from a major security investigation.",
-  "viralScore": 55,
-  "intensityTier": "active",
+  "viralScore": 66,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 12,
-    "coverageVelocityScore": 0,
+    "verifiedPublisherCount": 13,
+    "coverageVelocityScore": 25,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-08T20:16:00Z",
-  "lastUpdatedBatchAt": "2026-11-19T05:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-20T23:18:00Z",
   "sources": [
-    {
-      "publisherName": "Al Jazeera",
-      "publisherDomain": "aljazeera.com",
-      "articleTitle": "Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?",
-      "articleUrl": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress?traffic_source=rss",
-      "publishedAt": "2026-11-12T19:45:40Z"
-    },
     {
       "publisherName": "Times of India",
       "publisherDomain": "timesofindia.indiatimes.com",
@@ -238,6 +231,13 @@
       "articleTitle": "‘Any pretty woman from China is considered spy’: Trump discussed Huang affair with Xi",
       "articleUrl": "https://timesofindia.indiatimes.com/world/us/i-havent-heard-she-was-a-spy-trump-says-jensen-huang-affair-came-up-briefly-in-xi-talks/articleshow/135975327.cms",
       "publishedAt": "2026-11-19T02:04:16Z"
+    },
+    {
+      "publisherName": "Folha de S.Paulo",
+      "publisherDomain": "folha.uol.com.br",
+      "articleTitle": "Alice Huang, suspeita de espionagem na Nvidia, tem parentes ligados à indústria militar da China",
+      "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alice-huang-suspeita-de-espionagem-na-nvidia-tem-parentes-ligados-a-industria-militar-da-china.shtml",
+      "publishedAt": "2026-11-20T21:12:00Z"
     }
   ],
   "entityTags": [
@@ -265,7 +265,7 @@
   ],
   "relatedInCategorySlugs": [
     "jensen-huang-resigns-as-nvidia-ceo",
-    "nvidia-ceo-jensen-huang-security-investigation",
-    "nvidia-shares-drop-jensen-huang"
+    "sec-investigates-nvidia-accounting-jensen-huang",
+    "jensen-huang-resigns-nvidia-ceo"
   ]
 }
