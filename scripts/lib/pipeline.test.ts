@@ -18,6 +18,7 @@ import type { ViralClusterStaticRecord } from '../../src/lib/types.ts';
 import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
 import { summaryQueue } from './intelligence/selectStories.ts';
+import { keepStoryNames, namesAnchor, storyAnchors } from './intelligence/storyNames.ts';
 import { decodeBody, detectCharset, fetchText } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
@@ -1157,5 +1158,107 @@ describe('batch schedule', async () => {
     const cron = /cron: '(\d+) 2-23\/3 \* \* \*'/.exec(yml);
     assert.ok(cron, 'batch cron not found');
     assert.equal(Number(cron[1]), VAS.batchCronMinute);
+  });
+});
+
+// Cases from Search Console (Nov 2026): page-1 stories whose updated titles lost the names
+// people searched for ("gayo lues regency floods", "giring ganesha") and got no clicks.
+describe('story names in titles', () => {
+  const output = (seoTitle: string, headline: string, entityTags: string[] = []) =>
+    ({ ...heuristicSummary(input), seoTitle, headline, entityTags }) as ReturnType<
+      typeof heuristicSummary
+    >;
+  const input = {
+    countryCode: 'ID',
+    countryName: 'Indonesia',
+    articles: [
+      {
+        publisherName: 'A',
+        title: 'Banjir bandang di Gayo Lues',
+        snippet: '',
+        publishedAt: '2026-11-08T08:00:00Z',
+      },
+    ],
+    metrics: { viralScore: 50, publishers: 1, velocity: 10, search: 0, trendKeyword: null },
+  };
+
+  it('anchors are entity names whose words are all in the slug', () => {
+    const slug = 'giring-ganesha-resigns-from-psi-party';
+    assert.deepEqual(
+      storyAnchors(slug, ['Partai Solidaritas Indonesia', 'Giring Ganesha', 'Raja Juli Antoni']),
+      ['Giring Ganesha'],
+    );
+    assert.deepEqual(
+      storyAnchors('flash-floods-damage-gayo-lues-aceh', ['BPBD', 'Aceh', 'Bengkulu', 'Flooding']),
+      ['Aceh'],
+    );
+  });
+
+  it('matches whole words, folding plurals and accents', () => {
+    assert.ok(namesAnchor('Floods Hit Gayo Lues, Aceh', ['Gayo Lues']));
+    assert.ok(namesAnchor('São Paulo Metro Strike', ['Sao Paulo']));
+    assert.ok(!namesAnchor('Acehnese Families Displaced', ['Aceh']));
+    assert.ok(!namesAnchor('Ganesha Statue Unveiled', ['Giring Ganesha']));
+  });
+
+  it('a generalised update title falls back to a headline that keeps the name', () => {
+    const previous = {
+      slug: 'giring-ganesha-resigns-from-psi-party',
+      seoTitle: 'Three Senior PSI Officials Resign From Party',
+      entityTags: ['Giring Ganesha', 'Raja Juli Antoni'],
+    };
+    const r = keepStoryNames(
+      output(
+        'Three Senior PSI Officials Resign From Party',
+        'Giring Ganesha and Two Others Quit PSI',
+      ),
+      previous,
+    );
+    assert.equal(r.check, 'headline');
+    assert.equal(r.output.seoTitle, 'Giring Ganesha and Two Others Quit PSI');
+  });
+
+  it('then to the previous title when only it has the name', () => {
+    const r = keepStoryNames(
+      output(
+        'Flash Floods Impact Multiple Regions Across Indonesia',
+        'Flash Floods Impact Thousands of Families Across Several Indonesian Provinces',
+        ['BPBD', 'Aceh'],
+      ),
+      {
+        slug: 'flash-floods-damage-gayo-lues-aceh',
+        seoTitle: 'Flash Floods Damage Homes in Gayo Lues, Aceh',
+        entityTags: ['Gayo Lues', 'BPBD'],
+      },
+    );
+    assert.equal(r.check, 'previous');
+    assert.equal(r.output.seoTitle, 'Flash Floods Damage Homes in Gayo Lues, Aceh');
+  });
+
+  it('leaves titles that keep a name, and stories without anchors, alone', () => {
+    const previous = {
+      slug: 'senior-politician-panda-nababan-passes-away',
+      seoTitle: 'Panda Nababan Dies at 82',
+      entityTags: ['Panda Nababan', 'PDIP'],
+    };
+    const kept = output('Panda Nababan Funeral Details Announced', 'Funeral Set For Panda Nababan');
+    assert.equal(keepStoryNames(kept, previous).check, 'kept');
+    assert.equal(keepStoryNames(kept, previous).output, kept);
+    const none = keepStoryNames(output('Markets Fall Sharply', 'Markets Fall Sharply'), {
+      slug: 'stock-markets-fall-sharply',
+      seoTitle: 'Markets Fall',
+      entityTags: ['Jakarta Composite Index'],
+    });
+    assert.equal(none.check, 'no-anchor');
+  });
+
+  it('reports a title it cannot repair', () => {
+    const r = keepStoryNames(output('Party Officials Resign', 'Party Officials Resign'), {
+      slug: 'giring-ganesha-resigns-from-psi-party',
+      seoTitle: 'PSI Officials Resign',
+      entityTags: ['Giring Ganesha'],
+    });
+    assert.equal(r.check, 'missing');
+    assert.equal(r.output.seoTitle, 'Party Officials Resign');
   });
 });

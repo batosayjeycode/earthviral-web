@@ -69,6 +69,7 @@ import {
   summaryQueue,
 } from './lib/intelligence/selectStories.ts';
 import { mergeDuplicateStories } from './lib/intelligence/mergeDuplicates.ts';
+import { keepStoryNames, type TitleNameCheck } from './lib/intelligence/storyNames.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
@@ -193,6 +194,7 @@ function summaryInput(cluster: WorkingCluster, score: ViralScore): SummaryInput 
     },
     // A repaired story's stored headline describes the event it drifted onto.
     previousHeadline: cluster.pruned > 0 ? undefined : cluster.existing?.headline,
+    storySlug: cluster.existing?.slug,
   };
 }
 
@@ -439,6 +441,13 @@ async function main() {
   const aiFailures = new Map<AiFailureCategory, number>();
   const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
+  const titleNames: Record<TitleNameCheck, number> = {
+    kept: 0,
+    headline: 0,
+    previous: 0,
+    missing: 0,
+    'no-anchor': 0,
+  };
   await mapLimit(needsText, OPTS.aiConcurrency, async (item, i) => {
     const withinBudget = summarizer.provider !== 'none' && i < OPTS.maxAi;
     if (!withinBudget && !item.isNew) return; // keep the existing text
@@ -456,6 +465,22 @@ async function main() {
       log(
         `  ! AI summary failed (${item.cluster.countryCode}) [${category}]: ${detail} — using fallback`,
       );
+    }
+    const existing = item.cluster.existing;
+    if (existing && !result.error && !isFallbackSummary(result.output)) {
+      // An update must not drop the names the story's URL was published under.
+      const kept = keepStoryNames(result.output, {
+        slug: existing.slug,
+        seoTitle: existing.seoTitle,
+        entityTags: existing.entityTags.map((t) => t.name),
+      });
+      titleNames[kept.check]++;
+      if (kept.check !== 'kept' && kept.check !== 'no-anchor')
+        log(
+          `  title names (${existing.slug}) [${kept.check}]: "${result.output.seoTitle}" → "${kept.output.seoTitle}" (anchors: ${kept.anchors.join(', ')})`,
+        );
+      texts.set(item.cluster, kept.output);
+      return;
     }
     texts.set(item.cluster, result.output);
   });
@@ -585,6 +610,7 @@ async function main() {
         aiCalls,
         fallbackSummaries: records.filter(isFallbackSummary).length,
         ...(trendTitles.targeted ? { trendTitles } : {}),
+        titleNames,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },
