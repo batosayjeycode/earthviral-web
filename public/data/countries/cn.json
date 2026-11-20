@@ -3,17 +3,34 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 76,
+  "viralScore": 77,
   "intensityTier": "high",
-  "generatedAt": "2026-11-20T17:18:00Z",
+  "generatedAt": "2026-11-20T20:18:00Z",
   "clusters": [
+    {
+      "slug": "trump-to-meet-xi-putin-apec",
+      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+      "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 74,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Donald Trump held a trilateral meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in Shenzhen, China.",
+        "The leaders engaged in discussions regarding international relations and the establishment of moderate regulatory frameworks for artificial intelligence."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/liveblog/2026/11/19/apec-live-trump-xi-and-putin-to-meet-in-historic-three-way-china-summit?traffic_source=rss"
+      }
+    },
     {
       "slug": "indonesian-pairs-reach-hong-kong-open-semifinals",
       "canonicalPath": "/news/cn/indonesian-pairs-reach-hong-kong-open-semifinals/",
       "headline": "Indonesian Players Advance To Hong Kong Open 2026 Semifinals",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 73,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The mixed doubles pair Dejan Ferdinansyah and Felisha Alberta Nathaniel Pasaribu secured a spot in the semifinals without dropping a set.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "trump-to-meet-xi-putin-apec",
-      "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-      "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Donald Trump held a trilateral meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in Shenzhen, China.",
-        "The leaders engaged in discussions regarding international relations and the establishment of moderate regulatory frameworks for artificial intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/19/chinas-xi-greets-putin-and-trump-at-apec-before-historic-summit?traffic_source=rss"
-      }
-    },
-    {
       "slug": "xi-jinping-to-host-apec-summit",
       "canonicalPath": "/news/cn/xi-jinping-to-host-apec-summit/",
       "headline": "Leaders Convene In Shenzhen China For The 33rd Annual APEC Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 58,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Xi Jinping advocates for open investment and free trade during the APEC summit in Shenzhen.",
@@ -56,40 +56,6 @@
       "primarySource": {
         "publisherName": "Antara",
         "articleUrl": "https://www.antaranews.com/video/5854619/prabowo-cari-pengganti-wapres-usai-hadiri-ktt-apec-di-china"
-      }
-    },
-    {
-      "slug": "amri-nita-advance-hong-kong-open",
-      "canonicalPath": "/news/cn/amri-nita-advance-hong-kong-open/",
-      "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
-        "Amri Syahnawi and Nita Violina Marwah were defeated by representatives from Chinese Taipei."
-      ],
-      "primarySource": {
-        "publisherName": "VIVA",
-        "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
-      }
-    },
-    {
-      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
-      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
-      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
-        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
-      ],
-      "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261110105750-8-783815/trump-pasang-badan-bela-bos-nvdia-di-tengah-skandal-intelijen-china"
       }
     },
     {
@@ -110,20 +76,37 @@
       }
     },
     {
-      "slug": "trump-hints-kim-jong-un-meeting-china",
-      "canonicalPath": "/news/cn/trump-hints-kim-jong-un-meeting-china/",
-      "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
+      "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
+      "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
+        "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261110105750-8-783815/trump-pasang-badan-bela-bos-nvdia-di-tengah-skandal-intelijen-china"
+      }
+    },
+    {
+      "slug": "amri-nita-advance-hong-kong-open",
+      "canonicalPath": "/news/cn/amri-nita-advance-hong-kong-open/",
+      "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
       "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Donald Trump stated that North Korean leader Kim Jong Un has expressed interest in attending the APEC summit in China.",
-        "U.S. officials indicated the possibility of a bilateral meeting between the two leaders during the trip."
+        "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
+        "Amri Syahnawi and Nita Violina Marwah were defeated by representatives from Chinese Taipei."
       ],
       "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116009900315"
+        "publisherName": "VIVA",
+        "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
       }
     },
     {
@@ -132,7 +115,7 @@
       "headline": "President Xi Jinping Convenes Strategic Diplomatic Meeting In China",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Xi Jinping has organized a diplomatic meeting involving major international leaders.",
@@ -149,7 +132,7 @@
       "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Prabowo Subianto and President Xi Jinping held a bilateral meeting at Kylin Villa in Shenzhen.",
@@ -178,23 +161,6 @@
       }
     },
     {
-      "slug": "nvidia-halts-h200-chip-shipments-china",
-      "canonicalPath": "/news/cn/nvidia-halts-h200-chip-shipments-china/",
-      "headline": "NVIDIA Reportedly Halts Shipments Of H200 Chips To The Chinese Market",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "NVIDIA has reportedly discontinued the shipment of H200 Hopper-series chips to the Chinese market.",
-        "The suspension of supplies occurs despite current approvals granted by the United States government."
-      ],
-      "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5863783/nvidia-hentikan-pasokan-cip-h200-ke-china"
-      }
-    },
-    {
       "slug": "hong-kong-pro-democracy-activist-joshua-wong-sentenced-to",
       "canonicalPath": "/news/cn/hong-kong-pro-democracy-activist-joshua-wong-sentenced-to/",
       "headline": "Hong Kong Markets See Fluctuating Debuts For Chinese Tech Firms",
@@ -209,6 +175,23 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/05/asia-pacific/politics/joshua-wong-hong-kong-democracy-prison/"
+      }
+    },
+    {
+      "slug": "trump-hints-kim-jong-un-meeting-china",
+      "canonicalPath": "/news/cn/trump-hints-kim-jong-un-meeting-china/",
+      "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Donald Trump stated that North Korean leader Kim Jong Un has expressed interest in attending the APEC summit in China.",
+        "U.S. officials indicated the possibility of a bilateral meeting between the two leaders during the trip."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261116009900315"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/dbs-paylah-users-can-now-pay-at-more-than-100-million-merchants-across-china"
+      }
+    },
+    {
+      "slug": "indonesian-human-trafficking-ring-uncovered",
+      "canonicalPath": "/news/cn/indonesian-human-trafficking-ring-uncovered/",
+      "headline": "Indonesian Authorities Uncover Human Trafficking Ring To China",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Police identified three Indonesian women victimized by a human trafficking syndicate.",
+        "The network utilized a fraudulent marriage scheme to move individuals abroad."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8750233/3-wni-dijual-jadi-pengantin-pesanan-rp-500-juta-ke-china-mahar-rp-20-juta"
       }
     }
   ]

@@ -3,9 +3,9 @@
   "name": "Ukraine",
   "slug": "ukraine",
   "region": "Europe",
-  "viralScore": 61,
+  "viralScore": 71,
   "intensityTier": "high",
-  "generatedAt": "2026-11-20T17:18:00Z",
+  "generatedAt": "2026-11-20T20:18:00Z",
   "clusters": [
     {
       "slug": "ukraine-drone-strikes-crimea-moscow",
@@ -13,8 +13,8 @@
       "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "viralScore": 68,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Ukrainian forces utilized a combination of drone strikes and missile systems to target the strategically significant Kerch Bridge.",
         "The operation was confirmed by President Volodymyr Zelenskyy and involved coordinated efforts by the Security Service of Ukraine and military branches."
@@ -30,7 +30,7 @@
       "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Zelenskyy stated that a potential security agreement, reportedly involving NATO membership and territory concessions, could be put to a referendum.",
@@ -47,7 +47,7 @@
       "headline": "European Leaders Convene In Berlin To Discuss Ukraine Support Plans",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Heads of state from Germany, France, Britain, Poland, and Italy gathered in Berlin alongside NATO officials to discuss backing for Kyiv.",
@@ -59,20 +59,20 @@
       }
     },
     {
-      "slug": "russian-missile-strike-targets-kyiv-bridges",
-      "canonicalPath": "/news/ua/russian-missile-strike-targets-kyiv-bridges/",
-      "headline": "Russian Missile Strike Targets Kyiv Bridges Following Kerch Attack",
+      "slug": "ayok-sukamto-prisoner-of-war-ukraine",
+      "canonicalPath": "/news/ua/ayok-sukamto-prisoner-of-war-ukraine/",
+      "headline": "Indonesian Citizen Ayok Sukamto Identified As Prisoner Of War In Ukraine",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 41,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Three bridges in the capital of Ukraine were struck during a large-scale Russian missile bombardment.",
-        "Multiple fatalities were reported, with death toll estimates varying between three and five people across news reports."
+        "Ayok Sukamto from Jember, Indonesia, has been confirmed as a prisoner of war currently held in Ukraine.",
+        "Local village officials in Kencong, Jember, officially verified the status of the Indonesian national."
       ],
       "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/ukraine-updates-kyiv-targeted-by-missile-strikes-bridges-hit/live-79999822?maca=en-rss-en-all-1573-xml-mrss"
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/video/5868695/kepala-desa-benarkan-ayok-sukamto-tahanan-perang-ukraina-asal-jember"
       }
     },
     {
@@ -93,12 +93,29 @@
       }
     },
     {
+      "slug": "russian-missile-strike-targets-kyiv-bridges",
+      "canonicalPath": "/news/ua/russian-missile-strike-targets-kyiv-bridges/",
+      "headline": "Russian Missile Strike Targets Kyiv Bridges Following Kerch Attack",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Three bridges in the capital of Ukraine were struck during a large-scale Russian missile bombardment.",
+        "Multiple fatalities were reported, with death toll estimates varying between three and five people across news reports."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/ukraine-updates-kyiv-targeted-by-missile-strikes-bridges-hit/live-79999822?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "jared-kushner-ukraine-security-guarantees",
       "canonicalPath": "/news/ua/jared-kushner-ukraine-security-guarantees/",
       "headline": "Jared Kushner Suggests Trump Could Offer Ukraine Security Clauses",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jared Kushner indicated President Trump is open to providing security assurances to Ukraine modeled after NATO mutual defense.",
@@ -107,23 +124,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/kushner-says-trump-open-to-extend-nato-mutual-defense-type-clause-to-ukraine"
-      }
-    },
-    {
-      "slug": "ukraine-warfare-and-secret-military-missions",
-      "canonicalPath": "/news/ua/ukraine-warfare-and-secret-military-missions/",
-      "headline": "Reports Emerge Regarding Subterranean Warfare And French Missions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ukrainian military forces are utilizing decommissioned gas pipelines to conduct operations shielded from overhead Russian drone observation.",
-        "A French public radio investigation alleges that a covert military operation designated as Volia has maintained French personnel in Ukraine."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261118-war-in-ukraine-is-france-in-direct-conflict-with-russia"
       }
     },
     {
@@ -158,6 +158,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/15/prince-harry-in-ukraine-meeting-invictus-2027-hopefuls?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "ukraine-warfare-and-secret-military-missions",
+      "canonicalPath": "/news/ua/ukraine-warfare-and-secret-military-missions/",
+      "headline": "Reports Emerge Regarding Subterranean Warfare And French Missions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Ukrainian military forces are utilizing decommissioned gas pipelines to conduct operations shielded from overhead Russian drone observation.",
+        "A French public radio investigation alleges that a covert military operation designated as Volia has maintained French personnel in Ukraine."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/video/20261118-war-in-ukraine-is-france-in-direct-conflict-with-russia"
       }
     }
   ]
