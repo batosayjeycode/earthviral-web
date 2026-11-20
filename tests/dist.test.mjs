@@ -205,6 +205,15 @@ describe('canonical and social metadata', () => {
     });
   }
 
+  test('titles fit search results: the brand is added only when it fits, never after a cut', () => {
+    for (const page of indexable) {
+      const title = decode(page.html.match(/<title>([^<]+)<\/title>/)[1]);
+      if (title.endsWith(' | EarthViral'))
+        assert.ok(title.length <= 70, `${page.path}: ${title.length} chars: ${title}`);
+      assert.doesNotMatch(title, /… \| EarthViral$/, page.path);
+    }
+  });
+
   test('story pages use their own social card', () => {
     for (const page of stories) {
       assert.match(meta(page.html, 'og:image'), /\/og\/[a-z]{2}-\d{8}-[a-z0-9-]+\.png$/, page.path);
@@ -472,8 +481,114 @@ describe('hosting configuration', () => {
   });
 });
 
+describe('crawl paths', () => {
+  test('every story is linked from its country archive (home → country → archive → story)', () => {
+    const linked = new Set();
+    for (const page of pages.filter((p) => /^\/country\/[^/]+\/archive\/(\d+\/)?$/.test(p.path))) {
+      for (const [, href] of page.html.matchAll(/<a\b[^>]*href="(\/news\/[^"]+)"/g))
+        linked.add(href);
+    }
+    const missing = stories.filter((p) => !linked.has(p.path)).map((p) => p.path);
+    assert.deepEqual(missing.slice(0, 5), [], `${missing.length} stories missing from archives`);
+  });
+
+  test('every country hub links each of its archive pages, and home links every country hub', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    for (const page of pages.filter((p) => /^\/country\/[^/]+\/archive\/(\d+\/)?$/.test(p.path))) {
+      const hub = page.path.replace(/archive\/(\d+\/)?$/, '');
+      assert.ok(home.includes(`href="${hub}"`), `home does not link ${hub}`);
+      const hubHtml = pages.find((p) => p.path === hub)?.html ?? '';
+      assert.ok(hubHtml.includes(`href="${page.path}"`), `${hub} does not link ${page.path}`);
+    }
+  });
+
+  test('the homepage stays light: a capped story list, not the whole archive', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    const cards = (home.match(/<article\b[^>]*data-category=/g) ?? []).length;
+    assert.ok(cards <= 60, `homepage renders ${cards} story cards`);
+    assert.ok(home.length < 400_000, `homepage HTML is ${Math.round(home.length / 1024)} KB`);
+  });
+});
+
+describe('header edition (geo)', () => {
+  const countries = JSON.parse(
+    readFileSync(new URL('../src/data/generated/countries-master.json', import.meta.url), 'utf8'),
+  );
+
+  test('the HTML is the same for every visitor: Indonesia, with the picker hidden', () => {
+    for (const { path, html } of pages) {
+      const link = html.match(/<a\b[^>]*\bdata-edition\b[^>]*>/)?.[0];
+      assert.ok(link, `${path}: no edition link`);
+      assert.equal(attr(link, 'href'), '/country/indonesia/', path);
+      assert.equal(attr(link, 'data-current'), 'ID', path);
+      assert.match(html, /<button\b[^>]*\bhidden\b[^>]*\bdata-edition-toggle\b/, path);
+      // The menu is built in the browser: no per-country links are added to the HTML.
+      assert.match(html, /<ul\b[^>]*data-edition-list[^>]*><\/ul>/, path);
+    }
+  });
+
+  test('every tracked country with a hub page is an edition', () => {
+    const html = pages.find((p) => p.path === '/').html;
+    const link = html.match(/<a\b[^>]*\bdata-edition\b[^>]*>/)[0];
+    const editions = JSON.parse(attr(link, 'data-editions').replaceAll('&quot;', '"'));
+    assert.equal(Object.keys(editions).length, countries.length);
+    for (const c of countries) {
+      assert.deepEqual(editions[c.code], [c.slug, c.name], c.code);
+      assert.ok(existsSync(fileForPath(`/country/${c.slug}/`)), `missing hub for ${c.code}`);
+    }
+  });
+
+  // Production only: staging disallows everything (see 'robots.txt matches the data mode').
+  test('robots.txt keeps crawlers off /api/ and nothing else', { skip: STAGING }, () => {
+    if (isSeed) return;
+    const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
+    assert.deepEqual(
+      robots.split('\n').filter((l) => /^(Allow|Disallow):/.test(l)),
+      ['Allow: /', 'Disallow: /api/'],
+    );
+  });
+
+  test('no static file is served under /api/ (it belongs to the Pages Function)', () => {
+    assert.ok(!existsSync(join(dist, 'api')));
+  });
+});
+
 describe('content honesty', () => {
-  const text = pages.map((p) => p.html.replace(/<[^>]+>/g, ' ')).join(' ');
+  // Site copy only: the static pages, the homepage minus its story cards, and the site-wide
+  // header and footer. Stories are AI summaries of real news and can legitimately say
+  // "new testimonials emerged" or "2 million users", so story text is out of scope.
+  const SITE_PAGES = new Set([
+    '/',
+    '/about/',
+    '/contact/',
+    '/privacy/',
+    '/terms/',
+    '/search/',
+    '/404/',
+  ]);
+  const toText = (html) =>
+    html
+      .replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ' ') // code isn't copy (and its `<` breaks tag stripping)
+      .replace(/<article\b[^>]*\bdata-category=[\s\S]*?<\/article>/g, ' ') // story cards (NewsCard)
+      .replace(/<[^>]+>/g, ' ');
+  const chrome = new Set(
+    pages.flatMap((p) =>
+      [
+        p.html.match(/<header class="glass[\s\S]*?<\/header>/)?.[0],
+        p.html.match(/<footer class="mt-24[\s\S]*?<\/footer>/)?.[0],
+      ].filter(Boolean),
+    ),
+  );
+  const text = [...pages.filter((p) => SITE_PAGES.has(p.path)).map((p) => p.html), ...chrome]
+    .map(toText)
+    .join(' ');
+
+  test('the site copy check covers the static pages and the shared chrome', () => {
+    assert.equal(pages.filter((p) => SITE_PAGES.has(p.path)).length, SITE_PAGES.size);
+    assert.ok(chrome.size >= 2, 'site header/footer not found');
+    assert.match(text, /Methodology/);
+    assert.doesNotMatch(text, /GEO_KEY/); // scripts are excluded
+  });
 
   test('no placeholder or fake-proof copy', () => {
     for (const phrase of [

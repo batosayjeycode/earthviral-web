@@ -72,6 +72,7 @@ npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
 npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
 npm run update:viral -- --ai-concurrency 2             # parallel AI calls (env AI_CONCURRENCY)
 npm run update:viral -- --resummarize-fallback         # re-summarise kept stories that have non-AI text
+npm run update:viral -- --auto-resummarize 0           # don't retry fallback-text stories this run (default: 10)
 npm run update:viral -- --no-trends --no-gdelt
 ```
 
@@ -79,7 +80,7 @@ npm run update:viral -- --no-trends --no-gdelt
 
 `scripts/generate-viral-batch.ts` runs these steps:
 
-1. **Collect.** It reads 31 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
+1. **Collect.** It reads 42 curated RSS feeds (`scripts/lib/fetchers/rssSources.ts`), public Google Trends geo feeds and, optionally, GDELT. A failed feed is logged in `batch-meta.json` and skipped; it never fails the batch.
 2. **Attribute.** It assigns each article to one of 41 tracked countries (`scripts/lib/countries.ts`), using the outlet's home country plus the places named in the headline. English and Bahasa Indonesia names are both recognised.
 3. **Cluster.** It groups articles by TF-IDF headline similarity within each country, then merges fragments of the same event. New coverage attaches to existing stories, so **story URLs never change**.
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):
@@ -161,6 +162,8 @@ Keep the crons in `wrangler.toml` in sync with the workflow files and `VAS.batch
 | `PUBLIC_CONTACT_EMAIL`, `PUBLIC_ADSENSE_CLIENT`, `PUBLIC_ADSENSE_SLOT_STORY`, `PUBLIC_ADSENSE_SLOT_HUB` | var    | CI build                   |
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.
+
+`functions/api/geo.ts` is a Cloudflare Pages Function returning the visitor's country (`{"country":"US"}`); the header uses it to show the visitor's own country edition, unless they picked one in the edition menu (see `src/lib/edition.ts`). It is the only dynamic route, so static pages never invoke it. CI deploys it with the site (the deploy job checks out the repo so `wrangler pages deploy` finds `functions/`). Locally, `npm run qa` stubs it and reads the `CF-IPCountry` request header.
 
 ### Staging
 

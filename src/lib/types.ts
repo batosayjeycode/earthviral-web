@@ -71,6 +71,20 @@ export interface BatchMeta {
     updatedClusters: number;
     /** Stories dropped this batch by the per-country cap (now redirected). */
     retiredClusters?: number;
+    /** Duplicate stories merged into another story this batch. */
+    mergedDuplicates?: number;
+    /** Stories still showing non-AI fallback text after this batch (retried automatically). */
+    fallbackSummaries?: number;
+    /** AI summaries targeting a trending search this batch, and how many used it in the seoTitle. */
+    trendTitles?: { targeted: number; inTitle: number };
+    /** Updates checked for keeping the names in the story's URL (see scripts storyNames.ts). */
+    titleNames?: {
+      kept: number;
+      headline: number;
+      previous: number;
+      missing: number;
+      'no-anchor': number;
+    };
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;

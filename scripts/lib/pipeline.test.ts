@@ -17,6 +17,11 @@ import {
 import type { ViralClusterStaticRecord } from '../../src/lib/types.ts';
 import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
+import { summaryQueue } from './intelligence/selectStories.ts';
+import { keepStoryNames, namesAnchor, storyAnchors } from './intelligence/storyNames.ts';
+import { aiCompaniesBlocked, isAiOptOut } from './robotsPolicy.ts';
+import { RSS_SOURCES } from './fetchers/rssSources.ts';
+import { decodeBody, detectCharset, fetchText } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
 import { slugify, tokenize, truncate } from './intelligence/text.ts';
@@ -275,6 +280,151 @@ describe('story drift', () => {
   });
 });
 
+describe('search trends', async () => {
+  const { searchQueryFor, usesSearchTerms } = await import('./intelligence/computeViralScore.ts');
+  /** The biggest cluster built from these GB headlines (one story). */
+  const story = (titles: string[]) =>
+    clusterArticles(
+      titles.map((title, i) =>
+        article({ title, countryCode: 'GB', publisherDomain: `outlet${i}.co.uk` }),
+      ),
+      [],
+    ).sort((a, b) => b.articles.length - a.articles.length)[0]!;
+  const trend = (keyword: string, newsTitles: string[] = []) => ({
+    country: 'GB',
+    keyword,
+    traffic: 100_000,
+    newsTitles,
+  });
+  const brexit = story([
+    'Boris Johnson says Britain would vote for Brexit again',
+    'Johnson defends Brexit and attacks Labour on zero-hours contracts',
+    'Brexit was right, Boris Johnson insists in new interview',
+  ]);
+
+  it('matches a search whose words are core to the story, and targets it in the title', () => {
+    const t = trend('brexit');
+    assert.equal(matchTrend(brexit, [t]), t);
+    assert.equal(searchQueryFor(brexit, t), 'brexit');
+  });
+
+  it('ignores a generic word that appears in only one headline', () => {
+    const s = story([
+      'Boris Johnson says Britain would vote for Brexit again',
+      'Boris Johnson says Brexit insurance against EU decline',
+      'Brexit was right, Boris Johnson insists in new interview',
+    ]);
+    assert.equal(s.articles.length, 3);
+    assert.equal(matchTrend(s, [trend('insurance')]), null);
+  });
+
+  it("doesn't match through Google's linked news titles when the search itself is unrelated", () => {
+    // "uson nevers rugby" was linked to French politics headlines and gave them a search bonus.
+    const t = trend('uson nevers rugby', [
+      'Boris Johnson says Britain would vote for Brexit again',
+    ]);
+    assert.equal(matchTrend(brexit, [t]), null);
+  });
+
+  it('treats plurals as the same word but not shared prefixes', () => {
+    const alerts = story([
+      'Government tests new emergency alert system on mobile phones',
+      'Emergency alert test to sound on phones across the country',
+      'Phones to receive emergency alert in nationwide test',
+    ]);
+    assert.equal(searchQueryFor(alerts, trend('emergency alerts')), 'emergency alerts');
+    const palmer = story([
+      'Cole Palmer injury blow for Chelsea ahead of derby',
+      'Chelsea sweat on Cole Palmer fitness',
+      'Palmer ruled out of Chelsea derby with groin injury',
+    ]);
+    assert.equal(matchTrend(palmer, [trend('palmeiras')]), null);
+  });
+
+  it('checks whether a title uses the search terms', () => {
+    assert.ok(usesSearchTerms('Iran Targets US Bases in Kuwait', 'kuwait', 'GB'));
+    assert.ok(usesSearchTerms('Emergency Alert Test Sounds Nationwide', 'emergency alerts', 'GB'));
+    assert.ok(!usesSearchTerms('Military Tensions Between Iran And US', 'kuwait', 'GB'));
+  });
+});
+
+describe('duplicate stories', async () => {
+  const { mergeDuplicateStories, isDuplicate } = await import('./intelligence/mergeDuplicates.ts');
+  const rec = (over: Partial<ViralClusterStaticRecord> & { slug: string; headline: string }) =>
+    ({
+      id: over.slug,
+      countryCode: 'PH',
+      seoTitle: over.headline.slice(0, 60),
+      canonicalPath: `/news/ph/${over.slug}/`,
+      firstDetectedAt: '2026-11-17T04:00:00Z',
+      lastUpdatedBatchAt: '2026-11-17T08:18:00Z',
+      viralScore: 50,
+      signalBreakdown: { verifiedPublisherCount: 1 },
+      sources: [
+        {
+          publisherName: over.slug,
+          publisherDomain: `${over.slug}.com`,
+          articleTitle: over.headline,
+          articleUrl: `https://${over.slug}.com/a`,
+          publishedAt: '2026-11-17T04:00:00Z',
+        },
+      ],
+      ...over,
+    }) as unknown as ViralClusterStaticRecord;
+
+  it('merges a new story into the published one covering the same event', () => {
+    const published = rec({
+      slug: 'prime-minister-modi-manila-gurudwara-visit',
+      headline: 'Prime Minister Narendra Modi Visits Historic Manila Gurudwara',
+    });
+    const fresh = rec({
+      slug: 'prime-minister-modi-philippines-gurudwara-visit',
+      headline: 'Prime Minister Narendra Modi Visits Historic Gurudwara In Manila',
+      firstDetectedAt: '2026-11-17T08:06:00Z',
+    });
+    const { records, merges } = mergeDuplicateStories([published, fresh], (r) => r === fresh);
+    assert.deepEqual(records, [published]);
+    assert.equal(merges[0]!.retired, false); // never published: no redirect needed
+    assert.equal(published.sources.length, 2);
+    assert.equal(published.signalBreakdown.verifiedPublisherCount, 2);
+  });
+
+  it('retires the published duplicate whose URL fits the event worse, with a redirect', () => {
+    const early = rec({
+      slug: 'protests-at-vice-presidential-palace',
+      headline: 'Vice President Gibran Rakabuming Raka Formally Resigns From Office',
+      countryCode: 'ID',
+      firstDetectedAt: '2026-11-15T00:00:00Z',
+    });
+    const named = rec({
+      slug: 'gibran-rakabuming-raka-resigns-vice-presidency',
+      headline: 'Vice President Gibran Rakabuming Raka Resigns From Office',
+      countryCode: 'ID',
+      firstDetectedAt: '2026-11-16T00:00:00Z',
+    });
+    const { records, merges } = mergeDuplicateStories([early, named], () => false);
+    assert.deepEqual(records, [named]);
+    assert.equal(merges[0]!.from, early);
+    assert.equal(merges[0]!.retired, true);
+  });
+
+  it('keeps different events, other countries and old stories apart', () => {
+    const semi = rec({
+      slug: 'a',
+      headline: 'Mirra Andreeva Secures WTA Finals Semifinal Spot In Riyadh',
+    });
+    const title = rec({
+      slug: 'b',
+      headline: 'Mirra Andreeva Secures WTA Finals Title In Her Debut',
+    });
+    assert.ok(!isDuplicate(semi, title));
+    const same = rec({ slug: 'c', headline: semi.headline });
+    assert.ok(isDuplicate(semi, same));
+    assert.ok(!isDuplicate(semi, { ...same, countryCode: 'SA' }));
+    assert.ok(!isDuplicate(semi, { ...same, firstDetectedAt: '2026-11-25T00:00:00Z' }));
+  });
+});
+
 describe('viral score', () => {
   it('rises with publisher breadth and recency', () => {
     assert.ok(coverageScore(8) > coverageScore(3));
@@ -357,6 +507,78 @@ describe('feeds', () => {
       traffic: 200000,
       newsTitles: ['Timnas menang'],
     });
+  });
+});
+
+describe('fallback summary retries', () => {
+  const item = (id: string, viralScore: number) => ({ id, score: { viralScore } });
+  const required = [item('new-low', 40), item('new-high', 90), item('updated', 60)];
+  const fallback = [item('fb-a', 95), item('fb-b', 20), item('fb-c', 70)];
+  const ids = (xs: { id: string }[]) => xs.map((x) => x.id);
+
+  it('retries the top fallback stories after all required work, whatever their score', () => {
+    const { queue, retried } = summaryQueue(required, fallback, { all: false, auto: 2 });
+    assert.deepEqual(ids(queue), ['new-high', 'updated', 'new-low', 'fb-a', 'fb-c']);
+    assert.deepEqual(ids(retried), ['fb-a', 'fb-c']);
+  });
+
+  it('can be switched off, and never retries more than exist', () => {
+    assert.deepEqual(ids(summaryQueue(required, fallback, { all: false, auto: 0 }).queue), [
+      'new-high',
+      'updated',
+      'new-low',
+    ]);
+    assert.equal(summaryQueue(required, fallback, { all: false, auto: 50 }).retried.length, 3);
+  });
+
+  it('--resummarize-fallback ranks every fallback story together with required work', () => {
+    const { queue, retried } = summaryQueue(required, fallback, { all: true, auto: 2 });
+    assert.deepEqual(ids(queue), ['fb-a', 'new-high', 'fb-c', 'updated', 'new-low', 'fb-b']);
+    assert.equal(retried.length, 3);
+  });
+});
+
+describe('feed encodings', () => {
+  // "Relação" / "Escândalo" in ISO-8859-1 (one byte per accented letter).
+  const latin1Feed = Uint8Array.from(
+    Buffer.from(
+      '<?xml version="1.0" encoding="ISO-8859-1" ?><rss><channel><item><title>Relação e escândalo</title></item></channel></rss>',
+      'latin1',
+    ),
+  );
+
+  it('detects the charset from Content-Type, then the XML declaration, else UTF-8', () => {
+    assert.equal(detectCharset('text/xml; charset=windows-1252', latin1Feed), 'windows-1252');
+    assert.equal(detectCharset('application/rss+xml; charset="UTF-8"', latin1Feed), 'utf-8');
+    assert.equal(detectCharset('text/xml', latin1Feed), 'iso-8859-1');
+    assert.equal(detectCharset(null, new TextEncoder().encode('<rss></rss>')), 'utf-8');
+    assert.equal(
+      detectCharset(null, new TextEncoder().encode("<?xml version='1.0' encoding='utf-8'?><rss/>")),
+      'utf-8',
+    );
+  });
+
+  it('decodes Latin-1 without replacement characters, and survives unknown labels', () => {
+    const text = decodeBody(latin1Feed, 'iso-8859-1');
+    assert.match(text, /Relação e escândalo/);
+    assert.doesNotMatch(text, /\uFFFD/);
+    assert.equal(decodeBody(new TextEncoder().encode('Açaí'), 'x-unknown-charset'), 'Açaí');
+  });
+
+  it('fetchText decodes a Latin-1 feed served as plain text/xml (Folha)', async () => {
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = async () =>
+      new Response(latin1Feed, { headers: { 'content-type': 'text/xml' } });
+    try {
+      const xml = await fetchText('https://feeds.example/rss.xml');
+      assert.match(xml, /Relação e escândalo/);
+      const utf8 = new TextEncoder().encode('<rss><title>Açaí — São Paulo</title></rss>');
+      globalThis.fetch = async () =>
+        new Response(utf8, { headers: { 'content-type': 'application/xml; charset=utf-8' } });
+      assert.match(await fetchText('https://feeds.example/utf8.xml'), /Açaí — São Paulo/);
+    } finally {
+      globalThis.fetch = realFetch;
+    }
   });
 });
 
@@ -944,5 +1166,171 @@ describe('batch schedule', async () => {
     const cron = /cron: '(\d+) 2-23\/3 \* \* \*'/.exec(yml);
     assert.ok(cron, 'batch cron not found');
     assert.equal(Number(cron[1]), VAS.batchCronMinute);
+  });
+});
+
+// Cases from Search Console (Nov 2026): page-1 stories whose updated titles lost the names
+// people searched for ("gayo lues regency floods", "giring ganesha") and got no clicks.
+describe('story names in titles', () => {
+  const output = (seoTitle: string, headline: string, entityTags: string[] = []) =>
+    ({ ...heuristicSummary(input), seoTitle, headline, entityTags }) as ReturnType<
+      typeof heuristicSummary
+    >;
+  const input = {
+    countryCode: 'ID',
+    countryName: 'Indonesia',
+    articles: [
+      {
+        publisherName: 'A',
+        publisherDomain: 'a.example',
+        title: 'Banjir bandang di Gayo Lues',
+        snippet: '',
+        publishedAt: '2026-11-08T08:00:00Z',
+      },
+    ],
+    metrics: { viralScore: 50, publishers: 1, velocity: 10, search: 0, trendKeyword: null },
+  };
+
+  it('anchors are entity names whose words are all in the slug', () => {
+    const slug = 'giring-ganesha-resigns-from-psi-party';
+    assert.deepEqual(
+      storyAnchors(slug, ['Partai Solidaritas Indonesia', 'Giring Ganesha', 'Raja Juli Antoni']),
+      ['Giring Ganesha'],
+    );
+    assert.deepEqual(
+      storyAnchors('flash-floods-damage-gayo-lues-aceh', ['BPBD', 'Aceh', 'Bengkulu', 'Flooding']),
+      ['Aceh'],
+    );
+  });
+
+  it('matches whole words, folding plurals and accents', () => {
+    assert.ok(namesAnchor('Floods Hit Gayo Lues, Aceh', ['Gayo Lues']));
+    assert.ok(namesAnchor('São Paulo Metro Strike', ['Sao Paulo']));
+    assert.ok(!namesAnchor('Acehnese Families Displaced', ['Aceh']));
+    assert.ok(!namesAnchor('Ganesha Statue Unveiled', ['Giring Ganesha']));
+  });
+
+  it('a generalised update title falls back to a headline that keeps the name', () => {
+    const previous = {
+      slug: 'giring-ganesha-resigns-from-psi-party',
+      seoTitle: 'Three Senior PSI Officials Resign From Party',
+      entityTags: ['Giring Ganesha', 'Raja Juli Antoni'],
+    };
+    const r = keepStoryNames(
+      output(
+        'Three Senior PSI Officials Resign From Party',
+        'Giring Ganesha and Two Others Quit PSI',
+      ),
+      previous,
+    );
+    assert.equal(r.check, 'headline');
+    assert.equal(r.output.seoTitle, 'Giring Ganesha and Two Others Quit PSI');
+  });
+
+  it('then to the previous title when only it has the name', () => {
+    const r = keepStoryNames(
+      output(
+        'Flash Floods Impact Multiple Regions Across Indonesia',
+        'Flash Floods Impact Thousands of Families Across Several Indonesian Provinces',
+        ['BPBD', 'Aceh'],
+      ),
+      {
+        slug: 'flash-floods-damage-gayo-lues-aceh',
+        seoTitle: 'Flash Floods Damage Homes in Gayo Lues, Aceh',
+        entityTags: ['Gayo Lues', 'BPBD'],
+      },
+    );
+    assert.equal(r.check, 'previous');
+    assert.equal(r.output.seoTitle, 'Flash Floods Damage Homes in Gayo Lues, Aceh');
+  });
+
+  it('leaves titles that keep a name, and stories without anchors, alone', () => {
+    const previous = {
+      slug: 'senior-politician-panda-nababan-passes-away',
+      seoTitle: 'Panda Nababan Dies at 82',
+      entityTags: ['Panda Nababan', 'PDIP'],
+    };
+    const kept = output('Panda Nababan Funeral Details Announced', 'Funeral Set For Panda Nababan');
+    assert.equal(keepStoryNames(kept, previous).check, 'kept');
+    assert.equal(keepStoryNames(kept, previous).output, kept);
+    const none = keepStoryNames(output('Markets Fall Sharply', 'Markets Fall Sharply'), {
+      slug: 'stock-markets-fall-sharply',
+      seoTitle: 'Markets Fall',
+      entityTags: ['Jakarta Composite Index'],
+    });
+    assert.equal(none.check, 'no-anchor');
+  });
+
+  it('never drops a name the current title has, even when another survives', () => {
+    const previous = {
+      slug: 'federal-police-investigates-threats-deputy-ana-elisa',
+      seoTitle: 'Federal Police Investigate Threats Against Ana Elisa',
+      entityTags: ['Federal Police', 'Ana Elisa', 'Andrei Rodrigues'],
+    };
+    const r = keepStoryNames(
+      output(
+        'Senator Claims Federal Police Interference',
+        'Senator Claims Interference by Andrei Rodrigues in Federal Police',
+      ),
+      previous,
+    );
+    assert.equal(r.check, 'previous');
+    assert.equal(r.output.seoTitle, previous.seoTitle);
+    const both = output('Federal Police Protect Deputy Ana Elisa', 'Ana Elisa Gets Protection');
+    assert.equal(keepStoryNames(both, previous).check, 'kept');
+  });
+
+  it('reports a title it cannot repair', () => {
+    const r = keepStoryNames(output('Party Officials Resign', 'Party Officials Resign'), {
+      slug: 'giring-ganesha-resigns-from-psi-party',
+      seoTitle: 'PSI Officials Resign',
+      entityTags: ['Giring Ganesha'],
+    });
+    assert.equal(r.check, 'missing');
+    assert.equal(r.output.seoTitle, 'Party Officials Resign');
+  });
+});
+
+describe('sourcing policy (robots.txt)', () => {
+  it('counts the AI companies whose agents are blocked from the whole site', () => {
+    const txt = `User-agent: *
+Disallow: /admin/
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: / # no AI
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Disallow: /private/`;
+    assert.deepEqual(aiCompaniesBlocked(txt), ['OpenAI', 'Anthropic']);
+    assert.ok(isAiOptOut(aiCompaniesBlocked(txt)));
+  });
+
+  it('one company, or none, is not an opt-out', () => {
+    assert.ok(!isAiOptOut(aiCompaniesBlocked('User-agent: GPTBot\nDisallow: /')));
+    assert.ok(!isAiOptOut(aiCompaniesBlocked('User-agent: *\nDisallow: /search')));
+    assert.deepEqual(aiCompaniesBlocked(''), []);
+  });
+
+  it('an explicit Allow: / for the agent wins', () => {
+    const txt = 'User-agent: ClaudeBot\nDisallow: /\nAllow: /\n\nUser-agent: GPTBot\nDisallow: /';
+    assert.deepEqual(aiCompaniesBlocked(txt), ['OpenAI']);
+  });
+
+  it('source ids are unique and every country keeps a source that allows AI', () => {
+    const ids = RSS_SOURCES.map((s) => s.id);
+    assert.equal(new Set(ids).size, ids.length);
+    const countries = new Set(RSS_SOURCES.map((s) => s.homeCountry).filter(Boolean));
+    for (const cc of countries)
+      assert.ok(
+        RSS_SOURCES.some((s) => s.homeCountry === cc && !s.aiOptOut),
+        `${cc} relies only on aiOptOut sources`,
+      );
   });
 });

@@ -3,6 +3,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import JsonLd from '../../../components/seo/JsonLd.astro';
+import { pageTitle } from '../../../lib/site.ts';
 import { collectionGraph } from '../../../lib/structuredData.ts';
 import HubHeader from '../../../components/hub/HubHeader.astro';
 import StoryGrid from '../../../components/hub/StoryGrid.astro';
@@ -10,6 +11,8 @@ import AdSlot from '../../../components/ads/AdSlot.astro';
 import LinkCloud from '../../../components/hub/LinkCloud.astro';
 import LocatorGlobe from '../../../components/map/LocatorGlobe.astro';
 import { getClusters, getCountries } from '../../../lib/data.ts';
+import { formatDateWib } from '../../../lib/format.ts';
+import { countryArchive } from '../../../lib/routes.ts';
 import { CATEGORIES, TIER_META, flagEmoji, regionSlug } from '../../../lib/taxonomy.ts';
 import type { CountryMasterRecord } from '../../../lib/types.ts';
 
@@ -40,6 +43,20 @@ const categoryLinks = CATEGORIES.map((cat) => ({
     meta: count,
   }));
 
+// Every story, newest first: one link per archive page, labelled with its date range.
+const archiveLinks = countryArchive(country, clusters).map((page, i, all) => {
+  const newest = formatDateWib(page.stories[0]!.firstDetectedAt).replace(/, \d{4}$/, '');
+  const oldest = formatDateWib(page.stories.at(-1)!.firstDetectedAt).replace(/, \d{4}$/, '');
+  return {
+    name:
+      all.length === 1
+        ? `All ${country.name} stories`
+        : `${i === 0 ? 'Newest' : `Page ${page.n}`}: ${newest === oldest ? newest : `${oldest} – ${newest}`}`,
+    href: page.path,
+    meta: page.stories.length,
+  };
+});
+
 const neighbours = countries
   .filter((c) => c.region === country.region && c.code !== country.code)
   .map((c) => ({
@@ -51,8 +68,14 @@ const neighbours = countries
 ---
 
 <BaseLayout
-  title={`Viral News in ${country.name} Today — Trending Topics | EarthViral`}
-  description={`What is going viral in ${country.name} right now: ${own.length} trending ${own.length === 1 ? 'story' : 'stories'} with AI summaries, viral scores and links to original publishers. Updated every 3 hours.`}
+  title={pageTitle(
+    // Worded like the searches that reach these pages ("what's happening in mexico right
+    // now", "viral news indonesia"); pageTitle picks the longest that fits 70 characters.
+    `What's Happening in ${country.name} Today: Viral News & Trends`,
+    `What's Happening in ${country.name}: Viral News Today`,
+    `Viral News in ${country.name} Today`,
+  )}
+  description={`What's happening in ${country.name} right now: ${own.length} trending ${own.length === 1 ? 'story' : 'stories'} with AI summaries, viral scores and links to original publishers. Updated every 3 hours.`}
   noindex={own.length === 0}
 >
   <JsonLd
@@ -108,6 +131,7 @@ const neighbours = countries
     <LinkCloud title={`${country.name} by category`} links={categoryLinks} />
     <StoryGrid title={`Trending in ${country.name}`} clusters={own} />
     <AdSlot placement="hub" />
+    <LinkCloud title={`${country.name} story archive`} links={archiveLinks} />
     <LinkCloud title={`More in ${country.region}`} links={neighbours} />
   </div>
 </BaseLayout>

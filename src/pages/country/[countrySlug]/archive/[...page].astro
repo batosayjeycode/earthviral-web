@@ -1,0 +1,158 @@
+---
+/**
+ * Country story archive — /country/[countrySlug]/archive/ and /archive/[n]/.
+ *
+ * Every published story of the country, newest first, as a compact list (see countryArchive
+ * in lib/routes.ts). Hubs show a ranked selection; these pages guarantee that every story
+ * is linked and within three clicks of the homepage.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import JsonLd from '../../../../components/seo/JsonLd.astro';
+import HubHeader from '../../../../components/hub/HubHeader.astro';
+import { pageTitle } from '../../../../lib/site.ts';
+import { collectionGraph } from '../../../../lib/structuredData.ts';
+import { getClusters, getCountries } from '../../../../lib/data.ts';
+import { countryArchive, type ArchivePage } from '../../../../lib/routes.ts';
+import { formatDateWib } from '../../../../lib/format.ts';
+import { categoryBySlug, flagEmoji, regionSlug } from '../../../../lib/taxonomy.ts';
+import type { CountryMasterRecord } from '../../../../lib/types.ts';
+
+export const getStaticPaths = (async () => {
+  const [countries, clusters] = await Promise.all([getCountries(), getClusters()]);
+  return countries.flatMap((country) => {
+    const pages = countryArchive(country, clusters);
+    return pages.map((page) => ({
+      params: { countrySlug: country.slug, page: page.n === 1 ? undefined : String(page.n) },
+      props: { country, page, pages },
+    }));
+  });
+}) satisfies GetStaticPaths;
+
+interface Props {
+  country: CountryMasterRecord;
+  page: ArchivePage;
+  pages: ArchivePage[];
+}
+
+const { country, page, pages } = Astro.props;
+const total = pages.reduce((n, p) => n + p.stories.length, 0);
+const newest = formatDateWib(page.stories[0]!.firstDetectedAt);
+const oldest = formatDateWib(page.stories.at(-1)!.firstDetectedAt);
+const range = newest === oldest ? newest : `${oldest} – ${newest}`;
+const paged = pages.length > 1 ? ` — Page ${page.n} of ${pages.length}` : '';
+const name = `${country.name} news archive`;
+const countryPath = `/country/${country.slug}/`;
+const prev = pages[page.n - 2];
+const next = pages[page.n];
+---
+
+<BaseLayout
+  title={pageTitle(`${country.name} News Archive${page.n > 1 ? ` — Page ${page.n}` : ''}`)}
+  description={`Every viral story EarthViral tracked in ${country.name}, newest first: ${page.stories.length} of ${total} stories${pages.length > 1 ? `, page ${page.n} of ${pages.length}` : ''} (${range}).`}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: page.path,
+      name: `${name}${paged}`,
+      description: `Viral stories tracked in ${country.name}, ${range}.`,
+      breadcrumbs: [
+        { name: country.region, path: `/region/${regionSlug(country.region)}/` },
+        { name: country.name, path: countryPath },
+        { name: page.n > 1 ? `Archive, page ${page.n}` : 'Archive' },
+      ],
+      clusters: page.stories,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[
+      { name: country.region, href: `/region/${regionSlug(country.region)}/` },
+      { name: country.name, href: countryPath },
+      { name: page.n > 1 ? `Archive, page ${page.n}` : 'Archive' },
+    ]}
+    eyebrow="Story archive"
+    title={`${name}${paged}`}
+    intro={`All ${total} ${total === 1 ? 'story' : 'stories'} EarthViral has tracked in ${country.name} over the last 30 days, newest first. This page: ${range}.`}
+  >
+    <span slot="title-prefix" aria-hidden="true" class="mr-3">
+      {flagEmoji(country.code)}
+    </span>
+  </HubHeader>
+
+  <div class="mx-auto grid max-w-4xl gap-10 px-4 pt-10 sm:px-6">
+    <ol class="divide-y divide-line rounded-2xl border border-line bg-land/40">
+      {page.stories.map((c) => (
+        <li class="flex flex-col gap-1 px-5 py-4 sm:flex-row sm:items-baseline sm:gap-4">
+          <time
+            class="tabular shrink-0 text-xs text-ink-faint sm:w-28"
+            datetime={c.firstDetectedAt}
+          >
+            {formatDateWib(c.firstDetectedAt)}
+          </time>
+          <a class="font-medium text-ink hover:text-cyan" href={c.canonicalPath}>
+            {c.headline}
+          </a>
+          <span class="text-xs text-ink-faint sm:ml-auto sm:shrink-0">
+            {categoryBySlug(c.categorySlug)?.shortName ?? c.categoryName}
+          </span>
+        </li>
+      ))}
+    </ol>
+
+    {pages.length > 1 && (
+      <nav
+        aria-label="Archive pages"
+        class="flex flex-wrap items-center justify-center gap-2 text-sm"
+      >
+        {prev && (
+          <a class="ev-page" href={prev.path} rel="prev">
+            ← Newer
+          </a>
+        )}
+        {pages.map((p) =>
+          p.n === page.n ? (
+            <span class="ev-page" aria-current="page">
+              {p.n}
+            </span>
+          ) : (
+            <a class="ev-page" href={p.path} aria-label={`Page ${p.n}`}>
+              {p.n}
+            </a>
+          ),
+        )}
+        {next && (
+          <a class="ev-page" href={next.path} rel="next">
+            Older →
+          </a>
+        )}
+      </nav>
+    )}
+
+    <p class="text-center text-sm text-ink-muted">
+      <a class="text-cyan hover:underline" href={countryPath}>
+        ← Trending now in {country.name}
+      </a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .ev-page {
+    min-width: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-line);
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    color: var(--color-ink-muted);
+  }
+  a.ev-page:hover {
+    border-color: color-mix(in srgb, var(--color-cyan) 40%, transparent);
+    color: white;
+  }
+  .ev-page[aria-current='page'] {
+    border-color: var(--color-cyan);
+    color: white;
+  }
+</style>

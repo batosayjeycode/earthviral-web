@@ -1,10 +1,13 @@
 /**
  * Minimal static server for QA that mimics Cloudflare Pages behaviour:
  * directory indexes, `/path` -> `/path/` redirects, and dist/404.html with a 404 status.
+ * `/api/geo` runs the real Pages Function (functions/api/geo.ts). Without Cloudflare's `cf`
+ * object it reads the `CF-IPCountry` request header, which QA sets to test the header's geo swap.
  */
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
+import { onRequestGet as geo } from '../../functions/api/geo.ts';
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -32,6 +35,16 @@ export function serveDist(dir, port) {
     const url = new URL(req.url ?? '/', 'http://localhost');
     const path = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, '');
     let file = join(dir, path);
+
+    if (path === '/api/geo') {
+      const country = req.headers['cf-ipcountry'];
+      const response = geo({
+        request: new Request(url, { headers: country ? { 'CF-IPCountry': String(country) } : {} }),
+      });
+      res.writeHead(response.status, Object.fromEntries(response.headers));
+      res.end(await response.text());
+      return;
+    }
 
     if (path.endsWith('/')) file = join(file, 'index.html');
     else if (!extname(path) && (await isFile(join(file, 'index.html')))) {

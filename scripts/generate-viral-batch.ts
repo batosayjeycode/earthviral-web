@@ -18,6 +18,8 @@
  *   --max-ai <n>           LLM calls per batch (default 80)
  *   --resummarize-fallback re-summarise kept stories that still have non-AI fallback text
  *                          (e.g. from runs without an API key); counts toward --max-ai
+ *   --auto-resummarize <n> otherwise, retry up to n such stories per batch with AI calls left
+ *                          over after new/updated stories (default 10, 0 = off)
  *   --ai-concurrency <n>   parallel LLM calls (default 2, env AI_CONCURRENCY); keep low on free
  *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
@@ -54,7 +56,12 @@ import {
   type CountryArticle,
   type WorkingCluster,
 } from './lib/intelligence/deduplicateAndCluster.ts';
-import { computeViralScore, type ViralScore } from './lib/intelligence/computeViralScore.ts';
+import {
+  computeViralScore,
+  searchQueryFor,
+  usesSearchTerms,
+  type ViralScore,
+} from './lib/intelligence/computeViralScore.ts';
 import {
   createSummarizer,
   isFallbackSummary,
@@ -64,7 +71,13 @@ import {
   type SummaryOutput,
 } from './lib/intelligence/generateAiSummaries.ts';
 import { buildInternalLinks } from './lib/intelligence/buildInternalLinks.ts';
-import { retireOldest, selectTopPerCountry } from './lib/intelligence/selectStories.ts';
+import {
+  retireOldest,
+  selectTopPerCountry,
+  summaryQueue,
+} from './lib/intelligence/selectStories.ts';
+import { mergeDuplicateStories } from './lib/intelligence/mergeDuplicates.ts';
+import { keepStoryNames, type TitleNameCheck } from './lib/intelligence/storyNames.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
@@ -117,6 +130,7 @@ const OPTS = {
   ),
   maxAi: intOption('max-ai', 80),
   resummarizeFallback: flag('resummarize-fallback'),
+  autoResummarize: intOption('auto-resummarize', 10),
   aiConcurrency: Math.max(
     1,
     intOption(
@@ -374,26 +388,51 @@ async function main() {
   // New and repaired clusters always need text; existing ones are re-summarised after ≥ 2 new
   // articles, or — with --resummarize-fallback and an AI provider — when they still have
   // non-AI text.
-  const resummarize = carried.filter(
+  // Kept stories still showing non-AI fallback text (an AI call failed or was over budget).
+  // --resummarize-fallback queues all of them; otherwise a few are retried every batch with
+  // leftover AI calls (see summaryQueue).
+  const fallbackKept = carried.filter(
     ({ cluster }) =>
-      OPTS.resummarizeFallback &&
       summarizer.provider !== 'none' &&
       newArticleCount(cluster) < 2 &&
       cluster.pruned === 0 &&
       isFallbackSummary(cluster.existing!),
   );
-  const needsText = [
-    ...selectedNew.map((x) => ({ ...x, isNew: true })),
-    ...repaired.map((x) => ({ ...x, isNew: true })),
-    ...updated
-      .filter(({ cluster }) => newArticleCount(cluster) >= 2 && cluster.pruned === 0)
-      .map((x) => ({ ...x, isNew: false })),
-    ...resummarize.map((x) => ({ ...x, isNew: false })),
-  ].sort((a, b) => b.score.viralScore - a.score.viralScore);
+  const { queue: needsText, retried } = summaryQueue(
+    [
+      ...selectedNew.map((x) => ({ ...x, isNew: true })),
+      ...repaired.map((x) => ({ ...x, isNew: true })),
+      ...updated
+        .filter(({ cluster }) => newArticleCount(cluster) >= 2 && cluster.pruned === 0)
+        .map((x) => ({ ...x, isNew: false })),
+    ],
+    fallbackKept.map((x) => ({ ...x, isNew: false })),
+    { all: OPTS.resummarizeFallback, auto: OPTS.autoResummarize },
+  );
   if (OPTS.resummarizeFallback) {
-    log(`  --resummarize-fallback: ${resummarize.length} kept stories with non-AI text queued`);
+    log(`  --resummarize-fallback: ${retried.length} kept stories with non-AI text queued`);
+  } else if (fallbackKept.length) {
+    log(
+      `  auto re-summarise: ${retried.length} of ${fallbackKept.length} stories with non-AI text queued (uses leftover budget)`,
+    );
   }
 
+  {
+    const matched = needsText.filter((x) => x.score.matchedTrend);
+    const usable = matched
+      .map((x) => searchQueryFor(x.cluster, x.score.matchedTrend))
+      .filter((q) => q !== null);
+    log(
+      `  ${matched.length} of ${needsText.length} stories match a Google Trends search; ${usable.length} usable as a title target${
+        usable.length
+          ? `: ${usable
+              .slice(0, 6)
+              .map((q) => `"${q}"`)
+              .join(', ')}`
+          : ''
+      }`,
+    );
+  }
   log(
     `▶ Summarising ${needsText.length} clusters (budget ${OPTS.maxAi} AI calls, ${OPTS.aiConcurrency} at a time)…`,
   );
@@ -401,6 +440,13 @@ async function main() {
   const aiFailures = new Map<AiFailureCategory, number>();
   const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
+  const titleNames: Record<TitleNameCheck, number> = {
+    kept: 0,
+    headline: 0,
+    previous: 0,
+    missing: 0,
+    'no-anchor': 0,
+  };
   await mapLimit(needsText, OPTS.aiConcurrency, async (item, i) => {
     const withinBudget = summarizer.provider !== 'none' && i < OPTS.maxAi;
     if (!withinBudget && !item.isNew) return; // keep the existing text
@@ -419,8 +465,40 @@ async function main() {
         `  ! AI summary failed (${item.cluster.countryCode}) [${category}]: ${detail} — using fallback`,
       );
     }
+    const existing = item.cluster.existing;
+    if (existing && !result.error && !isFallbackSummary(result.output)) {
+      // An update must not drop the names the story's URL was published under.
+      const kept = keepStoryNames(result.output, {
+        slug: existing.slug,
+        seoTitle: existing.seoTitle,
+        entityTags: existing.entityTags.map((t) => t.name),
+      });
+      titleNames[kept.check]++;
+      if (kept.check !== 'kept' && kept.check !== 'no-anchor')
+        log(
+          `  title names (${existing.slug}) [${kept.check}]: "${result.output.seoTitle}" → "${kept.output.seoTitle}" (anchors: ${kept.anchors.join(', ')})`,
+        );
+      texts.set(item.cluster, kept.output);
+      return;
+    }
     texts.set(item.cluster, result.output);
   });
+  // Trending searches targeted in titles, and how many AI titles actually used them.
+  const targeted = needsText
+    .map((item) => ({ item, query: searchQueryFor(item.cluster, item.score.matchedTrend) }))
+    .filter((x): x is typeof x & { query: string } => x.query !== null)
+    .map(({ item, query }) => ({ item, query, out: texts.get(item.cluster) }))
+    .filter(({ out }) => out && !isFallbackSummary(out));
+  const trendTitles = {
+    targeted: targeted.length,
+    inTitle: targeted.filter(({ item, query, out }) =>
+      usesSearchTerms(out!.seoTitle, query, item.cluster.countryCode),
+    ).length,
+  };
+  if (trendTitles.targeted) {
+    log(`  trending searches in titles: ${trendTitles.inTitle}/${trendTitles.targeted}`);
+    for (const { query, out } of targeted.slice(0, 5)) log(`    "${query}" → ${out!.seoTitle}`);
+  }
   const aiFailureCount = [...aiFailures.values()].reduce((a, b) => a + b, 0);
   const aiFailureSummary = [...aiFailures.entries()]
     .sort((a, b) => b[1] - a[1])
@@ -435,7 +513,8 @@ async function main() {
     ...withdrawn.map((c) => c.slug),
     ...previousRetired.map((r) => r.path.split('/').filter(Boolean).at(-1)!),
   ]);
-  const records: ViralClusterStaticRecord[] = [];
+  let records: ViralClusterStaticRecord[] = [];
+  const newRecords = new Set<ViralClusterStaticRecord>();
 
   for (const { cluster, score } of carried) {
     const record: ViralClusterStaticRecord = structuredClone(cluster.existing!);
@@ -473,6 +552,20 @@ async function main() {
     applyText(record, text);
     applyScore(record, score);
     records.push(record);
+    newRecords.add(record);
+  }
+
+  // Same event, two stories: the AI-written headlines of separately clustered reports come
+  // out near-identical, so duplicates are merged here (see mergeDuplicates.ts). Published
+  // duplicates redirect to the story that absorbed them.
+  const merged = mergeDuplicateStories(records, (r) => newRecords.has(r));
+  records = merged.records;
+  const mergedAway = merged.merges.filter((m) => m.retired);
+  if (merged.merges.length > 0) {
+    log(
+      `  merged ${merged.merges.length} duplicate stories (${merged.merges.length - mergedAway.length} new, ${mergedAway.length} published → 301 to the surviving story)`,
+    );
+    for (const m of merged.merges) log(`    ${m.from.canonicalPath} → ${m.into.canonicalPath}`);
   }
 
   // 6. Link graph + write ────────────────────────────────────────────────────
@@ -480,14 +573,25 @@ async function main() {
   const retired = mergeRetired(
     previousRetired,
     // Stories over the site size budget, past the retention window or withdrawn by a
-    // publisher content policy all redirect.
-    [...retiredNow, ...expired, ...withdrawn, ...lostCoverage.map((x) => x.cluster.existing!)].map(
-      (c) => ({
+    // publisher content policy redirect to their country page; merged duplicates redirect
+    // to the surviving story.
+    [
+      ...[
+        ...retiredNow,
+        ...expired,
+        ...withdrawn,
+        ...lostCoverage.map((x) => x.cluster.existing!),
+      ].map((c) => ({
         path: c.canonicalPath,
         redirectTo: `/country/${c.countrySlug}/`,
         retiredAt: iso(now),
-      }),
-    ),
+      })),
+      ...mergedAway.map((m) => ({
+        path: m.from.canonicalPath,
+        redirectTo: m.into.canonicalPath,
+        retiredAt: iso(now),
+      })),
+    ],
     new Set(records.map((r) => r.canonicalPath)),
     now,
   );
@@ -506,10 +610,14 @@ async function main() {
         feedsOk: rss.ok.length,
         feedsFailed,
         articlesFetched: rss.articles.length + gdelt.articles.length,
-        newClusters: selectedNew.length,
+        newClusters: selectedNew.length - (merged.merges.length - mergedAway.length),
         updatedClusters: updated.length,
         retiredClusters: retiredNow.length,
+        ...(merged.merges.length ? { mergedDuplicates: merged.merges.length } : {}),
         aiCalls,
+        fallbackSummaries: records.filter(isFallbackSummary).length,
+        ...(trendTitles.targeted ? { trendTitles } : {}),
+        titleNames,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },

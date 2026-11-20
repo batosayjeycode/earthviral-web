@@ -6,22 +6,23 @@
   "countryName": "Australia",
   "countrySlug": "australia",
   "region": "Oceania",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "Coles investigating ‘cybersecurity incident’ and apologises to customers",
-  "seoTitle": "Coles investigating ‘cybersecurity incident’ and…",
-  "metaDescription": "2 independent outlets are covering this story. The Guardian reports: Coles investigating ‘cybersecurity incident’ and apologises to customers",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "Australian Retailers Investigate Reports Of Gift Card Balance Loss",
+  "seoTitle": "Major Retailers Investigate Gift Card Balance Issues",
+  "metaDescription": "Coles and Woolworths are responding to customer reports regarding drained gift card balances following separate cybersecurity concerns.",
   "aiSummaryBullets": [
-    "The Guardian reports: Coles investigating ‘cybersecurity incident’ and apologises to customers",
-    "ABC reports: Woolworths apologises after customers report drained gift card balances"
+    "Coles is conducting an investigation into a cybersecurity incident affecting its systems.",
+    "Woolworths issued an apology to customers who reported that their gift card balances were suddenly emptied.",
+    "Both major supermarket chains are addressing customer concerns regarding the security of digital gift vouchers."
   ],
-  "aiContextParagraph": "This story about Australia has been reported by The Guardian and ABC since 2026-11-15. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "2 independent outlets are covering this story.",
-  "viralScore": 32,
+  "aiContextParagraph": "Two of Australia's largest retail chains, Coles and Woolworths, are currently addressing separate issues involving customer gift cards. Coles has confirmed that it is investigating a cybersecurity incident that has impacted its operations and has offered an apology to affected customers. Simultaneously, reports have emerged from Woolworths customers who claim their gift card balances have been drained without authorization. The retailer has acknowledged the reports and expressed regret to those impacted by the missing funds. While the two companies are managing distinct situations, both incidents have drawn attention to the vulnerability of digital gift card assets within the retail sector. Customers are being urged to monitor their accounts as the companies continue to look into the root causes of these balance discrepancies and implement necessary security updates to prevent further unauthorized access to consumer funds.",
+  "whyItIsViral": "The story is being tracked by two independent media outlets, reflecting a developing concern among consumers regarding the security of retail gift cards.",
+  "viralScore": 30,
   "intensityTier": "active",
   "signalBreakdown": {
     "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 4,
+    "coverageVelocityScore": 0,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
@@ -43,15 +44,28 @@
       "publishedAt": "2026-11-16T00:25:13Z"
     }
   ],
-  "entityTags": [],
+  "entityTags": [
+    {
+      "name": "Coles",
+      "slug": "coles"
+    },
+    {
+      "name": "Woolworths",
+      "slug": "woolworths"
+    },
+    {
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
+    }
+  ],
   "relatedInCountrySlugs": [
     "coles-supermarket-cyber-attack-investigation",
-    "australian-pilots-survive-borneo-helicopter-crash",
-    "man-charged-murder-fatal-home-invasion"
+    "australia-to-adopt-mandatory-ai-safeguards",
+    "camping-sightseeing-booking-portal-disabled-while-data-breach-investigated"
   ],
   "relatedInCategorySlugs": [
-    "singapore-cybersecurity-agency-urges-stronger-defenses",
-    "italy-fines-meta-over-photo-privacy",
-    "spacex-starship-orbital-recovery-success"
+    "french-bank-hit-by-cyberattack-hackers-steal-100-million",
+    "jakarta-sets-2027-provincial-minimum-wage",
+    "singapore-market-expansion-and-data-risks"
   ]
 }

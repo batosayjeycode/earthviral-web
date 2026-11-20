@@ -7,7 +7,7 @@
  */
 import { derivableArticles } from '../../../src/lib/publisherPolicy.ts';
 import { COUNTRY_BY_CODE } from '../countries.ts';
-import type { ViralScore } from './computeViralScore.ts';
+import { searchQueryFor, type ViralScore } from './computeViralScore.ts';
 import type { WorkingCluster } from './deduplicateAndCluster.ts';
 import type { SummaryInput } from './generateAiSummaries.ts';
 
@@ -38,8 +38,11 @@ export function summaryInput(cluster: WorkingCluster, score: ViralScore): Summar
       velocity: score.velocity,
       search: score.search,
       trendKeyword: score.matchedTrend?.keyword ?? null,
+      // A Google Trends query (not publisher text); matching it to the story is non-AI.
+      searchQuery: searchQueryFor(cluster, score.matchedTrend),
     },
     // A repaired story's stored headline describes the event it drifted onto.
     previousHeadline: cluster.pruned > 0 ? undefined : cluster.existing?.headline,
+    storySlug: cluster.existing?.slug,
   };
 }

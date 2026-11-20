@@ -19,6 +19,7 @@
     "test:unit": "node --test scripts/**/*.test.ts",
     "test:dist": "node --test tests/*.test.mjs",
     "qa": "node scripts/qa-browser.mjs",
+    "audit:feeds": "node scripts/audit-feed-robots.ts",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run build && npm test",
     "seed": "node scripts/seed/generate-seed-data.ts",
     "update:viral": "node --env-file-if-exists=.env scripts/generate-viral-batch.ts",

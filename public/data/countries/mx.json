@@ -3,17 +3,34 @@
   "name": "Mexico",
   "slug": "mexico",
   "region": "North America",
-  "viralScore": 51,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-16T17:18:00Z",
+  "viralScore": 18,
+  "intensityTier": "quiet",
+  "generatedAt": "2026-11-20T20:18:00Z",
   "clusters": [
+    {
+      "slug": "guadalajara-cultural-events-infrastructure-updates",
+      "canonicalPath": "/news/mx/guadalajara-cultural-events-infrastructure-updates/",
+      "headline": "Guadalajara Highlights Cultural Events And Local Infrastructure Updates",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Jalisco Philharmonic Orchestra is holding performances at the Degollado Theater.",
+        "A festival dedicated to vermouth is scheduled as part of the city's seasonal cultural programming."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/el-bajio/mnd-local-guadalajara-concerts-airport-updates-vermouth/"
+      }
+    },
     {
       "slug": "guadalajara-cartel-leader-gallardo-dies",
       "canonicalPath": "/news/mx/guadalajara-cartel-leader-gallardo-dies/",
       "headline": "Former Guadalajara Cartel Leader Miguel Angel Felix Gallardo Dies",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Miguel Angel Felix Gallardo, founder of the Guadalajara Cartel, died in a hospital at the age of 80.",
@@ -25,77 +42,9 @@
       }
     },
     {
-      "slug": "spacex-starship-booster-recovery-aborted",
-      "canonicalPath": "/news/mx/spacex-starship-booster-recovery-aborted/",
-      "headline": "SpaceX Aborts Attempt To Recover Starship Rocket Booster Stage",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "SpaceX conducted the 15th test flight of its Starship rocket with the goal of recovering both the booster and the spacecraft.",
-        "A technical issue prevented the booster from performing a controlled landing, leading to its destruction over the Gulf of Mexico."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "mexico-california-high-speed-rail-projects",
-      "canonicalPath": "/news/mx/mexico-california-high-speed-rail-projects/",
-      "headline": "Progress Reported On Mexico And California High Speed Rail Projects",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Querétaro-Irapuato train line in Mexico has reached 25 percent completion.",
-        "The California high-speed rail project reports a negative 25 percent progress metric relative to its planned schedule."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/el-jalapeno/el-jalapeno-high-speed-rail-project/"
-      }
-    },
-    {
-      "slug": "quintonil-named-best-latin-america-restaurant",
-      "canonicalPath": "/news/mx/quintonil-named-best-latin-america-restaurant/",
-      "headline": "Quintonil Restaurant In Mexico City Earns Top Latin America Honor",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Quintonil, a contemporary restaurant in Mexico City, received the top ranking for Latin America.",
-        "The establishment was also recognized as the fourth-best restaurant globally."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/culture/quintonil-best-restaurant-latin-america/"
-      }
-    },
-    {
-      "slug": "authenticity-debate-mexico-beach-towns",
-      "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
-      "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Journalistic commentary examines the cultural distinction between tourist-focused coastal areas and other regions of Mexico.",
-        "The analysis questions the criteria used to determine what constitutes an authentic experience for those living in or visiting the country."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/mexico-living/archive-is-beach-real-mexico/"
-      }
-    },
-    {
       "slug": "mexico-arrests-jalisco-cartel-leader",
       "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-      "headline": "Mexican Authorities Arrest Alleged Cartel Leader And Accomplices",
+      "headline": "Mexico Authorities Arrest Jalisco Cartel Leader And 19 Associates",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
       "viralScore": 30,
@@ -124,6 +73,23 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/politics/trump-threatens-double-tariffs-mexico-migrant-caravan/"
+      }
+    },
+    {
+      "slug": "spacex-starship-booster-recovery-aborted",
+      "canonicalPath": "/news/mx/spacex-starship-booster-recovery-aborted/",
+      "headline": "SpaceX Aborts Attempt To Recover Starship Rocket Booster Stage",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "SpaceX conducted the 15th test flight of its Starship rocket with the goal of recovering both the booster and the spacecraft.",
+        "A technical issue prevented the booster from performing a controlled landing, leading to its destruction over the Gulf of Mexico."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -163,7 +129,7 @@
     {
       "slug": "meta-launches-muse-ai-in-mexico",
       "canonicalPath": "/news/mx/meta-launches-muse-ai-in-mexico/",
-      "headline": "Meta Launches Its Muse Artificial Intelligence Agent In Mexico",
+      "headline": "Meta Launches Muse Artificial Intelligence Agent In Mexico Market",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
       "viralScore": 18,
@@ -178,9 +144,26 @@
       }
     },
     {
+      "slug": "mexico-california-high-speed-rail-projects",
+      "canonicalPath": "/news/mx/mexico-california-high-speed-rail-projects/",
+      "headline": "California And Mexico High-Speed Rail Project Progress Reported",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "The Querétaro-Irapuato train line in Mexico has reached 25 percent completion.",
+        "The California high-speed rail project reports a negative 25 percent progress metric relative to its planned schedule."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/el-jalapeno/el-jalapeno-high-speed-rail-project/"
+      }
+    },
+    {
       "slug": "mexico-city-considers-animal-poisoning-penalties",
       "canonicalPath": "/news/mx/mexico-city-considers-animal-poisoning-penalties/",
-      "headline": "Mexico City Legislators Consider New Prison Terms For Pet Poisoning",
+      "headline": "Mexico City Legislators Propose Nine-Year Terms For Pet Poisoning",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
       "viralScore": 18,
@@ -192,6 +175,23 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/news/mexico-city-congress-proposes-9-years-in-prison-for-poisoning-animals-in-public-spaces/"
+      }
+    },
+    {
+      "slug": "quintonil-named-best-latin-america-restaurant",
+      "canonicalPath": "/news/mx/quintonil-named-best-latin-america-restaurant/",
+      "headline": "Quintonil Restaurant In Mexico City Earns Top Latin America Honor",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Quintonil, a contemporary restaurant in Mexico City, received the top ranking for Latin America.",
+        "The establishment was also recognized as the fourth-best restaurant globally."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/culture/quintonil-best-restaurant-latin-america/"
       }
     },
     {
@@ -209,6 +209,23 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/culture/mexican-singer-songwriter-silvana-estrada-tapped-la-philharmonics-first-latin-music-chair/"
+      }
+    },
+    {
+      "slug": "authenticity-debate-mexico-beach-towns",
+      "canonicalPath": "/news/mx/authenticity-debate-mexico-beach-towns/",
+      "headline": "Discussions Emerge Regarding Authenticity In Mexican Beach Towns",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Journalistic commentary examines the cultural distinction between tourist-focused coastal areas and other regions of Mexico.",
+        "The analysis questions the criteria used to determine what constitutes an authentic experience for those living in or visiting the country."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/mexico-living/archive-is-beach-real-mexico/"
       }
     },
     {
@@ -263,23 +280,6 @@
       }
     },
     {
-      "slug": "guadalajara-cultural-events-infrastructure-updates",
-      "canonicalPath": "/news/mx/guadalajara-cultural-events-infrastructure-updates/",
-      "headline": "Guadalajara Highlights Cultural Events And Local Infrastructure Updates",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The Jalisco Philharmonic Orchestra is holding performances at the Degollado Theater.",
-        "A festival dedicated to vermouth is scheduled as part of the city's seasonal cultural programming."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/el-bajio/mnd-local-guadalajara-concerts-airport-updates-vermouth/"
-      }
-    },
-    {
       "slug": "mexico-china-yucatan-archaeological-collaboration",
       "canonicalPath": "/news/mx/mexico-china-yucatan-archaeological-collaboration/",
       "headline": "Mexico And China Initiate Joint Archaeology Project In Yucatan",
@@ -316,7 +316,7 @@
     {
       "slug": "mexico-homicide-data-reporting-discrepancy",
       "canonicalPath": "/news/mx/mexico-homicide-data-reporting-discrepancy/",
-      "headline": "Discrepancy Reported Between Mexico Homicide Data And INEGI Stats",
+      "headline": "Analyzing Discrepancies In Mexico Official Homicide Statistics",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 18,

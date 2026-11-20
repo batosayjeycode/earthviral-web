@@ -6,6 +6,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import JsonLd from '../../../components/seo/JsonLd.astro';
+import { pageTitle } from '../../../lib/site.ts';
 import { collectionGraph } from '../../../lib/structuredData.ts';
 import HubHeader from '../../../components/hub/HubHeader.astro';
 import StoryGrid from '../../../components/hub/StoryGrid.astro';
@@ -62,7 +63,11 @@ const elsewhere = clusters
 ---
 
 <BaseLayout
-  title={`Viral ${category.name} News in ${country.name} Today | EarthViral`}
+  title={pageTitle(
+    `Viral ${category.name} News in ${country.name} Today`,
+    `Viral ${category.shortName} News in ${country.name} Today`,
+    `${category.shortName} News in ${country.name}`,
+  )}
   description={`Trending ${category.name.toLowerCase()} stories in ${country.name}, with AI summaries, viral scores and links to the original reporting. Updated every 3 hours.`}
 >
   <JsonLd

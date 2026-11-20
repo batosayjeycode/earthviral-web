@@ -3,6 +3,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import JsonLd from '../../components/seo/JsonLd.astro';
+import { pageTitle } from '../../lib/site.ts';
 import { collectionGraph } from '../../lib/structuredData.ts';
 import HubHeader from '../../components/hub/HubHeader.astro';
 import StoryGrid from '../../components/hub/StoryGrid.astro';
@@ -31,7 +32,11 @@ const others = (await getTopics())
 ---
 
 <BaseLayout
-  title={`${topic.name} — Viral News & Trending Stories | EarthViral`}
+  title={pageTitle(
+    `${topic.name} — Viral News & Trending Stories`,
+    `${topic.name} — Viral News`,
+    topic.name,
+  )}
   description={`Viral stories about ${topic.name} across ${countryCount} ${countryCount === 1 ? 'country' : 'countries'}, with AI summaries, viral scores and links to the original reporting.`}
 >
   <JsonLd

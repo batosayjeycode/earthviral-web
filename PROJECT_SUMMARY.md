@@ -55,7 +55,8 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 ### Phase 3: AI batch pipeline (`npm run update:viral`)
 
-- **Sources:** 31 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sources:** 42 RSS feeds (Indonesian, global wires and national outlets), Google Trends geo feeds, and optional GDELT (usually rate-limited).
+- **Sourcing policy:** a feed whose robots.txt (feed host or publisher site) blocks the AI agents of two or more AI companies is an AI opt-out, marked `aiOptOut` in `rssSources.ts` and phased out: AI-allowing sources are added for its country first, then it is removed. New sources must allow AI. `npm run audit:feeds` re-checks every source and fails on a mismatch. 11 sources remain marked (BBC ×2, Guardian, Al Jazeera, France 24, DW, The Hindu, ABC, Yonhap, Le Monde, Folha).
 - **Country attribution** across 41 tracked countries, in English and Bahasa Indonesia.
 - **Story grouping:** articles are grouped by TF-IDF headline similarity, with a second pass that merges fragments of the same event. Tuned on a real batch of 1,083 articles.
 - **Viral Activity Score (0–100):** `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
@@ -78,13 +79,21 @@ Fonts (Space Grotesk, Plus Jakarta Sans, JetBrains Mono) are all SIL OFL-1.1 and
 
 - **Story retention:** story pages stay published for 30 days after their last coverage, within a site budget of **2,500 stories** (oldest removed first). At most **10 stories per country** are live at once, which limits how many new stories are added (configurable). Removed stories get a **301 to their country page** through a generated `public/_redirects`, kept for 90 days.
 - **Topic pages** are built only for tags shared by at least 3 stories; other tags render as plain text.
+- **Search trends:** a Google Trends search counts for a story only when its own words are in the coverage (≥ 60% of its keywords, one in 2+ headlines; or ≥ 50% backed by Google's linked news titles). Single generic words and news-title-only links no longer earn a search bonus. When a matched search fits the story, the AI is asked to use the searcher's wording in the SEO title and description; batch-meta `pipeline.trendTitles` records how many titles did.
+- **Searchable names in titles:** the AI is told to name the central person, place or organisation in the SEO title rather than a generic description. On updates it also gets the story's fixed URL words and must keep the names that identify the event. A safety net (`storyNames.ts`) checks each updated title against the stored entity tags that appear in the URL slug; if they were all dropped it uses the new headline (≤ 70 chars) or the previous title instead. batch-meta `pipeline.titleNames` counts the outcomes. A new title must keep every anchor name the current title has (it can gain names, never lose one).
+- **Re-titling from Search Console:** `node scripts/retitle-stories.ts --from paths.txt [--dry-run]` re-words the headline, SEO title and meta description of listed stories with the same checks (summaries are left alone: stored records only keep source headlines). Use it on stories with impressions but few clicks.
+- **Country hub titles** follow how people search: "What's Happening in Mexico Today: Viral News & Trends" (shorter variants for long country names).
+- **Crawl paths:** the homepage lists the 48 newest stories (rendering the whole archive had grown it to 1.9 MB / ~19k elements) plus a link to every country. Each country has a paginated **story archive** (`/country/[slug]/archive/`, 48 per page, newest first) linked from its hub, so every story is at most 3 clicks from the homepage and none is orphaned (dist tests enforce both).
+- **Titles:** `pageTitle()` (`src/lib/site.ts`) picks the longest wording that fits 70 characters with " | EarthViral", else drops the brand; story titles clipped with "…" use the full headline instead.
+- **Feed encodings:** feeds are decoded using the charset from `Content-Type` or the XML declaration (Folha is ISO-8859-1), not always UTF-8.
 - **AI reliability:**
   - failure reasons are categorised (`rate-limit`, `schema`, `timeout`, …) and recorded in `batch-meta.json`
   - AI calls run 2 at a time
   - `retryDelay` / `Retry-After` hints are honoured
-- **Re-summarising:** `--resummarize-fallback` re-summarises stories that still have non-AI text. It's also available as a checkbox on the manual workflow form.
+- **Re-summarising:** every batch retries up to 10 stories that still have non-AI fallback text (`--auto-resummarize <n>`), using only AI calls left over after new and updated stories; `pipeline.fallbackSummaries` in batch-meta tracks how many remain. `--resummarize-fallback` (also a checkbox on the manual workflow form) queues all of them at once.
 - **Staleness watchdog:** an hourly workflow that opens or closes a `stale-data` GitHub issue when data is more than 9 h old. The site shows a **"Data delayed"** badge in the same situation.
-- **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone.
+- **Feeds:** Capital FM and KBC were added for Kenya. Tempo was removed in Nov 2026 (all its feeds now sit behind a Cloudflare bot challenge) and replaced by VIVA and Okezone. Malay Mail's feed disappeared (404/403) and was replaced by Malaysiakini and theSun; outlets whose robots.txt opts out of AI use (e.g. New Straits Times) are not added.
+- **Header edition by location:** the header's country button shows the visitor's edition: their **manual pick** from the edition menu (kept until changed, with a "Use my location" reset), else their **detected country** when it has a page, else Indonesia. The country comes from `/api/geo`, a Cloudflare Pages Function (`functions/api/geo.ts`, the site's only dynamic route, `Cache-Control: private, no-store`), and is cached in the visitor's own localStorage for 1 day; failed lookups aren't cached. The HTML, and so what search engines index, is identical for everyone (Indonesia, menu built in the browser); `robots.txt` disallows `/api/`. Logic in `src/lib/edition.ts`; a small inline script right after the button restores a saved edition before first paint, so Indonesia never flashes.
 
 ---
 
