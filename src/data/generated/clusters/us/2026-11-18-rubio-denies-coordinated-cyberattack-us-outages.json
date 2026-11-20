@@ -6,28 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "Officials Address Tech Outage Concerns As Consumer Stockpiling Rises",
-  "seoTitle": "US Tech Outages And Consumer Preparedness",
-  "metaDescription": "US officials state recent tech outages lack coordination, while retailers report a surge in consumer demand for emergency and disaster-preparedness supplies.",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "White House Cyber Director Sean Cairncross Ousted Following Outages",
+  "seoTitle": "Sean Cairncross Ousted After US Tech Outages",
+  "metaDescription": "White House cyber director Sean Cairncross has been removed from his position following a series of technological outages impacting US infrastructure.",
   "aiSummaryBullets": [
-    "Government officials confirmed there is no evidence that recent widespread technical failures represent a coordinated systemic attack.",
-    "JPMorgan Chase confirmed a cyberattack resulted in the exposure of personal customer information.",
-    "Major retailers are observing increased sales of disaster-preparedness goods as consumer concern grows following the technology incidents."
+    "White House national cyber director Sean Cairncross was removed from his role following recent widespread technology failures.",
+    "The administration appointed Department of Defense official Kirsten Davies to succeed Cairncross in overseeing cybersecurity strategy.",
+    "Senator Marco Rubio previously stated there was no evidence linking the outages to a coordinated or systemic cyberattack."
   ],
-  "aiContextParagraph": "A series of recent technical outages across major American corporations, including Microsoft and financial institutions, has prompted public inquiry and government investigation. Despite initial speculation regarding the connectivity of these events, US officials have stated there is no evidence of a coordinated cyberattack or systemic threat. While authorities continue their assessments, recent reports confirmed that a distinct cyberattack on JPMorgan Chase resulted in a data breach affecting thousands of customers. In response to the technical volatility, retailers such as Costco and Walmart have observed a notable rise in consumer purchasing of emergency supplies, including food staples and power generators. This shift in consumer behavior reflects heightened public concern following the widespread service disruptions. Experts and former government officials have been called upon to analyze the implications of these isolated technology failures and the separate security breach within the banking sector.",
-  "whyItIsViral": "The story is viral due to extensive coverage from nine independent news outlets and a high velocity of reporting as public interest shifts from government statements to consumer stockpiling behaviors.",
-  "viralScore": 79,
-  "intensityTier": "high",
+  "aiContextParagraph": "The United States recently experienced a wave of technical disruptions affecting various sectors, including banking, air travel, and national security systems. In response to these events, Senator Marco Rubio clarified that officials had found no evidence suggesting the incidents were part of a coordinated cyberattack or a systemic assault on the nation. Other reports indicated that officials briefed Congress, identifying failures in artificial intelligence systems as a factor in outages at institutions like JPMorgan, Microsoft, and the NSA. Amid the resulting public uncertainty, some consumers have begun stockpiling supplies. Following the criticism regarding the management of these technical failures, the White House confirmed the departure of Sean Cairncross from his position as national cyber director. Kirsten Davies, an official from the Department of Defense, has been appointed to take over the role as the government continues to manage the fallout from the infrastructure instability.",
+  "whyItIsViral": "The story is widely covered by nine independent outlets and is trending due to the intersection of national infrastructure failures and a high-profile government leadership change.",
+  "viralScore": 86,
+  "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 9,
-    "coverageVelocityScore": 57,
+    "coverageVelocityScore": 73,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-18T01:17:59Z",
-  "lastUpdatedBatchAt": "2026-11-19T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-20T01:48:00Z",
   "sources": [
     {
       "publisherName": "CBS News",
@@ -203,34 +203,48 @@
       "articleTitle": "Consumers stock doomsday pantries as tech outages cause jitters",
       "articleUrl": "https://www.cbsnews.com/news/doomsday-prepping-scenarios-walmart-costco-technology-outages/",
       "publishedAt": "2026-11-19T22:39:41Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "White House cyber director ousted after US hit by wave of tech outages",
+      "articleUrl": "https://www.theguardian.com/us-news/2026/nov/19/white-house-cyber-director-ousted",
+      "publishedAt": "2026-11-20T01:25:05Z"
+    },
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "Trump backs firing of US cyber chief Sean Cairncross amid tech outages",
+      "articleUrl": "https://timesofindia.indiatimes.com/world/us/trump-backs-firing-of-us-cyber-chief-sean-cairncross-amid-tech-outages/articleshow/136009545.cms",
+      "publishedAt": "2026-11-20T01:32:00Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Sean Cairncross",
+      "slug": "sean-cairncross"
+    },
     {
       "name": "Marco Rubio",
       "slug": "marco-rubio"
     },
     {
-      "name": "JPMorgan Chase",
-      "slug": "jpmorgan-chase"
-    },
-    {
-      "name": "Microsoft",
-      "slug": "microsoft"
-    },
-    {
       "name": "Cybersecurity",
       "slug": "cybersecurity"
+    },
+    {
+      "name": "White House",
+      "slug": "white-house"
     }
   ],
   "relatedInCountrySlugs": [
-    "nsa-classified-network-goes-offline",
-    "microsoft-services-fully-restored-after-outage",
-    "major-us-banks-experience-service-outages"
+    "armed-suspect-arrested-near-white-house",
+    "trump-appoints-miller-chief-of-staff",
+    "nsa-classified-network-goes-offline"
   ],
   "relatedInCategorySlugs": [
-    "microsoft-outlook-email-service-outage",
-    "singapore-systems-impacted-by-microsoft-outage",
-    "australian-organisations-affected-by-microsoft-outage"
+    "trump-offers-press-secretary-role-dana-white",
+    "g7-nations-convene-in-paris-talks",
+    "trump-nominates-ufc-executive-press-secretary"
   ]
 }
