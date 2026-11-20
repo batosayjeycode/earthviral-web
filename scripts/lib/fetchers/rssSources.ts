@@ -25,6 +25,12 @@
  * (robots.txt blocks ~20 AI agents, a clear "no AI use" signal even though EarthViralBot isn't
  * named), Bernama (blocks AI crawlers; its feed also lacks dates and has mis-encoded text),
  * Free Malaysia Today (403), The Star and The Edge (404).
+ *
+ * Brazil (2026-11-20): added Agência Brasil (public news agency), CNN Brasil and InfoMoney;
+ * none blocks AI agents. Probed and left out: BBC Brasil and UOL (block the major AI agents),
+ * Estadão (12 AI agents), CartaCapital and Gazeta do Povo (some), g1, O Globo, Valor and
+ * Metrópoles (403), Brasil de Fato and R7 (404), Correio Braziliense (empty feed), Poder360
+ * (feed stale by 6 days).
  */
 export interface RssSource {
   id: string;
@@ -307,6 +313,32 @@ export const RSS_SOURCES: RssSource[] = [
     publisherName: 'Folha de S.Paulo',
     publisherDomain: 'folha.uol.com.br',
     url: 'https://feeds.folha.uol.com.br/emcimadahora/rss091.xml',
+    homeCountry: 'BR',
+    language: 'pt',
+  },
+  // Brazil (2026-11-20): Folha was the only Brazilian feed, and its robots.txt blocks ~10 AI
+  // agents. These three allow AI agents in robots.txt and serve current feeds.
+  {
+    id: 'agencia-brasil',
+    publisherName: 'Agência Brasil',
+    publisherDomain: 'agenciabrasil.ebc.com.br',
+    url: 'https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml',
+    homeCountry: 'BR',
+    language: 'pt',
+  },
+  {
+    id: 'cnn-brasil',
+    publisherName: 'CNN Brasil',
+    publisherDomain: 'cnnbrasil.com.br',
+    url: 'https://www.cnnbrasil.com.br/feed/',
+    homeCountry: 'BR',
+    language: 'pt',
+  },
+  {
+    id: 'infomoney',
+    publisherName: 'InfoMoney',
+    publisherDomain: 'infomoney.com.br',
+    url: 'https://www.infomoney.com.br/feed/',
     homeCountry: 'BR',
     language: 'pt',
   },
