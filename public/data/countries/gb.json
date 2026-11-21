@@ -3,9 +3,9 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 98,
+  "viralScore": 87,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-21T17:18:00Z",
+  "generatedAt": "2026-11-21T20:18:00Z",
   "clusters": [
     {
       "slug": "manchester-united-sets-premier-league-record",
@@ -13,8 +13,8 @@
       "headline": "Manchester United Maintains Record After Recent Premier League Draw",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 95,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Manchester United established a new league record during their recent 4-4 draw against Aston Villa.",
         "The club remains a focal point of Premier League activity as other major teams prepare for upcoming weekend fixtures."
@@ -25,12 +25,46 @@
       }
     },
     {
+      "slug": "barnham-village-symbolic-independence-vote",
+      "canonicalPath": "/news/gb/barnham-village-symbolic-independence-vote/",
+      "headline": "Barnham Residents Vote Symbolically To Leave The United Kingdom",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 77,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Residents of Barnham in Suffolk participated in a symbolic referendum to secede from the United Kingdom.",
+        "The vote follows government proposals to accommodate 931 asylum seekers at a nearby decommissioned Royal Air Force base."
+      ],
+      "primarySource": {
+        "publisherName": "The Independent",
+        "articleUrl": "https://www.independent.co.uk/news/uk/home-news/barnham-asylum-seeker-raf-poll-referendum-b3089111.html"
+      }
+    },
+    {
+      "slug": "wales-defeat-all-blacks-rugby",
+      "canonicalPath": "/news/gb/wales-defeat-all-blacks-rugby/",
+      "headline": "New Zealand All Blacks Face Pressure Following Losses To Wales And England",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Wales achieved their first victory against New Zealand since 1953, ending a 73-year winless streak.",
+        "England recently secured a five-try win against the All Blacks, leading to increased pressure on coach Rennie."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/sport/20261114-wales-claim-historic-victory-against-all-blacks-for-first-time-since-1953"
+      }
+    },
+    {
       "slug": "prime-minister-burnham-addresses-brexit-impact",
       "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
       "headline": "Prime Minister Andy Burnham Initiates New Informal EU Relationship",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Prime Minister Andy Burnham has initiated informal discussions with Brussels regarding the future of the UK-EU relationship.",
@@ -42,63 +76,12 @@
       }
     },
     {
-      "slug": "ukhsa-issues-cold-weather-alerts",
-      "canonicalPath": "/news/gb/ukhsa-issues-cold-weather-alerts/",
-      "headline": "UKHSA Extends Cold Weather Alerts As Temperatures Drop To Minus 10C",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The UKHSA has extended active cold weather alerts following a sharp decline in temperatures nationwide.",
-        "Overnight temperatures reached minus 10C, surpassing the previous seasonal low of minus 8.4C recorded in Scotland."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/weather/articles/cqe879916895o"
-      }
-    },
-    {
-      "slug": "david-walliams-faces-misconduct-allegations-2",
-      "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
-      "headline": "Metropolitan Police Launch Investigation Into Comedian David Walliams",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 67,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Metropolitan Police have initiated an investigation into comedian and author David Walliams regarding reported sexual offences.",
-        "Walliams has formally denied the allegations of grooming and sexual misconduct, asserting that he has not violated any laws."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o"
-      }
-    },
-    {
-      "slug": "england-beats-new-zealand-nations-championship",
-      "canonicalPath": "/news/gb/england-beats-new-zealand-nations-championship/",
-      "headline": "England Defeats New Zealand In Nations Championship Rugby Match",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 67,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "England defeated New Zealand 37-12 at Twickenham during the Nations Championship tournament.",
-        "The result marks a record-breaking margin of victory for England against the All Blacks."
-      ],
-      "primarySource": {
-        "publisherName": "Evening Standard",
-        "articleUrl": "https://www.standard.co.uk/sport/rugby/england-vs-new-zealand-live-stream-latest-score-updates-result-b1305810.html"
-      }
-    },
-    {
       "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
       "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
       "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 66,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
@@ -110,13 +93,81 @@
       }
     },
     {
+      "slug": "david-walliams-faces-misconduct-allegations-2",
+      "canonicalPath": "/news/gb/david-walliams-faces-misconduct-allegations-2/",
+      "headline": "Metropolitan Police Launch Investigation Into Comedian David Walliams",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Metropolitan Police have initiated an investigation into comedian and author David Walliams regarding reported sexual offences.",
+        "Walliams has formally denied the allegations of grooming and sexual misconduct, asserting that he has not violated any laws."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o"
+      }
+    },
+    {
+      "slug": "ukhsa-issues-cold-weather-alerts",
+      "canonicalPath": "/news/gb/ukhsa-issues-cold-weather-alerts/",
+      "headline": "UKHSA Extends Cold Weather Alerts As Temperatures Drop To Minus 10C",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The UKHSA has extended active cold weather alerts following a sharp decline in temperatures nationwide.",
+        "Overnight temperatures reached minus 10C, surpassing the previous seasonal low of minus 8.4C recorded in Scotland."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/weather/articles/cqe879916895o"
+      }
+    },
+    {
+      "slug": "pochettino-linked-to-manchester-united-manager",
+      "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
+      "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Mauricio Pochettino has started his role as the new head coach of Manchester United.",
+        "The appointment follows the departure of previous manager Michael Carrick amidst the club's struggles."
+      ],
+      "primarySource": {
+        "publisherName": "Tempo",
+        "articleUrl": "https://en.tempo.co/read/2123500/a-revolving-door-of-manchester-united-managers-will-it-ever-settle"
+      }
+    },
+    {
+      "slug": "england-beats-new-zealand-nations-championship",
+      "canonicalPath": "/news/gb/england-beats-new-zealand-nations-championship/",
+      "headline": "England Defeats New Zealand In Nations Championship Rugby Match",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "England defeated New Zealand 37-12 at Twickenham during the Nations Championship tournament.",
+        "The result marks a record-breaking margin of victory for England against the All Blacks."
+      ],
+      "primarySource": {
+        "publisherName": "Evening Standard",
+        "articleUrl": "https://www.standard.co.uk/sport/rugby/england-vs-new-zealand-live-stream-latest-score-updates-result-b1305810.html"
+      }
+    },
+    {
       "slug": "bradford-councillor-ibrar-ali-stabbing-arrest",
       "canonicalPath": "/news/gb/bradford-councillor-ibrar-ali-stabbing-arrest/",
       "headline": "Man Charged With Attempted Murder Following Stabbing Of Ibrar Ali",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Arfan Ali has been formally charged with attempted murder in connection with the attack on Ibrar Ali.",
         "The incident occurred while the Bradford councillor was engaging in door-knocking activities."
@@ -132,8 +183,8 @@
       "headline": "Princess Of Wales Discusses Cancer Experience In New Documentary",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Princess of Wales will appear in a new documentary titled Heal airing on BBC One on November 29.",
         "Footage shows the Princess undertaking the Three Peaks Challenge while reflecting on her personal health journey."
@@ -141,91 +192,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/c85y14zvexz9o"
-      }
-    },
-    {
-      "slug": "pochettino-linked-to-manchester-united-manager",
-      "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
-      "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 62,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Mauricio Pochettino has started his role as the new head coach of Manchester United.",
-        "The appointment follows the departure of previous manager Michael Carrick amidst the club's struggles."
-      ],
-      "primarySource": {
-        "publisherName": "Tempo",
-        "articleUrl": "https://en.tempo.co/read/2123500/a-revolving-door-of-manchester-united-managers-will-it-ever-settle"
-      }
-    },
-    {
-      "slug": "wales-defeat-all-blacks-rugby",
-      "canonicalPath": "/news/gb/wales-defeat-all-blacks-rugby/",
-      "headline": "Wales Clinches Historic Rugby Victory Against The All Blacks",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 62,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Wales achieved a 35-28 victory over the New Zealand All Blacks in the Nations Championship.",
-        "This win represents the first time Wales has defeated the All Blacks since 1953."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/sport/20261114-wales-claim-historic-victory-against-all-blacks-for-first-time-since-1953"
-      }
-    },
-    {
-      "slug": "xabi-alonso-chelsea-leeds-defeat",
-      "canonicalPath": "/news/gb/xabi-alonso-chelsea-leeds-defeat/",
-      "headline": "Xabi Alonso Under Pressure Following Chelsea Home Defeat To Leeds",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 60,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Chelsea suffered a 4-1 home defeat against Leeds United.",
-        "The team has recorded only one victory in their previous five matches."
-      ],
-      "primarySource": {
-        "publisherName": "Evening Standard",
-        "articleUrl": "https://www.standard.co.uk/sport/football/chelsea-fc-alonso-transfer-hint-injuries-b1305749.html"
-      }
-    },
-    {
-      "slug": "uk-and-eu-negotiations-reset",
-      "canonicalPath": "/news/gb/uk-and-eu-negotiations-reset/",
-      "headline": "United Kingdom And European Union Finalize Agreement To Reset Ties",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 59,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Andy Burnham and European leaders concluded a landmark deal to improve relations following years of post-Brexit tension.",
-        "The agreement follows intensive negotiations and a final summit held in Brussels to finalize the framework for future cooperation."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/uk-eu-reset-talks-andy-burnham-food-farming-tuition-fees"
-      }
-    },
-    {
-      "slug": "uk-minister-warns-media-sexual-abuse",
-      "canonicalPath": "/news/gb/uk-minister-warns-media-sexual-abuse/",
-      "headline": "UK Minister Demands Media Industry Address Systemic Sexual Abuse",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Culture Secretary Lisa Nandy stated that the time for the media industry to address abuse allegations has reached a critical point.",
-        "The minister reported that numerous individuals from the media sector have reached out to share their personal experiences."
-      ],
-      "primarySource": {
-        "publisherName": "theleader.com.au",
-        "articleUrl": "https://www.theleader.com.au/story/9387816/minister-warns-uk-media-still-has-sexual-abuse-problem/"
       }
     },
     {
@@ -246,20 +212,20 @@
       }
     },
     {
-      "slug": "danny-tommo-guilty-plea-dinghy-damage",
-      "canonicalPath": "/news/gb/danny-tommo-guilty-plea-dinghy-damage/",
-      "headline": "Activist Daniel Thomas Sentenced To 15 Months For Dinghy Damage",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 53,
+      "slug": "uk-and-eu-negotiations-reset",
+      "canonicalPath": "/news/gb/uk-and-eu-negotiations-reset/",
+      "headline": "United Kingdom And European Union Finalize Agreement To Reset Ties",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Daniel Thomas was sentenced to 15 months in prison at Portsmouth Crown Court.",
-        "The activist pleaded guilty to charges of criminal damage related to the slashing of a migrant dinghy."
+        "Prime Minister Andy Burnham and European leaders concluded a landmark deal to improve relations following years of post-Brexit tension.",
+        "The agreement follows intensive negotiations and a final summit held in Brussels to finalize the framework for future cooperation."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c6x20x380z12o"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/uk-eu-reset-talks-andy-burnham-food-farming-tuition-fees"
       }
     },
     {
@@ -268,7 +234,7 @@
       "headline": "Two Men Die After Microlight Glider Crashes Into Loch Leven, Scotland",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 53,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Two men were confirmed dead following a microlight glider crash into Loch Leven near Kinross.",
@@ -277,6 +243,73 @@
       "primarySource": {
         "publisherName": "Evening Standard",
         "articleUrl": "https://www.standard.co.uk/news/uk/fife-emergency-services-police-scotland-hm-coastguard-scottish-fire-and-rescue-service-b1305736.html"
+      }
+    },
+    {
+      "slug": "king-charles-leads-annual-remembrance-service",
+      "canonicalPath": "/news/gb/king-charles-leads-annual-remembrance-service/",
+      "headline": "King Charles Leads National Remembrance Service At The London Cenotaph",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "King Charles presided over the annual Remembrance Sunday ceremony held at the Cenotaph in central London.",
+        "Approximately 10,000 military veterans participated in the event, including a small group of surviving World War Two personnel."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/videos/cw1l307v4edlo"
+      }
+    },
+    {
+      "slug": "uk-minister-warns-media-sexual-abuse",
+      "canonicalPath": "/news/gb/uk-minister-warns-media-sexual-abuse/",
+      "headline": "UK Minister Demands Media Industry Address Systemic Sexual Abuse",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Culture Secretary Lisa Nandy stated that the time for the media industry to address abuse allegations has reached a critical point.",
+        "The minister reported that numerous individuals from the media sector have reached out to share their personal experiences."
+      ],
+      "primarySource": {
+        "publisherName": "theleader.com.au",
+        "articleUrl": "https://www.theleader.com.au/story/9387816/minister-warns-uk-media-still-has-sexual-abuse-problem/"
+      }
+    },
+    {
+      "slug": "xabi-alonso-chelsea-leeds-defeat",
+      "canonicalPath": "/news/gb/xabi-alonso-chelsea-leeds-defeat/",
+      "headline": "Chelsea 1-4 Leeds: Dismal Blues roundly beaten as scrutiny on Xabi Alonso grows",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Evening Standard reports: Chelsea 1-4 Leeds: Dismal Blues roundly beaten as scrutiny on Xabi Alonso grows"
+      ],
+      "primarySource": {
+        "publisherName": "Evening Standard",
+        "articleUrl": "https://www.standard.co.uk/sport/football/chelsea-fc-alonso-transfer-hint-injuries-b1305749.html"
+      }
+    },
+    {
+      "slug": "danny-tommo-guilty-plea-dinghy-damage",
+      "canonicalPath": "/news/gb/danny-tommo-guilty-plea-dinghy-damage/",
+      "headline": "Activist Daniel Thomas Sentenced To 15 Months For Dinghy Damage",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Daniel Thomas was sentenced to 15 months in prison at Portsmouth Crown Court.",
+        "The activist pleaded guilty to charges of criminal damage related to the slashing of a migrant dinghy."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c6x20x380z12o"
       }
     },
     {
@@ -311,40 +344,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cm2d6kk0wzw4o"
-      }
-    },
-    {
-      "slug": "uk-eu-negotiations-parliamentary-oversight",
-      "canonicalPath": "/news/gb/uk-eu-negotiations-parliamentary-oversight/",
-      "headline": "Prime Minister Andy Burnham Secures New Trade Deal With The EU",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Andy Burnham finalised a new agreement with EU officials covering food, agriculture, emissions trading, and a youth scheme.",
-        "The deal aims to reduce trade barriers and costs, including those affecting plant trade and the impact of the Irish Sea border."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo"
-      }
-    },
-    {
-      "slug": "proposed-uk-welfare-reform-review",
-      "canonicalPath": "/news/gb/proposed-uk-welfare-reform-review/",
-      "headline": "Alan Milburn Proposals Aim To Address Youth Unemployment In The UK",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A major review led by Alan Milburn recommends a system overhaul to support the entry of approximately 440,000 young people into the labor market.",
-        "Proposals include a shift in welfare benefits for young people, potentially replacing some payments with local funds for disabled individuals."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwn70l1628l0o"
       }
     }
   ]

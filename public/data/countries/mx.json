@@ -3,17 +3,34 @@
   "name": "Mexico",
   "slug": "mexico",
   "region": "North America",
-  "viralScore": 79,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-21T17:18:00Z",
+  "viralScore": 88,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-21T20:18:00Z",
   "clusters": [
+    {
+      "slug": "mexico-arrests-jalisco-cartel-leader",
+      "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
+      "headline": "Mexican Military Captures Cartel Leader El Chapo Isidro In Sinaloa",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 85,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Mexican special forces captured Fausto Isidro Meza Flores, commonly known as El Chapo Isidro, in a raid in Sinaloa.",
+        "The suspect was listed among the FBI’s top 10 most wanted fugitives and led an alleged faction of the Beltran Leyva gang."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel?traffic_source=rss"
+      }
+    },
     {
       "slug": "mexican-military-arrests-cartel-leader",
       "canonicalPath": "/news/mx/mexican-military-arrests-cartel-leader/",
       "headline": "Mexican Military Captures FBI Most Wanted Leader Chapo Isidro",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 76,
+      "viralScore": 78,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Fausto Isidro Meza Flores, known as Chapo Isidro, was detained by Mexican military personnel following a firearm exchange.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "mexico-arrests-jalisco-cartel-leader",
-      "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-      "headline": "Mexican Military Captures Cartel Leader El Chapo Isidro In Sinaloa",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 71,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Mexican special forces successfully apprehended alleged cartel leader El Chapo Isidro during a military operation in Sinaloa.",
-        "The detainee is a high-profile fugitive included on the FBI's most wanted list and faces multiple drug-related charges in the United States."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel?traffic_source=rss"
-      }
-    },
-    {
       "slug": "mexican-military-captures-fausto-isidro-meza-flores",
       "canonicalPath": "/news/mx/mexican-military-captures-fausto-isidro-meza-flores/",
       "headline": "Mexican Military Captures Drug Lord Fausto Isidro Meza Flores",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 43,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Mexican military forces conducted an operation in Sinaloa to apprehend Fausto Isidro Meza Flores.",
@@ -64,7 +64,7 @@
       "headline": "Minnesota Vikings And San Francisco 49ers Prepare For Mexico City",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Minnesota Vikings and San Francisco 49ers are set to play at Estadio Azteca this Sunday at 7:30 p.m.",
@@ -81,7 +81,7 @@
       "headline": "President Sheinbaum Conducts Diplomatic Meetings In China Summit",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 32,
+      "viralScore": 27,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Sheinbaum and leader Xi Jinping committed to strengthening Mexico-China cooperation in trade, technology, and tourism.",
@@ -98,8 +98,8 @@
       "headline": "Mexico News Daily CEO Reflects On US Midterm Election Implications",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 26,
-      "intensityTier": "active",
+      "viralScore": 23,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Travis Bembenek of Mexico News Daily addressed the impact of recent US midterm elections.",
         "The perspective highlights a potential turning point for bilateral cooperation."

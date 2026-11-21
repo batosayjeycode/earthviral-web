@@ -1,38 +1,50 @@
 {
-  "batchId": "batch-202611211718",
-  "generatedAt": "2026-11-21T17:18:00Z",
-  "nextUpdateAt": "2026-11-21T20:17:00Z",
+  "batchId": "batch-202611212018",
+  "generatedAt": "2026-11-21T20:18:00Z",
+  "nextUpdateAt": "2026-11-21T23:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 33,
-    "viralTopics": 622,
-    "globalIndex": 80
+    "activeCountries": 32,
+    "viralTopics": 608,
+    "globalIndex": 81
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 41,
     "feedsFailed": [
       "detik: fetch failed",
-      "gdelt-indonesia: fetch failed",
-      "gdelt-unitedkingdom: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1593,
-    "newClusters": 6,
-    "updatedClusters": 73,
+    "articlesFetched": 1541,
+    "newClusters": 9,
+    "updatedClusters": 65,
     "retiredClusters": 0,
-    "aiCalls": 22,
-    "fallbackSummaries": 0,
+    "aiCalls": 30,
+    "fallbackSummaries": 2,
     "trendTitles": {
-      "targeted": 2,
+      "targeted": 1,
       "inTitle": 1
     },
     "titleNames": {
-      "kept": 5,
-      "headline": 1,
-      "previous": 2,
-      "missing": 1,
-      "no-anchor": 7
+      "kept": 11,
+      "headline": 0,
+      "previous": 4,
+      "missing": 0,
+      "no-anchor": 4
     },
-    "durationMs": 184334
+    "aiFailures": {
+      "rate-limit": 2
+    },
+    "aiFailureSamples": [
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+      },
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+      }
+    ],
+    "durationMs": 146492
   }
 }
