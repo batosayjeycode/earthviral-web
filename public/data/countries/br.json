@@ -3,9 +3,9 @@
   "name": "Brazil",
   "slug": "brazil",
   "region": "South America",
-  "viralScore": 86,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-20T23:18:00Z",
+  "viralScore": 81,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T01:35:00Z",
   "clusters": [
     {
       "slug": "global-reporting-initiative-returns-brazil",
@@ -13,7 +13,7 @@
       "headline": "Federal Police Report Clears Justice Mendonça In Banco Master Case",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 83,
+      "viralScore": 78,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Federal Police reported to the Supreme Court that no direct messages were found between Justice André Mendonça and banker Daniel Vorcaro.",
@@ -30,7 +30,7 @@
       "headline": "Jair Bolsonaro Hospitalized In Brasilia With Abdominal Pain",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Former President Jair Bolsonaro was admitted to the DF Star Hospital in Brasilia on Friday.",
@@ -42,13 +42,30 @@
       }
     },
     {
+      "slug": "quem-ama-cuida-series-updates",
+      "canonicalPath": "/news/br/quem-ama-cuida-series-updates/",
+      "headline": "Dina Struck By Vehicle After Confronting Pilar In Quem Ama Cuida",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Felipe discovers that Mau Mau is the brother of Adriana.",
+        "Brigitte initiates legal action against Pilar to recover stolen inheritance funds."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/televisao/2026/11/apos-entrar-na-justica-contra-pilar-brigitte-vai-reaver-dinheiro-de-heranca-em-quem-ama-cuida.shtml"
+      }
+    },
+    {
       "slug": "trump-demands-philippines-replace-brazilian-imports",
       "canonicalPath": "/news/br/trump-demands-philippines-replace-brazilian-imports/",
       "headline": "Donald Trump Demands Philippines Replace Brazilian Farm Imports",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "President Donald Trump stated he ordered the Philippines to cease agricultural imports from Brazil.",
         "The new trade directives are scheduled to take effect beginning January 1, 2026."
@@ -59,63 +76,12 @@
       }
     },
     {
-      "slug": "moraes-upholds-flavio-bolsonaro-travel-ban",
-      "canonicalPath": "/news/br/moraes-upholds-flavio-bolsonaro-travel-ban/",
-      "headline": "Supreme Court Justice Moraes Upholds Travel Ban For Flávio Bolsonaro",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Justice Alexandre de Moraes voted to keep the ban prohibiting Senator Flávio Bolsonaro from leaving the country.",
-        "The ruling maintains the order for the cancellation and surrender of the senator's passports."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-vota-no-stf-para-manter-passaportes-de-flavio-bolsonaro-cancelados.shtml"
-      }
-    },
-    {
-      "slug": "flamengo-e-palmeiras-match-preparation",
-      "canonicalPath": "/news/br/flamengo-e-palmeiras-match-preparation/",
-      "headline": "Flamengo And Palmeiras Prepare For Brasileirao Match This Saturday",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Palmeiras and Flamengo are scheduled to play a national match at Nubank Parque this Saturday at 16:30 local time.",
-        "Flamengo has the opportunity to clinch the 2026 Campeonato Brasileiro title during this upcoming away game."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/esporte/2026/11/com-uma-mao-na-taca-flamengo-tenta-fazer-a-festa-na-casa-do-palmeiras.shtml"
-      }
-    },
-    {
-      "slug": "sec-investigates-nvidia-accounting-jensen-huang",
-      "canonicalPath": "/news/br/sec-investigates-nvidia-accounting-jensen-huang/",
-      "headline": "SEC Investigates Nvidia Accounting Amidst Jensen Huang Controversy",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The United States Securities and Exchange Commission has launched an inquiry into the accounting practices of chip manufacturer Nvidia.",
-        "Former CEO Jensen Huang is scheduled to provide testimony to three United States House of Representatives committees on December 1."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/internacional/trump-diz-que-adoraria-se-ex-ceo-da-nvidia-tivesse-uma-segunda-chance/"
-      }
-    },
-    {
       "slug": "storm-kills-three-in-tupancireta",
       "canonicalPath": "/news/br/storm-kills-three-in-tupancireta/",
       "headline": "Storm In Tupanciretã Kills Three Including Former Councilman",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 55,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A severe storm struck the municipality of Tupanciretã in Rio Grande do Sul during the early hours of Friday.",
@@ -129,18 +95,86 @@
     {
       "slug": "uk-eu-post-brexit-cooperation-agreements",
       "canonicalPath": "/news/br/uk-eu-post-brexit-cooperation-agreements/",
-      "headline": "United Kingdom And European Union Establish New Post-Brexit Pacts",
+      "headline": "United Kingdom And European Union Finalize New Cooperation Pacts",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "New agreements aim to streamline food trade and increase mobility for young people between the UK and the European Union.",
-        "Both parties agreed to link their emissions trading markets by 2028 to improve liquidity and reduce carbon border tariff costs."
+        "The United Kingdom and European Union concluded a summit in Brussels aimed at strengthening bilateral cooperation post-Brexit.",
+        "New agreements establish frameworks for food trade, mobility, and the planned integration of carbon markets starting in 2028."
       ],
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
         "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/reino-unido-e-uniao-europeia-iniciam-reaproximacao-apos-brexit-com-acordos-sobre-alimentos-e-mobilidade.shtml"
+      }
+    },
+    {
+      "slug": "flavio-dino-votes-indict-van-hattem",
+      "canonicalPath": "/news/br/flavio-dino-votes-indict-van-hattem/",
+      "headline": "Supreme Court Justice Flávio Dino Votes To Indict Marcel Van Hattem",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Justice Flávio Dino voted to indict Deputy Marcel Van Hattem on charges of slander and injury against a Federal Police delegate.",
+        "The legal case was initiated following public comments made by the deputy regarding the delegate's work on inquiries involving Jair Bolsonaro."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/presidente-do-novo-condena-voto-de-dino-contra-van-hattem-anormalidade-democratica.shtml"
+      }
+    },
+    {
+      "slug": "moraes-upholds-flavio-bolsonaro-travel-ban",
+      "canonicalPath": "/news/br/moraes-upholds-flavio-bolsonaro-travel-ban/",
+      "headline": "Supreme Court Justice Moraes Upholds Travel Ban For Flávio Bolsonaro",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Justice Alexandre de Moraes voted to keep the ban prohibiting Senator Flávio Bolsonaro from leaving the country.",
+        "The ruling maintains the order for the cancellation and surrender of the senator's passports."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/11/moraes-vota-no-stf-para-manter-passaportes-de-flavio-bolsonaro-cancelados.shtml"
+      }
+    },
+    {
+      "slug": "sec-investigates-nvidia-accounting-jensen-huang",
+      "canonicalPath": "/news/br/sec-investigates-nvidia-accounting-jensen-huang/",
+      "headline": "SEC Investigates Nvidia Accounting Amidst Jensen Huang Controversy",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The United States Securities and Exchange Commission has launched an inquiry into the accounting practices of chip manufacturer Nvidia.",
+        "Former CEO Jensen Huang is scheduled to provide testimony to three United States House of Representatives committees on December 1."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/internacional/trump-diz-que-adoraria-se-ex-ceo-da-nvidia-tivesse-uma-segunda-chance/"
+      }
+    },
+    {
+      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
+      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
+      "headline": "Brazil Senate Approves Fiscal Plan As Lula Faces Economic Debate",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Brazilian Senate approved a fiscal adjustment package that is now under consideration in the Chamber of Deputies.",
+        "The proposal aims to help meet the 2027 primary result target, though analysts disagree on its ability to ensure long-term public debt stability."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/plano-de-ajuste-do-governo-lula-retoma-medida-ja-rejeitada-pelo-congresso.shtml"
       }
     },
     {
@@ -149,7 +183,7 @@
       "headline": "Macaulay Culkin Returns For New Home Alone Film At 20th Century Studios",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 52,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A new Home Alone film is reportedly in early development at 20th Century Studios.",
@@ -161,12 +195,46 @@
       }
     },
     {
+      "slug": "flamengo-e-palmeiras-match-preparation",
+      "canonicalPath": "/news/br/flamengo-e-palmeiras-match-preparation/",
+      "headline": "Flamengo And Palmeiras Prepare For Brasileirao Match This Saturday",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Palmeiras and Flamengo are scheduled to play a national match at Nubank Parque this Saturday at 16:30 local time.",
+        "Flamengo has the opportunity to clinch the 2026 Campeonato Brasileiro title during this upcoming away game."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/esporte/2026/11/com-uma-mao-na-taca-flamengo-tenta-fazer-a-festa-na-casa-do-palmeiras.shtml"
+      }
+    },
+    {
+      "slug": "petrobras-pipeline-sale-refund-dispute",
+      "canonicalPath": "/news/br/petrobras-pipeline-sale-refund-dispute/",
+      "headline": "Petrobras Faces Potential Refund Over Previous Gas Pipeline Sale",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Petrobras may be required to reimburse 3.6 billion reais to buyers of a gas pipeline network.",
+        "The potential payment originates from a specific contract clause related to the 2019 sale of TAG."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-pode-ter-que-devolver-r-36-bi-a-compradores-de-gasodutos-vendidos-no-governo-bolsonaro.shtml"
+      }
+    },
+    {
       "slug": "brazil-senate-advances-lula-fiscal-package",
       "canonicalPath": "/news/br/brazil-senate-advances-lula-fiscal-package/",
       "headline": "Brazilian Chamber of Deputies Prepares Vote on Lula Fiscal Package",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Chamber of Deputies is expected to hold a vote on the government's fiscal adjustment proposal this coming Monday.",
@@ -183,7 +251,7 @@
       "headline": "Proposed Changes To Six-By-One Labor Schedules Spark Debate In Brazil",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 44,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Public debate centers on whether ending the 6x1 schedule will improve worker well-being without causing economic harm.",
@@ -195,29 +263,12 @@
       }
     },
     {
-      "slug": "quem-ama-cuida-series-updates",
-      "canonicalPath": "/news/br/quem-ama-cuida-series-updates/",
-      "headline": "Dina Struck By Vehicle After Confronting Pilar In Quem Ama Cuida",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Felipe discovers that Mau Mau is the brother of Adriana.",
-        "Brigitte initiates legal action against Pilar to recover stolen inheritance funds."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/televisao/2026/11/apos-entrar-na-justica-contra-pilar-brigitte-vai-reaver-dinheiro-de-heranca-em-quem-ama-cuida.shtml"
-      }
-    },
-    {
       "slug": "robert-pattinson-cast-as-james-bond-2",
       "canonicalPath": "/news/br/robert-pattinson-cast-as-james-bond-2/",
       "headline": "Jeff Bezos Confirms Role In Selecting Robert Pattinson As James Bond",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 41,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Amazon executive Jeff Bezos stated he participated in the selection process for the next actor to portray James Bond.",
@@ -234,7 +285,7 @@
       "headline": "Jensen Huang Resigns As Nvidia CEO Amidst Ongoing Personal Scandal",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 40,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang has stepped down as CEO of Nvidia following public reports regarding his personal life.",
@@ -251,7 +302,7 @@
       "headline": "Brazilian Influencer Gabriel Félix And Bodybuilder Itemberg Nunes Die",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 36,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Influencer Gabriel Félix died at age 29, as confirmed by his fiancée, fellow creator Isabelle Abreu.",
@@ -260,23 +311,6 @@
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
         "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/morre-nilton-travesso-um-dos-grandes-diretores-brasileiros-aos-92-anos.shtml"
-      }
-    },
-    {
-      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
-      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
-      "headline": "Lula Government Faces Political Strain Over Fiscal Adjustment Plan",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 33,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Government ministers are urging the Chamber of Deputies to prioritize voting on the fiscal adjustment package following Senate review.",
-        "Financial analysts indicate the proposed fiscal measures are compatible with the president's current administrative campaign commitments."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/plano-de-ajuste-do-governo-lula-retoma-medida-ja-rejeitada-pelo-congresso.shtml"
       }
     },
     {
@@ -302,7 +336,7 @@
       "headline": "Director Curry Baker Gains Global Attention For New Film Obsession",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 28,
+      "viralScore": 25,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The low-budget film Obsession has achieved significant global revenue exceeding 500 million dollars.",
@@ -311,40 +345,6 @@
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
         "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/obsessao-e-minisserie-os-altruistas-o-que-ver-na-tv-e-no-streaming-nesta-semana.shtml"
-      }
-    },
-    {
-      "slug": "marcos-pitombo-returns-to-tv-globo",
-      "canonicalPath": "/news/br/marcos-pitombo-returns-to-tv-globo/",
-      "headline": "Marcos Pitombo Returns To TV Globo For Upcoming Evening Telenovela",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 26,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Actor Marcos Pitombo has signed on to appear in the new TV Globo production titled Elas que Lutem.",
-        "This role marks the actor's return to the network's telenovela lineup after an absence that began in 2020."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/colunistas/outro-canal/2026/11/marcos-pitombo-volta-a-globo-apos-sete-anos-para-fazer-nova-novela-das-sete.shtml"
-      }
-    },
-    {
-      "slug": "espn-covers-copa-sudamericana-final",
-      "canonicalPath": "/news/br/espn-covers-copa-sudamericana-final/",
-      "headline": "ESPN Prepares Extensive Coverage For Copa Sudamericana Final Match",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 24,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "ESPN has finalized plans to broadcast the upcoming Copa Sudamericana final.",
-        "Ten video production professionals will be assigned to cover the event."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/colunistas/outro-canal/2026/11/espn-envia-dez-profissionais-para-final-da-copa-sul-americana-com-atletico-mineiro.shtml"
       }
     }
   ]
