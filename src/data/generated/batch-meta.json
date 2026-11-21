@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611210818",
-  "generatedAt": "2026-11-21T08:18:00Z",
-  "nextUpdateAt": "2026-11-21T11:17:00Z",
+  "batchId": "batch-202611211118",
+  "generatedAt": "2026-11-21T11:18:00Z",
+  "nextUpdateAt": "2026-11-21T14:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 31,
-    "viralTopics": 613,
-    "globalIndex": 81
+    "viralTopics": 607,
+    "globalIndex": 82
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -14,32 +14,36 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1712,
-    "newClusters": 7,
-    "updatedClusters": 84,
+    "articlesFetched": 1693,
+    "newClusters": 12,
+    "updatedClusters": 91,
     "retiredClusters": 0,
-    "aiCalls": 31,
-    "fallbackSummaries": 1,
+    "aiCalls": 35,
+    "fallbackSummaries": 2,
     "trendTitles": {
       "targeted": 3,
-      "inTitle": 3
+      "inTitle": 2
     },
     "titleNames": {
-      "kept": 11,
-      "headline": 0,
-      "previous": 3,
+      "kept": 13,
+      "headline": 1,
+      "previous": 2,
       "missing": 1,
-      "no-anchor": 8
+      "no-anchor": 6
     },
     "aiFailures": {
-      "rate-limit": 1
+      "rate-limit": 2
     },
     "aiFailureSamples": [
       {
         "category": "rate-limit",
         "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+      },
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
       }
     ],
-    "durationMs": 171617
+    "durationMs": 271511
   }
 }
