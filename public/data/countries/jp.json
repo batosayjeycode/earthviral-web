@@ -3,10 +3,27 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 47,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-21T02:18:00Z",
+  "viralScore": 61,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T05:18:00Z",
   "clusters": [
+    {
+      "slug": "japan-pm-takaichi-diplomatic-summits",
+      "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
+      "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Prime Minister Sanae Takaichi held her first formal dialogue with Vladimir Putin to discuss the repatriation of Japanese journalists.",
+        "Takaichi participated in various bilateral meetings at the APEC summit, including discussions aimed at improving relations with South Korean leadership."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010000315"
+      }
+    },
     {
       "slug": "hajime-moriyasu-tenure-ends-japan",
       "canonicalPath": "/news/jp/hajime-moriyasu-tenure-ends-japan/",
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "Antara",
         "articleUrl": "https://www.antaranews.com/berita/5861171/jepang-takluk-1-2-kepada-paraguay-pada-laga-terakhir-hajime-moriyasu"
-      }
-    },
-    {
-      "slug": "japan-pm-takaichi-diplomatic-summits",
-      "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
-      "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Sanae Takaichi held her first formal dialogue with Vladimir Putin to discuss the repatriation of Japanese journalists.",
-        "Takaichi participated in various bilateral meetings at the APEC summit, including discussions aimed at improving relations with South Korean leadership."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261117010000315"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "Japan Strengthens Diplomatic Ties With Chile And Peru Leaders",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Japanese officials held bilateral summits with the presidents of Chile and Peru on Friday.",
@@ -161,23 +161,6 @@
       }
     },
     {
-      "slug": "japan-coach-eddie-jones-scotland-clash",
-      "canonicalPath": "/news/jp/japan-coach-eddie-jones-scotland-clash/",
-      "headline": "Japan Coach Eddie Jones Commends Scotland Manager Gregor Townsend",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 19,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Japan head coach Eddie Jones spoke about Scotland's Gregor Townsend before their upcoming meeting.",
-        "The two teams are scheduled to play each other in a Nations Championship match this Saturday."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/20/more-sports/eddie-jones-praises-scotland-coach/"
-      }
-    },
-    {
       "slug": "japan-education-programs-us-troops",
       "canonicalPath": "/news/jp/japan-education-programs-us-troops/",
       "headline": "Japan Proposes Education Initiatives For U.S. Troops In Okinawa",
@@ -192,6 +175,23 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/07/japan/crime-legal/us-japan-okinawa-crime/"
+      }
+    },
+    {
+      "slug": "japan-coach-eddie-jones-scotland-clash",
+      "canonicalPath": "/news/jp/japan-coach-eddie-jones-scotland-clash/",
+      "headline": "Japan Coach Eddie Jones Commends Scotland Manager Gregor Townsend",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 18,
+      "intensityTier": "quiet",
+      "aiSummaryBullets": [
+        "Japan head coach Eddie Jones spoke about Scotland's Gregor Townsend before their upcoming meeting.",
+        "The two teams are scheduled to play each other in a Nations Championship match this Saturday."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/20/more-sports/eddie-jones-praises-scotland-coach/"
       }
     },
     {

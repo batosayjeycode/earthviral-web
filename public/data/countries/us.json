@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 86,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-21T02:18:00Z",
+  "viralScore": 78,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T05:18:00Z",
   "clusters": [
     {
       "slug": "anthropic-sets-ipo-share-price",
@@ -13,7 +13,7 @@
       "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 83,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
@@ -25,63 +25,12 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 80,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
-        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/trump-summit-with-xi-and-putin-comes-at-time-of-uncertainty/"
-      }
-    },
-    {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 80,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
-        "The administration dismissed national cyber director Sean Cairncross following widespread criticism regarding the tech outages."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/rubio-says-us-not-under-systemic-attack-after-series-of-tech-outages/"
-      }
-    },
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 71,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
-      }
-    },
-    {
       "slug": "trump-threatens-tech-firms-over-data-centers",
       "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
       "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 71,
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
@@ -93,12 +42,63 @@
       }
     },
     {
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
+        "The administration dismissed national cyber director Sean Cairncross following widespread criticism regarding the tech outages."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/rubio-says-us-not-under-systemic-attack-after-series-of-tech-outages/"
+      }
+    },
+    {
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/trump-summit-with-xi-and-putin-comes-at-time-of-uncertainty/"
+      }
+    },
+    {
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
+      }
+    },
+    {
       "slug": "nvidia-board-considers-ousting-ceo-huang",
       "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
       "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 69,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
@@ -115,7 +115,7 @@
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
@@ -132,7 +132,7 @@
       "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 68,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
@@ -149,7 +149,7 @@
       "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
@@ -166,7 +166,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -183,7 +183,7 @@
       "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
@@ -195,29 +195,12 @@
       }
     },
     {
-      "slug": "uss-theodore-roosevelt-middle-east-deployment",
-      "canonicalPath": "/news/us/uss-theodore-roosevelt-middle-east-deployment/",
-      "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
-        "The deployment occurs against a backdrop of heightened geopolitical friction involving Iran."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116002600320"
-      }
-    },
-    {
       "slug": "hakeem-jeffries-nominated-for-house-speaker",
       "canonicalPath": "/news/us/hakeem-jeffries-nominated-for-house-speaker/",
       "headline": "House Democrats Formally Nominate Hakeem Jeffries For Speaker Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Hakeem Jeffries was elected as the Democratic nominee for U.S. House Speaker following a midterm election victory.",
@@ -226,23 +209,6 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/18/hakeem-jeffries-becomes-first-black-nominee-for-us-house-speaker?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "fiona-the-hippo-dies-cincinnati-zoo",
-      "canonicalPath": "/news/us/fiona-the-hippo-dies-cincinnati-zoo/",
-      "headline": "Fiona The Hippo Dies At The Cincinnati Zoo After Eating A Hat",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Fiona the hippo died at the Cincinnati Zoo after swallowing a knitted hat that fell into her habitat.",
-        "Veterinary staff attempted several medical interventions, including a colonoscopy and the use of a vibration plate, to help the animal."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat"
       }
     },
     {
@@ -277,6 +243,23 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
+      }
+    },
+    {
+      "slug": "uss-theodore-roosevelt-middle-east-deployment",
+      "canonicalPath": "/news/us/uss-theodore-roosevelt-middle-east-deployment/",
+      "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
+        "The deployment occurs against a backdrop of heightened geopolitical friction involving Iran."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261116002600320"
       }
     },
     {
@@ -336,7 +319,7 @@
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Lawmakers are investigating whether the Commerce Secretary bypassed trade blacklists for a firm linked to his family members.",
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
+      }
+    },
+    {
+      "slug": "democrat-wins-alaska-gubernatorial-election",
+      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
+      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
+        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
       }
     }
   ]
