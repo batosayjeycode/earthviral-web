@@ -3,17 +3,34 @@
   "name": "Malaysia",
   "slug": "malaysia",
   "region": "Asia",
-  "viralScore": 58,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-21T05:18:00Z",
+  "viralScore": 71,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T08:18:00Z",
   "clusters": [
+    {
+      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
+      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
+      "headline": "Group Reports Alleged Plot Against Negeri Sembilan MB And Ruler",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A group known as Sekpur lodged a police report at the Dang Wangi station regarding a purported plot to oust the Negeri Sembilan state leadership.",
+        "The report alleges that attempts were made to remove Menteri Besar Ismail Lasim and the Yang Dipertuan Besar, Tuanku Muhriz."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
+      }
+    },
     {
       "slug": "negeri-sembilan-bn-pn-leadership-support",
       "canonicalPath": "/news/my/negeri-sembilan-bn-pn-leadership-support/",
       "headline": "Negeri Sembilan BN And PN Assemblymen Support Leadership Directives",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 55,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Twenty-four state assemblymen from BN and PN confirmed their support for party directives following internal leadership discussions.",
@@ -64,7 +81,7 @@
       "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Home Minister Saifuddin Nasution Ismail is scheduled to address the Dewan Rakyat regarding the specific terms of the house arrest order.",
@@ -76,12 +93,29 @@
       }
     },
     {
+      "slug": "malaysia-accelerates-agricultural-modernisation-efforts",
+      "canonicalPath": "/news/my/malaysia-accelerates-agricultural-modernisation-efforts/",
+      "headline": "Mat Sabu Urges BN To Leave Unity Government Amid Growing Friction",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Minister Mat Sabu stated that the current government remains salvageable if the Prime Minister leads significant internal changes.",
+        "The Amanah leader suggested that Barisan Nasional should exit the administration to provide political clarity before the next general election."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/malaysia-must-speed-up-agricultural-modernisation-to-strengthen-food-security-says-mat-sabu/242273"
+      }
+    },
+    {
       "slug": "prime-minister-anwar-ibrahim-mourns-leader",
       "canonicalPath": "/news/my/prime-minister-anwar-ibrahim-mourns-leader/",
       "headline": "Prime Minister Anwar Ibrahim Expresses Condolences On Death Of Leader",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 44,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Anwar Ibrahim and Wan Azizah Wan Ismail offered condolences for the passing of J. Samivel.",
@@ -90,40 +124,6 @@
       "primarySource": {
         "publisherName": "Malay Mail",
         "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/11/anwar-wan-azizah-convey-condolences-over-melaka-pkr-leader-j-samivels-passing/242894"
-      }
-    },
-    {
-      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
-      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
-      "headline": "Ismail Lasim Confirms Continuation As Negeri Sembilan Menteri Besar",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ismail Lasim remains the Menteri Besar of Negeri Sembilan after rejecting claims of his resignation.",
-        "The leader confirmed his commitment to his official duties following a scheduled audience with the Ruler."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
-      }
-    },
-    {
-      "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
-      "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
-      "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The International Court of Justice has issued a formal ruling stating that genocide occurred against the Rohingya in Myanmar.",
-        "Rohingya refugee leaders have publicly acknowledged the court's decision, expressing gratitude for the legal determination."
-      ],
-      "primarySource": {
-        "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889471-icj-myanmar-committed-genocide-against-rohingya"
       }
     },
     {
@@ -161,37 +161,20 @@
       }
     },
     {
-      "slug": "deutsche-bank-faces-military-financing-allegations",
-      "canonicalPath": "/news/my/deutsche-bank-faces-military-financing-allegations/",
-      "headline": "Deutsche Bank Faces Accusations Regarding Military Financing",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 38,
+      "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
+      "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
+      "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Leaked documents suggest Deutsche Bank provided financial services tied to weapons used in the Gaza conflict.",
-        "The findings allege the institution played a role in funding military equipment used against Palestinians."
+        "The International Court of Justice has issued a formal ruling stating that genocide occurred against the Rohingya in Myanmar.",
+        "Rohingya refugee leaders have publicly acknowledged the court's decision, expressing gratitude for the legal determination."
       ],
       "primarySource": {
         "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889519-bankrolling-attacks-in-gaza-how-a-global-bank-arms-israel"
-      }
-    },
-    {
-      "slug": "malaysia-accelerates-agricultural-modernisation-efforts",
-      "canonicalPath": "/news/my/malaysia-accelerates-agricultural-modernisation-efforts/",
-      "headline": "Mat Sabu Urges BN To Leave Unity Government Amid Growing Friction",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 37,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Minister Mat Sabu stated that the current government remains salvageable if the Prime Minister leads significant internal changes.",
-        "The Amanah leader suggested that Barisan Nasional should exit the administration to provide political clarity before the next general election."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/malaysia-must-speed-up-agricultural-modernisation-to-strengthen-food-security-says-mat-sabu/242273"
+        "articleUrl": "https://www.malaysiakini.com/news/889471-icj-myanmar-committed-genocide-against-rohingya"
       }
     },
     {
@@ -229,23 +212,6 @@
       }
     },
     {
-      "slug": "malaysia-reviews-deutsche-bank-1mdb-files",
-      "canonicalPath": "/news/my/malaysia-reviews-deutsche-bank-1mdb-files/",
-      "headline": "Malaysian Government Reviews Deutsche Bank Files Regarding 1MDB",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Malaysian authorities are scrutinizing internal documents related to Deutsche Bank’s past transactions linked to the 1MDB fund.",
-        "A government task force is reviewing the leaked files to determine if financial institutions failed to perform adequate due diligence."
-      ],
-      "primarySource": {
-        "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889373-msia-to-review-leaked-files-on-deutsche-banks-1mdb-linked-transactions-minister-says"
-      }
-    },
-    {
       "slug": "anwar-ibrahim-commends-xi-jinping-apec",
       "canonicalPath": "/news/my/anwar-ibrahim-commends-xi-jinping-apec/",
       "headline": "Anwar Ibrahim Commends Xi Jinping For APEC Engagement Strategy",
@@ -263,20 +229,20 @@
       }
     },
     {
-      "slug": "malaysia-arrests-tanker-owner-ketamine-smuggling",
-      "canonicalPath": "/news/my/malaysia-arrests-tanker-owner-ketamine-smuggling/",
-      "headline": "Malaysian Authorities Arrest Owner Of Tanker Linked To Ketamine",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
+      "slug": "deutsche-bank-faces-military-financing-allegations",
+      "canonicalPath": "/news/my/deutsche-bank-faces-military-financing-allegations/",
+      "headline": "Deutsche Bank Faces Accusations Regarding Military Financing",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 23,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "Malaysian police have arrested the owner of the MT Global 168 tanker.",
-        "The vessel was reportedly involved in the smuggling of 1.16 tons of ketamine."
+        "Leaked documents suggest Deutsche Bank provided financial services tied to weapons used in the Gaza conflict.",
+        "The findings allege the institution played a role in funding military equipment used against Palestinians."
       ],
       "primarySource": {
-        "publisherName": "Okezone",
-        "articleUrl": "https://news.okezone.com/read/2026/11/19/337/3254900/pemilik-kapal-tanker-yang-bawa-ketamin-1-1-ton-ditangkap-di-malaysia"
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889519-bankrolling-attacks-in-gaza-how-a-global-bank-arms-israel"
       }
     },
     {
@@ -285,8 +251,8 @@
       "headline": "Pearly Tan and M. Thinaah Advance To Hong Kong Open Semi-Finals",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 25,
-      "intensityTier": "active",
+      "viralScore": 22,
+      "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Pearly Tan and M. Thinaah reached the Hong Kong Open semi-finals after a 37-minute victory over a pair from the United States.",
         "The duo will next compete against Low Zi Yu and Noraqilah Ramdan in the tournament's semi-final stage."
@@ -297,20 +263,20 @@
       }
     },
     {
-      "slug": "johor-state-civil-servant-bonus",
-      "canonicalPath": "/news/my/johor-state-civil-servant-bonus/",
-      "headline": "Johor State Government Announces Special Bonus For Civil Servants",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "malaysia-reviews-deutsche-bank-1mdb-files",
+      "canonicalPath": "/news/my/malaysia-reviews-deutsche-bank-1mdb-files/",
+      "headline": "Malaysian Government Reviews Deutsche Bank Files Regarding 1MDB",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 18,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
-        "Menteri Besar Onn Hafiz Ghazi announced a special incentive for Johor civil servants.",
-        "The bonus payment is equivalent to two and a half months of salary."
+        "Malaysian authorities are scrutinizing internal documents related to Deutsche Bank’s past transactions linked to the 1MDB fund.",
+        "A government task force is reviewing the leaked files to determine if financial institutions failed to perform adequate due diligence."
       ],
       "primarySource": {
-        "publisherName": "theSun",
-        "articleUrl": "https://thesun.my/news/johor-civil-servants-two-and-a-half-months-pay/"
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889373-msia-to-review-leaked-files-on-deutsche-banks-1mdb-linked-transactions-minister-says"
       }
     },
     {
@@ -345,6 +311,40 @@
       "primarySource": {
         "publisherName": "theSun",
         "articleUrl": "https://thesun.my/berita/sindiket-dadah-guna-pesawat-tudm-dibongkar/"
+      }
+    },
+    {
+      "slug": "malaysian-former-pm-house-arrest-halted",
+      "canonicalPath": "/news/my/malaysian-former-pm-house-arrest-halted/",
+      "headline": "Former Malaysian Prime Minister Denied Transition To House Arrest",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Former Prime Minister Najib Razak paid a 50 million ringgit fine as part of a bid for conditional release.",
+        "The Attorney General's Chambers has suspended the transition to house arrest pending further legal clarification."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261106132143-4-782976/korupsi-raksasa-malaysia-eks-pm-bayar-rp223-m-buat-lepas-dari-penjara"
+      }
+    },
+    {
+      "slug": "malaysia-governance-rankings-labor-policy-review",
+      "canonicalPath": "/news/my/malaysia-governance-rankings-labor-policy-review/",
+      "headline": "Malaysia Sees Governance Improvements As Labor Policies Face Review",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Malaysia climbed to 40th position out of 133 countries in the latest Chandler Good Government Index.",
+        "Prime Minister Anwar Ibrahim cautioned that this improved standing should not lead to government complacency."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/anwar-open-to-easing-foreign-worker-rules-for-sectors-facing-shortages-warns-against-exploitation/242266"
       }
     }
   ]
