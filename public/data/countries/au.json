@@ -3,17 +3,34 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 59,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-21T01:35:00Z",
+  "viralScore": 66,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T02:18:00Z",
   "clusters": [
+    {
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A man has been formally charged with the murder of a two-week-old baby in Hobart.",
+        "The suspect remains in legal custody following the incident."
+      ],
+      "primarySource": {
+        "publisherName": "dailyliberal.com.au",
+        "articleUrl": "https://www.dailyliberal.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
+      }
+    },
     {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Pat Cummins Faces Scrutiny Following Usman Khawaja Sandpapergate Claims",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pat Cummins continues to face scrutiny regarding his knowledge of the 2018 ball-tampering event.",
@@ -47,7 +64,7 @@
       "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
@@ -64,7 +81,7 @@
       "headline": "Josh Hazlewood Supports Pat Cummins Amid Ball-Tampering Discourse",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 50,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Josh Hazlewood has stated his support for Pat Cummins as the team captain.",
@@ -81,7 +98,7 @@
       "headline": "AFL Draft 2026: Fremantle And West Coast Finalise Key Recruitments",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Fremantle drafted Perth forward Kane Johnston and added other Western Australian prospects during the second night of the national draft.",
@@ -98,7 +115,7 @@
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -110,29 +127,12 @@
       }
     },
     {
-      "slug": "man-charged-murder-fatal-home-invasion",
-      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-      "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A man has been formally charged with the murder of a two-week-old baby in Hobart.",
-        "The suspect remains in legal custody following the incident."
-      ],
-      "primarySource": {
-        "publisherName": "dailyliberal.com.au",
-        "articleUrl": "https://www.dailyliberal.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
-      }
-    },
-    {
       "slug": "david-jones-redundancy-notices-issued",
       "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
       "headline": "David Jones Issues Redundancy Notices To 1680 Staff Members",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Retail department store David Jones has notified 1680 employees of impending job terminations.",
@@ -149,7 +149,7 @@
       "headline": "Carlos Alcaraz Secures ATP Finals Semi-Final Spot Over Cobolli",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Carlos Alcaraz defeated Flavio Cobolli in a match at the ATP Finals in Turin.",
@@ -166,7 +166,7 @@
       "headline": "Sydney Swans And North Melbourne Prepare For AFLW Preliminary Final",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Sydney Swans are appearing in their first AFLW preliminary final this weekend.",
@@ -195,23 +195,6 @@
       }
     },
     {
-      "slug": "australian-gamers-await-gta-vi-launch",
-      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
-      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
-        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
-      }
-    },
-    {
       "slug": "australian-actor-joins-hunger-games-franchise",
       "canonicalPath": "/news/au/australian-actor-joins-hunger-games-franchise/",
       "headline": "Australian Actor Cast As The New Face Of The Hunger Games Series",
@@ -229,20 +212,20 @@
       }
     },
     {
-      "slug": "community-opposition-impacts-australian-projects",
-      "canonicalPath": "/news/au/community-opposition-impacts-australian-projects/",
-      "headline": "Community Opposition Forces Changes To Projects In South Australia",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 32,
+      "slug": "australian-gamers-await-gta-vi-launch",
+      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
+      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "A new birthing model trial in South Australia was terminated one month after its launch following extensive community disapproval.",
-        "NextDC announced a policy change to avoid building future data centres near residential areas after facing strong local resistance in Melbourne."
+        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
+        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne"
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
       }
     },
     {
@@ -263,6 +246,23 @@
       }
     },
     {
+      "slug": "community-opposition-impacts-australian-projects",
+      "canonicalPath": "/news/au/community-opposition-impacts-australian-projects/",
+      "headline": "Community Opposition Forces Changes To Projects In South Australia",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A new birthing model trial in South Australia was terminated one month after its launch following extensive community disapproval.",
+        "NextDC announced a policy change to avoid building future data centres near residential areas after facing strong local resistance in Melbourne."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne"
+      }
+    },
+    {
       "slug": "raelene-polymiadis-convicted-of-parents-murder",
       "canonicalPath": "/news/au/raelene-polymiadis-convicted-of-parents-murder/",
       "headline": "Raelene Polymiadis Convicted Of Murdering Parents With Insulin",
@@ -277,23 +277,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-20/jury-hands-down-verdict-in-raelene-polymiadis-trial/107402282"
-      }
-    },
-    {
-      "slug": "former-officer-testifies-sydney-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
-      "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
-        "The former police officer stated he obtained a SIM card under a false name to report workplace bullying to the media."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
       }
     },
     {
@@ -314,23 +297,6 @@
       }
     },
     {
-      "slug": "australia-unemployment-rate-reaches-five-year-high",
-      "canonicalPath": "/news/au/australia-unemployment-rate-reaches-five-year-high/",
-      "headline": "Australian Unemployment Rate Reaches Five Year High At 4.9 Percent",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The national unemployment rate increased from 4.7 percent to 4.9 percent in October.",
-        "Data shows 43,500 fewer people are employed while the number of unemployed individuals grew by 17,800."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-19/unemployment-rate-jumps-in-october-in-australia/107399076"
-      }
-    },
-    {
       "slug": "inquest-findings-tammy-shipley-custody-death",
       "canonicalPath": "/news/au/inquest-findings-tammy-shipley-custody-death/",
       "headline": "Inquest Finds Missed Opportunities In Custody Death Of Tammy Shipley",
@@ -345,6 +311,40 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/19/tammy-shipley-was-supposed-to-be-monitored-in-prison-instead-she-died-after-drinking-20l-of-water-ntwnfb"
+      }
+    },
+    {
+      "slug": "peres-jepchirchir-banned-doping-violation",
+      "canonicalPath": "/news/au/peres-jepchirchir-banned-doping-violation/",
+      "headline": "Peres Jepchirchir Banned Following Positive Doping Test Results",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Peres Jepchirchir has been issued a three-year competition ban for violating anti-doping regulations.",
+        "The athlete tested positive for EPO following an out-of-competition sample collected in Kenya prior to the August event."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-19/sydney-marathon-winner-peres-jepchirchir-three-year-doping-ban/107405856"
+      }
+    },
+    {
+      "slug": "neurological-conditions-in-perth-double-murder",
+      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
+      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 27,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
+        "Evidence suggests the perpetrator engaged in high-level planning for the event."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
       }
     }
   ]

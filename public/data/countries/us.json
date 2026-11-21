@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 88,
+  "viralScore": 86,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-21T01:35:00Z",
+  "generatedAt": "2026-11-21T02:18:00Z",
   "clusters": [
     {
       "slug": "anthropic-sets-ipo-share-price",
@@ -13,8 +13,8 @@
       "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 83,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
         "The decline coincides with a broader downturn across US technology stocks that has pressured the S&P 500 and Dow Jones indices."
@@ -30,7 +30,7 @@
       "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 82,
+      "viralScore": 80,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
@@ -47,7 +47,7 @@
       "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 82,
+      "viralScore": 80,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
@@ -59,29 +59,12 @@
       }
     },
     {
-      "slug": "trump-threatens-tech-firms-over-data-centers",
-      "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
-      "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 73,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
-        "The president provided minimal policy details during a White House press conference."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
-      }
-    },
-    {
       "slug": "armed-suspect-arrested-near-white-house",
       "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
       "headline": "White House Faces Administrative Shifts And Political Scrutiny",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
@@ -93,20 +76,37 @@
       }
     },
     {
-      "slug": "reinaldo-dennes-texas-execution-prolonged",
-      "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
-      "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 70,
+      "slug": "trump-threatens-tech-firms-over-data-centers",
+      "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
+      "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
-        "The process was delayed as staff encountered significant difficulty in accessing the inmate's veins."
+        "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
+        "The president provided minimal policy details during a White House press conference."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
+      }
+    },
+    {
+      "slug": "nvidia-board-considers-ousting-ceo-huang",
+      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
+      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
+        "The former executive has formally agreed to testify before Congress following his resignation last week."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/jensen-huangs-2nd-affair-fallout-shakes-up-us/articleshow/135784955.cms"
       }
     },
     {
@@ -115,7 +115,7 @@
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
@@ -127,12 +127,29 @@
       }
     },
     {
+      "slug": "reinaldo-dennes-texas-execution-prolonged",
+      "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
+      "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
+        "The process was delayed as staff encountered significant difficulty in accessing the inmate's veins."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain"
+      }
+    },
+    {
       "slug": "mayor-mamdani-plans-rikers-island-closure",
       "canonicalPath": "/news/us/mayor-mamdani-plans-rikers-island-closure/",
       "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
@@ -149,7 +166,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 58,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -166,7 +183,7 @@
       "headline": "United States Loses Measles Elimination Status Amid Record Outbreak",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 59,
+      "viralScore": 58,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Pan American Health Organization revoked the United States' measles-elimination status after over 5,400 cases were recorded in 2026.",
@@ -183,7 +200,7 @@
       "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
@@ -217,7 +234,7 @@
       "headline": "Fiona The Hippo Dies At The Cincinnati Zoo After Eating A Hat",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Fiona the hippo died at the Cincinnati Zoo after swallowing a knitted hat that fell into her habitat.",
@@ -226,23 +243,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat"
-      }
-    },
-    {
-      "slug": "nvidia-board-considers-ousting-ceo-huang",
-      "canonicalPath": "/news/us/nvidia-board-considers-ousting-ceo-huang/",
-      "headline": "Former Nvidia CEO Jensen Huang Expresses Interest In Returning",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang stated he is prepared to resume his role as Nvidia CEO if the company's board requests his return.",
-        "The former executive has formally agreed to testify before Congress following his resignation last week."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/what-jensen-huangs-resignation-means-for-nvidia-global-ai-race/"
       }
     },
     {

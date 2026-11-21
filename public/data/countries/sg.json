@@ -3,17 +3,34 @@
   "name": "Singapore",
   "slug": "singapore",
   "region": "Asia",
-  "viralScore": 45,
+  "viralScore": 47,
   "intensityTier": "active",
-  "generatedAt": "2026-11-21T01:35:00Z",
+  "generatedAt": "2026-11-21T02:18:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-ceo-jensen-huang-leadership-speculation",
+      "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-leadership-speculation/",
+      "headline": "Reports Suggest Potential Leadership Changes At Nvidia Corporation",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Media coverage suggests Nvidia may be preparing to remove CEO Jensen Huang.",
+        "The reports follow allegations regarding two extramarital affairs involving the executive."
+      ],
+      "primarySource": {
+        "publisherName": "The Straits Times",
+        "articleUrl": "https://www.straitstimes.com/singapore/can-nvidias-jensen-huang-survive-the-fallout-from-his-two-extramarital-affairs"
+      }
+    },
     {
       "slug": "india-closes-new-zealand-lead-wellington",
       "canonicalPath": "/news/sg/india-closes-new-zealand-lead-wellington/",
       "headline": "India Progresses Against New Zealand In The Wellington Test Match",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Rahul nears a century during the current test match in Wellington.",
@@ -30,7 +47,7 @@
       "headline": "GTA VI Global Sales Record And Singapore Influencer Viral Moment",
       "categorySlug": "lifestyle-culture",
       "categoryName": "Lifestyle & Culture",
-      "viralScore": 38,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Grand Theft Auto VI generated 3.79 billion dollars in revenue within its initial 24 hours of availability.",
@@ -59,29 +76,12 @@
       }
     },
     {
-      "slug": "wall-street-stocks-rally-after-selloff",
-      "canonicalPath": "/news/sg/wall-street-stocks-rally-after-selloff/",
-      "headline": "Anthropic IPO Performance Fails To Counter Tech Market Declines",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 35,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Anthropic IPO reached a total valuation of $93.5 billion following the exercise of the greenshoe option by underwriters.",
-        "Despite the high-profile market debut, investor concerns regarding artificial intelligence continue to weigh on broader tech stock performance."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/business/wall-street-stocks-in-relief-rally-after-heavy-ai-related-selloff-6529361"
-      }
-    },
-    {
       "slug": "ang-mo-kio-hub-traffic-changes",
       "canonicalPath": "/news/sg/ang-mo-kio-hub-traffic-changes/",
       "headline": "Ang Mo Kio Library Reopens At AMK Hub Amid Local Traffic Changes",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 35,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Ang Mo Kio Public Library has officially reopened its doors at the AMK Hub facility.",
@@ -98,7 +98,7 @@
       "headline": "Singapore Defence Minister Details Future SAF Leadership Adjustments",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 35,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Defence Minister Chan Chun Sing announced that SAF units will transition toward smaller, technologically enhanced configurations.",
@@ -107,6 +107,23 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/more-nsfs-to-take-on-leadership-roles-even-as-cohorts-shrink"
+      }
+    },
+    {
+      "slug": "wall-street-stocks-rally-after-selloff",
+      "canonicalPath": "/news/sg/wall-street-stocks-rally-after-selloff/",
+      "headline": "Anthropic IPO Performance Fails To Counter Tech Market Declines",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 33,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Anthropic IPO reached a total valuation of $93.5 billion following the exercise of the greenshoe option by underwriters.",
+        "Despite the high-profile market debut, investor concerns regarding artificial intelligence continue to weigh on broader tech stock performance."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/business/wall-street-stocks-in-relief-rally-after-heavy-ai-related-selloff-6529361"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "The Straits Times",
         "articleUrl": "https://www.straitstimes.com/singapore/2027-year-of-the-goat-almanac-coins-available-for-pre-order-until-dec-13"
-      }
-    },
-    {
-      "slug": "orchard-gateway-mall-fire-evacuation",
-      "canonicalPath": "/news/sg/orchard-gateway-mall-fire-evacuation/",
-      "headline": "Emergency Evacuation At Orchard Gateway Following Basement Fire",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 20,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "An electrical fire originated in a utility room located in the second basement level of the Orchard Gateway shopping center.",
-        "Emergency protocols resulted in the immediate evacuation of approximately 100 people from the premises."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/100-people-evacuated-after-fire-breaks-out-at-orchard-gateway"
       }
     }
   ]
