@@ -8,26 +8,26 @@
   "region": "Europe",
   "categorySlug": "disasters-world-events",
   "categoryName": "Disasters & World Events",
-  "headline": "UKHSA Extends Cold Weather Alerts As Temperatures Drop To Minus 10C",
+  "headline": "UK Experiences Coldest Night Since January As Weather Alerts Persist",
   "seoTitle": "UKHSA Extends Cold Weather Alerts",
-  "metaDescription": "The UKHSA has extended cold weather alerts as temperatures across the nation plunged to minus 10C, marking the coldest night of the autumn season so far.",
+  "metaDescription": "The UK recorded its coldest night since January with temperatures hitting -10.6C in Scotland, as cold weather alerts remain in force across regions.",
   "aiSummaryBullets": [
-    "The UKHSA has extended active cold weather alerts following a sharp decline in temperatures nationwide.",
-    "Overnight temperatures reached minus 10C, surpassing the previous seasonal low of minus 8.4C recorded in Scotland.",
-    "Meteorological conditions include freezing fog, which officials warn may cause difficult driving conditions through Saturday."
+    "The UK recorded its lowest overnight temperatures of the autumn season, reaching -10.6C at Tulloch Bridge in the Scottish Highlands.",
+    "The UK Health Security Agency maintains cold weather alerts as the country experiences its coldest night since January.",
+    "While some areas face freezing conditions, other parts of the country are bracing for incoming heavy rain and additional weather warnings."
   ],
-  "aiContextParagraph": "The United Kingdom is currently experiencing the coldest temperatures of the autumn season, prompting the United Kingdom Health Security Agency (UKHSA) to extend its cold weather alerts. After an initial series of warnings issued for Scotland and northern England earlier in November regarding snow and ice, the alert system now encompasses broader regions as mercury levels dropped significantly overnight. Reports confirm that temperatures reached as low as minus 10C, exceeding the previous record low of minus 8.4C established earlier in the week. In addition to the low temperatures, freezing fog has been identified as a persistent hazard, potentially impacting transport and road safety. Authorities continue to monitor conditions closely while advising the public to exercise caution during travel. This period of freezing weather follows earlier forecasts that predicted a brief spell of milder temperatures before these more severe health alerts took full effect across the country.",
-  "whyItIsViral": "The story is widely covered by six independent outlets as the UK experiences its coldest temperatures of the season, maintaining a high level of viral activity.",
-  "viralScore": 62,
+  "aiContextParagraph": "The United Kingdom is currently experiencing a period of notably low temperatures that have triggered health alerts from the UK Health Security Agency. The cold spell reached its lowest point on Friday night when temperatures plummeted to -10.6C at Tulloch Bridge in the Scottish Highlands, marking the coldest night recorded in the country since January. These conditions follow an earlier extension of cold-weather health alerts across three regions. Forecasts indicate that the chilly weather will continue to affect the country, with London expecting overnight lows of 3C and daytime highs of 6C by early next week. Meanwhile, meteorologists report that the cold conditions are transitioning into rain in other parts of the UK, with specific weather warnings issued for the south-west of England to account for these shifts.",
+  "whyItIsViral": "The event is covered by six independent media outlets reporting on record-breaking low temperatures and the ongoing impact of UKHSA health alerts.",
+  "viralScore": 75,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 6,
-    "coverageVelocityScore": 28,
+    "coverageVelocityScore": 56,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-14T16:31:30Z",
-  "lastUpdatedBatchAt": "2026-11-21T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-21T23:18:00Z",
   "sources": [
     {
       "publisherName": "BBC",
@@ -114,35 +114,60 @@
       "publishedAt": "2026-11-21T10:09:31Z"
     },
     {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "Coldest night since January as parts of UK brace for heavy rain",
+      "articleUrl": "https://www.standard.co.uk/news/environment/met-office-scottish-highlands-south-west-cornwall-exeter-b1305808.html",
+      "publishedAt": "2026-11-21T10:44:53Z"
+    },
+    {
       "publisherName": "The Guardian",
       "publisherDomain": "theguardian.com",
       "articleTitle": "Cold gives way to rain in parts of UK as weather warning issued for south-west England",
       "articleUrl": "https://www.theguardian.com/uk-news/2026/nov/21/uk-weather-cold-rain-warning-south-west-england",
       "publishedAt": "2026-11-21T12:47:57Z"
+    },
+    {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "UK weather: Coldest night since January recorded as temperatures to fall in London",
+      "articleUrl": "https://www.standard.co.uk/news/uk/uk-weather-cold-snap-london-forecast-b1305812.html",
+      "publishedAt": "2026-11-21T21:13:59Z"
+    },
+    {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "London weather: Temperatures set to fall to 3C as UK records coldest night since January",
+      "articleUrl": "https://www.standard.co.uk/news/london/london-weather-temperatures-plunge-uk-coldest-night-b1305856.html",
+      "publishedAt": "2026-11-21T21:14:30Z"
     }
   ],
   "entityTags": [
     {
-      "name": "UKHSA",
-      "slug": "ukhsa"
+      "name": "UK Health Security Agency",
+      "slug": "uk-health-security-agency"
     },
     {
-      "name": "United Kingdom",
-      "slug": "united-kingdom"
+      "name": "Scottish Highlands",
+      "slug": "scottish-highlands"
     },
     {
-      "name": "Weather Warnings",
-      "slug": "weather-warnings"
+      "name": "Tulloch Bridge",
+      "slug": "tulloch-bridge"
+    },
+    {
+      "name": "London",
+      "slug": "london"
     }
   ],
   "relatedInCountrySlugs": [
-    "barnham-village-symbolic-independence-vote",
-    "uk-investigates-security-threat-iran",
-    "uk-and-eu-negotiations-reset"
+    "uk-minister-warns-media-sexual-abuse",
+    "uk-eu-youth-mobility-trade-deals",
+    "proposed-uk-welfare-reform-review"
   ],
   "relatedInCategorySlugs": [
-    "aceh-government-prepares-for-extreme-weather",
-    "sabtu-bmkg-mayoritas-kota-besar-alami-cuaca-berawan-hujan",
+    "ukraine-drone-strikes-crimea-moscow",
+    "crimea-bridge-traffic-suspended-after-strike",
     "russian-cargo-ship-drone-strike"
   ]
 }

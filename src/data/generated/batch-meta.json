@@ -1,50 +1,32 @@
 {
-  "batchId": "batch-202611212018",
-  "generatedAt": "2026-11-21T20:18:00Z",
-  "nextUpdateAt": "2026-11-21T23:17:00Z",
+  "batchId": "batch-202611212318",
+  "generatedAt": "2026-11-21T23:18:00Z",
+  "nextUpdateAt": "2026-11-22T02:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 32,
-    "viralTopics": 608,
-    "globalIndex": 81
+    "activeCountries": 31,
+    "viralTopics": 610,
+    "globalIndex": 82
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 41,
+    "feedsOk": 42,
     "feedsFailed": [
-      "detik: fetch failed",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1541,
-    "newClusters": 9,
-    "updatedClusters": 65,
+    "articlesFetched": 1629,
+    "newClusters": 5,
+    "updatedClusters": 60,
     "retiredClusters": 0,
-    "aiCalls": 30,
-    "fallbackSummaries": 2,
-    "trendTitles": {
-      "targeted": 1,
-      "inTitle": 1
-    },
+    "aiCalls": 23,
+    "fallbackSummaries": 0,
     "titleNames": {
-      "kept": 11,
+      "kept": 9,
       "headline": 0,
-      "previous": 4,
-      "missing": 0,
-      "no-anchor": 4
+      "previous": 2,
+      "missing": 1,
+      "no-anchor": 6
     },
-    "aiFailures": {
-      "rate-limit": 2
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      }
-    ],
-    "durationMs": 146492
+    "durationMs": 114938
   }
 }

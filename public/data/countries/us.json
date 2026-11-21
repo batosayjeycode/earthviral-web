@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 70,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-21T20:18:00Z",
+  "generatedAt": "2026-11-21T23:18:00Z",
   "clusters": [
     {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
@@ -13,7 +13,7 @@
       "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
@@ -30,7 +30,7 @@
       "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
@@ -47,8 +47,8 @@
       "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
         "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
@@ -64,8 +64,8 @@
       "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
         "The administration dismissed national cyber director Sean Cairncross following widespread criticism regarding the tech outages."
@@ -81,8 +81,8 @@
       "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Cyberattacks have compromised digital systems at the FBI and the US Department of Agriculture.",
         "The breach at the Department of Agriculture reportedly impacted a system used for processing farmer payments."
@@ -229,40 +229,6 @@
       }
     },
     {
-      "slug": "mayor-mamdani-plans-rikers-island-closure",
-      "canonicalPath": "/news/us/mayor-mamdani-plans-rikers-island-closure/",
-      "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
-        "The initiative involves replacing the central facility with four smaller jails located throughout New York City."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/20/mamdani-unveils-plan-to-close-new-yorks-rikers-island-by-2032?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "kennedy-family-opposes-trump-arch-plan",
-      "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
-      "headline": "Kennedy Family Joins Legal Action To Oppose Proposed Trump Arch",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Several members of the Kennedy family filed a motion to intervene in a lawsuit.",
-        "The legal challenge aims to stop the construction of a large triumphal arch near Arlington National Cemetery."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
-      }
-    },
-    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Lawmakers Open Investigation Into Lutnick Over Nvidia Export Row",
@@ -331,20 +297,54 @@
       }
     },
     {
-      "slug": "trump-threatens-tech-firms-over-data-centers",
-      "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
-      "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "reinaldo-dennes-texas-execution-prolonged",
+      "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
+      "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
-        "The president provided minimal policy details during a White House press conference."
+        "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
+        "The process was delayed as staff encountered significant difficulty in accessing the inmate's veins."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/texas-execution-delayed-over-an-hour-november-2026/"
+      }
+    },
+    {
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
+        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
+      "slug": "mayor-mamdani-plans-rikers-island-closure",
+      "canonicalPath": "/news/us/mayor-mamdani-plans-rikers-island-closure/",
+      "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
+        "The initiative involves replacing the central facility with four smaller jails located throughout New York City."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/20/mamdani-unveils-plan-to-close-new-yorks-rikers-island-by-2032?traffic_source=rss"
       }
     }
   ]
