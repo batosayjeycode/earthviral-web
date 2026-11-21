@@ -3,25 +3,25 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 72,
+  "viralScore": 69,
   "intensityTier": "high",
-  "generatedAt": "2026-11-21T11:18:00Z",
+  "generatedAt": "2026-11-21T14:18:00Z",
   "clusters": [
     {
-      "slug": "denmark-expels-russian-diplomat-assassination-plot",
-      "canonicalPath": "/news/ru/denmark-expels-russian-diplomat-assassination-plot/",
-      "headline": "Denmark Expels Russian Diplomat Over Alleged Assassination Plot",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "slug": "russian-cargo-ship-drone-strike",
+      "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
+      "headline": "Russian Cargo Ship Struck By Drones In The Gulf Of Finland",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Danish authorities expelled a Russian diplomat following a failed attempt to assassinate a Ukrainian-American rapper in Copenhagen.",
-        "The European Commission President expressed support for Denmark and condemned the alleged Russian intelligence operation."
+        "A Russian cargo vessel sustained fire damage following a drone attack in the Gulf of Finland.",
+        "Finnish authorities confirmed the incident took place near their waters and implemented temporary maritime restrictions."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261121-drone-attack-sets-russian-cargo-ship-ablaze-in-gulf-of-finland"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "Bogor Police Uncover Syndicate Recruiting Indonesians for Russia",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 67,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Law enforcement in Bogor and several provinces uncovered human trafficking syndicates recruiting Indonesian citizens as Russian mercenaries.",
@@ -42,12 +42,29 @@
       }
     },
     {
+      "slug": "denmark-expels-russian-diplomat-assassination-plot",
+      "canonicalPath": "/news/ru/denmark-expels-russian-diplomat-assassination-plot/",
+      "headline": "Denmark Expels Russian Diplomat Over Alleged Assassination Plot",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Danish authorities expelled a Russian diplomat following a failed attempt to assassinate a Ukrainian-American rapper in Copenhagen.",
+        "The European Commission President expressed support for Denmark and condemned the alleged Russian intelligence operation."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing"
+      }
+    },
+    {
       "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
       "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
       "headline": "Russian Missiles Hit Poland During Large Scale Attacks On Ukraine",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 51,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian cruise missiles and a drone reportedly entered Polish territory during a major air assault on Ukraine.",
@@ -76,6 +93,23 @@
       }
     },
     {
+      "slug": "russian-projectiles-strike-polish-territory",
+      "canonicalPath": "/news/ru/russian-projectiles-strike-polish-territory/",
+      "headline": "Russian Projectiles Strike Polish Territory Near Ukrainian Border",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Three Russian projectiles landed on Polish soil near the border with Ukraine.",
+        "NATO officials described the incident as a significant breach of Polish airspace."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/russian-projectiles-hit-poland-as-nato-tensions-rise"
+      }
+    },
+    {
       "slug": "russian-missile-strikes-target-kyiv",
       "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
       "headline": "Russian Missile Strikes Hit Kyiv And Land In Polish Territory",
@@ -93,23 +127,6 @@
       }
     },
     {
-      "slug": "zelensky-criticizes-trump-comments-putin",
-      "canonicalPath": "/news/ru/zelensky-criticizes-trump-comments-putin/",
-      "headline": "Volodymyr Zelensky Criticizes Donald Trump Remarks On Vladimir Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Volodymyr Zelensky referred to Vladimir Putin as a killer following recent remarks by Donald Trump.",
-        "Donald Trump described the Russian leader as a friend and stated he intends to end the war."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/hed-love-to-end-the-war-trump-calls-putin-a-friend-dodges-whether-hes-a-friend-to-us/articleshow/136042459.cms"
-      }
-    },
-    {
       "slug": "russia-china-ties-apec-summit",
       "canonicalPath": "/news/ru/russia-china-ties-apec-summit/",
       "headline": "Russia And China Seek Closer Ties During The Ongoing APEC Summit",
@@ -124,6 +141,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/18/president-xi-says-russia-and-china-should-lead-push-to-multipolar-world?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "zelensky-criticizes-trump-comments-putin",
+      "canonicalPath": "/news/ru/zelensky-criticizes-trump-comments-putin/",
+      "headline": "Volodymyr Zelensky Criticizes Donald Trump Remarks On Vladimir Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 36,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Volodymyr Zelensky referred to Vladimir Putin as a killer following recent remarks by Donald Trump.",
+        "Donald Trump described the Russian leader as a friend and stated he intends to end the war."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/hed-love-to-end-the-war-trump-calls-putin-a-friend-dodges-whether-hes-a-friend-to-us/articleshow/136042459.cms"
       }
     },
     {
@@ -311,40 +345,6 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "russia-proposes-new-european-security-framework",
-      "canonicalPath": "/news/ru/russia-proposes-new-european-security-framework/",
-      "headline": "Kremlin Explores New Security Framework Agreements With Europe",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russia has proposed bilateral mutual assistance agreements as a potential method to re-establish dialogue with specific European nations.",
-        "These proposed arrangements are reportedly modeled on existing security treaties the Kremlin currently maintains with Belarus and North Korea."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/the-dangers-of-revising-europe-s-security-architecture/a-79943049?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "russia-reports-record-ukrainian-drone-attacks",
-      "canonicalPath": "/news/ru/russia-reports-record-ukrainian-drone-attacks/",
-      "headline": "Russia Reports Record Ukrainian Drone Activity Across Multiple Zones",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russia reported the interception of over 1,300 Ukrainian drones in a single day.",
-        "The Russian Defense Ministry stated this represents the highest number of drone incidents since the start of the conflict."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261116-russia-says-intercepted-over-1-300-ukrainian-drones-in-a-major-attack"
       }
     }
   ]

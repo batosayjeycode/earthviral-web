@@ -3,17 +3,68 @@
   "name": "Mexico",
   "slug": "mexico",
   "region": "North America",
-  "viralScore": 39,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-21T11:18:00Z",
+  "viralScore": 68,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-21T14:18:00Z",
   "clusters": [
+    {
+      "slug": "mexican-military-arrests-cartel-leader",
+      "canonicalPath": "/news/mx/mexican-military-arrests-cartel-leader/",
+      "headline": "Mexican Military Forces Arrest FBI Most-Wanted Leader Chapo Isidro",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Mexican security forces apprehended Fausto Isidro Meza Flores in a military operation conducted in Guasave, Sinaloa.",
+        "The arrested individual, known as Chapo Isidro, is listed as a most-wanted fugitive by the United States Federal Bureau of Investigation."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/21/mexico-captures-fbi-wanted-cartel-boss-in-military-raid?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "mexico-arrests-jalisco-cartel-leader",
+      "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
+      "headline": "Mexico Authorities Arrest Jalisco Cartel Leader And 19 Associates",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Mexican law enforcement arrested an individual identified as Rafael 'N', known as 'R2', alongside 19 suspected associates.",
+        "The operation was conducted with intelligence support provided by the United States Drug Enforcement Administration."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "mexican-military-captures-fausto-isidro-meza-flores",
+      "canonicalPath": "/news/mx/mexican-military-captures-fausto-isidro-meza-flores/",
+      "headline": "Mexican Military Captures Drug Lord Fausto Isidro Meza Flores",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Mexican military forces conducted an operation in Sinaloa to apprehend Fausto Isidro Meza Flores.",
+        "The capture involved a helicopter pursuit, reported aerial gunfire, and an explosion in the region."
+      ],
+      "primarySource": {
+        "publisherName": "NDTV",
+        "articleUrl": "https://www.ndtv.com/world-news/el-chapo-isidro-meza-flores-video-black-hawk-choppers-rain-fire-in-dramatic-capture-of-mexican-drug-lord-12358558"
+      }
+    },
     {
       "slug": "vikings-49ers-prepare-for-mexico-city",
       "canonicalPath": "/news/mx/vikings-49ers-prepare-for-mexico-city/",
       "headline": "Minnesota Vikings And San Francisco 49ers Prepare For Mexico City",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Minnesota Vikings and San Francisco 49ers are set to play at Estadio Azteca this Sunday at 7:30 p.m.",
@@ -22,6 +73,23 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/lifestyle/how-vikings-and-49ers-training-mexico-citys-thin-air/"
+      }
+    },
+    {
+      "slug": "ceo-discusses-us-mexico-relations",
+      "canonicalPath": "/news/mx/ceo-discusses-us-mexico-relations/",
+      "headline": "Mexico News Daily CEO Reflects On US Midterm Election Implications",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Travis Bembenek of Mexico News Daily addressed the impact of recent US midterm elections.",
+        "The perspective highlights a potential turning point for bilateral cooperation."
+      ],
+      "primarySource": {
+        "publisherName": "Mexico News Daily",
+        "articleUrl": "https://mexiconewsdaily.com/politics/us-midterm-elections-mexico-ceo-perspective/"
       }
     },
     {
@@ -56,23 +124,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/americas/20261115-miguel-angel-felix-gallardo-mexican-drug-lord-dies"
-      }
-    },
-    {
-      "slug": "mexico-arrests-jalisco-cartel-leader",
-      "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-      "headline": "Mexico Authorities Arrest Jalisco Cartel Leader And 19 Associates",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Mexican law enforcement arrested an individual identified as Rafael 'N', known as 'R2', alongside 19 suspected associates.",
-        "The operation was conducted with intelligence support provided by the United States Drug Enforcement Administration."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel?traffic_source=rss"
       }
     },
     {
@@ -246,23 +297,6 @@
       }
     },
     {
-      "slug": "ceo-discusses-us-mexico-relations",
-      "canonicalPath": "/news/mx/ceo-discusses-us-mexico-relations/",
-      "headline": "Mexico News Daily CEO Reflects On US Midterm Election Implications",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Travis Bembenek of Mexico News Daily addressed the impact of recent US midterm elections.",
-        "The perspective highlights a potential turning point for bilateral cooperation."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/politics/us-midterm-elections-mexico-ceo-perspective/"
-      }
-    },
-    {
       "slug": "ferrari-formula-one-mexico-dispute-resolution",
       "canonicalPath": "/news/mx/ferrari-formula-one-mexico-dispute-resolution/",
       "headline": "Ferrari Formula One Drivers Confirm Resolution Of Dispute In Mexico",
@@ -311,40 +345,6 @@
       "primarySource": {
         "publisherName": "Mexico News Daily",
         "articleUrl": "https://mexiconewsdaily.com/culture/mexico-china-archaeological-project-yucatan/"
-      }
-    },
-    {
-      "slug": "mexico-state-records-rise-in-homicides",
-      "canonicalPath": "/news/mx/mexico-state-records-rise-in-homicides/",
-      "headline": "México State Records Increase In Homicides Amid National Decline",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "National homicide rates have decreased across all federal entities during the first ten months of 2026.",
-        "Data indicates the number of homicides in México state nearly doubled between September and October."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/politics/homicides-mexico-state-rise-states-decline-mananera-tuesday/"
-      }
-    },
-    {
-      "slug": "mexico-homicide-data-reporting-discrepancy",
-      "canonicalPath": "/news/mx/mexico-homicide-data-reporting-discrepancy/",
-      "headline": "Analyzing Discrepancies In Mexico Official Homicide Statistics",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "The National Institute of Statistics and Geography reported over 5,000 more homicides for 2025 than official federal counts.",
-        "This statistical gap marks the widest variance observed between the two sources in more than ten years."
-      ],
-      "primarySource": {
-        "publisherName": "Mexico News Daily",
-        "articleUrl": "https://mexiconewsdaily.com/news/is-violence-in-mexico-falling/"
       }
     }
   ]
