@@ -17,7 +17,7 @@ interface Props {
 const { crumbs, eyebrow, title, intro, stats = [] } = Astro.props;
 ---
 
-<header class="border-b border-line bg-[radial-gradient(ellipse_at_top_left,#0b1a33_0%,transparent_60%)]">
+<header class="border-b border-line bg-[radial-gradient(ellipse_at_top_left,var(--color-glow)_0%,transparent_60%)]">
   <div class="mx-auto grid max-w-7xl gap-8 px-4 pt-6 pb-10 sm:px-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
     <div>
       <Breadcrumbs items={crumbs} />

@@ -31,6 +31,8 @@
   --color-warn: #fcd34d;
   --color-surge-ink: #e9d5ff;
   --color-glass-edge: rgb(148 163 184 / 0.12);
+  /* Soft highlight behind hub page headers. */
+  --color-glow: #0b1a33;
 
   --font-display:
     'Space Grotesk Variable', system-ui, -apple-system, Roboto, 'Noto Sans', sans-serif;
@@ -62,6 +64,7 @@
   --color-warn: #fcd34d;
   --color-surge-ink: #e9d5ff;
   --color-glass-edge: rgb(148 163 184 / 0.12);
+  --color-glow: #0b1a33;
 }
 
 /*
@@ -90,6 +93,7 @@
   --color-warn: #92400e;
   --color-surge-ink: #6d28d9;
   --color-glass-edge: rgb(15 23 42 / 0.1);
+  --color-glow: #e2eef2;
 }
 
 @layer base {
