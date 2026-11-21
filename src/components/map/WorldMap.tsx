@@ -636,7 +636,9 @@ export default function WorldMap({ pulseUrl, topoUrl }: Props) {
               disabled={status !== 'ready'}
               onClick={() => switchProjection(mode)}
               className={`rounded-md px-3 py-1.5 font-medium transition ${
-                projection === mode ? 'bg-cyan/15 text-cyan' : 'text-ink-muted hover:text-white'
+                projection === mode
+                  ? 'bg-cyan/15 text-cyan'
+                  : 'text-ink-muted hover:text-ink-strong'
               }`}
             >
               {mode === 'globe' ? '3D Globe' : '2D Map'}
@@ -698,7 +700,7 @@ function MapTooltip({
             {flagEmoji(country.code)}
           </span>
         )}
-        <p className="font-display font-semibold text-white">{name}</p>
+        <p className="font-display font-semibold text-ink-strong">{name}</p>
         {country && (
           <span className="tier-badge ml-auto" data-tier={country.intensityTier}>
             {country.viralScore}
@@ -709,7 +711,7 @@ function MapTooltip({
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className={`${country ? '' : 'ml-auto '}rounded p-0.5 text-ink-faint hover:text-white`}
+            className={`${country ? '' : 'ml-auto '}rounded p-0.5 text-ink-faint hover:text-ink-strong`}
           >
             ✕
           </button>

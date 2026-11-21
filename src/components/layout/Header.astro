@@ -13,7 +13,7 @@ const editions = Object.fromEntries(
   <nav aria-label="Primary" class="mx-auto flex h-14 max-w-7xl items-center gap-4 px-4 sm:px-6">
     <a
       href="/"
-      class="flex items-center gap-2 font-display text-lg font-bold tracking-tight text-white"
+      class="flex items-center gap-2 font-display text-lg font-bold tracking-tight text-ink-strong"
     >
       <svg
         aria-hidden="true"
@@ -33,18 +33,21 @@ const editions = Object.fromEntries(
 
     <ul class="ml-4 hidden items-center gap-1 text-sm text-ink-muted md:flex">
       <li>
-        <a class="rounded-md px-3 py-2 hover:bg-white/5 hover:text-white" href="/#map">
+        <a class="rounded-md px-3 py-2 hover:bg-ink-strong/5 hover:text-ink-strong" href="/#map">
           Explore Map
         </a>
       </li>
       <li>
-        <a class="rounded-md px-3 py-2 hover:bg-white/5 hover:text-white" href="/#trending">
+        <a
+          class="rounded-md px-3 py-2 hover:bg-ink-strong/5 hover:text-ink-strong"
+          href="/#trending"
+        >
           Trending
         </a>
       </li>
       <li>
         <details class="group relative">
-          <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 hover:bg-white/5 hover:text-white [&::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 hover:bg-ink-strong/5 hover:text-ink-strong [&::-webkit-details-marker]:hidden">
             Categories
             <svg
               aria-hidden="true"
@@ -59,7 +62,7 @@ const editions = Object.fromEntries(
             {CATEGORIES.map((c) => (
               <li>
                 <a
-                  class="block rounded-md px-3 py-2 hover:bg-white/5 hover:text-white"
+                  class="block rounded-md px-3 py-2 hover:bg-ink-strong/5 hover:text-ink-strong"
                   href={`/category/${c.slug}/`}
                 >
                   {c.name}
@@ -72,12 +75,55 @@ const editions = Object.fromEntries(
     </ul>
 
     <div class="ml-auto flex items-center gap-2">
+      <!-- Day/night toggle. Hidden without JS (it could not work); revealed before first paint. -->
+      <button
+        type="button"
+        hidden
+        data-theme-toggle
+        aria-label="Switch to light theme"
+        title="Switch to light theme"
+        class="flex items-center rounded-lg border border-line p-1.5 text-ink-muted hover:border-cyan/40 hover:text-ink-strong"
+      >
+        <!-- Sun shows in dark mode (go light), moon in light mode (go dark). -->
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          class="ev-theme-sun size-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        >
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          class="ev-theme-moon size-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        >
+          <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path>
+        </svg>
+      </button>
+      <script is:inline>
+        (() => {
+          const b = document.querySelector('[data-theme-toggle]');
+          const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+          b.setAttribute('aria-label', `Switch to ${next} theme`);
+          b.title = `Switch to ${next} theme`;
+          b.hidden = false;
+        })();
+      </script>
       <!-- Opens the Pagefind dialog when JS is ready; plain link to /search/ otherwise. -->
       <a
         href="/search/"
         data-search-trigger
         aria-keyshortcuts="Meta+K Control+K"
-        class="flex items-center gap-2 rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink-muted hover:border-cyan/40 hover:text-white sm:px-3"
+        class="flex items-center gap-2 rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink-muted hover:border-cyan/40 hover:text-ink-strong sm:px-3"
       >
         <svg
           aria-hidden="true"
@@ -131,7 +177,7 @@ const editions = Object.fromEntries(
           aria-expanded="false"
           aria-controls="edition-menu"
           aria-label="Change edition"
-          class="flex items-center rounded-lg border border-line px-1.5 py-1.5 text-ink-muted hover:border-cyan/40 hover:text-white"
+          class="flex items-center rounded-lg border border-line px-1.5 py-1.5 text-ink-muted hover:border-cyan/40 hover:text-ink-strong"
         >
           <svg aria-hidden="true" viewBox="0 0 20 20" class="size-4" fill="currentColor">
             <path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"></path>
@@ -184,7 +230,7 @@ const editions = Object.fromEntries(
             type="button"
             hidden
             data-edition-auto
-            class="block w-full rounded-md px-3 py-2 text-left text-sm text-cyan hover:bg-white/5"
+            class="block w-full rounded-md px-3 py-2 text-left text-sm text-cyan hover:bg-ink-strong/5"
           >
             Use my location
           </button>
@@ -194,6 +240,48 @@ const editions = Object.fromEntries(
     </div>
   </nav>
 </header>
+
+<style>
+  :global([data-theme='light']) .ev-theme-sun,
+  :global(:root:not([data-theme='light'])) .ev-theme-moon {
+    display: none;
+  }
+</style>
+
+<script>
+  import { THEME_COLOR, THEME_KEY, isTheme, resolveTheme, type Theme } from '../../lib/theme.ts';
+
+  // Day/night: a click saves the reader's pick; with no pick the theme tracks the device live.
+  const themeToggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  const themeMeta = document.querySelector<HTMLMetaElement>('meta[data-theme-color]');
+  const prefersLight = matchMedia('(prefers-color-scheme: light)');
+  const savedTheme = () => {
+    try {
+      return localStorage.getItem(THEME_KEY);
+    } catch {
+      return null;
+    }
+  };
+  const applyTheme = (theme: Theme) => {
+    document.documentElement.dataset.theme = theme;
+    if (themeMeta) themeMeta.content = THEME_COLOR[theme];
+    const next = theme === 'light' ? 'dark' : 'light';
+    themeToggle?.setAttribute('aria-label', `Switch to ${next} theme`);
+    if (themeToggle) themeToggle.title = `Switch to ${next} theme`;
+  };
+  themeToggle?.addEventListener('click', () => {
+    const theme: Theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch {
+      /* storage blocked: the pick lasts for this page only */
+    }
+    applyTheme(theme);
+  });
+  prefersLight.addEventListener('change', (e) => {
+    if (!isTheme(savedTheme())) applyTheme(resolveTheme(null, e.matches));
+  });
+</script>
 
 <script>
   import {
@@ -278,7 +366,7 @@ const editions = Object.fromEntries(
       b.type = 'button';
       b.dataset.code = code;
       b.className =
-        'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-ink-muted hover:bg-white/5 hover:text-white aria-pressed:bg-white/5 aria-pressed:font-semibold aria-pressed:text-white';
+        'flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-ink-muted hover:bg-ink-strong/5 hover:text-ink-strong aria-pressed:bg-ink-strong/5 aria-pressed:font-semibold aria-pressed:text-ink-strong';
       b.textContent = `${flagEmoji(code)} ${name}`;
       li.append(b);
       list.append(li);

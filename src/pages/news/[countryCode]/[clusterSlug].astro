@@ -122,7 +122,9 @@ const jsonLd = newsArticleGraph(c, [
               <span class="sr-only"> out of 100 viral activity score</span>
             </span>
           </div>
-          <h1 class="mt-4 text-3xl leading-tight font-bold text-white sm:text-4xl">{c.headline}</h1>
+          <h1 class="mt-4 text-3xl leading-tight font-bold text-ink-strong sm:text-4xl">
+            {c.headline}
+          </h1>
           <p class="mt-4 text-lg leading-relaxed text-ink-muted">{c.whyItIsViral}</p>
           <p class="tabular mt-4 text-xs text-ink-faint" data-pagefind-ignore>
             First detected{' '}
@@ -155,7 +157,7 @@ const jsonLd = newsArticleGraph(c, [
         </section>
 
         <section aria-labelledby="context-heading" class="mt-10">
-          <h2 id="context-heading" class="font-display text-xl font-semibold text-white">
+          <h2 id="context-heading" class="font-display text-xl font-semibold text-ink-strong">
             Context: why it’s trending
           </h2>
           <p class="ev-prose mt-3 leading-relaxed text-ink" set:html={contextHtml} />
@@ -239,7 +241,7 @@ const jsonLd = newsArticleGraph(c, [
   .ev-prose :global(a) {
     color: var(--color-cyan);
     text-decoration: underline;
-    text-decoration-color: rgb(0 240 255 / 0.35);
+    text-decoration-color: color-mix(in srgb, var(--color-cyan) 35%, transparent);
     text-underline-offset: 3px;
   }
   .ev-prose :global(a:hover) {

@@ -18,7 +18,7 @@ const verified = s.confidenceLabel === 'Verified Multi-Source';
 
 <section aria-labelledby="signal-heading" class="rounded-2xl border border-line bg-land/40 p-5">
   <div class="flex items-center justify-between gap-3">
-    <h2 id="signal-heading" class="font-display text-base font-semibold text-white">
+    <h2 id="signal-heading" class="font-display text-base font-semibold text-ink-strong">
       Viral Activity Score
     </h2>
     <span class="tier-badge text-sm" data-tier={c.intensityTier}>
@@ -32,15 +32,15 @@ const verified = s.confidenceLabel === 'Verified Multi-Source';
   <dl class="mt-4 grid gap-3 text-sm">
     <div class="flex items-center justify-between">
       <dt class="text-ink-muted">Independent publishers</dt>
-      <dd class="tabular text-white">{s.verifiedPublisherCount}</dd>
+      <dd class="tabular text-ink-strong">{s.verifiedPublisherCount}</dd>
     </div>
     {bars.map((b) => (
       <div class="relative flex items-center justify-between pb-3">
         <dt class="text-ink-muted">{b.label}</dt>
-        <dd class="tabular text-white">
+        <dd class="tabular text-ink-strong">
           {b.value}
           <span
-            class="absolute inset-x-0 bottom-0 h-1.5 rounded-full bg-white/5"
+            class="absolute inset-x-0 bottom-0 h-1.5 rounded-full bg-ink-strong/5"
             aria-hidden="true"
           >
             <span
@@ -56,7 +56,7 @@ const verified = s.confidenceLabel === 'Verified Multi-Source';
   <p
     class:list={[
       'mt-4 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium',
-      verified ? 'bg-verified/10 text-verified' : 'bg-amber-400/10 text-amber-300',
+      verified ? 'bg-verified/10 text-verified' : 'bg-warn/10 text-warn',
     ]}
   >
     <span aria-hidden="true">{verified ? '✓' : '◔'}</span>

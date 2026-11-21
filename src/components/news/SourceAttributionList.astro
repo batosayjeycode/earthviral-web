@@ -16,7 +16,7 @@ const sources = [...Astro.props.sources].sort(
 ---
 
 <section aria-labelledby="sources-heading">
-  <h2 id="sources-heading" class="font-display text-xl font-semibold text-white">
+  <h2 id="sources-heading" class="font-display text-xl font-semibold text-ink-strong">
     Coverage timeline &amp; original sources
   </h2>
   <p class="mt-1 text-sm text-ink-faint">
@@ -35,7 +35,7 @@ const sources = [...Astro.props.sources].sort(
             {formatDateWib(s.publishedAt)} · {formatTimeWib(s.publishedAt)}
           </time>
         </p>
-        <p class="mt-1 text-sm font-semibold text-white">{s.publisherName}</p>
+        <p class="mt-1 text-sm font-semibold text-ink-strong">{s.publisherName}</p>
         <a
           href={s.articleUrl}
           target="_blank"

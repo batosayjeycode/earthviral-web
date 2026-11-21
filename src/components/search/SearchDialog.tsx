@@ -119,10 +119,12 @@ function Results({
           <a
             href={r.url}
             onMouseEnter={() => onHover(i)}
-            className={`block rounded-lg px-3 py-2.5 ${i === active ? 'bg-cyan/10' : 'hover:bg-white/5'}`}
+            className={`block rounded-lg px-3 py-2.5 ${i === active ? 'bg-cyan/10' : 'hover:bg-ink-strong/5'}`}
           >
             <span className="flex items-center gap-2">
-              <span className="font-display font-semibold text-white">{r.meta.title ?? r.url}</span>
+              <span className="font-display font-semibold text-ink-strong">
+                {r.meta.title ?? r.url}
+              </span>
               {r.meta.score && (
                 <span className="tabular ml-auto shrink-0 text-xs text-cyan">{r.meta.score}</span>
               )}
@@ -199,7 +201,7 @@ function SearchInput(props: {
         value={props.value}
         onChange={(e) => props.onChange(e.target.value)}
         onKeyDown={props.onKeyDown}
-        className="h-14 w-full bg-transparent text-base text-white outline-none placeholder:text-ink-faint"
+        className="h-14 w-full bg-transparent text-base text-ink-strong outline-none placeholder:text-ink-faint"
       />
     </div>
   );
