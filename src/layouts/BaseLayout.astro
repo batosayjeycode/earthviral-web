@@ -108,7 +108,10 @@ const robots = batchMeta.isSeed
     >
       Skip to content
     </a>
-    <div class="sticky top-0 z-40 light:shadow-[0_1px_3px_rgb(15_23_42/0.08),0_6px_16px_rgb(15_23_42/0.05)]">
+    <!-- Masthead (header + telemetry strip): dark in both themes — the brand colours are made
+         for it, and by day it frames the light page. ev-masthead backs it with a solid colour
+         by day so light content scrolling underneath doesn't show through the glass. -->
+    <div class="ev-masthead sticky top-0 z-40" data-theme="dark">
       <Header />
       <TelemetryBar meta={batchMeta} />
     </div>

@@ -185,6 +185,11 @@
   }
 }
 
+/* Masthead (BaseLayout.astro): solid backing by day so the light page doesn't tint the glass. */
+[data-theme='light'] .ev-masthead {
+  background-color: var(--color-void);
+}
+
 /* Hub page hero (HubHeader.astro): soft glow at night, a tinted band by day. */
 .ev-hub-hero {
   background: radial-gradient(ellipse at top left, var(--color-glow) 0%, transparent 60%);

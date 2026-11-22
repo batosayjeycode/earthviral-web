@@ -11,10 +11,7 @@ const { meta } = Astro.props;
 const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.generatedAt)}`;
 ---
 
-<!-- data-theme="dark": a dark strip under the header in both themes, so by day the masthead
-     stands apart from the page. -->
 <div
-  data-theme="dark"
   class="border-b border-line bg-ocean/90 backdrop-blur"
   role="region"
   aria-label="Batch telemetry"

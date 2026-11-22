@@ -7,10 +7,10 @@ export type Theme = 'light' | 'dark';
 
 export const THEME_KEY = 'ev-theme';
 
-/** Browser UI colour (<meta name="theme-color">) per theme — matches the header. */
+/** Browser UI colour (<meta name="theme-color">) per theme — matches the masthead, dark in both. */
 export const THEME_COLOR: Record<Theme, string> = {
   dark: '#050811',
-  light: '#ffffff',
+  light: '#050811',
 };
 
 export const isTheme = (value: unknown): value is Theme => value === 'light' || value === 'dark';
