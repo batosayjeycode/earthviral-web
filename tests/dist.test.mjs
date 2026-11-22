@@ -364,6 +364,26 @@ describe('hosting configuration', () => {
   });
 });
 
+describe('daily digest', () => {
+  const file = new URL('../src/data/generated/digest-summaries.json', import.meta.url);
+  const summaries = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : [];
+  const decodeHtml = (s) =>
+    s
+      .replace(/&#39;|&apos;/g, "'")
+      .replace(/&quot;/g, '"')
+      .replace(/&amp;/g, '&');
+
+  test('a stored AI summary is shown on its day page, and only there', () => {
+    const byDay = new Map(summaries.map((s) => [s.day, s.summary]));
+    for (const page of pages.filter((p) => /^\/digest\/\d{4}-\d{2}-\d{2}\/$/.test(p.path))) {
+      const summary = byDay.get(page.path.slice(8, 18));
+      const html = decodeHtml(page.html);
+      assert.equal(html.includes('The day in brief'), Boolean(summary), page.path);
+      if (summary) assert.ok(html.includes(summary), `${page.path} summary text`);
+    }
+  });
+});
+
 describe('crawl paths', () => {
   test('every story is linked from its country archive (home → country → archive → story)', () => {
     const linked = new Set();

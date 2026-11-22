@@ -88,6 +88,8 @@ export interface BatchMeta {
     aiCalls: number;
     /** Failed AI calls by category (rate-limit, schema, timeout…); they fell back to non-AI text. */
     aiFailures?: Record<string, number>;
+    /** Daily digest intros this batch: written, kept from earlier batches, still waiting, failed. */
+    digestSummaries?: { written: number; kept: number; pending: number; failed: number };
     /** Up to 5 example failures for diagnosis (no keys or prompts). */
     aiFailureSamples?: Array<{ category: string; detail: string }>;
     durationMs: number;
@@ -177,4 +179,19 @@ export interface RetiredStory {
    */
   redirectTo: string;
   retiredAt: string; // ISO-8601
+}
+
+/**
+ * `src/data/generated/digest-summaries.json` — the AI-written intro of each daily digest page
+ * (/digest/[day]/), newest day first.
+ */
+export interface DigestSummary {
+  /** "2026-11-22" (WIB). */
+  day: string;
+  summary: string;
+  /** The day's top story ids when it was written; a change re-triggers it while the day is recent. */
+  topIds: string[];
+  generatedAt: string;
+  /** "gemini:gemini-3.1-flash-lite" */
+  model: string;
 }

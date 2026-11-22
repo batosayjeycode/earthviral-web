@@ -15,7 +15,7 @@ import ShareBar from '../../components/news/ShareBar.astro';
 import AdSlot from '../../components/ads/AdSlot.astro';
 import { collectionGraph } from '../../lib/structuredData.ts';
 import { absoluteUrl, pageTitle } from '../../lib/site.ts';
-import { batchMeta, getDigestDays } from '../../lib/data.ts';
+import { batchMeta, getDigestDays, getDigestSummary } from '../../lib/data.ts';
 import { CATEGORIES, REGIONS, flagEmoji } from '../../lib/taxonomy.ts';
 import { formatTimeWib } from '../../lib/format.ts';
 import {
@@ -84,6 +84,7 @@ const description = [
   `The most viral news worldwide on ${long}: ${counts}, ranked by Viral Activity Score.`,
 ].find((d) => d.length <= 170)!;
 const path = digest.path;
+const brief = getDigestSummary(day);
 ---
 
 <BaseLayout title={title} description={description} ogImage={`/og/digest/${day}.png`}>
@@ -116,7 +117,28 @@ const path = digest.path;
     data-pagefind-weight="0.5"
   >
     <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
-      <DigestTopList title={`Top ${top.length} viral stories of the day`} clusters={top} />
+      <div class="grid content-start gap-10">
+        {brief && (
+          <section
+            aria-labelledby="digest-brief-heading"
+            class="rounded-2xl border border-cyan/20 bg-cyan/[0.03] p-6"
+          >
+            <h2
+              id="digest-brief-heading"
+              class="text-xs font-semibold tracking-widest text-cyan uppercase"
+            >
+              The day in brief
+            </h2>
+            <p class="mt-3 text-[1.0625rem] leading-[1.7] text-pretty text-ink sm:text-lg">
+              {brief.summary}
+            </p>
+            <p class="mt-3 text-xs text-ink-faint" data-pagefind-ignore>
+              AI-written summary of the stories below. Follow each story for the original reporting.
+            </p>
+          </section>
+        )}
+        <DigestTopList title={`Top ${top.length} viral stories of the day`} clusters={top} />
+      </div>
       <aside class="grid content-start gap-6" aria-label="Digest navigation">
         <ShareBar
           url={absoluteUrl(path)}

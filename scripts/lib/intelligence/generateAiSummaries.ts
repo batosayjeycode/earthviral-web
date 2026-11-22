@@ -199,6 +199,24 @@ const GEMINI_SCHEMA = {
 
 // ── Providers ───────────────────────────────────────────────────────────────
 
+/** A structured-output request: prompts plus the reply's JSON schema in each provider's dialect. */
+export interface JsonPrompt {
+  /** Schema name (OpenAI `json_schema.name`). */
+  name: string;
+  system: string;
+  user: string;
+  openAiSchema: object;
+  geminiSchema: object;
+}
+
+const summaryPrompt = (input: SummaryInput): JsonPrompt => ({
+  name: 'cluster_summary',
+  system: SYSTEM_PROMPT,
+  user: userPrompt(input),
+  openAiSchema: OPENAI_SCHEMA,
+  geminiSchema: GEMINI_SCHEMA,
+});
+
 /**
  * Gemini 3+ models are tuned for the default temperature (1.0); Google warns that lowering
  * it can cause looping or degraded output, so it is only set for Gemini 2.x and older.
@@ -214,29 +232,33 @@ interface GeminiRequestBody {
   generationConfig: {
     temperature?: number;
     responseMimeType: 'application/json';
-    responseSchema: typeof GEMINI_SCHEMA;
+    responseSchema: object;
   };
 }
 
 export function geminiRequestBody(input: SummaryInput, model: string): GeminiRequestBody {
+  return geminiJsonBody(summaryPrompt(input), model);
+}
+
+function geminiJsonBody(prompt: JsonPrompt, model: string): GeminiRequestBody {
   return {
-    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    contents: [{ role: 'user', parts: [{ text: userPrompt(input) }] }],
+    systemInstruction: { parts: [{ text: prompt.system }] },
+    contents: [{ role: 'user', parts: [{ text: prompt.user }] }],
     generationConfig: {
       ...(usesDefaultTemperature(model) ? {} : { temperature: 0.2 }),
       responseMimeType: 'application/json',
-      responseSchema: GEMINI_SCHEMA,
+      responseSchema: prompt.geminiSchema,
     },
   };
 }
 
-async function callGemini(input: SummaryInput, apiKey: string, model: string): Promise<unknown> {
+async function callGemini(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
   const res = await fetchWithRetry(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
     {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify(geminiRequestBody(input, model)),
+      body: JSON.stringify(geminiJsonBody(prompt, model)),
       timeoutMs: 60_000,
       retries: 2,
       backoffMs: 4_000,
@@ -276,30 +298,34 @@ interface OpenAiRequestBody {
   messages: Array<{ role: 'system' | 'user'; content: string }>;
   response_format: {
     type: 'json_schema';
-    json_schema: { name: string; strict: boolean; schema: typeof OPENAI_SCHEMA };
+    json_schema: { name: string; strict: boolean; schema: object };
   };
 }
 
 export function openAiRequestBody(input: SummaryInput, model: string): OpenAiRequestBody {
+  return openAiJsonBody(summaryPrompt(input), model);
+}
+
+function openAiJsonBody(prompt: JsonPrompt, model: string): OpenAiRequestBody {
   return {
     model,
     ...(isReasoningModel(model) ? { reasoning_effort: 'low' } : { temperature: 0.2 }),
     messages: [
-      { role: 'system', content: SYSTEM_PROMPT },
-      { role: 'user', content: userPrompt(input) },
+      { role: 'system', content: prompt.system },
+      { role: 'user', content: prompt.user },
     ],
     response_format: {
       type: 'json_schema',
-      json_schema: { name: 'cluster_summary', strict: true, schema: OPENAI_SCHEMA },
+      json_schema: { name: prompt.name, strict: true, schema: prompt.openAiSchema },
     },
   };
 }
 
-async function callOpenAI(input: SummaryInput, apiKey: string, model: string): Promise<unknown> {
+async function callOpenAI(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
   const res = await fetchWithRetry('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify(openAiRequestBody(input, model)),
+    body: JSON.stringify(openAiJsonBody(prompt, model)),
     timeoutMs: 90_000, // reasoning models can take longer
     retries: 2,
     backoffMs: 4_000,
@@ -728,15 +754,11 @@ export function resolveProvider(requested: string | undefined): ProviderName {
   return 'none';
 }
 
-export function createSummarizer(provider: ProviderName): Summarizer {
-  if (provider === 'none') {
-    return {
-      provider,
-      model: null,
-      summarize: async (input) => ({ output: heuristicSummary(input), usedAi: false }),
-    };
-  }
-
+/** API key and model for an AI provider, from the environment. Throws when the key is missing. */
+export function aiCredentials(provider: Exclude<ProviderName, 'none'>): {
+  apiKey: string;
+  model: string;
+} {
   const apiKey = provider === 'gemini' ? process.env.GEMINI_API_KEY : process.env.OPENAI_API_KEY;
   if (!apiKey)
     throw new Error(
@@ -748,7 +770,31 @@ export function createSummarizer(provider: ProviderName): Summarizer {
       : process.env.OPENAI_MODEL?.trim() || 'gpt-5-mini';
   // `||`, not `??`: GitHub Actions passes an unset repository variable as an empty string,
   // and an empty model name made every request 404.
-  const call = provider === 'gemini' ? callGemini : callOpenAI;
+  return { apiKey, model };
+}
+
+/**
+ * One structured-output call to the provider, with the same retries and error types as story
+ * summaries. Returns the parsed (unvalidated) JSON; failures throw (see classifyAiError).
+ */
+export function requestModelJson(
+  provider: Exclude<ProviderName, 'none'>,
+  prompt: JsonPrompt,
+  { apiKey, model } = aiCredentials(provider),
+): Promise<unknown> {
+  return (provider === 'gemini' ? callGemini : callOpenAI)(prompt, apiKey, model);
+}
+
+export function createSummarizer(provider: ProviderName): Summarizer {
+  if (provider === 'none') {
+    return {
+      provider,
+      model: null,
+      summarize: async (input) => ({ output: heuristicSummary(input), usedAi: false }),
+    };
+  }
+
+  const { apiKey, model } = aiCredentials(provider);
 
   return {
     provider,
@@ -756,7 +802,7 @@ export function createSummarizer(provider: ProviderName): Summarizer {
     async summarize(input) {
       let raw: unknown;
       try {
-        raw = await call(input, apiKey, model);
+        raw = await requestModelJson(provider, summaryPrompt(input), { apiKey, model });
       } catch (err) {
         return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
       }

@@ -21,11 +21,17 @@ import type {
   ClusterSummary,
   CountryMasterRecord,
   CountryPayload,
+  DigestSummary,
   MapPulse,
   RetiredStory,
   ViralClusterStaticRecord,
 } from '../../../src/lib/types.ts';
 import { COUNTRY_BY_CODE } from '../countries.ts';
+import {
+  DIGEST_SUMMARIES_PATH,
+  digestSummarySchema,
+  loadDigestSummaries,
+} from '../intelligence/generateDigestSummaries.ts';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 export const GENERATED_DIR = join(ROOT, 'src', 'data', 'generated');
@@ -178,6 +184,11 @@ export interface WriteInput {
   pipeline?: BatchMeta['pipeline'];
   /** Full, already-merged list of retired stories to publish as redirects. */
   retired?: RetiredStory[];
+  /**
+   * Daily digest intros. Left out, the stored ones are kept (seed data starts with none), so
+   * scripts that rewrite the data without AI never lose them.
+   */
+  digestSummaries?: DigestSummary[];
 }
 
 export interface WriteResult {
@@ -309,6 +320,9 @@ export async function writeStaticJson(
   }
   countries.forEach(({ id: _id, ...c }) => countryMasterSchema.parse(c));
   categories.forEach(({ id: _id, ...c }) => categoryMasterSchema.parse(c));
+  const digestSummaries =
+    input.digestSummaries ?? (input.isSeed ? [] : await loadDigestSummaries(ROOT));
+  digestSummaries.forEach((d) => digestSummarySchema.parse(d));
 
   if (!dryRun) {
     await rm(GENERATED_DIR, { recursive: true, force: true });
@@ -323,6 +337,7 @@ export async function writeStaticJson(
     await writeFile(REDIRECTS_FILE, redirectsFile(retired));
     await writeJson(join(GENERATED_DIR, 'countries-master.json'), countries);
     await writeJson(join(GENERATED_DIR, 'categories-master.json'), categories);
+    await writeJson(join(ROOT, DIGEST_SUMMARIES_PATH), digestSummaries);
     for (const c of clusters) await writeJson(join(CLUSTERS_DIR, clusterFileName(c)), c);
     await writeJson(join(PUBLIC_DATA_DIR, 'map-pulse.json'), mapPulse);
     await writeJson(join(PUBLIC_DATA_DIR, 'global-trending.json'), globalTrending);

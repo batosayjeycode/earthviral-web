@@ -1,6 +1,11 @@
 import { getCollection } from 'astro:content';
 import batchMetaJson from '../data/generated/batch-meta.json';
-import type { BatchMeta, CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
+import type {
+  BatchMeta,
+  CountryMasterRecord,
+  DigestSummary,
+  ViralClusterStaticRecord,
+} from './types.ts';
 import { formatDateWib } from './format.ts';
 import { buildDigestDays, wibDay, type DigestDay } from './digest.ts';
 
@@ -149,4 +154,20 @@ export async function digestForStory(
 ): Promise<DigestDay | undefined> {
   const day = wibDay(c.firstDetectedAt);
   return (await getDigestDays()).find((d) => d.day === day);
+}
+
+// Glob, not import: seed data and fresh checkouts have no summaries file yet.
+const digestSummaryFiles = import.meta.glob<DigestSummary[]>(
+  '../data/generated/digest-summaries.json',
+  { eager: true, import: 'default' },
+);
+const digestSummaries = new Map(
+  Object.values(digestSummaryFiles)
+    .flat()
+    .map((s) => [s.day, s]),
+);
+
+/** The AI-written intro of a daily digest page, when the batch has written one. */
+export function getDigestSummary(day: string): DigestSummary | undefined {
+  return digestSummaries.get(day);
 }
