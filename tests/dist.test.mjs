@@ -44,7 +44,7 @@ const pages = walk(dist)
 const isNoindex = (html) => /<meta name="robots" content="noindex/.test(html);
 const indexable = pages.filter((p) => !isNoindex(p.html));
 const stories = pages.filter((p) => p.path.startsWith('/news/'));
-const hubs = pages.filter((p) => /^\/(country|category|region|topic)\//.test(p.path));
+const hubs = pages.filter((p) => /^\/(country|category|region|topic|digest)\//.test(p.path));
 
 const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1];
 const meta = (html, key) => {
@@ -361,6 +361,26 @@ describe('hosting configuration', () => {
 
   test('batch data is never cached as immutable', () => {
     assert.match(headers, /\/data\/\*\s+Cache-Control: public, max-age=300, must-revalidate/);
+  });
+});
+
+describe('daily digest', () => {
+  const file = new URL('../src/data/generated/digest-summaries.json', import.meta.url);
+  const summaries = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : [];
+  const decodeHtml = (s) =>
+    s
+      .replace(/&#39;|&apos;/g, "'")
+      .replace(/&quot;/g, '"')
+      .replace(/&amp;/g, '&');
+
+  test('a stored AI summary is shown on its day page, and only there', () => {
+    const byDay = new Map(summaries.map((s) => [s.day, s.summary]));
+    for (const page of pages.filter((p) => /^\/digest\/\d{4}-\d{2}-\d{2}\/$/.test(p.path))) {
+      const summary = byDay.get(page.path.slice(8, 18));
+      const html = decodeHtml(page.html);
+      assert.equal(html.includes('The day in brief'), Boolean(summary), page.path);
+      if (summary) assert.ok(html.includes(summary), `${page.path} summary text`);
+    }
   });
 });
 

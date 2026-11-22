@@ -179,6 +179,65 @@ export async function storyCard(opts: {
   );
 }
 
+/** Daily digest card: the date and the day's top 3 headlines. */
+export async function digestCard(opts: {
+  dateLabel: string;
+  headlines: string[];
+  storyCount: number;
+  countryCount: number;
+}): Promise<Png> {
+  const clip = (s: string) => (s.length > 64 ? `${s.slice(0, 62).trimEnd()}…` : s);
+  return render(
+    frame(
+      h(
+        'div',
+        { width: CONTENT_W, justifyContent: 'space-between', alignItems: 'center' },
+        wordmark(),
+        h(
+          'div',
+          { fontSize: 26, fontWeight: 600, color: '#00f0ff', letterSpacing: 2 },
+          'DAILY DIGEST',
+        ),
+      ),
+      h(
+        'div',
+        { width: CONTENT_W, flexDirection: 'column', gap: 22 },
+        h(
+          'div',
+          { fontFamily: 'Space Grotesk', fontSize: 54, lineHeight: 1.08, color: '#ffffff' },
+          `Top viral news · ${opts.dateLabel}`,
+        ),
+        ...opts.headlines.slice(0, 3).map((headline, i) =>
+          h(
+            'div',
+            {
+              width: CONTENT_W,
+              gap: 18,
+              alignItems: 'flex-start',
+              fontSize: 30,
+              color: '#e2e8f0',
+            },
+            h('div', { fontFamily: 'Space Grotesk', color: '#00f0ff', width: 32 }, `${i + 1}`),
+            h('div', { width: CONTENT_W - 50, lineHeight: 1.25 }, clip(headline)),
+          ),
+        ),
+      ),
+      h(
+        'div',
+        {
+          width: CONTENT_W,
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          fontSize: 24,
+          color: '#94a3b8',
+        },
+        h('div', {}, `${opts.storyCount} stories · ${opts.countryCount} countries`),
+        h('div', {}, 'earthviral.com'),
+      ),
+    ),
+  );
+}
+
 export async function defaultCard(): Promise<Png> {
   return render(
     frame(

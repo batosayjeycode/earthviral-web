@@ -5,12 +5,14 @@ import CountryDrawer from '../components/drawer/CountryDrawer.tsx';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { homeGraph } from '../lib/structuredData.ts';
 import NewsCard from '../components/news/NewsCard.astro';
-import { batchMeta, getClusters, getCountries } from '../lib/data.ts';
+import { batchMeta, getClusters, getCountries, getDigestDays } from '../lib/data.ts';
 import { CATEGORIES, REGIONS, flagEmoji } from '../lib/taxonomy.ts';
+import { formatDayShort } from '../lib/digest.ts';
 
 const clusters = await getClusters();
 const countries = await getCountries();
 const ref = batchMeta.generatedAt;
+const latestDigest = (await getDigestDays())[0];
 
 // lg: feature card (2×2) + 2 beside it + two rows of 3 → 9 cards fill the 3-column grid exactly.
 const trending = clusters.slice(0, 9);
@@ -54,6 +56,14 @@ const regions = REGIONS.map((r) => {
         </h2>
         <p class="tabular hidden text-xs text-ink-faint sm:block">Ranked by Viral Activity Score</p>
       </div>
+      {latestDigest && (
+        <p class="mt-2 text-sm">
+          <a class="font-semibold text-cyan hover:underline" href={latestDigest.path}>
+            Top 10 of {formatDayShort(latestDigest.day)}: read the daily digest{' '}
+            <span aria-hidden="true">→</span>
+          </a>
+        </p>
+      )}
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {trending.map((c, i) => (
           <NewsCard

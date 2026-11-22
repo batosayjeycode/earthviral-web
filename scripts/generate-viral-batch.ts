@@ -70,9 +70,14 @@ import {
 } from './lib/intelligence/selectStories.ts';
 import { mergeDuplicateStories } from './lib/intelligence/mergeDuplicates.ts';
 import { keepStoryNames, type TitleNameCheck } from './lib/intelligence/storyNames.ts';
+import {
+  generateDigestSummaries,
+  loadDigestSummaries,
+} from './lib/intelligence/generateDigestSummaries.ts';
 import { slugify, truncate } from './lib/intelligence/text.ts';
 import {
   RETENTION_DAYS,
+  ROOT,
   isActive,
   iso,
   loadBatchMeta,
@@ -118,6 +123,8 @@ const OPTS = {
   maxAi: intOption('max-ai', 80),
   resummarizeFallback: flag('resummarize-fallback'),
   autoResummarize: intOption('auto-resummarize', 10),
+  /** AI-written daily digest intros per batch (new days and recent days whose top stories changed). */
+  maxDigestAi: intOption('max-digest-ai', 4),
   aiConcurrency: Math.max(
     1,
     intOption(
@@ -500,11 +507,6 @@ async function main() {
     log(`  trending searches in titles: ${trendTitles.inTitle}/${trendTitles.targeted}`);
     for (const { query, out } of targeted.slice(0, 5)) log(`    "${query}" → ${out!.seoTitle}`);
   }
-  const aiFailureCount = [...aiFailures.values()].reduce((a, b) => a + b, 0);
-  const aiFailureSummary = [...aiFailures.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .map(([category, n]) => `${category} ${n}`)
-    .join(', ');
 
   // 5. Build records ─────────────────────────────────────────────────────────
   // Retired slugs stay reserved: a redirect for an old URL must never shadow a new story.
@@ -588,6 +590,31 @@ async function main() {
     new Set(records.map((r) => r.canonicalPath)),
     now,
   );
+  // Daily digest intros, from the final story set (after merges and retention).
+  log(`▶ Daily digest summaries (up to ${OPTS.maxDigestAi} AI calls)…`);
+  const digest = await generateDigestSummaries({
+    clusters: records,
+    previous: previousMeta?.isSeed ? [] : await loadDigestSummaries(ROOT),
+    provider: summarizer.provider,
+    now,
+    maxCalls: OPTS.maxDigestAi,
+    concurrency: OPTS.aiConcurrency,
+    log,
+  });
+  aiCalls += digest.stats.written + digest.stats.failed;
+  for (const f of digest.failures) {
+    aiFailures.set(f.category, (aiFailures.get(f.category) ?? 0) + 1);
+    if (aiFailureSamples.length < 5) aiFailureSamples.push(f);
+  }
+  log(
+    `  digest summaries: ${digest.stats.written} written, ${digest.stats.kept} kept, ${digest.stats.pending} waiting`,
+  );
+  const aiFailureCount = [...aiFailures.values()].reduce((a, b) => a + b, 0);
+  const aiFailureSummary = [...aiFailures.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([category, n]) => `${category} ${n}`)
+    .join(', ');
+
   const result = await writeStaticJson(
     {
       clusters: records,
@@ -596,6 +623,7 @@ async function main() {
       generatedAt: now,
       nextUpdateAt: nextScheduledBatch(now),
       isSeed: false,
+      digestSummaries: digest.summaries,
       pipeline: {
         provider: summarizer.model
           ? `${summarizer.provider}:${summarizer.model}`
@@ -611,6 +639,7 @@ async function main() {
         fallbackSummaries: records.filter(isFallbackSummary).length,
         ...(trendTitles.targeted ? { trendTitles } : {}),
         titleNames,
+        digestSummaries: digest.stats,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
         durationMs: Date.now() - started,
       },

@@ -3,7 +3,7 @@
  * rules, so sitemaps list exactly the URLs that exist and are meant to be indexed.
  */
 import { CATEGORIES, REGIONS } from './taxonomy.ts';
-import { batchMeta, getClusters, getCountries, getTopics } from './data.ts';
+import { batchMeta, getClusters, getCountries, getDigestDays, getTopics } from './data.ts';
 import type { CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
 
 /** Stories per country archive page. */
@@ -53,10 +53,11 @@ export interface SitemapEntry {
 
 /** Homepage + hubs (plan §9.4 `sitemap-core.xml`). */
 export async function coreEntries(): Promise<SitemapEntry[]> {
-  const [clusters, countries, topics] = await Promise.all([
+  const [clusters, countries, topics, digestDays] = await Promise.all([
     getClusters(),
     getCountries(),
     getTopics(),
+    getDigestDays(),
   ]);
   const lastmod = batchMeta.generatedAt;
   const hub = (path: string, priority = 0.9): SitemapEntry => ({
@@ -83,6 +84,9 @@ export async function coreEntries(): Promise<SitemapEntry[]> {
     for (const page of countryArchive(country, clusters)) entries.push(hub(page.path, 0.5));
   }
   for (const t of topics) entries.push(hub(`/topic/${t.slug}/`, 0.6));
+  if (digestDays.length > 0) entries.push(hub('/digest/', 0.8));
+  for (const d of digestDays)
+    entries.push({ path: d.path, lastmod: d.lastmod, changefreq: 'daily', priority: 0.7 });
   for (const path of ['/about/', '/contact/', '/privacy/', '/terms/'])
     entries.push({ path, lastmod, changefreq: 'weekly', priority: 0.4 });
   return entries;
