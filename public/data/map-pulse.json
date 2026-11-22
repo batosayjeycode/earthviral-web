@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611220518",
-  "generatedAt": "2026-11-22T05:18:00Z",
-  "nextUpdateAt": "2026-11-22T08:17:00Z",
+  "batchId": "batch-202611220818",
+  "generatedAt": "2026-11-22T08:18:00Z",
+  "nextUpdateAt": "2026-11-22T11:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -14,7 +14,7 @@
       ],
       "viralScore": 98,
       "intensityTier": "surge",
-      "topicCount": 127,
+      "topicCount": 128,
       "topTopic": {
         "slug": "massive-fire-hits-pt-fonusa-agung-mulia",
         "canonicalPath": "/news/id/massive-fire-hits-pt-fonusa-agung-mulia/",
@@ -22,28 +22,6 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 95,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
-      "centroid": [
-        -102.5,
-        23.6
-      ],
-      "viralScore": 95,
-      "intensityTier": "surge",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "mexico-arrests-jalisco-cartel-leader",
-        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 92,
         "intensityTier": "surge"
       }
     },
@@ -56,16 +34,16 @@
         127.8,
         36.3
       ],
-      "viralScore": 93,
+      "viralScore": 91,
       "intensityTier": "surge",
-      "topicCount": 16,
+      "topicCount": 17,
       "topTopic": {
         "slug": "south-korean-tax-exam-ai-scandal",
         "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
         "headline": "Education Minister Choi Kyo-jin Resigns Amid AI Cheating Scandal",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 90,
+        "viralScore": 88,
         "intensityTier": "surge"
       }
     },
@@ -78,7 +56,7 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 86,
+      "viralScore": 88,
       "intensityTier": "surge",
       "topicCount": 53,
       "topTopic": {
@@ -87,7 +65,29 @@
         "headline": "Jair Bolsonaro Remains In ICU For Acute Bowel Obstruction Care",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 83,
+        "viralScore": 85,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "mexico-arrests-jalisco-cartel-leader",
+        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
+        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
@@ -100,16 +100,16 @@
         79,
         22
       ],
-      "viralScore": 86,
+      "viralScore": 85,
       "intensityTier": "surge",
-      "topicCount": 65,
+      "topicCount": 66,
       "topTopic": {
-        "slug": "fatal-bus-collision-assam-kaziranga",
-        "canonicalPath": "/news/in/fatal-bus-collision-assam-kaziranga/",
-        "headline": "Nine Pilgrims Killed In Rajasthan Road Collision Near Kota",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 83,
+        "slug": "pm-modi-inaugurates-nitish-setu-bridge",
+        "canonicalPath": "/news/in/pm-modi-inaugurates-nitish-setu-bridge/",
+        "headline": "Political Dispute Follows PM Narendra Modi's Nitish Setu Inauguration",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 82,
         "intensityTier": "high"
       }
     },
@@ -122,8 +122,8 @@
         60,
         58
       ],
-      "viralScore": 86,
-      "intensityTier": "surge",
+      "viralScore": 78,
+      "intensityTier": "high",
       "topicCount": 9,
       "topTopic": {
         "slug": "russian-cargo-ship-drone-strike",
@@ -131,95 +131,7 @@
         "headline": "Russian Cargo Ship Sparta II Struck By Drones In Gulf Of Finland",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IL",
-      "isoNumeric": "376",
-      "name": "Israel",
-      "slug": "israel",
-      "centroid": [
-        34.9,
-        31.3
-      ],
-      "viralScore": 80,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
-        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
-        "headline": "Gadi Eisenkot Invites Benjamin Netanyahu's Likud To Coalition Talks",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 78,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 78,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
         "viralScore": 75,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 75,
-      "intensityTier": "high",
-      "topicCount": 17,
-      "topTopic": {
-        "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
-        "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
-        "headline": "Large Protests Across France Demand Higher Wages And School Funding",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 72,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 35,
-      "topTopic": {
-        "slug": "australian-teen-rescued-from-bush",
-        "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
-        "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -232,16 +144,60 @@
         -98.5,
         39.5
       ],
-      "viralScore": 69,
+      "viralScore": 75,
       "intensityTier": "high",
       "topicCount": 35,
       "topTopic": {
-        "slug": "trump-contractors-congressional-oversight-order",
-        "canonicalPath": "/news/us/trump-contractors-congressional-oversight-order/",
-        "headline": "President Trump Mandates White House Review Of Congressional Inquiries",
+        "slug": "ice-arrests-passengers-seattle-airport",
+        "canonicalPath": "/news/us/ice-arrests-passengers-seattle-airport/",
+        "headline": "ICE Officers Arrest Two Passengers At Seattle-Tacoma Airport",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 72,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IL",
+      "isoNumeric": "376",
+      "name": "Israel",
+      "slug": "israel",
+      "centroid": [
+        34.9,
+        31.3
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
+        "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
+        "headline": "Gadi Eisenkot Invites Benjamin Netanyahu's Likud To Coalition Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 66,
+        "viralScore": 71,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 72,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "explosions-reported-strait-hormuz-iran",
+        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
+        "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 69,
         "intensityTier": "high"
       }
     },
@@ -254,38 +210,104 @@
         -2,
         53.5
       ],
-      "viralScore": 68,
+      "viralScore": 71,
       "intensityTier": "high",
       "topicCount": 37,
       "topTopic": {
-        "slug": "australia-wallabies-defeat-wales-nations-championship",
-        "canonicalPath": "/news/gb/australia-wallabies-defeat-wales-nations-championship/",
-        "headline": "Australia Wallabies Defeat Wales 29-26 In Nations Championship",
+        "slug": "pochettino-linked-to-manchester-united-manager",
+        "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
+        "headline": "Mauricio Pochettino Begins Tenure As Manchester United Head Coach",
         "categorySlug": "sports",
         "categoryName": "Sports",
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "cop31-climate-summit-antalya-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
+        "headline": "Protesters And UN Officials Urge Urgent Action At COP31 In Turkey",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "ukraine-drone-strikes-crimea-moscow",
+        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
+        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 17,
+      "topTopic": {
+        "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
+        "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
+        "headline": "Large Protests Across France Demand Higher Wages And School Funding",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
         "viralScore": 65,
         "intensityTier": "high"
       }
     },
     {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
       "centroid": [
-        104,
-        35
+        134,
+        -25.5
       ],
-      "viralScore": 66,
+      "viralScore": 67,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 35,
       "topTopic": {
-        "slug": "trump-to-meet-xi-putin-apec",
-        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
-        "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 63,
+        "slug": "australian-teen-rescued-from-bush",
+        "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
+        "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 64,
         "intensityTier": "high"
       }
     },
@@ -298,16 +320,16 @@
         -3.7,
         40.2
       ],
-      "viralScore": 66,
+      "viralScore": 65,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
+        "slug": "real-madrid-celta-laliga-match",
+        "canonicalPath": "/news/es/real-madrid-celta-laliga-match/",
+        "headline": "Real Madrid Defeats Celta Vigo 2-1 Following Late Carlos Espi Goal",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 63,
+        "viralScore": 62,
         "intensityTier": "high"
       }
     },
@@ -320,17 +342,61 @@
         102.3,
         3.8
       ],
-      "viralScore": 64,
+      "viralScore": 65,
       "intensityTier": "high",
-      "topicCount": 15,
+      "topicCount": 17,
       "topTopic": {
-        "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
-        "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
-        "headline": "Barisan Nasional Defers Negeri Sembilan Leadership To Ruler",
+        "slug": "najib-razak-returns-to-kajang-prison",
+        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
+        "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 61,
+        "viralScore": 62,
         "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "trump-to-meet-xi-putin-apec",
+        "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
+        "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 20,
+      "topTopic": {
+        "slug": "ruto-begins-four-day-gusii-development-tour",
+        "canonicalPath": "/news/ke/ruto-begins-four-day-gusii-development-tour/",
+        "headline": "President Ruto Criticizes Opposition After IEBC Meeting Walkout",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 59,
+        "intensityTier": "active"
       }
     },
     {
@@ -346,11 +412,11 @@
       "intensityTier": "high",
       "topicCount": 65,
       "topTopic": {
-        "slug": "four-mourners-die-bayelsa-boat-accident",
-        "canonicalPath": "/news/ng/four-mourners-die-bayelsa-boat-accident/",
-        "headline": "Four Mourners Die In Boat Accident In Southern Ijaw Bayelsa State",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
+        "slug": "fountain-of-life-church-leadership-dispute",
+        "canonicalPath": "/news/ng/fountain-of-life-church-leadership-dispute/",
+        "headline": "Jimmy Odukoya Sues Sister And Trustees Over Fountain Of Life Removal",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
         "viralScore": 58,
         "intensityTier": "active"
       }
@@ -364,7 +430,7 @@
         45,
         24
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -373,51 +439,7 @@
         "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 20,
-      "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Receives 200 Year Sentence For Shakahola Deaths",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "ukraine-drone-strikes-crimea-moscow",
-        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
-        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -430,7 +452,7 @@
         35.2,
         31.9
       ],
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -439,7 +461,29 @@
         "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 55,
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 30,
+      "topTopic": {
+        "slug": "max-verstappen-pole-las-vegas-gp",
+        "canonicalPath": "/news/sg/max-verstappen-pole-las-vegas-gp/",
+        "headline": "Max Verstappen Secures Victory At The Formula 1 Las Vegas GP",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 51,
         "intensityTier": "active"
       }
     },
@@ -466,6 +510,28 @@
       }
     },
     {
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
+      "centroid": [
+        12.6,
+        42.8
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "paolo-bulgari-dies-at-89",
+        "canonicalPath": "/news/it/paolo-bulgari-dies-at-89/",
+        "headline": "Italian Jewellery Magnate Paolo Bulgari Passes Away At Age 89",
+        "categorySlug": "lifestyle-culture",
+        "categoryName": "Lifestyle & Culture",
+        "viralScore": 45,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "JP",
       "isoNumeric": "392",
       "name": "Japan",
@@ -484,28 +550,6 @@
         "categorySlug": "sports",
         "categoryName": "Sports",
         "viralScore": 44,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 34,
-      "topTopic": {
-        "slug": "climate-talks-will-be-tougher-at-cop31-amid-heightened",
-        "canonicalPath": "/news/sg/climate-talks-will-be-tougher-at-cop31-amid-heightened/",
-        "headline": "Grace Fu Highlights Growing Challenges For COP31 Climate Negotiations",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 43,
         "intensityTier": "active"
       }
     },
@@ -554,28 +598,6 @@
       }
     },
     {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
-      "centroid": [
-        12.6,
-        42.8
-      ],
-      "viralScore": 43,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "former-italian-police-chief-dies",
-        "canonicalPath": "/news/it/former-italian-police-chief-dies/",
-        "headline": "Former Italian Police Chief Dies Following Mafia Investigation",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 42,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "DE",
       "isoNumeric": "276",
       "name": "Germany",
@@ -606,7 +628,7 @@
         69.3,
         30
       ],
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -615,29 +637,7 @@
         "headline": "Pakistan Cricket Board Updates Central Contracts For Key Players",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 32,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 31,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "cop31-climate-negotiators-draft-agreement",
-        "canonicalPath": "/news/tr/cop31-climate-negotiators-draft-agreement/",
-        "headline": "Negotiators Release Preliminary Draft Agreement At COP31 In Turkey",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 30,
+        "viralScore": 31,
         "intensityTier": "active"
       }
     },

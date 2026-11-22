@@ -3,17 +3,34 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 69,
+  "viralScore": 75,
   "intensityTier": "high",
-  "generatedAt": "2026-11-22T05:18:00Z",
+  "generatedAt": "2026-11-22T08:18:00Z",
   "clusters": [
+    {
+      "slug": "ice-arrests-passengers-seattle-airport",
+      "canonicalPath": "/news/us/ice-arrests-passengers-seattle-airport/",
+      "headline": "ICE Officers Arrest Two Passengers At Seattle-Tacoma Airport",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Masked ICE officers took two passengers into custody while they boarded a flight at Seattle-Tacoma International Airport.",
+        "The detainment occurred on a crowded jet bridge, with viral video footage surfacing of the event."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/watch-masked-ice-agents-drag-away-two-at-us-seattle-airport-spark-chaos-during-boarding/articleshow/136065874.cms"
+      }
+    },
     {
       "slug": "trump-contractors-congressional-oversight-order",
       "canonicalPath": "/news/us/trump-contractors-congressional-oversight-order/",
       "headline": "President Trump Mandates White House Review Of Congressional Inquiries",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump issued an executive order requiring federal contractors to consult the White House before answering requests from Congress.",
@@ -25,37 +42,71 @@
       }
     },
     {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
-        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
       ],
       "primarySource": {
-        "publisherName": "CNBC Indonesia",
-        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
       }
     },
     {
-      "slug": "hackers-breach-fbi-and-us-agriculture-department",
-      "canonicalPath": "/news/us/hackers-breach-fbi-and-us-agriculture-department/",
-      "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 65,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "Cyberattacks have compromised digital systems at the FBI and the US Department of Agriculture.",
-        "The breach at the Department of Agriculture reportedly impacted a system used for processing farmer payments."
+        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
+        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261121-us-agriculture-department-fbi-hit-by-cyberattacks-media-report"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+      }
+    },
+    {
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-wants-to-talk-nuclear-with-putin-and-xi?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "george-washington-hair-auction-sale",
+      "canonicalPath": "/news/us/george-washington-hair-auction-sale/",
+      "headline": "Lock Of George Washington Hair Sells At Auction For Four Thousand",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A lock of hair belonging to the first U.S. president sold at auction for 4,000 dollars.",
+        "The artifact was held by John Gadsby before Washington died in 1799."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do"
       }
     },
     {
@@ -64,7 +115,7 @@
       "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
@@ -81,7 +132,7 @@
       "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
@@ -90,40 +141,6 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/opinions/2026/11/10/floridas-red-wall-is-cracking-but-democrats-are-missing-their-chance?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
-        "The administration dismissed national cyber director Sean Cairncross following widespread criticism regarding the tech outages."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/no-evidence-of-coordinated-cyberattack-behind-us-outages-rubio/"
-      }
-    },
-    {
-      "slug": "george-washington-hair-auction-sale",
-      "canonicalPath": "/news/us/george-washington-hair-auction-sale/",
-      "headline": "Lock Of George Washington Hair Sells At Auction For Four Thousand",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A lock of hair belonging to the first U.S. president sold at auction for 4,000 dollars.",
-        "The artifact was held by John Gadsby before Washington died in 1799."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do"
       }
     },
     {
@@ -161,20 +178,20 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
+      "slug": "zelenskyy-reports-us-donbas-nato-proposal",
+      "canonicalPath": "/news/us/zelenskyy-reports-us-donbas-nato-proposal/",
+      "headline": "President Zelenskyy Reports US Proposal On Donbas And NATO Accession",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
-        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
+        "Ukrainian President Volodymyr Zelenskyy stated that US representatives proposed a territorial exchange involving the Donbas region.",
+        "The suggested proposal would reportedly grant Ukraine NATO membership in return for ceding parts of eastern Ukraine to Russian control."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-wants-to-talk-nuclear-with-putin-and-xi?traffic_source=rss"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership"
       }
     },
     {
@@ -195,37 +212,20 @@
       }
     },
     {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
+        "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
+        "The administration dismissed national cyber director Sean Cairncross following widespread criticism regarding the tech outages."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/no-evidence-of-coordinated-cyberattack-behind-us-outages-rubio/"
       }
     },
     {
@@ -243,6 +243,40 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "hackers-breach-fbi-and-us-agriculture-department",
+      "canonicalPath": "/news/us/hackers-breach-fbi-and-us-agriculture-department/",
+      "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Cyberattacks have compromised digital systems at the FBI and the US Department of Agriculture.",
+        "The breach at the Department of Agriculture reportedly impacted a system used for processing farmer payments."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261121-us-agriculture-department-fbi-hit-by-cyberattacks-media-report"
+      }
+    },
+    {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
+        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+      ],
+      "primarySource": {
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261113074831-4-784858/dolar-as-menguat-di-atas-rp18000-ini-cara-pertamina-redam-guncangan"
       }
     },
     {
@@ -280,23 +314,6 @@
       }
     },
     {
-      "slug": "democrat-wins-alaska-gubernatorial-election",
-      "canonicalPath": "/news/us/democrat-wins-alaska-gubernatorial-election/",
-      "headline": "Trump Administration Moves To Drop Lawsuit Over Mary Peltola Win",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The U.S. Department of Justice is seeking to dismiss a legal challenge against the results of the Alaska Senate race.",
-        "The lawsuit, filed prior to the election, aimed to prevent the certification of the results if Democrat Mary Peltola won the contest."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins"
-      }
-    },
-    {
       "slug": "major-us-banks-experience-service-outages",
       "canonicalPath": "/news/us/major-us-banks-experience-service-outages/",
       "headline": "Customers Report Widespread Service Outages At Major American Banks",
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/goodbye-overtourism-sustainable-travel-gains-ground/a-79934295?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "reinaldo-dennes-texas-execution-prolonged",
-      "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
-      "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Texas officials spent over an hour attempting to execute Reinaldo Dennes by lethal injection.",
-        "The process was delayed as staff encountered significant difficulty in accessing the inmate's veins."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/texas-execution-delayed-over-an-hour-november-2026/"
       }
     }
   ]
