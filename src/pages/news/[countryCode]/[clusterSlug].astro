@@ -1,7 +1,8 @@
 ---
 /**
- * Static Viral Story Page (plan FR-07, §9.1). Zero client JS: everything — summary,
- * signal breakdown, locator globe, sources and the internal link graph — is pre-rendered.
+ * Static Viral Story Page (plan FR-07, §9.1). Everything — summary, signal breakdown, locator
+ * globe, sources and the internal link graph — is pre-rendered. The only client JS is the
+ * share bar's tiny progressive enhancement (copy link / native share sheet).
  */
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
@@ -12,8 +13,9 @@ import SourceAttributionList from '../../../components/news/SourceAttributionLis
 import SignalBreakdown from '../../../components/news/SignalBreakdown.astro';
 import LocatorGlobe from '../../../components/map/LocatorGlobe.astro';
 import AdSlot from '../../../components/ads/AdSlot.astro';
+import ShareBar from '../../../components/news/ShareBar.astro';
 import JsonLd from '../../../components/seo/JsonLd.astro';
-import { pageTitle } from '../../../lib/site.ts';
+import { absoluteUrl, pageTitle } from '../../../lib/site.ts';
 import { newsArticleGraph } from '../../../lib/structuredData.ts';
 import {
   batchMeta,
@@ -66,6 +68,7 @@ const contextHtml = linkifyFirstMentions(c.aiContextParagraph, [
 // The pipeline writes a search-length seoTitle (≤ 60 chars) so the full title fits in results.
 // Unique across all stories even when two share a seoTitle (see getStoryTitles).
 const title = pageTitle((await getStoryTitles()).get(c.id)!);
+const shareUrl = absoluteUrl(Astro.url.pathname);
 const countryCategoryHref = `/country/${c.countrySlug}/${c.categorySlug}/`;
 const jsonLd = newsArticleGraph(c, [
   { name: c.countryName, path: `/country/${c.countrySlug}/` },
@@ -138,6 +141,9 @@ const jsonLd = newsArticleGraph(c, [
             · Updated in batch{' '}
             <time datetime={c.lastUpdatedBatchAt}>{formatTimeWib(c.lastUpdatedBatchAt)}</time>
           </p>
+          <div class="mt-6">
+            <ShareBar url={shareUrl} title={c.headline} placement="top" />
+          </div>
         </header>
 
         <section
@@ -187,6 +193,15 @@ const jsonLd = newsArticleGraph(c, [
             </div>
           </div>
         )}
+
+        <div class="mt-10">
+          <ShareBar
+            url={shareUrl}
+            title={c.headline}
+            placement="bottom"
+            heading="Know someone who should see this? Share it"
+          />
+        </div>
 
         <p class="mt-10 text-[0.8125rem] leading-relaxed text-ink-faint">
           This page is an AI-assisted summary of reporting by the publishers listed above, generated

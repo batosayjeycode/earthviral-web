@@ -1,0 +1,351 @@
+---
+/**
+ * Social share bar for story pages.
+ *
+ * SEO / performance notes:
+ * - Every network button is a plain `<a>` to the network's share intent, so sharing works with
+ *   JavaScript disabled and no third-party SDK (tracking pixels, extra requests, layout shift)
+ *   is ever loaded. Icons are inlined at build time from simple-icons — zero runtime cost.
+ * - Links carry `rel="nofollow noopener noreferrer"`: crawlers don't follow share endpoints or
+ *   spend crawl budget on them, and no link equity leaks to them.
+ * - The shared URL is the canonical URL plus UTM tags, so social traffic is attributable in
+ *   analytics while `<link rel="canonical">` / `og:url` keep all signals on one URL.
+ * - The bar is `data-pagefind-ignore` so site search doesn't index "Share on WhatsApp".
+ * - "Copy link" and the native share sheet (mobile) are progressive enhancements: they stay
+ *   hidden until the small module script below has run.
+ */
+import { siFacebook, siReddit, siTelegram, siThreads, siWhatsapp, siX } from 'simple-icons';
+
+interface Props {
+  /** Canonical absolute URL of the story. */
+  url: string;
+  /** Headline used as the share text. */
+  title: string;
+  /** Visible label above the buttons. */
+  heading?: string;
+  /** Distinguishes multiple bars on one page (UTM content + element ids). */
+  placement: 'top' | 'bottom';
+}
+
+const { url, title, heading = 'Share this story', placement } = Astro.props;
+
+const tagged = (source: string) => {
+  const u = new URL(url);
+  u.searchParams.set('utm_source', source);
+  u.searchParams.set('utm_medium', 'social');
+  u.searchParams.set('utm_campaign', 'share');
+  u.searchParams.set('utm_content', placement);
+  return u.href;
+};
+const enc = encodeURIComponent;
+
+const networks = [
+  {
+    name: 'WhatsApp',
+    icon: siWhatsapp,
+    color: '#25D366',
+    href: `https://wa.me/?text=${enc(`${title} ${tagged('whatsapp')}`)}`,
+  },
+  {
+    name: 'X',
+    icon: siX,
+    color: 'var(--color-ink-strong)',
+    href: `https://x.com/intent/post?text=${enc(title)}&url=${enc(tagged('x'))}`,
+  },
+  {
+    name: 'Facebook',
+    icon: siFacebook,
+    color: '#0866FF',
+    href: `https://www.facebook.com/sharer/sharer.php?u=${enc(tagged('facebook'))}`,
+  },
+  {
+    name: 'Threads',
+    icon: siThreads,
+    color: 'var(--color-ink-strong)',
+    href: `https://www.threads.net/intent/post?text=${enc(`${title} ${tagged('threads')}`)}`,
+  },
+  {
+    name: 'Telegram',
+    icon: siTelegram,
+    color: '#26A5E4',
+    href: `https://t.me/share/url?url=${enc(tagged('telegram'))}&text=${enc(title)}`,
+  },
+  {
+    name: 'Reddit',
+    icon: siReddit,
+    color: '#FF4500',
+    href: `https://www.reddit.com/submit?url=${enc(tagged('reddit'))}&title=${enc(title)}`,
+  },
+];
+const headingId = `share-heading-${placement}`;
+---
+
+<section
+  class="share-bar"
+  aria-labelledby={headingId}
+  data-pagefind-ignore
+  data-share
+  data-share-url={tagged('copy')}
+  data-share-native-url={tagged('native')}
+  data-share-title={title}
+>
+  <h2 id={headingId} class="share-heading">
+    <span class="share-pulse" aria-hidden="true"></span>
+    {heading}
+  </h2>
+  <ul class="share-list" role="list">
+    <li hidden data-share-native-item>
+      <button type="button" class="share-btn share-primary" data-share-native>
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+          <path d="M16 6l-4-4-4 4" />
+          <path d="M12 2v13" />
+        </svg>
+        <span>Share</span>
+      </button>
+    </li>
+    {networks.map((n) => (
+      <li>
+        <a
+          href={n.href}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class="share-btn"
+          style={`--brand: ${n.color}`}
+          title={`Share on ${n.name}`}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d={n.icon.path} />
+          </svg>
+          <span class="share-label">{n.name}</span>
+          <span class="sr-only"> (opens in a new tab)</span>
+        </a>
+      </li>
+    ))}
+    <li hidden data-share-copy-item>
+      <button type="button" class="share-btn" style="--brand: var(--color-cyan)" data-share-copy>
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5" />
+          <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5" />
+        </svg>
+        <span class="share-label" data-share-copy-label>
+          Copy link
+        </span>
+      </button>
+    </li>
+  </ul>
+  <p class="sr-only" aria-live="polite" data-share-status></p>
+</section>
+
+<script>
+  for (const bar of document.querySelectorAll<HTMLElement>('[data-share]')) {
+    const { shareUrl = '', shareNativeUrl = '', shareTitle = '' } = bar.dataset;
+    const status = bar.querySelector<HTMLElement>('[data-share-status]')!;
+
+    // Native share sheet (most phones): reaches every app the reader has, incl. Instagram/LINE.
+    if (typeof navigator.share === 'function') {
+      bar.querySelector<HTMLElement>('[data-share-native-item]')!.hidden = false;
+      bar.querySelector('[data-share-native]')!.addEventListener('click', () => {
+        navigator.share({ title: shareTitle, url: shareNativeUrl }).catch(() => {
+          /* dismissed by the reader */
+        });
+      });
+    }
+
+    if (navigator.clipboard) {
+      bar.querySelector<HTMLElement>('[data-share-copy-item]')!.hidden = false;
+      const button = bar.querySelector<HTMLElement>('[data-share-copy]')!;
+      const label = bar.querySelector<HTMLElement>('[data-share-copy-label]')!;
+      let reset: ReturnType<typeof setTimeout> | undefined;
+      button.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(shareUrl);
+          label.textContent = 'Copied!';
+          status.textContent = 'Link copied to clipboard';
+          button.dataset.copied = '';
+        } catch {
+          label.textContent = 'Copy failed';
+        }
+        clearTimeout(reset);
+        reset = setTimeout(() => {
+          label.textContent = 'Copy link';
+          status.textContent = '';
+          delete button.dataset.copied;
+        }, 2000);
+      });
+    }
+  }
+</script>
+
+<style>
+  .share-bar {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 1rem 1.25rem 1.15rem;
+    background:
+      radial-gradient(
+        120% 140% at 0% 0%,
+        color-mix(in srgb, var(--color-cyan) 10%, transparent),
+        transparent 55%
+      ),
+      radial-gradient(
+        120% 140% at 100% 100%,
+        color-mix(in srgb, var(--color-surge-hot) 12%, transparent),
+        transparent 55%
+      ),
+      color-mix(in srgb, var(--color-land) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-cyan) 22%, transparent);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-surge-hot) 8%, transparent) inset;
+  }
+
+  .share-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-cyan);
+  }
+
+  .share-pulse {
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: var(--color-cyan);
+  }
+  .share-pulse::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: inherit;
+    animation: share-ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  @keyframes share-ping {
+    75%,
+    100% {
+      transform: scale(2.6);
+      opacity: 0;
+    }
+  }
+
+  .share-list {
+    margin-top: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .share-btn {
+    --brand: var(--color-cyan);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem; /* 44px touch target */
+    padding: 0 0.95rem;
+    border-radius: 9999px;
+    border: 1px solid color-mix(in srgb, var(--brand) 45%, transparent);
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    color: var(--color-ink);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      transform 0.15s ease,
+      background-color 0.15s ease,
+      box-shadow 0.15s ease,
+      border-color 0.15s ease;
+  }
+  .share-btn svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex-shrink: 0;
+    color: var(--brand);
+  }
+  .share-btn:hover,
+  .share-btn:focus-visible {
+    transform: translateY(-2px);
+    border-color: var(--brand);
+    background: color-mix(in srgb, var(--brand) 20%, transparent);
+    box-shadow: 0 6px 22px -6px color-mix(in srgb, var(--brand) 70%, transparent);
+  }
+  /* Day mode: bright brand colours (WhatsApp green, Telegram blue) wash out on white. */
+  :global([data-theme='light']) .share-btn:not(.share-primary) svg {
+    color: color-mix(in srgb, var(--brand) 72%, #000);
+  }
+  :global([data-theme='light']) .share-bar {
+    background-color: var(--color-land);
+    box-shadow: var(--shadow-card);
+  }
+
+  .share-btn[data-copied] {
+    border-color: var(--color-verified);
+    --brand: var(--color-verified);
+  }
+
+  .share-primary {
+    border: 0;
+    color: var(--color-void);
+    font-weight: 700;
+    background: linear-gradient(110deg, var(--color-cyan), var(--color-surge-hot));
+    box-shadow: 0 6px 24px -8px color-mix(in srgb, var(--color-cyan) 70%, transparent);
+  }
+  .share-primary svg {
+    color: var(--color-void);
+  }
+  .share-primary:hover,
+  .share-primary:focus-visible {
+    background: linear-gradient(110deg, var(--color-cyan), var(--color-surge-hot));
+    box-shadow: 0 8px 30px -6px color-mix(in srgb, var(--color-surge-hot) 80%, transparent);
+  }
+
+  /* Small phones: icon-only network buttons keep the bar on one or two rows. */
+  @media (max-width: 420px) {
+    .share-btn:not(.share-primary) .share-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .share-btn:not(.share-primary) {
+      width: 2.75rem;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .share-pulse::after {
+      animation: none;
+    }
+    .share-btn {
+      transition: none;
+    }
+    .share-btn:hover,
+    .share-btn:focus-visible {
+      transform: none;
+    }
+  }
+</style>
