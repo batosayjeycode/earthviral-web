@@ -3,18 +3,35 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 69,
+  "viralScore": 68,
   "intensityTier": "high",
-  "generatedAt": "2026-11-22T11:18:00Z",
+  "generatedAt": "2026-11-22T14:18:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-investigates-ceo-espionage-allegations",
+      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+      "headline": "Nvidia Posts Strong Q3 Results Following Jensen Huang Resignation",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Nvidia reported a doubling of its third-quarter revenue in its first financial statement since the resignation of Jensen Huang.",
+        "The company's board of directors explicitly stated there are no plans to reinstate the former CEO following the espionage investigation."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-nvidia-ceo-replacement"
+      }
+    },
     {
       "slug": "indonesian-pairs-reach-hong-kong-open-semifinals",
       "canonicalPath": "/news/cn/indonesian-pairs-reach-hong-kong-open-semifinals/",
       "headline": "Leo Rolly Carnando And Daniel Marthin Finish As Hong Kong Open Runner-up",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 66,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Leo Rolly Carnando and Daniel Marthin secured the runner-up position at the Hong Kong Open 2026.",
         "The tournament final held at The Kai Tak Arena concluded on November 22, 2026."
@@ -30,7 +47,7 @@
       "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Donald Trump held a trilateral meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in Shenzhen, China.",
@@ -39,23 +56,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261119006700315"
-      }
-    },
-    {
-      "slug": "nvidia-investigates-ceo-espionage-allegations",
-      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-      "headline": "Nvidia Posts Strong Q3 Results Following Jensen Huang Resignation",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nvidia reported a doubling of its third-quarter revenue in its first financial statement since the resignation of Jensen Huang.",
-        "The company's board of directors explicitly stated there are no plans to reinstate the former CEO following the espionage investigation."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/trump-says-unsure-if-woman-linked-to-jensen-huang-was-a-spy-confirms-speaking-to-nvidia-chief/articleshow/135785044.cms"
       }
     },
     {
@@ -76,29 +76,12 @@
       }
     },
     {
-      "slug": "asean-china-haze-maritime-negotiations",
-      "canonicalPath": "/news/cn/asean-china-haze-maritime-negotiations/",
-      "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
-        "Negotiations for the maritime code remain ongoing without a fixed conclusion deadline, according to regional leadership."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/17/no-new-deadline-set-for-south-china-sea-code-negotiations-says-anwar/243540"
-      }
-    },
-    {
       "slug": "amri-nita-advance-hong-kong-open",
       "canonicalPath": "/news/cn/amri-nita-advance-hong-kong-open/",
       "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 49,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
@@ -107,6 +90,23 @@
       "primarySource": {
         "publisherName": "VIVA",
         "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
+      }
+    },
+    {
+      "slug": "asean-china-haze-maritime-negotiations",
+      "canonicalPath": "/news/cn/asean-china-haze-maritime-negotiations/",
+      "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
+        "Negotiations for the maritime code remain ongoing without a fixed conclusion deadline, according to regional leadership."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/17/no-new-deadline-set-for-south-china-sea-code-negotiations-says-anwar/243540"
       }
     },
     {
@@ -124,23 +124,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o"
-      }
-    },
-    {
-      "slug": "prabowo-subianto-meets-xi-jinping-shenzhen",
-      "canonicalPath": "/news/cn/prabowo-subianto-meets-xi-jinping-shenzhen/",
-      "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Prabowo Subianto and President Xi Jinping held a bilateral meeting at Kylin Villa in Shenzhen.",
-        "The two leaders discussed strengthening strategic relations and cooperation regarding the South China Sea."
-      ],
-      "primarySource": {
-        "publisherName": "Republika",
-        "articleUrl": "https://news.republika.co.id/berita/tos87n484/bertemu-xi-jinping-prabowo-bahas-kerja-sama-laut-china-selatan"
       }
     },
     {
@@ -294,6 +277,23 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/east-asia/shenzhen-apec-drone-cars-bikes-horns-city-ban-6557581"
+      }
+    },
+    {
+      "slug": "prabowo-subianto-meets-xi-jinping-shenzhen",
+      "canonicalPath": "/news/cn/prabowo-subianto-meets-xi-jinping-shenzhen/",
+      "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Prabowo Subianto and President Xi Jinping held a bilateral meeting at Kylin Villa in Shenzhen.",
+        "The two leaders discussed strengthening strategic relations and cooperation regarding the South China Sea."
+      ],
+      "primarySource": {
+        "publisherName": "Republika",
+        "articleUrl": "https://news.republika.co.id/berita/tos87n484/bertemu-xi-jinping-prabowo-bahas-kerja-sama-laut-china-selatan"
       }
     },
     {

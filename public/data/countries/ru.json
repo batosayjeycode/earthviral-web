@@ -3,42 +3,25 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 81,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-22T11:18:00Z",
+  "viralScore": 85,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-22T14:18:00Z",
   "clusters": [
     {
       "slug": "russian-cargo-ship-drone-strike",
       "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
-      "headline": "Russian Cargo Ship Sparta II Struck By Drones In Gulf Of Finland",
+      "headline": "Russian Cargo Ship Sparta II Remains Burning After Drone Strike",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 78,
+      "viralScore": 82,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Russian cargo vessel Sparta II caught fire after being struck by drones in the Gulf of Finland.",
-        "Finnish authorities report the incident occurred within their waters and have indicated that Ukraine was likely responsible."
+        "The Russian cargo vessel Sparta II remains ablaze in the Gulf of Finland following a suspected drone attack.",
+        "Finnish authorities have implemented enhanced security measures in the region as a response to the maritime incident."
       ],
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/europe/20261121-drone-attack-sets-russian-cargo-ship-ablaze-in-gulf-of-finland"
-      }
-    },
-    {
-      "slug": "russian-missile-strikes-target-kyiv",
-      "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
-      "headline": "Russian Missile Strikes Hit Kyiv And Land In Polish Territory",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 60,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Russian strikes against Kyiv resulted in at least six reported fatalities within the capital.",
-        "Two Russian missiles reportedly landed in southeastern Poland, which officials described as a provocation."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss"
       }
     },
     {
@@ -47,8 +30,8 @@
       "headline": "Immigration Authorities Prevent Indonesians Joining Russian Army",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Directorate General of Immigration blocked two Indonesian citizens at Juanda Airport suspected of traveling to join the Russian military.",
         "Police have disrupted multiple recruitment operations involving 22 individuals, some lured by false promises of high-paying civilian jobs."
@@ -56,6 +39,23 @@
       "primarySource": {
         "publisherName": "Antara",
         "articleUrl": "https://www.antaranews.com/berita/5852979/polisi-ungkap-peran-delapan-tersangka-perekrut-wni-ke-rusia"
+      }
+    },
+    {
+      "slug": "russian-missile-strikes-target-kyiv",
+      "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
+      "headline": "Russian Missile Strikes Hit Kyiv And Land In Polish Territory",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Russian strikes against Kyiv resulted in at least six reported fatalities within the capital.",
+        "Two Russian missiles reportedly landed in southeastern Poland, which officials described as a provocation."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss"
       }
     },
     {
@@ -76,12 +76,29 @@
       }
     },
     {
+      "slug": "kim-jong-un-receives-russian-ambassador-credentials",
+      "canonicalPath": "/news/ru/kim-jong-un-receives-russian-ambassador-credentials/",
+      "headline": "Kim Jong-un Accepts Credentials From Russia's New Ambassador",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "North Korean leader Kim Jong-un received diplomatic credentials directly from Russian Ambassador Andrei Podelyshev.",
+        "This event represents a significant departure from North Korean diplomatic protocol used over the past 30 years."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261122002900315"
+      }
+    },
+    {
       "slug": "denmark-expels-russian-diplomat-assassination-plot",
       "canonicalPath": "/news/ru/denmark-expels-russian-diplomat-assassination-plot/",
       "headline": "Denmark Expels Russian Diplomat Over Alleged Assassination Plot",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Danish authorities expelled a Russian diplomat following a failed attempt to assassinate a Ukrainian-American rapper in Copenhagen.",
@@ -98,7 +115,7 @@
       "headline": "Russian Missile Strike Kills Two People In Kryvyi Rih Ukraine",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 44,
+      "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A Russian missile strike hit Kryvyi Rih, resulting in two fatalities and injuring approximately 60 people.",
@@ -124,23 +141,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/russian-projectiles-hit-poland-as-nato-tensions-rise"
-      }
-    },
-    {
-      "slug": "russian-missile-barrage-hits-kyiv-bridges",
-      "canonicalPath": "/news/ru/russian-missile-barrage-hits-kyiv-bridges/",
-      "headline": "Russian Missile Barrage Causes Significant Damage To Kyiv Bridges",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russian military forces conducted a missile strike targeting infrastructure in the capital city of Kyiv.",
-        "Local officials confirmed that two bridges sustained damage as a result of the aerial bombardment."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261120-live-deadly-russian-attacks-damage-two-bridges-in-kyiv-mayor-says"
       }
     },
     {
