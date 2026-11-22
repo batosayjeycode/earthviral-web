@@ -472,6 +472,12 @@ describe('content honesty', () => {
     assert.doesNotMatch(text, /GEO_KEY/); // scripts are excluded
   });
 
+  test('no page shows a replacement character (U+FFFD) from a mis-decoded feed', () => {
+    // Folha titles stored before the feed charset fix rendered as "ser\uFFFDo" for "serão".
+    const broken = pages.filter((p) => p.html.includes('\uFFFD')).map((p) => p.path);
+    assert.deepEqual(broken.slice(0, 5), [], `${broken.length} page(s) contain U+FFFD`);
+  });
+
   test('no placeholder or fake-proof copy', () => {
     for (const phrase of [
       /coming soon/i,
