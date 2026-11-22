@@ -6,43 +6,29 @@
   "countryName": "China",
   "countrySlug": "china",
   "region": "Asia",
-  "categorySlug": "economy-business",
-  "categoryName": "Economy & Business",
-  "headline": "Jensen Huang Resigns As Nvidia CEO Following Alleged China Ties",
-  "seoTitle": "Nvidia CEO Jensen Huang Resigns Amid China Espionage Scandal",
-  "metaDescription": "Jensen Huang has stepped down as Nvidia CEO following accusations of personal ties to an alleged Chinese intelligence operative and unauthorized chip exports.",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "US Government Investigates Nvidia Chip Sales To Chinese Companies",
+  "seoTitle": "Nvidia China Chip Sales Investigation",
+  "metaDescription": "The US administration is seeking information regarding past approvals for the sale of advanced Nvidia and AMD AI chips to Chinese firms amid a scandal.",
   "aiSummaryBullets": [
-    "Jensen Huang officially resigned from his position as the CEO of Nvidia following allegations involving a Chinese intelligence operative.",
-    "Reports indicate that unauthorized transfers of thousands of restricted technology chips were facilitated during the period under investigation.",
-    "Chinese authorities have officially denied allegations of espionage linked to the company and its former leadership."
+    "US officials are investigating the approval of nearly 900,000 Nvidia and AMD AI chips for sale to companies in China.",
+    "Nvidia has announced it will cease the sale of certain data center chips to the Chinese market following recent controversy.",
+    "The developments follow widespread allegations involving an individual named Alice Huang regarding the smuggling of chips."
   ],
-  "aiContextParagraph": "The resignation of Jensen Huang follows intensified scrutiny regarding the alleged movement of approximately 240,000 banned high-end chips into China. Public reports and shareholder litigation have centered on claims that Huang maintained a personal relationship with an individual suspected of intelligence activities, who allegedly leveraged this connection to bypass export restrictions. While international media outlets have characterized the situation as a significant corporate scandal involving technology security, Chinese government officials have officially denied involvement in any espionage operations. The development comes as political leaders prepare for upcoming bilateral diplomatic talks. Despite the leadership change at Nvidia, analysts suggest that broader national trade strategies between major global powers are unlikely to shift immediately due to this internal corporate crisis. The situation has triggered significant global interest due to the intersection of semiconductor trade policy and corporate governance.",
-  "whyItIsViral": "10 independent outlets are covering this story.",
-  "viralScore": 54,
-  "intensityTier": "active",
+  "aiContextParagraph": "The current scrutiny involving Nvidia follows reports of an alleged espionage scandal involving Alice Huang, who was accused of smuggling AI technology to Chinese firms. Amid the fallout from these allegations, which included the resignation of CEO Jensen Huang, concerns regarding US technology exports have intensified. The US administration reportedly authorized the sale of nearly 900,000 Nvidia and AMD AI chips to Chinese entities prior to the current restrictions. In response to the ongoing situation and regulatory pressures, Nvidia has confirmed it will discontinue the sale of specific high-performance data center chips to China. Authorities are now seeking further clarification on previous approval processes for these technology transfers. China has formally denied accusations of espionage linked to the company, as international observers note that the rivalry between major powers continues to heavily influence the trajectory of the global artificial intelligence sector.",
+  "whyItIsViral": "The story is being widely covered by 12 independent outlets due to the combination of high-level national security allegations and significant corporate leadership changes at a major technology firm.",
+  "viralScore": 76,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 11,
-    "coverageVelocityScore": 0,
+    "verifiedPublisherCount": 12,
+    "coverageVelocityScore": 48,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-09T00:53:35Z",
-  "lastUpdatedBatchAt": "2026-11-20T01:48:00Z",
+  "lastUpdatedBatchAt": "2026-11-22T17:18:00Z",
   "sources": [
-    {
-      "publisherName": "CNBC Indonesia",
-      "publisherDomain": "cnbcindonesia.com",
-      "articleTitle": "Trump Pasang Badan Bela Bos NVDIA di Tengah Skandal Intelijen China!",
-      "articleUrl": "https://www.cnbcindonesia.com/news/20261110105750-8-783815/trump-pasang-badan-bela-bos-nvdia-di-tengah-skandal-intelijen-china",
-      "publishedAt": "2026-11-10T04:20:31Z"
-    },
-    {
-      "publisherName": "CNBC Indonesia",
-      "publisherDomain": "cnbcindonesia.com",
-      "articleTitle": "Video: Trump Bela Bos NVIDIA soal Isu Selingkuh dan Intelijen China",
-      "articleUrl": "https://www.cnbcindonesia.com/news/20261110090016-8-783759/video-trump-bela-bos-nvidia-soal-isu-selingkuh-dan-intelijen-china",
-      "publishedAt": "2026-11-10T05:30:11Z"
-    },
     {
       "publisherName": "Detik",
       "publisherDomain": "detik.com",
@@ -238,13 +224,23 @@
       "articleTitle": "Trump admin approved sales of nearly 9 lakh Nvidia and AMD AI chips for Chinese firms",
       "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/trump-administration-approved-nearly-9-lakh-nvidia-and-amd-ai-chips-for-chinese-firms/articleshow/136009149.cms",
       "publishedAt": "2026-11-20T01:02:27Z"
+    },
+    {
+      "publisherName": "InfoMoney",
+      "publisherDomain": "infomoney.com.br",
+      "articleTitle": "Espiões, chips e a Nvidia: a campanha secreta da China para driblar os EUA",
+      "articleUrl": "https://www.infomoney.com.br/business/global/espioes-chips-e-a-nvidia-a-campanha-secreta-da-china-para-driblar-os-eua/",
+      "publishedAt": "2026-11-22T15:38:47Z"
+    },
+    {
+      "publisherName": "InfoMoney",
+      "publisherDomain": "infomoney.com.br",
+      "articleTitle": "EUA buscam respostas sobre venda de chips da Nvidia para China, diz secretário",
+      "articleUrl": "https://www.infomoney.com.br/mundo/eua-buscam-respostas-sobre-venda-de-chips-da-nvidia-para-china-diz-secretario/",
+      "publishedAt": "2026-11-22T16:40:00Z"
     }
   ],
   "entityTags": [
-    {
-      "name": "Jensen Huang",
-      "slug": "jensen-huang"
-    },
     {
       "name": "Nvidia",
       "slug": "nvidia"
@@ -254,8 +250,12 @@
       "slug": "china"
     },
     {
-      "name": "Semiconductor Industry",
-      "slug": "semiconductor-industry"
+      "name": "Jensen Huang",
+      "slug": "jensen-huang"
+    },
+    {
+      "name": "Alice Huang",
+      "slug": "alice-huang"
     }
   ],
   "relatedInCountrySlugs": [
@@ -264,8 +264,8 @@
     "nvidia-halts-h200-chip-shipments-china"
   ],
   "relatedInCategorySlugs": [
-    "jensen-huang-resigns-as-nvidia-ceo",
-    "jensen-huang-resigns-nvidia-ceo",
-    "nvidia-ceo-jensen-huang-resignation"
+    "trump-comments-on-jensen-huang-spy-allegations",
+    "us-approves-ai-chip-sales-china",
+    "india-pakistan-u19-cricket-controversy"
   ]
 }
