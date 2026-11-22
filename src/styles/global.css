@@ -39,7 +39,17 @@
   --font-sans:
     'Plus Jakarta Sans Variable', system-ui, -apple-system, Roboto, 'Noto Sans', sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  /* Day-mode card lift (used with the light: variant). */
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.06), 0 2px 8px rgb(15 23 42 / 0.05);
+  --shadow-card-hover: 0 2px 4px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.1);
 }
+
+/*
+ * light: — styles for day mode only (outside any data-theme="dark" island), for the few places
+ * where swapping token values is not enough, e.g. solid white cards with a shadow.
+ */
+@custom-variant light (&:where([data-theme='light'] *:not([data-theme='dark'], [data-theme='dark'] *)));
 
 /* Dark values again, so a data-theme="dark" island inside a light page resets them. */
 [data-theme='dark'] {
@@ -74,11 +84,11 @@
  */
 [data-theme='light'] {
   color-scheme: light;
-  --color-void: #f6f7f9;
+  --color-void: #f1f4f8;
   --color-ocean: #ffffff;
   --color-land: #ffffff;
   --color-quiet: #eef1f5;
-  --color-line: #dce2ea;
+  --color-line: #d3dae4;
   --color-panel: rgb(255 255 255 / 0.85);
   --color-cyan: #0c6680;
   --color-cyan-soft: #0369a1;
@@ -88,8 +98,8 @@
   --color-verified: #047857;
   --color-ink-strong: #0b1220;
   --color-ink: #1e293b;
-  --color-ink-muted: #475569;
-  --color-ink-faint: #5b6678;
+  --color-ink-muted: #3d4a5c;
+  --color-ink-faint: #526073;
   --color-warn: #92400e;
   --color-surge-ink: #6d28d9;
   --color-glass-edge: rgb(15 23 42 / 0.1);
@@ -173,6 +183,16 @@
     border-color: color-mix(in srgb, var(--color-surge-hot) 55%, transparent);
     background: color-mix(in srgb, var(--color-surge) 20%, transparent);
   }
+}
+
+/* Hub page hero (HubHeader.astro): soft glow at night, a tinted band by day. */
+.ev-hub-hero {
+  background: radial-gradient(ellipse at top left, var(--color-glow) 0%, transparent 60%);
+}
+[data-theme='light'] .ev-hub-hero {
+  background:
+    radial-gradient(ellipse at 85% 0%, rgb(12 102 128 / 0.12) 0%, transparent 50%),
+    linear-gradient(180deg, #e3eef3 0%, #edf3f7 70%, var(--color-void) 100%);
 }
 
 /* Pagefind excerpt highlights */

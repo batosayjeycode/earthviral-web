@@ -17,12 +17,15 @@ interface Props {
 const { crumbs, eyebrow, title, intro, stats = [] } = Astro.props;
 ---
 
-<header class="border-b border-line bg-[radial-gradient(ellipse_at_top_left,var(--color-glow)_0%,transparent_60%)]">
+<header class="ev-hub-hero border-b border-line">
   <div class="mx-auto grid max-w-7xl gap-8 px-4 pt-6 pb-10 sm:px-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
     <div>
       <Breadcrumbs items={crumbs} />
       {eyebrow && (
-        <p class="mt-6 text-xs font-semibold tracking-widest text-cyan uppercase">{eyebrow}</p>
+        <p class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-cyan uppercase">
+          <span class="h-px w-6 bg-cyan" aria-hidden="true" />
+          {eyebrow}
+        </p>
       )}
       <h1
         data-pagefind-meta="title"
@@ -34,13 +37,13 @@ const { crumbs, eyebrow, title, intro, stats = [] } = Astro.props;
         <slot name="title-prefix" />
         {title}
       </h1>
-      <p class="mt-3 max-w-2xl text-ink-muted">{intro}</p>
+      <p class="mt-3 max-w-2xl text-lg leading-relaxed text-pretty text-ink-muted">{intro}</p>
       {stats.length > 0 && (
-        <dl class="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+        <dl class="mt-6 flex flex-wrap gap-3">
           {stats.map((s) => (
-            <div>
-              <dt class="text-xs text-ink-faint">{s.label}</dt>
-              <dd class="tabular mt-0.5 text-lg font-semibold text-ink-strong">{s.value}</dd>
+            <div class="min-w-32 flex-1 rounded-xl border border-line bg-land/50 px-4 py-3 light:bg-land light:shadow-card sm:flex-none">
+              <dt class="text-xs text-ink-muted">{s.label}</dt>
+              <dd class="tabular mt-1 text-lg font-semibold text-ink-strong">{s.value}</dd>
             </div>
           ))}
         </dl>

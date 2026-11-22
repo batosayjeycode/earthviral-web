@@ -20,7 +20,10 @@ const id = `related-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 ---
 
 {clusters.length > 0 && (
-  <section aria-labelledby={id} class="rounded-2xl border border-line bg-land/40 p-5">
+  <section
+    aria-labelledby={id}
+    class="rounded-2xl border border-line bg-land/40 p-5 light:bg-land light:shadow-card"
+  >
     <h2 id={id} class="font-display text-base font-semibold text-ink-strong">
       {title}
     </h2>
