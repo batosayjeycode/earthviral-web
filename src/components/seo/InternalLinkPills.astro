@@ -13,7 +13,7 @@ interface Props {
 const { tags, label = 'Topics' } = Astro.props;
 const withPage = new Set((await getTopics()).map((t) => t.slug));
 const pill =
-  'inline-block rounded-full border border-line bg-land/60 px-3 py-1 text-sm text-ink-muted';
+  'inline-block rounded-full border border-line bg-land/60 px-3 py-1 text-sm text-ink-muted light:bg-land';
 ---
 
 {tags.length > 0 && (

@@ -4,7 +4,7 @@
  */
 .ev-drawer {
   /* Near-opaque so map controls underneath don't show through the glass. */
-  background-color: rgb(9 14 28 / 0.97);
+  background-color: color-mix(in srgb, var(--color-ocean) 97%, transparent);
   position: fixed;
   z-index: 30;
   inset: auto 0 0 0;
@@ -32,7 +32,7 @@
   height: 4px;
   margin: 0.5rem auto 0;
   border-radius: 9999px;
-  background: rgb(148 163 184 / 0.35);
+  background: color-mix(in srgb, var(--color-ink-muted) 35%, transparent);
 }
 
 @media (min-width: 1024px) {
@@ -58,12 +58,12 @@
   color: var(--color-ink-muted);
 }
 .ev-drawer__chip:hover {
-  color: white;
+  color: var(--color-ink-strong);
 }
 .ev-drawer__chip[aria-pressed='true'] {
   color: var(--color-cyan);
-  border-color: rgb(0 240 255 / 0.45);
-  background: rgb(0 240 255 / 0.08);
+  border-color: color-mix(in srgb, var(--color-cyan) 45%, transparent);
+  background: color-mix(in srgb, var(--color-cyan) 8%, transparent);
 }
 
 @media (prefers-reduced-motion: reduce) {

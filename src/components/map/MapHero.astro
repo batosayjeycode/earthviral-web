@@ -7,9 +7,11 @@ import { INITIAL_CENTER, GLOBE_DIAMETER_RATIO } from './mapConfig.ts';
 const legend = (['active', 'high', 'surge'] as const).map((tier) => ({ tier, ...TIER_META[tier] }));
 ---
 
+<!-- data-theme="dark": the map is a night view of the globe and stays dark in day mode. -->
 <section
   id="map"
   data-map-hero
+  data-theme="dark"
   aria-labelledby="map-heading"
   class="relative isolate h-[64svh] min-h-[420px] overflow-hidden bg-[radial-gradient(ellipse_at_center,#0b1a33_0%,#050811_62%)] md:h-[80svh] md:max-h-[960px]"
 >
@@ -20,7 +22,7 @@ const legend = (['active', 'high', 'surge'] as const).map((tier) => ({ tier, ...
   <div class="pointer-events-none absolute top-4 left-4 z-10 max-w-xs sm:top-6 sm:left-6 sm:max-w-sm">
     <h1
       id="map-heading"
-      class="font-display text-2xl leading-tight font-bold text-white sm:text-3xl"
+      class="font-display text-2xl leading-tight font-bold text-ink-strong sm:text-3xl"
     >
       What the world is <span class="text-cyan">talking about</span> right now
     </h1>

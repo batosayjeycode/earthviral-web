@@ -69,7 +69,7 @@ const otherRegions = REGIONS.map((r) => ({
   >
     {inRegion.length > 0 && (
       <section aria-labelledby="region-countries">
-        <h2 id="region-countries" class="font-display text-2xl font-bold text-white">
+        <h2 id="region-countries" class="font-display text-2xl font-bold text-ink-strong">
           Countries in {region.name}
         </h2>
         <ul class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,13 +77,13 @@ const otherRegions = REGIONS.map((r) => ({
             <li>
               <a
                 href={`/country/${c.slug}/`}
-                class="flex items-center gap-3 rounded-2xl border border-line bg-land/60 p-4 hover:border-cyan/40"
+                class="flex items-center gap-3 rounded-2xl border border-line bg-land/60 p-4 hover:border-cyan/40 light:bg-land light:shadow-card"
               >
                 <span aria-hidden="true" class="text-2xl">
                   {flagEmoji(c.code)}
                 </span>
                 <span class="min-w-0 flex-1">
-                  <span class="block font-semibold text-white">{c.name}</span>
+                  <span class="block font-semibold text-ink-strong">{c.name}</span>
                   <span class="block text-xs text-ink-faint">
                     {TIER_META[c.intensityTier].label} · {c.topicCount}{' '}
                     {c.topicCount === 1 ? 'topic' : 'topics'}

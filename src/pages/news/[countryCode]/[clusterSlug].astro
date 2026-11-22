@@ -99,7 +99,9 @@ const jsonLd = newsArticleGraph(c, [
       ]}
     />
 
-    <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+    <!-- Same 7xl container as the other pages: the article fills the space beside the sidebar.
+         The sidebar widens at xl (and body text steps up to 19px) so lines stay ~80 characters. -->
+    <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_400px] xl:gap-12">
       <article
         data-pagefind-body
         data-pagefind-meta={`country:${c.countryName}, score:${c.viralScore}/100`}
@@ -122,8 +124,12 @@ const jsonLd = newsArticleGraph(c, [
               <span class="sr-only"> out of 100 viral activity score</span>
             </span>
           </div>
-          <h1 class="mt-4 text-3xl leading-tight font-bold text-white sm:text-4xl">{c.headline}</h1>
-          <p class="mt-4 text-lg leading-relaxed text-ink-muted">{c.whyItIsViral}</p>
+          <h1 class="mt-4 text-3xl leading-tight font-bold text-balance text-ink-strong sm:text-4xl">
+            {c.headline}
+          </h1>
+          <p class="mt-4 text-lg leading-relaxed text-pretty text-ink-muted sm:text-xl">
+            {c.whyItIsViral}
+          </p>
           <p class="tabular mt-4 text-xs text-ink-faint" data-pagefind-ignore>
             First detected{' '}
             <time datetime={c.firstDetectedAt}>
@@ -144,10 +150,13 @@ const jsonLd = newsArticleGraph(c, [
           >
             Executive AI summary
           </h2>
-          <ul class="mt-4 grid gap-3">
+          <ul class="mt-4 grid gap-4">
             {c.aiSummaryBullets.map((b) => (
-              <li class="flex gap-3 text-ink">
-                <span class="mt-2.5 size-1.5 shrink-0 rounded-full bg-cyan" aria-hidden="true" />
+              <li class="flex gap-3 text-[1.0625rem] leading-[1.65] text-pretty text-ink sm:text-lg xl:text-[1.1875rem]">
+                <span
+                  class="mt-[0.7em] size-1.5 shrink-0 rounded-full bg-cyan"
+                  aria-hidden="true"
+                />
                 {b}
               </li>
             ))}
@@ -155,10 +164,13 @@ const jsonLd = newsArticleGraph(c, [
         </section>
 
         <section aria-labelledby="context-heading" class="mt-10">
-          <h2 id="context-heading" class="font-display text-xl font-semibold text-white">
+          <h2 id="context-heading" class="font-display text-xl font-semibold text-ink-strong">
             Context: why it’s trending
           </h2>
-          <p class="ev-prose mt-3 leading-relaxed text-ink" set:html={contextHtml} />
+          <p
+            class="ev-prose mt-3 text-[1.0625rem] leading-[1.7] text-pretty text-ink sm:text-lg xl:text-[1.1875rem]"
+            set:html={contextHtml}
+          />
         </section>
 
         <div class="mt-10">
@@ -176,7 +188,7 @@ const jsonLd = newsArticleGraph(c, [
           </div>
         )}
 
-        <p class="mt-10 text-xs leading-relaxed text-ink-faint">
+        <p class="mt-10 text-[0.8125rem] leading-relaxed text-ink-faint">
           This page is an AI-assisted summary of reporting by the publishers listed above, generated
           in the {formatTimeWib(batchMeta.generatedAt)} batch. It is refreshed every 3 hours while
           the story remains active.
@@ -184,7 +196,7 @@ const jsonLd = newsArticleGraph(c, [
       </article>
 
       <aside class="grid content-start gap-6" aria-label="Story context">
-        <div class="rounded-2xl border border-line bg-land/40 p-5 text-center">
+        <div class="rounded-2xl border border-line bg-land/40 p-5 text-center light:bg-land light:shadow-card">
           <LocatorGlobe
             isoNumeric={country.isoNumeric}
             centroid={country.centroid}
@@ -213,24 +225,24 @@ const jsonLd = newsArticleGraph(c, [
           moreHref={`/country/${c.countrySlug}/`}
           moreLabel={`All ${c.countryName} stories`}
         />
-      </aside>
-    </div>
 
-    <div class="mt-16 grid gap-6 lg:grid-cols-2">
-      <RelatedStories
-        title={`More viral in ${category.name}`}
-        clusters={relatedInCategory}
-        show="country"
-        moreHref={`/category/${c.categorySlug}/`}
-        moreLabel={`All ${category.name} stories worldwide`}
-      />
-      <RelatedStories
-        title={`Related in ${c.countryName}`}
-        clusters={relatedInCountryExtra}
-        show="category"
-        moreHref={countryCategoryHref}
-        moreLabel={`${category.name} in ${c.countryName}`}
-      />
+        <!-- Related lists live in the sidebar so it fills beside long articles and no half-empty
+             row is left when one list has no stories. -->
+        <RelatedStories
+          title={`More viral in ${category.name}`}
+          clusters={relatedInCategory}
+          show="country"
+          moreHref={`/category/${c.categorySlug}/`}
+          moreLabel={`All ${category.name} stories worldwide`}
+        />
+        <RelatedStories
+          title={`Related in ${c.countryName}`}
+          clusters={relatedInCountryExtra}
+          show="category"
+          moreHref={countryCategoryHref}
+          moreLabel={`${category.name} in ${c.countryName}`}
+        />
+      </aside>
     </div>
   </div>
 </BaseLayout>
@@ -239,7 +251,7 @@ const jsonLd = newsArticleGraph(c, [
   .ev-prose :global(a) {
     color: var(--color-cyan);
     text-decoration: underline;
-    text-decoration-color: rgb(0 240 255 / 0.35);
+    text-decoration-color: color-mix(in srgb, var(--color-cyan) 35%, transparent);
     text-underline-offset: 3px;
   }
   .ev-prose :global(a:hover) {

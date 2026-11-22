@@ -6,10 +6,11 @@ const topCountries = (await getCountries()).slice(0, 8);
 const year = new Date().getFullYear();
 ---
 
-<footer class="mt-24 border-t border-line bg-ocean">
+<!-- data-theme="dark": the footer stays dark in day mode too, closing the page off clearly. -->
+<footer class="mt-24 border-t border-line bg-ocean" data-theme="dark">
   <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
     <div>
-      <p class="font-display text-lg font-bold text-white">
+      <p class="font-display text-lg font-bold text-ink-strong">
         Earth<span class="text-cyan">Viral</span>
       </p>
       <p class="mt-3 text-sm leading-relaxed text-ink-muted">

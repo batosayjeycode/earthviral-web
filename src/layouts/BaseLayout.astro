@@ -9,6 +9,7 @@ import Footer from '../components/layout/Footer.astro';
 import SearchDialog from '../components/search/SearchDialog.tsx';
 import { batchMeta } from '../lib/data.ts';
 import { SITE, absoluteUrl } from '../lib/site.ts';
+import { THEME_COLOR, THEME_KEY } from '../lib/theme.ts';
 // Preload the Latin subsets used above the fold so headings render in their final font
 // immediately (avoids a late swap that delayed LCP and nudged layout on story pages).
 import displayFontUrl from '@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2?url';
@@ -50,7 +51,25 @@ const robots = batchMeta.isSeed
     <meta name="robots" content={robots} />
     {/* noindex pages (404, search) don't declare a canonical URL */}
     {!noindex && <link rel="canonical" href={canonical} />}
-    <meta name="theme-color" content="#050811" />
+    <meta name="theme-color" content={THEME_COLOR.dark} data-theme-color />
+    <!-- Applies the saved or device theme before first paint so the page never flashes the
+         wrong colours. Mirrors resolveTheme in lib/theme.ts; without JS the site stays dark. -->
+    <script is:inline define:vars={{ THEME_KEY, THEME_COLOR }}>
+      let saved = null;
+      try {
+        saved = localStorage.getItem(THEME_KEY);
+      } catch {
+        /* storage blocked: follow the device */
+      }
+      const theme =
+        saved === 'light' || saved === 'dark'
+          ? saved
+          : matchMedia('(prefers-color-scheme: light)').matches
+            ? 'light'
+            : 'dark';
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[data-theme-color]').content = THEME_COLOR[theme];
+    </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href={displayFontUrl} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={bodyFontUrl} as="font" type="font/woff2" crossorigin />
@@ -89,7 +108,10 @@ const robots = batchMeta.isSeed
     >
       Skip to content
     </a>
-    <div class="sticky top-0 z-40">
+    <!-- Masthead (header + telemetry strip): dark in both themes — the brand colours are made
+         for it, and by day it frames the light page. ev-masthead backs it with a solid colour
+         by day so light content scrolling underneath doesn't show through the glass. -->
+    <div class="ev-masthead sticky top-0 z-40" data-theme="dark">
       <Header />
       <TelemetryBar meta={batchMeta} />
     </div>

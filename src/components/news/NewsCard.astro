@@ -17,7 +17,7 @@ const category = categoryBySlug(c.categorySlug);
 
 <article
   class:list={[
-    'group relative flex flex-col rounded-2xl border border-line bg-land/60 p-5 transition hover:border-cyan/40 hover:bg-land',
+    'group relative flex flex-col rounded-2xl border border-line bg-land/60 p-5 transition hover:border-cyan/40 hover:bg-land light:bg-land light:shadow-card light:hover:shadow-card-hover',
     feature && 'sm:p-7',
     className,
   ]}
@@ -43,7 +43,7 @@ const category = categoryBySlug(c.categorySlug);
 
   <h3
     class:list={[
-      'mt-3 font-display leading-snug font-semibold text-white',
+      'mt-3 font-display leading-snug font-semibold text-ink-strong',
       feature ? 'text-2xl sm:text-3xl' : 'text-lg',
     ]}
   >

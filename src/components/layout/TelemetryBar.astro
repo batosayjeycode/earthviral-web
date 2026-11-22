@@ -28,28 +28,28 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
       <dd class="sr-only">{snapshot}</dd>
     </div>
     <div class="flex gap-1.5">
-      <dd class="text-white">{meta.totals.activeCountries}</dd>
+      <dd class="text-ink-strong">{meta.totals.activeCountries}</dd>
       <dt>Active Countries</dt>
     </div>
     <div class="flex gap-1.5">
-      <dd class="text-white">{meta.totals.viralTopics}</dd>
+      <dd class="text-ink-strong">{meta.totals.viralTopics}</dd>
       <dt>Viral Topics</dt>
     </div>
     <div class="flex gap-1.5">
       <dt>Global Index</dt>
-      <dd class="text-white">{meta.totals.globalIndex}/100</dd>
+      <dd class="text-ink-strong">{meta.totals.globalIndex}/100</dd>
     </div>
     <div class="flex gap-1.5">
       <dt>Updated</dt>
       <dd>
-        <time datetime={meta.generatedAt} data-relative-time class="text-white">
+        <time datetime={meta.generatedAt} data-relative-time class="text-ink-strong">
           {snapshot}
         </time>
       </dd>
     </div>
     <div class="flex gap-1.5">
       <dt>Next Update</dt>
-      <dd class="text-white">
+      <dd class="text-ink-strong">
         <time datetime={meta.nextUpdateAt} data-next-update>
           {formatTimeWib(meta.nextUpdateAt)}
         </time>
@@ -61,14 +61,14 @@ const snapshot = `${formatDateWib(meta.generatedAt)} • ${formatTimeWib(meta.ge
       <div
         data-stale-note
         hidden
-        class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300"
+        class="ml-auto rounded-full border border-warn/40 bg-warn/10 px-2 py-0.5 font-semibold text-warn"
       >
         <dt class="sr-only">Data notice</dt>
         <dd>Data delayed — updates normally run every 3 hours</dd>
       </div>
     )}
     {meta.isSeed && (
-      <div class="ml-auto rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 font-semibold text-amber-300">
+      <div class="ml-auto rounded-full border border-warn/40 bg-warn/10 px-2 py-0.5 font-semibold text-warn">
         <dt class="sr-only">Data notice</dt>
         <dd>Sample data — not real news</dd>
       </div>

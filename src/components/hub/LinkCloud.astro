@@ -19,7 +19,7 @@ const id = `links-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
 {links.length > 0 && (
   <nav aria-labelledby={id} data-pagefind-ignore>
-    <h2 id={id} class="text-xs font-semibold tracking-widest text-ink-faint uppercase">
+    <h2 id={id} class="text-xs font-semibold tracking-widest text-ink-muted uppercase">
       {title}
     </h2>
     <ul class="mt-3 flex flex-wrap gap-2">
@@ -32,7 +32,7 @@ const id = `links-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
               'inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-sm',
               l.current
                 ? 'border-cyan/45 bg-cyan/10 text-cyan'
-                : 'border-line text-ink-muted hover:border-cyan/40 hover:text-cyan',
+                : 'border-line text-ink-muted hover:border-cyan/40 hover:text-cyan light:bg-land light:shadow-[0_1px_2px_rgb(15_23_42/0.05)]',
             ]}
           >
             {l.prefix && <span aria-hidden="true">{l.prefix}</span>}

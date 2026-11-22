@@ -123,7 +123,7 @@ export default function CountryDrawer() {
                   id="ev-drawer-title"
                   ref={headingRef}
                   tabIndex={-1}
-                  className="font-display text-xl font-bold tracking-wide text-white uppercase outline-none"
+                  className="font-display text-xl font-bold tracking-wide text-ink-strong uppercase outline-none"
                 >
                   {state.country.name}
                 </h2>
@@ -138,13 +138,13 @@ export default function CountryDrawer() {
                     </span>
                   </p>
                 ) : (
-                  <p className="mt-1 h-5 w-40 animate-pulse rounded bg-white/5" />
+                  <p className="mt-1 h-5 w-40 animate-pulse rounded bg-ink-strong/5" />
                 )}
               </div>
               <button
                 type="button"
                 onClick={() => close(true)}
-                className="-mr-1 rounded-lg p-1.5 text-ink-faint hover:bg-white/5 hover:text-white"
+                className="-mr-1 rounded-lg p-1.5 text-ink-faint hover:bg-ink-strong/5 hover:text-ink-strong"
                 aria-label={`Close ${state.country.name} panel`}
               >
                 <svg
@@ -241,7 +241,7 @@ export default function CountryDrawer() {
                             {c.viralScore}
                           </span>
                         </div>
-                        <h4 className="mt-2 font-display leading-snug font-semibold text-white">
+                        <h4 className="mt-2 font-display leading-snug font-semibold text-ink-strong">
                           <a href={c.canonicalPath} className="hover:text-cyan">
                             {c.headline}
                           </a>
@@ -289,7 +289,10 @@ function DrawerSkeleton() {
   return (
     <div className="mt-5 grid gap-3" aria-busy="true" aria-label="Loading stories">
       {[0, 1, 2].map((i) => (
-        <div key={i} className="h-32 animate-pulse rounded-xl border border-line bg-white/[0.03]" />
+        <div
+          key={i}
+          className="h-32 animate-pulse rounded-xl border border-line bg-ink-strong/[0.03]"
+        />
       ))}
     </div>
   );
