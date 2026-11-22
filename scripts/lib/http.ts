@@ -77,8 +77,40 @@ export function detectCharset(contentType: string | null, head: Uint8Array): str
   return (fromXml ?? 'utf-8').toLowerCase();
 }
 
-/** Decode bytes in `charset`, falling back to UTF-8 for labels the runtime doesn't know. */
+/**
+ * True when bytes labelled UTF-8 are really a single-byte encoding: they hold high bytes but
+ * not one valid UTF-8 multi-byte sequence. (A feed that declares or defaults to UTF-8 while
+ * sending Latin-1 would otherwise decode every accented letter to U+FFFD.) Mixed bytes — real
+ * UTF-8 with a few stray bytes — stay UTF-8, since re-reading them as Windows-1252 would garble
+ * the valid characters instead.
+ */
+export function isMislabelledSingleByte(bytes: Uint8Array): boolean {
+  let valid = 0;
+  let invalid = 0;
+  for (let i = 0; i < bytes.length; i++) {
+    const b = bytes[i]!;
+    if (b < 0x80) continue;
+    const len =
+      b >= 0xc2 && b <= 0xdf ? 2 : b >= 0xe0 && b <= 0xef ? 3 : b >= 0xf0 && b <= 0xf4 ? 4 : 0;
+    let ok = len > 0 && i + len <= bytes.length;
+    for (let k = 1; ok && k < len; k++) ok = (bytes[i + k]! & 0xc0) === 0x80;
+    if (ok) {
+      valid++;
+      i += len - 1;
+    } else invalid++;
+  }
+  return invalid > 0 && valid === 0;
+}
+
+/**
+ * Decode bytes in `charset`, falling back to UTF-8 for labels the runtime doesn't know. Bytes
+ * labelled UTF-8 that are clearly single-byte text are read as Windows-1252 (a superset of
+ * Latin-1) rather than turned into replacement characters.
+ */
 export function decodeBody(bytes: Uint8Array, charset: string): string {
+  const label = charset.toLowerCase();
+  if ((label === 'utf-8' || label === 'utf8') && isMislabelledSingleByte(bytes))
+    return new TextDecoder('windows-1252').decode(bytes);
   try {
     return new TextDecoder(charset).decode(bytes);
   } catch {

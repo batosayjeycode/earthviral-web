@@ -21,7 +21,7 @@ import { summaryQueue } from './intelligence/selectStories.ts';
 import { keepStoryNames, namesAnchor, storyAnchors } from './intelligence/storyNames.ts';
 import { aiCompaniesBlocked, isAiOptOut } from './robotsPolicy.ts';
 import { RSS_SOURCES } from './fetchers/rssSources.ts';
-import { decodeBody, detectCharset, fetchText } from './http.ts';
+import { decodeBody, detectCharset, fetchText, isMislabelledSingleByte } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
 import { slugify, tokenize, truncate } from './intelligence/text.ts';
@@ -563,6 +563,26 @@ describe('feed encodings', () => {
     assert.match(text, /Relação e escândalo/);
     assert.doesNotMatch(text, /\uFFFD/);
     assert.equal(decodeBody(new TextEncoder().encode('Açaí'), 'x-unknown-charset'), 'Açaí');
+  });
+
+  it('reads Latin-1 bytes mislabelled as UTF-8 as Windows-1252, but keeps real UTF-8', () => {
+    const noDeclaration = Uint8Array.from(
+      Buffer.from('<rss><title>Relação e escândalo</title></rss>', 'latin1'),
+    );
+    assert.equal(isMislabelledSingleByte(noDeclaration), true);
+    assert.equal(
+      decodeBody(noDeclaration, 'utf-8'),
+      '<rss><title>Relação e escândalo</title></rss>',
+    );
+    // Real UTF-8 (even with one stray byte) is left as UTF-8.
+    const utf8 = new TextEncoder().encode('Açaí — São Paulo');
+    assert.equal(isMislabelledSingleByte(utf8), false);
+    assert.equal(decodeBody(utf8, 'UTF-8'), 'Açaí — São Paulo');
+    const mixed = Uint8Array.from([...utf8, 0xe9]);
+    assert.equal(isMislabelledSingleByte(mixed), false);
+    assert.match(decodeBody(mixed, 'utf-8'), /^Açaí — São Paulo/);
+    // Plain ASCII is unaffected.
+    assert.equal(isMislabelledSingleByte(new TextEncoder().encode('<rss/>')), false);
   });
 
   it('fetchText decodes a Latin-1 feed served as plain text/xml (Folha)', async () => {
