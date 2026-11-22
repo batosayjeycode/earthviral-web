@@ -22,10 +22,7 @@ const { crumbs, eyebrow, title, intro, stats = [] } = Astro.props;
     <div>
       <Breadcrumbs items={crumbs} />
       {eyebrow && (
-        <p class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-cyan uppercase">
-          <span class="h-px w-6 bg-cyan" aria-hidden="true" />
-          {eyebrow}
-        </p>
+        <p class="mt-6 text-xs font-semibold tracking-widest text-cyan uppercase">{eyebrow}</p>
       )}
       <h1
         data-pagefind-meta="title"
