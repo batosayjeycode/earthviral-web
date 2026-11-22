@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611212318",
-  "generatedAt": "2026-11-21T23:18:00Z",
-  "nextUpdateAt": "2026-11-22T02:17:00Z",
+  "batchId": "batch-202611220218",
+  "generatedAt": "2026-11-22T02:18:00Z",
+  "nextUpdateAt": "2026-11-22T05:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -12,16 +12,16 @@
         117,
         -2.5
       ],
-      "viralScore": 95,
+      "viralScore": 96,
       "intensityTier": "surge",
-      "topicCount": 128,
+      "topicCount": 124,
       "topTopic": {
         "slug": "jakarta-sets-2027-provincial-minimum-wage",
         "canonicalPath": "/news/id/jakarta-sets-2027-provincial-minimum-wage/",
-        "headline": "Jakarta Governor Defends 2027 Wage As Provinces Adjust UMP Rates",
+        "headline": "Indonesian Provinces Finalize 2027 Minimum Wage Adjustments",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 92,
+        "viralScore": 93,
         "intensityTier": "surge"
       }
     },
@@ -34,38 +34,16 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 92,
+      "viralScore": 94,
       "intensityTier": "surge",
-      "topicCount": 57,
+      "topicCount": 53,
       "topTopic": {
         "slug": "jair-bolsonaro-hospitalized-in-brasilia",
         "canonicalPath": "/news/br/jair-bolsonaro-hospitalized-in-brasilia/",
-        "headline": "Jair Bolsonaro Remains In ICU For Acute Bowel Obstruction Treatment",
+        "headline": "Jair Bolsonaro Remains In ICU For Acute Bowel Obstruction Care",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 89,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 92,
-      "intensityTier": "surge",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "russian-cargo-ship-drone-strike",
-        "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
-        "headline": "Russian Cargo Ship Sparta II Struck By Drones In Gulf Of Finland",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 89,
+        "viralScore": 91,
         "intensityTier": "surge"
       }
     },
@@ -78,17 +56,39 @@
         -102.5,
         23.6
       ],
-      "viralScore": 87,
+      "viralScore": 90,
       "intensityTier": "surge",
       "topicCount": 6,
       "topTopic": {
         "slug": "mexico-arrests-jalisco-cartel-leader",
         "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-        "headline": "Mexico Arrests Cartel Leader El Chapo Isidro Following Fatal Raids",
+        "headline": "Mexico Military Captures Cartel Leader El Chapo Isidro In Sinaloa",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 84,
-        "intensityTier": "high"
+        "viralScore": 87,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 88,
+      "intensityTier": "surge",
+      "topicCount": 9,
+      "topTopic": {
+        "slug": "russian-cargo-ship-drone-strike",
+        "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
+        "headline": "Russian Cargo Ship Sparta II Struck By Drones In Gulf Of Finland",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 85,
+        "intensityTier": "surge"
       }
     },
     {
@@ -100,7 +100,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 81,
+      "viralScore": 82,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -109,73 +109,7 @@
         "headline": "Gadi Eisenkot Invites Benjamin Netanyahu's Likud To Coalition Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 80,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "rafael-nadal-joins-real-madrid-board",
-        "canonicalPath": "/news/es/rafael-nadal-joins-real-madrid-board/",
-        "headline": "Rafael Nadal Appointed To The Real Madrid Board Of Directors",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 77,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 37,
-      "topTopic": {
-        "slug": "manchester-united-sets-premier-league-record",
-        "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
-        "headline": "Manchester United Maintains Record After Recent Premier League Draw",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 76,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
-      "centroid": [
-        79,
-        22
-      ],
-      "viralScore": 76,
-      "intensityTier": "high",
-      "topicCount": 66,
-      "topTopic": {
-        "slug": "recent-developments-in-tamil-nadu-india",
-        "canonicalPath": "/news/in/recent-developments-in-tamil-nadu-india/",
-        "headline": "Tamil Nadu Court Permits CCTV Review In Police Custody Death Case",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 73,
+        "viralScore": 80,
         "intensityTier": "high"
       }
     },
@@ -188,60 +122,38 @@
         53.7,
         32.4
       ],
-      "viralScore": 72,
+      "viralScore": 78,
       "intensityTier": "high",
-      "topicCount": 6,
+      "topicCount": 8,
       "topTopic": {
         "slug": "explosions-reported-strait-hormuz-iran",
         "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
         "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
+        "viralScore": 75,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 72,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "rafael-nadal-joins-real-madrid-board",
+        "canonicalPath": "/news/es/rafael-nadal-joins-real-madrid-board/",
+        "headline": "Rafael Nadal Appointed To The Real Madrid Board Of Directors",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
         "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 36,
-      "topTopic": {
-        "slug": "australian-teen-rescued-from-bush",
-        "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
-        "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 68,
-      "intensityTier": "high",
-      "topicCount": 67,
-      "topTopic": {
-        "slug": "apc-prepares-for-2027-general-elections",
-        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
-        "headline": "President Tinubu Rallies APC Support In Ibadan Ahead Of 2027 Polls",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 65,
         "intensityTier": "high"
       }
     },
@@ -254,60 +166,38 @@
         2.4,
         46.6
       ],
-      "viralScore": 65,
+      "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 16,
+      "topicCount": 15,
       "topTopic": {
         "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
         "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
         "headline": "Large Protests Across France Demand Higher Wages And School Funding",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 62,
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
     {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
       "centroid": [
-        -98.5,
-        39.5
+        -2,
+        53.5
       ],
-      "viralScore": 65,
+      "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 36,
+      "topicCount": 37,
       "topTopic": {
-        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-        "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 62,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 60,
+        "slug": "manchester-united-sets-premier-league-record",
+        "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
+        "headline": "Manchester United Maintains Record After Recent Premier League Draw",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 68,
         "intensityTier": "high"
       }
     },
@@ -320,16 +210,126 @@
         104,
         35
       ],
-      "viralScore": 61,
+      "viralScore": 70,
       "intensityTier": "high",
-      "topicCount": 9,
+      "topicCount": 8,
       "topTopic": {
         "slug": "trump-to-meet-xi-putin-apec",
         "canonicalPath": "/news/cn/trump-to-meet-xi-putin-apec/",
         "headline": "Donald Trump Discusses AI Regulations With Xi Jinping And Putin",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 35,
+      "topTopic": {
+        "slug": "man-charged-murder-fatal-home-invasion",
+        "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+        "headline": "Man Charged With Murder Following Death Of Infant In Hobart",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 64,
+      "topTopic": {
+        "slug": "recent-developments-in-tamil-nadu-india",
+        "canonicalPath": "/news/in/recent-developments-in-tamil-nadu-india/",
+        "headline": "Tamil Nadu Court Permits CCTV Review In Police Custody Death Case",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 33,
+      "topTopic": {
+        "slug": "hackers-breach-fbi-and-us-agriculture-department",
+        "canonicalPath": "/news/us/hackers-breach-fbi-and-us-agriculture-department/",
+        "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Saudi Coalition Intercepts Multiple Houthi Missiles Over Riyadh",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 58,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 65,
+      "topTopic": {
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "President Tinubu Rallies APC Support In Ibadan Ahead Of 2027 Polls",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -342,57 +342,13 @@
         127.8,
         36.3
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "topicCount": 16,
       "topTopic": {
         "slug": "bus-collision-bundang-south-korea",
         "canonicalPath": "/news/kr/bus-collision-bundang-south-korea/",
         "headline": "Six Injured After Bus Crashes Near Hongik University Station",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 58,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "gaza-displacement-camps-flooded-by-rain",
-        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
-        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "ukraine-drone-strikes-crimea-moscow",
-        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
-        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 55,
@@ -410,7 +366,7 @@
       ],
       "viralScore": 57,
       "intensityTier": "active",
-      "topicCount": 23,
+      "topicCount": 20,
       "topTopic": {
         "slug": "kenyan-cult-leader-receives-prison-sentence",
         "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
@@ -430,16 +386,60 @@
         102.3,
         3.8
       ],
-      "viralScore": 55,
+      "viralScore": 57,
       "intensityTier": "active",
-      "topicCount": 15,
+      "topicCount": 11,
       "topTopic": {
-        "slug": "najib-razak-returns-to-kajang-prison",
-        "canonicalPath": "/news/my/najib-razak-returns-to-kajang-prison/",
-        "headline": "Former Malaysian Prime Minister Najib Razak Moves To House Arrest",
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 52,
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "ukraine-drone-strikes-crimea-moscow",
+        "canonicalPath": "/news/ua/ukraine-drone-strikes-crimea-moscow/",
+        "headline": "Ukrainian Military Forces Successfully Damage Key Kerch Bridge Link",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -466,28 +466,6 @@
       }
     },
     {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
-      "centroid": [
-        12.6,
-        42.8
-      ],
-      "viralScore": 48,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "former-italian-police-chief-dies",
-        "canonicalPath": "/news/it/former-italian-police-chief-dies/",
-        "headline": "Former Italian Police Chief Dies Following Mafia Investigation",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 47,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "JP",
       "isoNumeric": "392",
       "name": "Japan",
@@ -496,38 +474,38 @@
         138.5,
         36.5
       ],
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
-      "topicCount": 10,
+      "topicCount": 9,
       "topTopic": {
-        "slug": "japan-pm-takaichi-diplomatic-summits",
-        "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
-        "headline": "Prime Minister Sanae Takaichi Conducts APEC Diplomatic Summits",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 45,
+        "slug": "hajime-moriyasu-tenure-ends-japan",
+        "canonicalPath": "/news/jp/hajime-moriyasu-tenure-ends-japan/",
+        "headline": "Hajime Moriyasu Concludes Tenure Following Defeat Against Paraguay",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
       "centroid": [
-        103.82,
-        1.35
+        12.6,
+        42.8
       ],
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 35,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "singapore-firms-report-data-breaches",
-        "canonicalPath": "/news/sg/singapore-firms-report-data-breaches/",
-        "headline": "Multiple Singapore Organizations Report Recent Customer Data Breaches",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 43,
+        "slug": "former-italian-police-chief-dies",
+        "canonicalPath": "/news/it/former-italian-police-chief-dies/",
+        "headline": "Former Italian Police Chief Dies Following Mafia Investigation",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
@@ -540,7 +518,7 @@
         90.3,
         23.7
       ],
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -549,7 +527,7 @@
         "headline": "International Court Of Justice Finds Myanmar Guilty Of Genocide",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 45,
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
@@ -562,7 +540,7 @@
         54,
         24
       ],
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -571,7 +549,29 @@
         "headline": "Somalia Expels United Arab Emirates Ambassador Over Interference",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 45,
+        "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 41,
+      "intensityTier": "active",
+      "topicCount": 34,
+      "topTopic": {
+        "slug": "singapore-firms-report-data-breaches",
+        "canonicalPath": "/news/sg/singapore-firms-report-data-breaches/",
+        "headline": "Multiple Singapore Organizations Report Recent Customer Data Breaches",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 38,
         "intensityTier": "active"
       }
     },
@@ -584,9 +584,9 @@
         10.4,
         51.1
       ],
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 1,
       "topTopic": {
         "slug": "deutsche-bank-internal-documents-leak",
         "canonicalPath": "/news/de/deutsche-bank-internal-documents-leak/",
@@ -606,7 +606,7 @@
         69.3,
         30
       ],
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -615,29 +615,7 @@
         "headline": "Pakistan Cricket Board Updates Central Contracts For Key Players",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 34,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TH",
-      "isoNumeric": "764",
-      "name": "Thailand",
-      "slug": "thailand",
-      "centroid": [
-        101,
-        15.5
-      ],
-      "viralScore": 32,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "pilgrims-from-boyolali-stranded-in-bangkok",
-        "canonicalPath": "/news/th/pilgrims-from-boyolali-stranded-in-bangkok/",
-        "headline": "53 Pilgrims From Boyolali Stranded In Bangkok By Illegal Agency",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 32,
+        "viralScore": 33,
         "intensityTier": "active"
       }
     },
@@ -660,6 +638,28 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 30,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TH",
+      "isoNumeric": "764",
+      "name": "Thailand",
+      "slug": "thailand",
+      "centroid": [
+        101,
+        15.5
+      ],
+      "viralScore": 31,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "pilgrims-from-boyolali-stranded-in-bangkok",
+        "canonicalPath": "/news/th/pilgrims-from-boyolali-stranded-in-bangkok/",
+        "headline": "53 Pilgrims From Boyolali Stranded In Bangkok By Illegal Agency",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 31,
         "intensityTier": "active"
       }
     },

@@ -3,18 +3,35 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 65,
+  "viralScore": 67,
   "intensityTier": "high",
-  "generatedAt": "2026-11-21T23:18:00Z",
+  "generatedAt": "2026-11-22T02:18:00Z",
   "clusters": [
+    {
+      "slug": "hackers-breach-fbi-and-us-agriculture-department",
+      "canonicalPath": "/news/us/hackers-breach-fbi-and-us-agriculture-department/",
+      "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Cyberattacks have compromised digital systems at the FBI and the US Department of Agriculture.",
+        "The breach at the Department of Agriculture reportedly impacted a system used for processing farmer payments."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261121-us-agriculture-department-fbi-hit-by-cyberattacks-media-report"
+      }
+    },
     {
       "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
       "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
       "headline": "Democrats Secure Historic Senate Gains Following Midterm Victories",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Democratic Party flipped nine U.S. Senate seats, resulting in a 56-44 majority.",
         "The victory includes Mary Peltola's defeat of Dan Sullivan in Alaska, marking the party's largest gain in nearly seventy years."
@@ -25,13 +42,30 @@
       }
     },
     {
+      "slug": "trump-contractors-congressional-oversight-order",
+      "canonicalPath": "/news/us/trump-contractors-congressional-oversight-order/",
+      "headline": "President Trump Mandates White House Review Of Congressional Inquiries",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Trump issued an executive order requiring federal contractors to consult the White House before answering requests from Congress.",
+        "Companies are directed to withhold any communications that the administration deems privileged under the new mandate."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order"
+      }
+    },
+    {
       "slug": "anthropic-sets-ipo-share-price",
       "canonicalPath": "/news/us/anthropic-sets-ipo-share-price/",
       "headline": "Anthropic Shares Slide As Tech Sell-Off Impacts Recent IPO Debut",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Anthropic shares have fallen in trading following the company's high-profile entry into the public stock market.",
         "The decline coincides with a broader downturn across US technology stocks that has pressured the S&P 500 and Dow Jones indices."
@@ -47,7 +81,7 @@
       "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
@@ -64,7 +98,7 @@
       "headline": "Trump Denies Coordinated Cyberattack After Ousting Sean Cairncross",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Trump declared that recent technical disruptions across various US institutions were separate, unrelated events.",
@@ -73,23 +107,6 @@
       "primarySource": {
         "publisherName": "Punch",
         "articleUrl": "https://punchng.com/no-evidence-of-coordinated-cyberattack-behind-us-outages-rubio/"
-      }
-    },
-    {
-      "slug": "hackers-breach-fbi-and-us-agriculture-department",
-      "canonicalPath": "/news/us/hackers-breach-fbi-and-us-agriculture-department/",
-      "headline": "Hackers Target US Agriculture Department And FBI In New Cyberattacks",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Cyberattacks have compromised digital systems at the FBI and the US Department of Agriculture.",
-        "The breach at the Department of Agriculture reportedly impacted a system used for processing farmer payments."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261121-us-agriculture-department-fbi-hit-by-cyberattacks-media-report"
       }
     },
     {
@@ -107,23 +124,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
-      "slug": "armed-suspect-arrested-near-white-house",
-      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
-      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
-        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
       }
     },
     {
@@ -161,20 +161,20 @@
       }
     },
     {
-      "slug": "thomas-markle-arrested-florida-abuse-charges",
-      "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
-      "headline": "Thomas Markle Arrested In Florida Over Child Abuse Image Charges",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "armed-suspect-arrested-near-white-house",
+      "canonicalPath": "/news/us/armed-suspect-arrested-near-white-house/",
+      "headline": "White House Faces Administrative Shifts And Political Scrutiny",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Federal agents arrested 82-year-old Thomas Markle in Lakewood, Florida.",
-        "The arrest follows official allegations concerning the possession of child sexual abuse materials."
+        "Reports indicate the administration is reviewing the future of Commerce Secretary Howard Lutnick amid concerns regarding technology exports.",
+        "New protocols have been implemented requiring White House staff to obtain authorization before meeting with registered lobbyists."
       ],
       "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary?traffic_source=rss"
       }
     },
     {
@@ -280,23 +280,6 @@
       }
     },
     {
-      "slug": "faa-issues-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
-        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/goodbye-overtourism-sustainable-travel-gains-ground/a-79934295?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "reinaldo-dennes-texas-execution-prolonged",
       "canonicalPath": "/news/us/reinaldo-dennes-texas-execution-prolonged/",
       "headline": "Texas Execution Process Takes Over An Hour Amid Reports Of Pain",
@@ -314,37 +297,54 @@
       }
     },
     {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
-      }
-    },
-    {
-      "slug": "mayor-mamdani-plans-rikers-island-closure",
-      "canonicalPath": "/news/us/mayor-mamdani-plans-rikers-island-closure/",
-      "headline": "Mayor Zohran Mamdani Unveils Plan To Close Rikers Island By 2032",
+      "slug": "faa-issues-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
+      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Mayor Zohran Mamdani proposed a new framework to close the Rikers Island jail complex by the year 2032.",
-        "The initiative involves replacing the central facility with four smaller jails located throughout New York City."
+        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
+        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/20/mamdani-unveils-plan-to-close-new-yorks-rikers-island-by-2032?traffic_source=rss"
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/goodbye-overtourism-sustainable-travel-gains-ground/a-79934295?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
+      "slug": "trump-threatens-tech-firms-over-data-centers",
+      "canonicalPath": "/news/us/trump-threatens-tech-firms-over-data-centers/",
+      "headline": "President Trump Threatens Penalties For Overseas AI Data Centers",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Trump proposed new financial penalties for US tech companies constructing AI data centers outside the country.",
+        "The president provided minimal policy details during a White House press conference."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
+      }
+    },
+    {
+      "slug": "uss-theodore-roosevelt-middle-east-deployment",
+      "canonicalPath": "/news/us/uss-theodore-roosevelt-middle-east-deployment/",
+      "headline": "USS Theodore Roosevelt Deploys To The Middle East Amid Tensions",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The USS Theodore Roosevelt arrived in the Middle East to join two other American aircraft carriers already in the region.",
+        "The deployment occurs against a backdrop of heightened geopolitical friction involving Iran."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261116002600320"
       }
     }
   ]
