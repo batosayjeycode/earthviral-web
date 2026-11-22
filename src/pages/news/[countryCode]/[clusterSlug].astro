@@ -99,9 +99,9 @@ const jsonLd = newsArticleGraph(c, [
       ]}
     />
 
-    <!-- Reading column capped at ~42rem so body text stays near 70 characters per line;
-         the spare width on wide screens goes between the article and the sidebar. -->
-    <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,42rem)_340px] lg:justify-between">
+    <!-- Same 7xl container as the other pages: the article fills the space beside the sidebar.
+         The sidebar widens at xl (and body text steps up to 19px) so lines stay ~80 characters. -->
+    <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_400px] xl:gap-12">
       <article
         data-pagefind-body
         data-pagefind-meta={`country:${c.countryName}, score:${c.viralScore}/100`}
@@ -152,7 +152,7 @@ const jsonLd = newsArticleGraph(c, [
           </h2>
           <ul class="mt-4 grid gap-4">
             {c.aiSummaryBullets.map((b) => (
-              <li class="flex gap-3 text-[1.0625rem] leading-[1.65] text-pretty text-ink sm:text-lg">
+              <li class="flex gap-3 text-[1.0625rem] leading-[1.65] text-pretty text-ink sm:text-lg xl:text-[1.1875rem]">
                 <span
                   class="mt-[0.7em] size-1.5 shrink-0 rounded-full bg-cyan"
                   aria-hidden="true"
@@ -168,7 +168,7 @@ const jsonLd = newsArticleGraph(c, [
             Context: why it’s trending
           </h2>
           <p
-            class="ev-prose mt-3 text-[1.0625rem] leading-[1.7] text-pretty text-ink sm:text-lg"
+            class="ev-prose mt-3 text-[1.0625rem] leading-[1.7] text-pretty text-ink sm:text-lg xl:text-[1.1875rem]"
             set:html={contextHtml}
           />
         </section>
@@ -196,7 +196,7 @@ const jsonLd = newsArticleGraph(c, [
       </article>
 
       <aside class="grid content-start gap-6" aria-label="Story context">
-        <div class="rounded-2xl border border-line bg-land/40 p-5 text-center">
+        <div class="rounded-2xl border border-line bg-land/40 p-5 text-center light:bg-land light:shadow-card">
           <LocatorGlobe
             isoNumeric={country.isoNumeric}
             centroid={country.centroid}
@@ -225,24 +225,24 @@ const jsonLd = newsArticleGraph(c, [
           moreHref={`/country/${c.countrySlug}/`}
           moreLabel={`All ${c.countryName} stories`}
         />
-      </aside>
-    </div>
 
-    <div class="mt-16 grid gap-6 lg:grid-cols-2">
-      <RelatedStories
-        title={`More viral in ${category.name}`}
-        clusters={relatedInCategory}
-        show="country"
-        moreHref={`/category/${c.categorySlug}/`}
-        moreLabel={`All ${category.name} stories worldwide`}
-      />
-      <RelatedStories
-        title={`Related in ${c.countryName}`}
-        clusters={relatedInCountryExtra}
-        show="category"
-        moreHref={countryCategoryHref}
-        moreLabel={`${category.name} in ${c.countryName}`}
-      />
+        <!-- Related lists live in the sidebar so it fills beside long articles and no half-empty
+             row is left when one list has no stories. -->
+        <RelatedStories
+          title={`More viral in ${category.name}`}
+          clusters={relatedInCategory}
+          show="country"
+          moreHref={`/category/${c.categorySlug}/`}
+          moreLabel={`All ${category.name} stories worldwide`}
+        />
+        <RelatedStories
+          title={`Related in ${c.countryName}`}
+          clusters={relatedInCountryExtra}
+          show="category"
+          moreHref={countryCategoryHref}
+          moreLabel={`${category.name} in ${c.countryName}`}
+        />
+      </aside>
     </div>
   </div>
 </BaseLayout>
