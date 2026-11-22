@@ -5,7 +5,7 @@
   "region": "Asia",
   "viralScore": 79,
   "intensityTier": "high",
-  "generatedAt": "2026-11-22T17:18:00Z",
+  "generatedAt": "2026-11-22T20:17:00Z",
   "clusters": [
     {
       "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
@@ -21,7 +21,7 @@
       ],
       "primarySource": {
         "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/dw/d-8746656/mengapa-perselingkuhan-ceo-nvidia-dengan-mata-mata-china-jadi-sorotan"
+        "articleUrl": "https://news.detik.com/dw/d-8747097/selingkuh-dengan-mata-mata-china-jensen-huang-digugat-pemegang-saham-nvidia"
       }
     },
     {
@@ -30,8 +30,8 @@
       "headline": "Nvidia Posts Strong Q3 Results Following Jensen Huang Resignation",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Nvidia reported a doubling of its third-quarter revenue in its first financial statement since the resignation of Jensen Huang.",
         "The company's board of directors explicitly stated there are no plans to reinstate the former CEO following the espionage investigation."
@@ -76,12 +76,29 @@
       }
     },
     {
+      "slug": "scott-bessent-nvidia-china-chips",
+      "canonicalPath": "/news/cn/scott-bessent-nvidia-china-chips/",
+      "headline": "Treasury Secretary Scott Bessent Queries Nvidia On China Chip Sales",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Treasury Secretary Scott Bessent has called for an investigation into Nvidia's role in the supply of artificial intelligence chips to China.",
+        "Bessent stated that the government requires clarity on potential noncompliance regarding existing export control regulations."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/we-do-need-answers-trump-aide-bessent-on-nvidias-sale-of-chips-to-china/articleshow/136080639.cms"
+      }
+    },
+    {
       "slug": "indonesian-pairs-reach-hong-kong-open-semifinals",
       "canonicalPath": "/news/cn/indonesian-pairs-reach-hong-kong-open-semifinals/",
       "headline": "Leo Rolly Carnando And Daniel Marthin Finish As Hong Kong Open Runner-up",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 52,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Leo Rolly Carnando and Daniel Marthin secured the runner-up position at the Hong Kong Open 2026.",
@@ -98,7 +115,7 @@
       "headline": "Amri Syahnawi And Nita Violina Marwah Eliminated In Hong Kong Open",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Indonesian mixed doubles pair failed to progress to the quarter-finals of the 2026 Hong Kong Open.",
@@ -115,7 +132,7 @@
       "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
@@ -124,23 +141,6 @@
       "primarySource": {
         "publisherName": "Malay Mail",
         "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/17/no-new-deadline-set-for-south-china-sea-code-negotiations-says-anwar/243540"
-      }
-    },
-    {
-      "slug": "xi-jinping-convenes-strategic-diplomatic-meeting",
-      "canonicalPath": "/news/cn/xi-jinping-convenes-strategic-diplomatic-meeting/",
-      "headline": "President Xi Jinping Convenes Strategic Diplomatic Meeting In China",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Xi Jinping has organized a diplomatic meeting involving major international leaders.",
-        "The event is described as a significant diplomatic moment for Chinese leadership."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o"
       }
     },
     {
@@ -280,6 +280,23 @@
       }
     },
     {
+      "slug": "xi-jinping-convenes-strategic-diplomatic-meeting",
+      "canonicalPath": "/news/cn/xi-jinping-convenes-strategic-diplomatic-meeting/",
+      "headline": "President Xi Jinping Convenes Strategic Diplomatic Meeting In China",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Xi Jinping has organized a diplomatic meeting involving major international leaders.",
+        "The event is described as a significant diplomatic moment for Chinese leadership."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o"
+      }
+    },
+    {
       "slug": "prabowo-subianto-meets-xi-jinping-shenzhen",
       "canonicalPath": "/news/cn/prabowo-subianto-meets-xi-jinping-shenzhen/",
       "headline": "Prabowo Subianto Discusses South China Sea With Xi Jinping",
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/12/china-rules-out-hosting-cop33-climate-summit-in-2028"
-      }
-    },
-    {
-      "slug": "dbs-paylah-expands-payment-services-china",
-      "canonicalPath": "/news/cn/dbs-paylah-expands-payment-services-china/",
-      "headline": "DBS PayLah Users Gain Access To QR Payments Across China Network",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "DBS PayLah users are now able to complete transactions at more than 100 million merchant locations throughout China.",
-        "The service allows users to pay by scanning merchant QR codes or by presenting their own codes for merchant processing."
-      ],
-      "primarySource": {
-        "publisherName": "The Straits Times",
-        "articleUrl": "https://www.straitstimes.com/singapore/dbs-paylah-users-can-now-pay-at-more-than-100-million-merchants-across-china"
       }
     }
   ]
