@@ -44,7 +44,7 @@ const pages = walk(dist)
 const isNoindex = (html) => /<meta name="robots" content="noindex/.test(html);
 const indexable = pages.filter((p) => !isNoindex(p.html));
 const stories = pages.filter((p) => p.path.startsWith('/news/'));
-const hubs = pages.filter((p) => /^\/(country|category|region|topic)\//.test(p.path));
+const hubs = pages.filter((p) => /^\/(country|category|region|topic|digest)\//.test(p.path));
 
 const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1];
 const meta = (html, key) => {

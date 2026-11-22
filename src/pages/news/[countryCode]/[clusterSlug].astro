@@ -19,6 +19,7 @@ import { absoluteUrl, pageTitle } from '../../../lib/site.ts';
 import { newsArticleGraph } from '../../../lib/structuredData.ts';
 import {
   batchMeta,
+  digestForStory,
   getClusters,
   getCountries,
   getStoryTitles,
@@ -28,6 +29,7 @@ import {
 import { categoryBySlug, flagEmoji } from '../../../lib/taxonomy.ts';
 import { formatDateWib, formatTimeWib } from '../../../lib/format.ts';
 import { linkifyFirstMentions } from '../../../lib/linkify.ts';
+import { formatDayShort } from '../../../lib/digest.ts';
 import type { ViralClusterStaticRecord } from '../../../lib/types.ts';
 
 export const getStaticPaths = (async () => {
@@ -49,6 +51,7 @@ const [clusters, countries, topics] = await Promise.all([
   getTopics(),
 ]);
 const country = countries.find((x) => x.code === c.countryCode)!;
+const digest = await digestForStory(c);
 const category = categoryBySlug(c.categorySlug)!;
 
 const trendingInCountry = clusters
@@ -140,6 +143,18 @@ const jsonLd = newsArticleGraph(c, [
             </time>
             · Updated in batch{' '}
             <time datetime={c.lastUpdatedBatchAt}>{formatTimeWib(c.lastUpdatedBatchAt)}</time>
+            {digest && (
+              <>
+                {' '}
+                ·{' '}
+                <a
+                  class="text-ink-muted underline-offset-2 hover:text-cyan hover:underline"
+                  href={digest.path}
+                >
+                  Top viral news of {formatDayShort(digest.day)}
+                </a>
+              </>
+            )}
           </p>
           <div class="mt-6">
             <ShareBar url={shareUrl} title={c.headline} placement="top" />

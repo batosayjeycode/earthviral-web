@@ -1,0 +1,93 @@
+---
+/** /digest/ — every daily digest, newest first, with each day's top 3 stories. */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JsonLd from '../../components/seo/JsonLd.astro';
+import HubHeader from '../../components/hub/HubHeader.astro';
+import { collectionGraph } from '../../lib/structuredData.ts';
+import { batchMeta, getDigestDays } from '../../lib/data.ts';
+import { flagEmoji } from '../../lib/taxonomy.ts';
+import { formatDayLong, wibDay } from '../../lib/digest.ts';
+
+const days = await getDigestDays();
+const latest = days[0];
+const today = wibDay(batchMeta.generatedAt);
+const description =
+  'The most viral news worldwide, day by day: each day’s top stories across dozens of countries, ranked by coverage and search interest.';
+---
+
+<BaseLayout
+  title="Daily Viral News Digest: Top Stories Worldwide Each Day | EarthViral"
+  description={description}
+  noindex={days.length === 0}
+>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path: '/digest/',
+      name: 'Daily viral news digest',
+      description,
+      breadcrumbs: [{ name: 'Daily Digest' }],
+      clusters: days.map((d) => d.stories[0]!),
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: 'Daily Digest' }]}
+    eyebrow="Daily digest"
+    title="The world’s most viral news, day by day"
+    intro="Each day’s top stories across every country EarthViral tracks, ranked by Viral Activity Score. Days follow Western Indonesian Time (WIB)."
+    stats={[
+      { label: 'Days', value: days.length },
+      ...(latest ? [{ label: 'Latest', value: formatDayLong(latest.day) }] : []),
+    ]}
+  />
+
+  <div class="mx-auto max-w-7xl px-4 pt-10 sm:px-6" data-pagefind-body data-pagefind-weight="0.3">
+    {days.length === 0 ? (
+      <p class="rounded-2xl border border-dashed border-line p-8 text-center text-ink-muted">
+        No digest yet. Check back after the next 3-hour update.
+      </p>
+    ) : (
+      <ol class="grid gap-4 md:grid-cols-2">
+        {days.map((d) => (
+          <li class="rounded-2xl border border-line bg-land/60 p-5 light:bg-land light:shadow-card">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h2 class="font-display text-xl font-semibold text-ink-strong">
+                <a class="hover:text-cyan" href={d.path}>
+                  {formatDayLong(d.day)}
+                </a>
+                {d.day === today && (
+                  <span class="ml-2 align-middle text-xs font-semibold tracking-widest text-cyan uppercase">
+                    Today
+                  </span>
+                )}
+              </h2>
+              <p class="tabular text-xs text-ink-faint" data-pagefind-ignore>
+                {d.stories.length} stories · {d.countryCount} countries
+              </p>
+            </div>
+            <ol class="mt-4 grid gap-2 text-sm">
+              {d.stories.slice(0, 3).map((c, i) => (
+                <li class="flex gap-3">
+                  <span class="tabular w-4 shrink-0 font-semibold text-cyan" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <a class="text-ink hover:text-cyan" href={c.canonicalPath}>
+                    <span aria-hidden="true">{flagEmoji(c.countryCode)}</span> {c.headline}
+                  </a>
+                </li>
+              ))}
+            </ol>
+            <a
+              class="mt-4 inline-block text-sm font-semibold text-cyan hover:underline"
+              href={d.path}
+            >
+              Read the full digest <span aria-hidden="true">→</span>
+              <span class="sr-only"> for {formatDayLong(d.day)}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    )}
+  </div>
+</BaseLayout>

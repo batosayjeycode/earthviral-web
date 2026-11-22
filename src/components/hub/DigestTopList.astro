@@ -1,0 +1,59 @@
+---
+/** Numbered "Top viral stories" list for the daily digest: rank, headline, why it's viral. */
+import type { ViralClusterStaticRecord } from '../../lib/types.ts';
+import { categoryBySlug, flagEmoji } from '../../lib/taxonomy.ts';
+
+interface Props {
+  title: string;
+  clusters: ViralClusterStaticRecord[];
+}
+
+const { title, clusters } = Astro.props;
+---
+
+<section aria-labelledby="digest-top-heading">
+  <h2 id="digest-top-heading" class="font-display text-2xl font-bold text-ink-strong">
+    {title}
+  </h2>
+  <ol class="mt-5 grid gap-3">
+    {clusters.map((c, i) => (
+      <li class="group relative flex gap-4 rounded-2xl border border-line bg-land/60 p-4 transition hover:border-cyan/40 hover:bg-land light:bg-land light:shadow-card sm:gap-5 sm:p-5">
+        <span
+          class="tabular w-8 shrink-0 font-display text-2xl leading-none font-bold text-cyan sm:w-10 sm:text-3xl"
+          aria-hidden="true"
+        >
+          {i + 1}
+        </span>
+        <div class="min-w-0 flex-1">
+          <div class="flex flex-wrap items-center gap-2 text-xs" data-pagefind-ignore>
+            <span class="text-ink-muted">
+              <span aria-hidden="true">{flagEmoji(c.countryCode)}</span> {c.countryName}
+            </span>
+            <span class="rounded-full border border-line px-2 py-0.5 text-ink-muted">
+              {categoryBySlug(c.categorySlug)?.shortName ?? c.categoryName}
+            </span>
+            <span
+              class="tier-badge ml-auto"
+              data-tier={c.intensityTier}
+              title={`Viral Activity Score ${c.viralScore}/100`}
+            >
+              <span aria-hidden="true">🔥</span>
+              {c.viralScore}
+              <span class="sr-only"> out of 100</span>
+            </span>
+          </div>
+          <h3 class="mt-2 font-display text-lg leading-snug font-semibold text-ink-strong sm:text-xl">
+            <a href={c.canonicalPath} class="after:absolute after:inset-0 group-hover:text-cyan">
+              <span class="sr-only">{i + 1}. </span>
+              {c.headline}
+            </a>
+          </h3>
+          <p class="mt-1.5 text-sm leading-relaxed text-pretty text-ink-muted">{c.whyItIsViral}</p>
+          <p class="mt-2 text-xs text-ink-faint" data-pagefind-ignore>
+            {`${c.sources.length} ${c.sources.length === 1 ? 'source' : 'sources'} · ${c.sources[0]?.publisherName ?? ''}`}
+          </p>
+        </div>
+      </li>
+    ))}
+  </ol>
+</section>

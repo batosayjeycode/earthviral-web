@@ -1,0 +1,201 @@
+---
+/**
+ * Daily World Viral Digest — /digest/[yyyy-mm-dd]/. The day's top 10 stories worldwide, the
+ * top story in each region, and the rest of the day's stories, all first detected that WIB day.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JsonLd from '../../components/seo/JsonLd.astro';
+import HubHeader from '../../components/hub/HubHeader.astro';
+import StoryGrid from '../../components/hub/StoryGrid.astro';
+import LinkCloud from '../../components/hub/LinkCloud.astro';
+import DigestTopList from '../../components/hub/DigestTopList.astro';
+import NewsCard from '../../components/news/NewsCard.astro';
+import ShareBar from '../../components/news/ShareBar.astro';
+import AdSlot from '../../components/ads/AdSlot.astro';
+import { collectionGraph } from '../../lib/structuredData.ts';
+import { absoluteUrl, pageTitle } from '../../lib/site.ts';
+import { batchMeta, getDigestDays } from '../../lib/data.ts';
+import { CATEGORIES, REGIONS, flagEmoji } from '../../lib/taxonomy.ts';
+import { formatTimeWib } from '../../lib/format.ts';
+import {
+  DIGEST_TOP,
+  formatDayLong,
+  formatDayShort,
+  wibDay,
+  type DigestDay,
+} from '../../lib/digest.ts';
+
+export const getStaticPaths = (async () => {
+  const days = await getDigestDays();
+  return days.map((digest, i) => ({
+    params: { day: digest.day },
+    // Days are newest first: the previous (older) day is i + 1.
+    props: { digest, newer: days[i - 1], older: days[i + 1] },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  digest: DigestDay;
+  newer?: DigestDay;
+  older?: DigestDay;
+}
+
+const { digest, newer, older } = Astro.props;
+const { day, stories } = digest;
+const long = formatDayLong(day);
+const short = formatDayShort(day);
+const inProgress = day === wibDay(batchMeta.generatedAt);
+
+const top = stories.slice(0, DIGEST_TOP);
+const rest = stories.slice(DIGEST_TOP);
+const regionTops = REGIONS.map((r) => ({
+  region: r,
+  // Best story in each region beyond the top list, so no card repeats one above.
+  story: rest.find((c) => c.region === r.name),
+})).filter((x) => x.story);
+const more = rest.filter((c) => !regionTops.some((x) => x.story === c));
+
+const countryLinks = [...new Map(stories.map((c) => [c.countryCode, c])).values()]
+  .map((c) => ({
+    name: c.countryName,
+    href: `/country/${c.countrySlug}/`,
+    meta: stories.filter((s) => s.countryCode === c.countryCode).length,
+    prefix: flagEmoji(c.countryCode),
+  }))
+  .sort((a, b) => b.meta - a.meta || a.name.localeCompare(b.name));
+const categoryLinks = CATEGORIES.map((cat) => ({
+  name: cat.name,
+  href: `/category/${cat.slug}/`,
+  meta: stories.filter((s) => s.categorySlug === cat.slug).length,
+})).filter((l) => l.meta > 0);
+
+const title = pageTitle(
+  `Top Viral News Worldwide on ${long}`,
+  `Top Viral News Worldwide, ${short}`,
+  `Viral News, ${short}`,
+);
+// Every digest day has at least MIN_DIGEST_STORIES stories.
+const lead = top[0]!;
+// ≤ 170 characters: lead with the top headline when it fits, else just the counts.
+const counts = `${stories.length} stories from ${digest.countryCount} countries`;
+const description = [
+  `Top viral news worldwide on ${short}: “${lead.headline}” leads ${counts}.`,
+  `The most viral news worldwide on ${long}: ${counts}, ranked by Viral Activity Score.`,
+].find((d) => d.length <= 170)!;
+const path = digest.path;
+---
+
+<BaseLayout title={title} description={description} ogImage={`/og/digest/${day}.png`}>
+  <JsonLd
+    slot="head"
+    data={collectionGraph({
+      path,
+      name: `Top viral news worldwide on ${long}`,
+      description,
+      breadcrumbs: [{ name: 'Daily Digest', path: '/digest/' }, { name: long }],
+      clusters: stories,
+    })}
+  />
+
+  <HubHeader
+    crumbs={[{ name: 'Daily Digest', href: '/digest/' }, { name: long }]}
+    eyebrow={inProgress ? 'Daily digest · updating every 3 hours' : 'Daily digest'}
+    title={`Top viral news worldwide on ${long}`}
+    intro={`The stories that went viral across ${digest.countryCount} countries on ${long} (WIB), ranked by how widely they were covered and searched. ${inProgress ? `Updated through the ${formatTimeWib(batchMeta.generatedAt)} batch.` : ''}`}
+    stats={[
+      { label: 'Viral stories', value: stories.length },
+      { label: 'Countries', value: digest.countryCount },
+      { label: 'Top score', value: `${lead.viralScore}/100` },
+    ]}
+  />
+
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-4 pt-10 sm:px-6"
+    data-pagefind-body
+    data-pagefind-weight="0.5"
+  >
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <DigestTopList title={`Top ${top.length} viral stories of the day`} clusters={top} />
+      <aside class="grid content-start gap-6" aria-label="Digest navigation">
+        <ShareBar
+          url={absoluteUrl(path)}
+          title={`Top viral news worldwide — ${short}`}
+          placement="top"
+          heading="Share this digest"
+        />
+        <nav
+          aria-labelledby="digest-days-heading"
+          class="rounded-2xl border border-line p-5"
+          data-pagefind-ignore
+        >
+          <h2
+            id="digest-days-heading"
+            class="text-xs font-semibold tracking-widest text-ink-muted uppercase"
+          >
+            Other days
+          </h2>
+          <ul class="mt-3 grid gap-2 text-sm">
+            {newer && (
+              <li>
+                <a class="text-cyan hover:underline" href={newer.path} rel="next">
+                  {formatDayShort(newer.day)} <span aria-hidden="true">→</span>
+                </a>
+              </li>
+            )}
+            {older && (
+              <li>
+                <a class="text-cyan hover:underline" href={older.path} rel="prev">
+                  <span aria-hidden="true">←</span> {formatDayShort(older.day)}
+                </a>
+              </li>
+            )}
+            <li>
+              <a class="text-ink-muted hover:text-cyan" href="/digest/">
+                All daily digests
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <AdSlot placement="hub" />
+      </aside>
+    </div>
+
+    {regionTops.length > 0 && (
+      <section aria-labelledby="digest-regions-heading">
+        <h2 id="digest-regions-heading" class="font-display text-2xl font-bold text-ink-strong">
+          More from each region
+        </h2>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {regionTops.map(({ region, story }) => (
+            <div>
+              <p
+                class="mb-2 text-xs font-semibold tracking-widest text-ink-faint uppercase"
+                data-pagefind-ignore
+              >
+                <a class="hover:text-cyan" href={`/region/${region.slug}/`}>
+                  {region.name}
+                </a>
+              </p>
+              <NewsCard cluster={story!} referenceIso={batchMeta.generatedAt} />
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {more.length > 0 && (
+      <StoryGrid title={`More viral stories from ${short}`} clusters={more} limit={48} />
+    )}
+
+    <LinkCloud title="By country" links={countryLinks} />
+    <LinkCloud title="By category" links={categoryLinks} />
+
+    <ShareBar
+      url={absoluteUrl(path)}
+      title={`Top viral news worldwide — ${short}`}
+      placement="bottom"
+      heading="Know someone who should see this?"
+    />
+  </div>
+</BaseLayout>

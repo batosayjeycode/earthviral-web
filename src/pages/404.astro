@@ -7,6 +7,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <p class="tabular text-sm text-cyan">404</p>
     <h1 class="mt-3 text-3xl font-bold text-ink-strong">This signal went quiet</h1>
     <p class="mt-3 text-ink-muted">The page you were looking for doesn't exist or has moved.</p>
+    <p class="mt-3 text-ink-muted" data-digest-gone hidden>
+      Older daily digests are removed once their stories leave the archive.
+      <a class="text-cyan hover:underline" href="/digest/">
+        See the latest digests
+      </a>
+      .
+    </p>
     <a
       href="/"
       class="mt-8 inline-block rounded-lg border border-cyan/40 px-4 py-2 text-sm font-semibold text-cyan hover:bg-cyan/10"
@@ -15,3 +22,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </a>
   </section>
 </BaseLayout>
+
+<script>
+  // A removed /digest/[day]/ page lands here: point the visitor at the digest list.
+  if (location.pathname.startsWith('/digest/'))
+    document.querySelector<HTMLElement>('[data-digest-gone]')?.removeAttribute('hidden');
+</script>
