@@ -3,17 +3,34 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 71,
+  "viralScore": 81,
   "intensityTier": "high",
-  "generatedAt": "2026-11-23T14:18:00Z",
+  "generatedAt": "2026-11-23T17:18:00Z",
   "clusters": [
+    {
+      "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
+      "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
+      "headline": "Russia launched deadly Ukraine attacks hours before start of Abu Dhabi talks – Europe live",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Guardian reports: Russia launched deadly Ukraine attacks hours before start of Abu Dhabi talks – Europe live",
+        "France 24 reports: What to expect as Russia, Ukraine and the US hold trilateral talks in Abu Dhabi"
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/10/europe-belongs-at-this-table-germany-tells-us-before-ukraine-talks?traffic_source=rss"
+      }
+    },
     {
       "slug": "russian-cargo-ship-drone-strike",
       "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
       "headline": "United Nations Seeks Inquiry Into Drone Attacks On Russian Ships",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The United Nations has requested an independent investigation into drone strikes that targeted two ships off the coast of Benghazi, Libya.",
@@ -30,8 +47,8 @@
       "headline": "Immigration Authorities Prevent Indonesians Joining Russian Army",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Directorate General of Immigration blocked two Indonesian citizens at Juanda Airport suspected of traveling to join the Russian military.",
         "Police have disrupted multiple recruitment operations involving 22 individuals, some lured by false promises of high-paying civilian jobs."
@@ -42,29 +59,12 @@
       }
     },
     {
-      "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-      "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
-      "headline": "Russian Missiles Hit Poland During Large Scale Attacks On Ukraine",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Russian cruise missiles and a drone reportedly entered Polish territory during a major air assault on Ukraine.",
-        "The Polish Prime Minister characterized the incident as an intentional provocation by Moscow."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261109-what-to-expect-as-russia-ukraine-and-us-hold-trilateral-talks-in-abu-dhabi"
-      }
-    },
-    {
       "slug": "russian-missile-strikes-target-kyiv",
       "canonicalPath": "/news/ru/russian-missile-strikes-target-kyiv/",
       "headline": "Russian Missile Strikes Hit Kyiv And Land In Polish Territory",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russian strikes against Kyiv resulted in at least six reported fatalities within the capital.",
@@ -107,23 +107,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261122002900315"
-      }
-    },
-    {
-      "slug": "russian-projectiles-strike-polish-territory",
-      "canonicalPath": "/news/ru/russian-projectiles-strike-polish-territory/",
-      "headline": "Russian Projectiles Strike Polish Territory Near Ukrainian Border",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Three Russian projectiles landed on Polish soil near the border with Ukraine.",
-        "NATO officials described the incident as a significant breach of Polish airspace."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/russian-projectiles-hit-poland-as-nato-tensions-rise"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss"
+      }
+    },
+    {
+      "slug": "russia-proposes-new-european-security-framework",
+      "canonicalPath": "/news/ru/russia-proposes-new-european-security-framework/",
+      "headline": "Kremlin Explores New Security Framework Agreements With Europe",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Russia has proposed bilateral mutual assistance agreements as a potential method to re-establish dialogue with specific European nations.",
+        "These proposed arrangements are reportedly modeled on existing security treaties the Kremlin currently maintains with Belarus and North Korea."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/the-dangers-of-revising-europe-s-security-architecture/a-79943049?maca=en-rss-en-all-1573-xml-mrss"
       }
     }
   ]
