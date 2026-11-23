@@ -3,17 +3,33 @@
   "name": "France",
   "slug": "france",
   "region": "Europe",
-  "viralScore": 62,
+  "viralScore": 72,
   "intensityTier": "high",
-  "generatedAt": "2026-11-23T11:18:00Z",
+  "generatedAt": "2026-11-23T14:18:00Z",
   "clusters": [
+    {
+      "slug": "missiles-russian-drone-impact-poland",
+      "canonicalPath": "/news/fr/missiles-russian-drone-impact-poland/",
+      "headline": "« Pour une économie qui prend soin de la nature et des humains »",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "La Croix reports: « Pour une économie qui prend soin de la nature et des humains »"
+      ],
+      "primarySource": {
+        "publisherName": "La Croix",
+        "articleUrl": "https://www.la-croix.com/economie/des-sentinelles-benevoles-au-chevet-des-agriculteurs-en-detresse-la-solitude-face-aux-problemes-tue-20261121"
+      }
+    },
     {
       "slug": "france-more-than-600-000-protest-as-anger-grows",
       "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
       "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 59,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Unions have organized a national strike for Tuesday to advocate for higher wages for public sector employees.",
@@ -22,23 +38,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/france-braces-for-new-round-of-yellow-vest-student-protests/a-79884064?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "missiles-russian-drone-impact-poland",
-      "canonicalPath": "/news/fr/missiles-russian-drone-impact-poland/",
-      "headline": "COP31 Climate Conference Concludes Without A Global Consensus",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The COP31 climate summit finished without reaching a unified global agreement.",
-        "Delegates failed to secure a consensus among participating nations by the conclusion of the event."
-      ],
-      "primarySource": {
-        "publisherName": "La Croix",
-        "articleUrl": "https://www.la-croix.com/sixieme-samedi-de-mobilisation-pour-la-jeunesse-et-contre-la-vie-chere-20261120"
       }
     },
     {
@@ -81,7 +80,7 @@
       "headline": "Marine Le Pen Proposes Reversing French Presidential Pension Reforms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Marine Le Pen aims to repeal pension reforms enacted by President Emmanuel Macron.",
@@ -90,40 +89,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/video/france-marine-le-pen-60-minutes-video-2026-11-08/"
-      }
-    },
-    {
-      "slug": "marseille-loses-to-le-mans-fc",
-      "canonicalPath": "/news/fr/marseille-loses-to-le-mans-fc/",
-      "headline": "Marseille Loses To Le Mans FC After Surrendering Two Goal Lead",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Olympique de Marseille suffered a home loss at the Velodrome stadium on Sunday.",
-        "The team initially held a 2-0 lead before Le Mans FC completed a comeback victory."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/marseille-x-le-mans-escalacoes-e-onde-assistir-ao-jogo-da-ligue-1/"
-      }
-    },
-    {
-      "slug": "french-presidential-campaign-developments",
-      "canonicalPath": "/news/fr/french-presidential-campaign-developments/",
-      "headline": "Far-Right Figures Advance Presidential Bids Ahead Of 2027 Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Eric Zemmour has officially launched his second campaign for the French presidency.",
-        "Zemmour's platform includes a proposal to deport unemployed foreign citizens."
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/10/french-far-right-reaches-preliminary-agreement-with-european-banks-for-campaign-loan_6777025_7.html"
       }
     },
     {
@@ -144,12 +109,46 @@
       }
     },
     {
+      "slug": "french-presidential-campaign-developments",
+      "canonicalPath": "/news/fr/french-presidential-campaign-developments/",
+      "headline": "Far-Right Figures Advance Presidential Bids Ahead Of 2027 Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Eric Zemmour has officially launched his second campaign for the French presidency.",
+        "Zemmour's platform includes a proposal to deport unemployed foreign citizens."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/10/french-far-right-reaches-preliminary-agreement-with-european-banks-for-campaign-loan_6777025_7.html"
+      }
+    },
+    {
+      "slug": "marseille-loses-to-le-mans-fc",
+      "canonicalPath": "/news/fr/marseille-loses-to-le-mans-fc/",
+      "headline": "Marseille Loses To Le Mans FC After Surrendering Two Goal Lead",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Olympique de Marseille suffered a home loss at the Velodrome stadium on Sunday.",
+        "The team initially held a 2-0 lead before Le Mans FC completed a comeback victory."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/marseille-x-le-mans-escalacoes-e-onde-assistir-ao-jogo-da-ligue-1/"
+      }
+    },
+    {
       "slug": "negotiators-face-criticism-over-cop31-draft",
       "canonicalPath": "/news/fr/negotiators-face-criticism-over-cop31-draft/",
       "headline": "Negotiators At COP31 Face Criticism Over Draft Fossil Fuel Language",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The latest COP31 draft proposes increasing electricity to 35 percent of global energy consumption by 2035.",
@@ -183,7 +182,7 @@
       "headline": "GTA VI Reaches Record-Breaking Global Sales On Launch Day",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 29,
+      "viralScore": 25,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Rockstar Games reported nearly $4 billion in sales within the first day of the title's launch.",

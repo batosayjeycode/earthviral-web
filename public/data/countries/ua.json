@@ -3,25 +3,25 @@
   "name": "Ukraine",
   "slug": "ukraine",
   "region": "Europe",
-  "viralScore": 84,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-23T11:18:00Z",
+  "viralScore": 89,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-23T14:18:00Z",
   "clusters": [
     {
       "slug": "ukraine-claims-sinking-of-russian-warship",
       "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-      "headline": "Volodymyr Zelenskyy Claims Responsibility For Sinking Russian Ship",
+      "headline": "Zelenskyy says Ukraine was behind drone attacks on Russian ships off Libya",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 81,
-      "intensityTier": "high",
+      "viralScore": 86,
+      "intensityTier": "surge",
       "aiSummaryBullets": [
-        "President Volodymyr Zelenskyy confirmed that Ukrainian forces destroyed a Russian warship in a naval base in Libya.",
-        "The operation reportedly utilized seven locally produced sea drones to strike the vessel."
+        "Al Jazeera reports: Zelenskyy says Ukraine was behind drone attacks on Russian ships off Libya",
+        "The Guardian reports: Ukraine confirms it used naval drones to strike two Russian ships off Libya"
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/23/zelenskyy-says-ukraine-behind-drone-attacks-on-russian-ships-near-libya?traffic_source=rss"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261123-live-russian-strikes-kill-at-least-15-people-in-kyiv-region-ukraine-says"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "Russia Intensifies Strikes Against Ukraine Energy Infrastructure",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 68,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Russian military strikes have caused significant damage to the energy infrastructure in Odesa, forcing local schools to shift to remote learning.",
@@ -47,7 +47,7 @@
       "headline": "President Zelenskyy Suggests Referendum On Potential Security Deal",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Zelenskyy stated that a potential security agreement, reportedly involving NATO membership and territory concessions, could be put to a referendum.",
@@ -76,23 +76,6 @@
       }
     },
     {
-      "slug": "russian-missile-strikes-kyiv-region",
-      "canonicalPath": "/news/ua/russian-missile-strikes-kyiv-region/",
-      "headline": "Russian Missile Strikes Result In Casualties Across Kyiv Region",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Overnight Russian missile strikes resulted in civilian deaths in the Kyiv region.",
-        "Emergency services are searching for missing persons near a collapsed residential building."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o"
-      }
-    },
-    {
       "slug": "jared-kushner-ukraine-security-guarantees",
       "canonicalPath": "/news/ua/jared-kushner-ukraine-security-guarantees/",
       "headline": "Jared Kushner Suggests Trump Could Offer Ukraine Security Clauses",
@@ -107,6 +90,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/kushner-says-trump-open-to-extend-nato-mutual-defense-type-clause-to-ukraine"
+      }
+    },
+    {
+      "slug": "russian-missile-strikes-kyiv-region",
+      "canonicalPath": "/news/ua/russian-missile-strikes-kyiv-region/",
+      "headline": "Russian Missile Strikes Result In Casualties Across Kyiv Region",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Overnight Russian missile strikes resulted in civilian deaths in the Kyiv region.",
+        "Emergency services are searching for missing persons near a collapsed residential building."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o"
       }
     },
     {
