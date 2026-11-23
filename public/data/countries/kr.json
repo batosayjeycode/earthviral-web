@@ -3,21 +3,38 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 61,
+  "viralScore": 84,
   "intensityTier": "high",
-  "generatedAt": "2026-11-23T05:17:00Z",
+  "generatedAt": "2026-11-23T08:17:00Z",
   "clusters": [
+    {
+      "slug": "south-korean-tax-exam-ai-scandal",
+      "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+      "headline": "Education Minister Choi Kyo-jin Resigns Over AI Exam Cheating Chaos",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 81,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Education Minister Choi Kyo-jin resigned following widespread concerns regarding the integrity of university and college entrance examinations.",
+        "The Ministry of Education has filed criminal complaints against five students suspected of using smart devices to cheat during the recent CSAT."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261119005351315"
+      }
+    },
     {
       "slug": "seoul-shares-plunge-anthropic-debut",
       "canonicalPath": "/news/kr/seoul-shares-plunge-anthropic-debut/",
-      "headline": "KOSPI Falls Further As Technology Sector Concerns Persist",
+      "headline": "KOSPI Drops Three Percent Amid Ongoing AI Sector Sell-Off",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 58,
-      "intensityTier": "active",
+      "viralScore": 70,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "The Korea Composite Stock Price Index dropped over 2 percent during Monday morning trading sessions.",
-        "Investors continued selling major technology shares following significant losses observed on the previous Friday."
+        "The Korea Composite Stock Price Index dropped 3.31 percent to close at 4,708.54 points.",
+        "The decline follows a broader global downturn in stocks related to artificial intelligence."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
@@ -25,54 +42,71 @@
       }
     },
     {
-      "slug": "south-korean-tax-exam-ai-scandal",
-      "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-      "headline": "Education Minister Choi Kyo-jin Resigns Over AI Exam Cheating Chaos",
+      "slug": "lee-jae-myung-appoints-police-chief",
+      "canonicalPath": "/news/kr/lee-jae-myung-appoints-police-chief/",
+      "headline": "President Lee Jae Myung Announces Cabinet And Security Reshuffle",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 57,
+      "viralScore": 58,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Education Minister Choi Kyo-jin resigned following operational chaos during national university entrance examinations.",
-        "The resignation follows a controversy where a top-scoring candidate admitted to using a miniature camera and smartphone for a tax exam."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/19/asia-pacific/society/south-korea-college-exam-cheating/"
-      }
-    },
-    {
-      "slug": "samsung-securities-reports-data-breach",
-      "canonicalPath": "/news/kr/samsung-securities-reports-data-breach/",
-      "headline": "Samsung Securities Reports Data Breach Affecting Over 8,000 Clients",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Samsung Securities confirmed that the personal information of 8,241 clients was leaked.",
-        "The brokerage firm identified the breach after discovering unauthorized access to its customer response system."
+        "President Lee Jae Myung appointed new heads for the Foreign and Unification ministries.",
+        "Former Justice Minister Kang Kum-sil was selected to lead the National Intelligence Service as the first female director."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002900320"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261120008900315"
       }
     },
     {
-      "slug": "president-lee-jae-myung-approval-rating-increase",
-      "canonicalPath": "/news/kr/president-lee-jae-myung-approval-rating-increase/",
-      "headline": "President Lee Jae Myung Sees Approval Rating Increase To 37 Percent",
+      "slug": "south-korean-parties-clash-impeachment",
+      "canonicalPath": "/news/kr/south-korean-parties-clash-impeachment/",
+      "headline": "South Korean Rival Parties Clash Over Chief Justice Impeachment",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "President Lee Jae Myung recorded a 37.3 percent approval rating in a poll conducted by Realmeter.",
-        "The president's job performance rating increased by 0.9 percentage points over the past week."
+        "The Democratic Party is pursuing the impeachment of the Supreme Court chief justice.",
+        "A national body representing judges has formally criticized the political push for impeachment."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001400315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123003700315"
+      }
+    },
+    {
+      "slug": "ateez-scores-fourth-billboard-number-one",
+      "canonicalPath": "/news/kr/ateez-scores-fourth-billboard-number-one/",
+      "headline": "Ateez Reaches Fourth Billboard 200 Top Spot With New Album Release",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The K-pop group Ateez achieved their fourth No. 1 on the Billboard 200 chart with their latest release.",
+        "The group's 15th EP, titled Golden Hour: Part. 6, reached the top position shortly after their previous release."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123000900315"
+      }
+    },
+    {
+      "slug": "south-korean-stock-market-intervention",
+      "canonicalPath": "/news/kr/south-korean-stock-market-intervention/",
+      "headline": "South Korean Regulators Intervene Amid Sharp Stock Market Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "South Korean authorities plan to activate a stock market stabilization fund following significant declines in the Kospi and Kosdaq indices.",
+        "Financial regulators announced that daily limits on share buybacks will be removed for a three-month period to encourage market stability."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123005700320"
       }
     },
     {
@@ -93,80 +127,12 @@
       }
     },
     {
-      "slug": "supreme-court-overturns-former-pm-han-conviction",
-      "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
-      "headline": "South Korean Democratic Party Seeks Impeachment Of Chief Justice",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Democratic Party aims to initiate an impeachment motion against the Supreme Court chief justice on December 3.",
-        "The planned action follows the Supreme Court's decision to order a retrial for former Prime Minister Han regarding his martial law role."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261119001200315"
-      }
-    },
-    {
-      "slug": "mark-nct-new-album-windmill",
-      "canonicalPath": "/news/kr/mark-nct-new-album-windmill/",
-      "headline": "Singer Mark From NCT Announces Upcoming Solo Studio Album Windmill",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The former NCT member Mark will release his new studio album titled Windmill next month.",
-        "The upcoming album includes the lead single What’s Your Dream? Don’t Have One and previously released B-sides."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001200315"
-      }
-    },
-    {
-      "slug": "south-korea-exports-surge-november",
-      "canonicalPath": "/news/kr/south-korea-exports-surge-november/",
-      "headline": "South Korea Exports Double In November On Record Chip Shipments",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "South Korea's total export value reached 77.4 billion dollars between November 1 and 20.",
-        "The data from the Korea Customs Service shows a substantial increase from the 38.4 billion dollars recorded during the same period last year."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002500320"
-      }
-    },
-    {
-      "slug": "kim-jong-un-north-korea-regional-dominance",
-      "canonicalPath": "/news/kr/kim-jong-un-north-korea-regional-dominance/",
-      "headline": "Kim Jong-un Claims North Korea Seeks No Regional Dominance",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kim Jong-un stated that North Korea has no intentions regarding regional expansion or dominance.",
-        "The North Korean leader characterized the nation's ongoing military buildup as a legitimate exercise of sovereign self-defense."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001000315"
-      }
-    },
-    {
       "slug": "lee-hyoung-il-addresses-stock-market-volatility",
       "canonicalPath": "/news/kr/lee-hyoung-il-addresses-stock-market-volatility/",
       "headline": "Finance Minister Lee Hyoung-il Addresses Volatile South Korea Market",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 49,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Finance Minister Lee Hyoung-il stated that the government has prepared contingency measures beyond existing stock market stabilization funds.",
@@ -178,71 +144,54 @@
       }
     },
     {
-      "slug": "kim-a-lim-lpga-tour-championship-finish",
-      "canonicalPath": "/news/kr/kim-a-lim-lpga-tour-championship-finish/",
-      "headline": "Kim A-Lim Ties For Seventh At LPGA CME Group Tour Championship",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kim A-Lim finished in a tie for seventh place at the CME Group Tour Championship in Naples, Florida.",
-        "The golfer concluded the 2026 LPGA Tour season with an 18-under 270 score over the four-day event."
-      ],
-      "primarySource": {
-        "publisherName": "The Korea Herald",
-        "articleUrl": "https://www.koreaherald.com/article/10945025"
-      }
-    },
-    {
-      "slug": "kim-jong-chul-npa-commissioner-general",
-      "canonicalPath": "/news/kr/kim-jong-chul-npa-commissioner-general/",
-      "headline": "NPA Commissioner General Kim Jong-Chul Vows To Earn Public Trust",
+      "slug": "president-lee-jae-myung-approval-rating-increase",
+      "canonicalPath": "/news/kr/president-lee-jae-myung-approval-rating-increase/",
+      "headline": "President Lee Jae Myung Sees Approval Rating Increase To 37 Percent",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kim Jong-chul assumed the role of Commissioner General for the National Police Agency.",
-        "The appointment follows recent legal reforms that removed investigative powers from prosecutors."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123003500315"
-      }
-    },
-    {
-      "slug": "white-blast-tops-korean-box-office",
-      "canonicalPath": "/news/kr/white-blast-tops-korean-box-office/",
-      "headline": "Korean Film White Blast Tops Local Box Office In Debut Weekend",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The film White Blast reached the number one spot at the domestic box office during its first weekend of release.",
-        "Data from the Korean Film Council indicates the movie recorded 310,000 admissions between Friday and Sunday."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123003000315"
-      }
-    },
-    {
-      "slug": "south-korea-qatar-lng-supply-negotiations",
-      "canonicalPath": "/news/kr/south-korea-qatar-lng-supply-negotiations/",
-      "headline": "South Korea Requests Qatar Prioritize LNG Supplies After Disruption",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
       "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "South Korean Industry Minister Kim Jung-kwan met with Qatari Minister of State for Energy Affairs Saad Sherida al-Kaabi in Seoul.",
-        "The South Korean government requested prioritized delivery of liquefied natural gas from Qatar after current disruptions conclude."
+        "President Lee Jae Myung recorded a 37.3 percent approval rating in a poll conducted by Realmeter.",
+        "The president's job performance rating increased by 0.9 percentage points over the past week."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002700320"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001400315"
+      }
+    },
+    {
+      "slug": "samsung-securities-reports-data-breach",
+      "canonicalPath": "/news/kr/samsung-securities-reports-data-breach/",
+      "headline": "Samsung Securities Reports Data Breach Affecting Over 8,000 Clients",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Samsung Securities confirmed that the personal information of 8,241 clients was leaked.",
+        "The brokerage firm identified the breach after discovering unauthorized access to its customer response system."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002900320"
+      }
+    },
+    {
+      "slug": "stray-kids-felix-hanbok-campaign",
+      "canonicalPath": "/news/kr/stray-kids-felix-hanbok-campaign/",
+      "headline": "Stray Kids Member Felix Promotes South Korea Hanbok Campaign",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Stray Kids member Felix modeled traditional hanbok designs for the South Korean government's annual Hanbok Wave initiative.",
+        "The campaign aims to promote South Korean cultural identity as the government prepares for new legislation to grow the domestic hanbok industry."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002600315"
       }
     },
     {
@@ -263,54 +212,20 @@
       }
     },
     {
-      "slug": "south-korea-fines-fifteen-bond-dealers",
-      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
-      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 43,
+      "slug": "mark-nct-new-album-windmill",
+      "canonicalPath": "/news/kr/mark-nct-new-album-windmill/",
+      "headline": "Singer Mark From NCT Announces Upcoming Solo Studio Album Windmill",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
-        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
+        "The former NCT member Mark will release his new studio album titled Windmill next month.",
+        "The upcoming album includes the lead single What’s Your Dream? Don’t Have One and previously released B-sides."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
-      }
-    },
-    {
-      "slug": "samsung-google-smart-glasses-preorder",
-      "canonicalPath": "/news/kr/samsung-google-smart-glasses-preorder/",
-      "headline": "Samsung And Google Initiate Preorders For New Smart Glasses Model",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Samsung and Google are launching a new wearable device featuring integrated artificial intelligence technology.",
-        "The companies scheduled the start of customer preorders for the upcoming smart glasses for Thursday."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261109005600320"
-      }
-    },
-    {
-      "slug": "south-korea-wins-short-track-relay",
-      "canonicalPath": "/news/kr/south-korea-wins-short-track-relay/",
-      "headline": "South Korea Wins Men's Relay Gold At Short Track World Tour Event",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 33,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "South Korean skaters claimed the gold medal in the men's 5,000-meter relay at the International Skating Union Short Track World Tour.",
-        "The winning team, comprised of Shin Dong-min, Kim Tae-sung, Lee Jeong-min, and Rim Jong-un, outperformed skaters from the Netherlands and Canada."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261121001700315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001200315"
       }
     },
     {
@@ -319,7 +234,7 @@
       "headline": "South Korean Coast Guard Locates Sunken Fishing Boat Haegwangho",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 33,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Authorities identified the sunken hull of the fishing boat Haegwangho on the seabed off the western coast of Taean.",
@@ -331,20 +246,105 @@
       }
     },
     {
-      "slug": "railway-union-delays-planned-strike",
-      "canonicalPath": "/news/kr/railway-union-delays-planned-strike/",
-      "headline": "Korean Railway Workers' Union Postpones Strike After Train Accident",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 33,
+      "slug": "kim-jong-un-north-korea-regional-dominance",
+      "canonicalPath": "/news/kr/kim-jong-un-north-korea-regional-dominance/",
+      "headline": "Kim Jong-un Claims North Korea Seeks No Regional Dominance",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Korean Railway Workers' Union announced the postponement of scheduled work-to-rule labor action.",
-        "The decision follows a freight train derailment that occurred recently on the Gyeongbu Line near Sejong."
+        "Kim Jong-un stated that North Korea has no intentions regarding regional expansion or dominance.",
+        "The North Korean leader characterized the nation's ongoing military buildup as a legitimate exercise of sovereign self-defense."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261122002600315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001000315"
+      }
+    },
+    {
+      "slug": "south-korea-exports-surge-november",
+      "canonicalPath": "/news/kr/south-korea-exports-surge-november/",
+      "headline": "South Korea Exports Double In November On Record Chip Shipments",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "South Korea's total export value reached 77.4 billion dollars between November 1 and 20.",
+        "The data from the Korea Customs Service shows a substantial increase from the 38.4 billion dollars recorded during the same period last year."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002500320"
+      }
+    },
+    {
+      "slug": "samsung-sk-hynix-shares-fall",
+      "canonicalPath": "/news/kr/samsung-sk-hynix-shares-fall/",
+      "headline": "Samsung And SK Hynix Shares Plummet Amid Global Tech Market Slump",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Samsung Electronics and SK Hynix shares recorded significant losses during Friday trading on the Korea Exchange.",
+        "The decline follows a broader Wall Street technology sell-off and investor apprehension regarding the sustainability of the AI market."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261120005000320"
+      }
+    },
+    {
+      "slug": "kim-a-lim-lpga-tour-championship-finish",
+      "canonicalPath": "/news/kr/kim-a-lim-lpga-tour-championship-finish/",
+      "headline": "Kim A-Lim Ties For Seventh At LPGA CME Group Tour Championship",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Kim A-Lim finished in a tie for seventh place at the CME Group Tour Championship in Naples, Florida.",
+        "The golfer concluded the 2026 LPGA Tour season with an 18-under 270 score over the four-day event."
+      ],
+      "primarySource": {
+        "publisherName": "The Korea Herald",
+        "articleUrl": "https://www.koreaherald.com/article/10945025"
+      }
+    },
+    {
+      "slug": "kim-jong-chul-npa-commissioner-general",
+      "canonicalPath": "/news/kr/kim-jong-chul-npa-commissioner-general/",
+      "headline": "NPA Commissioner General Kim Jong-Chul Vows To Earn Public Trust",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Kim Jong-chul assumed the role of Commissioner General for the National Police Agency.",
+        "The appointment follows recent legal reforms that removed investigative powers from prosecutors."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123003500315"
+      }
+    },
+    {
+      "slug": "south-korea-qatar-lng-supply-negotiations",
+      "canonicalPath": "/news/kr/south-korea-qatar-lng-supply-negotiations/",
+      "headline": "South Korea Requests Qatar Prioritize LNG Supplies After Disruption",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "South Korean Industry Minister Kim Jung-kwan met with Qatari Minister of State for Energy Affairs Saad Sherida al-Kaabi in Seoul.",
+        "The South Korean government requested prioritized delivery of liquefied natural gas from Qatar after current disruptions conclude."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002700320"
       }
     }
   ]
