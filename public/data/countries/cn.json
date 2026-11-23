@@ -3,17 +3,34 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 67,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-23T02:17:00Z",
+  "viralScore": 85,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-23T05:17:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-investigates-ceo-espionage-allegations",
+      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+      "headline": "Alice Huang Linked To Chinese Spy Agency During Jensen Huang Affair",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 82,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Intelligence reports indicate Alice Huang maintained contact with a Chinese spy agency during her relationship with Jensen Huang.",
+        "Evidence suggests Alice Huang's associate Kang Wei also holds links to the same Chinese intelligence apparatus."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates"
+      }
+    },
     {
       "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
       "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
       "headline": "US Government Investigates Nvidia Chip Sales To Chinese Companies",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "US officials are investigating the approval of nearly 900,000 Nvidia and AMD AI chips for sale to companies in China.",
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/dw/d-8747097/selingkuh-dengan-mata-mata-china-jensen-huang-digugat-pemegang-saham-nvidia"
-      }
-    },
-    {
-      "slug": "nvidia-investigates-ceo-espionage-allegations",
-      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-      "headline": "Nvidia Posts Strong Q3 Results Following Jensen Huang Resignation",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Nvidia reported a doubling of its third-quarter revenue in its first financial statement since the resignation of Jensen Huang.",
-        "The company's board of directors explicitly stated there are no plans to reinstate the former CEO following the espionage investigation."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-nvidia-ceo-replacement"
       }
     },
     {
@@ -64,7 +64,7 @@
       "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
@@ -98,7 +98,7 @@
       "headline": "Leo Rolly Carnando And Daniel Marthin Finish As Hong Kong Open Runner-up",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 42,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Leo Rolly Carnando and Daniel Marthin secured the runner-up position at the Hong Kong Open 2026.",
@@ -115,7 +115,7 @@
       "headline": "Treasury Secretary Scott Bessent Queries Nvidia On China Chip Sales",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "viralScore": 36,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Treasury Secretary Scott Bessent has called for an investigation into Nvidia's role in the supply of artificial intelligence chips to China.",

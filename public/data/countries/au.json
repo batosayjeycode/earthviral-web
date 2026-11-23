@@ -3,9 +3,9 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 83,
+  "viralScore": 80,
   "intensityTier": "high",
-  "generatedAt": "2026-11-23T02:17:00Z",
+  "generatedAt": "2026-11-23T05:17:00Z",
   "clusters": [
     {
       "slug": "australian-music-broadcaster-molly-meldrum-dies",
@@ -13,7 +13,7 @@
       "headline": "Tributes Pour In For Australian Music Legend Ian Molly Meldrum",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 80,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Public figures including Anthony Albanese and Jason Donovan have paid tribute to the late television host and music promoter.",
@@ -30,7 +30,7 @@
       "headline": "Joeys Keep World Cup Knockout Hopes Alive After Draw With Denmark",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 73,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Australian Joeys drew 0-0 against Denmark in a recent FIFA Under-17 World Cup match.",
@@ -42,13 +42,81 @@
       }
     },
     {
+      "slug": "australia-faces-scrutiny-climate-summit",
+      "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
+      "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
+        "Australia faces scrutiny over its export-related emissions as delegates gather to participate in the global climate summit."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
+      }
+    },
+    {
+      "slug": "australia-ends-indonesia-wildfire-mission",
+      "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
+      "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The aerial firefighting mission involving an Australian Hercules C-130 air tanker has concluded.",
+        "The Indonesian National Board for Disaster Management (BNPB) announced the formal end of the assistance period."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8751919/masa-kerja-sama-tuntas-australia-akhiri-misi-pemadaman-karhutla-di-kaltim"
+      }
+    },
+    {
+      "slug": "body-recovered-yarra-river-melbourne",
+      "canonicalPath": "/news/au/body-recovered-yarra-river-melbourne/",
+      "headline": "Body Recovered From Yarra River After Leap From Princes Bridge",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A body was recovered from the Yarra River following a search operation.",
+        "The recovery occurred after a man jumped from the Princes Bridge in Melbourne."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/body-found-in-yarra-river-after-man-jumps-from-bridge/107416916"
+      }
+    },
+    {
+      "slug": "afl-draft-prospects-knee-recovery",
+      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
+      "headline": "AFL Draft 2026: Collingwood Recruits Koby LeCras As Clubs Trade",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Collingwood selected Koby LeCras with pick number 62 following the prospect's resilience through a challenging season.",
+        "The West Coast Eagles focused on bolstering their trade capital, including strategic moves to secure future draft assets."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+      }
+    },
+    {
       "slug": "man-charged-murder-fatal-home-invasion",
       "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
       "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
         "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
@@ -64,8 +132,8 @@
       "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "A 17-year-old boy was located alive by search crews after being missing for six days.",
         "The teenager was discovered during an aerial operation following a fall near a riverbed."
@@ -93,20 +161,37 @@
       }
     },
     {
-      "slug": "australia-ends-indonesia-wildfire-mission",
-      "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
-      "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
+      "slug": "alex-greenwich-retracts-fred-nile-funeral",
+      "canonicalPath": "/news/au/alex-greenwich-retracts-fred-nile-funeral/",
+      "headline": "Alex Greenwich Retracts Call For Fred Nile State Funeral Request",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The aerial firefighting mission involving an Australian Hercules C-130 air tanker has concluded.",
-        "The Indonesian National Board for Disaster Management (BNPB) announced the formal end of the assistance period."
+        "Sydney MP Alex Greenwich has apologized and withdrawn his suggestion for a state funeral honoring Fred Nile.",
+        "The retraction followed significant community backlash regarding the proposal."
       ],
       "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/berita/d-8751919/masa-kerja-sama-tuntas-australia-akhiri-misi-pemadaman-karhutla-di-kaltim"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/nsw-fred-nile-state-funeral-ruled-out-alex-greenwich-apologises/107416658"
+      }
+    },
+    {
+      "slug": "wall-street-stocks-drop-ai-selloff",
+      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
+      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
+        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
       }
     },
     {
@@ -127,71 +212,20 @@
       }
     },
     {
-      "slug": "australia-faces-scrutiny-climate-summit",
-      "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
-      "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "slug": "australian-gamers-await-gta-vi-launch",
+      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
+      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
-        "Australia faces scrutiny over its export-related emissions as delegates gather to participate in the global climate summit."
+        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
+        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
-      }
-    },
-    {
-      "slug": "australian-digital-duty-of-care-negotiations",
-      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
-      "headline": "Labor Government Negotiates Digital Duty Of Care Legislation Terms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Australian government is aiming to pass digital duty of care legislation before the parliamentary session concludes.",
-        "The Australian Chamber of Commerce and Industry has called on the government to adopt recent Senate recommendations regarding the bill."
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
-      }
-    },
-    {
-      "slug": "wall-street-stocks-drop-ai-selloff",
-      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
-      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
-        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
-      }
-    },
-    {
-      "slug": "second-invasive-fire-ant-nest-sydney",
-      "canonicalPath": "/news/au/second-invasive-fire-ant-nest-sydney/",
-      "headline": "Second Invasive Fire Ant Nest Discovered In Western Sydney Suburb",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A second nest of red imported fire ants was located in the Sydney suburb of Auburn.",
-        "The discovery follows a report provided to authorities by a member of the public."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
       }
     },
     {
@@ -212,37 +246,20 @@
       }
     },
     {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft 2026: Collingwood Recruits Koby LeCras As Clubs Trade",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 45,
+      "slug": "australian-digital-duty-of-care-negotiations",
+      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
+      "headline": "Labor Government Negotiates Digital Duty Of Care Legislation Terms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Collingwood selected Koby LeCras with pick number 62 following the prospect's resilience through a challenging season.",
-        "The West Coast Eagles focused on bolstering their trade capital, including strategic moves to secure future draft assets."
+        "The Australian government is aiming to pass digital duty of care legislation before the parliamentary session concludes.",
+        "The Australian Chamber of Commerce and Industry has called on the government to adopt recent Senate recommendations regarding the bill."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
-      }
-    },
-    {
-      "slug": "fatal-water-incident-fishermans-reach",
-      "canonicalPath": "/news/au/fatal-water-incident-fishermans-reach/",
-      "headline": "Fatal Water Incident Reported At Fishermans Reach On NSW Coast",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A man has died following a rescue operation in the water at Fishermans Reach.",
-        "A toddler was transported to a medical facility in critical condition after the incident."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-12/man-dies-boy-critical-after-fishing-accident-mid-north-coast/107377842"
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
       }
     },
     {
@@ -251,7 +268,7 @@
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -263,88 +280,71 @@
       }
     },
     {
-      "slug": "former-officer-testifies-double-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
-      "headline": "Former Officer Testifies In Trial For Sydney Double Murder Case",
+      "slug": "neurological-conditions-in-perth-double-murder",
+      "canonicalPath": "/news/au/neurological-conditions-in-perth-double-murder/",
+      "headline": "Neurological Factors Dismissed In Perth Double Murder Inquest",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
       "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Beau Lamarre-Condon denied executing Jesse Baird while providing evidence during his trial for the murders of Baird and Luke Davies.",
-        "The defendant is currently facing cross-examination in a Sydney court after pleading not guilty to the 2024 killings in Paddington."
+        "An inquest is reviewing the double homicide of a mother and daughter in Perth.",
+        "Evidence suggests the perpetrator engaged in high-level planning for the event."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-10/floreat-murderer-showed-high-level-planning-skills-inquest-hears/107370088"
       }
     },
     {
-      "slug": "australian-gamers-await-gta-vi-launch",
-      "canonicalPath": "/news/au/australian-gamers-await-gta-vi-launch/",
-      "headline": "Australian Gamers Prepare For Highly Anticipated Grand Theft Auto VI",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
+      "slug": "second-invasive-fire-ant-nest-sydney",
+      "canonicalPath": "/news/au/second-invasive-fire-ant-nest-sydney/",
+      "headline": "Second Invasive Fire Ant Nest Discovered In Western Sydney Suburb",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
       "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Australian players are preparing for the release of Grand Theft Auto VI following a 13-year wait since the franchise's last entry.",
-        "The upcoming launch is described by fans as a significant event, with some comparing the scale to major global sporting competitions."
+        "A second nest of red imported fire ants was located in the Sydney suburb of Auburn.",
+        "The discovery follows a report provided to authorities by a member of the public."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/gta-6-biggest-gaming-event-australians-prepare-for-global-release"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
       }
     },
     {
-      "slug": "sydney-swans-north-melbourne-aflw-preliminary-final",
-      "canonicalPath": "/news/au/sydney-swans-north-melbourne-aflw-preliminary-final/",
-      "headline": "North Melbourne Defeats Sydney To Reach 2026 AFLW Grand Final",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "fitness-personality-sam-wood-legal-proceedings",
+      "canonicalPath": "/news/au/fitness-personality-sam-wood-legal-proceedings/",
+      "headline": "Fitness Personality Sam Wood Faces Additional Legal Proceedings",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "North Melbourne defeated Sydney to advance to the AFLW grand final.",
-        "This victory marks the fourth consecutive grand final appearance for North Melbourne."
+        "Fitness influencer Sam Wood is facing charges of assault and strangulation.",
+        "The alleged incidents occurred on the Sunshine Coast during October."
       ],
       "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/sport/afl/roos-back-fit-again-star-for-swans-duel-in-aflw-finals-c-23193456"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/sam-wood-court-of-appeal-bail/107390248"
       }
     },
     {
-      "slug": "four-nations-urge-israel-gaza-aid",
-      "canonicalPath": "/news/au/four-nations-urge-israel-gaza-aid/",
-      "headline": "Four Nations Urge Israel To Permit Humanitarian Aid Into Gaza Zone",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
+      "slug": "fatal-water-incident-fishermans-reach",
+      "canonicalPath": "/news/au/fatal-water-incident-fishermans-reach/",
+      "headline": "Fatal Water Incident Reported At Fishermans Reach On NSW Coast",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Australia, Canada, the United Kingdom, and Italy released a joint statement regarding the humanitarian situation in Gaza.",
-        "The coalition requested that Israel permit the delivery of 150,000 tents and other essential supplies into the region."
+        "A man has died following a rescue operation in the water at Fishermans Reach.",
+        "A toddler was transported to a medical facility in critical condition after the incident."
       ],
       "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
-        "The party received its largest political donations in Tasmania from a salmon farm owner and a lobbyist."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-12/man-dies-boy-critical-after-fishing-accident-mid-north-coast/107377842"
       }
     }
   ]
