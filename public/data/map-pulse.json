@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611222318",
-  "generatedAt": "2026-11-22T23:18:00Z",
-  "nextUpdateAt": "2026-11-23T02:17:00Z",
+  "batchId": "batch-202611230217",
+  "generatedAt": "2026-11-23T02:17:00Z",
+  "nextUpdateAt": "2026-11-23T05:17:00Z",
   "countries": [
+    {
+      "code": "ID",
+      "isoNumeric": "360",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "centroid": [
+        117,
+        -2.5
+      ],
+      "viralScore": 98,
+      "intensityTier": "surge",
+      "topicCount": 109,
+      "topTopic": {
+        "slug": "massive-fire-hits-pt-fonusa-agung-mulia",
+        "canonicalPath": "/news/id/massive-fire-hits-pt-fonusa-agung-mulia/",
+        "headline": "Search Continues After Fatal Fire At PT Fonusa Agung Mulia Plant",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 95,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "GB",
       "isoNumeric": "826",
@@ -12,16 +34,16 @@
         -2,
         53.5
       ],
-      "viralScore": 99,
+      "viralScore": 97,
       "intensityTier": "surge",
-      "topicCount": 37,
+      "topicCount": 29,
       "topTopic": {
         "slug": "pochettino-linked-to-manchester-united-manager",
         "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
-        "headline": "Mauricio Pochettino Suffers 4-0 Defeat In Manchester United Debut",
+        "headline": "Mauricio Pochettino Suffers 4-0 Manchester United Loss To Liverpool",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 96,
+        "viralScore": 94,
         "intensityTier": "surge"
       }
     },
@@ -34,7 +56,7 @@
         60,
         58
       ],
-      "viralScore": 96,
+      "viralScore": 92,
       "intensityTier": "surge",
       "topicCount": 9,
       "topTopic": {
@@ -43,74 +65,8 @@
         "headline": "Russian Naval Vessel And Cargo Ship Hit In Separate Drone Attacks",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 93,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "ID",
-      "isoNumeric": "360",
-      "name": "Indonesia",
-      "slug": "indonesia",
-      "centroid": [
-        117,
-        -2.5
-      ],
-      "viralScore": 92,
-      "intensityTier": "surge",
-      "topicCount": 111,
-      "topTopic": {
-        "slug": "massive-fire-hits-pt-fonusa-agung-mulia",
-        "canonicalPath": "/news/id/massive-fire-hits-pt-fonusa-agung-mulia/",
-        "headline": "Serang Regent Confirms BPJS Aid For PT Fonusa Agung Mulia Victims",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
         "viralScore": 89,
         "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 86,
-      "intensityTier": "surge",
-      "topicCount": 34,
-      "topTopic": {
-        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-        "headline": "Democrats Secure Historic US House Majority Not Seen Since 1992",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 71,
-      "topTopic": {
-        "slug": "jair-bolsonaro-hospitalized-in-brasilia",
-        "canonicalPath": "/news/br/jair-bolsonaro-hospitalized-in-brasilia/",
-        "headline": "Jair Bolsonaro Remains In ICU With No Scheduled Discharge Date",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 80,
-        "intensityTier": "high"
       }
     },
     {
@@ -122,16 +78,16 @@
         134,
         -25.5
       ],
-      "viralScore": 80,
+      "viralScore": 83,
       "intensityTier": "high",
       "topicCount": 42,
       "topTopic": {
         "slug": "australian-music-broadcaster-molly-meldrum-dies",
         "canonicalPath": "/news/au/australian-music-broadcaster-molly-meldrum-dies/",
-        "headline": "Australian Music Broadcaster Ian Molly Meldrum Dies At Age 83",
+        "headline": "Tributes Pour In For Australian Music Legend Ian Molly Meldrum",
         "categorySlug": "entertainment-celebrity",
         "categoryName": "Entertainment & Celebrity",
-        "viralScore": 77,
+        "viralScore": 80,
         "intensityTier": "high"
       }
     },
@@ -144,16 +100,38 @@
         79,
         22
       ],
-      "viralScore": 79,
+      "viralScore": 83,
       "intensityTier": "high",
-      "topicCount": 67,
+      "topicCount": 63,
       "topTopic": {
-        "slug": "political-dispute-over-viral-video-debate",
-        "canonicalPath": "/news/in/political-dispute-over-viral-video-debate/",
-        "headline": "Nepal PM Balendra Shah Begins Official State Visit To New Delhi",
+        "slug": "congress-seeks-up-assembly-election-seats",
+        "canonicalPath": "/news/in/congress-seeks-up-assembly-election-seats/",
+        "headline": "Congress And Samajwadi Party Start Seat-Sharing Talks In Uttar Pradesh",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 76,
+        "viralScore": 80,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 78,
+      "intensityTier": "high",
+      "topicCount": 32,
+      "topTopic": {
+        "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+        "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+        "headline": "Democrats Secure Historic US House Majority Not Seen Since 1992",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 75,
         "intensityTier": "high"
       }
     },
@@ -166,7 +144,7 @@
         35.2,
         39
       ],
-      "viralScore": 74,
+      "viralScore": 77,
       "intensityTier": "high",
       "topicCount": 3,
       "topTopic": {
@@ -175,51 +153,7 @@
         "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 73,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 72,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
-        "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
-        "headline": "US Government Investigates Nvidia Chip Sales To Chinese Companies",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 69,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
-      "centroid": [
-        -102.5,
-        23.6
-      ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "mexico-arrests-jalisco-cartel-leader",
-        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 67,
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
@@ -232,7 +166,7 @@
         34.9,
         31.3
       ],
-      "viralScore": 69,
+      "viralScore": 75,
       "intensityTier": "high",
       "topicCount": 5,
       "topTopic": {
@@ -241,95 +175,29 @@
         "headline": "Gadi Eisenkot and Benjamin Netanyahu Resume Israel Coalition Talks",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 67,
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
       "centroid": [
-        127.8,
-        36.3
+        -51.9,
+        -10.5
       ],
-      "viralScore": 67,
+      "viralScore": 75,
       "intensityTier": "high",
-      "topicCount": 21,
+      "topicCount": 67,
       "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "Education Minister Choi Kyo-jin Resigns Over AI Exam Cheating Chaos",
+        "slug": "jair-bolsonaro-hospitalized-in-brasilia",
+        "canonicalPath": "/news/br/jair-bolsonaro-hospitalized-in-brasilia/",
+        "headline": "Jair Bolsonaro Remains In ICU With No Scheduled Discharge Date",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 64,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 66,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "real-madrid-la-liga-mbappe-controversy",
-        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-        "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 63,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 66,
-      "intensityTier": "high",
-      "topicCount": 58,
-      "topTopic": {
-        "slug": "four-mourners-die-bayelsa-boat-accident",
-        "canonicalPath": "/news/ng/four-mourners-die-bayelsa-boat-accident/",
-        "headline": "Twenty-Four Mourners Die In Southern Ijaw Boat Accident In Bayelsa",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 63,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 11,
-      "topTopic": {
-        "slug": "ruto-brands-gachagua-chief-extortionist",
-        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
-        "headline": "Rigathi Gachagua Issues Ultimatum To Mt Kenya Leaders Over Ruto",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 72,
         "intensityTier": "high"
       }
     },
@@ -342,16 +210,170 @@
         53.7,
         32.4
       ],
-      "viralScore": 62,
+      "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 7,
       "topTopic": {
         "slug": "explosions-reported-strait-hormuz-iran",
         "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
         "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 59,
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SD",
+      "isoNumeric": "729",
+      "name": "Sudan",
+      "slug": "sudan",
+      "centroid": [
+        30.2,
+        15.6
+      ],
+      "viralScore": 70,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "drone-strikes-hit-khartoum-un-building",
+        "canonicalPath": "/news/sd/drone-strikes-hit-khartoum-un-building/",
+        "headline": "Drone strikes hit homes and UN building in Sudan's Khartoum",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 7,
+      "topTopic": {
+        "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
+        "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
+        "headline": "US Government Investigates Nvidia Chip Sales To Chinese Companies",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 58,
+      "topTopic": {
+        "slug": "four-mourners-die-bayelsa-boat-accident",
+        "canonicalPath": "/news/ng/four-mourners-die-bayelsa-boat-accident/",
+        "headline": "Twenty-Four Mourners Die In Southern Ijaw Boat Accident In Bayelsa",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 64,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 65,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "mexico-arrests-jalisco-cartel-leader",
+        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
+        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 22,
+      "topTopic": {
+        "slug": "seoul-shares-plunge-anthropic-debut",
+        "canonicalPath": "/news/kr/seoul-shares-plunge-anthropic-debut/",
+        "headline": "KOSPI Falls Further As Technology Sector Concerns Persist",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 61,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 62,
+      "intensityTier": "high",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "real-madrid-la-liga-mbappe-controversy",
+        "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+        "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 11,
+      "topTopic": {
+        "slug": "ruto-brands-gachagua-chief-extortionist",
+        "canonicalPath": "/news/ke/ruto-brands-gachagua-chief-extortionist/",
+        "headline": "Rigathi Gachagua Issues Ultimatum To Mt Kenya Leaders Over Ruto",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -364,60 +386,16 @@
         2.4,
         46.6
       ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 14,
+      "viralScore": 58,
+      "intensityTier": "active",
+      "topicCount": 12,
       "topTopic": {
         "slug": "photos-thousands-rally-in-france-over-rising-costs-and",
         "canonicalPath": "/news/fr/photos-thousands-rally-in-france-over-rising-costs-and/",
         "headline": "French Protesters Rally For Sixth Weekend Over Rising Living Costs",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
-      "centroid": [
-        90.3,
-        23.7
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "sheikh-hasina-seeks-passport-for-return",
-        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
-        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "gadi-eisenkot-condemns-west-bank-attacks",
-        "canonicalPath": "/news/ps/gadi-eisenkot-condemns-west-bank-attacks/",
-        "headline": "Gadi Eisenkot Condemns Settler Arson Attacks In The West Bank",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 56,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -444,24 +422,68 @@
       }
     },
     {
-      "code": "SD",
-      "isoNumeric": "729",
-      "name": "Sudan",
-      "slug": "sudan",
+      "code": "IT",
+      "isoNumeric": "380",
+      "name": "Italy",
+      "slug": "italy",
       "centroid": [
-        30.2,
-        15.6
+        12.6,
+        42.8
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa",
+        "canonicalPath": "/news/it/ac-milan-naik-ke-peringkat-empat-usai-tekuk-genoa/",
+        "headline": "AC Milan Advances To Fourth Place Following Victory Over Genoa",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
       ],
       "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 1,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "drone-strikes-hit-khartoum-un-building",
-        "canonicalPath": "/news/sd/drone-strikes-hit-khartoum-un-building/",
-        "headline": "Drone Attacks Strike United Nations Facility And Khartoum Airport",
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Former Prime Minister Sheikh Hasina Seeks Passport For Return To BD",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "gaza-displacement-camps-flooded-by-rain",
+        "canonicalPath": "/news/ps/gaza-displacement-camps-flooded-by-rain/",
+        "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 55,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -488,28 +510,6 @@
       }
     },
     {
-      "code": "IT",
-      "isoNumeric": "380",
-      "name": "Italy",
-      "slug": "italy",
-      "centroid": [
-        12.6,
-        42.8
-      ],
-      "viralScore": 52,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "former-italian-police-chief-dies",
-        "canonicalPath": "/news/it/former-italian-police-chief-dies/",
-        "headline": "Former Italian Police Chief Dies Following Mafia Investigation",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "MY",
       "isoNumeric": "458",
       "name": "Malaysia",
@@ -518,7 +518,7 @@
         102.3,
         3.8
       ],
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "topicCount": 16,
       "topTopic": {
@@ -527,29 +527,7 @@
         "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "anc-faces-anger-over-poor-services-as-south-africans",
-        "canonicalPath": "/news/za/anc-faces-anger-over-poor-services-as-south-africans/",
-        "headline": "African National Congress Faces Losses In South African Local Polls",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
+        "viralScore": 45,
         "intensityTier": "active"
       }
     },
@@ -562,9 +540,9 @@
         138.5,
         36.5
       ],
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 4,
+      "topicCount": 2,
       "topTopic": {
         "slug": "japan-pm-takaichi-diplomatic-summits",
         "canonicalPath": "/news/jp/japan-pm-takaichi-diplomatic-summits/",
@@ -572,28 +550,6 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 44,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 45,
-      "intensityTier": "active",
-      "topicCount": 29,
-      "topTopic": {
-        "slug": "atalanta-vs-inter-serie-a-draw",
-        "canonicalPath": "/news/sg/atalanta-vs-inter-serie-a-draw/",
-        "headline": "Atalanta And Inter Milan Draw In Eight Goal Thriller In Serie A",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 42,
         "intensityTier": "active"
       }
     },
@@ -616,6 +572,50 @@
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 36,
+      "intensityTier": "active",
+      "topicCount": 28,
+      "topTopic": {
+        "slug": "climate-talks-will-be-tougher-at-cop31-amid-heightened",
+        "canonicalPath": "/news/sg/climate-talks-will-be-tougher-at-cop31-amid-heightened/",
+        "headline": "Grace Fu Highlights Growing Challenges For COP31 Climate Negotiations",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 33,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 31,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "south-africa-records-high-female-homicide-rates",
+        "canonicalPath": "/news/za/south-africa-records-high-female-homicide-rates/",
+        "headline": "South Africa Police Report Nearly 600 Women Killed In Three Months",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 30,
         "intensityTier": "active"
       }
     },
