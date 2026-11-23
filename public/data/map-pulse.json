@@ -1,7 +1,7 @@
 {
-  "batchId": "batch-202611231051",
-  "generatedAt": "2026-11-23T10:51:00Z",
-  "nextUpdateAt": "2026-11-23T11:17:00Z",
+  "batchId": "batch-202611231118",
+  "generatedAt": "2026-11-23T11:18:00Z",
+  "nextUpdateAt": "2026-11-23T14:17:00Z",
   "countries": [
     {
       "code": "ID",
@@ -14,7 +14,7 @@
       ],
       "viralScore": 100,
       "intensityTier": "surge",
-      "topicCount": 119,
+      "topicCount": 122,
       "topTopic": {
         "slug": "vice-president-gibran-meets-president-prabowo",
         "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
@@ -48,28 +48,6 @@
       }
     },
     {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "nvidia-investigates-ceo-espionage-allegations",
-        "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-        "headline": "Alice Huang Linked To Chinese Spy Agency During Jensen Huang Affair",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 80,
-        "intensityTier": "high"
-      }
-    },
-    {
       "code": "GB",
       "isoNumeric": "826",
       "name": "United Kingdom",
@@ -78,82 +56,16 @@
         -2,
         53.5
       ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 31,
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 33,
       "topTopic": {
         "slug": "don-toliver-manchester-concert-evacuation",
         "canonicalPath": "/news/gb/don-toliver-manchester-concert-evacuation/",
         "headline": "One Hospitalized After Don Toliver Concert Evacuated At Co-op Live",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 80,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
-      "centroid": [
-        134,
-        -25.5
-      ],
-      "viralScore": 82,
-      "intensityTier": "high",
-      "topicCount": 49,
-      "topTopic": {
-        "slug": "australian-music-broadcaster-molly-meldrum-dies",
-        "canonicalPath": "/news/au/australian-music-broadcaster-molly-meldrum-dies/",
-        "headline": "Australian Music Industry Legend Ian Molly Meldrum Dies At Aged 83",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 79,
-      "intensityTier": "high",
-      "topicCount": 6,
-      "topTopic": {
-        "slug": "ukraine-claims-sinking-of-russian-warship",
-        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-        "headline": "Volodymyr Zelenskyy Claims Responsibility For Sinking Russian Ship",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 76,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 78,
-      "intensityTier": "high",
-      "topicCount": 8,
-      "topTopic": {
-        "slug": "russian-cargo-ship-drone-strike",
-        "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
-        "headline": "United Nations Seeks Inquiry Into Drone Attacks On Russian Ships",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 75,
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
@@ -166,8 +78,8 @@
         -98.5,
         39.5
       ],
-      "viralScore": 78,
-      "intensityTier": "high",
+      "viralScore": 85,
+      "intensityTier": "surge",
       "topicCount": 30,
       "topTopic": {
         "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
@@ -175,7 +87,73 @@
         "headline": "Democrats Secure Historic US House Majority Not Seen Since 1992",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 75,
+        "viralScore": 82,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 84,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "ukraine-claims-sinking-of-russian-warship",
+        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
+        "headline": "Volodymyr Zelenskyy Claims Responsibility For Sinking Russian Ship",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 81,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 81,
+      "intensityTier": "high",
+      "topicCount": 50,
+      "topTopic": {
+        "slug": "australian-music-broadcaster-molly-meldrum-dies",
+        "canonicalPath": "/news/au/australian-music-broadcaster-molly-meldrum-dies/",
+        "headline": "Australian Music Industry Legend Ian Molly Meldrum Dies At Aged 83",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 78,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 81,
+      "intensityTier": "high",
+      "topicCount": 8,
+      "topTopic": {
+        "slug": "nvidia-investigates-ceo-espionage-allegations",
+        "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+        "headline": "Alice Huang Linked To Chinese Spy Agency During Jensen Huang Affair",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
@@ -190,33 +168,11 @@
       ],
       "viralScore": 77,
       "intensityTier": "high",
-      "topicCount": 5,
+      "topicCount": 6,
       "topTopic": {
         "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
         "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
         "headline": "Benjamin Netanyahu And Gadi Eisenkot End Talks Without Deal",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 75,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 77,
-      "intensityTier": "high",
-      "topicCount": 30,
-      "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "Education Minister Choi Kyo-jin Resigns Over AI Exam Cheating Chaos",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 74,
@@ -224,46 +180,24 @@
       }
     },
     {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        35.2,
-        39
+        60,
+        58
       ],
-      "viralScore": 74,
+      "viralScore": 77,
       "intensityTier": "high",
-      "topicCount": 3,
+      "topicCount": 8,
       "topTopic": {
-        "slug": "cop31-climate-summit-antalya-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
-        "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
+        "slug": "russian-cargo-ship-drone-strike",
+        "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
+        "headline": "United Nations Seeks Inquiry Into Drone Attacks On Russian Ships",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 73,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
-      "centroid": [
-        103.82,
-        1.35
-      ],
-      "viralScore": 74,
-      "intensityTier": "high",
-      "topicCount": 34,
-      "topTopic": {
-        "slug": "singapore-man-jailed-meth-lawyer-case",
-        "canonicalPath": "/news/sg/singapore-man-jailed-meth-lawyer-case/",
-        "headline": "Derek Khor Boon Chun Jailed Over Etomidate Kpod Trafficking Case",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 71,
+        "viralScore": 74,
         "intensityTier": "high"
       }
     },
@@ -276,38 +210,38 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 71,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 73,
       "topTopic": {
-        "slug": "jair-bolsonaro-hospitalized-in-brasilia",
-        "canonicalPath": "/news/br/jair-bolsonaro-hospitalized-in-brasilia/",
-        "headline": "Jair Bolsonaro Remains In ICU With No Scheduled Discharge Date",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 68,
+        "slug": "city-of-god-series-update",
+        "canonicalPath": "/news/br/city-of-god-series-update/",
+        "headline": "City Of God Second Season Focuses On Militia Power And Corruption",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "SD",
-      "isoNumeric": "729",
-      "name": "Sudan",
-      "slug": "sudan",
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
       "centroid": [
-        30.2,
-        15.6
+        127.8,
+        36.3
       ],
-      "viralScore": 70,
+      "viralScore": 76,
       "intensityTier": "high",
-      "topicCount": 1,
+      "topicCount": 31,
       "topTopic": {
-        "slug": "drone-strikes-hit-khartoum-un-building",
-        "canonicalPath": "/news/sd/drone-strikes-hit-khartoum-un-building/",
-        "headline": "Drone Strikes Hit Khartoum Residential Areas And UN Building",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 70,
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "Education Minister Choi Kyo-jin Resigns Over AI Exam Cheating Chaos",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
@@ -320,7 +254,7 @@
         102.3,
         3.8
       ],
-      "viralScore": 65,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 16,
       "topTopic": {
@@ -329,7 +263,95 @@
         "headline": "Malaysia Probes SpeedMatrix Over Potential AI Chip Diversion Claims",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 62,
+        "viralScore": 73,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "cop31-climate-summit-antalya-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
+        "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 72,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
+      "centroid": [
+        103.82,
+        1.35
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 35,
+      "topTopic": {
+        "slug": "singapore-man-jailed-meth-lawyer-case",
+        "canonicalPath": "/news/sg/singapore-man-jailed-meth-lawyer-case/",
+        "headline": "Derek Khor Boon Chun Jailed Over Etomidate Kpod Trafficking Case",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SD",
+      "isoNumeric": "729",
+      "name": "Sudan",
+      "slug": "sudan",
+      "centroid": [
+        30.2,
+        15.6
+      ],
+      "viralScore": 69,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "drone-strikes-hit-khartoum-un-building",
+        "canonicalPath": "/news/sd/drone-strikes-hit-khartoum-un-building/",
+        "headline": "Drone Strikes Hit Khartoum Residential Areas And UN Building",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 69,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "centroid": [
+        8.1,
+        9.6
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 61,
+      "topTopic": {
+        "slug": "nigeria-democratic-congress-town-hall-disruption",
+        "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
+        "headline": "Political Tensions Mount In Nigeria Following Kano Party Clashes",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 63,
         "intensityTier": "high"
       }
     },
@@ -342,7 +364,7 @@
         -102.5,
         23.6
       ],
-      "viralScore": 64,
+      "viralScore": 63,
       "intensityTier": "high",
       "topicCount": 8,
       "topTopic": {
@@ -351,7 +373,7 @@
         "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 61,
+        "viralScore": 60,
         "intensityTier": "high"
       }
     },
@@ -364,7 +386,7 @@
         12.6,
         42.8
       ],
-      "viralScore": 63,
+      "viralScore": 62,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
@@ -373,7 +395,7 @@
         "headline": "AC Milan Advances To Fourth Place Following Victory Over Genoa",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 61,
+        "viralScore": 60,
         "intensityTier": "high"
       }
     },
@@ -415,28 +437,6 @@
         "slug": "explosions-reported-strait-hormuz-iran",
         "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
         "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 58,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
-      "centroid": [
-        8.1,
-        9.6
-      ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 61,
-      "topTopic": {
-        "slug": "four-mourners-die-bayelsa-boat-accident",
-        "canonicalPath": "/news/ng/four-mourners-die-bayelsa-boat-accident/",
-        "headline": "Twenty-Four Mourners Die In Southern Ijaw Boat Accident In Bayelsa",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 58,
@@ -562,7 +562,7 @@
         101,
         15.5
       ],
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -571,7 +571,7 @@
         "headline": "Thai Court Reduces Prison Sentence For MP Rukchanok Srinork",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 49,
+        "viralScore": 48,
         "intensityTier": "active"
       }
     },

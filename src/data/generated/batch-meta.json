@@ -1,57 +1,52 @@
 {
-  "batchId": "batch-202611231051",
-  "generatedAt": "2026-11-23T10:51:00Z",
-  "nextUpdateAt": "2026-11-23T11:17:00Z",
+  "batchId": "batch-202611231118",
+  "generatedAt": "2026-11-23T11:18:00Z",
+  "nextUpdateAt": "2026-11-23T14:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 28,
-    "viralTopics": 596,
-    "globalIndex": 83
+    "viralTopics": 605,
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 40,
+    "feedsOk": 41,
     "feedsFailed": [
-      "detik: fetch failed",
       "standard-ke: The operation was aborted due to timeout",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1554,
+    "articlesFetched": 1657,
     "newClusters": 7,
-    "updatedClusters": 99,
+    "updatedClusters": 49,
     "retiredClusters": 0,
-    "aiCalls": 37,
-    "fallbackSummaries": 2,
+    "aiCalls": 28,
+    "fallbackSummaries": 1,
     "trendTitles": {
-      "targeted": 2,
-      "inTitle": 2
+      "targeted": 3,
+      "inTitle": 3
     },
     "titleNames": {
-      "kept": 7,
-      "headline": 1,
-      "previous": 4,
+      "kept": 4,
+      "headline": 0,
+      "previous": 2,
       "missing": 1,
-      "no-anchor": 11
+      "no-anchor": 9
     },
     "digestSummaries": {
       "written": 4,
-      "kept": 11,
-      "pending": 4,
+      "kept": 13,
+      "pending": 2,
       "failed": 0
     },
     "aiFailures": {
-      "rate-limit": 2
+      "rate-limit": 1
     },
     "aiFailureSamples": [
       {
         "category": "rate-limit",
         "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
       }
     ],
-    "durationMs": 183811
+    "durationMs": 127069
   }
 }
