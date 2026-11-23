@@ -8,26 +8,26 @@
   "region": "Europe",
   "categorySlug": "disasters-world-events",
   "categoryName": "Disasters & World Events",
-  "headline": "Russia Launches Large-Scale Airstrikes Against Ukrainian Energy Grid",
-  "seoTitle": "Russia Targets Ukraine Energy Infrastructure",
-  "metaDescription": "Russian forces conducted a major aerial assault on Ukraine, targeting energy substations and a bridge near Kyiv ahead of scheduled international talks.",
+  "headline": "Russia Intensifies Strikes Against Ukraine Energy Infrastructure",
+  "seoTitle": "Russia Intensifies Strikes Against Ukraine Energy…",
+  "metaDescription": "Russian strikes have caused significant damage to Ukraine's energy grid, leading to civilian casualties in Kyiv and remote learning for Odesa students.",
   "aiSummaryBullets": [
-    "Russian forces deployed over 170 drones and 36 missiles in attacks across the Kyiv region.",
-    "The strikes targeted key electricity infrastructure and a bridge spanning the Dnipro River.",
-    "President Volodymyr Zelenskyy stated the assault aims to cause nationwide power outages before upcoming negotiations."
+    "Russian military strikes have caused significant damage to the energy infrastructure in Odesa, forcing local schools to shift to remote learning.",
+    "Recent intensified attacks across the Kyiv region have resulted in at least 15 reported deaths.",
+    "The ongoing campaign against the energy grid has caused widespread power outages and water shortages, raising concerns ahead of the winter season."
   ],
-  "aiContextParagraph": "On November 7, 2026, Russia initiated a significant aerial offensive against Ukraine, focusing primarily on critical energy infrastructure and transport links. According to reports, the coordinated strikes involved 172 drones and 36 ballistic missiles aimed at electricity substations and a bridge over the Dnipro River. President Volodymyr Zelenskyy characterized the military action as a strategic attempt to force the nation into darkness ahead of diplomatic meetings. These hostilities coincide with preparations for trilateral talks scheduled to take place in Abu Dhabi next week. While officials acknowledge the intensity of the damage to the energy grid, the full extent of the blackout impacts remains a subject of ongoing assessment. The escalation comes as international observers monitor both the humanitarian consequences of the infrastructure damage and the potential implications for the planned negotiations in the United Arab Emirates.",
-  "whyItIsViral": "The event is gaining attention due to the high volume of munitions reported in the strike and its timing relative to imminent diplomatic negotiations.",
-  "viralScore": 48,
-  "intensityTier": "active",
+  "aiContextParagraph": "Russian forces have launched a series of extensive airstrikes targeting critical energy infrastructure across Ukraine, leading to significant disruptions in essential services such as water and electricity. In Odesa, a major Black Sea port city, the damage to the energy network has necessitated a transition to remote learning for students. Meanwhile, the region surrounding Kyiv has reported at least 15 fatalities following intensified bombardment. These strikes follow public declarations from leadership regarding a response to recent Ukrainian military actions. As winter approaches, the sustained campaign against power facilities has left many residents facing the prospect of prolonged blackouts and limited access to heating. International reports highlight the humanitarian impact of these conditions as the conflict continues, with ongoing challenges regarding grid stability and civilian safety in urban centers throughout the country.",
+  "whyItIsViral": "The story is widely reported by five independent international news outlets and maintains a consistent coverage velocity as the intensity of the strikes affects major population centers.",
+  "viralScore": 69,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 5,
-    "coverageVelocityScore": 0,
+    "coverageVelocityScore": 48,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-07T09:21:00Z",
-  "lastUpdatedBatchAt": "2026-11-13T17:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-23T10:51:00Z",
   "sources": [
     {
       "publisherName": "Deutsche Welle",
@@ -84,34 +84,48 @@
       "articleTitle": "Most Ukrainians 'think there's no chance of a peace deal' with Russia",
       "articleUrl": "https://www.france24.com/en/video/20261113-most-ukrainians-think-there-s-no-chance-of-a-peace-deal-with-russia",
       "publishedAt": "2026-11-13T14:14:14Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
+      "publishedAt": "2026-11-23T09:34:25Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Odesa pupils switch to remote learning as Russia pounds Ukraine’s energy grid",
+      "articleUrl": "https://www.france24.com/en/video/20261123-odesa-pupils-switch-to-remote-learning-as-russia-pounds-ukraine-s-energy-grid",
+      "publishedAt": "2026-11-23T09:51:02Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Volodymyr Zelenskyy",
-      "slug": "volodymyr-zelenskyy"
+      "name": "Russia",
+      "slug": "russia"
+    },
+    {
+      "name": "Ukraine",
+      "slug": "ukraine"
+    },
+    {
+      "name": "Odesa",
+      "slug": "odesa"
     },
     {
       "name": "Kyiv",
       "slug": "kyiv"
-    },
-    {
-      "name": "Dnipro River",
-      "slug": "dnipro-river"
-    },
-    {
-      "name": "Energy Infrastructure",
-      "slug": "energy-infrastructure"
     }
   ],
   "relatedInCountrySlugs": [
     "russian-missile-strikes-kyiv-region",
-    "ukraine-drone-strikes-crimea-moscow",
-    "european-leaders-seek-ukraine-peace-influence"
+    "jared-kushner-ukraine-security-guarantees",
+    "european-leaders-meet-berlin-ukraine"
   ],
   "relatedInCategorySlugs": [
     "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-    "volodymyr-zelenskyy-reports-missing-kiev-drone-strike",
-    "russian-missile-strikes-target-kyiv"
+    "russian-missile-strikes-target-kyiv",
+    "crimea-bridge-traffic-suspended-after-strike"
   ]
 }

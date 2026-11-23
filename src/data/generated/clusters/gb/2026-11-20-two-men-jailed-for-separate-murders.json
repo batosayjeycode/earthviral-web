@@ -9,25 +9,25 @@
   "categorySlug": "crime-law",
   "categoryName": "Crime & Law",
   "headline": "Man Charged With Rape On Brighton Beach As Two Men Are Jailed",
-  "seoTitle": "Man Charged With Rape On Brighton Beach",
-  "metaDescription": "A 28-year-old man has been charged with rape following an incident on Brighton beach, while other legal proceedings continue across the UK.",
+  "seoTitle": "Man Charged With Rape On Brighton Beach And Two Men Jailed",
+  "metaDescription": "A man faces charges following an alleged rape on Brighton Beach, while two separate murder cases have concluded with prison sentences for the offenders.",
   "aiSummaryBullets": [
-    "A 28-year-old man faces charges for the alleged rape of a woman on Brighton beach during the summer.",
-    "The legal development follows the recent sentencing of two separate men for the murders of British women.",
-    "Police are also investigating a separate report of a woman being raped by a masked man in a Glasgow park."
+    "An individual has been charged with rape following an incident occurring on Brighton Beach.",
+    "Two men were recently sentenced to prison for murder in unrelated cases involving victims in the Thames and overseas.",
+    "Authorities have also charged a suspect in connection with a man discovered fatally injured within a hospital car park."
   ],
-  "aiContextParagraph": "Recent criminal justice reports in the United Kingdom include a range of serious offenses currently under police investigation or sentencing. A 28-year-old man has been formally charged regarding an alleged rape that took place on Brighton beach earlier this year. This case coincides with recent convictions of two men who were sentenced for the murders of British women in separate proceedings, including one case involving a victim who was drowned in the River Thames. Furthermore, authorities are seeking a suspect following an incident in Glasgow, where a 22-year-old woman was reportedly raped by a masked individual described as a white male, aged between 30 and 40, of heavy build, and approximately 5ft 10ins tall. These events represent a series of recent violent crimes documented by multiple news outlets across the country.",
-  "whyItIsViral": "This story is circulating due to concurrent reports of high-profile criminal cases and ongoing police investigations, covered by three independent media outlets.",
-  "viralScore": 50,
-  "intensityTier": "active",
+  "aiContextParagraph": "Recent legal developments in the United Kingdom include multiple serious criminal cases. A man has been charged with rape after an alleged assault on Brighton Beach. Concurrently, two separate sentencing hearings have concluded. One man received a prison term for drowning a former Microsoft executive in the River Thames, while another individual was sentenced to life imprisonment for the murder of a British woman he had groomed via a fetish website. Additionally, police have initiated charges against a suspect concerning the death of a man who was located with severe injuries in a hospital parking facility. These incidents represent several distinct criminal investigations occurring across different regions, involving charges ranging from sexual assault to homicide. Law enforcement agencies continue to process these cases as they progress through the judicial system, with public authorities providing updates regarding the charges and sentences handed down to the identified individuals.",
+  "whyItIsViral": "The story is being tracked by four independent news outlets, indicating consistent coverage of multiple ongoing serious criminal investigations across the country.",
+  "viralScore": 61,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 13,
+    "coverageVelocityScore": 38,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-20T16:59:20Z",
-  "lastUpdatedBatchAt": "2026-11-22T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-23T10:51:00Z",
   "sources": [
     {
       "publisherName": "BBC",
@@ -58,6 +58,13 @@
       "publishedAt": "2026-11-20T18:39:00Z"
     },
     {
+      "publisherName": "Sky News",
+      "publisherDomain": "news.sky.com",
+      "articleTitle": "Suspect charged over death of man found injured in hospital car park",
+      "articleUrl": "https://news.sky.com/story/man-21-dies-after-being-found-seriously-injured-in-hospital-car-park-13615200",
+      "publishedAt": "2026-11-22T11:47:00Z"
+    },
+    {
       "publisherName": "The Independent",
       "publisherDomain": "independent.co.uk",
       "articleTitle": "Woman, 22, raped by masked man in Glasgow Park",
@@ -84,16 +91,23 @@
       "articleTitle": "East London man charged with rape after incident on Brighton beach",
       "articleUrl": "https://www.standard.co.uk/news/london/east-london-man-rape-charge-brighton-beach-sussex-police-b1305924.html",
       "publishedAt": "2026-11-22T20:23:09Z"
+    },
+    {
+      "publisherName": "The Independent",
+      "publisherDomain": "independent.co.uk",
+      "articleTitle": "Man dies after being found seriously injured in hospital car park",
+      "articleUrl": "https://www.independent.co.uk/news/uk/crime/ninewells-hospital-dundee-man-death-charged-b3089760.html",
+      "publishedAt": "2026-11-23T10:34:47Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Brighton beach",
+      "name": "Brighton Beach",
       "slug": "brighton-beach"
     },
     {
-      "name": "Glasgow park",
-      "slug": "glasgow-park"
+      "name": "Thames",
+      "slug": "thames"
     },
     {
       "name": "United Kingdom",
@@ -101,13 +115,13 @@
     }
   ],
   "relatedInCountrySlugs": [
+    "don-toliver-manchester-concert-evacuation",
     "uk-and-eu-negotiations-reset",
-    "uk-investigates-security-threat-iran",
-    "barnham-village-symbolic-independence-vote"
+    "uk-investigates-security-threat-iran"
   ],
   "relatedInCategorySlugs": [
     "man-charged-murder-fatal-home-invasion",
-    "fssai-prosecutes-bisleri-unsafe-water",
-    "investigation-into-kupang-regent-allegations"
+    "investigation-into-kupang-regent-allegations",
+    "fssai-prosecutes-bisleri-unsafe-water"
   ]
 }
