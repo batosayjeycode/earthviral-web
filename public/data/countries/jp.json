@@ -3,10 +3,27 @@
   "name": "Japan",
   "slug": "japan",
   "region": "Asia",
-  "viralScore": 0,
-  "intensityTier": "quiet",
-  "generatedAt": "2026-11-24T02:18:00Z",
+  "viralScore": 50,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-24T05:18:00Z",
   "clusters": [
+    {
+      "slug": "japan-protests-russian-airspace-violation",
+      "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
+      "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Japan's Air Self-Defense Force deployed fighter jets in response to two aircraft entering national airspace.",
+        "The unauthorized flights occurred separately near Okinoshima island, located close to Fukuoka."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/17/japan/russia-japan-airspace-violation-defense/"
+      }
+    },
     {
       "slug": "seismic-activity-hits-kanto-region-japan",
       "canonicalPath": "/news/jp/seismic-activity-hits-kanto-region-japan/",
@@ -124,23 +141,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/business/japans-economy-contracts-annualised-01-in-july-september-6553646"
-      }
-    },
-    {
-      "slug": "japan-protests-russian-airspace-violation",
-      "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
-      "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Japan's Air Self-Defense Force deployed fighter jets in response to two aircraft entering national airspace.",
-        "The unauthorized flights occurred separately near Okinoshima island, located close to Fukuoka."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/news/2026/11/17/japan/russia-japan-airspace-violation-defense/"
       }
     },
     {
