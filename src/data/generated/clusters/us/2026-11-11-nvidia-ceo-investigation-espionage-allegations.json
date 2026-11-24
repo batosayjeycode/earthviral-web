@@ -14,20 +14,20 @@
   "aiSummaryBullets": [
     "France 24 reports: Jensen Huang's surprise return to Nvidia sparks mixed reactions in Washington",
     "The Guardian reports: Democrats hit out at Nvidia and Trump over Huang’s return – US politics live",
-    "Al Jazeera reports: Mamdani blasts AI-reliant stock market after Jensen Huang’s return"
+    "CBS News reports: Trump, investors are elated with Huang's return to Nvidia. Lawmakers worry about national security."
   ],
-  "aiContextParagraph": "This story about United States has been reported by The Guardian, France 24, NPR, CBS News and Al Jazeera since 2026-11-11. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
+  "aiContextParagraph": "This story about United States has been reported by CBS News, The Guardian, France 24, NPR and Al Jazeera since 2026-11-11. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
   "whyItIsViral": "5 independent outlets are covering this story, with coverage accelerating in the latest batch.",
-  "viralScore": 83,
+  "viralScore": 79,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 5,
-    "coverageVelocityScore": 78,
+    "coverageVelocityScore": 69,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-11T19:12:52Z",
-  "lastUpdatedBatchAt": "2026-11-24T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-24T17:18:00Z",
   "sources": [
     {
       "publisherName": "CBS News",
@@ -126,6 +126,13 @@
       "articleTitle": "Democrats hit out at Nvidia and Trump over Huang’s return – US politics live",
       "articleUrl": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates",
       "publishedAt": "2026-11-24T14:07:49Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "Trump, investors are elated with Huang's return to Nvidia. Lawmakers worry about national security.",
+      "articleUrl": "https://www.cbsnews.com/video/investors-are-elated-that-huang-is-back-at-nvidia-lawmakers-worry-about-national-security/",
+      "publishedAt": "2026-11-24T14:47:00Z"
     }
   ],
   "entityTags": [
@@ -134,12 +141,12 @@
       "slug": "nvidia"
     },
     {
-      "name": "Jensen",
-      "slug": "jensen"
+      "name": "Huang's",
+      "slug": "huangs"
     },
     {
-      "name": "Huang’s",
-      "slug": "huangs"
+      "name": "Jensen",
+      "slug": "jensen"
     }
   ],
   "relatedInCountrySlugs": [
@@ -150,6 +157,6 @@
   "relatedInCategorySlugs": [
     "nvidia-ceo-jensen-huang-resigns-2",
     "trump-proposes-cook-for-nvidia-role",
-    "jensen-huang-considers-nvidia-return"
+    "nvidia-ceo-jensen-huang-resignation"
   ]
 }

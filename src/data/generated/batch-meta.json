@@ -1,11 +1,11 @@
 {
-  "batchId": "batch-202611241418",
-  "generatedAt": "2026-11-24T14:18:00Z",
-  "nextUpdateAt": "2026-11-24T17:17:00Z",
+  "batchId": "batch-202611241718",
+  "generatedAt": "2026-11-24T17:18:00Z",
+  "nextUpdateAt": "2026-11-24T20:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 33,
-    "viralTopics": 651,
+    "activeCountries": 34,
+    "viralTopics": 668,
     "globalIndex": 88
   },
   "pipeline": {
@@ -14,28 +14,28 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1727,
-    "newClusters": 17,
-    "updatedClusters": 112,
+    "articlesFetched": 1734,
+    "newClusters": 10,
+    "updatedClusters": 127,
     "retiredClusters": 0,
-    "aiCalls": 61,
-    "fallbackSummaries": 140,
+    "aiCalls": 63,
+    "fallbackSummaries": 165,
     "titleNames": {
-      "kept": 0,
+      "kept": 2,
       "headline": 0,
       "previous": 0,
       "missing": 0,
-      "no-anchor": 0
+      "no-anchor": 5
     },
     "digestSummaries": {
-      "written": 0,
-      "kept": 20,
-      "pending": 2,
-      "failed": 2
+      "written": 1,
+      "kept": 19,
+      "pending": 0,
+      "failed": 0
     },
     "aiFailures": {
-      "server-error": 32,
-      "rate-limit": 29
+      "server-error": 42,
+      "rate-limit": 13
     },
     "aiFailureSamples": [
       {
@@ -51,14 +51,14 @@
         "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
       },
       {
-        "category": "server-error",
-        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+        "category": "rate-limit",
+        "detail": "HTTP 429 [GenerateRequestsPerMinutePerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistu"
       },
       {
         "category": "rate-limit",
         "detail": "HTTP 429 [GenerateRequestsPerMinutePerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistu"
       }
     ],
-    "durationMs": 637891
+    "durationMs": 837831
   }
 }

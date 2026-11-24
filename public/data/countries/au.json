@@ -3,17 +3,34 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 61,
+  "viralScore": 65,
   "intensityTier": "high",
-  "generatedAt": "2026-11-24T14:18:00Z",
+  "generatedAt": "2026-11-24T17:18:00Z",
   "clusters": [
+    {
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
+        "ABC reports: The Rugby League World Cup final should have solved the Golden Boot battle"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+      }
+    },
     {
       "slug": "bancroft-alleges-team-wide-cricket-scandal",
       "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
       "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 58,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
@@ -25,54 +42,20 @@
       }
     },
     {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 57,
+      "slug": "oncologist-and-physicist-both-win-australias-top-science-prize",
+      "canonicalPath": "/news/au/oncologist-and-physicist-both-win-australias-top-science-prize/",
+      "headline": "Oncologist and physicist both win Australia's top science prize",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
-        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
-      }
-    },
-    {
-      "slug": "pope-francis-private-diaries-released",
-      "canonicalPath": "/news/au/pope-francis-private-diaries-released/",
-      "headline": "Newly Released Private Diaries Reveal Spiritual Struggles Of Pope Francis",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Published diary entries document the late pontiff's internal conflicts and personal fears.",
-        "The writings describe accounts of visceral visions involving the devil, hell, and the antichrist."
+        "ABC reports: Oncologist and physicist both win Australia's top science prize",
+        "The Guardian reports: Researcher who helped improve melanoma survival rates among winners of top Australian science prize"
       ],
       "primarySource": {
         "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/religion-and-belief/pope-francis-tempted-by-the-devil-diaries-reveal-c-23207794"
-      }
-    },
-    {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
-        "ABC reports: The Rugby League World Cup final should have solved the Golden Boot battle"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+        "articleUrl": "https://thewest.com.au/technology/science/pchs-asha-bowen-wins-prestigious-prime-ministers-science-prize-for-transformative-skin-care-research-c-23200124"
       }
     },
     {
@@ -93,12 +76,46 @@
       }
     },
     {
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
+        "The former police officer stated he obtained a SIM card under a false name to report workplace bullying to the media."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
+      }
+    },
+    {
+      "slug": "wall-street-stocks-drop-ai-selloff",
+      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
+      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
+        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+      }
+    },
+    {
       "slug": "australian-music-broadcaster-molly-meldrum-dies",
       "canonicalPath": "/news/au/australian-music-broadcaster-molly-meldrum-dies/",
       "headline": "Australian Music Industry Legend Ian Molly Meldrum Dies At Aged 83",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Australian music figure Ian Molly Meldrum, known as the host of Countdown, has passed away in Melbourne at age 83.",
@@ -110,80 +127,12 @@
       }
     },
     {
-      "slug": "two-arrested-after-break-in-at-kate-and-williams",
-      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
-      "headline": "Two arrested after break-in at Kate and William's estate",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ABC reports: Two arrested after break-in at Kate and William's estate",
-        "The West Australian reports: Two held over burglary at Prince William's country home"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
-      }
-    },
-    {
-      "slug": "usman-khawaja-claims-ball-tampering-knowledge",
-      "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
-      "headline": "Fox Sports Removes Usman Khawaja And David Warner From Commentary",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Fox Sports has pulled Usman Khawaja and David Warner from their commentary roles.",
-        "The network cited concerns that the ongoing debate regarding the 2018 Sandpapergate scandal was becoming a distraction."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/cricket-warner-backs-khawaja-ball-tampering-claims-slams-probe/107365778"
-      }
-    },
-    {
-      "slug": "donald-and-salt-pepper-aussies-to-square-t20-series",
-      "canonicalPath": "/news/au/donald-and-salt-pepper-aussies-to-square-t20-series/",
-      "headline": "Donald and Salt pepper Aussies to square T20 series",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Donald and Salt pepper Aussies to square T20 series",
-        "ABC reports: England crushes Australia to level T20 series in Gold Coast massacre"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-24/australia-vs-england-second-t20i-on-the-gold-coast/107421294"
-      }
-    },
-    {
-      "slug": "oncologist-and-physicist-both-win-australias-top-science-prize",
-      "canonicalPath": "/news/au/oncologist-and-physicist-both-win-australias-top-science-prize/",
-      "headline": "Oncologist and physicist both win Australia's top science prize",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ABC reports: Oncologist and physicist both win Australia's top science prize",
-        "The Guardian reports: Researcher who helped improve melanoma survival rates among winners of top Australian science prize"
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/24/georgina-long-melanoma-anthony-thomas-2026-prime-ministers-prizes-for-science"
-      }
-    },
-    {
       "slug": "man-charged-murder-fatal-home-invasion",
       "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
       "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
@@ -195,12 +144,29 @@
       }
     },
     {
+      "slug": "two-arrested-after-break-in-at-kate-and-williams",
+      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
+      "headline": "Two arrested after break-in at Kate and William's estate",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "ABC reports: Two arrested after break-in at Kate and William's estate",
+        "The West Australian reports: Two held over burglary at Prince William's country home"
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
+      }
+    },
+    {
       "slug": "australia-faces-scrutiny-climate-summit",
       "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
       "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
@@ -209,23 +175,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
-      }
-    },
-    {
-      "slug": "australian-digital-duty-of-care-negotiations",
-      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
-      "headline": "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty…",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Guardian reports: Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June",
-        "The West Australian reports: Greens back Labor’s digital duty of care"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
       }
     },
     {
@@ -263,12 +212,46 @@
       }
     },
     {
+      "slug": "australian-digital-duty-of-care-negotiations",
+      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
+      "headline": "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty…",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 43,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Guardian reports: Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June",
+        "The West Australian reports: Greens back Labor’s digital duty of care"
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
+      }
+    },
+    {
+      "slug": "afl-draft-prospects-knee-recovery",
+      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
+      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
+        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+      }
+    },
+    {
       "slug": "jim-chalmers-warns-of-economic-hardship",
       "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
       "headline": "Treasurer Jim Chalmers Warns Of Economic Challenges In Australia",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Treasurer Jim Chalmers announced that upcoming government budget forecasts will show increased unemployment and slower economic growth.",
@@ -280,36 +263,20 @@
       }
     },
     {
-      "slug": "wall-st-roars-back-as-jensen-huang-returns-to",
-      "canonicalPath": "/news/au/wall-st-roars-back-as-jensen-huang-returns-to/",
-      "headline": "Nvidia rehires Jensen Huang in stunning reversal after Donald Trump push",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Nvidia rehires Jensen Huang in stunning reversal after Donald Trump push"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/business/tech-giant-nvidia-reinstates-jensen-huang-as-ceo-c-23203266"
-      }
-    },
-    {
-      "slug": "marnus-labuschagne-returns-to-shield-cricket",
-      "canonicalPath": "/news/au/marnus-labuschagne-returns-to-shield-cricket/",
-      "headline": "Marnus Labuschagne Out In Unusual Dismissal In Sheffield Shield",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "donald-and-salt-pepper-aussies-to-square-t20-series",
+      "canonicalPath": "/news/au/donald-and-salt-pepper-aussies-to-square-t20-series/",
+      "headline": "Donald and Salt pepper Aussies to square T20 series",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
       "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Marnus Labuschagne was dismissed in a highly unusual manner against Nathan Lyon during Sheffield Shield play at the SCG.",
-        "The match was affected by wet conditions, which limited play on the third day of the fixture."
+        "The West Australian reports: Donald and Salt pepper Aussies to square T20 series",
+        "ABC reports: England crushes Australia to level T20 series in Gold Coast massacre"
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/marnus-labuschagne-sheffield-shield-queensland-vs-tasmania/107374394"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-24/australia-vs-england-second-t20i-on-the-gold-coast/107421294"
       }
     },
     {
@@ -335,7 +302,7 @@
       "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 40,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
@@ -344,6 +311,40 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
+    {
+      "slug": "pope-francis-private-diaries-released",
+      "canonicalPath": "/news/au/pope-francis-private-diaries-released/",
+      "headline": "Newly Released Private Diaries Reveal Spiritual Struggles Of Pope Francis",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Published diary entries document the late pontiff's internal conflicts and personal fears.",
+        "The writings describe accounts of visceral visions involving the devil, hell, and the antichrist."
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/religion-and-belief/pope-francis-tempted-by-the-devil-diaries-reveal-c-23207794"
+      }
+    },
+    {
+      "slug": "nsw-shelves-real-estate-reforms",
+      "canonicalPath": "/news/au/nsw-shelves-real-estate-reforms/",
+      "headline": "New South Wales Government Shelves Real Estate Underquoting Laws",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The New South Wales government delayed new legislation intended to address property price underquoting.",
+        "Real estate agents expressed concerns to the premier regarding the potential impact of the regulations on the local housing market."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-16/nsw-house-price-advertising-underquoting-laws/107390420"
       }
     }
   ]

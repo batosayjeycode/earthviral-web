@@ -1,8 +1,30 @@
 {
-  "batchId": "batch-202611241418",
-  "generatedAt": "2026-11-24T14:18:00Z",
-  "nextUpdateAt": "2026-11-24T17:17:00Z",
+  "batchId": "batch-202611241718",
+  "generatedAt": "2026-11-24T17:18:00Z",
+  "nextUpdateAt": "2026-11-24T20:17:00Z",
   "countries": [
+    {
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "centroid": [
+        -2,
+        53.5
+      ],
+      "viralScore": 99,
+      "intensityTier": "surge",
+      "topicCount": 45,
+      "topTopic": {
+        "slug": "prince-william-military-harassment-reforms",
+        "canonicalPath": "/news/gb/prince-william-military-harassment-reforms/",
+        "headline": "Two Men Arrested After Break-In At Prince William's Norfolk Estate",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 96,
+        "intensityTier": "surge"
+      }
+    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -12,16 +34,16 @@
         117,
         -2.5
       ],
-      "viralScore": 99,
+      "viralScore": 97,
       "intensityTier": "surge",
-      "topicCount": 129,
+      "topicCount": 131,
       "topTopic": {
-        "slug": "indonesian-police-investigate-treason-allegations",
-        "canonicalPath": "/news/id/indonesian-police-investigate-treason-allegations/",
-        "headline": "Polri Gelar Sidang Kode Etik Brigjen Tedjo Kusumo Tersangka Kasus Makar",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 96,
+        "slug": "vice-president-gibran-meets-president-prabowo",
+        "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
+        "headline": "Bahlil Sebut Sugiono dan Amran Sama-Sama Layak Jadi Cawapres Pilihan Prabowo: Tapi Wapres Kita Kan…",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 94,
         "intensityTier": "surge"
       }
     },
@@ -34,16 +56,16 @@
         -98.5,
         39.5
       ],
-      "viralScore": 97,
+      "viralScore": 93,
       "intensityTier": "surge",
       "topicCount": 28,
       "topTopic": {
         "slug": "nvidia-ceo-jensen-huang-security-investigation",
         "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
         "headline": "Nvidia board reinstates disgraced Jensen Huang as CEO",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 94,
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 90,
         "intensityTier": "surge"
       }
     },
@@ -56,37 +78,15 @@
         79,
         22
       ],
-      "viralScore": 92,
+      "viralScore": 91,
       "intensityTier": "surge",
-      "topicCount": 65,
+      "topicCount": 66,
       "topTopic": {
         "slug": "owaisi-azad-up-election-alliance",
         "canonicalPath": "/news/in/owaisi-azad-up-election-alliance/",
         "headline": "Shiromani Akali Dal and BJP to renew political alliance ahead of Punjab polls",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 89,
-        "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "PH",
-      "isoNumeric": "608",
-      "name": "Philippines",
-      "slug": "philippines",
-      "centroid": [
-        122,
-        12.5
-      ],
-      "viralScore": 88,
-      "intensityTier": "surge",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di",
-        "canonicalPath": "/news/ph/kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di/",
-        "headline": "Kapolri Bongkar Ragam Modus WNI Sindikat Online Scam di Filipina",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
         "viralScore": 88,
         "intensityTier": "surge"
       }
@@ -100,38 +100,82 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 86,
+      "viralScore": 89,
       "intensityTier": "surge",
-      "topicCount": 79,
+      "topicCount": 80,
       "topTopic": {
         "slug": "brazil-senate-advances-lula-fiscal-package",
         "canonicalPath": "/news/br/brazil-senate-advances-lula-fiscal-package/",
         "headline": "Câmara aprova texto-base do projeto de ajuste fiscal proposto pelo governo Lula",
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
-        "viralScore": 83,
+        "viralScore": 86,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
+      "centroid": [
+        122,
+        12.5
+      ],
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di",
+        "canonicalPath": "/news/ph/kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di/",
+        "headline": "Kapolri Bongkar Ragam Modus WNI Sindikat Online Scam di Filipina",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 87,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
+      "centroid": [
+        60,
+        58
+      ],
+      "viralScore": 87,
+      "intensityTier": "surge",
+      "topicCount": 11,
+      "topTopic": {
+        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+        "headline": "Indonesian Authorities Block Citizens Recruited As Russian Soldiers",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 84,
         "intensityTier": "high"
       }
     },
     {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
       "centroid": [
-        -2,
-        53.5
+        8.1,
+        9.6
       ],
-      "viralScore": 86,
-      "intensityTier": "surge",
-      "topicCount": 43,
+      "viralScore": 83,
+      "intensityTier": "high",
+      "topicCount": 62,
       "topTopic": {
-        "slug": "prince-william-military-harassment-reforms",
-        "canonicalPath": "/news/gb/prince-william-military-harassment-reforms/",
-        "headline": "Prince William meets Burnham on first Downing Street visit",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 83,
+        "slug": "four-mourners-die-bayelsa-boat-accident",
+        "canonicalPath": "/news/ng/four-mourners-die-bayelsa-boat-accident/",
+        "headline": "Bayelsa boat tragedy: Tinubu donates N250m as death toll hits 29",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 80,
         "intensityTier": "high"
       }
     },
@@ -144,8 +188,8 @@
         90.3,
         23.7
       ],
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 82,
+      "intensityTier": "high",
       "topicCount": 2,
       "topTopic": {
         "slug": "sheikh-hasina-seeks-passport-for-return",
@@ -153,95 +197,7 @@
         "headline": "Ousted Leader Sheikh Hasina Sets December 16 Return To Bangladesh",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 84,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-        "headline": "Immigration Authorities Halt Indonesians Joining Russian Army",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 82,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 81,
-      "intensityTier": "high",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Iran says two oil tankers hit by mines in Strait of Hormuz",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 80,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CN",
-      "isoNumeric": "156",
-      "name": "China",
-      "slug": "china",
-      "centroid": [
-        104,
-        35
-      ],
-      "viralScore": 81,
-      "intensityTier": "high",
-      "topicCount": 12,
-      "topTopic": {
-        "slug": "chinese-official-sentenced-to-death-for-spying-leaking-national",
-        "canonicalPath": "/news/cn/chinese-official-sentenced-to-death-for-spying-leaking-national/",
-        "headline": "Chinese Official Sentenced To Death For Spying And Leaking Secrets",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 78,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
-      "centroid": [
-        127.8,
-        36.3
-      ],
-      "viralScore": 74,
-      "intensityTier": "high",
-      "topicCount": 37,
-      "topTopic": {
-        "slug": "south-korean-tax-exam-ai-scandal",
-        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-        "headline": "South Korea Imposes Stricter Penalties Following AI Exam Scandal",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 71,
+        "viralScore": 81,
         "intensityTier": "high"
       }
     },
@@ -254,16 +210,60 @@
         2.4,
         46.6
       ],
-      "viralScore": 71,
+      "viralScore": 76,
       "intensityTier": "high",
-      "topicCount": 12,
+      "topicCount": 14,
       "topTopic": {
         "slug": "missiles-russian-drone-impact-poland",
         "canonicalPath": "/news/fr/missiles-russian-drone-impact-poland/",
-        "headline": "Appel intersyndical à la mobilisation des étudiants et enseignants du supérieur le 26 novembre",
+        "headline": "Ukraine Drone Strike Hits Russian Vessels On The Coast Of Libya",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 73,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
+      ],
+      "viralScore": 74,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "explosions-reported-strait-hormuz-iran",
+        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
+        "headline": "Iran Reports Three Oil Tankers Struck By Mines In Strait Of Hormuz",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 73,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CN",
+      "isoNumeric": "156",
+      "name": "China",
+      "slug": "china",
+      "centroid": [
+        104,
+        35
+      ],
+      "viralScore": 73,
+      "intensityTier": "high",
+      "topicCount": 13,
+      "topTopic": {
+        "slug": "chinese-official-sentenced-to-death-for-spying-leaking-national",
+        "canonicalPath": "/news/cn/chinese-official-sentenced-to-death-for-spying-leaking-national/",
+        "headline": "Chinese Official Sentenced To Death For Spying And Leaking Secrets",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 68,
+        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -278,7 +278,7 @@
       ],
       "viralScore": 71,
       "intensityTier": "high",
-      "topicCount": 7,
+      "topicCount": 8,
       "topTopic": {
         "slug": "israeli-airstrike-on-nasser-hospital",
         "canonicalPath": "/news/il/israeli-airstrike-on-nasser-hospital/",
@@ -290,46 +290,68 @@
       }
     },
     {
-      "code": "MX",
-      "isoNumeric": "484",
-      "name": "Mexico",
-      "slug": "mexico",
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
       "centroid": [
-        -102.5,
-        23.6
+        102.3,
+        3.8
       ],
-      "viralScore": 66,
+      "viralScore": 70,
       "intensityTier": "high",
-      "topicCount": 5,
+      "topicCount": 14,
       "topTopic": {
-        "slug": "mexico-arrests-jalisco-cartel-leader",
-        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
-        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 64,
+        "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
+        "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
+        "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 67,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
       "centroid": [
-        8.1,
-        9.6
+        45,
+        24
       ],
-      "viralScore": 65,
+      "viralScore": 69,
       "intensityTier": "high",
-      "topicCount": 58,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "nigeria-democratic-congress-town-hall-disruption",
-        "canonicalPath": "/news/ng/nigeria-democratic-congress-town-hall-disruption/",
-        "headline": "Death Toll Rises To Six Following Attack On Delta NDC Supporters",
+        "slug": "saudi-financial-district-missile-attack",
+        "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
+        "headline": "Saudi capital's financial district targeted in attack, Aramco skyscraper damaged",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 68,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 37,
+      "topTopic": {
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "South Korea Imposes Stricter Penalties Following AI Exam Scandal",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 62,
+        "viralScore": 65,
         "intensityTier": "high"
       }
     },
@@ -342,17 +364,39 @@
         134,
         -25.5
       ],
-      "viralScore": 61,
+      "viralScore": 65,
       "intensityTier": "high",
       "topicCount": 52,
       "topTopic": {
-        "slug": "bancroft-alleges-team-wide-cricket-scandal",
-        "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
-        "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
+        "slug": "ponga-leads-new-zealand-world-cup",
+        "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+        "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 58,
-        "intensityTier": "active"
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "MX",
+      "isoNumeric": "484",
+      "name": "Mexico",
+      "slug": "mexico",
+      "centroid": [
+        -102.5,
+        23.6
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 6,
+      "topTopic": {
+        "slug": "mexico-arrests-jalisco-cartel-leader",
+        "canonicalPath": "/news/mx/mexico-arrests-jalisco-cartel-leader/",
+        "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 61,
+        "intensityTier": "high"
       }
     },
     {
@@ -364,16 +408,60 @@
         103.82,
         1.35
       ],
-      "viralScore": 61,
+      "viralScore": 63,
       "intensityTier": "high",
-      "topicCount": 43,
+      "topicCount": 41,
       "topTopic": {
         "slug": "nvidia-ceo-jensen-huang-resigns-2",
         "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
         "headline": "Jensen Huang Returns As Nvidia CEO Following Pressure From Trump",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 58,
+        "viralScore": 60,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
+      "centroid": [
+        10.4,
+        51.1
+      ],
+      "viralScore": 61,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "merz-nominates-aigner-for-german-president",
+        "canonicalPath": "/news/de/merz-nominates-aigner-for-german-president/",
+        "headline": "Chancellor Merz Advances Ilse Aigner For German Presidential Role",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 59,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 17,
+      "topTopic": {
+        "slug": "hustler-fund-gets-ksh5b-boost-as-ruto-raises-borrowing",
+        "canonicalPath": "/news/ke/hustler-fund-gets-ksh5b-boost-as-ruto-raises-borrowing/",
+        "headline": "Hustler Fund gets Ksh5B boost as Ruto raises borrowing limits",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -400,24 +488,24 @@
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
-        102.3,
-        3.8
+        35.2,
+        31.9
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
-      "topicCount": 14,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
-        "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
-        "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 55,
+        "slug": "gadi-eisenkot-condemns-west-bank-attacks",
+        "canonicalPath": "/news/ps/gadi-eisenkot-condemns-west-bank-attacks/",
+        "headline": "Gadi Eisenkot Condemns Settler Arson Attacks In The West Bank",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -430,7 +518,7 @@
         35.2,
         39
       ],
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -439,7 +527,7 @@
         "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 55,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -466,50 +554,6 @@
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
-      "centroid": [
-        10.4,
-        51.1
-      ],
-      "viralScore": 52,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "over-450-german-schools-receive-bomb-threats",
-        "canonicalPath": "/news/de/over-450-german-schools-receive-bomb-threats/",
-        "headline": "Schools across Germany and Denmark receive bomb threats",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
-      "centroid": [
-        37.9,
-        0.2
-      ],
-      "viralScore": 51,
-      "intensityTier": "active",
-      "topicCount": 16,
-      "topTopic": {
-        "slug": "ruto-highlights-agricultural-economic-impact",
-        "canonicalPath": "/news/ke/ruto-highlights-agricultural-economic-impact/",
-        "headline": "President William Ruto Defends His Administration's Economic Record",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "SD",
       "isoNumeric": "729",
       "name": "Sudan",
@@ -528,72 +572,6 @@
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
         "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
-      "centroid": [
-        45,
-        24
-      ],
-      "viralScore": 47,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "fatal-airstrikes-clashes-reported-yemen",
-        "canonicalPath": "/news/sa/fatal-airstrikes-clashes-reported-yemen/",
-        "headline": "Reports Emerge Of Fatal Airstrikes And Clashes Within Yemen Regions",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 46,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PK",
-      "isoNumeric": "586",
-      "name": "Pakistan",
-      "slug": "pakistan",
-      "centroid": [
-        69.3,
-        30
-      ],
-      "viralScore": 47,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "pakistani-astronaut-set-to-make-history-on-chinese-space",
-        "canonicalPath": "/news/pk/pakistani-astronaut-set-to-make-history-on-chinese-space/",
-        "headline": "Pakistani astronaut set to make history on Chinese space mission",
-        "categorySlug": "lifestyle-culture",
-        "categoryName": "Lifestyle & Culture",
-        "viralScore": 47,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "VN",
-      "isoNumeric": "704",
-      "name": "Vietnam",
-      "slug": "vietnam",
-      "centroid": [
-        106.3,
-        16
-      ],
-      "viralScore": 46,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "vietnam-restaurant-blast-kills-at-least-six",
-        "canonicalPath": "/news/vn/vietnam-restaurant-blast-kills-at-least-six/",
-        "headline": "Vietnam restaurant blast kills at least six",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 46,
         "intensityTier": "active"
       }
     },
@@ -620,6 +598,50 @@
       }
     },
     {
+      "code": "CO",
+      "isoNumeric": "170",
+      "name": "Colombia",
+      "slug": "colombia",
+      "centroid": [
+        -74.3,
+        4.6
+      ],
+      "viralScore": 45,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "colombia-car-bomb-attack-injures-at-least-23",
+        "canonicalPath": "/news/co/colombia-car-bomb-attack-injures-at-least-23/",
+        "headline": "Colombia: Car bomb attack injures at least 23",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 45,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PK",
+      "isoNumeric": "586",
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "centroid": [
+        69.3,
+        30
+      ],
+      "viralScore": 42,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "pakistani-astronaut-set-to-make-history-on-chinese-space",
+        "canonicalPath": "/news/pk/pakistani-astronaut-set-to-make-history-on-chinese-space/",
+        "headline": "Pakistani astronaut set to make history on Chinese space mission",
+        "categorySlug": "lifestyle-culture",
+        "categoryName": "Lifestyle & Culture",
+        "viralScore": 42,
+        "intensityTier": "active"
+      }
+    },
+    {
       "code": "JP",
       "isoNumeric": "392",
       "name": "Japan",
@@ -628,7 +650,7 @@
         138.5,
         36.5
       ],
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -637,29 +659,29 @@
         "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 41,
+        "viralScore": 40,
         "intensityTier": "active"
       }
     },
     {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
+      "code": "VN",
+      "isoNumeric": "704",
+      "name": "Vietnam",
+      "slug": "vietnam",
       "centroid": [
-        35.2,
-        31.9
+        106.3,
+        16
       ],
-      "viralScore": 39,
+      "viralScore": 41,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 1,
       "topTopic": {
-        "slug": "gadi-eisenkot-condemns-west-bank-attacks",
-        "canonicalPath": "/news/ps/gadi-eisenkot-condemns-west-bank-attacks/",
-        "headline": "Gadi Eisenkot Condemns Settler Arson Attacks In The West Bank",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 38,
+        "slug": "vietnam-restaurant-blast-kills-at-least-six",
+        "canonicalPath": "/news/vn/vietnam-restaurant-blast-kills-at-least-six/",
+        "headline": "Vietnam restaurant blast kills at least six",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 41,
         "intensityTier": "active"
       }
     },
@@ -672,16 +694,16 @@
         24.7,
         -29
       ],
-      "viralScore": 35,
+      "viralScore": 34,
       "intensityTier": "active",
-      "topicCount": 1,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "africas-1st-comfort-women-statue-to-be-unveiled-in",
-        "canonicalPath": "/news/za/africas-1st-comfort-women-statue-to-be-unveiled-in/",
-        "headline": "Africa's 1st 'comfort women' statue to be unveiled in South Africa",
+        "slug": "foreign-nationals-arrested-south-africa-airport",
+        "canonicalPath": "/news/za/foreign-nationals-arrested-south-africa-airport/",
+        "headline": "Nine Foreign Nationals Detained At South African Border Crossing",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 35,
+        "viralScore": 33,
         "intensityTier": "active"
       }
     },
@@ -694,7 +716,7 @@
         -106.3,
         56.1
       ],
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -703,7 +725,7 @@
         "headline": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 32,
+        "viralScore": 31,
         "intensityTier": "active"
       }
     },
@@ -716,7 +738,7 @@
         101,
         15.5
       ],
-      "viralScore": 31,
+      "viralScore": 30,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -725,7 +747,7 @@
         "headline": "Thai Court Reduces Prison Sentence For MP Rukchanok Srinork",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 31,
+        "viralScore": 30,
         "intensityTier": "active"
       }
     },
