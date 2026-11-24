@@ -33,6 +33,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { categoryBySlug } from '../src/lib/taxonomy.ts';
 import { VAS } from '../src/lib/scoring.ts';
+import { buildDigestDays } from '../src/lib/digest.ts';
 import type { ViralClusterStaticRecord } from '../src/lib/types.ts';
 import { COUNTRIES, COUNTRY_BY_CODE } from './lib/countries.ts';
 import { mapLimit } from './lib/http.ts';
@@ -84,6 +85,7 @@ import {
   loadExistingClusters,
   loadRetiredStories,
   mergeRetired,
+  retiredDigestDays,
   nextScheduledBatch,
   writeStaticJson,
 } from './lib/builders/writeStaticJson.ts';
@@ -270,6 +272,8 @@ async function main() {
     log(`  previous data is the SAMPLE seed — discarding ${existing.length} sample clusters`);
     existing = [];
   }
+  // As published before this batch, so digest days that drop out can be redirected.
+  const previousClusters = existing;
   const retentionCutoff = now.getTime() - RETENTION_DAYS * 24 * HOUR;
   const expired = existing.filter((c) => Date.parse(c.lastUpdatedBatchAt) < retentionCutoff);
   existing = existing.filter((c) => !expired.includes(c));
@@ -513,7 +517,9 @@ async function main() {
   const previousRetired = previousMeta?.isSeed ? [] : await loadRetiredStories();
   const takenSlugs = new Set([
     ...existing.map((c) => c.slug),
-    ...previousRetired.map((r) => r.path.split('/').filter(Boolean).at(-1)!),
+    ...previousRetired
+      .filter((r) => r.path.startsWith('/news/'))
+      .map((r) => r.path.split('/').filter(Boolean).at(-1)!),
   ]);
   let records: ViralClusterStaticRecord[] = [];
   const newRecords = new Set<ViralClusterStaticRecord>();
@@ -572,6 +578,11 @@ async function main() {
 
   // 6. Link graph + write ────────────────────────────────────────────────────
   buildInternalLinks(records, now);
+  const retiredDigests = retiredDigestDays(previousClusters, records, iso(now));
+  if (retiredDigests.length)
+    log(
+      `  ${retiredDigests.length} daily digest day(s) dropped out → 301 to /digest/: ${retiredDigests.map((r) => r.path).join(', ')}`,
+    );
   const retired = mergeRetired(
     previousRetired,
     // Stories over the site size budget and past the retention window both redirect.
@@ -586,8 +597,12 @@ async function main() {
         redirectTo: m.into.canonicalPath,
         retiredAt: iso(now),
       })),
+      ...retiredDigests,
     ],
-    new Set(records.map((r) => r.canonicalPath)),
+    new Set([
+      ...records.map((r) => r.canonicalPath),
+      ...buildDigestDays(records).map((d) => d.path),
+    ]),
     now,
   );
   // Daily digest intros, from the final story set (after merges and retention).
