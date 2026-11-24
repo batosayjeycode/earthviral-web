@@ -6,27 +6,28 @@
   "countryName": "Colombia",
   "countrySlug": "colombia",
   "region": "South America",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Colombia: Car bomb attack injures at least 23",
-  "seoTitle": "Colombia: Car bomb attack injures at least 23",
-  "metaDescription": "2 independent outlets are covering this story. Deutsche Welle reports: Colombia: Car bomb attack injures at least 23",
+  "categorySlug": "disasters-world-events",
+  "categoryName": "Disasters & World Events",
+  "headline": "Colombian President De La Espriella Blames FARC For Car Bomb Attack",
+  "seoTitle": "President De La Espriella Blames FARC For Colombia Car Bomb",
+  "metaDescription": "President De la Espriella has attributed a recent car bomb explosion that injured 25 people in a central Colombian city to FARC rebel forces.",
   "aiSummaryBullets": [
-    "Deutsche Welle reports: Colombia: Car bomb attack injures at least 23",
-    "BBC reports: Car bomb tears through Colombian city wounding more than 20"
+    "President De la Espriella officially blamed FARC rebels for orchestrating the car bomb explosion.",
+    "Initial reports stated at least 23 people were injured, with updated figures noting up to 25 casualties.",
+    "The blast caused significant destruction to buildings in the center of the affected city."
   ],
-  "aiContextParagraph": "This story about Colombia has been reported by Deutsche Welle and BBC since 2026-11-24. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "2 independent outlets are covering this story.",
-  "viralScore": 69,
+  "aiContextParagraph": "A car bomb detonation in a central Colombian city has resulted in property damage and at least 25 reported injuries. The incident prompted an immediate response from the national government, with President De la Espriella formally attributing the attack to the Revolutionary Armed Forces of Colombia (FARC). The president has declared the government's intent to retaliate following the act. Media reports from various international outlets confirm the explosion caused structural damage to nearby buildings, with casualty counts being updated from initial estimates of 20 to 23 and finally 25 people. This event occurs amidst ongoing security challenges in the region, as state authorities continue to monitor the activities of dissident militant groups. Investigations are currently underway to assess the full extent of the damage and confirm the involvement of the identified rebel group in the coordination of the bombing.",
+  "whyItIsViral": "The event is gaining momentum due to high-profile attribution by the president and widespread coverage from five major international news outlets.",
+  "viralScore": 72,
   "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 4,
+    "verifiedPublisherCount": 5,
     "coverageVelocityScore": 55,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-24T11:45:52Z",
-  "lastUpdatedBatchAt": "2026-11-24T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-24T23:18:00Z",
   "sources": [
     {
       "publisherName": "BBC",
@@ -55,20 +56,35 @@
       "articleTitle": "Car bomb destroys buildings in central Colombian city",
       "articleUrl": "https://www.france24.com/en/car-bomb-destroys-buildings-in-central-colombian-city",
       "publishedAt": "2026-11-24T19:27:10Z"
+    },
+    {
+      "publisherName": "Al Jazeera",
+      "publisherDomain": "aljazeera.com",
+      "articleTitle": "Colombian president blames ex-FARC rebels for car bomb blast",
+      "articleUrl": "https://www.aljazeera.com/news/2026/11/24/colombian-president-blames-ex-farc-rebels-for-car-bomb-blast?traffic_source=rss",
+      "publishedAt": "2026-11-24T21:45:42Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Car",
-      "slug": "car"
+      "name": "President De la Espriella",
+      "slug": "president-de-la-espriella"
+    },
+    {
+      "name": "FARC",
+      "slug": "farc"
+    },
+    {
+      "name": "Colombia",
+      "slug": "colombia"
     }
   ],
   "relatedInCountrySlugs": [
     "armed-hostage-situation-cartagena-supermarket"
   ],
   "relatedInCategorySlugs": [
-    "vice-president-gibran-meets-president-prabowo",
-    "nvidia-ceo-jensen-huang-security-investigation",
-    "owaisi-azad-up-election-alliance"
+    "massive-fire-hits-pt-fonusa-agung-mulia",
+    "sabtu-bmkg-mayoritas-kota-besar-alami-cuaca-berawan-hujan",
+    "city-of-god-series-update"
   ]
 }

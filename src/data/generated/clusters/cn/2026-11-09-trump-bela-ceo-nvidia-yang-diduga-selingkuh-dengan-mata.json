@@ -6,43 +6,29 @@
   "countryName": "China",
   "countrySlug": "china",
   "region": "Asia",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "US Government Investigates Nvidia Chip Sales To Chinese Companies",
-  "seoTitle": "Nvidia China Chip Sales Investigation",
-  "metaDescription": "The US administration is seeking information regarding past approvals for the sale of advanced Nvidia and AMD AI chips to Chinese firms amid a scandal.",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "Jensen Huang Apologizes To Nvidia Staff Over China Spy Scandal",
+  "seoTitle": "Jensen Huang Apologizes To Nvidia Staff Over China Spy…",
+  "metaDescription": "Nvidia CEO Jensen Huang has apologized to staff following a scandal involving a Chinese spy, amid ongoing investigations into chip sales to China.",
   "aiSummaryBullets": [
-    "US officials are investigating the approval of nearly 900,000 Nvidia and AMD AI chips for sale to companies in China.",
-    "Nvidia has announced it will cease the sale of certain data center chips to the Chinese market following recent controversy.",
-    "The developments follow widespread allegations involving an individual named Alice Huang regarding the smuggling of chips."
+    "Nvidia CEO Jensen Huang apologized to employees for ethical violations linked to an affair with an alleged Chinese spy.",
+    "Jensen Huang has returned to lead Nvidia following a temporary resignation triggered by the espionage controversy.",
+    "US officials are investigating allegations that Nvidia used loopholes to bypass export restrictions on chip sales to Chinese entities."
   ],
-  "aiContextParagraph": "The current scrutiny involving Nvidia follows reports of an alleged espionage scandal involving Alice Huang, who was accused of smuggling AI technology to Chinese firms. Amid the fallout from these allegations, which included the resignation of CEO Jensen Huang, concerns regarding US technology exports have intensified. The US administration reportedly authorized the sale of nearly 900,000 Nvidia and AMD AI chips to Chinese entities prior to the current restrictions. In response to the ongoing situation and regulatory pressures, Nvidia has confirmed it will discontinue the sale of specific high-performance data center chips to China. Authorities are now seeking further clarification on previous approval processes for these technology transfers. China has formally denied accusations of espionage linked to the company, as international observers note that the rivalry between major powers continues to heavily influence the trajectory of the global artificial intelligence sector.",
-  "whyItIsViral": "The story is being widely covered by 12 independent outlets due to the combination of high-level national security allegations and significant corporate leadership changes at a major technology firm.",
-  "viralScore": 67,
+  "aiContextParagraph": "Nvidia has been the subject of significant scrutiny following allegations that the company bypassed export controls to provide artificial intelligence chips to Chinese firms. Amid these investigations, CEO Jensen Huang faced intense pressure after reports surfaced linking him to an individual identified as a Chinese spy. The controversy initially led to Huang's temporary resignation and the convening of emergency board meetings at the technology firm. While Huang has since returned to his leadership role and issued a formal apology to staff for his conduct, legal and ethical questions persist regarding Nvidia’s prior dealings with the Trump administration and potential \"pay-to-play\" arrangements. Federal investigators are currently examining whether export loopholes were intentionally exploited to facilitate the transfer of advanced hardware to China, complicating the broader US-China technological rivalry.",
+  "whyItIsViral": "This story is widely covered by 14 international news outlets due to the combination of high-stakes corporate espionage allegations and ongoing scrutiny of US-China chip trade policies.",
+  "viralScore": 79,
   "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 13,
-    "coverageVelocityScore": 27,
+    "verifiedPublisherCount": 14,
+    "coverageVelocityScore": 55,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-09T00:53:35Z",
-  "lastUpdatedBatchAt": "2026-11-24T19:31:00Z",
+  "lastUpdatedBatchAt": "2026-11-24T23:18:00Z",
   "sources": [
-    {
-      "publisherName": "Folha de S.Paulo",
-      "publisherDomain": "folha.uol.com.br",
-      "articleTitle": "Relação de chefe da Nvidia com chinesa facilitou envio de chips à China, diz site",
-      "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/relacao-de-chefe-da-nvidia-com-chinesa-facilitou-envio-de-chips-a-china-diz-site.shtml",
-      "publishedAt": "2026-11-10T14:50:00Z"
-    },
-    {
-      "publisherName": "Tempo",
-      "publisherDomain": "tempo.co",
-      "articleTitle": "Megaspeed and the Battle to Get High-End Nvidia Chips into China",
-      "articleUrl": "https://en.tempo.co/read/2123367/megaspeed-and-the-battle-to-get-high-end-nvidia-chips-into-china",
-      "publishedAt": "2026-11-10T15:49:32Z"
-    },
     {
       "publisherName": "Folha de S.Paulo",
       "publisherDomain": "folha.uol.com.br",
@@ -238,9 +224,27 @@
       "articleTitle": "How China may have exploited a loophole to access Nvidia chips",
       "articleUrl": "https://www.cbsnews.com/video/how-china-may-have-exploited-a-loophole-to-access-nvidia-chips/",
       "publishedAt": "2026-11-24T18:19:19Z"
+    },
+    {
+      "publisherName": "France 24",
+      "publisherDomain": "france24.com",
+      "articleTitle": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?",
+      "articleUrl": "https://www.france24.com/en/tv-shows/spotlight/20261124-did-nvidia-knowingly-send-chips-to-china-cutout-was-there-pay-to-play-involving-trump-lutnick",
+      "publishedAt": "2026-11-24T21:20:31Z"
+    },
+    {
+      "publisherName": "Detik",
+      "publisherDomain": "detik.com",
+      "articleTitle": "Jensen Huang Minta Maaf ke Staf Nvidia Usai Selingkuh dengan Mata-mata China",
+      "articleUrl": "https://news.detik.com/internasional/d-8768535/jensen-huang-minta-maaf-ke-staf-nvidia-usai-selingkuh-dengan-mata-mata-china",
+      "publishedAt": "2026-11-24T21:50:56Z"
     }
   ],
   "entityTags": [
+    {
+      "name": "Jensen Huang",
+      "slug": "jensen-huang"
+    },
     {
       "name": "Nvidia",
       "slug": "nvidia"
@@ -250,22 +254,18 @@
       "slug": "china"
     },
     {
-      "name": "Jensen Huang",
-      "slug": "jensen-huang"
-    },
-    {
-      "name": "Alice Huang",
-      "slug": "alice-huang"
+      "name": "Trump administration",
+      "slug": "trump-administration"
     }
   ],
   "relatedInCountrySlugs": [
     "nvidia-investigates-ceo-espionage-allegations",
     "megaspeed-responds-to-nvidia-allegations",
-    "chinese-official-sentenced-to-death-for-spying-leaking-national"
+    "prabowo-advocates-asean-china-cooperation"
   ],
   "relatedInCategorySlugs": [
-    "nvidia-ceo-jensen-huang-security-investigation",
-    "lutnick-faces-pressure-nvidia-spy-scandal",
-    "trump-comments-on-jensen-huang-spy-allegations"
+    "nvidia-reinstates-ceo-jensen-huang",
+    "nvidia-skt-rebellions-ai-partnership",
+    "lee-jae-myung-asean-summit-manila"
   ]
 }

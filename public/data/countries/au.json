@@ -5,16 +5,50 @@
   "region": "Oceania",
   "viralScore": 66,
   "intensityTier": "high",
-  "generatedAt": "2026-11-24T20:18:00Z",
+  "generatedAt": "2026-11-24T23:18:00Z",
   "clusters": [
+    {
+      "slug": "australian-digital-duty-of-care-negotiations",
+      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
+      "headline": "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty…",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Guardian reports: Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June",
+        "The West Australian reports: Greens back Labor’s digital duty of care"
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
+      }
+    },
+    {
+      "slug": "victorian-state-election-campaign-launches",
+      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+      "headline": "Victorian Labor Trails In Final Polls Before State Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Polling indicates the Labor government faces significant losses, with its primary vote dropping to 20 percent.",
+        "Candidates and parties are emphasizing housing policies and the regulation of datacentre projects as key campaign issues."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
     {
       "slug": "jim-chalmers-warns-of-economic-hardship",
       "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
       "headline": "Treasurer Jim Chalmers Signals Public Service Cuts Amid Deficit Risks",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Treasurer Jim Chalmers stated inflation is projected to reach 4.8% as the government prepares for a mid-year budget update.",
         "The federal government is identifying potential savings through increased efficiency within the public service sector."
@@ -22,6 +56,23 @@
       "primarySource": {
         "publisherName": "The West Australian",
         "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
+      }
+    },
+    {
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
+        "The former police officer stated he obtained a SIM card under a false name to report workplace bullying to the media."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
       }
     },
     {
@@ -42,20 +93,37 @@
       }
     },
     {
-      "slug": "bancroft-alleges-team-wide-cricket-scandal",
-      "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
-      "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "wall-street-stocks-drop-ai-selloff",
+      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
+      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
       "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
-        "Bancroft states he previously provided misleading information to safeguard the internal inquiry conducted by Cricket Australia."
+        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
+        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cameron-bancroft-says-australian-players-knew-about-sandpaper/107401286"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+      }
+    },
+    {
+      "slug": "victorian-construction-union-inquiry-threats",
+      "canonicalPath": "/news/au/victorian-construction-union-inquiry-threats/",
+      "headline": "Secret Witness to Testify in Victorian CFMEU Construction Inquiry",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A protected witness is scheduled to provide testimony at the ongoing inquiry into the CFMEU construction union.",
+        "Allegations expected to be discussed include illegal payments, workplace standover tactics, and drug-related incidents."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-09/victoria-big-build-royal-commission-hears-cfmeu-influence/107364446"
       }
     },
     {
@@ -76,12 +144,46 @@
       }
     },
     {
+      "slug": "chinas-huawei-convicted-in-sprawling-us-criminal-trial",
+      "canonicalPath": "/news/au/chinas-huawei-convicted-in-sprawling-us-criminal-trial/",
+      "headline": "China's Huawei convicted in sprawling US criminal trial",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: China's Huawei convicted in sprawling US criminal trial",
+        "ABC reports: US court convicts Huawei for deceiving banks about Iran dealings"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-25/huawei-convicted-us-trial-deception-trade-secrets/107423640"
+      }
+    },
+    {
+      "slug": "bancroft-alleges-team-wide-cricket-scandal",
+      "canonicalPath": "/news/au/bancroft-alleges-team-wide-cricket-scandal/",
+      "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
+        "Bancroft states he previously provided misleading information to safeguard the internal inquiry conducted by Cricket Australia."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cameron-bancroft-says-australian-players-knew-about-sandpaper/107401286"
+      }
+    },
+    {
       "slug": "ponga-leads-new-zealand-world-cup",
       "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
       "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 50,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
@@ -93,20 +195,20 @@
       }
     },
     {
-      "slug": "wall-street-stocks-drop-ai-selloff",
-      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
-      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 50,
+      "slug": "former-officer-testifies-double-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
+      "headline": "Former Officer Testifies In Trial For Sydney Double Murder Case",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
-        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
+        "Beau Lamarre-Condon denied executing Jesse Baird while providing evidence during his trial for the murders of Baird and Luke Davies.",
+        "The defendant is currently facing cross-examination in a Sydney court after pleading not guilty to the 2024 killings in Paddington."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
       }
     },
     {
@@ -115,7 +217,7 @@
       "headline": "Oncologist and physicist both win Australia's top science prize",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 49,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ABC reports: Oncologist and physicist both win Australia's top science prize",
@@ -124,40 +226,6 @@
       "primarySource": {
         "publisherName": "The West Australian",
         "articleUrl": "https://thewest.com.au/technology/science/pchs-asha-bowen-wins-prestigious-prime-ministers-science-prize-for-transformative-skin-care-research-c-23200124"
-      }
-    },
-    {
-      "slug": "former-officer-testifies-sydney-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
-      "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
-        "The former police officer stated he obtained a SIM card under a false name to report workplace bullying to the media."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
-      }
-    },
-    {
-      "slug": "man-charged-murder-fatal-home-invasion",
-      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
-        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
-      ],
-      "primarySource": {
-        "publisherName": "oberonreview.com.au",
-        "articleUrl": "https://www.oberonreview.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
       }
     },
     {
@@ -175,6 +243,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
+      }
+    },
+    {
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
+        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
+      ],
+      "primarySource": {
+        "publisherName": "oberonreview.com.au",
+        "articleUrl": "https://www.oberonreview.com.au/story/9387815/suspect-hit-with-murder-charge-after-elderly-man-killed-in-alleged-violent-home-invasion/"
       }
     },
     {
@@ -212,74 +297,6 @@
       }
     },
     {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
-        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
-      }
-    },
-    {
-      "slug": "australian-digital-duty-of-care-negotiations",
-      "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
-      "headline": "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty…",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Guardian reports: Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June",
-        "The West Australian reports: Greens back Labor’s digital duty of care"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/acci-urges-labor-adopt-senate-recommendation-as-digital-duty-of-care-negotiations-continue-c-23197095"
-      }
-    },
-    {
-      "slug": "two-arrested-after-break-in-at-kate-and-williams",
-      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
-      "headline": "Two arrested after break-in at Kate and William's estate",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ABC reports: Two arrested after break-in at Kate and William's estate",
-        "The West Australian reports: Two held over burglary at Prince William's country home"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
-      }
-    },
-    {
-      "slug": "former-officer-testifies-double-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
-      "headline": "Former Officer Testifies In Trial For Sydney Double Murder Case",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Beau Lamarre-Condon denied executing Jesse Baird while providing evidence during his trial for the murders of Baird and Luke Davies.",
-        "The defendant is currently facing cross-examination in a Sydney court after pleading not guilty to the 2024 killings in Paddington."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
-      }
-    },
-    {
       "slug": "one-nation-immigration-policy-tasmania-poll",
       "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
       "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
@@ -314,37 +331,20 @@
       }
     },
     {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "two-arrested-after-break-in-at-kate-and-williams",
+      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
+      "headline": "Two arrested after break-in at Kate and William's estate",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
-        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
+        "ABC reports: Two arrested after break-in at Kate and William's estate",
+        "The West Australian reports: Two held over burglary at Prince William's country home"
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
-      }
-    },
-    {
-      "slug": "donald-and-salt-pepper-aussies-to-square-t20-series",
-      "canonicalPath": "/news/au/donald-and-salt-pepper-aussies-to-square-t20-series/",
-      "headline": "Donald and Salt pepper Aussies to square T20 series",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 37,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Donald and Salt pepper Aussies to square T20 series",
-        "ABC reports: England crushes Australia to level T20 series in Gold Coast massacre"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-24/australia-vs-england-second-t20i-on-the-gold-coast/107421294"
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
       }
     }
   ]
