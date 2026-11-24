@@ -962,6 +962,52 @@ describe('AI failure classification', async () => {
     assert.equal(classifyAiError(timeout).category, 'timeout');
   });
 
+  it('names the exceeded Gemini quota and stops calling after a per-day one', async () => {
+    const { resetGeminiQuotaStop } = await import('./intelligence/generateAiSummaries.ts');
+    const quotaReply = (quotaId: string) => ({
+      error: {
+        code: 429,
+        message: 'You exceeded your current quota, please check your plan and billing details.',
+        details: [
+          { '@type': 'type.googleapis.com/google.rpc.QuotaFailure', violations: [{ quotaId }] },
+          { '@type': 'type.googleapis.com/google.rpc.RetryInfo', retryDelay: '0.001s' },
+        ],
+      },
+    });
+    process.env.GEMINI_API_KEY = 'test-key';
+    let calls = 0;
+    const counted = (body: unknown) =>
+      (async () => {
+        calls++;
+        return new Response(JSON.stringify(body), { status: 429 });
+      }) as unknown as typeof fetch;
+    try {
+      // Per-minute: reported with its quota name, later calls still go out.
+      globalThis.fetch = counted(
+        quotaReply('GenerateRequestsPerMinutePerProjectPerModel-FreeTier'),
+      );
+      const minute = await createSummarizer('gemini').summarize(input);
+      assert.equal(minute.error?.category, 'rate-limit');
+      assert.match(minute.error?.detail ?? '', /^HTTP 429 \[GenerateRequestsPerMinute/);
+      await createSummarizer('gemini').summarize(input);
+      assert.equal(calls, 6); // 3 attempts each
+
+      // Per-day: the next story is skipped without a request.
+      calls = 0;
+      globalThis.fetch = counted(quotaReply('GenerateRequestsPerDayPerProjectPerModel-FreeTier'));
+      await createSummarizer('gemini').summarize(input);
+      assert.equal(calls, 3);
+      const skipped = await createSummarizer('gemini').summarize(input);
+      assert.equal(calls, 3);
+      assert.equal(skipped.error?.category, 'rate-limit');
+      assert.match(skipped.error?.detail ?? '', /skipped: daily quota GenerateRequestsPerDay/);
+    } finally {
+      resetGeminiQuotaStop();
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+  });
+
   it('reports an empty Gemini reply with its finish reason', async () => {
     process.env.GEMINI_API_KEY = 'test-key';
     globalThis.fetch = reply(200, {

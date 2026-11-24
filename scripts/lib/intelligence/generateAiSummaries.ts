@@ -252,18 +252,64 @@ function geminiJsonBody(prompt: JsonPrompt, model: string): GeminiRequestBody {
   };
 }
 
+/**
+ * The Gemini quota a 429 reply says was exceeded (`QuotaFailure.violations[].quotaId`, e.g.
+ * `GenerateRequestsPerDayPerProjectPerModel-FreeTier`). Its message is the same for the
+ * per-minute and the per-day limit, so this is the only way to tell them apart.
+ */
+export function quotaIds(body: string): string[] {
+  try {
+    const parsed = JSON.parse(body) as {
+      error?: { details?: Array<{ violations?: Array<{ quotaId?: string }> }> };
+    };
+    const ids = (parsed.error?.details ?? [])
+      .flatMap((d) => d.violations ?? [])
+      .map((v) => v.quotaId)
+      .filter((id): id is string => Boolean(id));
+    return [...new Set(ids)];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Set once a Gemini call hits a per-day quota. It only resets at midnight Pacific, so the
+ * rest of the run skips Gemini (falling back to non-AI text) instead of retrying every story.
+ */
+let geminiDailyQuotaHit: string | null = null;
+
+/** For tests: forget a daily-quota stop from an earlier call. */
+export function resetGeminiQuotaStop(): void {
+  geminiDailyQuotaHit = null;
+}
+
 async function callGemini(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
-  const res = await fetchWithRetry(
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
-    {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify(geminiJsonBody(prompt, model)),
-      timeoutMs: 60_000,
-      retries: 2,
-      backoffMs: 4_000,
-    },
-  );
+  if (geminiDailyQuotaHit) {
+    throw new AiResponseError(
+      'rate-limit',
+      `skipped: daily quota ${geminiDailyQuotaHit} already exhausted this run`,
+    );
+  }
+  let res: Response;
+  try {
+    res = await fetchWithRetry(
+      `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-goog-api-key': apiKey },
+        body: JSON.stringify(geminiJsonBody(prompt, model)),
+        timeoutMs: 60_000,
+        retries: 2,
+        backoffMs: 4_000,
+      },
+    );
+  } catch (err) {
+    if (err instanceof HttpError && err.status === 429) {
+      const daily = quotaIds(err.body).find((id) => /PerDay/i.test(id));
+      if (daily) geminiDailyQuotaHit = daily;
+    }
+    throw err;
+  }
   const body = (await res.json()) as {
     candidates?: Array<{
       finishReason?: string;
@@ -725,7 +771,10 @@ export function classifyAiError(err: unknown): AiFailure {
   if (err instanceof HttpError) {
     const category: AiFailureCategory =
       err.status === 429 ? 'rate-limit' : err.status >= 500 ? 'server-error' : 'http-error';
-    return { category, detail: clip(`HTTP ${err.status}: ${apiErrorMessage(err.body)}`) };
+    // The quota name goes before the message so clipping never cuts it off.
+    const quota = quotaIds(err.body);
+    const status = quota.length ? `HTTP ${err.status} [${quota.join(', ')}]` : `HTTP ${err.status}`;
+    return { category, detail: clip(`${status}: ${apiErrorMessage(err.body)}`) };
   }
   if (err instanceof Error && (err.name === 'TimeoutError' || err.name === 'AbortError')) {
     return { category: 'timeout', detail: clip(err.message) };
