@@ -344,17 +344,19 @@ describe('hosting configuration', () => {
     assert.match(headers, /https:\/\/:version\.:project\.pages\.dev\/\*\s+X-Robots-Tag: noindex/);
   });
 
-  test('generated redirects point at real country or story pages and never shadow a live page', () => {
+  test('generated redirects point at real pages and never shadow a live page', () => {
     const file = join(dist, '_redirects');
     if (!existsSync(file)) return; // only written by the batch pipeline
     for (const line of readFileSync(file, 'utf8').split('\n')) {
       if (!line.trim() || line.startsWith('#')) continue;
       const [from, to, status] = line.trim().split(/\s+/);
       assert.equal(status, '301', line);
-      assert.match(from, /^\/news\/[a-z]{2}\/[a-z0-9-]+\/$/, line);
+      // A retired story, or a daily digest day that dropped out.
+      assert.match(from, /^\/(news\/[a-z]{2}\/[a-z0-9-]+|digest\/\d{4}-\d{2}-\d{2})\/$/, line);
       assert.ok(!existsSync(fileForPath(from)), `redirect shadows a live page: ${from}`);
-      // Country hub, or the live story that covers the same event (deduplicated stories).
-      assert.match(to, /^\/(country\/[a-z-]+|news\/[a-z]{2}\/[a-z0-9-]+)\/$/, line);
+      // Country hub, the live story covering the same event (deduplicated stories), or the
+      // digest list (removed digest days).
+      assert.match(to, /^\/(country\/[a-z-]+|news\/[a-z]{2}\/[a-z0-9-]+|digest)\/$/, line);
       assert.ok(existsSync(fileForPath(to)), `redirect target missing: ${to}`);
     }
   });

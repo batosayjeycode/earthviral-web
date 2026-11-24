@@ -47,4 +47,23 @@ describe('daily digest', () => {
     assert.equal(older.stories[0]?.viralScore, 40 + MIN_DIGEST_STORIES - 1);
     assert.equal(older.countryCount, 2);
   });
+
+  test('a day that drops out redirects to /digest/ until it comes back', async () => {
+    const { mergeRetired, retiredDigestDays } = await import('./builders/writeStaticJson.ts');
+    const day = (iso: string) => Array.from({ length: MIN_DIGEST_STORIES }, () => story(iso, 50));
+    const kept = day('2026-11-22T03:00:00Z');
+    const dropping = day('2026-11-21T03:00:00Z');
+    const at = '2026-11-24T00:00:00Z';
+
+    // One story fewer leaves the 21st under the minimum; the 22nd stays live.
+    const retired = retiredDigestDays([...kept, ...dropping], [...kept, ...dropping.slice(1)], at);
+    assert.deepEqual(retired, [
+      { path: '/digest/2026-11-21/', redirectTo: '/digest/', retiredAt: at },
+    ]);
+
+    const now = new Date(at);
+    assert.equal(mergeRetired([], retired, new Set(), now).length, 1);
+    // Live again (e.g. a merge moved stories back): the redirect must not shadow the page.
+    assert.equal(mergeRetired(retired, [], new Set(['/digest/2026-11-21/']), now).length, 0);
+  });
 });
