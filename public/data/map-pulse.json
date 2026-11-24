@@ -1,30 +1,8 @@
 {
-  "batchId": "batch-202611240518",
-  "generatedAt": "2026-11-24T05:18:00Z",
-  "nextUpdateAt": "2026-11-24T08:17:00Z",
+  "batchId": "batch-202611240818",
+  "generatedAt": "2026-11-24T08:18:00Z",
+  "nextUpdateAt": "2026-11-24T11:17:00Z",
   "countries": [
-    {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
-      "centroid": [
-        -98.5,
-        39.5
-      ],
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "topicCount": 28,
-      "topTopic": {
-        "slug": "nvidia-ceo-jensen-huang-security-investigation",
-        "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-        "headline": "Nvidia Reinstates Jensen Huang After Presidential Intervention",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 97,
-        "intensityTier": "surge"
-      }
-    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -34,16 +12,60 @@
         117,
         -2.5
       ],
-      "viralScore": 98,
+      "viralScore": 99,
       "intensityTier": "surge",
       "topicCount": 127,
       "topTopic": {
-        "slug": "vice-president-gibran-meets-president-prabowo",
-        "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
-        "headline": "Prabowo Subianto Nominates Amran Sulaiman and Sugiono for VP Roles",
+        "slug": "komisi-iii-dpr-serahkan-266-dim-ruu-tata-cara",
+        "canonicalPath": "/news/id/komisi-iii-dpr-serahkan-266-dim-ruu-tata-cara/",
+        "headline": "Komisi III DPR Bahas RUU Tata Cara Pidana Mati Bersama Pemerintah",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 95,
+        "viralScore": 96,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "BD",
+      "isoNumeric": "050",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "centroid": [
+        90.3,
+        23.7
+      ],
+      "viralScore": 98,
+      "intensityTier": "surge",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "sheikh-hasina-seeks-passport-for-return",
+        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
+        "headline": "Ousted Leader Sheikh Hasina Sets December 16 Return To Bangladesh",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 97,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
+      "centroid": [
+        -98.5,
+        39.5
+      ],
+      "viralScore": 94,
+      "intensityTier": "surge",
+      "topicCount": 27,
+      "topTopic": {
+        "slug": "nvidia-ceo-jensen-huang-security-investigation",
+        "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+        "headline": "Nvidia Reinstates Jensen Huang After Presidential Intervention",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 91,
         "intensityTier": "surge"
       }
     },
@@ -56,16 +78,16 @@
         79,
         22
       ],
-      "viralScore": 94,
+      "viralScore": 92,
       "intensityTier": "surge",
-      "topicCount": 58,
+      "topicCount": 63,
       "topTopic": {
-        "slug": "trump-proposes-cook-for-nvidia-role",
-        "canonicalPath": "/news/in/trump-proposes-cook-for-nvidia-role/",
-        "headline": "Nvidia shares surge 35.5% as tech giant reinstates Jensen Huang as CEO, chairman",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 91,
+        "slug": "fatal-bus-collision-assam-kaziranga",
+        "canonicalPath": "/news/in/fatal-bus-collision-assam-kaziranga/",
+        "headline": "Road Accidents Across India Lead To Multiple Fatalities In November",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 89,
         "intensityTier": "surge"
       }
     },
@@ -80,13 +102,13 @@
       ],
       "viralScore": 88,
       "intensityTier": "surge",
-      "topicCount": 72,
+      "topicCount": 73,
       "topTopic": {
         "slug": "brazil-senate-advances-lula-fiscal-package",
         "canonicalPath": "/news/br/brazil-senate-advances-lula-fiscal-package/",
-        "headline": "Câmara aprova texto-base do projeto de ajuste fiscal proposto pelo governo Lula",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
+        "headline": "Brazil Chamber Of Deputies Approves Lula Government Fiscal Package",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 85,
         "intensityTier": "surge"
       }
@@ -100,60 +122,16 @@
         -2,
         53.5
       ],
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "topicCount": 34,
-      "topTopic": {
-        "slug": "prime-minister-burnham-addresses-brexit-impact",
-        "canonicalPath": "/news/gb/prime-minister-burnham-addresses-brexit-impact/",
-        "headline": "Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit out over closer EU ties –…",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 82,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "BD",
-      "isoNumeric": "050",
-      "name": "Bangladesh",
-      "slug": "bangladesh",
-      "centroid": [
-        90.3,
-        23.7
-      ],
-      "viralScore": 80,
+      "viralScore": 84,
       "intensityTier": "high",
-      "topicCount": 2,
+      "topicCount": 35,
       "topTopic": {
-        "slug": "sheikh-hasina-seeks-passport-for-return",
-        "canonicalPath": "/news/bd/sheikh-hasina-seeks-passport-for-return/",
-        "headline": "Ousted PM Sheikh Hasina seeks passport in sign of Bangladesh return plan",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 79,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 71,
+        "slug": "manchester-united-sets-premier-league-record",
+        "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
+        "headline": "Champions League Games: English Clubs Prepare For Midweek Matches",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 81,
         "intensityTier": "high"
       }
     },
@@ -166,16 +144,16 @@
         104,
         35
       ],
-      "viralScore": 73,
+      "viralScore": 82,
       "intensityTier": "high",
       "topicCount": 10,
       "topTopic": {
         "slug": "chinese-official-sentenced-to-death-for-spying-leaking-national",
         "canonicalPath": "/news/cn/chinese-official-sentenced-to-death-for-spying-leaking-national/",
-        "headline": "Chinese Official Sentenced To Death For Spying, Leaking National Secrets",
+        "headline": "Chinese Official Sentenced To Death For Spying And Leaking Secrets",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 70,
+        "viralScore": 79,
         "intensityTier": "high"
       }
     },
@@ -188,16 +166,16 @@
         127.8,
         36.3
       ],
-      "viralScore": 73,
+      "viralScore": 79,
       "intensityTier": "high",
-      "topicCount": 33,
+      "topicCount": 38,
       "topTopic": {
-        "slug": "lee-jae-myung-asean-summit-manila",
-        "canonicalPath": "/news/kr/lee-jae-myung-asean-summit-manila/",
-        "headline": "(LEAD) S. Korea's Lee calls for stronger joint crisis response by ASEAN, Korea, China, Japan",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 70,
+        "slug": "south-korean-tax-exam-ai-scandal",
+        "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+        "headline": "South Korea Imposes Stricter Penalties Following AI Exam Scandal",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 76,
         "intensityTier": "high"
       }
     },
@@ -210,7 +188,7 @@
         -102.5,
         23.6
       ],
-      "viralScore": 71,
+      "viralScore": 76,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
@@ -219,50 +197,50 @@
         "headline": "Mexico Military Arrests Cartel Leader El Chapo Isidro In Sinaloa",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 68,
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "AU",
-      "isoNumeric": "036",
-      "name": "Australia",
-      "slug": "australia",
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
       "centroid": [
-        134,
-        -25.5
+        102.3,
+        3.8
       ],
-      "viralScore": 70,
+      "viralScore": 76,
       "intensityTier": "high",
-      "topicCount": 51,
+      "topicCount": 14,
       "topTopic": {
-        "slug": "ponga-leads-new-zealand-world-cup",
-        "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-        "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 67,
+        "slug": "high-court-najib-house-arrest-order",
+        "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+        "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 73,
         "intensityTier": "high"
       }
     },
     {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
       "centroid": [
-        60,
-        58
+        2.4,
+        46.6
       ],
       "viralScore": 70,
       "intensityTier": "high",
-      "topicCount": 9,
+      "topicCount": 12,
       "topTopic": {
-        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-        "headline": "Immigration Authorities Prevent Indonesians Joining Russian Army",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
+        "slug": "missiles-russian-drone-impact-poland",
+        "canonicalPath": "/news/fr/missiles-russian-drone-impact-poland/",
+        "headline": "French Mayors Hesitant to Back Candidates for 2027 Presidential Race",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 67,
         "intensityTier": "high"
       }
@@ -276,82 +254,82 @@
         103.82,
         1.35
       ],
-      "viralScore": 67,
+      "viralScore": 69,
       "intensityTier": "high",
-      "topicCount": 34,
+      "topicCount": 41,
       "topTopic": {
         "slug": "nvidia-ceo-jensen-huang-resigns-2",
         "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-resigns-2/",
         "headline": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
         "categorySlug": "technology-ai",
         "categoryName": "Technology & AI",
-        "viralScore": 64,
+        "viralScore": 66,
         "intensityTier": "high"
       }
     },
     {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        102.3,
-        3.8
+        60,
+        58
       ],
-      "viralScore": 65,
+      "viralScore": 68,
       "intensityTier": "high",
-      "topicCount": 17,
+      "topicCount": 10,
       "topTopic": {
-        "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
-        "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
-        "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 62,
+        "slug": "allies-say-russia-may-launch-nuclear-space-weapon-next",
+        "canonicalPath": "/news/ru/allies-say-russia-may-launch-nuclear-space-weapon-next/",
+        "headline": "NATO vows space defence after Russia nuclear satellite report",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 65,
         "intensityTier": "high"
       }
     },
     {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
       "centroid": [
-        31.2,
-        49
+        53.7,
+        32.4
       ],
-      "viralScore": 63,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "ukraine-claims-sinking-of-russian-warship",
-        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-        "headline": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 61,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 62,
+      "viralScore": 67,
       "intensityTier": "high",
       "topicCount": 4,
       "topTopic": {
-        "slug": "cop31-climate-summit-antalya-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
-        "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
+        "slug": "explosions-reported-strait-hormuz-iran",
+        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
+        "headline": "Two Oil Tankers Hit By Mines In The Strait Of Hormuz",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 60,
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "AU",
+      "isoNumeric": "036",
+      "name": "Australia",
+      "slug": "australia",
+      "centroid": [
+        134,
+        -25.5
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 52,
+      "topTopic": {
+        "slug": "ponga-leads-new-zealand-world-cup",
+        "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+        "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 61,
         "intensityTier": "high"
       }
     },
@@ -364,7 +342,7 @@
         -3.7,
         40.2
       ],
-      "viralScore": 62,
+      "viralScore": 60,
       "intensityTier": "high",
       "topicCount": 6,
       "topTopic": {
@@ -373,29 +351,29 @@
         "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 59,
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
       "centroid": [
-        37.9,
-        0.2
+        35.2,
+        39
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
-      "topicCount": 16,
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 4,
       "topTopic": {
-        "slug": "ruto-highlights-agricultural-economic-impact",
-        "canonicalPath": "/news/ke/ruto-highlights-agricultural-economic-impact/",
-        "headline": "President William Ruto Defends His Administration's Economic Record",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 58,
+        "slug": "cop31-climate-summit-antalya-turkey",
+        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
+        "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -422,46 +400,24 @@
       }
     },
     {
-      "code": "DE",
-      "isoNumeric": "276",
-      "name": "Germany",
-      "slug": "germany",
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
       "centroid": [
-        10.4,
-        51.1
+        31.2,
+        49
       ],
-      "viralScore": 57,
+      "viralScore": 58,
       "intensityTier": "active",
-      "topicCount": 2,
+      "topicCount": 5,
       "topTopic": {
-        "slug": "over-450-german-schools-receive-bomb-threats",
-        "canonicalPath": "/news/de/over-450-german-schools-receive-bomb-threats/",
-        "headline": "Schools across Germany and Denmark receive bomb threats",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
+        "slug": "ukraine-claims-sinking-of-russian-warship",
+        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
+        "headline": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
         "viralScore": 56,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 13,
-      "topTopic": {
-        "slug": "france-more-than-600-000-protest-as-anger-grows",
-        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
-        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
-        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -474,16 +430,60 @@
         8.1,
         9.6
       ],
+      "viralScore": 57,
+      "intensityTier": "active",
+      "topicCount": 63,
+      "topTopic": {
+        "slug": "six-killed-in-delta-campaign-attack",
+        "canonicalPath": "/news/ng/six-killed-in-delta-campaign-attack/",
+        "headline": "Six People Reported Dead Following Attack In Delta State Campaign",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 18,
+      "topTopic": {
+        "slug": "ruto-highlights-agricultural-economic-impact",
+        "canonicalPath": "/news/ke/ruto-highlights-agricultural-economic-impact/",
+        "headline": "President William Ruto Defends His Administration's Economic Record",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 53,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "DE",
+      "isoNumeric": "276",
+      "name": "Germany",
+      "slug": "germany",
+      "centroid": [
+        10.4,
+        51.1
+      ],
       "viralScore": 55,
       "intensityTier": "active",
-      "topicCount": 61,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "fountain-of-life-church-leadership-dispute",
-        "canonicalPath": "/news/ng/fountain-of-life-church-leadership-dispute/",
-        "headline": "Fountain of Life crisis: Court restrains Jimmy Odukoya as senior pastor",
+        "slug": "over-450-german-schools-receive-bomb-threats",
+        "canonicalPath": "/news/de/over-450-german-schools-receive-bomb-threats/",
+        "headline": "Schools across Germany and Denmark receive bomb threats",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 52,
+        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -496,7 +496,7 @@
         45,
         24
       ],
-      "viralScore": 54,
+      "viralScore": 51,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
@@ -505,7 +505,7 @@
         "headline": "Reports Emerge Of Fatal Airstrikes And Clashes Within Yemen Regions",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 53,
+        "viralScore": 50,
         "intensityTier": "active"
       }
     },
@@ -532,28 +532,6 @@
       }
     },
     {
-      "code": "JP",
-      "isoNumeric": "392",
-      "name": "Japan",
-      "slug": "japan",
-      "centroid": [
-        138.5,
-        36.5
-      ],
-      "viralScore": 50,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "japan-protests-russian-airspace-violation",
-        "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
-        "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 50,
-        "intensityTier": "active"
-      }
-    },
-    {
       "code": "IT",
       "isoNumeric": "380",
       "name": "Italy",
@@ -562,7 +540,7 @@
         12.6,
         42.8
       ],
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -571,7 +549,29 @@
         "headline": "AC Milan Advances To Fourth Place Following Victory Over Genoa",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 45,
+        "viralScore": 44,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "JP",
+      "isoNumeric": "392",
+      "name": "Japan",
+      "slug": "japan",
+      "centroid": [
+        138.5,
+        36.5
+      ],
+      "viralScore": 46,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "japan-protests-russian-airspace-violation",
+        "canonicalPath": "/news/jp/japan-protests-russian-airspace-violation/",
+        "headline": "Japan Lodges Protest After Russian Aircraft Enter National Airspace",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 46,
         "intensityTier": "active"
       }
     },
@@ -584,7 +584,7 @@
         24.7,
         -29
       ],
-      "viralScore": 47,
+      "viralScore": 41,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -593,7 +593,7 @@
         "headline": "Africa's 1st 'comfort women' statue to be unveiled in South Africa",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 47,
+        "viralScore": 41,
         "intensityTier": "active"
       }
     },
@@ -628,7 +628,7 @@
         -106.3,
         56.1
       ],
-      "viralScore": 38,
+      "viralScore": 35,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -637,7 +637,7 @@
         "headline": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 38,
+        "viralScore": 35,
         "intensityTier": "active"
       }
     },

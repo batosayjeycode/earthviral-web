@@ -1,63 +1,52 @@
 {
-  "batchId": "batch-202611240518",
-  "generatedAt": "2026-11-24T05:18:00Z",
-  "nextUpdateAt": "2026-11-24T08:17:00Z",
+  "batchId": "batch-202611240818",
+  "generatedAt": "2026-11-24T08:18:00Z",
+  "nextUpdateAt": "2026-11-24T11:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 30,
-    "viralTopics": 612,
-    "globalIndex": 84
+    "viralTopics": 633,
+    "globalIndex": 87
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 42,
+    "feedsOk": 41,
     "feedsFailed": [
+      "detik: fetch failed",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1711,
-    "newClusters": 8,
-    "updatedClusters": 109,
+    "articlesFetched": 1609,
+    "newClusters": 13,
+    "updatedClusters": 115,
     "retiredClusters": 0,
-    "aiCalls": 61,
-    "fallbackSummaries": 148,
+    "aiCalls": 58,
+    "fallbackSummaries": 117,
+    "trendTitles": {
+      "targeted": 9,
+      "inTitle": 6
+    },
     "titleNames": {
-      "kept": 1,
-      "headline": 1,
-      "previous": 0,
-      "missing": 0,
-      "no-anchor": 3
+      "kept": 18,
+      "headline": 2,
+      "previous": 4,
+      "missing": 1,
+      "no-anchor": 15
     },
     "digestSummaries": {
-      "written": 0,
-      "kept": 17,
-      "pending": 4,
-      "failed": 4
+      "written": 4,
+      "kept": 16,
+      "pending": 0,
+      "failed": 0
     },
     "aiFailures": {
-      "rate-limit": 56
+      "server-error": 1
     },
     "aiFailureSamples": [
       {
-        "category": "rate-limit",
-        "detail": "HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
       }
     ],
-    "durationMs": 230644
+    "durationMs": 416920
   }
 }

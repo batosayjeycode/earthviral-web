@@ -6,35 +6,29 @@
   "countryName": "South Korea",
   "countrySlug": "south-korea",
   "region": "Asia",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "(LEAD) Seoul shares plunge over 5 pct as Anthropic debut fails to ease AI concerns",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "Seoul Shares Rebound Over 6 Percent Following Jensen Huang Return",
   "seoTitle": "(LEAD) Seoul shares plunge over 5 pct as Anthropic debut…",
-  "metaDescription": "2 independent outlets are covering this story, with coverage accelerating in the latest batch. Yonhap reports: (LEAD) Seoul shares plunge over 5 pct as…",
+  "metaDescription": "South Korean stock indices surged by more than 6 percent on Tuesday, recovering from recent declines following news of Jensen Huang's return to Nvidia.",
   "aiSummaryBullets": [
-    "Yonhap reports: (LEAD) Seoul shares plunge over 5 pct as Anthropic debut fails to ease AI concerns",
-    "The Korea Herald reports: Seoul shares plunge over 5% as Anthropic debut fails to ease AI concerns"
+    "The Korea Composite Stock Price Index gained 6.32 percent, closing at 5,006.03 points on Tuesday.",
+    "The market recovery follows a period of volatility and a previous two-day rout linked to concerns over artificial intelligence developments.",
+    "Financial analysts attribute the rebound to investor optimism surrounding Jensen Huang's return to leadership at Nvidia."
   ],
-  "aiContextParagraph": "This story about South Korea has been reported by The Korea Herald and Yonhap since 2026-11-19. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "2 independent outlets are covering this story, with coverage accelerating in the latest batch.",
-  "viralScore": 55,
-  "intensityTier": "active",
+  "aiContextParagraph": "The South Korean stock market experienced a significant recovery on Tuesday, with the benchmark Korea Composite Stock Price Index increasing by 297.49 points to close at 5,006.03. This rebound marks a reversal of a downward trend that persisted over the preceding two days, during which shares faced pressure amid concerns surrounding the artificial intelligence sector and the market debut of Anthropic. Market participants reported that investor confidence improved following the confirmed return of Jensen Huang to lead Nvidia, which prompted a rally among regional chipmakers. Alongside the rise in equity prices, the Korean won also recorded gains against the US dollar. The shift in market sentiment reflects broader reactions to executive leadership changes within major technology firms and their influence on global investor sentiment regarding the chip industry's stability and future growth trajectory.",
+  "whyItIsViral": "The event is being widely reported by two major independent outlets with rapid coverage velocity as the market recovers from significant previous losses.",
+  "viralScore": 70,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 54,
+    "coverageVelocityScore": 87,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Emerging Coverage"
   },
   "firstDetectedAt": "2026-11-19T08:01:26Z",
-  "lastUpdatedBatchAt": "2026-11-24T02:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-24T08:18:00Z",
   "sources": [
-    {
-      "publisherName": "Yonhap",
-      "publisherDomain": "en.yna.co.kr",
-      "articleTitle": "(LEAD) Seoul shares end higher ahead of Anthropic's stock market debut",
-      "articleUrl": "https://en.yna.co.kr/view/AEN20261119006551320",
-      "publishedAt": "2026-11-19T08:01:26Z"
-    },
     {
       "publisherName": "Yonhap",
       "publisherDomain": "en.yna.co.kr",
@@ -209,30 +203,69 @@
       "articleTitle": "Seoul shares open sharply higher after Jensen Huang returns",
       "articleUrl": "https://www.koreaherald.com/article/10947072",
       "publishedAt": "2026-11-24T00:59:45Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(URGENT) Seoul shares rebound over 6 pct on Huang's return",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261124006600320",
+      "publishedAt": "2026-11-24T06:31:42Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "Seoul shares rebound over 6 pct on Huang's return",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261124006700320",
+      "publishedAt": "2026-11-24T06:32:06Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(LEAD) Seoul shares rebound over 6 pct on Huang's return",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261124006751320",
+      "publishedAt": "2026-11-24T06:54:20Z"
+    },
+    {
+      "publisherName": "The Korea Herald",
+      "publisherDomain": "koreaherald.com",
+      "articleTitle": "Seoul shares rebound over 6% on Huang's return",
+      "articleUrl": "https://www.koreaherald.com/article/10947793",
+      "publishedAt": "2026-11-24T07:19:27Z"
+    },
+    {
+      "publisherName": "Yonhap",
+      "publisherDomain": "en.yna.co.kr",
+      "articleTitle": "(2nd LD) Seoul shares rebound over 6 pct on Huang's return",
+      "articleUrl": "https://en.yna.co.kr/view/AEN20261124006752320",
+      "publishedAt": "2026-11-24T07:34:56Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Anthropic",
-      "slug": "anthropic"
+      "name": "Jensen Huang",
+      "slug": "jensen-huang"
     },
     {
-      "name": "LEAD",
-      "slug": "lead"
+      "name": "Nvidia",
+      "slug": "nvidia"
     },
     {
-      "name": "URGENT",
-      "slug": "urgent"
+      "name": "KOSPI",
+      "slug": "kospi"
+    },
+    {
+      "name": "South Korea",
+      "slug": "south-korea"
     }
   ],
   "relatedInCountrySlugs": [
-    "lee-jae-myung-asean-summit-manila",
-    "urgent-krx-activates-buy-side-sidecar-for-kospi-on",
-    "seoul-issues-emergency-alert-for-ulleung-island-after-suspected"
+    "nvidia-reaffirms-gpu-supply-to-korea",
+    "south-korean-tax-exam-ai-scandal",
+    "seoul-stocks-decline-ai-market-uncertainty"
   ],
   "relatedInCategorySlugs": [
-    "anthropic-ipo-valuation-shares",
-    "lutnick-faces-pressure-nvidia-spy-scandal",
-    "rubio-denies-coordinated-cyberattack-us-outages"
+    "trump-proposes-cook-for-nvidia-role",
+    "jensen-huang-resigns-as-nvidia-ceo",
+    "wall-st-roars-back-as-jensen-huang-returns-to"
   ]
 }
