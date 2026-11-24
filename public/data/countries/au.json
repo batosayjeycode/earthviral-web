@@ -3,10 +3,27 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 56,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-24T19:31:00Z",
+  "viralScore": 66,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-24T20:18:00Z",
   "clusters": [
+    {
+      "slug": "jim-chalmers-warns-of-economic-hardship",
+      "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
+      "headline": "Treasurer Jim Chalmers Signals Public Service Cuts Amid Deficit Risks",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Treasurer Jim Chalmers stated inflation is projected to reach 4.8% as the government prepares for a mid-year budget update.",
+        "The federal government is identifying potential savings through increased efficiency within the public service sector."
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
+      }
+    },
     {
       "slug": "australian-teen-rescued-from-bush",
       "canonicalPath": "/news/au/australian-teen-rescued-from-bush/",
@@ -76,12 +93,29 @@
       }
     },
     {
+      "slug": "wall-street-stocks-drop-ai-selloff",
+      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
+      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
+        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+      }
+    },
+    {
       "slug": "oncologist-and-physicist-both-win-australias-top-science-prize",
       "canonicalPath": "/news/au/oncologist-and-physicist-both-win-australias-top-science-prize/",
       "headline": "Oncologist and physicist both win Australia's top science prize",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 50,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ABC reports: Oncologist and physicist both win Australia's top science prize",
@@ -98,7 +132,7 @@
       "headline": "Former Officer Testifies In Sydney Double Murder Trial Proceedings",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 48,
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The defendant is currently undergoing cross-examination in a Sydney court regarding alleged double murder charges.",
@@ -107,23 +141,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
-      }
-    },
-    {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
-        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
       }
     },
     {
@@ -195,6 +212,23 @@
       }
     },
     {
+      "slug": "victorian-state-election-campaign-launches",
+      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+      "headline": "Parties Launch Campaigns Ahead Of The Victorian State Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Victorian Premier Ben Carroll highlighted his party's track record and proposals regarding the state's public health system.",
+        "Opposition Leader Jess Wilson criticized the incumbent government's policies, arguing they have negatively impacted the state's vibrancy."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
+    {
       "slug": "australian-digital-duty-of-care-negotiations",
       "canonicalPath": "/news/au/australian-digital-duty-of-care-negotiations/",
       "headline": "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty…",
@@ -217,7 +251,7 @@
       "headline": "Two arrested after break-in at Kate and William's estate",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ABC reports: Two arrested after break-in at Kate and William's estate",
@@ -226,23 +260,6 @@
       "primarySource": {
         "publisherName": "The West Australian",
         "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
-      }
-    },
-    {
-      "slug": "jim-chalmers-warns-of-economic-hardship",
-      "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
-      "headline": "Treasurer Jim Chalmers Warns Of Economic Challenges In Australia",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Treasurer Jim Chalmers announced that upcoming government budget forecasts will show increased unemployment and slower economic growth.",
-        "The federal government expects economic growth to remain below two percent for the years 2027 and 2028 due to domestic and international pressures."
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
       }
     },
     {
@@ -280,40 +297,6 @@
       }
     },
     {
-      "slug": "wall-street-stocks-drop-ai-selloff",
-      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
-      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
-        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
-      }
-    },
-    {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
-        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
-      }
-    },
-    {
       "slug": "nsw-shelves-real-estate-reforms",
       "canonicalPath": "/news/au/nsw-shelves-real-estate-reforms/",
       "headline": "New South Wales Government Shelves Real Estate Underquoting Laws",
@@ -331,12 +314,29 @@
       }
     },
     {
+      "slug": "afl-draft-prospects-knee-recovery",
+      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
+      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
+        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+      }
+    },
+    {
       "slug": "donald-and-salt-pepper-aussies-to-square-t20-series",
       "canonicalPath": "/news/au/donald-and-salt-pepper-aussies-to-square-t20-series/",
       "headline": "Donald and Salt pepper Aussies to square T20 series",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 38,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The West Australian reports: Donald and Salt pepper Aussies to square T20 series",
