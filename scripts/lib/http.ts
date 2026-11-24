@@ -51,7 +51,7 @@ export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Prom
       if (res.ok) return res;
       const retryable = res.status === 429 || res.status >= 500;
       const body = await res.text().catch(() => '');
-      lastError = new HttpError(res.status, url, body.slice(0, 500));
+      lastError = new HttpError(res.status, url, body.slice(0, 4000));
       if (!retryable) break;
       const suggested = suggestedRetryMs(res.headers.get('retry-after'), body);
       if (attempt < retries) await sleep(suggested ?? backoffMs * 2 ** attempt);
