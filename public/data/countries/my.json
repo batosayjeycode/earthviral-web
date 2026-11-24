@@ -3,35 +3,18 @@
   "name": "Malaysia",
   "slug": "malaysia",
   "region": "Asia",
-  "viralScore": 68,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-24T11:18:00Z",
+  "viralScore": 58,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-24T14:18:00Z",
   "clusters": [
-    {
-      "slug": "high-court-najib-house-arrest-order",
-      "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
-      "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Home Minister Saifuddin Nasution Ismail is scheduled to address the Dewan Rakyat regarding the specific terms of the house arrest order.",
-        "The Attorney General requested a fresh court order to facilitate the transition to house arrest following recent legal discussions."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/najibs-taman-duta-residence-gazetted-as-prison-house-arrest-deferred-pending-legal-clarification/242268"
-      }
-    },
     {
       "slug": "rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling",
       "canonicalPath": "/news/my/rohingya-refugee-leader-expresses-gratitude-following-icj-genocide-ruling/",
       "headline": "International Court Of Justice Finds Myanmar Committed Genocide",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The International Court of Justice has issued a formal ruling stating that genocide occurred against the Rohingya in Myanmar.",
         "Rohingya refugee leaders have publicly acknowledged the court's decision, expressing gratitude for the legal determination."
@@ -47,7 +30,7 @@
       "headline": "Malaysia Probes SpeedMatrix Over Potential AI Chip Diversion Claims",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 57,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Malaysian authorities are investigating SpeedMatrix for the possible diversion of artificial intelligence chips.",
@@ -59,12 +42,29 @@
       }
     },
     {
+      "slug": "high-court-najib-house-arrest-order",
+      "canonicalPath": "/news/my/high-court-najib-house-arrest-order/",
+      "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Home Minister Saifuddin Nasution Ismail is scheduled to address the Dewan Rakyat regarding the specific terms of the house arrest order.",
+        "The Attorney General requested a fresh court order to facilitate the transition to house arrest following recent legal discussions."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/najibs-taman-duta-residence-gazetted-as-prison-house-arrest-deferred-pending-legal-clarification/242268"
+      }
+    },
+    {
       "slug": "malaysia-set-to-repatriate-thousands-more-myanmar-migrants-pm",
       "canonicalPath": "/news/my/malaysia-set-to-repatriate-thousands-more-myanmar-migrants-pm/",
       "headline": "Malaysia set to repatriate thousands more Myanmar migrants: PM",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 57,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "CNA reports: Malaysia set to repatriate thousands more Myanmar migrants: PM"
@@ -75,12 +75,63 @@
       }
     },
     {
+      "slug": "police-reviewing-khoos-remarks-over-friday-prayer-business-closure",
+      "canonicalPath": "/news/my/police-reviewing-khoos-remarks-over-friday-prayer-business-closure/",
+      "headline": "Police reviewing Khoo’s remarks over Friday prayer business closure rule",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "theSun reports: Police reviewing Khoo’s remarks over Friday prayer business closure rule",
+        "Malaysiakini reports: Let police investigate, PM says over Khoo's Terengganu prayer policy remarks"
+      ],
+      "primarySource": {
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889729-pm-to-let-police-investigate-khoos-terengganu-prayer-policy-remarks"
+      }
+    },
+    {
+      "slug": "pardons-board-minutes-declassified-najib-razak",
+      "canonicalPath": "/news/my/pardons-board-minutes-declassified-najib-razak/",
+      "headline": "Pardons Board Minutes Declassified For Najib Razak House Arrest Case",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Home Minister Saifuddin Nasution Ismail confirmed the declassification of specific Pardons Board meeting minutes.",
+        "The documents were released to support the Attorney General's Chambers in preparing an affidavit for a legal proceeding."
+      ],
+      "primarySource": {
+        "publisherName": "theSun",
+        "articleUrl": "https://thesun.my/news/pardons-board-meeting-minutes-declassified-to-facilitate-agc-affidavit-saifuddin/"
+      }
+    },
+    {
+      "slug": "malaysia-heavy-rain-flood-warnings",
+      "canonicalPath": "/news/my/malaysia-heavy-rain-flood-warnings/",
+      "headline": "MetMalaysia Issues Heavy Rainfall And Flash Flood Alerts In Malaysia",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Malaysian Meteorological Department issued heavy rain and thunderstorm warnings affecting four states.",
+        "Six districts in Terengganu are under flood alerts as officials expect consistent rainfall over four days."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/six-terengganu-districts-on-flood-alert-as-four-days-of-rain-forecast/242334"
+      }
+    },
+    {
       "slug": "bojan-hodak-malaysia-national-team-coach",
       "canonicalPath": "/news/my/bojan-hodak-malaysia-national-team-coach/",
       "headline": "Bojan Hodak Officially Appointed As Head Coach Of Malaysia Team",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Football Association of Malaysia has formally selected Bojan Hodak to lead the national football team.",
@@ -123,40 +174,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/internasional/d-8764336/malaysia-bongkar-kasus-narkoba-di-markas-angkatan-udara-sita-96-kg-sabu"
-      }
-    },
-    {
-      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
-      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
-      "headline": "Negeri Sembilan Menteri Besar Ismail Lasim Hospitalised In Seremban",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Negeri Sembilan Menteri Besar Datuk Ismail Lasim is currently hospitalised in Seremban for health reasons.",
-        "Family members and personal aides have confirmed that his condition is stable and showing signs of improvement."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
-      }
-    },
-    {
-      "slug": "pardons-board-minutes-declassified-najib-razak",
-      "canonicalPath": "/news/my/pardons-board-minutes-declassified-najib-razak/",
-      "headline": "Pardons Board Minutes Declassified For Najib Razak House Arrest Case",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Home Minister Saifuddin Nasution Ismail confirmed the declassification of specific Pardons Board meeting minutes.",
-        "The documents were released to support the Attorney General's Chambers in preparing an affidavit for a legal proceeding."
-      ],
-      "primarySource": {
-        "publisherName": "theSun",
-        "articleUrl": "https://thesun.my/news/pardons-board-meeting-minutes-declassified-to-facilitate-agc-affidavit-saifuddin/"
       }
     },
     {
@@ -208,23 +225,6 @@
       "primarySource": {
         "publisherName": "Malaysiakini",
         "articleUrl": "https://www.malaysiakini.com/news/889550-n-sembilan-political-tussle-twenty-four-state-bn-pn-vow-to-back-party-leaderships-directive"
-      }
-    },
-    {
-      "slug": "charles-leclerc-ferrari-las-vegas-crash",
-      "canonicalPath": "/news/my/charles-leclerc-ferrari-las-vegas-crash/",
-      "headline": "Ferrari Principal Criticizes Charles Leclerc After Las Vegas Crash",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "Ferrari team principal Fred Vasseur criticized Charles Leclerc following a collision with teammate Lewis Hamilton.",
-        "The incident occurred during the Las Vegas Grand Prix race weekend."
-      ],
-      "primarySource": {
-        "publisherName": "theSun",
-        "articleUrl": "https://thesun.my/sports/f1/ferrari-boss-furious-after-leclerc-and-hamilton-clash-again/"
       }
     },
     {
@@ -296,6 +296,23 @@
       }
     },
     {
+      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
+      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
+      "headline": "Negeri Sembilan Menteri Besar Ismail Lasim Hospitalised In Seremban",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Negeri Sembilan Menteri Besar Datuk Ismail Lasim is currently hospitalised in Seremban for health reasons.",
+        "Family members and personal aides have confirmed that his condition is stable and showing signs of improvement."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
+      }
+    },
+    {
       "slug": "macron-visit-malaysia-rare-earth",
       "canonicalPath": "/news/my/macron-visit-malaysia-rare-earth/",
       "headline": "President Macron To Visit Malaysia For Rare Earth Supply Security",
@@ -327,23 +344,6 @@
       "primarySource": {
         "publisherName": "Malay Mail",
         "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/anwar-open-to-easing-foreign-worker-rules-for-sectors-facing-shortages-warns-against-exploitation/242266"
-      }
-    },
-    {
-      "slug": "gardenia-bakeries-clarifies-business-operations",
-      "canonicalPath": "/news/my/gardenia-bakeries-clarifies-business-operations/",
-      "headline": "Gardenia Bakeries Clarifies Separate Operations After Poisoning Case",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Gardenia Bakeries (East Malaysia) stated its operations are distinct from other regional business units.",
-        "The clarification follows reports of food poisoning incidents in the region."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/10/gardenia-east-malaysia-issues-corporate-clarification-amid-food-poisoning-case/242647"
       }
     }
   ]

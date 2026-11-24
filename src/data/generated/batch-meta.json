@@ -1,12 +1,12 @@
 {
-  "batchId": "batch-202611241118",
-  "generatedAt": "2026-11-24T11:18:00Z",
-  "nextUpdateAt": "2026-11-24T14:17:00Z",
+  "batchId": "batch-202611241418",
+  "generatedAt": "2026-11-24T14:18:00Z",
+  "nextUpdateAt": "2026-11-24T17:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 30,
-    "viralTopics": 643,
-    "globalIndex": 87
+    "activeCountries": 33,
+    "viralTopics": 651,
+    "globalIndex": 88
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
@@ -14,31 +14,28 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1721,
-    "newClusters": 14,
-    "updatedClusters": 128,
+    "articlesFetched": 1727,
+    "newClusters": 17,
+    "updatedClusters": 112,
     "retiredClusters": 0,
-    "aiCalls": 70,
-    "fallbackSummaries": 94,
-    "trendTitles": {
-      "targeted": 9,
-      "inTitle": 9
-    },
+    "aiCalls": 61,
+    "fallbackSummaries": 140,
     "titleNames": {
-      "kept": 26,
+      "kept": 0,
       "headline": 0,
-      "previous": 4,
-      "missing": 3,
-      "no-anchor": 20
+      "previous": 0,
+      "missing": 0,
+      "no-anchor": 0
     },
     "digestSummaries": {
-      "written": 2,
-      "kept": 18,
-      "pending": 0,
-      "failed": 0
+      "written": 0,
+      "kept": 20,
+      "pending": 2,
+      "failed": 2
     },
     "aiFailures": {
-      "server-error": 2
+      "server-error": 32,
+      "rate-limit": 29
     },
     "aiFailureSamples": [
       {
@@ -48,8 +45,20 @@
       {
         "category": "server-error",
         "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "server-error",
+        "detail": "HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429 [GenerateRequestsPerMinutePerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistu"
       }
     ],
-    "durationMs": 727767
+    "durationMs": 637891
   }
 }
