@@ -629,6 +629,29 @@ describe('fallback summary', () => {
     assert.ok(out.seoTitle.length <= 60 && out.metaDescription.length <= 158);
     assert.deepEqual(out.entityTags, ['Bank Indonesia', 'Suku Bunga']); // recurring phrases, longest/most frequent first
   });
+
+  it('leads the meta description with the story, so equal metrics never collide', () => {
+    const metrics = {
+      viralScore: 95,
+      publishers: 4,
+      velocity: 80,
+      search: 60,
+      trendKeyword: 'delhi high court',
+    };
+    const describe = (title: string) =>
+      heuristicSummary({
+        countryCode: 'IN',
+        countryName: 'India',
+        articles: [{ publisherName: 'NDTV', title, snippet: '', publishedAt: hoursAgo(1) }],
+        metrics,
+      }).metaDescription;
+    const a = describe('Kerala High Court quashes suspension of Sanskrit varsity students');
+    const b = describe('Tensions rise over Karthigai Deepam lighting in Tamil Nadu');
+    assert.notEqual(a, b);
+    assert.ok(
+      a.startsWith('Kerala High Court quashes suspension of Sanskrit varsity students. 4 '),
+    );
+  });
 });
 
 describe('utilities', () => {
