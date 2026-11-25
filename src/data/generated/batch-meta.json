@@ -1,11 +1,11 @@
 {
-  "batchId": "batch-202611250218",
-  "generatedAt": "2026-11-25T02:18:00Z",
-  "nextUpdateAt": "2026-11-25T05:17:00Z",
+  "batchId": "batch-202611250518",
+  "generatedAt": "2026-11-25T05:18:00Z",
+  "nextUpdateAt": "2026-11-25T08:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 35,
-    "viralTopics": 659,
+    "viralTopics": 663,
     "globalIndex": 87
   },
   "pipeline": {
@@ -14,18 +14,22 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1738,
-    "newClusters": 13,
-    "updatedClusters": 107,
+    "articlesFetched": 1747,
+    "newClusters": 9,
+    "updatedClusters": 106,
     "retiredClusters": 0,
-    "aiCalls": 55,
-    "fallbackSummaries": 162,
+    "aiCalls": 48,
+    "fallbackSummaries": 186,
+    "trendTitles": {
+      "targeted": 1,
+      "inTitle": 1
+    },
     "titleNames": {
-      "kept": 1,
+      "kept": 2,
       "headline": 0,
       "previous": 0,
       "missing": 0,
-      "no-anchor": 1
+      "no-anchor": 0
     },
     "digestSummaries": {
       "written": 0,
@@ -34,7 +38,7 @@
       "failed": 2
     },
     "aiFailures": {
-      "rate-limit": 53
+      "rate-limit": 46
     },
     "aiFailureSamples": [
       {
@@ -58,6 +62,6 @@
         "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
       }
     ],
-    "durationMs": 213344
+    "durationMs": 160149
   }
 }
