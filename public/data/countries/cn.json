@@ -3,17 +3,51 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 80,
+  "viralScore": 81,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T11:18:00Z",
+  "generatedAt": "2026-11-25T15:43:00Z",
   "clusters": [
+    {
+      "slug": "trump-imposes-new-tariffs-on-eu-and-china-despite",
+      "canonicalPath": "/news/cn/trump-imposes-new-tariffs-on-eu-and-china-despite/",
+      "headline": "Trump imposes new tariffs on EU and China despite electoral setback",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Le Monde reports: Trump imposes new tariffs on EU and China despite electoral setback",
+        "France 24 reports: Trump announces new tariffs on EU, China despite US midterms defeat"
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat"
+      }
+    },
+    {
+      "slug": "china-to-launch-shenzhou-24-spaceship-with-first-foreign",
+      "canonicalPath": "/news/cn/china-to-launch-shenzhou-24-spaceship-with-first-foreign/",
+      "headline": "China to launch first space mission with a foreign astronaut",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 77,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "France 24 reports: China to launch first space mission with a foreign astronaut",
+        "CBS News reports: China launches first foreign astronaut to its space station"
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/china/shenzhou-24-china-spaceship-carrying-three-all-set-to-lift-off-with-pakistani-astronaut/articleshow/136118222.cms"
+      }
+    },
     {
       "slug": "nvidia-investigates-ceo-espionage-allegations",
       "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
       "headline": "Jensen Huang Reinstated As Nvidia CEO Amid Espionage Allegations",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 77,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Nvidia's board has reinstated Jensen Huang as CEO following recent espionage allegations.",
@@ -25,46 +59,12 @@
       }
     },
     {
-      "slug": "china-probes-shanghai-party-boss-politburo-member-chen",
-      "canonicalPath": "/news/cn/china-probes-shanghai-party-boss-politburo-member-chen/",
-      "headline": "China Investigates Shanghai Party Chief And Politburo Member Chen",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 68,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Shanghai party chief Chen Jining is currently under investigation by authorities.",
-        "The official is a member of the Politburo, one of China's highest governing bodies."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/24/xis-anti-corruption-campaign-targets-shanghai-party-chief-chen-jining?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "china-to-launch-shenzhou-24-spaceship-with-first-foreign",
-      "canonicalPath": "/news/cn/china-to-launch-shenzhou-24-spaceship-with-first-foreign/",
-      "headline": "China to launch Shenzhou-24 spaceship with first foreign astronaut",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "CNA reports: China to launch Shenzhou-24 spaceship with first foreign astronaut",
-        "France 24 reports: China to launch first space mission with a foreign astronaut"
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/china/shenzhou-24-china-spaceship-carrying-three-all-set-to-lift-off-with-pakistani-astronaut/articleshow/136118222.cms"
-      }
-    },
-    {
       "slug": "trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata",
       "canonicalPath": "/news/cn/trump-bela-ceo-nvidia-yang-diduga-selingkuh-dengan-mata/",
       "headline": "EUA buscam respostas sobre vendas de chips da Nvidia a China, diz Bessent",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 65,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "CNN Brasil reports: EUA buscam respostas sobre vendas de chips da Nvidia a China, diz Bessent",
@@ -76,12 +76,29 @@
       }
     },
     {
+      "slug": "china-probes-shanghai-party-boss-politburo-member-chen",
+      "canonicalPath": "/news/cn/china-probes-shanghai-party-boss-politburo-member-chen/",
+      "headline": "China Investigates Shanghai Party Chief And Politburo Member Chen",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Shanghai party chief Chen Jining is currently under investigation by authorities.",
+        "The official is a member of the Politburo, one of China's highest governing bodies."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/24/xis-anti-corruption-campaign-targets-shanghai-party-chief-chen-jining?traffic_source=rss"
+      }
+    },
+    {
       "slug": "chinese-official-sentenced-to-death-for-spying-leaking-national",
       "canonicalPath": "/news/cn/chinese-official-sentenced-to-death-for-spying-leaking-national/",
       "headline": "Chinese Official Sentenced To Death For Spying And Leaking Secrets",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A government official in China has received a death sentence following a conviction for espionage and leaking national secrets.",
@@ -93,29 +110,12 @@
       }
     },
     {
-      "slug": "china-spacecraft-blasts-off-for-tiangong-space-station",
-      "canonicalPath": "/news/cn/china-spacecraft-blasts-off-for-tiangong-space-station/",
-      "headline": "China spacecraft blasts off for Tiangong space station",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: China spacecraft blasts off for Tiangong space station",
-        "NDTV reports: Chinese Rocket With Pak Astronaut Aboard Takes Off To Tiangong Space Station"
-      ],
-      "primarySource": {
-        "publisherName": "NDTV",
-        "articleUrl": "https://www.ndtv.com/world-news/shenzhou-24-mission-chinese-rocket-with-pakistani-astronaut-muhammad-zeeshan-ali-aboard-takes-off-to-tiangong-space-station-12373033"
-      }
-    },
-    {
       "slug": "indonesian-pairs-reach-hong-kong-open-semifinals",
       "canonicalPath": "/news/cn/indonesian-pairs-reach-hong-kong-open-semifinals/",
       "headline": "Leo Rolly Carnando And Daniel Marthin Finish As Hong Kong Open Runner-up",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Leo Rolly Carnando and Daniel Marthin secured the runner-up position at the Hong Kong Open 2026.",
@@ -124,6 +124,23 @@
       "primarySource": {
         "publisherName": "Okezone",
         "articleUrl": "https://sports.okezone.com/read/2026/11/20/40/3255245/hasil-perempatfinal-hong-kong-open-2026-leo-daniel-dan-tiwi-fadia-hingga-dejan-felisha-tembus-semifinal"
+      }
+    },
+    {
+      "slug": "china-spacecraft-blasts-off-for-tiangong-space-station",
+      "canonicalPath": "/news/cn/china-spacecraft-blasts-off-for-tiangong-space-station/",
+      "headline": "China spacecraft blasts off for Tiangong space station",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: China spacecraft blasts off for Tiangong space station",
+        "NDTV reports: Chinese Rocket With Pak Astronaut Aboard Takes Off To Tiangong Space Station"
+      ],
+      "primarySource": {
+        "publisherName": "NDTV",
+        "articleUrl": "https://www.ndtv.com/world-news/shenzhou-24-mission-chinese-rocket-with-pakistani-astronaut-muhammad-zeeshan-ali-aboard-takes-off-to-tiangong-space-station-12373033"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "The Japan Times",
         "articleUrl": "https://www.japantimes.co.jp/news/2026/11/15/asia-pacific/beijing-drone-ban/"
-      }
-    },
-    {
-      "slug": "asean-china-haze-maritime-negotiations",
-      "canonicalPath": "/news/cn/asean-china-haze-maritime-negotiations/",
-      "headline": "Regional Maritime Negotiations Continue Amidst New Infrastructure",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ASEAN and China have not finalized the South China Sea Code of Conduct, though approximately 80 percent of the draft is provisionally agreed upon.",
-        "Negotiations for the maritime code remain ongoing without a fixed conclusion deadline, according to regional leadership."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/17/no-new-deadline-set-for-south-china-sea-code-negotiations-says-anwar/243540"
       }
     }
   ]
