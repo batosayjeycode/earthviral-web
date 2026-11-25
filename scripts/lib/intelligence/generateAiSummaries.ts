@@ -706,7 +706,12 @@ export function heuristicSummary(input: SummaryInput): SummaryOutput {
   return {
     headline,
     seoTitle: truncate(headline, 60),
-    metaDescription: truncate(`${why} ${bullets[0] ?? ''}`, 158),
+    // Story-specific text first: the metrics sentence alone fills ~158 chars and is the same
+    // for every story with the same counts, which made fallback descriptions collide.
+    metaDescription: truncate(
+      `${/[.!?…]$/.test(lead.title.trim()) ? lead.title : `${lead.title.trim()}.`} ${why}`,
+      158,
+    ),
     slug: headline,
     aiSummaryBullets: bullets,
     aiContextParagraph: context,
