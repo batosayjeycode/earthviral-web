@@ -6,28 +6,28 @@
   "countryName": "India",
   "countrySlug": "india",
   "region": "Asia",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Supreme Court Permits Limited Lamp Lighting At Tirupparankundram",
-  "seoTitle": "Supreme Court Allows Tirupparankundram Lamp Lighting",
-  "metaDescription": "The Supreme Court has permitted a one-time arrangement for lighting a lamp at the Tirupparankundram hill, despite ongoing regional political tensions.",
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
+  "headline": "Supreme Court Sets Guidelines On Bail And Reviews Legal Petitions",
+  "seoTitle": "Supreme Court rulings on bail and legal petitions",
+  "metaDescription": "The Supreme Court of India has issued new rulings regarding criteria for bail, while simultaneously reviewing multiple ongoing legal and election petitions.",
   "aiSummaryBullets": [
-    "The Supreme Court sanctioned a limited, one-time lighting of a lamp atop the Tirupparankundram hill.",
-    "The Madras High Court subsequently ordered local authorities to comply with the Supreme Court's directive regarding the event.",
-    "The arrangement has faced criticism from political figures who allege that local administration has previously defied court orders."
+    "The Supreme Court ruled that individuals with prior criminal convictions cannot be granted bail solely based on the right to a speedy trial.",
+    "Judges have requested police input regarding interim bail applications related to the 2020 Delhi riots case.",
+    "The court set aside a High Court order that had mandated a CBI and ED investigation into the assets of Rahul Gandhi."
   ],
-  "aiContextParagraph": "The Supreme Court recently issued a ruling allowing for a limited, one-time lamp lighting ceremony to take place at the Tirupparankundram hill. Following this judicial decision, the Madras High Court directed relevant authorities to ensure full compliance with the Supreme Court's instructions. This event has gained visibility amid a backdrop of rising political tensions in the region. Criticism has emerged from political leaders, including representatives from the BJP, who have publicly questioned the administration of the TVK party for its alleged defiance of previous court directives regarding similar activities. The situation reflects ongoing interactions between judicial mandates and administrative oversight in handling traditional or cultural practices within the current political environment. Authorities remain tasked with navigating these requirements as the situation continues to draw attention from regional political figures and the legal community.",
-  "whyItIsViral": "The story is viral due to active reporting from four major news outlets and significant ongoing interest in the legal and political dimensions of the dispute.",
-  "viralScore": 64,
-  "intensityTier": "high",
+  "aiContextParagraph": "The Supreme Court of India is currently managing a broad docket of legal developments across several sectors. Regarding criminal justice, the court has established stricter conditions for bail, emphasizing that a history of convictions limits a defendant's reliance on speedy trial arguments. Meanwhile, the court is reviewing pending bail petitions for individuals involved in the 2020 Delhi riots, requiring further police consultation before making a decision. In political and institutional matters, the court overturned a High Court directive that had requested central investigative agencies to probe the assets of Rahul Gandhi. Additionally, the court has been involved in oversight regarding municipal governance in West Bengal and environmental policy compliance. Other administrative actions include proposing a successor for the Jharkhand High Court Chief Justice and addressing procedural motions concerning electoral law challenges and local festival rituals in Tamil Nadu.",
+  "whyItIsViral": "The coverage is driven by high public interest in judicial bail standards and prominent political cases, with reports from four independent outlets.",
+  "viralScore": 86,
+  "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 20,
-    "publicSearchSignalScore": 72,
+    "coverageVelocityScore": 69,
+    "publicSearchSignalScore": 76,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-20T06:24:16Z",
-  "lastUpdatedBatchAt": "2026-11-24T19:31:00Z",
+  "lastUpdatedBatchAt": "2026-11-25T08:18:00Z",
   "sources": [
     {
       "publisherName": "The Hindu",
@@ -175,34 +175,55 @@
       "articleTitle": "Days before Jharkhand High Court Chief Justice’s retirement, Supreme Court Collegium proposes successor",
       "articleUrl": "https://www.thehindu.com/news/national/jharkhand/days-before-jharkhand-high-court-chief-justices-retirement-supreme-court-collegium-proposes-successor/article71739924.ece",
       "publishedAt": "2026-11-24T18:16:07Z"
+    },
+    {
+      "publisherName": "India Today",
+      "publisherDomain": "indiatoday.in",
+      "articleTitle": "Supreme Court to hear police before deciding on interim bail in 2020 Delhi riots case",
+      "articleUrl": "https://www.indiatoday.in/india/video/supreme-court-to-hear-police-before-ruling-on-2020-delhi-riots-bail-pleas-ytvd-3046395-2026-11-25",
+      "publishedAt": "2026-11-25T06:30:02Z"
+    },
+    {
+      "publisherName": "India Today",
+      "publisherDomain": "indiatoday.in",
+      "articleTitle": "Supreme Court sets aside HC order for CBI, ED probe into Rahul Gandhi's assets",
+      "articleUrl": "https://www.indiatoday.in/india/law-news/story/sc-sets-aside-hc-directions-for-cbi-ed-to-verify-claims-of-rahul-gandhi-possessing-disproportionate-assets-3046467-2026-11-25",
+      "publishedAt": "2026-11-25T07:41:15Z"
+    },
+    {
+      "publisherName": "The Hindu",
+      "publisherDomain": "thehindu.com",
+      "articleTitle": "Supreme Court 'inclined' to stay Calcutta HC order deferring Kolkata civic polls till decision on ward delimitation",
+      "articleUrl": "https://www.thehindu.com/news/national/west-bengal/supreme-court-inclined-to-stay-calcutta-hc-order-deferring-kolkata-civic-polls-till-decision-on-ward-delimitation/article71741489.ece",
+      "publishedAt": "2026-11-25T08:07:14Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Supreme Court",
-      "slug": "supreme-court"
+      "name": "Supreme Court of India",
+      "slug": "supreme-court-of-india"
     },
     {
-      "name": "Madras High Court",
-      "slug": "madras-high-court"
+      "name": "Rahul Gandhi",
+      "slug": "rahul-gandhi"
     },
     {
-      "name": "Tirupparankundram",
-      "slug": "tirupparankundram"
+      "name": "Bail",
+      "slug": "bail"
     },
     {
-      "name": "BJP",
-      "slug": "bjp"
+      "name": "Delhi riots",
+      "slug": "delhi-riots"
     }
   ],
   "relatedInCountrySlugs": [
-    "deepam-lit-away-from-approved-spot-as-vijay-government",
-    "indian-officials-secure-custody-political-figures",
-    "owaisi-azad-up-election-alliance"
+    "bjp-criticizes-rahul-gandhi-recent-comments",
+    "supreme-court-denies-bail-imam-khalid",
+    "kerala-high-court-legal-rulings"
   ],
   "relatedInCategorySlugs": [
-    "supreme-court-allows-texas-border-wall",
-    "gibran-rakabuming-diploma-controversy-legal-process",
-    "nigeria-swears-in-new-appellate-judges"
+    "former-police-officer-murder-trial",
+    "roy-suryo-tolak-semua-kesaksian-jokowi-di-sidang-kasus",
+    "indonesia-state-budget-deficit-october-2026"
   ]
 }

@@ -1,67 +1,45 @@
 {
-  "batchId": "batch-202611250518",
-  "generatedAt": "2026-11-25T05:18:00Z",
-  "nextUpdateAt": "2026-11-25T08:17:00Z",
+  "batchId": "batch-202611250818",
+  "generatedAt": "2026-11-25T08:18:00Z",
+  "nextUpdateAt": "2026-11-25T11:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 35,
-    "viralTopics": 663,
-    "globalIndex": 87
+    "activeCountries": 33,
+    "viralTopics": 666,
+    "globalIndex": 86
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 42,
     "feedsFailed": [
-      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: fetch failed",
+      "gdelt-unitedstates: fetch failed",
+      "gdelt-unitedkingdom: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedkingdom&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1747,
-    "newClusters": 9,
-    "updatedClusters": 106,
+    "articlesFetched": 1742,
+    "newClusters": 10,
+    "updatedClusters": 122,
     "retiredClusters": 0,
-    "aiCalls": 48,
-    "fallbackSummaries": 186,
+    "mergedDuplicates": 1,
+    "aiCalls": 62,
+    "fallbackSummaries": 157,
     "trendTitles": {
-      "targeted": 1,
-      "inTitle": 1
+      "targeted": 5,
+      "inTitle": 5
     },
     "titleNames": {
-      "kept": 2,
-      "headline": 0,
-      "previous": 0,
-      "missing": 0,
-      "no-anchor": 0
+      "kept": 28,
+      "headline": 1,
+      "previous": 1,
+      "missing": 1,
+      "no-anchor": 19
     },
     "digestSummaries": {
-      "written": 0,
-      "kept": 20,
-      "pending": 2,
-      "failed": 2
+      "written": 2,
+      "kept": 19,
+      "pending": 0,
+      "failed": 0
     },
-    "aiFailures": {
-      "rate-limit": 46
-    },
-    "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
-      }
-    ],
-    "durationMs": 160149
+    "durationMs": 488406
   }
 }
