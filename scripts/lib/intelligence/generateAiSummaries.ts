@@ -278,9 +278,33 @@ export function quotaIds(body: string): string[] {
  */
 let geminiDailyQuotaHit: string | null = null;
 
-/** For tests: forget a daily-quota stop from an earlier call. */
-export function resetGeminiQuotaStop(): void {
+/**
+ * Set once OpenAI answers 429 `insufficient_quota` ("You have no credits remaining" /
+ * "You exceeded your current quota"): the account needs prepaid credits, so retrying or
+ * calling again for the next story can't succeed. The rest of the run skips OpenAI.
+ */
+let openAiOutOfCredits = false;
+
+/** OpenAI's 429 for an account without credits, as opposed to a per-minute rate limit. */
+export function isOpenAiOutOfCredits(body: string): boolean {
+  try {
+    const { error } = JSON.parse(body) as {
+      error?: { code?: string | null; type?: string; message?: string };
+    };
+    return (
+      error?.code === 'insufficient_quota' ||
+      error?.type === 'insufficient_quota' ||
+      /no credits remaining|exceeded your current quota/i.test(error?.message ?? '')
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** For tests: forget a quota stop (Gemini daily quota, OpenAI credits) from an earlier call. */
+export function resetQuotaStops(): void {
   geminiDailyQuotaHit = null;
+  openAiOutOfCredits = false;
 }
 
 async function callGemini(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
@@ -368,14 +392,29 @@ function openAiJsonBody(prompt: JsonPrompt, model: string): OpenAiRequestBody {
 }
 
 async function callOpenAI(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
-  const res = await fetchWithRetry('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify(openAiJsonBody(prompt, model)),
-    timeoutMs: 90_000, // reasoning models can take longer
-    retries: 2,
-    backoffMs: 4_000,
-  });
+  if (openAiOutOfCredits) {
+    throw new AiResponseError(
+      'rate-limit',
+      'skipped: OpenAI account has no credits (insufficient_quota) — add credits under Billing',
+    );
+  }
+  let res: Response;
+  try {
+    res = await fetchWithRetry('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify(openAiJsonBody(prompt, model)),
+      timeoutMs: 90_000, // reasoning models can take longer
+      retries: 2,
+      backoffMs: 4_000,
+      retryIf: (status, body) => !(status === 429 && isOpenAiOutOfCredits(body)),
+    });
+  } catch (err) {
+    if (err instanceof HttpError && err.status === 429 && isOpenAiOutOfCredits(err.body)) {
+      openAiOutOfCredits = true;
+    }
+    throw err;
+  }
   const body = (await res.json()) as {
     choices?: Array<{ finish_reason?: string; message?: { content?: string; refusal?: string } }>;
   };
