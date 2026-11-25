@@ -3,17 +3,34 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 79,
+  "viralScore": 72,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T20:18:00Z",
+  "generatedAt": "2026-11-25T23:18:00Z",
   "clusters": [
+    {
+      "slug": "nvidia-investigates-ceo-espionage-allegations",
+      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
+      "headline": "Jensen Huang Reinstated As Nvidia CEO Amid Espionage Allegations",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Nvidia's board has reinstated Jensen Huang as CEO following recent espionage allegations.",
+        "Reports indicate Alice Huang maintained contact with Chinese intelligence agencies during her relationship with the executive."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/16/megaspeed-firm-at-centre-of-nvidia-scandal-says-alice-huang-left-in-2025?traffic_source=rss"
+      }
+    },
     {
       "slug": "china-to-launch-shenzhou-24-spaceship-with-first-foreign",
       "canonicalPath": "/news/cn/china-to-launch-shenzhou-24-spaceship-with-first-foreign/",
       "headline": "China to launch first space mission with a foreign astronaut",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 76,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "France 24 reports: China to launch first space mission with a foreign astronaut",
@@ -27,35 +44,18 @@
     {
       "slug": "trump-imposes-new-tariffs-on-eu-and-china-despite",
       "canonicalPath": "/news/cn/trump-imposes-new-tariffs-on-eu-and-china-despite/",
-      "headline": "Trump imposes new tariffs on EU and China despite electoral setback",
+      "headline": "Trump introduces new tariffs on China, EU and major trading partners",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 65,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Le Monde reports: Trump imposes new tariffs on EU and China despite electoral setback",
-        "France 24 reports: Trump announces new tariffs on EU, China despite US midterms defeat"
+        "CBS News reports: Trump introduces new tariffs on China, EU and major trading partners",
+        "The Guardian reports: Trump proposing new tariffs on 14 partners including China and EU"
       ],
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat"
-      }
-    },
-    {
-      "slug": "nvidia-investigates-ceo-espionage-allegations",
-      "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
-      "headline": "Jensen Huang Reinstated As Nvidia CEO Amid Espionage Allegations",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Nvidia's board has reinstated Jensen Huang as CEO following recent espionage allegations.",
-        "Reports indicate Alice Huang maintained contact with Chinese intelligence agencies during her relationship with the executive."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo"
       }
     },
     {
@@ -64,7 +64,7 @@
       "headline": "EUA buscam respostas sobre vendas de chips da Nvidia a China, diz Bessent",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 57,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "CNN Brasil reports: EUA buscam respostas sobre vendas de chips da Nvidia a China, diz Bessent",
@@ -93,12 +93,29 @@
       }
     },
     {
+      "slug": "scott-bessent-nvidia-china-chips",
+      "canonicalPath": "/news/cn/scott-bessent-nvidia-china-chips/",
+      "headline": "Treasury Secretary Scott Bessent Queries Nvidia On China Chip Sales",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Treasury Secretary Scott Bessent has called for an investigation into Nvidia's role in the supply of artificial intelligence chips to China.",
+        "Bessent stated that the government requires clarity on potential noncompliance regarding existing export control regulations."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/we-do-need-answers-trump-aide-bessent-on-nvidias-sale-of-chips-to-china/articleshow/136080639.cms"
+      }
+    },
+    {
       "slug": "china-probes-shanghai-party-boss-politburo-member-chen",
       "canonicalPath": "/news/cn/china-probes-shanghai-party-boss-politburo-member-chen/",
       "headline": "China Investigates Shanghai Party Chief And Politburo Member Chen",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Shanghai party chief Chen Jining is currently under investigation by authorities.",
@@ -127,29 +144,12 @@
       }
     },
     {
-      "slug": "china-critica-novas-tarifas-dos-eua-e-defende-dialogo",
-      "canonicalPath": "/news/cn/china-critica-novas-tarifas-dos-eua-e-defende-dialogo/",
-      "headline": "China critica novas tarifas dos EUA e defende diálogo comercial",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CNN Brasil reports: China critica novas tarifas dos EUA e defende diálogo comercial",
-        "Folha de S.Paulo reports: Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países"
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml"
-      }
-    },
-    {
       "slug": "china-spacecraft-blasts-off-for-tiangong-space-station",
       "canonicalPath": "/news/cn/china-spacecraft-blasts-off-for-tiangong-space-station/",
       "headline": "China spacecraft blasts off for Tiangong space station",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The West Australian reports: China spacecraft blasts off for Tiangong space station",
@@ -192,6 +192,23 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/berita/d-8754965/prabowo-dorong-negosiasi-laut-china-selatan-diselesaikan-efektif"
+      }
+    },
+    {
+      "slug": "china-critica-novas-tarifas-dos-eua-e-defende-dialogo",
+      "canonicalPath": "/news/cn/china-critica-novas-tarifas-dos-eua-e-defende-dialogo/",
+      "headline": "China critica novas tarifas dos EUA e defende diálogo comercial",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "CNN Brasil reports: China critica novas tarifas dos EUA e defende diálogo comercial",
+        "Folha de S.Paulo reports: Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países"
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/internasional/d-8744560/kebakaran-gedung-di-shanxi-china-14-orang-tewas"
-      }
-    },
-    {
-      "slug": "china-records-record-high-trade-surplus",
-      "canonicalPath": "/news/cn/china-records-record-high-trade-surplus/",
-      "headline": "China Reports Trade Surplus Exceeding One Trillion Dollars In 2026",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "China achieved a trade surplus of over one trillion dollars during the first ten months of 2026.",
-        "The growth is primarily attributed to strong global demand for high-tech products and investments in artificial intelligence."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/china-hits-1-trillion-trade-surplus-milestone-for-second-year-in-a-row/articleshow/135699110.cms"
       }
     }
   ]
