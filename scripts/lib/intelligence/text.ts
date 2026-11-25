@@ -17,6 +17,56 @@ const STOPWORDS = new Set(
     .filter(Boolean),
 );
 
+// Function words that are common in headlines and specific to one side: English, or the
+// non-English languages the feeds carry (Indonesian / Malay, Portuguese, Spanish, French,
+// German). Words shared by both sides ("a", "as", "no", "die"…) are left out; "in" counts as
+// English, since German and Dutch are not among the feeds' languages.
+const ENGLISH_WORDS = new Set(
+  `the of to in for on with after over is are was were at by from amid says said and its his her
+  has have had will would into against how why what who be not than this that their they been`.split(
+    /\s+/,
+  ),
+);
+const FOREIGN_WORDS = new Set(
+  `yang dan di ke dari untuk dengan ini itu tak tidak akan soal usai jadi kata pada oleh bagi
+  karena hingga sebagai ada telah sudah belum masih bisa harus juga atau saat setelah para dalam
+  lebih kini kepada tentang atas tanpa sangat jika terkait jelang kembali bersama menjadi ketika
+  namun tetap
+  o os um uma de do da dos das em na nos nas que com para por ao aos e é sao diz apos sobre mais
+  el la los las del en y se es con una tras al le les des du et au aux une est sur pour dans
+  avec apres contre selon der und mit fur nach ist ein eine auf von`.split(/\s+/),
+);
+const NON_LATIN = /[\u0370-\u1fff\u3000-\uffef]/;
+
+function languageEvidence(title: string) {
+  const words = normalize(title).split(/[^a-z]+/);
+  return {
+    english: words.filter((w) => ENGLISH_WORDS.has(w)).length,
+    foreign: words.filter((w) => FOREIGN_WORDS.has(w)).length,
+  };
+}
+
+/**
+ * True when a headline is recognisably English: it has English function words, at least as
+ * many as non-English ones (so names such as "Rio De Janeiro" don't outweigh the English).
+ */
+export function looksEnglish(title: string): boolean {
+  if (NON_LATIN.test(title)) return false;
+  const { english, foreign } = languageEvidence(title);
+  return english > 0 && english >= foreign;
+}
+
+/**
+ * True when a headline is recognisably not English: a non-Latin script, or more non-English
+ * than English function words. Headlines with neither kind of word ("Matildas keeper reveals
+ * health scare", "Bek Bali United Hadapi Trio Maut Persib") are neither English nor foreign.
+ */
+export function looksForeign(title: string): boolean {
+  if (NON_LATIN.test(title)) return true;
+  const { english, foreign } = languageEvidence(title);
+  return foreign > english;
+}
+
 const CJK = /[぀-ヿ㐀-䶿一-鿿가-힯]/;
 
 export function normalize(text: string): string {
