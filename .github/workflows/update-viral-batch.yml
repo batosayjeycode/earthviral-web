@@ -9,7 +9,8 @@
 #   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI; with both,
 #            provider auto uses Gemini and retries failed calls with OpenAI)
 #   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10), MAX_STORED_STORIES (default 2500),
-#                    AI_CONCURRENCY (default 2)
+#                    AI_CONCURRENCY (default 2), AI_TIME_BUDGET_MINUTES (default 10; keeps the job
+#                    well under its 20-minute timeout on a bad AI-provider night)
 name: Update viral batch
 
 on:
@@ -88,6 +89,8 @@ jobs:
           MAX_STORED_STORIES: ${{ vars.MAX_STORED_STORIES }}
           # Parallel AI calls (default 2). Keep low on free tiers, which rate-limit per minute.
           AI_CONCURRENCY: ${{ vars.AI_CONCURRENCY }}
+          # Minutes from the start of the run after which no AI call starts (default 10).
+          AI_TIME_BUDGET_MINUTES: ${{ vars.AI_TIME_BUDGET_MINUTES }}
           PROVIDER: ${{ inputs.provider || 'auto' }}
           DRY_RUN: ${{ inputs.dry_run || false }}
           RESUMMARIZE_FALLBACK: ${{ inputs.resummarize_fallback || false }}
@@ -112,6 +115,13 @@ jobs:
       - name: Verify the site builds with the new data
         if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
         run: npm run build
+
+      # The SEO and integrity tests CI runs before deploying (duplicate descriptions, canonical
+      # URLs, structured data…). Data that fails them is not committed: it would fail CI on main
+      # and block every deploy, later batches included. The site keeps the previous batch.
+      - name: Test the built site
+        if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
+        run: npm run test:dist
 
       - name: Commit generated data
         if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
