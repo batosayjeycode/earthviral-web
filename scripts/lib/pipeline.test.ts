@@ -746,7 +746,7 @@ describe('AI providers (fetch stubbed)', async () => {
   });
 
   describe('failover from Gemini to OpenAI', async () => {
-    const { resetGeminiQuotaStop, resolveFailover } =
+    const { resetQuotaStops, resolveFailover } =
       await import('./intelligence/generateAiSummaries.ts');
     const dailyQuota = {
       error: {
@@ -786,7 +786,7 @@ describe('AI providers (fetch stubbed)', async () => {
       try {
         await fn();
       } finally {
-        resetGeminiQuotaStop();
+        resetQuotaStops();
         globalThis.fetch = realFetch;
         delete process.env.GEMINI_API_KEY;
         delete process.env.OPENAI_API_KEY;
@@ -1104,7 +1104,7 @@ describe('AI failure classification', async () => {
   });
 
   it('names the exceeded Gemini quota and stops calling after a per-day one', async () => {
-    const { resetGeminiQuotaStop } = await import('./intelligence/generateAiSummaries.ts');
+    const { resetQuotaStops } = await import('./intelligence/generateAiSummaries.ts');
     const quotaReply = (quotaId: string) => ({
       error: {
         code: 429,
@@ -1143,9 +1143,51 @@ describe('AI failure classification', async () => {
       assert.equal(skipped.error?.category, 'rate-limit');
       assert.match(skipped.error?.detail ?? '', /skipped: daily quota GenerateRequestsPerDay/);
     } finally {
-      resetGeminiQuotaStop();
+      resetQuotaStops();
       globalThis.fetch = realFetch;
       delete process.env.GEMINI_API_KEY;
+    }
+  });
+
+  it('stops calling OpenAI for the run once the account has no credits', async () => {
+    const { resetQuotaStops, isOpenAiOutOfCredits } =
+      await import('./intelligence/generateAiSummaries.ts');
+    const noCredits = {
+      error: {
+        message:
+          'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.',
+        type: 'insufficient_quota',
+        code: 'insufficient_quota',
+      },
+    };
+    assert.equal(isOpenAiOutOfCredits(JSON.stringify(noCredits)), true);
+    assert.equal(
+      isOpenAiOutOfCredits(
+        JSON.stringify({
+          error: { message: 'Rate limit reached for gpt-5-mini', code: 'rate_limit_exceeded' },
+        }),
+      ),
+      false,
+    );
+    process.env.OPENAI_API_KEY = 'test-key';
+    let calls = 0;
+    globalThis.fetch = (async () => {
+      calls++;
+      return new Response(JSON.stringify(noCredits), { status: 429 });
+    }) as unknown as typeof fetch;
+    try {
+      const first = await createSummarizer('openai').summarize(input);
+      assert.equal(calls, 1); // no retries: waiting doesn't add credits
+      assert.equal(first.usedAi, false);
+      assert.equal(first.error?.category, 'rate-limit');
+      assert.match(first.error?.detail ?? '', /no credits remaining/);
+      const second = await createSummarizer('openai').summarize(input);
+      assert.equal(calls, 1); // skipped without a request
+      assert.match(second.error?.detail ?? '', /skipped: OpenAI account has no credits/);
+    } finally {
+      resetQuotaStops();
+      globalThis.fetch = realFetch;
+      delete process.env.OPENAI_API_KEY;
     }
   });
 

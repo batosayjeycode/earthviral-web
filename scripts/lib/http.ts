@@ -22,6 +22,8 @@ export interface FetchOptions extends RequestInit {
   /** Retries on network errors, 429 and 5xx (exponential backoff). */
   retries?: number;
   backoffMs?: number;
+  /** Return false to stop retrying a 429/5xx whose body says waiting won't help. */
+  retryIf?: (status: number, body: string) => boolean;
 }
 
 const MAX_SUGGESTED_WAIT_MS = 60_000;
@@ -39,7 +41,7 @@ export function suggestedRetryMs(retryAfterHeader: string | null, body: string):
 }
 
 export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Promise<Response> {
-  const { timeoutMs = 15_000, retries = 1, backoffMs = 1_500, headers, ...init } = opts;
+  const { timeoutMs = 15_000, retries = 1, backoffMs = 1_500, retryIf, headers, ...init } = opts;
   let lastError: unknown;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
@@ -49,9 +51,10 @@ export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Prom
         signal: AbortSignal.timeout(timeoutMs),
       });
       if (res.ok) return res;
-      const retryable = res.status === 429 || res.status >= 500;
       const body = await res.text().catch(() => '');
       lastError = new HttpError(res.status, url, body.slice(0, 4000));
+      const retryable =
+        (res.status === 429 || res.status >= 500) && (retryIf?.(res.status, body) ?? true);
       if (!retryable) break;
       const suggested = suggestedRetryMs(res.headers.get('retry-after'), body);
       if (attempt < retries) await sleep(suggested ?? backoffMs * 2 ** attempt);
