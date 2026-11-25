@@ -205,6 +205,7 @@ Generated data is committed on purpose. The site builds from whatever is in `src
 - **Fonts.** Only freely licensed typefaces may be used (Sociolla's font policy). The site self-hosts Space Grotesk, Plus Jakarta Sans and JetBrains Mono, all under SIL OFL-1.1, via Fontsource. Fallback stacks use only generic CSS keywords such as `system-ui` and `monospace`.
 - **Performance budget.** CLS must stay 0. Story and hub pages ship almost no JavaScript. On touch devices the MapLibre map loads on the first tap (desktops load it when the browser is idle), which keeps mobile Lighthouse Performance at about 98–100.
 - **Data contracts.** `src/lib/types.ts` and `src/lib/schemas.ts` define every generated file. The pipeline validates against the same schemas the build uses.
+- **Fallback stories.** A story that still has the non-AI fallback summary is a thin page: it's `noindex, follow` (no canonical), and it's left out of the sitemaps, the Google News sitemap, RSS, IndexNow and the homepage. It stays reachable from its country, category and archive pages. Once a batch writes its AI summary, it returns to all of them.
 - **Sample data.** Seed builds show a "Sample data — not real news" badge, mark every page `noindex`, and serve a `robots.txt` that disallows everything.
 
 ## Before launch

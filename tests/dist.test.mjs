@@ -324,6 +324,22 @@ describe('sitemaps, robots and feeds', () => {
     }
   });
 
+  test(
+    'fallback stories (no AI summary yet) are noindex and kept out of sitemaps and RSS',
+    { skip: isSeed },
+    () => {
+      const rss = readFileSync(join(dist, 'rss.xml'), 'utf8');
+      for (const page of stories) {
+        const fallback = page.html.includes('This summary was generated without an AI model');
+        assert.equal(isNoindex(page.html), fallback, `${page.path} noindex only when fallback`);
+        if (!fallback) continue;
+        assert.doesNotMatch(page.html, /rel="canonical"/, `${page.path} canonical`);
+        assert.ok(!all.has(`${ORIGIN}${page.path}`), `${page.path} in a sitemap`);
+        assert.ok(!rss.includes(`${ORIGIN}${page.path}<`), `${page.path} in RSS`);
+      }
+    },
+  );
+
   test('RSS items link to built story pages', () => {
     const rss = readFileSync(join(dist, 'rss.xml'), 'utf8');
     const links = [...rss.matchAll(/<item>[\s\S]*?<link>([^<]+)<\/link>/g)].map((m) => m[1]);
