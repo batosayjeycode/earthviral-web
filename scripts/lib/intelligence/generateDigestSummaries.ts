@@ -26,6 +26,7 @@ import {
   hasScoreClaim,
   requestModelJson,
   type AiFailure,
+  type AiProviderName,
   type JsonPrompt,
   type ProviderName,
 } from './generateAiSummaries.ts';
@@ -186,12 +187,16 @@ export interface DigestSummaryResult {
   summaries: DigestSummary[];
   stats: { written: number; kept: number; pending: number; failed: number };
   failures: AiFailure[];
+  /** Days the primary provider failed and the failover provider was tried (see resolveFailover). */
+  failovers: Array<{ from: AiFailure; ok: boolean }>;
 }
 
 export async function generateDigestSummaries(opts: {
   clusters: ViralClusterStaticRecord[];
   previous: DigestSummary[];
   provider: ProviderName;
+  /** Provider to try when the primary one fails. */
+  failover?: AiProviderName | null;
   now: Date;
   maxCalls: number;
   concurrency?: number;
@@ -206,15 +211,31 @@ export async function generateDigestSummaries(opts: {
 
   const written = new Map<string, DigestSummary>();
   const failures: AiFailure[] = [];
+  const failovers: DigestSummaryResult['failovers'] = [];
   if (provider !== 'none' && plan.todo.length > 0) {
-    const credentials = aiCredentials(provider);
-    const model = `${provider}:${credentials.model}`;
+    const routes = [provider, opts.failover]
+      .filter((p): p is AiProviderName => Boolean(p))
+      .filter((p, i, all) => all.indexOf(p) === i)
+      .map((p) => ({ provider: p, credentials: aiCredentials(p) }));
     await mapLimit(plan.todo, opts.concurrency ?? 2, async (d) => {
-      let result: ReturnType<typeof parseDigestSummary>;
-      try {
-        result = parseDigestSummary(await requestModelJson(provider, digestPrompt(d), credentials));
-      } catch (err) {
-        result = { error: classifyAiError(err) };
+      let result: ReturnType<typeof parseDigestSummary> = {
+        error: { category: 'other', detail: 'not attempted' },
+      };
+      let model = '';
+      for (const [i, route] of routes.entries()) {
+        const previous = 'error' in result ? result.error : null;
+        try {
+          result = parseDigestSummary(
+            await requestModelJson(route.provider, digestPrompt(d), route.credentials),
+          );
+        } catch (err) {
+          result = { error: classifyAiError(err) };
+        }
+        if (i > 0 && previous) failovers.push({ from: previous, ok: !('error' in result) });
+        if (!('error' in result)) {
+          model = `${route.provider}:${route.credentials.model}`;
+          break;
+        }
       }
       if ('error' in result) {
         failures.push(result.error);
@@ -248,5 +269,6 @@ export async function generateDigestSummaries(opts: {
       failed: failures.length,
     },
     failures,
+    failovers,
   };
 }

@@ -90,6 +90,17 @@ export interface BatchMeta {
     aiFailures?: Record<string, number>;
     /** Daily digest intros this batch: written, kept from earlier batches, still waiting, failed. */
     digestSummaries?: { written: number; kept: number; pending: number; failed: number };
+    /**
+     * Calls the primary provider failed that were retried with the failover provider (Gemini →
+     * OpenAI): how many were tried and written, by the primary's failure category. A call the
+     * failover provider also failed is in aiFailures too.
+     */
+    failover?: {
+      provider: string;
+      tried: number;
+      written: number;
+      reasons: Record<string, number>;
+    };
     /** Up to 5 example failures for diagnosis (no keys or prompts). */
     aiFailureSamples?: Array<{ category: string; detail: string }>;
     durationMs: number;

@@ -86,7 +86,7 @@ npm run update:viral -- --no-trends --no-gdelt
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):
    `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
    The constants live in `src/lib/scoring.ts` and also drive the public `/about/` page.
-5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`.
+5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`. With both keys set and no `--provider`, a failed Gemini call (for example once its free daily quota is used up) is retried with OpenAI, for story and digest summaries alike; `pipeline.failover` records how many were tried and written. An explicit `--provider` uses that provider only.
 6. **Link and write.** It builds the related-story graph, validates every record, and only then replaces `src/data/generated/` and `public/data/`.
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
