@@ -3,9 +3,9 @@
   "name": "South Korea",
   "slug": "south-korea",
   "region": "Asia",
-  "viralScore": 73,
+  "viralScore": 67,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T08:18:00Z",
+  "generatedAt": "2026-11-25T11:18:00Z",
   "clusters": [
     {
       "slug": "seoul-shares-plunge-anthropic-debut",
@@ -13,7 +13,7 @@
       "headline": "Seoul Shares Decline Six Percent Amid Lingering AI Market Doubts",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 70,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Korea Composite Stock Price Index dropped over six percent during Wednesday's trading session.",
@@ -25,12 +25,29 @@
       }
     },
     {
+      "slug": "south-korean-tax-exam-ai-scandal",
+      "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
+      "headline": "South Korea Imposes Stricter Penalties Following AI Exam Scandal",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 61,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Prime Minister Han Seong-sook ordered a comprehensive investigation into reports of cheating on state-administered examinations.",
+        "Proposed measures include distributing 8,000 metal detectors and implementing 10-year bans for students caught using AI-assisted technology."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/man-accused-of-ai-cheating-in-south-korean-exam-found-dead/"
+      }
+    },
+    {
       "slug": "persib-bandung-fc-seoul-acl-match",
       "canonicalPath": "/news/kr/persib-bandung-fc-seoul-acl-match/",
       "headline": "Persib Bandung Prepares for AFC Champions League 2 Match vs FC Seoul",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 69,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "FC Seoul head coach Kim Gi-dong expressed anticipation regarding the atmosphere at Gelora Bandung Lautan Api stadium during the match.",
@@ -47,8 +64,8 @@
       "headline": "President Lee Jae Myung Addresses Domestic Policy and North Korea",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "President Lee Jae Myung urged a rapid increase in public housing supply to stabilize the local market.",
         "The administration confirmed that North Korea will remain classified as an enemy in the upcoming defense white paper."
@@ -59,30 +76,13 @@
       }
     },
     {
-      "slug": "south-korean-tax-exam-ai-scandal",
-      "canonicalPath": "/news/kr/south-korean-tax-exam-ai-scandal/",
-      "headline": "South Korea Imposes Stricter Penalties Following AI Exam Scandal",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Prime Minister Han Seong-sook ordered a comprehensive investigation into reports of cheating on state-administered examinations.",
-        "Proposed measures include distributing 8,000 metal detectors and implementing 10-year bans for students caught using AI-assisted technology."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/man-accused-of-ai-cheating-in-south-korean-exam-found-dead/"
-      }
-    },
-    {
       "slug": "supreme-court-overturns-former-pm-han-conviction",
       "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
       "headline": "South Korean Democratic Party Seeks Impeachment Of Chief Justice",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Democratic Party aims to initiate an impeachment motion against the Supreme Court chief justice on December 3.",
         "The planned action follows the Supreme Court's decision to order a retrial for former Prime Minister Han regarding his martial law role."
@@ -93,12 +93,63 @@
       }
     },
     {
+      "slug": "president-lee-expands-cheonghae-unit-mission",
+      "canonicalPath": "/news/kr/president-lee-expands-cheonghae-unit-mission/",
+      "headline": "President Lee Jae Myung Expands Scope Of South Korea Cheonghae Unit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Lee Jae Myung announced an expanded operational mandate for the Cheonghae naval unit to ensure maritime safety.",
+        "The National Assembly's defense committee approved a motion to shift the unit from Somali waters toward the Arabian region."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261125010300315"
+      }
+    },
+    {
+      "slug": "hanwha-chair-kim-seung-youn-visits-ourhome",
+      "canonicalPath": "/news/kr/hanwha-chair-kim-seung-youn-visits-ourhome/",
+      "headline": "Hanwha Chair Kim Seung-youn Emphasizes Food Safety At Ourhome Site",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Hanwha Group Chair Kim Seung-youn conducted his inaugural visit to the food service company Ourhome.",
+        "The chairman stressed that maintaining food safety standards is more critical than creating unique flavors."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261125008300320"
+      }
+    },
+    {
+      "slug": "samsung-display-ams-osram-investment",
+      "canonicalPath": "/news/kr/samsung-display-ams-osram-investment/",
+      "headline": "Samsung Display Acquires 9.1 Percent Stake In Austrian Firm Ams Osram",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Samsung Display is acquiring 9.1 percent of ams Osram for 210 million euros.",
+        "The purchase of nearly 10 million newly issued shares makes Samsung the firm's largest shareholder."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261125008400320"
+      }
+    },
+    {
       "slug": "lee-hyoung-il-addresses-stock-market-volatility",
       "canonicalPath": "/news/kr/lee-hyoung-il-addresses-stock-market-volatility/",
       "headline": "Finance Minister Lee Hyoung-il Addresses Volatile South Korea Market",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 50,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Finance Minister Lee Hyoung-il stated that the government has prepared contingency measures beyond existing stock market stabilization funds.",
@@ -110,12 +161,29 @@
       }
     },
     {
+      "slug": "south-korea-fines-fifteen-bond-dealers",
+      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
+      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
+        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
+      }
+    },
+    {
       "slug": "south-korean-parties-clash-impeachment",
       "canonicalPath": "/news/kr/south-korean-parties-clash-impeachment/",
       "headline": "South Korean Rival Parties Clash Over Chief Justice Impeachment",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Democratic Party is pursuing the impeachment of the Supreme Court chief justice.",
@@ -124,142 +192,6 @@
       "primarySource": {
         "publisherName": "Yonhap",
         "articleUrl": "https://en.yna.co.kr/view/AEN20261123003700315"
-      }
-    },
-    {
-      "slug": "urgent-krx-activates-buy-side-sidecar-for-kospi-on",
-      "canonicalPath": "/news/kr/urgent-krx-activates-buy-side-sidecar-for-kospi-on/",
-      "headline": "(URGENT) Bourse operator activates sell-side sidecar for KOSPI on sharp fall",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Yonhap reports: (URGENT) Bourse operator activates sell-side sidecar for KOSPI on sharp fall",
-        "The Korea Herald reports: Seoul shares trade sharply lower, triggering sell-sidecar a day after buy-side measure"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001800320"
-      }
-    },
-    {
-      "slug": "first-lady-kim-promotes-kimchi-global",
-      "canonicalPath": "/news/kr/first-lady-kim-promotes-kimchi-global/",
-      "headline": "First Lady Kim Hea Kyung Promotes Global Recognition For Kimchi",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "First lady Kim Hea Kyung attended a ceremony and event in Seoul to mark the seventh annual Kimchi Day.",
-        "During the fair, the first lady viewed exhibits of award-winning cabbage and radish varieties used for the traditional side dish."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261120007000315"
-      }
-    },
-    {
-      "slug": "n-korea-threatens-to-close-swiss-office-in-pyongyang",
-      "canonicalPath": "/news/kr/n-korea-threatens-to-close-swiss-office-in-pyongyang/",
-      "headline": "N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Korea Herald reports: N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp",
-        "Yonhap reports: (LEAD) N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261124001100315"
-      }
-    },
-    {
-      "slug": "no-of-ministries-govt-agencies-set-to-relocate-to",
-      "canonicalPath": "/news/kr/no-of-ministries-govt-agencies-set-to-relocate-to/",
-      "headline": "No. of ministries, gov't agencies set to relocate to Sejong reduced to 31",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Korea Herald reports: No. of ministries, gov't agencies set to relocate to Sejong reduced to 31",
-        "Yonhap reports: No. of ministries, gov't agencies set to relocate to Sejong reduced to 31"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261124010000320"
-      }
-    },
-    {
-      "slug": "global-public-procurement-marketplace-kicks-off-in-seoul",
-      "canonicalPath": "/news/kr/global-public-procurement-marketplace-kicks-off-in-seoul/",
-      "headline": "Global Public Procurement Marketplace kicks off in Seoul",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Korea Herald reports: Global Public Procurement Marketplace kicks off in Seoul",
-        "Yonhap reports: Global Public Procurement Marketplace kicks off in Seoul"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261125002800320"
-      }
-    },
-    {
-      "slug": "kim-ha-seong-signs-with-detroit-tigers-reports",
-      "canonicalPath": "/news/kr/kim-ha-seong-signs-with-detroit-tigers-reports/",
-      "headline": "Kim Ha-seong signs with Detroit Tigers: reports",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Korea Herald reports: Kim Ha-seong signs with Detroit Tigers: reports",
-        "Yonhap reports: Kim Ha-seong signs with Detroit Tigers: reports"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261125002500315"
-      }
-    },
-    {
-      "slug": "samsung-sk-hynix-shares-fall",
-      "canonicalPath": "/news/kr/samsung-sk-hynix-shares-fall/",
-      "headline": "Samsung And SK Hynix Shares Plummet Amid Global Tech Market Slump",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Samsung Electronics and SK Hynix shares recorded significant losses during Friday trading on the Korea Exchange.",
-        "The decline follows a broader Wall Street technology sell-off and investor apprehension regarding the sustainability of the AI market."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261120005000320"
-      }
-    },
-    {
-      "slug": "south-korea-exports-surge-november",
-      "canonicalPath": "/news/kr/south-korea-exports-surge-november/",
-      "headline": "Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Korea Herald reports: Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high",
-        "Yonhap reports: (LEAD) Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high"
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002500320"
       }
     },
     {
@@ -297,54 +229,122 @@
       }
     },
     {
-      "slug": "seoul-metro-labor-strike-talks",
-      "canonicalPath": "/news/kr/seoul-metro-labor-strike-talks/",
-      "headline": "(LEAD) Seoul Metro labor, management reach last-minute deal to avoid strike",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 39,
+      "slug": "first-lady-kim-promotes-kimchi-global",
+      "canonicalPath": "/news/kr/first-lady-kim-promotes-kimchi-global/",
+      "headline": "First Lady Kim Hea Kyung Promotes Global Recognition For Kimchi",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Yonhap reports: (LEAD) Seoul Metro labor, management reach last-minute deal to avoid strike",
-        "The Korea Herald reports: Seoul Metro labor, management reach last-minute deal to avoid strike"
+        "First lady Kim Hea Kyung attended a ceremony and event in Seoul to mark the seventh annual Kimchi Day.",
+        "During the fair, the first lady viewed exhibits of award-winning cabbage and radish varieties used for the traditional side dish."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261124006100315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261120007000315"
       }
     },
     {
-      "slug": "south-korea-fines-fifteen-bond-dealers",
-      "canonicalPath": "/news/kr/south-korea-fines-fifteen-bond-dealers/",
-      "headline": "South Korean Fair Trade Watchdog Fines 15 Firms For Bond Collusion",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 36,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Fifteen bond dealers have been penalized 1.6 trillion won for colluding on government bond bidding processes.",
-        "The decision was issued by the South Korean Fair Trade Commission following an investigation into market rigging practices."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261110004100320"
-      }
-    },
-    {
-      "slug": "ateez-scores-fourth-billboard-number-one",
-      "canonicalPath": "/news/kr/ateez-scores-fourth-billboard-number-one/",
-      "headline": "Ateez Reaches Fourth Billboard 200 Top Spot With New Album Release",
+      "slug": "n-korea-threatens-to-close-swiss-office-in-pyongyang",
+      "canonicalPath": "/news/kr/n-korea-threatens-to-close-swiss-office-in-pyongyang/",
+      "headline": "N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 36,
+      "viralScore": 38,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The K-pop group Ateez achieved their fourth No. 1 on the Billboard 200 chart with their latest release.",
-        "The group's 15th EP, titled Golden Hour: Part. 6, reached the top position shortly after their previous release."
+        "The Korea Herald reports: N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp",
+        "Yonhap reports: (LEAD) N. Korea threatens to close Swiss office in Pyongyang over sanctions on children's camp"
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261123000900315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261124001100315"
+      }
+    },
+    {
+      "slug": "urgent-krx-activates-buy-side-sidecar-for-kospi-on",
+      "canonicalPath": "/news/kr/urgent-krx-activates-buy-side-sidecar-for-kospi-on/",
+      "headline": "(URGENT) Bourse operator activates sell-side sidecar for KOSPI on sharp fall",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Yonhap reports: (URGENT) Bourse operator activates sell-side sidecar for KOSPI on sharp fall",
+        "The Korea Herald reports: Seoul shares trade sharply lower, triggering sell-sidecar a day after buy-side measure"
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123001800320"
+      }
+    },
+    {
+      "slug": "no-of-ministries-govt-agencies-set-to-relocate-to",
+      "canonicalPath": "/news/kr/no-of-ministries-govt-agencies-set-to-relocate-to/",
+      "headline": "No. of ministries, gov't agencies set to relocate to Sejong reduced to 31",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Korea Herald reports: No. of ministries, gov't agencies set to relocate to Sejong reduced to 31",
+        "Yonhap reports: No. of ministries, gov't agencies set to relocate to Sejong reduced to 31"
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261124010000320"
+      }
+    },
+    {
+      "slug": "south-korea-exports-surge-november",
+      "canonicalPath": "/news/kr/south-korea-exports-surge-november/",
+      "headline": "Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high",
+      "categorySlug": "lifestyle-culture",
+      "categoryName": "Lifestyle & Culture",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Korea Herald reports: Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high",
+        "Yonhap reports: (LEAD) Exports more than double in 1st 20 days of Nov., with chip shipments surging to new high"
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261123002500320"
+      }
+    },
+    {
+      "slug": "global-public-procurement-marketplace-kicks-off-in-seoul",
+      "canonicalPath": "/news/kr/global-public-procurement-marketplace-kicks-off-in-seoul/",
+      "headline": "Global Public Procurement Marketplace kicks off in Seoul",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Korea Herald reports: Global Public Procurement Marketplace kicks off in Seoul",
+        "Yonhap reports: Global Public Procurement Marketplace kicks off in Seoul"
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261125002800320"
+      }
+    },
+    {
+      "slug": "kim-ha-seong-signs-with-detroit-tigers-reports",
+      "canonicalPath": "/news/kr/kim-ha-seong-signs-with-detroit-tigers-reports/",
+      "headline": "Kim Ha-seong signs with Detroit Tigers: reports",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 37,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Korea Herald reports: Kim Ha-seong signs with Detroit Tigers: reports",
+        "Yonhap reports: Kim Ha-seong signs with Detroit Tigers: reports"
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261125002500315"
       }
     }
   ]

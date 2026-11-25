@@ -3,25 +3,42 @@
   "name": "France",
   "slug": "france",
   "region": "Europe",
-  "viralScore": 65,
+  "viralScore": 70,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T08:18:00Z",
+  "generatedAt": "2026-11-25T11:18:00Z",
   "clusters": [
     {
       "slug": "missiles-russian-drone-impact-poland",
       "canonicalPath": "/news/fr/missiles-russian-drone-impact-poland/",
-      "headline": "Ukraine Strikes Russian Naval Assets Located In Libyan Coastal Waters",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 62,
+      "headline": "Anti-Racism March Commences From Marseille Towards La Chapelle",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Ukrainian military forces launched a strike against Russian naval ships located in Libyan waters.",
-        "The operation highlights a shift in strategy as Kyiv targets Russian operational capabilities outside of the immediate conflict zone."
+        "A group of about 20 participants began a foot march from Marseille to the Yvelines region on November 23.",
+        "The demonstration is a response to a racist attack allegedly committed by Kevin T. one month ago."
       ],
       "primarySource": {
         "publisherName": "La Croix",
-        "articleUrl": "https://www.la-croix.com/a-vif/notre-responsabilite-humaine-et-chretienne-est-d-accompagner-les-personnes-etrangeres-a-la-rue-20261123"
+        "articleUrl": "https://www.la-croix.com/international/genocide-des-rohingyas-14-pays-dont-le-royaume-uni-et-l-espagne-reconnaissent-la-decision-de-la-cij-20261123"
+      }
+    },
+    {
+      "slug": "violence-west-bank-yemen-strikes",
+      "canonicalPath": "/news/fr/violence-west-bank-yemen-strikes/",
+      "headline": "UN Warns Of Atrocity Crimes In Middle East; Port Struck In Yemen",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The UN High Commissioner for Human Rights expressed concern regarding the risk of atrocity crimes committed by Israel against Palestinians.",
+        "Houthi officials have formally accused Saudi Arabia of conducting a military strike against the port facility in Hodeida, Yemen."
+      ],
+      "primarySource": {
+        "publisherName": "La Croix",
+        "articleUrl": "https://www.la-croix.com/international/direct-guerre-iran-israel-usa-jour-266-moyen-orient-bilan-resume-aujourdhui-20261120"
       }
     },
     {
@@ -30,8 +47,8 @@
       "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Unions have organized a national strike for Tuesday to advocate for higher wages for public sector employees.",
         "Youth organizations and activists are expected to join the demonstrations following five consecutive weekends of protests."
@@ -47,7 +64,7 @@
       "headline": "Nicolas Sarkozy and Carla Bruni to Stand Trial for Witness Tampering",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 53,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Former French President Nicolas Sarkozy and his wife Carla Bruni have been ordered to face trial.",
@@ -64,7 +81,7 @@
       "headline": "Francophonie Summit Postpones Leadership Vote Amid Diplomatic Rift",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 48,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Member nations at the Francophonie summit delayed the election of a new secretary general.",
@@ -81,7 +98,7 @@
       "headline": "Marine Le Pen Proposes Reversing French Presidential Pension Reforms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Marine Le Pen aims to repeal pension reforms enacted by President Emmanuel Macron.",
@@ -110,12 +127,46 @@
       }
     },
     {
+      "slug": "eurostar-train-cancellations-france",
+      "canonicalPath": "/news/fr/eurostar-train-cancellations-france/",
+      "headline": "Eurostar Service Disrupted By Unexpected Industrial Action In France",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 41,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Eurostar services between Paris and London faced disruptions on Wednesday following a sudden strike.",
+        "Multiple train journeys in both directions were officially canceled due to the industrial action."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/25/surprise-eurostar-strike-hits-paris-london-trains_6788047_7.html"
+      }
+    },
+    {
+      "slug": "apple-faces-legal-trial-in-france",
+      "canonicalPath": "/news/fr/apple-faces-legal-trial-in-france/",
+      "headline": "Apple To Face French Legal Trial Over Alleged Repair Restrictions",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Apple is scheduled to appear in a Paris court in June 2027.",
+        "The case involves allegations of planned obsolescence regarding iPhone software and repair practices."
+      ],
+      "primarySource": {
+        "publisherName": "Punch",
+        "articleUrl": "https://punchng.com/apple-to-face-trial-over-alleged-iphone-repair-restrictions-in-france/"
+      }
+    },
+    {
       "slug": "south-africa-femicide-government-criticism",
       "canonicalPath": "/news/fr/south-africa-femicide-government-criticism/",
       "headline": "South African Government Faces Criticism Over Femicide Initiatives",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 43,
+      "viralScore": 39,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Feminist organizations state that gender-based violence rates have not improved significantly in the past year.",
@@ -132,7 +183,7 @@
       "headline": "Stéphane Brizé Releases New Film Un Bon Petit Soldat In Theaters",
       "categorySlug": "entertainment-celebrity",
       "categoryName": "Entertainment & Celebrity",
-      "viralScore": 42,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The film Un Bon Petit Soldat is scheduled for theatrical release in France on November 25, 2026.",
@@ -144,29 +195,12 @@
       }
     },
     {
-      "slug": "apple-faces-legal-trial-in-france",
-      "canonicalPath": "/news/fr/apple-faces-legal-trial-in-france/",
-      "headline": "Apple To Face French Legal Trial Over Alleged Repair Restrictions",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Apple is scheduled to appear in a Paris court in June 2027.",
-        "The case involves allegations of planned obsolescence regarding iPhone software and repair practices."
-      ],
-      "primarySource": {
-        "publisherName": "Punch",
-        "articleUrl": "https://punchng.com/apple-to-face-trial-over-alleged-iphone-repair-restrictions-in-france/"
-      }
-    },
-    {
       "slug": "court-arbitration-sport-senegal-afcon-winner",
       "canonicalPath": "/news/fr/court-arbitration-sport-senegal-afcon-winner/",
       "headline": "Court Of Arbitration For Sport Declares Senegal Winners Of AFCON",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 34,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Court of Arbitration for Sport officially awarded Senegal the 2025 Africa Cup of Nations title.",
@@ -175,22 +209,6 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/sports/article/2026/11/24/court-of-arbitration-for-sport-declares-senegal-winner-of-afcon-over-morocco_6787702_9.html"
-      }
-    },
-    {
-      "slug": "violence-west-bank-yemen-strikes",
-      "canonicalPath": "/news/fr/violence-west-bank-yemen-strikes/",
-      "headline": "Guerre au Moyen-Orient : palestinien tué en Cisjordanie ; frappes au Yémen… Le bilan du vendredi…",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 33,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "La Croix reports: Guerre au Moyen-Orient : palestinien tué en Cisjordanie ; frappes au Yémen… Le bilan du vendredi 20 novembre"
-      ],
-      "primarySource": {
-        "publisherName": "La Croix",
-        "articleUrl": "https://www.la-croix.com/international/direct-guerre-iran-israel-usa-jour-266-moyen-orient-bilan-resume-aujourdhui-20261120"
       }
     },
     {
@@ -267,7 +285,7 @@
       "headline": "Stellantis To Eliminate Night Shift At Sochaux Site In France",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 20,
+      "viralScore": 19,
       "intensityTier": "quiet",
       "aiSummaryBullets": [
         "Stellantis informed labor unions on November 24 of the planned night shift cancellation.",
@@ -327,23 +345,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/sport/alcaraz-beats-error-prone-shelton-win-paris-masters-6534421"
-      }
-    },
-    {
-      "slug": "french-police-officers-trial-zecler-beating",
-      "canonicalPath": "/news/fr/french-police-officers-trial-zecler-beating/",
-      "headline": "French Police Officers Sentenced For Beating Michel Zecler",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A Paris court found three police officers guilty of intentionally assaulting music producer Michel Zecler in 2020.",
-        "The court ruled that the attack, which occurred inside the victim's building, included aggravated circumstances of racism."
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/france/article/2026/11/09/french-policemen-stand-trial-over-beating-of-black-man-in-emblematic-case_6775540_7.html"
       }
     }
   ]

@@ -3,17 +3,51 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 82,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-25T08:18:00Z",
+  "viralScore": 89,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-25T11:18:00Z",
   "clusters": [
+    {
+      "slug": "us-army-detonate-explosives-iowa-plant",
+      "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
+      "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "The US Army plans to destroy the nation's total supply of degrading lead azide at a munitions facility in Iowa on Wednesday.",
+        "The controlled detonation follows significant delays, legal discussions, and ongoing public anxiety regarding potential environmental and health impacts."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo"
+      }
+    },
+    {
+      "slug": "trump-reflects-on-deportation-policy",
+      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
+      "headline": "Kilmar Abrego Garcia Departs United States Following Deportation Row",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Kilmar Abrego Garcia departed the United States for Spain on Tuesday, as confirmed by the Department of Homeland Security.",
+        "The individual's previous mistaken deportation to El Salvador and subsequent return fueled public debate regarding national immigration policies."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
+      }
+    },
     {
       "slug": "nvidia-ceo-jensen-huang-security-investigation",
       "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
       "headline": "DOJ Faces Questions Over Jensen Huang Return To Nvidia CEO Role",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 79,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang has been reinstated as the CEO of Nvidia after a rapid reversal of his departure linked to intervention by Donald Trump.",
@@ -30,7 +64,7 @@
       "headline": "California Grand Jury Indicts Thomas Markle On Pornography Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 77,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "A California grand jury has officially indicted Thomas Markle on two counts of possessing child sexual abuse material.",
@@ -42,37 +76,20 @@
       }
     },
     {
-      "slug": "us-army-detonate-explosives-iowa-plant",
-      "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
-      "headline": "US Army To Detonate Lead Azide Explosives In Iowa Before Holiday",
+      "slug": "plane-crash-off-mississippi-coast",
+      "canonicalPath": "/news/us/plane-crash-off-mississippi-coast/",
+      "headline": "Six People Die After Cessna 210 Crashes Off Mississippi Coast",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 77,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "The US Army plans to detonate more than four tonnes of lead azide explosives at a facility in Iowa.",
-        "Officials state the detonation is necessary to prevent the risk of an unpredictable and dangerous spontaneous explosion."
+        "A Cessna 210 aircraft crashed into the Gulf of Mexico near Mississippi.",
+        "The US Coast Guard confirmed that all six individuals on board were killed."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cvglrx764gdxo"
-      }
-    },
-    {
-      "slug": "trump-reflects-on-deportation-policy",
-      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
-      "headline": "Kilmar Abrego Garcia Departs United States Following Deportation Row",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 71,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Kilmar Abrego Garcia departed the United States for Spain on Tuesday, as confirmed by the Department of Homeland Security.",
-        "The individual's previous mistaken deportation to El Salvador and subsequent return fueled public debate regarding national immigration policies."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/24/mississippi-plane-crash"
       }
     },
     {
@@ -81,7 +98,7 @@
       "headline": "Jensen Huang's surprise return to Nvidia sparks mixed reactions in Washington",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 62,
+      "viralScore": 68,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "France 24 reports: Jensen Huang's surprise return to Nvidia sparks mixed reactions in Washington",
@@ -93,13 +110,30 @@
       }
     },
     {
+      "slug": "us-conducts-new-military-strikes-iran",
+      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
+      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
+        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+      }
+    },
+    {
       "slug": "pertamina-addresses-rupiah-exchange-rate",
       "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
       "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 57,
-      "intensityTier": "active",
+      "viralScore": 63,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
         "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
@@ -115,7 +149,7 @@
       "headline": "Democrats Secure Historic House Majority Following Midterm Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Democrats attained their largest House of Representatives majority since 1992, securing 258 seats.",
@@ -132,7 +166,7 @@
       "headline": "US Commerce Department Adds Megaspeed To Trade Blacklist After Scandal",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Department of Commerce added the AI firm Megaspeed to its trade blacklist via a filing made on Monday.",
@@ -144,37 +178,20 @@
       }
     },
     {
-      "slug": "elon-musk-midterm-spending-comments",
-      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
-      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
+      "slug": "zelenskyy-reports-us-donbas-nato-proposal",
+      "canonicalPath": "/news/us/zelenskyy-reports-us-donbas-nato-proposal/",
+      "headline": "President Zelenskyy Reports US Proposal On Donbas And NATO Accession",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
-        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
+        "Ukrainian President Volodymyr Zelenskyy stated that US representatives proposed a territorial exchange involving the Donbas region.",
+        "The suggested proposal would reportedly grant Ukraine NATO membership in return for ceding parts of eastern Ukraine to Russian control."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership"
       }
     },
     {
@@ -212,6 +229,23 @@
       }
     },
     {
+      "slug": "elon-musk-midterm-spending-comments",
+      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
+      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
+        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
+      }
+    },
+    {
       "slug": "united-states-loses-measles-elimination-status-2",
       "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
       "headline": "US loses measles elimination status amid worst outbreak since 1991",
@@ -234,7 +268,7 @@
       "headline": "'Out of control': ICE agents make arrests at Seattle airport in 'horrific' scene",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "France 24 reports: 'Out of control': ICE agents make arrests at Seattle airport in 'horrific' scene",
@@ -243,23 +277,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/princeton-student-ice/"
-      }
-    },
-    {
-      "slug": "trump-expected-to-award-giuliani-presidential-medal-of-freedom",
-      "canonicalPath": "/news/us/trump-expected-to-award-giuliani-presidential-medal-of-freedom/",
-      "headline": "Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CBS News reports: Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
-        "NDTV reports: Rudy Giuliani, Ex-New York Mayor Who Helped Trump Overturn His 2020 Defeat, Gets Medal Of Freedom"
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/white-house-turkey-pardon-trump-thanksgiving-freedom-feathers/"
       }
     },
     {
@@ -280,23 +297,6 @@
       }
     },
     {
-      "slug": "us-jury-convicts-huawei-of-violating-sanctions-stealing-trade",
-      "canonicalPath": "/news/us/us-jury-convicts-huawei-of-violating-sanctions-stealing-trade/",
-      "headline": "US jury convicts Huawei of violating sanctions, stealing trade secrets",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Deutsche Welle reports: US jury convicts Huawei of violating sanctions, stealing trade secrets",
-        "France 24 reports: New York jury convicts Huawei of stealing trade secrets"
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets"
-      }
-    },
-    {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
       "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
@@ -314,37 +314,37 @@
       }
     },
     {
-      "slug": "zelenskyy-reports-us-donbas-nato-proposal",
-      "canonicalPath": "/news/us/zelenskyy-reports-us-donbas-nato-proposal/",
-      "headline": "President Zelenskyy Reports US Proposal On Donbas And NATO Accession",
+      "slug": "trump-expected-to-award-giuliani-presidential-medal-of-freedom",
+      "canonicalPath": "/news/us/trump-expected-to-award-giuliani-presidential-medal-of-freedom/",
+      "headline": "Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Ukrainian President Volodymyr Zelenskyy stated that US representatives proposed a territorial exchange involving the Donbas region.",
-        "The suggested proposal would reportedly grant Ukraine NATO membership in return for ceding parts of eastern Ukraine to Russian control."
+        "CBS News reports: Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
+        "NDTV reports: Rudy Giuliani, Ex-New York Mayor Who Helped Trump Overturn His 2020 Defeat, Gets Medal Of Freedom"
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/white-house-turkey-pardon-trump-thanksgiving-freedom-feathers/"
       }
     },
     {
-      "slug": "severe-storms-threaten-thanksgiving-travel",
-      "canonicalPath": "/news/us/severe-storms-threaten-thanksgiving-travel/",
-      "headline": "Severe storms threaten Thanksgiving travel",
-      "categorySlug": "lifestyle-culture",
-      "categoryName": "Lifestyle & Culture",
-      "viralScore": 45,
+      "slug": "us-jury-convicts-huawei-of-violating-sanctions-stealing-trade",
+      "canonicalPath": "/news/us/us-jury-convicts-huawei-of-violating-sanctions-stealing-trade/",
+      "headline": "US jury convicts Huawei of violating sanctions, stealing trade secrets",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "CBS News reports: Severe storms threaten Thanksgiving travel",
-        "The Guardian reports: California king tides threaten Thanksgiving travel as coastal flooding looms"
+        "Deutsche Welle reports: US jury convicts Huawei of violating sanctions, stealing trade secrets",
+        "France 24 reports: New York jury convicts Huawei of stealing trade secrets"
       ],
       "primarySource": {
         "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/video/20261124-ice-raids-add-to-jitters-ahead-of-thanksgiving-travel-rush"
+        "articleUrl": "https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets"
       }
     }
   ]
