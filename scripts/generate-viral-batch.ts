@@ -57,6 +57,7 @@ import {
 import {
   createSummarizer,
   isFallbackSummary,
+  keepsStoredAiText,
   resolveProvider,
   type SummaryInput,
   type AiFailure,
@@ -452,6 +453,7 @@ async function main() {
   const aiFailures = new Map<AiFailureCategory, number>();
   const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
+  let keptAiText = 0; // stories whose AI call failed but kept their stored AI text
   const titleNames: Record<TitleNameCheck, number> = {
     kept: 0,
     headline: 0,
@@ -469,15 +471,22 @@ async function main() {
     }
     aiCalls++;
     const result = await summarizer.summarize(input);
+    const existing = item.cluster.existing;
+    // On a failed call an updated story keeps its AI text; sources and scores still update,
+    // and the text is retried when more coverage arrives.
+    const keepText = keepsStoredAiText({ isNew: item.isNew, existing }, result.output);
     if (result.error) {
       const { category, detail } = result.error;
       aiFailures.set(category, (aiFailures.get(category) ?? 0) + 1);
       if (aiFailureSamples.length < 5) aiFailureSamples.push(result.error);
       log(
-        `  ! AI summary failed (${item.cluster.countryCode}) [${category}]: ${detail} — using fallback`,
+        `  ! AI summary failed (${item.cluster.countryCode}) [${category}]: ${detail} — ${keepText ? 'keeping the stored AI text' : 'using fallback'}`,
       );
     }
-    const existing = item.cluster.existing;
+    if (keepText) {
+      keptAiText++;
+      return;
+    }
     if (existing && !result.error && !isFallbackSummary(result.output)) {
       // An update must not drop the names the story's URL was published under.
       const kept = keepStoryNames(result.output, {
@@ -495,6 +504,8 @@ async function main() {
     }
     texts.set(item.cluster, result.output);
   });
+  if (keptAiText)
+    log(`  ${keptAiText} updated stories kept their stored AI text after a failed AI call`);
   // Trending searches targeted in titles, and how many AI titles actually used them.
   const targeted = needsText
     .map((item) => ({ item, query: searchQueryFor(item.cluster, item.score.matchedTrend) }))

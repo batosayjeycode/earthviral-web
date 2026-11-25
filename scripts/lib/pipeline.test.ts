@@ -15,7 +15,7 @@ import {
   velocityScore,
 } from './intelligence/computeViralScore.ts';
 import type { ViralClusterStaticRecord } from '../../src/lib/types.ts';
-import { heuristicSummary } from './intelligence/generateAiSummaries.ts';
+import { heuristicSummary, keepsStoredAiText } from './intelligence/generateAiSummaries.ts';
 import { parseFeed } from './fetchers/fetchRss.ts';
 import { summaryQueue } from './intelligence/selectStories.ts';
 import { keepStoryNames, namesAnchor, storyAnchors } from './intelligence/storyNames.ts';
@@ -1103,6 +1103,38 @@ describe('fallback detection', async () => {
     assert.ok(
       !isFallbackSummary({ aiContextParagraph: 'Bank Indonesia kept its rate unchanged.' }),
     );
+  });
+});
+
+describe('failed AI call on a stored story', () => {
+  const fallback = heuristicSummary({
+    countryCode: 'IN',
+    countryName: 'India',
+    articles: [
+      {
+        publisherName: 'NDTV',
+        title: 'Tensions rise over Karthigai Deepam lighting in Tamil Nadu',
+        snippet: '',
+        publishedAt: hoursAgo(1),
+      },
+    ],
+    metrics: { viralScore: 95, publishers: 4, velocity: 80, search: 0, trendKeyword: null },
+  });
+  const aiText = { aiContextParagraph: 'Protests broke out over the lamp lighting.' };
+
+  it('keeps stored AI text instead of the non-AI fallback', () => {
+    assert.ok(keepsStoredAiText({ isNew: false, existing: aiText }, fallback));
+  });
+
+  it('still replaces it with a new AI summary', () => {
+    const fresh = { aiContextParagraph: 'Police detained activists at the hill.' };
+    assert.ok(!keepsStoredAiText({ isNew: false, existing: aiText }, fresh));
+  });
+
+  it('uses the fallback for new and repaired stories and for stored fallback text', () => {
+    assert.ok(!keepsStoredAiText({ isNew: true }, fallback));
+    assert.ok(!keepsStoredAiText({ isNew: true, existing: aiText }, fallback)); // repaired
+    assert.ok(!keepsStoredAiText({ isNew: false, existing: fallback }, fallback));
   });
 });
 

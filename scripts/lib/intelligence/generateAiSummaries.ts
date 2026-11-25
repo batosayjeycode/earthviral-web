@@ -654,6 +654,20 @@ export function isFallbackSummary(story: { aiContextParagraph: string }): boolea
   return story.aiContextParagraph.includes(FALLBACK_MARKER);
 }
 
+/**
+ * True when a failed AI call must not replace a story's stored text: the story keeps its URL
+ * and its AI-written text (still about the same event) instead of dropping to the non-AI
+ * fallback. New and repaired (drifted) stories have no usable text, so they take the fallback.
+ */
+export function keepsStoredAiText(
+  item: { isNew: boolean; existing?: { aiContextParagraph: string } | null },
+  output: Pick<SummaryOutput, 'aiContextParagraph'>,
+): boolean {
+  return (
+    !item.isNew && !!item.existing && !isFallbackSummary(item.existing) && isFallbackSummary(output)
+  );
+}
+
 /** Matches a quoted score ("71/100", "a viral activity score of 52", "search signal score 84"). */
 const SCORE_CLAIM = /\b\d{1,3}\s*\/\s*100\b|\b(?:score|signal)\b[^.]{0,25}?\b\d{1,3}\b/i;
 
