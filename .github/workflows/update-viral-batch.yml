@@ -6,7 +6,8 @@
 # not trigger `push` workflows. Trigger manually from Actions → "Update viral batch".
 #
 # Repository settings needed:
-#   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI)
+#   secrets: GEMINI_API_KEY and/or OPENAI_API_KEY (without either, summaries are non-AI; with both,
+#            provider auto uses Gemini and retries failed calls with OpenAI)
 #   vars (optional): GEMINI_MODEL, OPENAI_MODEL, MAX_STORIES_PER_COUNTRY (default 10), MAX_STORED_STORIES (default 2500),
 #                    AI_CONCURRENCY (default 2)
 name: Update viral batch
@@ -21,7 +22,7 @@ on:
   workflow_dispatch:
     inputs:
       provider:
-        description: 'Summary provider (auto = Gemini if its key is set, else OpenAI, else none)'
+        description: 'Summary provider (auto = Gemini if its key is set, else OpenAI, else none; with both keys, OpenAI retries failed Gemini calls)'
         type: choice
         options: [auto, gemini, openai, none]
         default: auto

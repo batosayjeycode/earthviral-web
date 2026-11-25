@@ -6,7 +6,10 @@
  *   npm run update:viral -- --provider none   # no AI calls (deterministic summaries)
  *
  * Flags:
- *   --provider gemini|openai|none   default: gemini if GEMINI_API_KEY, else openai if OPENAI_API_KEY, else none
+ *   --provider gemini|openai|none   default: gemini if GEMINI_API_KEY, else openai if OPENAI_API_KEY, else none.
+ *                          With the default and both keys, a failed Gemini call is retried with
+ *                          OpenAI (e.g. once Gemini's free daily quota is used up); an explicit
+ *                          --provider uses that provider only.
  *   --max-new <n>          new clusters per batch (default 60)
  *   --max-per-country <n>  new clusters per country per batch (default 8)
  *   --max-stories-per-country <n>  live (active) stories per country (default 10, env
@@ -58,6 +61,7 @@ import {
   createSummarizer,
   isFallbackSummary,
   keepsStoredAiText,
+  resolveFailover,
   resolveProvider,
   type SummaryInput,
   type AiFailure,
@@ -105,8 +109,10 @@ const intOption = (name: string, fallback: number) => {
   return n;
 };
 
+const provider = resolveProvider(option('provider'));
 const OPTS = {
-  provider: resolveProvider(option('provider')),
+  provider,
+  failover: resolveFailover(option('provider'), provider),
   dryRun: flag('dry-run'),
   snapshot: option('snapshot'),
   maxNew: intOption('max-new', 60),
@@ -256,10 +262,16 @@ async function main() {
   const started = Date.now();
   const now = new Date(Math.floor(Date.now() / 60_000) * 60_000);
   const batchId = `batch-${iso(now).slice(0, 16).replace(/[-T:]/g, '')}`;
-  const summarizer = createSummarizer(OPTS.provider);
+  const summarizer = createSummarizer(OPTS.provider, OPTS.failover);
 
   log(`▶ EarthViral batch ${batchId}${OPTS.dryRun ? ' (dry run)' : ''}`);
-  log(`  provider: ${summarizer.provider}${summarizer.model ? ` (${summarizer.model})` : ''}`);
+  log(
+    `  provider: ${summarizer.provider}${summarizer.model ? ` (${summarizer.model})` : ''}${
+      summarizer.failover
+        ? `, failover: ${summarizer.failover.provider} (${summarizer.failover.model})`
+        : ''
+    }`,
+  );
   if (summarizer.provider === 'none') {
     log(
       '  ! No GEMINI_API_KEY / OPENAI_API_KEY — summaries will be deterministic, not AI-written.',
@@ -454,6 +466,14 @@ async function main() {
   const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
   let keptAiText = 0; // stories whose AI call failed but kept their stored AI text
+  // Calls the primary provider failed and the failover provider retried, by the primary's
+  // failure category, and how many of those the failover provider wrote.
+  const failover = { tried: 0, written: 0, reasons: new Map<string, number>() };
+  const countFailover = (f: { from: AiFailure; ok: boolean }) => {
+    failover.tried++;
+    if (f.ok) failover.written++;
+    failover.reasons.set(f.from.category, (failover.reasons.get(f.from.category) ?? 0) + 1);
+  };
   const titleNames: Record<TitleNameCheck, number> = {
     kept: 0,
     headline: 0,
@@ -475,6 +495,13 @@ async function main() {
     // On a failed call an updated story keeps its AI text; sources and scores still update,
     // and the text is retried when more coverage arrives.
     const keepText = keepsStoredAiText({ isNew: item.isNew, existing }, result.output);
+    if (result.failover) {
+      countFailover(result.failover);
+      if (result.failover.ok)
+        log(
+          `  ↪ ${summarizer.provider} failed (${item.cluster.countryCode}) [${result.failover.from.category}] — written by ${summarizer.failover!.provider}`,
+        );
+    }
     if (result.error) {
       const { category, detail } = result.error;
       aiFailures.set(category, (aiFailures.get(category) ?? 0) + 1);
@@ -622,12 +649,14 @@ async function main() {
     clusters: records,
     previous: previousMeta?.isSeed ? [] : await loadDigestSummaries(ROOT),
     provider: summarizer.provider,
+    failover: OPTS.failover,
     now,
     maxCalls: OPTS.maxDigestAi,
     concurrency: OPTS.aiConcurrency,
     log,
   });
   aiCalls += digest.stats.written + digest.stats.failed;
+  digest.failovers.forEach(countFailover);
   for (const f of digest.failures) {
     aiFailures.set(f.category, (aiFailures.get(f.category) ?? 0) + 1);
     if (aiFailureSamples.length < 5) aiFailureSamples.push(f);
@@ -667,6 +696,16 @@ async function main() {
         titleNames,
         digestSummaries: digest.stats,
         ...(aiFailureCount ? { aiFailures: Object.fromEntries(aiFailures), aiFailureSamples } : {}),
+        ...(failover.tried && summarizer.failover
+          ? {
+              failover: {
+                provider: `${summarizer.failover.provider}:${summarizer.failover.model}`,
+                tried: failover.tried,
+                written: failover.written,
+                reasons: Object.fromEntries(failover.reasons),
+              },
+            }
+          : {}),
         durationMs: Date.now() - started,
       },
     },
@@ -682,7 +721,11 @@ async function main() {
     `  active countries ${totals.activeCountries} · viral topics ${totals.viralTopics} · global index ${totals.globalIndex}`,
   );
   log(
-    `  AI calls ${aiCalls}${aiFailureCount ? ` (${aiFailureCount} fell back: ${aiFailureSummary})` : ''} · ${((Date.now() - started) / 1000).toFixed(1)}s`,
+    `  AI calls ${aiCalls}${aiFailureCount ? ` (${aiFailureCount} fell back: ${aiFailureSummary})` : ''}${
+      failover.tried
+        ? ` · failover ${summarizer.failover!.provider}: ${failover.written} of ${failover.tried} written`
+        : ''
+    } · ${((Date.now() - started) / 1000).toFixed(1)}s`,
   );
   log('  Top stories:');
   for (const r of [...records].sort((a, b) => b.viralScore - a.viralScore).slice(0, 10)) {

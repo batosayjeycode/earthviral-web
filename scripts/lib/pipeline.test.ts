@@ -745,6 +745,124 @@ describe('AI providers (fetch stubbed)', async () => {
     }
   });
 
+  describe('failover from Gemini to OpenAI', async () => {
+    const { resetGeminiQuotaStop, resolveFailover } =
+      await import('./intelligence/generateAiSummaries.ts');
+    const dailyQuota = {
+      error: {
+        code: 429,
+        message: 'You exceeded your current quota.',
+        details: [
+          {
+            '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+            violations: [{ quotaId: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier' }],
+          },
+          { '@type': 'type.googleapis.com/google.rpc.RetryInfo', retryDelay: '0.001s' },
+        ],
+      },
+    };
+    // Gemini answers with `gemini`, OpenAI with `openai`; counts requests per provider.
+    const route = (
+      gemini: { status: number; body: unknown },
+      openai: { status: number; body: unknown },
+      count: { gemini: number; openai: number },
+    ) =>
+      (async (url: string) => {
+        const which = url.includes('googleapis.com') ? 'gemini' : 'openai';
+        count[which]++;
+        const r = which === 'gemini' ? gemini : openai;
+        return new Response(JSON.stringify(r.body), {
+          status: r.status,
+          headers: { 'content-type': 'application/json' },
+        });
+      }) as unknown as typeof fetch;
+    const openAiGood = {
+      status: 200,
+      body: { choices: [{ message: { content: JSON.stringify(good) } }] },
+    };
+    const withKeys = async (fn: () => Promise<void>) => {
+      process.env.GEMINI_API_KEY = 'g-key';
+      process.env.OPENAI_API_KEY = 'o-key';
+      try {
+        await fn();
+      } finally {
+        resetGeminiQuotaStop();
+        globalThis.fetch = realFetch;
+        delete process.env.GEMINI_API_KEY;
+        delete process.env.OPENAI_API_KEY;
+      }
+    };
+
+    it('fails over only for an automatically chosen Gemini with an OpenAI key', () =>
+      withKeys(async () => {
+        assert.equal(resolveFailover(undefined, 'gemini'), 'openai');
+        assert.equal(resolveFailover('gemini', 'gemini'), null); // explicit provider: that one only
+        assert.equal(resolveFailover(undefined, 'openai'), null);
+        delete process.env.OPENAI_API_KEY;
+        assert.equal(resolveFailover(undefined, 'gemini'), null);
+      }));
+
+    it('writes the summary with OpenAI once Gemini hits its daily quota, then skips Gemini', () =>
+      withKeys(async () => {
+        const count = { gemini: 0, openai: 0 };
+        globalThis.fetch = route({ status: 429, body: dailyQuota }, openAiGood, count);
+        const summarizer = createSummarizer('gemini', 'openai');
+        assert.deepEqual(summarizer.failover, { provider: 'openai', model: 'gpt-5-mini' });
+
+        const first = await summarizer.summarize(input);
+        assert.equal(first.usedAi, true);
+        assert.equal(first.error, undefined);
+        assert.equal(first.output.headline, good.headline);
+        assert.equal(first.failover?.ok, true);
+        assert.equal(first.failover?.from.category, 'rate-limit');
+        assert.deepEqual(count, { gemini: 3, openai: 1 }); // Gemini: 3 attempts
+
+        const second = await summarizer.summarize(input);
+        assert.equal(second.usedAi, true);
+        assert.deepEqual(count, { gemini: 3, openai: 2 }); // no Gemini request after the daily stop
+      }));
+
+    it('fails over on a bad Gemini reply too, and falls back to non-AI text if OpenAI fails', () =>
+      withKeys(async () => {
+        const count = { gemini: 0, openai: 0 };
+        const badGemini = {
+          status: 200,
+          body: { candidates: [{ content: { parts: [{ text: '{}' }] } }] },
+        };
+        globalThis.fetch = route(
+          badGemini,
+          { status: 400, body: { error: { message: 'Bad' } } },
+          count,
+        );
+        const r = await createSummarizer('gemini', 'openai').summarize(input);
+        assert.equal(r.usedAi, false);
+        assert.equal(r.failover?.from.category, 'schema');
+        assert.equal(r.failover?.ok, false);
+        assert.equal(r.error?.category, 'http-error'); // the failover provider's failure
+        assert.ok(r.output.aiContextParagraph.includes('without an AI model'));
+        assert.deepEqual(count, { gemini: 1, openai: 1 });
+      }));
+
+    it('never calls OpenAI when Gemini succeeds or no failover is set', () =>
+      withKeys(async () => {
+        const count = { gemini: 0, openai: 0 };
+        const geminiGood = {
+          status: 200,
+          body: { candidates: [{ content: { parts: [{ text: JSON.stringify(good) }] } }] },
+        };
+        globalThis.fetch = route(geminiGood, openAiGood, count);
+        const ok = await createSummarizer('gemini', 'openai').summarize(input);
+        assert.equal(ok.usedAi, true);
+        assert.equal(ok.failover, undefined);
+
+        globalThis.fetch = route({ status: 429, body: dailyQuota }, openAiGood, count);
+        const alone = await createSummarizer('gemini').summarize(input);
+        assert.equal(alone.usedAi, false);
+        assert.equal(alone.failover, undefined);
+        assert.equal(count.openai, 0);
+      }));
+  });
+
   it('parses an OpenAI json_schema reply', async () => {
     process.env.OPENAI_API_KEY = 'test-key';
     const calls: Array<{ url: string; init: RequestInit }> = [];

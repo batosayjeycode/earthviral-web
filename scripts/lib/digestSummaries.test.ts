@@ -141,4 +141,46 @@ describe('generateDigestSummaries', () => {
       delete process.env.GEMINI_API_KEY;
     }
   });
+
+  test('retries a failed Gemini call with the failover provider and records its model', async () => {
+    process.env.GEMINI_API_KEY = 'test-key';
+    process.env.OPENAI_API_KEY = 'test-key';
+    const realFetch = globalThis.fetch;
+    const good = 'A factory fire in Indonesia led coverage across several outlets. '.repeat(6);
+    const calls = { gemini: 0, openai: 0 };
+    globalThis.fetch = (async (url: string) => {
+      if (url.includes('googleapis.com')) {
+        calls.gemini++;
+        return new Response(JSON.stringify({ error: { message: 'Unavailable' } }), { status: 400 });
+      }
+      calls.openai++;
+      const content = JSON.stringify({ summary: good });
+      return new Response(JSON.stringify({ choices: [{ message: { content } }] }), {
+        status: 200,
+        headers: { 'content-type': 'application/json' },
+      });
+    }) as unknown as typeof fetch;
+    try {
+      const r = await generateDigestSummaries({
+        clusters,
+        previous: [],
+        provider: 'gemini',
+        failover: 'openai',
+        now: NOW,
+        maxCalls: 1,
+        concurrency: 1,
+      });
+      assert.equal(r.stats.written, 1);
+      assert.equal(r.stats.failed, 0);
+      assert.deepEqual(r.failovers, [
+        { from: { category: 'http-error', detail: 'HTTP 400: Unavailable' }, ok: true },
+      ]);
+      assert.equal(r.summaries[0]?.model, 'openai:gpt-5-mini');
+      assert.deepEqual(calls, { gemini: 1, openai: 1 });
+    } finally {
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+      delete process.env.OPENAI_API_KEY;
+    }
+  });
 });

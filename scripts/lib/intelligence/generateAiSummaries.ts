@@ -805,12 +805,21 @@ export function classifyAiError(err: unknown): AiFailure {
   return { category: 'other', detail: clip(err instanceof Error ? err.message : String(err)) };
 }
 
+export type AiProviderName = Exclude<ProviderName, 'none'>;
+
 export interface Summarizer {
   provider: ProviderName;
   model: string | null;
-  summarize(
-    input: SummaryInput,
-  ): Promise<{ output: SummaryOutput; usedAi: boolean; error?: AiFailure }>;
+  /** Provider tried when the primary one fails (see resolveFailover), or null. */
+  failover: { provider: AiProviderName; model: string } | null;
+  summarize(input: SummaryInput): Promise<{
+    output: SummaryOutput;
+    usedAi: boolean;
+    /** Why the text is the non-AI fallback (the last provider's failure). */
+    error?: AiFailure;
+    /** Set when the primary provider failed and the failover provider was tried. */
+    failover?: { from: AiFailure; ok: boolean };
+  }>;
 }
 
 export function resolveProvider(requested: string | undefined): ProviderName {
@@ -820,6 +829,20 @@ export function resolveProvider(requested: string | undefined): ProviderName {
   if (process.env.GEMINI_API_KEY) return 'gemini';
   if (process.env.OPENAI_API_KEY) return 'openai';
   return 'none';
+}
+
+/**
+ * The provider to switch to when the primary one fails: OpenAI, for a run that picked Gemini
+ * on its own and also has an OpenAI key. Gemini's free tier runs out of daily requests, and
+ * every story after that would otherwise get non-AI text. An explicit --provider means that
+ * provider only.
+ */
+export function resolveFailover(
+  requested: string | undefined,
+  primary: ProviderName,
+): AiProviderName | null {
+  if (requested || primary !== 'gemini') return null;
+  return process.env.OPENAI_API_KEY ? 'openai' : null;
 }
 
 /** API key and model for an AI provider, from the environment. Throws when the key is missing. */
@@ -853,45 +876,71 @@ export function requestModelJson(
   return (provider === 'gemini' ? callGemini : callOpenAI)(prompt, apiKey, model);
 }
 
-export function createSummarizer(provider: ProviderName): Summarizer {
+type SummaryAttempt = { output: SummaryOutput } | { error: AiFailure };
+
+async function trySummary(
+  provider: AiProviderName,
+  credentials: { apiKey: string; model: string },
+  input: SummaryInput,
+): Promise<SummaryAttempt> {
+  let raw: unknown;
+  try {
+    raw = await requestModelJson(provider, summaryPrompt(input), credentials);
+  } catch (err) {
+    return { error: classifyAiError(err) };
+  }
+  const parsed = outputSchema.safeParse(normalizeModelOutput(raw));
+  if (parsed.success) {
+    // Quoted scores go stale as soon as the next batch rescoring runs; use the
+    // metric-free deterministic sentence instead.
+    const output = hasScoreClaim(parsed.data.whyItIsViral)
+      ? { ...parsed.data, whyItIsViral: describeAttention(input) }
+      : parsed.data;
+    return { output };
+  }
+  // Name the failing fields (e.g. "headline: Too big") instead of Zod's JSON dump.
+  const detail = parsed.error.issues
+    .slice(0, 3)
+    .map((i) => `${i.path.join('.') || '(root)'}: ${i.message}`)
+    .join('; ');
+  return { error: { category: 'schema', detail: detail.slice(0, 200) } };
+}
+
+export function createSummarizer(
+  provider: ProviderName,
+  failover: AiProviderName | null = null,
+): Summarizer {
   if (provider === 'none') {
     return {
       provider,
       model: null,
+      failover: null,
       summarize: async (input) => ({ output: heuristicSummary(input), usedAi: false }),
     };
   }
 
-  const { apiKey, model } = aiCredentials(provider);
+  const primary = aiCredentials(provider);
+  const backup = failover && failover !== provider ? aiCredentials(failover) : null;
 
   return {
     provider,
-    model,
+    model: primary.model,
+    failover: backup && failover ? { provider: failover, model: backup.model } : null,
     async summarize(input) {
-      let raw: unknown;
-      try {
-        raw = await requestModelJson(provider, summaryPrompt(input), { apiKey, model });
-      } catch (err) {
-        return { output: heuristicSummary(input), usedAi: false, error: classifyAiError(err) };
+      const first = await trySummary(provider, primary, input);
+      if ('output' in first) return { output: first.output, usedAi: true };
+      if (!backup || !failover) {
+        return { output: heuristicSummary(input), usedAi: false, error: first.error };
       }
-      const parsed = outputSchema.safeParse(normalizeModelOutput(raw));
-      if (parsed.success) {
-        // Quoted scores go stale as soon as the next batch rescoring runs; use the
-        // metric-free deterministic sentence instead.
-        const output = hasScoreClaim(parsed.data.whyItIsViral)
-          ? { ...parsed.data, whyItIsViral: describeAttention(input) }
-          : parsed.data;
-        return { output, usedAi: true };
+      const second = await trySummary(failover, backup, input);
+      if ('output' in second) {
+        return { output: second.output, usedAi: true, failover: { from: first.error, ok: true } };
       }
-      // Name the failing fields (e.g. "headline: Too big") instead of Zod's JSON dump.
-      const detail = parsed.error.issues
-        .slice(0, 3)
-        .map((i) => `${i.path.join('.') || '(root)'}: ${i.message}`)
-        .join('; ');
       return {
         output: heuristicSummary(input),
         usedAi: false,
-        error: { category: 'schema', detail: detail.slice(0, 200) },
+        error: second.error,
+        failover: { from: first.error, ok: false },
       };
     },
   };
