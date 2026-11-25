@@ -24,7 +24,7 @@ import { RSS_SOURCES } from './fetchers/rssSources.ts';
 import { decodeBody, detectCharset, fetchText, isMislabelledSingleByte } from './http.ts';
 import { parseTrendsFeed } from './fetchers/fetchGoogleTrends.ts';
 import { nextScheduledBatch, nextWibBoundary } from './builders/writeStaticJson.ts';
-import { slugify, tokenize, truncate } from './intelligence/text.ts';
+import { looksEnglish, looksForeign, slugify, tokenize, truncate } from './intelligence/text.ts';
 
 const NOW = new Date('2026-11-06T03:00:00Z');
 const hoursAgo = (h: number) => new Date(NOW.getTime() - h * 3_600_000).toISOString();
@@ -1103,6 +1103,86 @@ describe('fallback detection', async () => {
     assert.ok(
       !isFallbackSummary({ aiContextParagraph: 'Bank Indonesia kept its rate unchanged.' }),
     );
+  });
+});
+
+describe('headline language', () => {
+  it('recognises English, including names in other languages', () => {
+    for (const t of [
+      'Real Madrid striker Endrick ruled out with thigh injury',
+      'Military Police Operation In Rio De Janeiro Disrupts Key Roadways',
+    ]) {
+      assert.ok(looksEnglish(t), t);
+      assert.ok(!looksForeign(t), t);
+    }
+  });
+
+  it('recognises Portuguese, Indonesian, Malay, French and non-Latin headlines as foreign', () => {
+    for (const t of [
+      'Endrick sofre lesão na coxa direita e desfalca o Real Madrid',
+      'Menhan Sjafrie: Tak Ada Rencana Pergantian Panglima TNI',
+      'Polis siasat penemuan bungkusan naskhah di tepi jalan di Ulu Tiram',
+      'Guerre au Moyen-Orient : palestinien tué en Cisjordanie',
+      '中国神舟飞船发射成功',
+    ]) {
+      assert.ok(looksForeign(t), t);
+      assert.ok(!looksEnglish(t), t);
+    }
+  });
+
+  it('leaves headlines without function words undecided', () => {
+    for (const t of [
+      'Matildas keeper reveals career-threatening health scare',
+      'Bek Bali United Ketar-ketir Hadapi Trio Maut Persib',
+    ]) {
+      assert.ok(!looksEnglish(t) && !looksForeign(t), t);
+    }
+  });
+});
+
+describe('fallback headline language', () => {
+  const summarise = (titles: Array<[string, string]>) =>
+    heuristicSummary({
+      countryCode: 'ES',
+      countryName: 'Spain',
+      articles: titles.map(([publisherName, title]) => ({
+        publisherName,
+        title,
+        snippet: '',
+        publishedAt: hoursAgo(1),
+      })),
+      metrics: {
+        viralScore: 50,
+        publishers: titles.length,
+        velocity: 0,
+        search: 0,
+        trendKeyword: null,
+      },
+    });
+
+  it('uses an English source headline when the central one is foreign', () => {
+    const out = summarise([
+      ['Globo', 'Endrick sofre lesão na coxa e desfalca o Real Madrid'],
+      ['UOL', 'Endrick tem lesão na coxa e desfalca o Real Madrid contra o Barcelona'],
+      ['ESPN', 'Real Madrid striker Endrick ruled out with thigh injury'],
+    ]);
+    assert.equal(out.headline, 'Real Madrid striker Endrick ruled out with thigh injury');
+    assert.ok(out.aiSummaryBullets[0]!.startsWith('ESPN reports: Real Madrid striker'));
+    assert.ok(out.metaDescription.startsWith('Real Madrid striker Endrick'));
+  });
+
+  it('keeps the central headline when it is not foreign, or nothing is English', () => {
+    const english = summarise([
+      ['ABC', 'Matildas keeper reveals career-threatening health scare'],
+      ['SBS', 'Matildas keeper health scare revealed'],
+      ['Guardian', 'Coach says the squad is behind the Matildas keeper'],
+    ]);
+    assert.equal(english.headline, 'Matildas keeper reveals career-threatening health scare');
+    const portuguese = summarise([
+      ['Globo', 'Endrick sofre lesão na coxa e desfalca o Real Madrid'],
+      ['UOL', 'Endrick tem lesão na coxa e desfalca o Real Madrid'],
+    ]);
+    assert.match(portuguese.headline, /^Endrick (sofre|tem) lesão/);
   });
 });
 

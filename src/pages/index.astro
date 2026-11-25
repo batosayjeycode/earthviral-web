@@ -8,8 +8,12 @@ import NewsCard from '../components/news/NewsCard.astro';
 import { batchMeta, getClusters, getCountries, getDigestDays } from '../lib/data.ts';
 import { CATEGORIES, REGIONS, flagEmoji } from '../lib/taxonomy.ts';
 import { formatDayShort } from '../lib/digest.ts';
+import { isFallbackSummary } from '../lib/summary.ts';
 
-const clusters = await getClusters();
+// Stories still on the non-AI fallback show a source headline untranslated (Portuguese,
+// Indonesian…) and no written summary, so the homepage lists only AI-written stories. The
+// others stay on their country, category and topic hubs, and appear here once re-summarised.
+const clusters = (await getClusters()).filter((c) => !isFallbackSummary(c));
 const countries = await getCountries();
 const ref = batchMeta.generatedAt;
 const latestDigest = (await getDigestDays())[0];

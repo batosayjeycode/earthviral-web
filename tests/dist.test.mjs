@@ -407,6 +407,15 @@ describe('crawl paths', () => {
     }
   });
 
+  test('the homepage lists only AI-written stories (no untranslated fallback headlines)', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    const fallback = stories.filter((p) =>
+      p.html.includes('This summary was generated without an AI model'),
+    );
+    for (const page of fallback)
+      assert.ok(!home.includes(`href="${page.path}"`), `home links fallback story ${page.path}`);
+  });
+
   test('the homepage stays light: a capped story list, not the whole archive', () => {
     const home = pages.find((p) => p.path === '/').html;
     const cards = (home.match(/<article\b[^>]*data-category=/g) ?? []).length;

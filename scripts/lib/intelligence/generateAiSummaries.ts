@@ -13,7 +13,8 @@ import { z } from 'astro/zod';
 import { CATEGORIES, CATEGORY_SLUGS, type CategorySlug } from '../../../src/lib/taxonomy.ts';
 import { COUNTRIES } from '../countries.ts';
 import { HttpError, fetchWithRetry } from '../http.ts';
-import { tokenize, truncate } from './text.ts';
+import { FALLBACK_MARKER, isFallbackSummary } from '../../../src/lib/summary.ts';
+import { looksEnglish, looksForeign, tokenize, truncate } from './text.ts';
 
 export type ProviderName = 'gemini' | 'openai' | 'none';
 
@@ -646,13 +647,8 @@ function formatList(items: string[]): string {
   return `${items.slice(0, -1).join(', ')} and ${items.at(-1)}`;
 }
 
-/** Sentence every non-AI summary contains; also how stored fallback summaries are recognised. */
-export const FALLBACK_MARKER = 'This summary was generated without an AI model';
-
-/** True when a stored story still has the non-AI fallback text (see `--resummarize-fallback`). */
-export function isFallbackSummary(story: { aiContextParagraph: string }): boolean {
-  return story.aiContextParagraph.includes(FALLBACK_MARKER);
-}
+// Shared with the site, which keeps fallback stories off the homepage.
+export { FALLBACK_MARKER, isFallbackSummary };
 
 /**
  * True when a failed AI call must not replace a story's stored text: the story keeps its URL
@@ -698,13 +694,21 @@ export function heuristicSummary(input: SummaryInput): SummaryOutput {
     ),
   );
   const ranked = input.articles.map((a, i) => ({ a, c: centrality[i]! })).sort((x, y) => y.c - x.c);
-  const lead = ranked[0]?.a ?? input.articles[0]!;
+  // The site is in English and the fallback cannot translate: when the most central headline
+  // is in another language, use the most central English one, if the cluster has one.
+  const central = ranked[0]?.a ?? input.articles[0]!;
+  const lead = looksForeign(central.title)
+    ? (ranked.find((r) => looksEnglish(r.a.title))?.a ?? central)
+    : central;
 
   // One bullet per outlet, using that outlet's most central (most on-topic) headline,
-  // with the outlets carrying the most on-topic coverage first.
-  const bulletPublishers = [...new Set(ranked.map((r) => r.a.publisherName))].slice(0, 3);
+  // with the lead's outlet first, then the outlets carrying the most on-topic coverage.
+  const bulletPublishers = [
+    ...new Set([lead.publisherName, ...ranked.map((r) => r.a.publisherName)]),
+  ].slice(0, 3);
   const bullets = bulletPublishers.map((name) => {
-    const article = ranked.find((r) => r.a.publisherName === name)!.a;
+    const article =
+      name === lead.publisherName ? lead : ranked.find((r) => r.a.publisherName === name)!.a;
     return `${name} reports: ${truncate(article.title, 180)}`;
   });
   const firstSeen = input.articles.map((a) => a.publishedAt).sort()[0]!;
