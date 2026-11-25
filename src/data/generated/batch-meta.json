@@ -1,11 +1,11 @@
 {
-  "batchId": "batch-202611251543",
-  "generatedAt": "2026-11-25T15:43:00Z",
-  "nextUpdateAt": "2026-11-25T17:17:00Z",
+  "batchId": "batch-202611251718",
+  "generatedAt": "2026-11-25T17:18:00Z",
+  "nextUpdateAt": "2026-11-25T20:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 33,
-    "viralTopics": 679,
+    "viralTopics": 692,
     "globalIndex": 90
   },
   "pipeline": {
@@ -15,11 +15,11 @@
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
     "articlesFetched": 1719,
-    "newClusters": 12,
-    "updatedClusters": 158,
+    "newClusters": 6,
+    "updatedClusters": 94,
     "retiredClusters": 0,
-    "aiCalls": 82,
-    "fallbackSummaries": 153,
+    "aiCalls": 38,
+    "fallbackSummaries": 159,
     "titleNames": {
       "kept": 0,
       "headline": 0,
@@ -30,11 +30,11 @@
     "digestSummaries": {
       "written": 0,
       "kept": 21,
-      "pending": 2,
-      "failed": 2
+      "pending": 1,
+      "failed": 1
     },
     "aiFailures": {
-      "rate-limit": 82
+      "rate-limit": 38
     },
     "aiFailureSamples": [
       {
@@ -60,13 +60,12 @@
     ],
     "failover": {
       "provider": "openai:gpt-5-mini",
-      "tried": 82,
+      "tried": 38,
       "written": 0,
       "reasons": {
-        "server-error": 45,
-        "rate-limit": 37
+        "rate-limit": 38
       }
     },
-    "durationMs": 721806
+    "durationMs": 99653
   }
 }
