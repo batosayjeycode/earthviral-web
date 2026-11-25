@@ -1,11 +1,12 @@
 import type { APIRoute } from 'astro';
-import { batchMeta, getClusters } from '../lib/data.ts';
+import { batchMeta } from '../lib/data.ts';
 import { SITE, absoluteUrl } from '../lib/site.ts';
+import { indexableStories } from '../lib/routes.ts';
 import { escapeXml, xmlResponse } from '../lib/xml.ts';
 
-/** Latest 50 stories by last update (plan §10 `rss.xml.ts`). */
+/** Latest 50 indexable stories by last update (plan §10 `rss.xml.ts`); fallback stories wait. */
 export const GET: APIRoute = async () => {
-  const latest = [...(await getClusters())]
+  const latest = [...(await indexableStories())]
     .sort(
       (a, b) =>
         Date.parse(b.lastUpdatedBatchAt) - Date.parse(a.lastUpdatedBatchAt) ||

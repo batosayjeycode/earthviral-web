@@ -27,6 +27,7 @@ import {
   resolveClusters,
 } from '../../../lib/data.ts';
 import { categoryBySlug, flagEmoji } from '../../../lib/taxonomy.ts';
+import { isFallbackSummary } from '../../../lib/summary.ts';
 import { formatDateWib, formatTimeWib } from '../../../lib/format.ts';
 import { linkifyFirstMentions } from '../../../lib/linkify.ts';
 import { formatDayShort } from '../../../lib/digest.ts';
@@ -85,6 +86,7 @@ const jsonLd = newsArticleGraph(c, [
   description={c.metaDescription}
   ogType="article"
   ogImage={`/og/${c.id}.png`}
+  noindex={isFallbackSummary(c)}
 >
   <Fragment slot="head">
     <JsonLd data={jsonLd} />

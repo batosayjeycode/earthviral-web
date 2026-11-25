@@ -4,6 +4,7 @@
  */
 import { CATEGORIES, REGIONS } from './taxonomy.ts';
 import { batchMeta, getClusters, getCountries, getDigestDays, getTopics } from './data.ts';
+import { isFallbackSummary } from './summary.ts';
 import type { CountryMasterRecord, ViralClusterStaticRecord } from './types.ts';
 
 /** Stories per country archive page. */
@@ -94,10 +95,19 @@ export async function coreEntries(): Promise<SitemapEntry[]> {
 
 export const storyMonth = (c: ViralClusterStaticRecord) => c.firstDetectedAt.slice(0, 7); // "2026-11"
 
+/**
+ * Story pages meant for the index. A story that still has the non-AI fallback summary (a
+ * list of source headlines, often untranslated) is a thin page: it's `noindex` and left out
+ * of the sitemaps until a later batch writes its AI summary, which also brings it back here.
+ */
+export async function indexableStories(): Promise<ViralClusterStaticRecord[]> {
+  return (await getClusters()).filter((c) => !isFallbackSummary(c));
+}
+
 /** Story pages grouped by month of first detection (plan §9.4 `sitemap-stories-[yyyy-mm].xml`). */
 export async function storiesByMonth(): Promise<Map<string, ViralClusterStaticRecord[]>> {
   const byMonth = new Map<string, ViralClusterStaticRecord[]>();
-  for (const c of await getClusters())
+  for (const c of await indexableStories())
     byMonth.set(storyMonth(c), [...(byMonth.get(storyMonth(c)) ?? []), c]);
   return new Map([...byMonth.entries()].sort(([a], [b]) => b.localeCompare(a)));
 }
@@ -105,7 +115,7 @@ export async function storiesByMonth(): Promise<Map<string, ViralClusterStaticRe
 /** Stories first detected within the last 48 h of the batch (Google News sitemap window). */
 export async function newsWindowStories(): Promise<ViralClusterStaticRecord[]> {
   const cutoff = Date.parse(batchMeta.generatedAt) - 48 * 3_600_000;
-  return (await getClusters())
+  return (await indexableStories())
     .filter((c) => Date.parse(c.firstDetectedAt) >= cutoff)
     .sort((a, b) => Date.parse(b.firstDetectedAt) - Date.parse(a.firstDetectedAt));
 }

@@ -14,6 +14,7 @@
  */
 import { fetchWithRetry, sleep } from './lib/http.ts';
 import { loadBatchMeta, loadExistingClusters } from './lib/builders/writeStaticJson.ts';
+import { isFallbackSummary } from '../src/lib/summary.ts';
 
 const SITE_URL = 'https://earthviral.com';
 const ENDPOINT = 'https://api.indexnow.org/indexnow';
@@ -54,7 +55,8 @@ async function main() {
   }
 
   const changed = (await loadExistingClusters())
-    .filter((c) => c.lastUpdatedBatchAt === meta.generatedAt)
+    // Fallback stories are noindex; they're submitted once a batch writes their AI summary.
+    .filter((c) => c.lastUpdatedBatchAt === meta.generatedAt && !isFallbackSummary(c))
     .map((c) => `${SITE_URL}${c.canonicalPath}`);
   const urlList = [`${SITE_URL}/`, ...changed].slice(0, MAX_URLS);
   console.log(`IndexNow: ${urlList.length} URLs from batch ${meta.batchId}`);
