@@ -1,11 +1,11 @@
 {
-  "batchId": "batch-202611242318",
-  "generatedAt": "2026-11-24T23:18:00Z",
-  "nextUpdateAt": "2026-11-25T02:17:00Z",
+  "batchId": "batch-202611250218",
+  "generatedAt": "2026-11-25T02:18:00Z",
+  "nextUpdateAt": "2026-11-25T05:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 35,
-    "viralTopics": 671,
+    "viralTopics": 659,
     "globalIndex": 87
   },
   "pipeline": {
@@ -14,41 +14,29 @@
     "feedsFailed": [
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1740,
-    "newClusters": 6,
-    "updatedClusters": 92,
+    "articlesFetched": 1738,
+    "newClusters": 13,
+    "updatedClusters": 107,
     "retiredClusters": 0,
-    "aiCalls": 38,
-    "fallbackSummaries": 128,
-    "trendTitles": {
-      "targeted": 1,
-      "inTitle": 1
-    },
+    "aiCalls": 55,
+    "fallbackSummaries": 162,
     "titleNames": {
-      "kept": 10,
+      "kept": 1,
       "headline": 0,
-      "previous": 2,
+      "previous": 0,
       "missing": 0,
-      "no-anchor": 8
+      "no-anchor": 1
     },
     "digestSummaries": {
       "written": 0,
       "kept": 20,
-      "pending": 1,
-      "failed": 1
+      "pending": 2,
+      "failed": 2
     },
     "aiFailures": {
-      "rate-limit": 13
+      "rate-limit": 53
     },
     "aiFailureSamples": [
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429 [GenerateRequestsPerMinutePerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistu"
-      },
-      {
-        "category": "rate-limit",
-        "detail": "HTTP 429 [GenerateRequestsPerMinutePerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistu"
-      },
       {
         "category": "rate-limit",
         "detail": "HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio"
@@ -60,8 +48,16 @@
       {
         "category": "rate-limit",
         "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
+      },
+      {
+        "category": "rate-limit",
+        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
+      },
+      {
+        "category": "rate-limit",
+        "detail": "skipped: daily quota GenerateRequestsPerDayPerProjectPerModel-FreeTier already exhausted this run"
       }
     ],
-    "durationMs": 273529
+    "durationMs": 213344
   }
 }
