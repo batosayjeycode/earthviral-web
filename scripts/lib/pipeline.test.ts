@@ -1191,6 +1191,58 @@ describe('AI failure classification', async () => {
     }
   });
 
+  it('cancels AI calls and retry waits once the AI time budget runs out', async () => {
+    const { setAiDeadline, aiTimeUp } = await import('./intelligence/generateAiSummaries.ts');
+    process.env.GEMINI_API_KEY = 'test-key';
+    let calls = 0;
+    // Deadline timers are unref'd; a real request's socket keeps the process alive, a mock doesn't.
+    const keepAlive = setTimeout(() => {}, 10_000);
+    try {
+      // A call in flight: Gemini hangs (overloaded), and the budget ends 50 ms in.
+      globalThis.fetch = ((_url: string, init: RequestInit) => {
+        calls++;
+        return new Promise((_resolve, reject) => {
+          init.signal?.addEventListener('abort', () => reject(init.signal!.reason));
+        });
+      }) as unknown as typeof fetch;
+      setAiDeadline(Date.now() + 50);
+      const t0 = Date.now();
+      const cut = await createSummarizer('gemini').summarize(input);
+      assert.ok(Date.now() - t0 < 2_000, 'returns at the deadline, not after the 60 s timeout');
+      assert.equal(calls, 1);
+      assert.equal(cut.usedAi, false);
+      assert.equal(cut.error?.category, 'time-budget');
+
+      // A retry wait (server-suggested 30 s after a 503) is cut short too.
+      calls = 0;
+      globalThis.fetch = (async () => {
+        calls++;
+        return new Response('{"error":{"message":"high demand"}}', {
+          status: 503,
+          headers: { 'retry-after': '30' },
+        });
+      }) as unknown as typeof fetch;
+      setAiDeadline(Date.now() + 50);
+      const t1 = Date.now();
+      const waited = await createSummarizer('gemini').summarize(input);
+      assert.ok(Date.now() - t1 < 2_000, 'does not sit out the retry wait');
+      assert.equal(calls, 1);
+      assert.equal(waited.error?.category, 'time-budget');
+
+      // Past the deadline: no request at all.
+      assert.equal(aiTimeUp(), true);
+      calls = 0;
+      const skipped = await createSummarizer('gemini').summarize(input);
+      assert.equal(calls, 0);
+      assert.match(skipped.error?.detail ?? '', /AI time budget for this run is used up/);
+    } finally {
+      clearTimeout(keepAlive);
+      setAiDeadline(null);
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+  });
+
   it('reports an empty Gemini reply with its finish reason', async () => {
     process.env.GEMINI_API_KEY = 'test-key';
     globalThis.fetch = reply(200, {

@@ -23,6 +23,10 @@
  *                          (e.g. from runs without an API key); counts toward --max-ai
  *   --auto-resummarize <n> otherwise, retry up to n such stories per batch with AI calls left
  *                          over after new/updated stories (default 10, 0 = off)
+ *   --ai-minutes <n>       AI time budget, in minutes from the start of the run (default 10, env
+ *                          AI_TIME_BUDGET_MINUTES; 0 = none). Past it no AI call starts and calls
+ *                          in flight are cancelled: updated stories keep their text, new ones get
+ *                          non-AI text. Keeps a bad provider night under the CI job's timeout.
  *   --ai-concurrency <n>   parallel LLM calls (default 2, env AI_CONCURRENCY); keep low on free
  *                          tiers, which rate-limit per minute
  *   --no-trends            skip Google Trends      --no-gdelt   skip GDELT
@@ -58,7 +62,9 @@ import {
   type ViralScore,
 } from './lib/intelligence/computeViralScore.ts';
 import {
+  aiTimeUp,
   createSummarizer,
+  setAiDeadline,
   isFallbackSummary,
   keepsStoredAiText,
   resolveFailover,
@@ -134,6 +140,12 @@ const OPTS = {
   autoResummarize: intOption('auto-resummarize', 10),
   /** AI-written daily digest intros per batch (new days and recent days whose top stories changed). */
   maxDigestAi: intOption('max-digest-ai', 4),
+  aiMinutes: intOption(
+    'ai-minutes',
+    process.env.AI_TIME_BUDGET_MINUTES?.trim()
+      ? Number.parseInt(process.env.AI_TIME_BUDGET_MINUTES, 10)
+      : 10,
+  ),
   aiConcurrency: Math.max(
     1,
     intOption(
@@ -263,6 +275,7 @@ async function main() {
   const now = new Date(Math.floor(Date.now() / 60_000) * 60_000);
   const batchId = `batch-${iso(now).slice(0, 16).replace(/[-T:]/g, '')}`;
   const summarizer = createSummarizer(OPTS.provider, OPTS.failover);
+  setAiDeadline(OPTS.aiMinutes > 0 ? started + OPTS.aiMinutes * 60_000 : null);
 
   log(`▶ EarthViral batch ${batchId}${OPTS.dryRun ? ' (dry run)' : ''}`);
   log(
@@ -270,7 +283,7 @@ async function main() {
       summarizer.failover
         ? `, failover: ${summarizer.failover.provider} (${summarizer.failover.model})`
         : ''
-    }`,
+    }${OPTS.aiMinutes > 0 ? `, AI time budget ${OPTS.aiMinutes} min` : ''}`,
   );
   if (summarizer.provider === 'none') {
     log(
@@ -466,6 +479,7 @@ async function main() {
   const aiFailureSamples: AiFailure[] = [];
   const texts = new Map<WorkingCluster, SummaryOutput>();
   let keptAiText = 0; // stories whose AI call failed but kept their stored AI text
+  let outOfTime = 0; // stories left without an AI call once the AI time budget ran out
   // Calls the primary provider failed and the failover provider retried, by the primary's
   // failure category, and how many of those the failover provider wrote.
   const failover = { tried: 0, written: 0, reasons: new Map<string, number>() };
@@ -482,7 +496,9 @@ async function main() {
     'no-anchor': 0,
   };
   await mapLimit(needsText, OPTS.aiConcurrency, async (item, i) => {
-    const withinBudget = summarizer.provider !== 'none' && i < OPTS.maxAi;
+    const timeUp = summarizer.provider !== 'none' && aiTimeUp();
+    if (timeUp) outOfTime++;
+    const withinBudget = summarizer.provider !== 'none' && i < OPTS.maxAi && !timeUp;
     if (!withinBudget && !item.isNew) return; // keep the existing text
     const input = summaryInput(item.cluster, item.score);
     if (!withinBudget) {
@@ -533,6 +549,10 @@ async function main() {
   });
   if (keptAiText)
     log(`  ${keptAiText} updated stories kept their stored AI text after a failed AI call`);
+  if (outOfTime)
+    log(
+      `  ! AI time budget (${OPTS.aiMinutes} min) used up: ${outOfTime} stories left without an AI call (updated ones keep their text)`,
+    );
   // Trending searches targeted in titles, and how many AI titles actually used them.
   const targeted = needsText
     .map((item) => ({ item, query: searchQueryFor(item.cluster, item.score.matchedTrend) }))
@@ -651,7 +671,7 @@ async function main() {
     provider: summarizer.provider,
     failover: OPTS.failover,
     now,
-    maxCalls: OPTS.maxDigestAi,
+    maxCalls: aiTimeUp() ? 0 : OPTS.maxDigestAi,
     concurrency: OPTS.aiConcurrency,
     log,
   });
@@ -706,6 +726,7 @@ async function main() {
               },
             }
           : {}),
+        ...(outOfTime ? { aiTimeBudget: { minutes: OPTS.aiMinutes, skipped: outOfTime } } : {}),
         durationMs: Date.now() - started,
       },
     },
@@ -725,7 +746,7 @@ async function main() {
       failover.tried
         ? ` · failover ${summarizer.failover!.provider}: ${failover.written} of ${failover.tried} written`
         : ''
-    } · ${((Date.now() - started) / 1000).toFixed(1)}s`,
+    }${outOfTime ? ` · AI time budget hit (${outOfTime} skipped)` : ''} · ${((Date.now() - started) / 1000).toFixed(1)}s`,
   );
   log('  Top stories:');
   for (const r of [...records].sort((a, b) => b.viralScore - a.viralScore).slice(0, 10)) {

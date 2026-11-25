@@ -101,6 +101,8 @@ export interface BatchMeta {
       written: number;
       reasons: Record<string, number>;
     };
+    /** Set when the run's AI time budget ran out: stories left without an AI call. */
+    aiTimeBudget?: { minutes: number; skipped: number };
     /** Up to 5 example failures for diagnosis (no keys or prompts). */
     aiFailureSamples?: Array<{ category: string; detail: string }>;
     durationMs: number;

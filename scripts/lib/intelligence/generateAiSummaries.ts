@@ -302,13 +302,35 @@ export function isOpenAiOutOfCredits(body: string): boolean {
   }
 }
 
+/**
+ * When the run's AI time budget ends (epoch ms), or null for none. Past it no call starts, and
+ * calls in flight are cancelled, retries and retry waits included: on a bad provider night
+ * (overload, quota) a run otherwise spent minutes per story and hit the CI job's timeout,
+ * which publishes nothing.
+ */
+let aiDeadline: number | null = null;
+
+export function setAiDeadline(at: number | null): void {
+  aiDeadline = at;
+}
+
+/** True once the run's AI time budget is used up. */
+export function aiTimeUp(): boolean {
+  return aiDeadline !== null && Date.now() >= aiDeadline;
+}
+
 /** For tests: forget a quota stop (Gemini daily quota, OpenAI credits) from an earlier call. */
 export function resetQuotaStops(): void {
   geminiDailyQuotaHit = null;
   openAiOutOfCredits = false;
 }
 
-async function callGemini(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
+async function callGemini(
+  prompt: JsonPrompt,
+  apiKey: string,
+  model: string,
+  signal?: AbortSignal,
+): Promise<unknown> {
   if (geminiDailyQuotaHit) {
     throw new AiResponseError(
       'rate-limit',
@@ -326,6 +348,7 @@ async function callGemini(prompt: JsonPrompt, apiKey: string, model: string): Pr
         timeoutMs: 60_000,
         retries: 2,
         backoffMs: 4_000,
+        signal,
       },
     );
   } catch (err) {
@@ -392,7 +415,12 @@ function openAiJsonBody(prompt: JsonPrompt, model: string): OpenAiRequestBody {
   };
 }
 
-async function callOpenAI(prompt: JsonPrompt, apiKey: string, model: string): Promise<unknown> {
+async function callOpenAI(
+  prompt: JsonPrompt,
+  apiKey: string,
+  model: string,
+  signal?: AbortSignal,
+): Promise<unknown> {
   if (openAiOutOfCredits) {
     throw new AiResponseError(
       'rate-limit',
@@ -409,6 +437,7 @@ async function callOpenAI(prompt: JsonPrompt, apiKey: string, model: string): Pr
       retries: 2,
       backoffMs: 4_000,
       retryIf: (status, body) => !(status === 429 && isOpenAiOutOfCredits(body)),
+      signal,
     });
   } catch (err) {
     if (err instanceof HttpError && err.status === 429 && isOpenAiOutOfCredits(err.body)) {
@@ -792,6 +821,7 @@ export type AiFailureCategory =
   | 'refusal'
   | 'invalid-json'
   | 'schema' // valid JSON that doesn't match the output schema
+  | 'time-budget' // the run's AI time budget ran out (see setAiDeadline)
   | 'other';
 
 export interface AiFailure {
@@ -911,12 +941,27 @@ export function aiCredentials(provider: Exclude<ProviderName, 'none'>): {
  * One structured-output call to the provider, with the same retries and error types as story
  * summaries. Returns the parsed (unvalidated) JSON; failures throw (see classifyAiError).
  */
-export function requestModelJson(
+export async function requestModelJson(
   provider: Exclude<ProviderName, 'none'>,
   prompt: JsonPrompt,
   { apiKey, model } = aiCredentials(provider),
 ): Promise<unknown> {
-  return (provider === 'gemini' ? callGemini : callOpenAI)(prompt, apiKey, model);
+  if (aiTimeUp()) {
+    throw new AiResponseError('time-budget', 'skipped: the AI time budget for this run is used up');
+  }
+  const signal =
+    aiDeadline === null ? undefined : AbortSignal.timeout(Math.max(0, aiDeadline - Date.now()));
+  try {
+    return await (provider === 'gemini' ? callGemini : callOpenAI)(prompt, apiKey, model, signal);
+  } catch (err) {
+    if (signal?.aborted) {
+      throw new AiResponseError(
+        'time-budget',
+        'stopped: the AI time budget for this run ran out during the call',
+      );
+    }
+    throw err;
+  }
 }
 
 type SummaryAttempt = { output: SummaryOutput } | { error: AiFailure };

@@ -71,6 +71,7 @@ npm run update:viral -- --provider none      # gemini | openai | none (default: 
 npm run update:viral -- --max-new 60 --max-per-country 8 --max-ai 80
 npm run update:viral -- --max-stories-per-country 10   # total kept per country (0 = no cap)
 npm run update:viral -- --ai-concurrency 2             # parallel AI calls (env AI_CONCURRENCY)
+npm run update:viral -- --ai-minutes 10                # AI time budget from run start (env AI_TIME_BUDGET_MINUTES, 0 = none)
 npm run update:viral -- --resummarize-fallback         # re-summarise kept stories that have non-AI text
 npm run update:viral -- --auto-resummarize 0           # don't retry fallback-text stories this run (default: 10)
 npm run update:viral -- --no-trends --no-gdelt
@@ -86,7 +87,7 @@ npm run update:viral -- --no-trends --no-gdelt
 4. **Score.** It computes the Viral Activity Score (VAS, 0–100):
    `0.55 × coverage + 0.45 × velocity + 0.15 × search bonus`.
    The constants live in `src/lib/scoring.ts` and also drive the public `/about/` page.
-5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`. With both keys set and no `--provider`, a failed Gemini call (for example once its free daily quota is used up) is retried with OpenAI, for story and digest summaries alike; `pipeline.failover` records how many were tried and written. An explicit `--provider` uses that provider only.
+5. **Summarise.** It requests structured JSON from the LLM and validates it with Zod; invalid replies fall back to the non-AI summary. Calls are capped by `--max-ai` and run 2 at a time by default (`--ai-concurrency`). A rate-limited call waits as long as the provider asks, up to 60 s. Every failure is logged with a category (`rate-limit`, `schema`, `timeout`, `empty`, …), and the counts plus a few samples are saved in `batch-meta.json` under `pipeline.aiFailures`. With both keys set and no `--provider`, a failed Gemini call (for example once its free daily quota is used up) is retried with OpenAI, for story and digest summaries alike; `pipeline.failover` records how many were tried and written. An explicit `--provider` uses that provider only. AI calls also have a time budget (`--ai-minutes`, default 10 minutes from the start of the run): after it, no call starts and calls in flight, retry waits included, are cancelled. Updated stories keep their text and new ones get the non-AI summary, so a night of provider overload can't push the job past its 20-minute timeout, which would publish nothing. `pipeline.aiTimeBudget` records how many stories were skipped.
 6. **Link and write.** It builds the related-story graph, validates every record, and only then replaces `src/data/generated/` and `public/data/`.
 
 Stories leave the live map after **48 hours** without new coverage and are deleted after **30 days**.
@@ -122,7 +123,7 @@ All settings are optional environment variables. Anything left unset is simply o
 2. **qa:** Playwright and axe against that exact build. It covers WCAG 2.1 AA, horizontal overflow, console errors, search, the country drawer, the tap-to-load map on touch devices, the no-JS fallback, 404s and throttled CLS/LCP. On failure, screenshots are uploaded as `qa-report`.
 3. **deploy** (`main` and batch runs only): `wrangler pages deploy dist` to the `earthviral-web` Cloudflare Pages project. After a batch run, it then pings IndexNow (best-effort).
 
-**Batch** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock, at 17 minutes past (00:17, 03:17, … WIB), away from the busy top of the hour and can be started manually from the Actions tab. It runs the unit tests, generates the batch, checks that the site still builds, and commits `src/data/generated` and `public/data`.
+**Batch** (`.github/workflows/update-viral-batch.yml`) runs every 3 hours on the WIB clock, at 17 minutes past (00:17, 03:17, … WIB), away from the busy top of the hour and can be started manually from the Actions tab. It runs the unit tests, generates the batch, checks that the site still builds and passes the `dist/` tests CI runs (data that fails them is not committed, so it can't block deploys), and commits `src/data/generated` and `public/data`.
 
 Pushes made with `GITHUB_TOKEN` don't trigger `push` workflows, so CI picks up batch commits through its `workflow_run` trigger.
 
@@ -158,7 +159,7 @@ Keep the crons in `wrangler.toml` in sync with the workflow files and `VAS.batch
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`                                                         | secret | CI deploy                  |
 | `GEMINI_API_KEY` and/or `OPENAI_API_KEY`                                                                | secret | batch                      |
 | `INDEXNOW_KEY`                                                                                          | secret | CI build and IndexNow ping |
-| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`, `AI_CONCURRENCY`                             | var    | batch                      |
+| `GEMINI_MODEL`, `OPENAI_MODEL`, `MAX_STORIES_PER_COUNTRY`, `AI_CONCURRENCY`, `AI_TIME_BUDGET_MINUTES`   | var    | batch                      |
 | `PUBLIC_CONTACT_EMAIL`, `PUBLIC_ADSENSE_CLIENT`, `PUBLIC_ADSENSE_SLOT_STORY`, `PUBLIC_ADSENSE_SLOT_HUB` | var    | CI build                   |
 
 `public/_headers` sets security headers and cache rules, and marks `*.pages.dev` previews `noindex`.

@@ -15,11 +15,24 @@ export class HttpError extends Error {
   }
 }
 
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const sleep = (ms: number, signal?: AbortSignal) =>
+  new Promise<void>((resolve) => {
+    if (signal?.aborted) return resolve();
+    const timer = setTimeout(done, ms);
+    function done() {
+      clearTimeout(timer);
+      signal?.removeEventListener('abort', done);
+      resolve();
+    }
+    signal?.addEventListener('abort', done, { once: true });
+  });
 
 export interface FetchOptions extends RequestInit {
   timeoutMs?: number;
-  /** Retries on network errors, 429 and 5xx (exponential backoff). */
+  /**
+   * Retries on network errors, 429 and 5xx (exponential backoff). An aborted `signal` (e.g. a
+   * time budget) cancels the request in flight and stops retrying, including during a wait.
+   */
   retries?: number;
   backoffMs?: number;
   /** Return false to stop retrying a 429/5xx whose body says waiting won't help. */
@@ -41,27 +54,40 @@ export function suggestedRetryMs(retryAfterHeader: string | null, body: string):
 }
 
 export async function fetchWithRetry(url: string, opts: FetchOptions = {}): Promise<Response> {
-  const { timeoutMs = 15_000, retries = 1, backoffMs = 1_500, retryIf, headers, ...init } = opts;
+  const {
+    timeoutMs = 15_000,
+    retries = 1,
+    backoffMs = 1_500,
+    retryIf,
+    headers,
+    signal,
+    ...init
+  } = opts;
+  const outer = signal ?? undefined;
   let lastError: unknown;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const res = await fetch(url, {
         ...init,
         headers: { 'user-agent': USER_AGENT, ...headers },
-        signal: AbortSignal.timeout(timeoutMs),
+        signal: outer
+          ? AbortSignal.any([outer, AbortSignal.timeout(timeoutMs)])
+          : AbortSignal.timeout(timeoutMs),
       });
       if (res.ok) return res;
       const body = await res.text().catch(() => '');
       lastError = new HttpError(res.status, url, body.slice(0, 4000));
       const retryable =
         (res.status === 429 || res.status >= 500) && (retryIf?.(res.status, body) ?? true);
-      if (!retryable) break;
+      if (!retryable || outer?.aborted) break;
       const suggested = suggestedRetryMs(res.headers.get('retry-after'), body);
-      if (attempt < retries) await sleep(suggested ?? backoffMs * 2 ** attempt);
+      if (attempt < retries) await sleep(suggested ?? backoffMs * 2 ** attempt, outer);
     } catch (err) {
       lastError = err;
-      if (attempt < retries) await sleep(backoffMs * 2 ** attempt);
+      if (outer?.aborted) break;
+      if (attempt < retries) await sleep(backoffMs * 2 ** attempt, outer);
     }
+    if (outer?.aborted) break;
   }
   throw lastError;
 }
