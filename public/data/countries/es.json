@@ -3,17 +3,34 @@
   "name": "Spain",
   "slug": "spain",
   "region": "Europe",
-  "viralScore": 81,
+  "viralScore": 67,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T23:18:00Z",
+  "generatedAt": "2026-11-26T02:18:00Z",
   "clusters": [
+    {
+      "slug": "real-madrid-defeats-psv-eindhoven",
+      "canonicalPath": "/news/es/real-madrid-defeats-psv-eindhoven/",
+      "headline": "Real Madrid Defeats PSV Eindhoven 5-1 In Champions League Match",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Real Madrid overcame an early deficit to secure a 5-1 victory against PSV Eindhoven.",
+        "Kylian Mbappé scored two goals, while Jude Bellingham, Vinicius Jr., and Federico Valverde each added one."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/champions-league/vini-marca-real-madrid-goleia-psv-e-vira-lider-provisorio-da-champions/"
+      }
+    },
     {
       "slug": "real-madrid-la-liga-mbappe-controversy",
       "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
       "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 78,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Real Madrid secured a victory against Celta Vigo at the Santiago Bernabeu stadium.",
@@ -30,7 +47,7 @@
       "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Approximately 2,200 migrants arrived at the Canary Islands over a 48-hour period, with nearly 1,600 landing in a single day.",
@@ -47,8 +64,8 @@
       "headline": "Exiled Catalan separatist Puigdemont to return to Spain",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The West Australian reports: Exiled Catalan separatist Puigdemont to return to Spain",
         "France 24 reports: Exiled Catalan separatist Puigdemont to return to Spain after election"
@@ -56,40 +73,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/spain-catalan-separatist-puigdemont-sets-date-for-return/a-80045846?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "real-madrid-defeats-psv-eindhoven",
-      "canonicalPath": "/news/es/real-madrid-defeats-psv-eindhoven/",
-      "headline": "Real Madrid Defeats PSV Eindhoven 5-1 In Champions League Match",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Real Madrid overcame an early deficit to secure a 5-1 victory against PSV Eindhoven.",
-        "Kylian Mbappé scored two goals, while Jude Bellingham, Vinicius Jr., and Federico Valverde each added one."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/champions-league/vini-marca-real-madrid-goleia-psv-e-vira-lider-provisorio-da-champions/"
-      }
-    },
-    {
-      "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy",
-      "canonicalPath": "/news/es/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy/",
-      "headline": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
-      "categorySlug": "entertainment-celebrity",
-      "categoryName": "Entertainment & Celebrity",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Al Jazeera reports: Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
-        "Le Monde reports: Kilmar Abrego Garcia, who fought being mistakenly sent to El Salvador, is self-deporting to Spain"
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/25/kilmar-abrego-garcia-who-fought-being-mistakenly-sent-to-el-salvador-is-self-deporting-to-spain_6787783_4.html"
       }
     },
     {
@@ -110,12 +93,29 @@
       }
     },
     {
+      "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy",
+      "canonicalPath": "/news/es/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy/",
+      "headline": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Al Jazeera reports: Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
+        "Le Monde reports: Kilmar Abrego Garcia, who fought being mistakenly sent to El Salvador, is self-deporting to Spain"
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/25/kilmar-abrego-garcia-who-fought-being-mistakenly-sent-to-el-salvador-is-self-deporting-to-spain_6787783_4.html"
+      }
+    },
+    {
       "slug": "lamine-yamal-sente-lesao-no-tornozelo-e-desfalca-barcelona",
       "canonicalPath": "/news/es/lamine-yamal-sente-lesao-no-tornozelo-e-desfalca-barcelona/",
       "headline": "Lamine Yamal sente lesão no tornozelo e desfalca Barcelona na Champions",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "CNN Brasil reports: Lamine Yamal sente lesão no tornozelo e desfalca Barcelona na Champions"

@@ -3,9 +3,9 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 78,
+  "viralScore": 70,
   "intensityTier": "high",
-  "generatedAt": "2026-11-25T23:18:00Z",
+  "generatedAt": "2026-11-26T02:18:00Z",
   "clusters": [
     {
       "slug": "one-nation-immigration-policy-tasmania-poll",
@@ -13,7 +13,7 @@
       "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 75,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
@@ -25,13 +25,64 @@
       }
     },
     {
+      "slug": "afl-draft-prospects-knee-recovery",
+      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
+      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
+        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+      }
+    },
+    {
+      "slug": "australia-faces-scrutiny-climate-summit",
+      "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
+      "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
+        "Australia faces scrutiny over its export-related emissions as delegates gather to participate in the global climate summit."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
+      }
+    },
+    {
+      "slug": "australian-prime-minister-cop31-remarks",
+      "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
+      "headline": "Anthony Albanese and Chris Bowen Face Criticism Over COP31 Failure",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Prime Minister Anthony Albanese and Minister Chris Bowen are facing backlash regarding the outcome of the COP31 climate summit in Turkey.",
+        "Observers point to irreconcilable differences over fossil fuel policies between Australia and various petrostates as a core cause of the stalemate."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/more-important-than-heart-australian-pm-caught-making-genital-joke-with-climate-minister-at-cop31-watch/articleshow/135836793.cms"
+      }
+    },
+    {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Usman Khawaja Claims Tension With Pat Cummins Over Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 71,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Usman Khawaja stated he felt personally attacked by team captain Pat Cummins during the ongoing dispute.",
         "Khawaja revealed he proposed a peace statement to Cricket Australia leadership to help resolve the situation."
@@ -42,20 +93,20 @@
       }
     },
     {
-      "slug": "ponga-leads-new-zealand-world-cup",
-      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
-      "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 58,
+      "slug": "who-gives-a-crap-data-breach",
+      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
+      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
-        "ABC reports: The Rugby League World Cup final should have solved the Golden Boot battle"
+        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
+        "Exposed customer information includes names, contact details, and total purchase history."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
       }
     },
     {
@@ -64,7 +115,7 @@
       "headline": "Australian Teenager Rescued After Six Days Lost In The Wilderness",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A 17-year-old boy was located alive by search crews after being missing for six days.",
@@ -76,20 +127,71 @@
       }
     },
     {
-      "slug": "former-officer-testifies-sydney-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
-      "headline": "Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "establish-the-facts-david-warner-slams-fresh-super-glue",
+      "canonicalPath": "/news/au/establish-the-facts-david-warner-slams-fresh-super-glue/",
+      "headline": "‘Establish the facts’: David Warner slams fresh super glue and grit ball-tampering claims",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "ABC reports: Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
-        "The West Australian reports: Ex-cop Beau Lamarre-Condon found guilty of murdering Sydney couple"
+        "The West Australian reports: ‘Establish the facts’: David Warner slams fresh super glue and grit ball-tampering claims",
+        "ABC reports: David Warner takes aim at 'bullying' journalists"
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-26/david-warner-accuses-journalists-of-perpetuating-speculation/107429838"
+      }
+    },
+    {
+      "slug": "former-officer-testifies-double-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
+      "headline": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in…",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in verdict against ex-NSW cop",
+        "The Guardian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
+      }
+    },
+    {
+      "slug": "josh-hazlewood-defends-pat-cummins",
+      "canonicalPath": "/news/au/josh-hazlewood-defends-pat-cummins/",
+      "headline": "Josh Hazlewood Supports Pat Cummins Amid Ball-Tampering Discourse",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Josh Hazlewood has stated his support for Pat Cummins as the team captain.",
+        "The remarks follow renewed public conversation regarding the ball-tampering scandal."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-21/pat-cummins-josh-hazlewood-sandpaper-ball-tampering-cricket/107412300"
+      }
+    },
+    {
+      "slug": "email-threat-to-territory-ministers-and-staff",
+      "canonicalPath": "/news/au/email-threat-to-territory-ministers-and-staff/",
+      "headline": "Email threat to territory ministers and staff",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: Email threat to territory ministers and staff",
+        "ABC reports: Live: NT Police addressing terror threat made against government ministers"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-26/nt-government-threat-darwin-minister-and-public-areas/107429190"
       }
     },
     {
@@ -98,7 +200,7 @@
       "headline": "Victorian Labor Trails In Final Polls Before State Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Polling indicates the Labor government faces significant losses, with its primary vote dropping to 20 percent.",
@@ -115,7 +217,7 @@
       "headline": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Guardian reports: Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
@@ -124,6 +226,23 @@
       "primarySource": {
         "publisherName": "The West Australian",
         "articleUrl": "https://thewest.com.au/news/australia-solomons-on-cusp-of-security-treaty-in-looming-blow-to-beijing-c-23208532"
+      }
+    },
+    {
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
+        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-09/three-charged-with-accessory-to-alleged-dv-stabbing-murder-wagga/107362302"
       }
     },
     {
@@ -144,37 +263,37 @@
       }
     },
     {
-      "slug": "virgin-australia-workers-walk-off-the-job-across-four",
-      "canonicalPath": "/news/au/virgin-australia-workers-walk-off-the-job-across-four/",
-      "headline": "Virgin Australia workers walk off the job across four major airports in escalating pay dispute",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 50,
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The West Australian reports: Virgin Australia workers walk off the job across four major airports in escalating pay dispute",
-        "ABC reports: Union warns of passenger delays as Virgin workers strike"
+        "ABC reports: Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
+        "The West Australian reports: Ex-cop Beau Lamarre-Condon found guilty of murdering Sydney couple"
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-26/virgin-australia-workers-industrial-action/107428072"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
       }
     },
     {
-      "slug": "four-charged-after-alleged-botched-kidnap-and-pursuit",
-      "canonicalPath": "/news/au/four-charged-after-alleged-botched-kidnap-and-pursuit/",
-      "headline": "Four charged after alleged botched kidnap and pursuit",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 50,
+      "slug": "ponga-leads-new-zealand-world-cup",
+      "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
+      "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The West Australian reports: Four charged after alleged botched kidnap and pursuit",
-        "ABC reports: 18yo bailed following alleged home invasions, thefts and police pursuit"
+        "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
+        "ABC reports: The Rugby League World Cup final should have solved the Golden Boot battle"
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-26/18-year-old-man-bailed-following-alleged-incidents-mildura/107421218"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-07/rugby-league-world-cup-live-semifinals-from-newcastle/107345014"
       }
     },
     {
@@ -183,7 +302,7 @@
       "headline": "Cameron Bancroft Reasserts Australian Team Awareness Of 2018 Plot",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 49,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cameron Bancroft alleges the entire Australian cricket team knew about the 2018 ball-tampering incident.",
@@ -195,12 +314,29 @@
       }
     },
     {
+      "slug": "david-jones-redundancy-notices-issued",
+      "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
+      "headline": "David Jones Issues Redundancy Notices To 1680 Staff Members",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 48,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Retail department store David Jones has notified 1680 employees of impending job terminations.",
+        "The redundancies are scheduled to take effect before the conclusion of the calendar year."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-20/david-jones-staff-issued-with-redundancy-notices/107411092"
+      }
+    },
+    {
       "slug": "cricket-australia-sandpapergate-forum",
       "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -209,142 +345,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
-      }
-    },
-    {
-      "slug": "australian-prime-minister-cop31-remarks",
-      "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
-      "headline": "Anthony Albanese and Chris Bowen Face Criticism Over COP31 Failure",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 46,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Anthony Albanese and Minister Chris Bowen are facing backlash regarding the outcome of the COP31 climate summit in Turkey.",
-        "Observers point to irreconcilable differences over fossil fuel policies between Australia and various petrostates as a core cause of the stalemate."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/more-important-than-heart-australian-pm-caught-making-genital-joke-with-climate-minister-at-cop31-watch/articleshow/135836793.cms"
-      }
-    },
-    {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
-        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
-      }
-    },
-    {
-      "slug": "ireland-make-two-changes-for-final-nations-championship-game",
-      "canonicalPath": "/news/au/ireland-make-two-changes-for-final-nations-championship-game/",
-      "headline": "Ireland make two changes for final Nations Championship game against Australia",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 45,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CNA reports: Ireland make two changes for final Nations Championship game against Australia",
-        "The West Australian reports: Fiji ring changes for Nations Championship playoff"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/sport/rugby-union/fiji-ring-changes-for-nations-championship-playoff-c-23214186"
-      }
-    },
-    {
-      "slug": "australia-faces-scrutiny-climate-summit",
-      "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
-      "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
-        "Australia faces scrutiny over its export-related emissions as delegates gather to participate in the global climate summit."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
-      }
-    },
-    {
-      "slug": "jim-chalmers-warns-of-economic-hardship",
-      "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
-      "headline": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Guardian reports: Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
-        "The West Australian reports: Treasurer Jim Chalmers says he’s not to blame as inflation soars to three-year high of 4.9 per cent in October"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
-      }
-    },
-    {
-      "slug": "man-charged-murder-fatal-home-invasion",
-      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
-        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/three-charged-with-accessory-to-alleged-dv-stabbing-murder-wagga/107362302"
-      }
-    },
-    {
-      "slug": "greens-propose-support-for-tax-changes",
-      "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
-      "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Greens party has signaled potential support for legislative changes regarding tax policy.",
-        "Proposed measures include a new minimum tax on trusts."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/greens-offer-government-path-to-pass-trusts-cgt/107394802"
-      }
-    },
-    {
-      "slug": "former-officer-testifies-double-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
-      "headline": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in…",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 39,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in verdict against ex-NSW cop",
-        "The Guardian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
       }
     }
   ]

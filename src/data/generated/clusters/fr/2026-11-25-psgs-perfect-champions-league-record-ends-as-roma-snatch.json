@@ -6,8 +6,27 @@
   "countryName": "France",
   "countrySlug": "france",
   "region": "Europe",
+  "categorySlug": "sports",
+  "categoryName": "Sports",
+  "headline": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
+  "seoTitle": "PSG's perfect Champions League record ends as Roma snatch…",
+  "metaDescription": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty. 2 independent outlets are covering this story, with coverage…",
+  "aiSummaryBullets": [
+    "France 24 reports: PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
+    "Al Jazeera reports: Malen and Roma deny injury-hit PSG in Champions League draw"
+  ],
+  "aiContextParagraph": "This story about France has been reported by France 24 and Al Jazeera since 2026-11-25. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
+  "whyItIsViral": "2 independent outlets are covering this story, with coverage accelerating in the latest batch.",
+  "viralScore": 61,
+  "intensityTier": "high",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 3,
+    "coverageVelocityScore": 50,
+    "publicSearchSignalScore": 0,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-25T22:41:46Z",
-  "lastUpdatedBatchAt": "2026-11-25T23:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-26T02:18:00Z",
   "sources": [
     {
       "publisherName": "Al Jazeera",
@@ -22,6 +41,23 @@
       "articleTitle": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
       "articleUrl": "https://www.france24.com/en/sport/20261125-psg-s-perfect-champions-league-record-ends-as-roma-snatch-2-2-draw-with-late-penalty",
       "publishedAt": "2026-11-25T22:47:59Z"
+    },
+    {
+      "publisherName": "Le Monde",
+      "publisherDomain": "lemonde.fr",
+      "articleTitle": "Champions League: Malen and Roma deny injury-hit PSG in 2-2 draw",
+      "articleUrl": "https://www.lemonde.fr/en/sports/article/2026/11/26/champions-league-malen-and-roma-deny-injury-hit-psg-in-2-2-draw_6788641_9.html",
+      "publishedAt": "2026-11-25T23:39:42Z"
+    }
+  ],
+  "entityTags": [
+    {
+      "name": "Champions League",
+      "slug": "champions-league"
+    },
+    {
+      "name": "Roma",
+      "slug": "roma"
     }
   ],
   "relatedInCountrySlugs": [
@@ -33,34 +69,5 @@
     "real-madrid-defeats-psv-eindhoven",
     "manchester-united-sets-premier-league-record",
     "persib-bandung-beats-bali-united"
-  ],
-  "headline": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
-  "seoTitle": "PSG's perfect Champions League record ends as Roma snatch…",
-  "metaDescription": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty. 2 independent outlets are covering this story, with coverage…",
-  "aiSummaryBullets": [
-    "France 24 reports: PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
-    "Al Jazeera reports: Malen and Roma deny injury-hit PSG in Champions League draw"
-  ],
-  "aiContextParagraph": "This story about France has been reported by France 24 and Al Jazeera since 2026-11-25. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "2 independent outlets are covering this story, with coverage accelerating in the latest batch.",
-  "categorySlug": "sports",
-  "categoryName": "Sports",
-  "entityTags": [
-    {
-      "name": "Champions League",
-      "slug": "champions-league"
-    },
-    {
-      "name": "Roma",
-      "slug": "roma"
-    }
-  ],
-  "viralScore": 54,
-  "intensityTier": "active",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 2,
-    "coverageVelocityScore": 52,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Emerging Coverage"
-  }
+  ]
 }
