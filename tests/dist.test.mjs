@@ -432,6 +432,17 @@ describe('crawl paths', () => {
       assert.ok(!home.includes(`href="${page.path}"`), `home links fallback story ${page.path}`);
   });
 
+  test('"Show more" only collapses Latest on phones: every card stays in the HTML', () => {
+    const home = pages.find((p) => p.path === '/').html;
+    const list = home.match(/<div[^>]*data-latest-list[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
+    const cards = (list.match(/<article\b/g) ?? []).length;
+    assert.ok(cards > 12, `Latest renders ${cards} cards in the HTML`);
+    // The button ships hidden and the list uncollapsed; the script sets both up after load,
+    // so without JavaScript every card is visible.
+    assert.match(home, /<button[^>]*data-latest-more[^>]*hidden/);
+    assert.doesNotMatch(home, /data-latest-list[^>]*data-collapsed/);
+  });
+
   test('the homepage stays light: a capped story list, not the whole archive', () => {
     const home = pages.find((p) => p.path === '/').html;
     const cards = (home.match(/<article\b[^>]*data-category=/g) ?? []).length;

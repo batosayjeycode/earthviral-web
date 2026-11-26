@@ -101,11 +101,25 @@ const regions = REGIONS.map((r) => {
           </button>
         ))}
       </div>
-      <div class="mt-4 grid gap-3 sm:mt-6 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3" data-latest-list>
+      <div
+        id="latest-list"
+        class="mt-4 grid gap-3 sm:mt-6 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        data-latest-list
+      >
         {latest.map((c) => (
           <NewsCard cluster={c} referenceIso={ref} />
         ))}
       </div>
+      {/* Phones only: the list starts at PHONE_LIMIT cards (all cards stay in the HTML). */}
+      <button
+        type="button"
+        aria-controls="latest-list"
+        class="mt-4 w-full rounded-xl border border-line py-3 text-sm font-semibold text-cyan hover:border-cyan/40 sm:hidden"
+        data-latest-more
+        hidden
+      >
+        Show more stories
+      </button>
     </section>
 
     <!-- Regions: pre-rendered hub links -->
@@ -188,6 +202,13 @@ const regions = REGIONS.map((r) => {
   .ev-chip:hover {
     color: var(--color-ink-strong);
   }
+  /* Phones: cards past the limit wait behind "Show more" (set by the script below). */
+  @media (width < 40rem) {
+    /* :global — the cards are NewsCard elements, outside this page's scoped styles. */
+    :global([data-latest-list][data-collapsed] > [data-more]) {
+      display: none;
+    }
+  }
   .ev-chip[aria-pressed='true'] {
     color: var(--color-cyan);
     border-color: color-mix(in srgb, var(--color-cyan) 45%, transparent);
@@ -196,19 +217,47 @@ const regions = REGIONS.map((r) => {
 </style>
 
 <script>
-  // Instant category filter for the pre-rendered "Latest" list. Without JS every card stays visible.
+  // Instant category filter for the pre-rendered "Latest" list, and on phones a "Show more"
+  // button after the first PHONE_LIMIT cards. Without JS every card stays visible.
+  const PHONE_LIMIT = 12;
   const toolbar = document.querySelector<HTMLElement>('[data-latest-filter]');
   const list = document.querySelector<HTMLElement>('[data-latest-list]');
-  if (toolbar && list) {
+  const more = document.querySelector<HTMLButtonElement>('[data-latest-more]');
+  if (toolbar && list && more) {
     toolbar.hidden = false;
     const cards = [...list.querySelectorAll<HTMLElement>('[data-category]')];
+    let filter = 'all';
+
+    // Mark the matching cards past the limit; CSS hides them on phones while collapsed.
+    const update = () => {
+      const shown = cards.filter((card) => {
+        card.hidden = filter !== 'all' && card.dataset.category !== filter;
+        return !card.hidden;
+      });
+      shown.forEach((card, i) => card.toggleAttribute('data-more', i >= PHONE_LIMIT));
+      const extra = Math.max(0, shown.length - PHONE_LIMIT);
+      more.hidden = !list.hasAttribute('data-collapsed') || extra === 0;
+      more.textContent = `Show ${extra} more ${extra === 1 ? 'story' : 'stories'}`;
+    };
+
+    list.setAttribute('data-collapsed', '');
+    update();
+
     toolbar.addEventListener('click', (e) => {
       const button = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-filter]');
       if (!button) return;
-      const filter = button.dataset.filter;
+      filter = button.dataset.filter ?? 'all';
       for (const b of toolbar.querySelectorAll('button'))
         b.setAttribute('aria-pressed', String(b === button));
-      for (const card of cards) card.hidden = filter !== 'all' && card.dataset.category !== filter;
+      update();
+    });
+
+    more.addEventListener('click', () => {
+      const next = cards.find((card) => card.hasAttribute('data-more'));
+      list.removeAttribute('data-collapsed');
+      more.hidden = true;
+      // Keep keyboard and screen-reader users in place: focus the first newly shown story.
+      next?.querySelector<HTMLAnchorElement>('h3 a')?.focus();
     });
   }
 </script>
