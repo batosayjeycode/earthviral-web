@@ -6,28 +6,28 @@
   "countryName": "Brazil",
   "countrySlug": "brazil",
   "region": "South America",
-  "categorySlug": "social-issues",
-  "categoryName": "Social Issues",
-  "headline": "Governo e BC anunciam medidas para reduzir endividamento, com regras para cartão de crédito e…",
-  "seoTitle": "Governo e BC anunciam medidas para reduzir endividamento…",
-  "metaDescription": "Governo e BC anunciam medidas para reduzir endividamento, com regras para cartão de crédito e empréstimos. 4 independent outlets are covering this story.",
+  "categorySlug": "economy-business",
+  "categoryName": "Economy & Business",
+  "headline": "Banco Central Implements New Credit Rules To Limit Debt In Brazil",
+  "seoTitle": "Banco Central New Credit Rules",
+  "metaDescription": "The Central Bank of Brazil announced new regulations for credit cards and loans to manage consumer debt, expected to impact 20 million people by 2027.",
   "aiSummaryBullets": [
-    "Folha de S.Paulo reports: Governo e BC anunciam medidas para reduzir endividamento, com regras para cartão de crédito e empréstimos",
-    "Agência Brasil reports: CMN e BC anunciam novas regras para conter endividamento das famílias",
-    "InfoMoney reports: CMN aperta regras do cartão e limita crédito para cliente que recorre ao rotativo"
+    "The Central Bank and the National Monetary Council introduced stricter rules for credit cards and unsecured lending.",
+    "Regulators will mandate credit limit reductions for customers who frequently utilize revolving credit lines.",
+    "Individuals with debts overdue by 90 days or more will face new restrictions on obtaining additional loans."
   ],
-  "aiContextParagraph": "This story about Brazil has been reported by Agência Brasil, CNN Brasil, InfoMoney and Folha de S.Paulo since 2026-11-25. EarthViral groups these reports into one cluster and links to each original article below. This summary was generated without an AI model, so it lists the reporting rather than synthesising it; read the linked sources for full details.",
-  "whyItIsViral": "4 independent outlets are covering this story.",
-  "viralScore": 49,
-  "intensityTier": "active",
+  "aiContextParagraph": "The Central Bank of Brazil, in collaboration with the National Monetary Council, has unveiled a series of regulatory adjustments aimed at curbing rising consumer debt levels. According to central bank officials, these measures are designed to enhance financial protection for banking customers and will affect approximately 20 million people. Key components of the package include mandatory reductions in credit card limits for users who consistently rely on revolving credit. Furthermore, the new policy imposes limitations on issuing new loans to customers whose existing unsecured credit operations remain in arrears for at least 90 days. These structural changes are scheduled for implementation starting in 2027, marking a significant shift in how financial institutions manage risk and consumer credit exposure in Brazil. Regulators intend for these initiatives to promote long-term financial stability for households across the country.",
+  "whyItIsViral": "The story is widely covered by four independent news outlets, reflecting high interest in the policy's potential impact on millions of credit users.",
+  "viralScore": 73,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 12,
+    "coverageVelocityScore": 64,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-25T22:19:00Z",
-  "lastUpdatedBatchAt": "2026-11-26T02:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-26T17:18:00Z",
   "sources": [
     {
       "publisherName": "Folha de S.Paulo",
@@ -56,22 +56,55 @@
       "articleTitle": "CMN e BC anunciam novas regras para conter endividamento das famílias",
       "articleUrl": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-e-bc-anunciam-novas-regras-para-conter-endividamento-das-familias",
       "publishedAt": "2026-11-25T23:37:00Z"
+    },
+    {
+      "publisherName": "CNN Brasil",
+      "publisherDomain": "cnnbrasil.com.br",
+      "articleTitle": "Pacote de restrição de crédito do BC pode afetar 20 milhões de brasileiros",
+      "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pacote-de-restricao-de-credito-do-bc-pode-afetar-20-milhoes-de-brasileiros/",
+      "publishedAt": "2026-11-26T15:32:22Z"
+    },
+    {
+      "publisherName": "Folha de S.Paulo",
+      "publisherDomain": "folha.uol.com.br",
+      "articleTitle": "Medidas do BC contra endividamento vão afetar até 20 mi de pessoas, diz diretor",
+      "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/medidas-do-bc-contra-endividamento-vao-afetar-ate-20-mi-de-pessoas-diz-diretor.shtml",
+      "publishedAt": "2026-11-26T15:39:00Z"
+    },
+    {
+      "publisherName": "CNN Brasil",
+      "publisherDomain": "cnnbrasil.com.br",
+      "articleTitle": "Endividamento: Veja medidas do BC que podem afetar 20 milhões de clientes",
+      "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/endividamento-veja-medidas-do-bc-que-podem-afetar-20-milhoes-de-clientes/",
+      "publishedAt": "2026-11-26T16:35:25Z"
     }
   ],
   "entityTags": [
     {
-      "name": "CMN",
-      "slug": "cmn"
+      "name": "Banco Central",
+      "slug": "banco-central"
+    },
+    {
+      "name": "National Monetary Council",
+      "slug": "national-monetary-council"
+    },
+    {
+      "name": "Consumer Debt",
+      "slug": "consumer-debt"
+    },
+    {
+      "name": "Credit Cards",
+      "slug": "credit-cards"
     }
   ],
   "relatedInCountrySlugs": [
-    "brazil-federal-police-money-laundering-operation",
-    "brazil-suspends-meal-voucher-rules",
-    "brazil-ipca-15-inflation-slows"
+    "banco-do-brasil-rural-debt-defaults",
+    "pedro-scooby-luana-piovani-banco-master",
+    "braskem-shares-drop-debt-restructuring"
   ],
   "relatedInCategorySlugs": [
-    "polri-cek-kesiapan-pelabuhan-merak-bakauheni-jelang-nataru-2027",
-    "indonesian-regional-governments-receive-multiple-awards",
-    "diana-award-charity-enters-administration"
+    "narendra-modi-urges-reduced-gold-purchases",
+    "central-java-industrial-expansion-plans",
+    "best-black-friday-2026-beauty-deals-according-to-our"
   ]
 }
