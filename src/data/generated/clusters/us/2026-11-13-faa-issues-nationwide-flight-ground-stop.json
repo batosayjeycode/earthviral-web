@@ -6,43 +6,29 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
-  "seoTitle": "Transportation Secretary Seeks FAA Funding After Ground Stop",
-  "metaDescription": "Following a nationwide flight grounding, Transportation Secretary Sean Duffy is requesting $50 billion in funding to modernize FAA infrastructure.",
+  "categorySlug": "disasters-world-events",
+  "categoryName": "Disasters & World Events",
+  "headline": "FedEx Cargo Plane Runway Incident Follows FAA Nationwide Ground Stop",
+  "seoTitle": "FedEx Plane Runway Incident and FAA Ground Stop",
+  "metaDescription": "A FedEx cargo plane slid off a runway in Miami following recent nationwide flight disruptions and ongoing scrutiny of FAA infrastructure reliability.",
   "aiSummaryBullets": [
-    "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
-    "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems.",
-    "A specialized team has been established to investigate the root cause of the recent system failure and prevent future disruptions to air travel."
+    "A FedEx cargo plane exited the runway at Miami International Airport during stormy weather conditions.",
+    "The National Transportation Safety Board has initiated an investigation into the cargo plane runway incident.",
+    "Recent nationwide flight ground stops have led to ongoing scrutiny regarding air traffic control systems and FAA funding."
   ],
-  "aiContextParagraph": "Following a widespread flight grounding that occurred on Friday and affected over one million passengers, federal officials are intensifying efforts to modernize the United States air traffic control system. Transportation Secretary Sean Duffy is currently petitioning for $50 billion in funding to execute critical FAA hardware and software upgrades. While the exact root cause of the recent system glitch remains under investigation, some retired air traffic controllers have pointed toward potential router failures as a contributing factor. In response to the disruption, a so-called tiger team has been assembled to prevent similar nationwide ground stops. The incident has drawn significant legislative attention, with members of the Senate calling for a formal pause on planned modernization efforts until the current issues are fully understood. Ongoing travel difficulties have led to varied passenger experiences, including large groups arranging alternative ground transportation to reach their destinations.",
-  "whyItIsViral": "The event is trending due to widespread flight disruptions and the high-profile legislative response, appearing across six major outlets with steady public search interest.",
-  "viralScore": 50,
-  "intensityTier": "active",
+  "aiContextParagraph": "The recent incident involving a FedEx cargo plane at Miami International Airport follows a period of heightened scrutiny over the reliability of air travel in the United States. Following a major nationwide ground stop that affected thousands of flights, the Federal Aviation Administration has faced demands from lawmakers to pause planned infrastructure upgrades. Officials have been working to identify the specific causes of the previous system outage, which resulted in a decrease in public confidence regarding air travel consistency. Meanwhile, federal leadership has highlighted the need for increased funding for air traffic control systems. These events have prompted widespread discussions about travel insurance and the broader impacts of systemic delays on passengers, particularly during peak travel periods like Thanksgiving. Investigation efforts by the National Transportation Safety Board are currently underway to determine the circumstances surrounding the recent Miami runway exit.",
+  "whyItIsViral": "The story is being covered by six independent news outlets as reports of local airport incidents converge with ongoing national concern over air traffic system stability.",
+  "viralScore": 61,
+  "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 6,
-    "coverageVelocityScore": 0,
+    "coverageVelocityScore": 24,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-13T21:55:13Z",
-  "lastUpdatedBatchAt": "2026-11-25T15:43:00Z",
+  "lastUpdatedBatchAt": "2026-11-26T23:18:00Z",
   "sources": [
-    {
-      "publisherName": "CBS News",
-      "publisherDomain": "cbsnews.com",
-      "articleTitle": "Ripple effects of nationwide ground stop still felt at airports: \"Exhausted, frustrated\"",
-      "articleUrl": "https://www.cbsnews.com/video/ripple-effects-nationwide-ground-stop-felt-airports-exhausted-frustrated/",
-      "publishedAt": "2026-11-16T01:45:00Z"
-    },
-    {
-      "publisherName": "CBS News",
-      "publisherDomain": "cbsnews.com",
-      "articleTitle": "Trump officials ask for $50 billion for air traffic control after ground stop",
-      "articleUrl": "https://www.cbsnews.com/video/trump-officials-ask-50-billion-air-traffic-control-ground-stop/",
-      "publishedAt": "2026-11-16T01:48:00Z"
-    },
     {
       "publisherName": "CBS News",
       "publisherDomain": "cbsnews.com",
@@ -238,34 +224,48 @@
       "articleTitle": "Will travel insurance cover cancellations due to ground stops?",
       "articleUrl": "https://www.cbsnews.com/news/travel-insurance-cover-flight-cancellations-delays-ground-stops/",
       "publishedAt": "2026-11-25T13:57:17Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "FedEx plane slides off Miami runway while landing during stormy weather, causes ground stop",
+      "articleUrl": "https://www.cbsnews.com/video/fedex-plane-slides-off-miami-runway-while-landing-during-stormy-weather-causes-ground-stop/",
+      "publishedAt": "2026-11-26T14:00:21Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "FedEx cargo plane runs off MIA runway, causing brief ground stop",
+      "articleUrl": "https://www.cbsnews.com/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
+      "publishedAt": "2026-11-26T18:33:18Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Federal Aviation Administration",
-      "slug": "federal-aviation-administration"
+      "name": "FAA",
+      "slug": "faa"
     },
     {
-      "name": "Sean Duffy",
-      "slug": "sean-duffy"
+      "name": "FedEx",
+      "slug": "fedex"
     },
     {
-      "name": "Air Traffic Control",
-      "slug": "air-traffic-control"
+      "name": "National Transportation Safety Board",
+      "slug": "national-transportation-safety-board"
     },
     {
-      "name": "United States Government",
-      "slug": "united-states-government"
+      "name": "Miami International Airport",
+      "slug": "miami-international-airport"
     }
   ],
   "relatedInCountrySlugs": [
-    "us-air-traffic-disruption-resolution",
-    "us-nationwide-flight-ground-stop",
-    "nsa-internal-network-communication-disruption"
+    "ice-arrests-passengers-seattle-airport",
+    "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
+    "kennedy-family-opposes-trump-arch-plan"
   ],
   "relatedInCategorySlugs": [
-    "indonesia-announces-national-teacher-day-affirmations",
-    "constitution-day-live-updates-priceless-heritage-of-indian-democracy",
-    "uk-net-migration-falls-lowest-level"
+    "iranian-drone-attack-kuwait-deaths",
+    "israel-launches-new-gaza-operation",
+    "blaze-kills-at-least-30-after-cairo-truck-overturns"
   ]
 }

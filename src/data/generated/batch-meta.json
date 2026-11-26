@@ -1,37 +1,36 @@
 {
-  "batchId": "batch-202611262026",
-  "generatedAt": "2026-11-26T20:26:00Z",
-  "nextUpdateAt": "2026-11-26T23:17:00Z",
+  "batchId": "batch-202611262318",
+  "generatedAt": "2026-11-26T23:18:00Z",
+  "nextUpdateAt": "2026-11-27T02:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 35,
-    "viralTopics": 752,
-    "globalIndex": 88
+    "viralTopics": 768,
+    "globalIndex": 86
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 41,
+    "feedsOk": 42,
     "feedsFailed": [
-      "detik: fetch failed",
-      "gdelt-australia: fetch failed",
-      "gdelt-singapore: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Asingapore&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: fetch failed",
+      "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1741,
-    "newClusters": 0,
-    "updatedClusters": 27,
+    "articlesFetched": 1712,
+    "newClusters": 5,
+    "updatedClusters": 68,
     "retiredClusters": 0,
-    "aiCalls": 18,
-    "fallbackSummaries": 140,
+    "aiCalls": 31,
+    "fallbackSummaries": 130,
     "trendTitles": {
-      "targeted": 2,
-      "inTitle": 2
+      "targeted": 1,
+      "inTitle": 0
     },
     "titleNames": {
-      "kept": 10,
-      "headline": 0,
+      "kept": 13,
+      "headline": 1,
       "previous": 2,
       "missing": 0,
-      "no-anchor": 5
+      "no-anchor": 9
     },
     "digestSummaries": {
       "written": 1,
@@ -39,6 +38,6 @@
       "pending": 0,
       "failed": 0
     },
-    "durationMs": 294675
+    "durationMs": 168106
   }
 }

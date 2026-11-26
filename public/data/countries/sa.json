@@ -3,18 +3,35 @@
   "name": "Saudi Arabia",
   "slug": "saudi-arabia",
   "region": "Asia",
-  "viralScore": 64,
+  "viralScore": 62,
   "intensityTier": "high",
-  "generatedAt": "2026-11-26T20:26:00Z",
+  "generatedAt": "2026-11-26T23:18:00Z",
   "clusters": [
+    {
+      "slug": "saudi-financial-district-missile-attack",
+      "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
+      "headline": "Houthis Claim New Attacks On Riyadh Financial District And Refinery",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Houthi rebels in Yemen claimed responsibility for attacks on a financial district and oil refinery in Riyadh.",
+        "Reports indicate the capital's tallest skyscraper sustained damage for the second time within one week."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
+      }
+    },
     {
       "slug": "saudi-arabia-replaces-yemen-coalition-commander",
       "canonicalPath": "/news/sa/saudi-arabia-replaces-yemen-coalition-commander/",
       "headline": "Saudi-Led Coalition Intercepts Three Houthi Missiles Near Riyadh",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Saudi Arabia's defense systems intercepted three missiles directed at Riyadh, marking the third consecutive night of reported attacks.",
         "The aerial activity follows recent escalations, including coalition strikes on the Red Sea port of Hodeidah and military sites in Yemen."
@@ -39,23 +56,6 @@
       "primarySource": {
         "publisherName": "Detik",
         "articleUrl": "https://news.detik.com/internasional/d-8749645/serpihan-rudal-houthi-jatuh-di-makkah-usai-dicegat"
-      }
-    },
-    {
-      "slug": "saudi-financial-district-missile-attack",
-      "canonicalPath": "/news/sa/saudi-financial-district-missile-attack/",
-      "headline": "Houthis Claim New Attacks On Riyadh Financial District And Refinery",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Houthi rebels in Yemen claimed responsibility for attacks on a financial district and oil refinery in Riyadh.",
-        "Reports indicate the capital's tallest skyscraper sustained damage for the second time within one week."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
       }
     },
     {
