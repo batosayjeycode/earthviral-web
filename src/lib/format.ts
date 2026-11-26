@@ -27,5 +27,7 @@ export function hoursBefore(isoString: string, referenceIso: string): string {
     0,
     Math.round((Date.parse(referenceIso) - Date.parse(isoString)) / 3_600_000),
   );
-  return hours < 1 ? 'just now' : `${hours}h ago`;
+  if (hours < 1) return 'just now';
+  // "349h ago" is hard to read: from two days on, count days.
+  return hours < 48 ? `${hours}h ago` : `${Math.round(hours / 24)}d ago`;
 }
