@@ -8,41 +8,27 @@
   "region": "Asia",
   "categorySlug": "economy-business",
   "categoryName": "Economy & Business",
-  "headline": "Indonesian Provinces Finalize 2027 Minimum Wage Adjustments",
+  "headline": "Indonesian Provinces And Districts Confirm 2027 Minimum Wage Rates",
   "seoTitle": "Jakarta Sets 2027 Provincial Minimum Wage",
-  "metaDescription": "Indonesian provinces continue to set 2027 minimum wages as officials urge finalization, with Jakarta recording the highest provincial figures in the nation.",
+  "metaDescription": "Regional governments across Indonesia are finalizing 2027 minimum wage figures, with varying adjustments reported across provinces and districts.",
   "aiSummaryBullets": [
-    "Regional authorities across Indonesia are finalizing 2027 provincial and regency minimum wage levels amid varying economic conditions.",
-    "Central government officials are urging provinces like Central Papua and Highland Papua to promptly establish their 2027 wage standards.",
-    "The Ministry of Manpower has warned that employers failing to comply with official minimum wage requirements may face fines up to 200 million rupiah."
+    "Regional authorities have established 2027 minimum wage rates with significant variations, including a 7.4 percent increase in Probolinggo.",
+    "Economic conditions in Papua Tengah have resulted in no minimum wage increase for 2027, maintaining the previous rate of Rp4.28 million.",
+    "Business associations like Apindo have raised concerns regarding the financial impact of the rising minimum wage on employers in Central Java."
   ],
-  "aiContextParagraph": "The Indonesian government is currently overseeing the nationwide implementation of regional minimum wages (UMP) and regency minimum wages (UMK) for 2027. While Jakarta has reported the highest provincial wage levels, other regions face different outcomes based on local economic performance; for example, Central Papua maintains its current wage level due to a decline in economic growth. The Ministry of Home Affairs has pressed remaining provinces to conclude their wage setting processes to ensure legal clarity. Meanwhile, labor unions, government representatives, and business associations like Apindo continue to debate the fairness and sustainability of these increases. The Ministry of Manpower has reinforced the legal weight of these regulations, explicitly stating that businesses must adhere to the finalized thresholds or risk significant financial penalties. Local governments are currently in the process of announcing and implementing these updated salary figures across the country.",
-  "whyItIsViral": "The story is widely covered by six independent outlets as the national wage setting process affects millions of workers and businesses across Indonesia.",
-  "viralScore": 75,
+  "aiContextParagraph": "The setting of the 2027 minimum wage in Indonesia involves a decentralized process where various provincial and district governments determine rates based on local economic factors. In Jakarta, the minimum wage is set at Rp6.1 million, while other regions are announcing their specific adjustments. For instance, Cilegon has reported the highest minimum wage in Banten at Rp5.92 million, and Surabaya leads in East Java with Rp5.6 million. Conversely, Papua Tengah has opted to freeze its minimum wage at Rp4.28 million due to a negative economic growth rate of 16.68 percent. Discussions regarding these adjustments are ongoing, with central government officials encouraging consistent implementation across all provinces. Meanwhile, employer organizations have expressed concern that these wage hikes may impose a heavy burden on businesses, while labor representatives continue to advocate for wage levels that reflect living costs.",
+  "whyItIsViral": "The topic is experiencing high engagement due to widespread reporting by six independent news outlets tracking wage adjustments across multiple Indonesian provinces.",
+  "viralScore": 79,
   "intensityTier": "high",
   "signalBreakdown": {
     "verifiedPublisherCount": 6,
-    "coverageVelocityScore": 55,
+    "coverageVelocityScore": 65,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-19T14:10:00Z",
-  "lastUpdatedBatchAt": "2026-11-26T10:59:00Z",
+  "lastUpdatedBatchAt": "2026-11-26T14:18:00Z",
   "sources": [
-    {
-      "publisherName": "VIVA",
-      "publisherDomain": "viva.co.id",
-      "articleTitle": "UMP NTT 2027 Naik Jadi Rp 2,6 Juta",
-      "articleUrl": "https://www.viva.co.id/berita/nasional/1945446-ump-ntt-2027-naik-jadi-rp-26-juta",
-      "publishedAt": "2026-11-21T23:00:00Z"
-    },
-    {
-      "publisherName": "CNN Indonesia",
-      "publisherDomain": "cnnindonesia.com",
-      "articleTitle": "Pramono Anung Jawab Kritik Said Iqbal Soal UMP Jakarta Rp6,1 Juta",
-      "articleUrl": "https://www.cnnindonesia.com/nasional/20261121203409-20-1429933/pramono-anung-jawab-kritik-said-iqbal-soal-ump-jakarta-rp61-juta",
-      "publishedAt": "2026-11-21T23:00:46Z"
-    },
     {
       "publisherName": "VIVA",
       "publisherDomain": "viva.co.id",
@@ -233,11 +219,25 @@
       "publishedAt": "2026-11-26T07:44:30Z"
     },
     {
+      "publisherName": "CNBC Indonesia",
+      "publisherDomain": "cnbcindonesia.com",
+      "articleTitle": "Video: UMK Cilegon Rp5,92 Juta, Tertinggi di Provinsi Banten",
+      "articleUrl": "https://www.cnbcindonesia.com/news/20261126124632-8-788686/video-umk-cilegon-rp592-juta-tertinggi-di-provinsi-banten",
+      "publishedAt": "2026-11-26T09:00:58Z"
+    },
+    {
       "publisherName": "VIVA",
       "publisherDomain": "viva.co.id",
       "articleTitle": "Insentif Guru Non-ASN Naik Jadi Rp1 Juta Mulai 2027, DPR Dorong Gaji Minimal Setara UMP",
       "articleUrl": "https://www.viva.co.id/berita/nasional/1946586-insentif-guru-non-asn-naik-jadi-rp1-juta-mulai-2027-dpr-dorong-gaji-minimal-setara-ump",
       "publishedAt": "2026-11-26T10:10:00Z"
+    },
+    {
+      "publisherName": "Antara",
+      "publisherDomain": "antaranews.com",
+      "articleTitle": "UMK Probolinggo Tahun 2027 naik 7,4 persen menjadi Rp3,39 juta",
+      "articleUrl": "https://www.antaranews.com/berita/5881207/umk-probolinggo-tahun-2027-naik-74-persen-menjadi-rp339-juta",
+      "publishedAt": "2026-11-26T14:02:19Z"
     }
   ],
   "entityTags": [
@@ -246,16 +246,16 @@
       "slug": "jakarta"
     },
     {
-      "name": "Ministry of Manpower",
-      "slug": "ministry-of-manpower"
-    },
-    {
       "name": "Minimum Wage",
       "slug": "minimum-wage"
     },
     {
-      "name": "Central Papua",
-      "slug": "central-papua"
+      "name": "Apindo",
+      "slug": "apindo"
+    },
+    {
+      "name": "Indonesia",
+      "slug": "indonesia"
     }
   ],
   "relatedInCountrySlugs": [
@@ -266,6 +266,6 @@
   "relatedInCategorySlugs": [
     "john-cochrane-brazil-minimum-wage",
     "pertamina-addresses-rupiah-exchange-rate",
-    "brazil-black-friday-shopping-advice"
+    "urgent-bok-raises-key-rate-to-3-25-pct"
   ]
 }

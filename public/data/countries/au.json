@@ -3,34 +3,17 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 77,
+  "viralScore": 63,
   "intensityTier": "high",
-  "generatedAt": "2026-11-26T11:18:00Z",
+  "generatedAt": "2026-11-26T14:18:00Z",
   "clusters": [
-    {
-      "slug": "who-gives-a-crap-data-breach",
-      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
-      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 74,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
-        "Exposed customer information includes names, contact details, and total purchase history."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
-      }
-    },
     {
       "slug": "cricket-australia-sandpapergate-forum",
       "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
       "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 67,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
@@ -42,13 +25,30 @@
       }
     },
     {
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
+        "The party received its largest political donations in Tasmania from a salmon farm owner and a lobbyist."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+      }
+    },
+    {
       "slug": "jannik-sinner-misses-2027-australian-open",
       "canonicalPath": "/news/au/jannik-sinner-misses-2027-australian-open/",
       "headline": "Jannik Sinner Withdraws From Australian Open Following Knee Surgery",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 66,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Tennis player Jannik Sinner is withdrawing from the 2027 Australian Open due to a knee injury.",
         "The two-time tournament champion recently underwent surgery to address the physical issue."
@@ -59,37 +59,20 @@
       }
     },
     {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Victorian Labor Trails In Final Polls Before State Election",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "who-gives-a-crap-data-breach",
+      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
+      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
       "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Polling indicates the Labor government faces significant losses, with its primary vote dropping to 20 percent.",
-        "Candidates and parties are emphasizing housing policies and the regulation of datacentre projects as key campaign issues."
+        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
+        "Exposed customer information includes names, contact details, and total purchase history."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
-      }
-    },
-    {
-      "slug": "one-nation-immigration-policy-tasmania-poll",
-      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-      "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
-        "The party received its largest political donations in Tasmania from a salmon farm owner and a lobbyist."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
       }
     },
     {
@@ -110,12 +93,29 @@
       }
     },
     {
+      "slug": "second-invasive-fire-ant-nest-sydney",
+      "canonicalPath": "/news/au/second-invasive-fire-ant-nest-sydney/",
+      "headline": "Second invasive fire ant nest discovered in western Sydney’s Auburn",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: Second invasive fire ant nest discovered in western Sydney’s Auburn",
+        "ABC reports: 'Worrying development' as second fire ant nest discovered in Sydney"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
+      }
+    },
+    {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Usman Khawaja Claims Tension With Pat Cummins Over Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 52,
+      "viralScore": 51,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Usman Khawaja stated he felt personally attacked by team captain Pat Cummins during the ongoing dispute.",
@@ -132,7 +132,7 @@
       "headline": "Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 52,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "CNA reports: Rugby league-Ponga and Walsh face off again in World Cup final as NZ look to upset Australia",
@@ -144,12 +144,46 @@
       }
     },
     {
+      "slug": "victorian-state-election-campaign-launches",
+      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+      "headline": "Victorian Labor Trails In Final Polls Before State Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Polling indicates the Labor government faces significant losses, with its primary vote dropping to 20 percent.",
+        "Candidates and parties are emphasizing housing policies and the regulation of datacentre projects as key campaign issues."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
+    {
+      "slug": "jim-chalmers-warns-of-economic-hardship",
+      "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
+      "headline": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Guardian reports: Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
+        "The West Australian reports: Treasurer Jim Chalmers says he’s not to blame as inflation soars to three-year high of 4.9 per cent in October"
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
+      }
+    },
+    {
       "slug": "australia-faces-scrutiny-climate-summit",
       "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
       "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
@@ -158,23 +192,6 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
-      }
-    },
-    {
-      "slug": "greens-propose-support-for-tax-changes",
-      "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
-      "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Greens party has signaled potential support for legislative changes regarding tax policy.",
-        "Proposed measures include a new minimum tax on trusts."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/greens-offer-government-path-to-pass-trusts-cgt/107394802"
       }
     },
     {
@@ -212,29 +229,12 @@
       }
     },
     {
-      "slug": "former-officer-testifies-sydney-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
-      "headline": "Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 47,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ABC reports: Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
-        "The West Australian reports: Ex-cop Beau Lamarre-Condon found guilty of murdering Sydney couple"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
-      }
-    },
-    {
       "slug": "australian-prime-minister-cop31-remarks",
       "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
       "headline": "Anthony Albanese and Chris Bowen Face Criticism Over COP31 Failure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Anthony Albanese and Minister Chris Bowen are facing backlash regarding the outcome of the COP31 climate summit in Turkey.",
@@ -246,37 +246,71 @@
       }
     },
     {
-      "slug": "afl-draft-prospects-knee-recovery",
-      "canonicalPath": "/news/au/afl-draft-prospects-knee-recovery/",
-      "headline": "AFL Draft: West Coast Eagles And Fremantle Dockers Secure Rookies",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 44,
+      "slug": "wall-street-stocks-drop-ai-selloff",
+      "canonicalPath": "/news/au/wall-street-stocks-drop-ai-selloff/",
+      "headline": "Wall Street Records Significant Losses Amid AI Sector Sell-Off",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "West Coast Eagles signed Cody Lee as a Category B rookie following the national AFL draft.",
-        "Fremantle Dockers added Finlay Yeo as a Category B rookie to their squad for the upcoming season."
+        "The Dow Jones Industrial Average decreased by approximately 1.93 percent following widespread market volatility.",
+        "The S&P 500 index faced a significant decline of 3.70 percent during Friday's trading session."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-11/acl-battles-have-not-stopped-these-afl-draft-hopefuls/107363310"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
       }
     },
     {
-      "slug": "man-charged-murder-fatal-home-invasion",
-      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
-      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 43,
+      "slug": "greens-propose-support-for-tax-changes",
+      "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
+      "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
-        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
+        "The Greens party has signaled potential support for legislative changes regarding tax policy.",
+        "Proposed measures include a new minimum tax on trusts."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/09/man-charged-fatal-stabbing-hungrypanda-delivery-driver-jianming-feng-melbourne-ntwnfb"
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/greens-offer-government-path-to-pass-trusts-cgt/107394802"
+      }
+    },
+    {
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "ABC reports: Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
+        "The West Australian reports: Ex-cop Beau Lamarre-Condon found guilty of murdering Sydney couple"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
+      }
+    },
+    {
+      "slug": "two-arrested-after-break-in-at-kate-and-williams",
+      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
+      "headline": "Two men face court over break-in at Kate and William's estate",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "ABC reports: Two men face court over break-in at Kate and William's estate",
+        "The West Australian reports: Prince William and Kate Middleton burglary: Two men charged with trespass at Prince and Princess’ home"
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
       }
     },
     {
@@ -285,7 +319,7 @@
       "headline": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in…",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The West Australian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in verdict against ex-NSW cop",
@@ -297,54 +331,20 @@
       }
     },
     {
-      "slug": "josh-hazlewood-defends-pat-cummins",
-      "canonicalPath": "/news/au/josh-hazlewood-defends-pat-cummins/",
-      "headline": "Josh Hazlewood Supports Pat Cummins Amid Ball-Tampering Discourse",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Josh Hazlewood has stated his support for Pat Cummins as the team captain.",
-        "The remarks follow renewed public conversation regarding the ball-tampering scandal."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-21/pat-cummins-josh-hazlewood-sandpaper-ball-tampering-cricket/107412300"
-      }
-    },
-    {
-      "slug": "david-jones-redundancy-notices-issued",
-      "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
-      "headline": "David Jones Issues Redundancy Notices To 1680 Staff Members",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Retail department store David Jones has notified 1680 employees of impending job terminations.",
-        "The redundancies are scheduled to take effect before the conclusion of the calendar year."
+        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
+        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-20/david-jones-staff-issued-with-redundancy-notices/107411092"
-      }
-    },
-    {
-      "slug": "sydney-swans-north-melbourne-aflw-preliminary-final",
-      "canonicalPath": "/news/au/sydney-swans-north-melbourne-aflw-preliminary-final/",
-      "headline": "North Melbourne Defeats Sydney To Reach 2026 AFLW Grand Final",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "North Melbourne defeated Sydney to advance to the AFLW grand final.",
-        "This victory marks the fourth consecutive grand final appearance for North Melbourne."
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/sport/afl/roos-back-fit-again-star-for-swans-duel-in-aflw-finals-c-23193456"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/09/man-charged-fatal-stabbing-hungrypanda-delivery-driver-jianming-feng-melbourne-ntwnfb"
       }
     }
   ]

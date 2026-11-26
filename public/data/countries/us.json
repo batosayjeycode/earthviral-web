@@ -5,23 +5,57 @@
   "region": "North America",
   "viralScore": 100,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-26T11:18:00Z",
+  "generatedAt": "2026-11-26T14:18:00Z",
   "clusters": [
     {
       "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
       "canonicalPath": "/news/us/new-york-citys-macys-thanksgiving-day-parade-postponed-due/",
-      "headline": "Macy's Thanksgiving Day Parade Postponed Due To Severe Storm",
+      "headline": "Macy's Thanksgiving Day Parade Postponed Until Saturday By Storm",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 100,
+      "viralScore": 98,
       "intensityTier": "surge",
       "aiSummaryBullets": [
-        "The Macy's Thanksgiving Day Parade has been postponed for the first time in its 100-year history.",
-        "Organizers delayed the event until Saturday following forecasts of severe weather, including heavy rainfall and high winds."
+        "The 100th annual Macy's Thanksgiving Day Parade in New York City has been delayed until Saturday.",
+        "Mayor Zohran Mamdani cited safety concerns regarding wind gusts forecasted to reach between 60 and 65 miles per hour."
       ],
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/us-news/2026/nov/25/macys-thanksgiving-day-parade-postponed-weather"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "Jensen Huang Resumes Nvidia CEO Role Amid Ongoing Federal Scrutiny",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Jensen Huang has officially resumed his position as Nvidia's Chief Executive Officer.",
+        "Contradicting statements have emerged from political figures regarding a potential presidential pardon for Huang."
+      ],
+      "primarySource": {
+        "publisherName": "CNA",
+        "articleUrl": "https://www.channelnewsasia.com/world/us-lawmakers-criticise-nvidia-decision-reinstate-huang-ceo-6575546"
+      }
+    },
+    {
+      "slug": "ice-arrests-passengers-seattle-airport",
+      "canonicalPath": "/news/us/ice-arrests-passengers-seattle-airport/",
+      "headline": "ICE Agents Face Backlash Following Seattle Airport Arrest Incident",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 86,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Washington state officials characterized ICE conduct during airport arrests as out of control.",
+        "Footage showing agents detaining individuals during boarding has prompted protests and union criticism."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/princeton-student-ice/"
       }
     },
     {
@@ -37,8 +71,25 @@
         "The controlled detonation follows significant delays, legal discussions, and ongoing public anxiety regarding potential environmental and health impacts."
       ],
       "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-detonation-lead-explosives-iowa"
+      }
+    },
+    {
+      "slug": "severe-storms-threaten-thanksgiving-travel",
+      "canonicalPath": "/news/us/severe-storms-threaten-thanksgiving-travel/",
+      "headline": "Severe Storms And Coastal Floods Impact Thanksgiving Travel Plans",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 78,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Severe weather patterns are causing disruptions for travelers across the United States during the Thanksgiving holiday period.",
+        "Meteorologists are tracking storm systems that could affect both air travel and road conditions throughout the holiday week."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/video/20261124-ice-raids-add-to-jitters-ahead-of-thanksgiving-travel-rush"
       }
     },
     {
@@ -47,15 +98,15 @@
       "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 78,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
         "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
       ],
       "primarySource": {
-        "publisherName": "VIVA",
-        "articleUrl": "https://www.viva.co.id/bisnis/1944231-rupiah-makin-terpuruk-dolar-as-nyaris-tembus-rp18300-pagi-ini"
+        "publisherName": "Okezone",
+        "articleUrl": "https://economy.okezone.com/read/2026/11/17/278/3254521/rupiah-melemah-dekati-rp18-300-per-dolar-as-ini-penyebabnya"
       }
     },
     {
@@ -64,7 +115,7 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 75,
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -76,37 +127,20 @@
       }
     },
     {
-      "slug": "us-clears-spacex-to-launch-1-million-satellites-for",
-      "canonicalPath": "/news/us/us-clears-spacex-to-launch-1-million-satellites-for/",
-      "headline": "US Approves SpaceX Plan For One Million Orbital Data Centers",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 70,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Trump administration granted SpaceX regulatory approval to launch a constellation of one million satellites.",
-        "The project aims to establish space-based data centers intended to support AI infrastructure and data processing."
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "DOJ Faces Questions Over Jensen Huang Return To Nvidia CEO Role",
+      "slug": "kennedy-family-opposes-trump-arch-plan",
+      "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
+      "headline": "Second Judge Blocks Construction Of Planned Trump Memorial Arch",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Jensen Huang has been reinstated as the CEO of Nvidia after a rapid reversal of his departure linked to intervention by Donald Trump.",
-        "The US Attorney General declined to verify whether an official investigation was conducted into the matter despite claims from the administration."
+        "A second judge has issued a block on the development of the proposed 250-foot arch in Washington D.C.",
+        "Legal challenges against the project argue that the construction lacks required authorization from Congress."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/trumps-nvidia-push-how-white-house-pressure-brought-jensen-huang-back-as-ceo-in-72-hours/articleshow/136117137.cms"
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
       }
     },
     {
@@ -115,7 +149,7 @@
       "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 67,
+      "viralScore": 70,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
@@ -127,20 +161,88 @@
       }
     },
     {
-      "slug": "faa-issues-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
-      "headline": "Transportation Secretary Seeks Fifty Billion Funding For FAA Upgrades",
+      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
+      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
+      "headline": "Democrats Secure Historic House Majority Following Midterm Wins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 61,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Transportation Secretary Sean Duffy has requested $50 billion in federal funding to address needed FAA infrastructure and technology upgrades.",
-        "The request follows a nationwide flight ground stop that affected over one million passengers and sparked discussions regarding aging air traffic systems."
+        "Democrats attained their largest House of Representatives majority since 1992, securing 258 seats.",
+        "Following the election results, party leadership has begun outlining plans for the 2028 presidential primary cycle."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump"
+      }
+    },
+    {
+      "slug": "pope-leo-latin-america-tour",
+      "canonicalPath": "/news/us/pope-leo-latin-america-tour/",
+      "headline": "Pope Leo XIV Visits Argentina Following Successful Surgery Recovery",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Pope Leo XIV arrived in Argentina for the second leg of his South American tour after concluding a visit to Uruguay.",
+        "The 71-year-old pontiff resumed international travel just weeks after undergoing surgery for lung cancer."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o"
+      }
+    },
+    {
+      "slug": "us-clears-spacex-to-launch-1-million-satellites-for",
+      "canonicalPath": "/news/us/us-clears-spacex-to-launch-1-million-satellites-for/",
+      "headline": "US Approves SpaceX Plan For One Million Orbital Data Centers",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Trump administration granted SpaceX regulatory approval to launch a constellation of one million satellites.",
+        "The project aims to establish space-based data centers intended to support AI infrastructure and data processing."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-investigation-espionage-allegations",
+      "canonicalPath": "/news/us/nvidia-ceo-investigation-espionage-allegations/",
+      "headline": "Justice Department Probes Megaspeed and Nvidia Amid Huang Return",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 62,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Department of Justice has initiated an investigation involving Nvidia and the Singapore-based firm Megaspeed.",
+        "Concerns are being raised by lawmakers regarding potential national security risks linked to the company's business activities."
       ],
       "primarySource": {
         "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/ripple-effects-nationwide-ground-stop-felt-airports-exhausted-frustrated/"
+        "articleUrl": "https://www.cbsnews.com/news/nvidia-short-seller-culper-jensen-huang/"
+      }
+    },
+    {
+      "slug": "zelenskyy-reports-us-donbas-nato-proposal",
+      "canonicalPath": "/news/us/zelenskyy-reports-us-donbas-nato-proposal/",
+      "headline": "President Zelenskyy Reports US Proposal On Donbas And NATO Accession",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 58,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Ukrainian President Volodymyr Zelenskyy stated that US representatives proposed a territorial exchange involving the Donbas region.",
+        "The suggested proposal would reportedly grant Ukraine NATO membership in return for ceding parts of eastern Ukraine to Russian control."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership"
       }
     },
     {
@@ -149,7 +251,7 @@
       "headline": "International Perspectives Follow Republican Losses In US Midterms",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
@@ -161,12 +263,29 @@
       }
     },
     {
+      "slug": "judge-blocks-fcc-review-abc-licenses",
+      "canonicalPath": "/news/us/judge-blocks-fcc-review-abc-licenses/",
+      "headline": "Federal Judge Blocks FCC Review Of ABC Broadcast Station Licenses",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 57,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A federal court issued an injunction preventing the FCC from initiating an early review of ABC television broadcast station licenses.",
+        "The legal challenge stems from allegations that the review process was initiated to penalize the network for its content."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/"
+      }
+    },
+    {
       "slug": "trump-reflects-on-deportation-policy",
       "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
       "headline": "Kilmar Abrego Garcia Departs United States Following Deportation Row",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Kilmar Abrego Garcia departed the United States for Spain on Tuesday, as confirmed by the Department of Homeland Security.",
@@ -178,20 +297,20 @@
       }
     },
     {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic House Majority Following Midterm Wins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "united-states-loses-measles-elimination-status-2",
+      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
+      "headline": "US Reports Nine Measles Deaths Amid Historic Outbreak Surge",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
       "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Democrats attained their largest House of Representatives majority since 1992, securing 258 seats.",
-        "Following the election results, party leadership has begun outlining plans for the 2028 presidential primary cycle."
+        "The CDC confirmed nine deaths linked to measles across the United States in 2026.",
+        "Health authorities have officially declared the loss of the nation's measles-free status after 26 years."
       ],
       "primarySource": {
         "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump"
+        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
       }
     },
     {
@@ -200,7 +319,7 @@
       "headline": "California Grand Jury Indicts Thomas Markle On Pornography Charges",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A California grand jury has officially indicted Thomas Markle on two counts of possessing child sexual abuse material.",
@@ -209,23 +328,6 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "US loses measles elimination status amid worst outbreak since 1991",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Times of India reports: US loses measles elimination status amid worst outbreak since 1991",
-        "The Guardian reports: US loses measles elimination status amid worst outbreak since 1991"
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
       }
     },
     {
@@ -243,108 +345,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
-      "slug": "plane-crash-off-mississippi-coast",
-      "canonicalPath": "/news/us/plane-crash-off-mississippi-coast/",
-      "headline": "Six People Die After Cessna 210 Crashes Off Mississippi Coast",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A Cessna 210 aircraft crashed into the Gulf of Mexico near Mississippi.",
-        "The US Coast Guard confirmed that all six individuals on board were killed."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/24/mississippi-plane-crash"
-      }
-    },
-    {
-      "slug": "ice-arrests-passengers-seattle-airport",
-      "canonicalPath": "/news/us/ice-arrests-passengers-seattle-airport/",
-      "headline": "'Out of control': ICE agents make arrests at Seattle airport in 'horrific' scene",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "France 24 reports: 'Out of control': ICE agents make arrests at Seattle airport in 'horrific' scene",
-        "CNA reports: Washington governor, union denounce ICE arrests of travellers at Seattle airport"
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/princeton-student-ice/"
-      }
-    },
-    {
-      "slug": "judge-blocks-fcc-review-abc-licenses",
-      "canonicalPath": "/news/us/judge-blocks-fcc-review-abc-licenses/",
-      "headline": "Federal Judge Blocks FCC Review Of ABC Broadcast Station Licenses",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 53,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A federal court issued an injunction preventing the FCC from initiating an early review of ABC television broadcast station licenses.",
-        "The legal challenge stems from allegations that the review process was initiated to penalize the network for its content."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-investigation-espionage-allegations",
-      "canonicalPath": "/news/us/nvidia-ceo-investigation-espionage-allegations/",
-      "headline": "Jensen Huang's surprise return to Nvidia sparks mixed reactions in Washington",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "France 24 reports: Jensen Huang's surprise return to Nvidia sparks mixed reactions in Washington",
-        "The Guardian reports: Democrats hit out at Nvidia and Trump over Huang’s return – US politics live"
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/nvidia-short-seller-culper-jensen-huang/"
-      }
-    },
-    {
-      "slug": "us-conducts-new-military-strikes-iran",
-      "canonicalPath": "/news/us/us-conducts-new-military-strikes-iran/",
-      "headline": "Tensions Escalate Between United States And Iran Amid Gulf Strikes",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Military tensions between the United States and Iran have intensified with recent exchanges of strikes in the region.",
-        "A commercial oil tanker caught fire in the Strait of Hormuz after being struck by a projectile reported by the ship's crew."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
       }
     }
   ]
