@@ -3,17 +3,34 @@
   "name": "Thailand",
   "slug": "thailand",
   "region": "Asia",
-  "viralScore": 0,
-  "intensityTier": "quiet",
-  "generatedAt": "2026-11-26T08:18:00Z",
+  "viralScore": 85,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-26T10:59:00Z",
   "clusters": [
+    {
+      "slug": "bangkok-oil-depot-explosion",
+      "canonicalPath": "/news/th/bangkok-oil-depot-explosion/",
+      "headline": "Large Explosion Reported At Bangchak Oil Depot In Eastern Bangkok",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 84,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A major explosion occurred at the Bangchak oil depot located in eastern Bangkok.",
+        "Seven individuals sustained injuries in the incident, with four reported to be in critical condition."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/asia-pacific/20261126-huge-explosion-at-oil-depot-in-bangkok-sends-fireball-into-sky"
+      }
+    },
     {
       "slug": "fatal-phuket-shophouse-fire-thailand",
       "canonicalPath": "/news/th/fatal-phuket-shophouse-fire-thailand/",
       "headline": "Eleven Dead Following Devastating Fire At Phuket Shophouse Complex",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 38,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "At least 11 individuals have been confirmed dead following a significant fire at a shophouse building on the island of Phuket.",
