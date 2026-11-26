@@ -1,7 +1,7 @@
 /**
- * Day/night theme. The reader's pick is kept in localStorage under THEME_KEY; with no pick
- * the theme follows the device's prefers-color-scheme. BaseLayout applies it to
- * <html data-theme> before first paint; the header toggle changes it.
+ * Day/night theme. Night (dark) is the default for every visitor, whatever the device's
+ * colour scheme; the header toggle switches to day and the pick is kept in localStorage under
+ * THEME_KEY. BaseLayout applies it to <html data-theme> before first paint.
  */
 export type Theme = 'light' | 'dark';
 
@@ -15,6 +15,9 @@ export const THEME_COLOR: Record<Theme, string> = {
 
 export const isTheme = (value: unknown): value is Theme => value === 'light' || value === 'dark';
 
-/** Saved pick → device preference. */
-export const resolveTheme = (saved: string | null, prefersLight: boolean): Theme =>
-  isTheme(saved) ? saved : prefersLight ? 'light' : 'dark';
+/** The theme for a visitor who hasn't picked one. */
+export const DEFAULT_THEME: Theme = 'dark';
+
+/** Saved pick → the default (night). */
+export const resolveTheme = (saved: string | null): Theme =>
+  isTheme(saved) ? saved : DEFAULT_THEME;
