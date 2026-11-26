@@ -1,5 +1,27 @@
 [
   {
+    "id": "gb",
+    "code": "GB",
+    "isoNumeric": "826",
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "region": "Europe",
+    "centroid": [
+      -2,
+      53.5
+    ],
+    "viralScore": 100,
+    "intensityTier": "surge",
+    "topicCount": 53,
+    "topClusterIds": [
+      "gb-20261123-best-black-friday-2026-beauty-deals-according-to-our",
+      "gb-20261119-bradford-councillor-ibrar-ali-stabbing-arrest",
+      "gb-20261126-uk-net-migration-falls-lowest-level",
+      "gb-20261124-london-underground-drivers-plan-strike-action",
+      "gb-20261126-ann-widdecombe-memorial-service-london"
+    ]
+  },
+  {
     "id": "id",
     "code": "ID",
     "isoNumeric": "360",
@@ -22,28 +44,6 @@
     ]
   },
   {
-    "id": "us",
-    "code": "US",
-    "isoNumeric": "840",
-    "name": "United States",
-    "slug": "united-states",
-    "region": "North America",
-    "centroid": [
-      -98.5,
-      39.5
-    ],
-    "viralScore": 92,
-    "intensityTier": "surge",
-    "topicCount": 31,
-    "topClusterIds": [
-      "us-20261125-new-york-citys-macys-thanksgiving-day-parade-postponed-due",
-      "us-20261111-kennedy-family-opposes-trump-arch-plan",
-      "us-20261122-ice-arrests-passengers-seattle-airport",
-      "us-20261124-severe-storms-threaten-thanksgiving-travel",
-      "us-20261122-us-army-detonate-explosives-iowa-plant"
-    ]
-  },
-  {
     "id": "in",
     "code": "IN",
     "isoNumeric": "356",
@@ -54,15 +54,37 @@
       79,
       22
     ],
-    "viralScore": 91,
+    "viralScore": 97,
     "intensityTier": "surge",
     "topicCount": 78,
     "topClusterIds": [
-      "in-20261126-union-cabinet-tables-amended-delimitation-bill",
       "in-20261126-constitution-day-live-updates-priceless-heritage-of-indian-democracy",
+      "in-20261126-union-cabinet-tables-amended-delimitation-bill",
       "in-20261110-recent-developments-in-tamil-nadu-india",
       "in-20261120-supreme-court-rejects-election-law-plea",
       "in-20261111-ins-betwa-propulsion-upgrade-contract"
+    ]
+  },
+  {
+    "id": "us",
+    "code": "US",
+    "isoNumeric": "840",
+    "name": "United States",
+    "slug": "united-states",
+    "region": "North America",
+    "centroid": [
+      -98.5,
+      39.5
+    ],
+    "viralScore": 91,
+    "intensityTier": "surge",
+    "topicCount": 32,
+    "topClusterIds": [
+      "us-20261125-new-york-citys-macys-thanksgiving-day-parade-postponed-due",
+      "us-20261111-kennedy-family-opposes-trump-arch-plan",
+      "us-20261122-ice-arrests-passengers-seattle-airport",
+      "us-20261122-us-army-detonate-explosives-iowa-plant",
+      "us-20261124-severe-storms-threaten-thanksgiving-travel"
     ]
   },
   {
@@ -76,7 +98,7 @@
       53.7,
       32.4
     ],
-    "viralScore": 90,
+    "viralScore": 89,
     "intensityTier": "surge",
     "topicCount": 4,
     "topClusterIds": [
@@ -85,28 +107,6 @@
       "ir-20261123-iranian-singer-and-four-others-receive-lashes-after-performance",
       "ir-20261111-iran-refuses-transfer-enriched-nuclear-material",
       "ir-20261117-trump-addresses-iran-dirty-bomb-threat"
-    ]
-  },
-  {
-    "id": "gb",
-    "code": "GB",
-    "isoNumeric": "826",
-    "name": "United Kingdom",
-    "slug": "united-kingdom",
-    "region": "Europe",
-    "centroid": [
-      -2,
-      53.5
-    ],
-    "viralScore": 89,
-    "intensityTier": "surge",
-    "topicCount": 55,
-    "topClusterIds": [
-      "gb-20261126-uk-net-migration-falls-lowest-level",
-      "gb-20261119-bradford-councillor-ibrar-ali-stabbing-arrest",
-      "gb-20261123-best-black-friday-2026-beauty-deals-according-to-our",
-      "gb-20261124-london-underground-drivers-plan-strike-action",
-      "gb-20261115-prime-minister-burnham-addresses-brexit-impact"
     ]
   },
   {
@@ -120,15 +120,15 @@
       -51.9,
       -10.5
     ],
-    "viralScore": 88,
+    "viralScore": 87,
     "intensityTier": "surge",
-    "topicCount": 93,
+    "topicCount": 91,
     "topClusterIds": [
       "br-20261123-brazil-black-friday-shopping-advice",
       "br-20261124-brazil-federal-police-money-laundering-operation",
-      "br-20261125-governo-e-bc-anunciam-medidas-para-reduzir-endividamento-com",
       "br-20261112-brazil-lula-administration-fiscal-adjustment-plan",
-      "br-20261126-brazilian-tax-reform-impacts-economic-sectors"
+      "br-20261126-brazilian-tax-reform-impacts-economic-sectors",
+      "br-20261120-trump-demands-philippines-replace-brazilian-imports"
     ]
   },
   {
@@ -142,15 +142,58 @@
       2.4,
       46.6
     ],
-    "viralScore": 84,
+    "viralScore": 83,
     "intensityTier": "high",
-    "topicCount": 22,
+    "topicCount": 21,
     "topClusterIds": [
       "fr-20261120-depardieu-houellebecq-rape-investigation",
       "fr-20261126-emilie-konig-faces-paris-trial",
       "fr-20261120-missiles-russian-drone-impact-poland",
       "fr-20261120-violence-west-bank-yemen-strikes",
       "fr-20261121-european-council-proposes-tech-tax"
+    ]
+  },
+  {
+    "id": "eg",
+    "code": "EG",
+    "isoNumeric": "818",
+    "name": "Egypt",
+    "slug": "egypt",
+    "region": "Africa",
+    "centroid": [
+      30.8,
+      26.8
+    ],
+    "viralScore": 82,
+    "intensityTier": "high",
+    "topicCount": 4,
+    "topClusterIds": [
+      "eg-20261125-blaze-kills-at-least-30-after-cairo-truck-overturns",
+      "eg-20261108-train-collision-occurs-giza-egypt",
+      "eg-20261108-tabrakan-ngeri-kereta-vs-kereta-di-mesir-4-orang",
+      "eg-20261125-dozens-killed-in-egypt-vehicle-fire",
+      "eg-20261107-egypt-football-appoints-ali-maher"
+    ]
+  },
+  {
+    "id": "bd",
+    "code": "BD",
+    "isoNumeric": "050",
+    "name": "Bangladesh",
+    "slug": "bangladesh",
+    "region": "Asia",
+    "centroid": [
+      90.3,
+      23.7
+    ],
+    "viralScore": 78,
+    "intensityTier": "high",
+    "topicCount": 2,
+    "topClusterIds": [
+      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
+      "bd-20261111-bangladesh-garment-sector-labor-unrest",
+      "bd-20261119-icj-rules-myanmar-committed-genocide",
+      "bd-20261119-muhammad-yunus-home-set-ablaze"
     ]
   },
   {
@@ -176,25 +219,47 @@
     ]
   },
   {
-    "id": "eg",
-    "code": "EG",
-    "isoNumeric": "818",
-    "name": "Egypt",
-    "slug": "egypt",
-    "region": "Africa",
+    "id": "nz",
+    "code": "NZ",
+    "isoNumeric": "554",
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "region": "Oceania",
     "centroid": [
-      30.8,
-      26.8
+      172,
+      -41.5
     ],
-    "viralScore": 73,
+    "viralScore": 74,
     "intensityTier": "high",
-    "topicCount": 4,
+    "topicCount": 1,
     "topClusterIds": [
-      "eg-20261125-blaze-kills-at-least-30-after-cairo-truck-overturns",
-      "eg-20261108-train-collision-occurs-giza-egypt",
-      "eg-20261108-tabrakan-ngeri-kereta-vs-kereta-di-mesir-4-orang",
-      "eg-20261125-dozens-killed-in-egypt-vehicle-fire",
-      "eg-20261107-egypt-football-appoints-ali-maher"
+      "nz-20261107-new-zealand-election-too-close",
+      "nz-20261107-new-zealand-2026-election-results",
+      "nz-20261107-new-zealand-election-coalition-talks",
+      "nz-20261113-new-zealand-india-cricket-match-result",
+      "nz-20261114-nz-rugby-league-ancestral-ties"
+    ]
+  },
+  {
+    "id": "ru",
+    "code": "RU",
+    "isoNumeric": "643",
+    "name": "Russia",
+    "slug": "russia",
+    "region": "Europe",
+    "centroid": [
+      60,
+      58
+    ],
+    "viralScore": 71,
+    "intensityTier": "high",
+    "topicCount": 10,
+    "topClusterIds": [
+      "ru-20261109-russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
+      "ru-20261123-allies-say-russia-may-launch-nuclear-space-weapon-next",
+      "ru-20261115-estonia-to-close-russia-border-crossings",
+      "ru-20261111-indonesian-citizens-recruited-as-russian-soldiers",
+      "ru-20261121-russian-cargo-ship-drone-strike"
     ]
   },
   {
@@ -208,7 +273,7 @@
       127.8,
       36.3
     ],
-    "viralScore": 69,
+    "viralScore": 68,
     "intensityTier": "high",
     "topicCount": 39,
     "topClusterIds": [
@@ -217,27 +282,6 @@
       "kr-20261118-supreme-court-overturns-former-pm-han-conviction",
       "kr-20261126-urgent-bok-raises-key-rate-to-3-25-pct",
       "kr-20261111-bus-collision-bundang-south-korea"
-    ]
-  },
-  {
-    "id": "bd",
-    "code": "BD",
-    "isoNumeric": "050",
-    "name": "Bangladesh",
-    "slug": "bangladesh",
-    "region": "Asia",
-    "centroid": [
-      90.3,
-      23.7
-    ],
-    "viralScore": 68,
-    "intensityTier": "high",
-    "topicCount": 2,
-    "topClusterIds": [
-      "bd-20261109-sheikh-hasina-seeks-passport-for-return",
-      "bd-20261111-bangladesh-garment-sector-labor-unrest",
-      "bd-20261119-icj-rules-myanmar-committed-genocide",
-      "bd-20261119-muhammad-yunus-home-set-ablaze"
     ]
   },
   {
@@ -285,28 +329,6 @@
     ]
   },
   {
-    "id": "ru",
-    "code": "RU",
-    "isoNumeric": "643",
-    "name": "Russia",
-    "slug": "russia",
-    "region": "Europe",
-    "centroid": [
-      60,
-      58
-    ],
-    "viralScore": 65,
-    "intensityTier": "high",
-    "topicCount": 10,
-    "topClusterIds": [
-      "ru-20261123-allies-say-russia-may-launch-nuclear-space-weapon-next",
-      "ru-20261115-estonia-to-close-russia-border-crossings",
-      "ru-20261111-indonesian-citizens-recruited-as-russian-soldiers",
-      "ru-20261121-russian-cargo-ship-drone-strike",
-      "ru-20261109-russia-ukraine-and-us-to-meet-as-zelenskyy-claims"
-    ]
-  },
-  {
     "id": "sa",
     "code": "SA",
     "isoNumeric": "682",
@@ -329,28 +351,6 @@
     ]
   },
   {
-    "id": "nz",
-    "code": "NZ",
-    "isoNumeric": "554",
-    "name": "New Zealand",
-    "slug": "new-zealand",
-    "region": "Oceania",
-    "centroid": [
-      172,
-      -41.5
-    ],
-    "viralScore": 63,
-    "intensityTier": "high",
-    "topicCount": 1,
-    "topClusterIds": [
-      "nz-20261107-new-zealand-election-too-close",
-      "nz-20261107-new-zealand-election-coalition-talks",
-      "nz-20261107-new-zealand-2026-election-results",
-      "nz-20261113-new-zealand-india-cricket-match-result",
-      "nz-20261114-nz-rugby-league-ancestral-ties"
-    ]
-  },
-  {
     "id": "au",
     "code": "AU",
     "isoNumeric": "036",
@@ -363,7 +363,7 @@
     ],
     "viralScore": 63,
     "intensityTier": "high",
-    "topicCount": 51,
+    "topicCount": 52,
     "topClusterIds": [
       "au-20261126-jannik-sinner-misses-2027-australian-open",
       "au-20261118-one-nation-immigration-policy-tasmania-poll",
@@ -390,8 +390,8 @@
       "es-20261111-spain-general-strike-over-housing-crisis",
       "es-20261124-leftwing-coalition-leader-calls-for-rental-revolution-as-spain",
       "es-20261106-real-madrid-la-liga-mbappe-controversy",
-      "es-20261108-canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-      "es-20261126-diesel-tanker-sinks-off-ibiza-coast"
+      "es-20261126-diesel-tanker-sinks-off-ibiza-coast",
+      "es-20261108-canary-islands-el-hierro-declares-emergency-amid-migrant-refugee"
     ]
   },
   {
@@ -410,10 +410,10 @@
     "topicCount": 67,
     "topClusterIds": [
       "ng-20261110-nigeria-upgrades-health-centers-policy-goals",
-      "ng-20261125-pete-edochie-life-career-and-legacy-of-a-nollywood",
       "ng-20261118-osun-governor-rejects-stadium-renaming",
+      "ng-20261125-pete-edochie-life-career-and-legacy-of-a-nollywood",
       "ng-20261115-military-operations-and-security-incidents-nigeria",
-      "ng-20261115-security-forces-confront-armed-groups-nigeria"
+      "ng-20261108-nigerian-air-force-senior-leadership-reshuffle"
     ]
   },
   {
@@ -514,7 +514,7 @@
     ],
     "viralScore": 53,
     "intensityTier": "active",
-    "topicCount": 26,
+    "topicCount": 27,
     "topClusterIds": [
       "my-20261106-najib-razak-returns-to-kajang-prison",
       "my-20261106-high-court-najib-house-arrest-order",
@@ -729,7 +729,7 @@
       -102.5,
       23.6
     ],
-    "viralScore": 35,
+    "viralScore": 34,
     "intensityTier": "active",
     "topicCount": 4,
     "topClusterIds": [
@@ -751,9 +751,9 @@
       -63.6,
       -38.4
     ],
-    "viralScore": 31,
+    "viralScore": 30,
     "intensityTier": "active",
-    "topicCount": 2,
+    "topicCount": 1,
     "topClusterIds": [
       "ar-20261107-argentina-secures-pope-leo-xiv-visit",
       "ar-20261114-argentina-loses-to-uruguay-post-messi",
