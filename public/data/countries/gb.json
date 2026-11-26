@@ -3,17 +3,34 @@
   "name": "United Kingdom",
   "slug": "united-kingdom",
   "region": "Europe",
-  "viralScore": 81,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-26T05:18:00Z",
+  "viralScore": 86,
+  "intensityTier": "surge",
+  "generatedAt": "2026-11-26T08:18:00Z",
   "clusters": [
+    {
+      "slug": "london-underground-drivers-plan-strike-action",
+      "canonicalPath": "/news/gb/london-underground-drivers-plan-strike-action/",
+      "headline": "RMT London Underground Strikes Proceed As Negotiations Fail",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 83,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "London Underground drivers represented by the RMT union are launching a 24-hour strike starting midday Thursday.",
+        "Services are expected to see significant reductions throughout Thursday and Friday due to the industrial action."
+      ],
+      "primarySource": {
+        "publisherName": "Sky News",
+        "articleUrl": "https://news.sky.com/story/london-underground-strike-to-go-ahead-after-talks-break-down-13614235"
+      }
+    },
     {
       "slug": "pochettino-linked-to-manchester-united-manager",
       "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
       "headline": "Mauricio Pochettino Faces Challenges After Difficult Manchester Start",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 78,
+      "viralScore": 82,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Mauricio Pochettino began his tenure at Manchester United with a 4-0 defeat against Liverpool.",
@@ -27,18 +44,52 @@
     {
       "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65-after",
       "canonicalPath": "/news/gb/duran-duran-guitarist-andy-taylor-dies-aged-65-after/",
-      "headline": "Duran Duran guitarist Andy Taylor dies aged 65 after prostate cancer battle",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 78,
+      "headline": "Duran Duran Guitarist Andy Taylor Passes Away At The Age Of 65",
+      "categorySlug": "entertainment-celebrity",
+      "categoryName": "Entertainment & Celebrity",
+      "viralScore": 74,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Evening Standard reports: Duran Duran guitarist Andy Taylor dies aged 65 after prostate cancer battle",
-        "France 24 reports: Duran Duran guitarist Andy Taylor dies aged 65"
+        "Andy Taylor, former guitarist for the band Duran Duran, has died at 65.",
+        "He passed away at home surrounded by his family members."
       ],
       "primarySource": {
         "publisherName": "Sky News",
         "articleUrl": "https://news.sky.com/story/duran-duran-guitarist-andy-taylor-has-died-aged-65-13616421"
+      }
+    },
+    {
+      "slug": "uk-youth-social-media-study",
+      "canonicalPath": "/news/gb/uk-youth-social-media-study/",
+      "headline": "Large Scale UK Study To Evaluate Social Media Restrictions On Youth",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Over 300,000 young people across the United Kingdom are participating in a major study regarding social media use.",
+        "Ten distinct research teams are evaluating how adolescents manage mental health without access to social media platforms."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o"
+      }
+    },
+    {
+      "slug": "manchester-united-sets-premier-league-record",
+      "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
+      "headline": "Mauricio Pochettino Seeks First Manchester United Win In Lisbon",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 64,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Mauricio Pochettino is managing his second match since taking charge of Manchester United.",
+        "The team is preparing for a Champions League away fixture against Sporting Lisbon."
+      ],
+      "primarySource": {
+        "publisherName": "Evening Standard",
+        "articleUrl": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-man-utd-predicted-lineup-confirmed-team-news-injury-latest-premier-league-2026-b1305596.html"
       }
     },
     {
@@ -47,7 +98,7 @@
       "headline": "Andy Burnham Denies Plans For Second Referendum On EU Membership",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Andy Burnham stated that pursuing a return to the EU without holding a new national referendum would be unthinkable.",
@@ -64,7 +115,7 @@
       "headline": "Two Men Charged Following Break-In At Anmer Hall In Norfolk",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 66,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Mirgen Doku and Arilen Ndoci were charged with burglary and trespass.",
@@ -81,8 +132,8 @@
       "headline": "Stalking to become standalone offence in major law change",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 66,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Independent reports: Stalking to become standalone offence in major law change",
         "BBC reports: Stalking law simplified to become one offence"
@@ -93,81 +144,13 @@
       }
     },
     {
-      "slug": "two-men-jailed-for-separate-murders",
-      "canonicalPath": "/news/gb/two-men-jailed-for-separate-murders/",
-      "headline": "Man Charged With Murder Following Disappearance Of Kelsey Hunter",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 64,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Kelsey Hunter, 20, was reported missing after she was last seen in Castle Douglas on Saturday evening.",
-        "Police previously stated that investigators feared the missing woman may have come to harm during their search."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/c67423wvdnpyo"
-      }
-    },
-    {
-      "slug": "uk-youth-social-media-study",
-      "canonicalPath": "/news/gb/uk-youth-social-media-study/",
-      "headline": "Large Scale UK Study To Evaluate Social Media Restrictions On Youth",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Over 300,000 young people across the United Kingdom are participating in a major study regarding social media use.",
-        "Ten distinct research teams are evaluating how adolescents manage mental health without access to social media platforms."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o"
-      }
-    },
-    {
-      "slug": "poundland-administration-latest-budget-retailer-collapses-putting-11-000",
-      "canonicalPath": "/news/gb/poundland-administration-latest-budget-retailer-collapses-putting-11-000/",
-      "headline": "Poundland administration latest: Budget retailer collapses putting 11,000 jobs at risk",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The Independent reports: Poundland administration latest: Budget retailer collapses putting 11,000 jobs at risk",
-        "Evening Standard reports: Poundland collapses into administration putting 11,000 jobs at risk before Christmas"
-      ],
-      "primarySource": {
-        "publisherName": "Sky News",
-        "articleUrl": "https://news.sky.com/story/poundland-collapse-leaves-10500-jobs-at-risk-13616082"
-      }
-    },
-    {
-      "slug": "ex-england-star-sterling-given-suspended-sentence-for-dangerous",
-      "canonicalPath": "/news/gb/ex-england-star-sterling-given-suspended-sentence-for-dangerous/",
-      "headline": "Raheem Sterling inhaled laughing gas to cope in ‘difficult period of career’",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Evening Standard reports: Raheem Sterling inhaled laughing gas to cope in ‘difficult period of career’",
-        "Al Jazeera reports: Ex-England star Sterling given suspended sentence for dangerous driving"
-      ],
-      "primarySource": {
-        "publisherName": "Evening Standard",
-        "articleUrl": "https://www.standard.co.uk/news/crime/raheem-sterling-lamborghini-m25-crash-b1306311.html"
-      }
-    },
-    {
       "slug": "british-comedian-russell-brand-found-guilty-of-rape-sexual",
       "canonicalPath": "/news/gb/british-comedian-russell-brand-found-guilty-of-rape-sexual/",
       "headline": "UK Government Considers Age Of Consent Laws After Brand Conviction",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Russell Brand has been sentenced to 10 years in prison following his conviction for rape and sexual assault.",
         "UK officials are evaluating potential changes to age of consent laws after an allegation involving a 16-year-old surfaced."
@@ -178,20 +161,54 @@
       }
     },
     {
-      "slug": "manchester-united-sets-premier-league-record",
-      "canonicalPath": "/news/gb/manchester-united-sets-premier-league-record/",
-      "headline": "Mauricio Pochettino Seeks First Manchester United Win In Lisbon",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "two-men-jailed-for-separate-murders",
+      "canonicalPath": "/news/gb/two-men-jailed-for-separate-murders/",
+      "headline": "Man Charged With Murder Following Disappearance Of Kelsey Hunter",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
       "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Mauricio Pochettino is managing his second match since taking charge of Manchester United.",
-        "The team is preparing for a Champions League away fixture against Sporting Lisbon."
+        "Kelsey Hunter, 20, was reported missing after she was last seen in Castle Douglas on Saturday evening.",
+        "Police previously stated that investigators feared the missing woman may have come to harm during their search."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/c67423wvdnpyo"
+      }
+    },
+    {
+      "slug": "ex-england-star-sterling-given-suspended-sentence-for-dangerous",
+      "canonicalPath": "/news/gb/ex-england-star-sterling-given-suspended-sentence-for-dangerous/",
+      "headline": "Raheem Sterling inhaled laughing gas to cope in ‘difficult period of career’",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Evening Standard reports: Raheem Sterling inhaled laughing gas to cope in ‘difficult period of career’",
+        "Al Jazeera reports: Ex-England star Sterling given suspended sentence for dangerous driving"
       ],
       "primarySource": {
         "publisherName": "Evening Standard",
-        "articleUrl": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-man-utd-predicted-lineup-confirmed-team-news-injury-latest-premier-league-2026-b1305596.html"
+        "articleUrl": "https://www.standard.co.uk/news/crime/raheem-sterling-lamborghini-m25-crash-b1306311.html"
+      }
+    },
+    {
+      "slug": "poundland-administration-latest-budget-retailer-collapses-putting-11-000",
+      "canonicalPath": "/news/gb/poundland-administration-latest-budget-retailer-collapses-putting-11-000/",
+      "headline": "Poundland administration latest: Budget retailer collapses putting 11,000 jobs at risk",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Independent reports: Poundland administration latest: Budget retailer collapses putting 11,000 jobs at risk",
+        "Evening Standard reports: Poundland collapses into administration putting 11,000 jobs at risk before Christmas"
+      ],
+      "primarySource": {
+        "publisherName": "Sky News",
+        "articleUrl": "https://news.sky.com/story/poundland-collapse-leaves-10500-jobs-at-risk-13616082"
       }
     },
     {
@@ -200,7 +217,7 @@
       "headline": "Four Convicted For Abusing Woman Drugged By Husband In The UK",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 55,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Four men were found guilty at Winchester Crown Court of sexually abusing Joanne Young.",
@@ -209,40 +226,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/cm2d6kk0wzw4o"
-      }
-    },
-    {
-      "slug": "households-braced-for-soaring-energy-bills-with-new-price",
-      "canonicalPath": "/news/gb/households-braced-for-soaring-energy-bills-with-new-price/",
-      "headline": "UK Energy Bills To Rise By £443 As Ofgem Raises Price Cap By 26%",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ofgem has announced a 26% increase to the energy price cap starting in January.",
-        "The adjustment will add an average of £443 per year to typical household bills."
-      ],
-      "primarySource": {
-        "publisherName": "The Independent",
-        "articleUrl": "https://www.independent.co.uk/news/uk/home-news/energy-price-cap-ofgem-january-2027-announcement-predictions-b3090781.html"
-      }
-    },
-    {
-      "slug": "london-underground-drivers-plan-strike-action",
-      "canonicalPath": "/news/gb/london-underground-drivers-plan-strike-action/",
-      "headline": "RMT Union Confirms Eight London Underground Strikes To Proceed",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The RMT union has scheduled eight 24-hour walkouts, with the first strike commencing on Thursday.",
-        "Negotiations between transport officials and union representatives have failed to resolve the ongoing pay and conditions dispute."
-      ],
-      "primarySource": {
-        "publisherName": "Sky News",
-        "articleUrl": "https://news.sky.com/story/london-underground-strike-to-go-ahead-after-talks-break-down-13614235"
       }
     },
     {
@@ -260,23 +243,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o"
-      }
-    },
-    {
-      "slug": "uk-eu-negotiations-parliamentary-oversight",
-      "canonicalPath": "/news/gb/uk-eu-negotiations-parliamentary-oversight/",
-      "headline": "Prime Minister Andy Burnham Secures New Trade Deal With The EU",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Prime Minister Andy Burnham finalised a new agreement with EU officials covering food, agriculture, emissions trading, and a youth scheme.",
-        "The deal aims to reduce trade barriers and costs, including those affecting plant trade and the impact of the Irish Sea border."
-      ],
-      "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo"
       }
     },
     {
@@ -314,20 +280,37 @@
       }
     },
     {
-      "slug": "probation-officers-vote-industrial-action",
-      "canonicalPath": "/news/gb/probation-officers-vote-industrial-action/",
-      "headline": "Probation Officers In England And Wales Vote For Industrial Action",
+      "slug": "households-braced-for-soaring-energy-bills-with-new-price",
+      "canonicalPath": "/news/gb/households-braced-for-soaring-energy-bills-with-new-price/",
+      "headline": "UK Energy Bills To Rise By £443 As Ofgem Raises Price Cap By 26%",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Ofgem has announced a 26% increase to the energy price cap starting in January.",
+        "The adjustment will add an average of £443 per year to typical household bills."
+      ],
+      "primarySource": {
+        "publisherName": "The Independent",
+        "articleUrl": "https://www.independent.co.uk/news/uk/home-news/energy-price-cap-ofgem-january-2027-announcement-predictions-b3090781.html"
+      }
+    },
+    {
+      "slug": "uk-eu-negotiations-parliamentary-oversight",
+      "canonicalPath": "/news/gb/uk-eu-negotiations-parliamentary-oversight/",
+      "headline": "Prime Minister Andy Burnham Secures New Trade Deal With The EU",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Members of the Napo union voted to implement overtime restrictions and other forms of industrial action.",
-        "The decision follows concerns regarding current pay scales and the volume of probation caseloads."
+        "Prime Minister Andy Burnham finalised a new agreement with EU officials covering food, agriculture, emissions trading, and a youth scheme.",
+        "The deal aims to reduce trade barriers and costs, including those affecting plant trade and the impact of the Irish Sea border."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/society/2026/nov/13/probation-officers-in-england-and-wales-vote-for-strike-action-over-pay-and-workloads"
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/19/uk-eu-reset-talks-andy-burnham-food-farming-tuition-fees"
+      }
+    },
+    {
+      "slug": "england-heat-deaths-record-high",
+      "canonicalPath": "/news/gb/england-heat-deaths-record-high/",
+      "headline": "England Reports Record 5,258 Heat-Related Deaths During This Year",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Health agency data indicates 5,258 deaths in England were linked to heat this year.",
+        "The figure represents a new record high for heat-related mortality in the region."
+      ],
+      "primarySource": {
+        "publisherName": "The Independent",
+        "articleUrl": "https://www.independent.co.uk/news/uk/home-news/workplace-conflict-resignations-dismissals-acas-b3090135.html"
       }
     }
   ]
