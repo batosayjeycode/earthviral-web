@@ -3,9 +3,9 @@
   "name": "Israel",
   "slug": "israel",
   "region": "Asia",
-  "viralScore": 74,
+  "viralScore": 75,
   "intensityTier": "high",
-  "generatedAt": "2026-11-26T02:18:00Z",
+  "generatedAt": "2026-11-26T05:18:00Z",
   "clusters": [
     {
       "slug": "israeli-judges-recommend-dropping-most-serious-charges-against-netanyahu",
@@ -13,15 +13,32 @@
       "headline": "Judges recommend prosecutors end corruption case against Netanyahu",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 71,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Al Jazeera reports: Judges recommend prosecutors end corruption case against Netanyahu",
-        "CNA reports: Israeli judges recommend prosecutors drop one bribery case against Netanyahu"
+        "Times of India reports: Trouble for Netanyahu? Israeli judges question key charges in corruption trial"
       ],
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/in-boost-for-netanyahu-judges-question-corruption-trial-charges"
+      }
+    },
+    {
+      "slug": "israel-knesset-political-power-transition",
+      "canonicalPath": "/news/il/israel-knesset-political-power-transition/",
+      "headline": "Israeli Political Tensions Rise Amid Allegations Against Netanyahu",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 63,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Opponent Gadi Eisenkot has called for Benjamin Netanyahu's immediate resignation after reports of electoral interference by a close aide.",
+        "Ahmad Tibi, a veteran legislator and former aide to Yasser Arafat, has been appointed as a deputy speaker of the Israeli Knesset."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/10/new-knesset-speaker-ousting-netanyahu-israel-pm"
       }
     },
     {
@@ -30,8 +47,8 @@
       "headline": "Israeli Airstrike Kills Hamas Internal Security Chief Naeem Abu Nahel",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Naeem Abu Nahel, the director of Hamas' internal security service in Gaza, was confirmed dead following an Israeli aerial operation.",
         "Medical authorities reported that six additional individuals were killed alongside the Hamas security official during the strike."
@@ -59,40 +76,6 @@
       }
     },
     {
-      "slug": "gadi-eisenkot-tasked-form-israeli-government",
-      "canonicalPath": "/news/il/gadi-eisenkot-tasked-form-israeli-government/",
-      "headline": "Gadi Eisenkot Pursues Coalition Talks Following Israeli Elections",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Gadi Eisenkot has been appointed to lead the formation of a new government following the recent Israeli elections.",
-        "Eisenkot indicated an openness to including the outgoing prime minister's party and some far-right allies in a coalition under his leadership."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8742902/oposisi-israel-gencarkan-lobi-politik-dalam-upaya-gulingkan-netanyahu"
-      }
-    },
-    {
-      "slug": "israel-knesset-political-power-transition",
-      "canonicalPath": "/news/il/israel-knesset-political-power-transition/",
-      "headline": "Israeli Political Tensions Rise Amid Allegations Against Netanyahu",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Opponent Gadi Eisenkot has called for Benjamin Netanyahu's immediate resignation after reports of electoral interference by a close aide.",
-        "Ahmad Tibi, a veteran legislator and former aide to Yasser Arafat, has been appointed as a deputy speaker of the Israeli Knesset."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/10/new-knesset-speaker-ousting-netanyahu-israel-pm"
-      }
-    },
-    {
       "slug": "israel-launches-new-gaza-operation",
       "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
       "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
@@ -110,12 +93,46 @@
       }
     },
     {
+      "slug": "gadi-eisenkot-tasked-form-israeli-government",
+      "canonicalPath": "/news/il/gadi-eisenkot-tasked-form-israeli-government/",
+      "headline": "Gadi Eisenkot Pursues Coalition Talks Following Israeli Elections",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 49,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Gadi Eisenkot has been appointed to lead the formation of a new government following the recent Israeli elections.",
+        "Eisenkot indicated an openness to including the outgoing prime minister's party and some far-right allies in a coalition under his leadership."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8742902/oposisi-israel-gencarkan-lobi-politik-dalam-upaya-gulingkan-netanyahu"
+      }
+    },
+    {
+      "slug": "israeli-lawmakers-advance-oct-7-inquiry-opposed-by-netanyahu",
+      "canonicalPath": "/news/il/israeli-lawmakers-advance-oct-7-inquiry-opposed-by-netanyahu/",
+      "headline": "Israeli lawmakers advance Oct. 7 inquiry opposed by Netanyahu",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Korea Herald reports: Israeli lawmakers advance Oct. 7 inquiry opposed by Netanyahu",
+        "France 24 reports: Israeli lawmakers advance October 7 inquiry opposed by Netanyahu"
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/israeli-lawmakers-advance-october-7-inquiry-opposed-by-netanyahu"
+      }
+    },
+    {
       "slug": "protesters-call-on-israel-to-free-palestinian-student-held",
       "canonicalPath": "/news/il/protesters-call-on-israel-to-free-palestinian-student-held/",
       "headline": "Protesters call on Israel to free Palestinian student held without charge",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 32,
+      "viralScore": 31,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "BBC reports: Protesters call on Israel to free Palestinian student held without charge",

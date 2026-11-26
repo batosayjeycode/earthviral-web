@@ -1,27 +1,27 @@
 {
-  "batchId": "batch-202611260218",
-  "generatedAt": "2026-11-26T02:18:00Z",
-  "nextUpdateAt": "2026-11-26T05:17:00Z",
+  "batchId": "batch-202611260518",
+  "generatedAt": "2026-11-26T05:18:00Z",
+  "nextUpdateAt": "2026-11-26T08:17:00Z",
   "countries": [
     {
-      "code": "US",
-      "isoNumeric": "840",
-      "name": "United States",
-      "slug": "united-states",
+      "code": "EG",
+      "isoNumeric": "818",
+      "name": "Egypt",
+      "slug": "egypt",
       "centroid": [
-        -98.5,
-        39.5
+        30.8,
+        26.8
       ],
       "viralScore": 100,
       "intensityTier": "surge",
-      "topicCount": 34,
+      "topicCount": 4,
       "topTopic": {
-        "slug": "us-army-detonate-explosives-iowa-plant",
-        "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
-        "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
+        "slug": "blaze-kills-at-least-30-after-cairo-truck-overturns",
+        "canonicalPath": "/news/eg/blaze-kills-at-least-30-after-cairo-truck-overturns/",
+        "headline": "Thirty-One Die In Massive Fuel Tanker Fire On Cairo Ring Road",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 98,
+        "viralScore": 100,
         "intensityTier": "surge"
       }
     },
@@ -34,39 +34,61 @@
         117,
         -2.5
       ],
-      "viralScore": 98,
+      "viralScore": 100,
       "intensityTier": "surge",
       "topicCount": 143,
       "topTopic": {
-        "slug": "vice-president-gibran-meets-president-prabowo",
-        "canonicalPath": "/news/id/vice-president-gibran-meets-president-prabowo/",
-        "headline": "Sugiono and Andi Amran Sulaiman Undergo Health Checks at RSPAD",
+        "slug": "listyo-sigit-investigation-wiretapping-allegations",
+        "canonicalPath": "/news/id/listyo-sigit-investigation-wiretapping-allegations/",
+        "headline": "Polri Postpones Sidang Etik Listyo Sigit Amid Refusal To Attend",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 95,
+        "viralScore": 100,
         "intensityTier": "surge"
       }
     },
     {
-      "code": "EG",
-      "isoNumeric": "818",
-      "name": "Egypt",
-      "slug": "egypt",
+      "code": "US",
+      "isoNumeric": "840",
+      "name": "United States",
+      "slug": "united-states",
       "centroid": [
-        30.8,
-        26.8
+        -98.5,
+        39.5
       ],
       "viralScore": 96,
       "intensityTier": "surge",
-      "topicCount": 3,
+      "topicCount": 31,
       "topTopic": {
-        "slug": "blaze-kills-at-least-30-after-cairo-truck-overturns",
-        "canonicalPath": "/news/eg/blaze-kills-at-least-30-after-cairo-truck-overturns/",
-        "headline": "Thirty-One Die In Massive Fuel Tanker Fire On Cairo Ring Road",
+        "slug": "us-army-detonate-explosives-iowa-plant",
+        "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
+        "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 95,
+        "viralScore": 93,
         "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "IN",
+      "isoNumeric": "356",
+      "name": "India",
+      "slug": "india",
+      "centroid": [
+        79,
+        22
+      ],
+      "viralScore": 85,
+      "intensityTier": "surge",
+      "topicCount": 70,
+      "topTopic": {
+        "slug": "amul-mother-dairy-milk-price-hike",
+        "canonicalPath": "/news/in/amul-mother-dairy-milk-price-hike/",
+        "headline": "Amul And Mother Dairy Milk Price Hike And Latest Market Updates",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 82,
+        "intensityTier": "high"
       }
     },
     {
@@ -78,8 +100,8 @@
         -51.9,
         -10.5
       ],
-      "viralScore": 89,
-      "intensityTier": "surge",
+      "viralScore": 84,
+      "intensityTier": "high",
       "topicCount": 81,
       "topTopic": {
         "slug": "trump-demands-philippines-replace-brazilian-imports",
@@ -87,8 +109,8 @@
         "headline": "Donald Trump Demands Philippines Replace Brazilian Farm Imports",
         "categorySlug": "economy-business",
         "categoryName": "Economy & Business",
-        "viralScore": 86,
-        "intensityTier": "surge"
+        "viralScore": 81,
+        "intensityTier": "high"
       }
     },
     {
@@ -100,37 +122,15 @@
         127.8,
         36.3
       ],
-      "viralScore": 86,
-      "intensityTier": "surge",
-      "topicCount": 38,
-      "topTopic": {
-        "slug": "supreme-court-overturns-former-pm-han-conviction",
-        "canonicalPath": "/news/kr/supreme-court-overturns-former-pm-han-conviction/",
-        "headline": "South Korean Democratic Party Seeks Impeachment Of Chief Justice",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 83,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "GB",
-      "isoNumeric": "826",
-      "name": "United Kingdom",
-      "slug": "united-kingdom",
-      "centroid": [
-        -2,
-        53.5
-      ],
       "viralScore": 84,
       "intensityTier": "high",
-      "topicCount": 58,
+      "topicCount": 40,
       "topTopic": {
-        "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65-after",
-        "canonicalPath": "/news/gb/duran-duran-guitarist-andy-taylor-dies-aged-65-after/",
-        "headline": "Duran Duran guitarist Andy Taylor dies aged 65 after prostate cancer battle",
-        "categorySlug": "social-issues",
-        "categoryName": "Social Issues",
+        "slug": "urgent-bok-raises-key-rate-to-3-25-pct",
+        "canonicalPath": "/news/kr/urgent-bok-raises-key-rate-to-3-25-pct/",
+        "headline": "(3rd LD) BOK raises key rate to 3.25 pct amid strong growth, inflation, revises up 2027 forecast…",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
         "viralScore": 81,
         "intensityTier": "high"
       }
@@ -144,38 +144,38 @@
         104,
         35
       ],
-      "viralScore": 78,
+      "viralScore": 81,
       "intensityTier": "high",
-      "topicCount": 14,
+      "topicCount": 13,
       "topTopic": {
         "slug": "nvidia-investigates-ceo-espionage-allegations",
         "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
         "headline": "Jensen Huang Reinstated As Nvidia CEO Amid Espionage Allegations",
         "categorySlug": "technology-ai",
         "categoryName": "Technology & AI",
-        "viralScore": 75,
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
     {
-      "code": "IN",
-      "isoNumeric": "356",
-      "name": "India",
-      "slug": "india",
+      "code": "GB",
+      "isoNumeric": "826",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
       "centroid": [
-        79,
-        22
+        -2,
+        53.5
       ],
-      "viralScore": 77,
+      "viralScore": 81,
       "intensityTier": "high",
-      "topicCount": 71,
+      "topicCount": 55,
       "topTopic": {
-        "slug": "political-tensions-amid-global-tech-deals",
-        "canonicalPath": "/news/in/political-tensions-amid-global-tech-deals/",
-        "headline": "India Joins Global Coalition To Secure Artificial Intelligence Supply",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 74,
+        "slug": "pochettino-linked-to-manchester-united-manager",
+        "canonicalPath": "/news/gb/pochettino-linked-to-manchester-united-manager/",
+        "headline": "Mauricio Pochettino Faces Challenges After Difficult Manchester Start",
+        "categorySlug": "sports",
+        "categoryName": "Sports",
+        "viralScore": 78,
         "intensityTier": "high"
       }
     },
@@ -188,37 +188,59 @@
         34.9,
         31.3
       ],
-      "viralScore": 74,
+      "viralScore": 75,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 9,
       "topTopic": {
         "slug": "israeli-judges-recommend-dropping-most-serious-charges-against-netanyahu",
         "canonicalPath": "/news/il/israeli-judges-recommend-dropping-most-serious-charges-against-netanyahu/",
         "headline": "Judges recommend prosecutors end corruption case against Netanyahu",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 71,
+        "viralScore": 72,
         "intensityTier": "high"
       }
     },
     {
-      "code": "NG",
-      "isoNumeric": "566",
-      "name": "Nigeria",
-      "slug": "nigeria",
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
       "centroid": [
-        8.1,
-        9.6
+        -3.7,
+        40.2
       ],
-      "viralScore": 74,
+      "viralScore": 73,
       "intensityTier": "high",
-      "topicCount": 60,
+      "topicCount": 7,
       "topTopic": {
-        "slug": "pete-edochie-life-career-and-legacy-of-a-nollywood",
-        "canonicalPath": "/news/ng/pete-edochie-life-career-and-legacy-of-a-nollywood/",
-        "headline": "President Tinubu And National Leaders Mourn Actor Pete Edochie",
-        "categorySlug": "entertainment-celebrity",
-        "categoryName": "Entertainment & Celebrity",
+        "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
+        "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
+        "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 70,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CO",
+      "isoNumeric": "170",
+      "name": "Colombia",
+      "slug": "colombia",
+      "centroid": [
+        -74.3,
+        4.6
+      ],
+      "viralScore": 72,
+      "intensityTier": "high",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "armed-hostage-situation-cartagena-supermarket",
+        "canonicalPath": "/news/co/armed-hostage-situation-cartagena-supermarket/",
+        "headline": "Police Negotiate As Armed Men Hold Hostages In Cartagena Supermarket",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
         "viralScore": 71,
         "intensityTier": "high"
       }
@@ -232,104 +254,16 @@
         134,
         -25.5
       ],
-      "viralScore": 70,
-      "intensityTier": "high",
-      "topicCount": 60,
-      "topTopic": {
-        "slug": "one-nation-immigration-policy-tasmania-poll",
-        "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
-        "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CO",
-      "isoNumeric": "170",
-      "name": "Colombia",
-      "slug": "colombia",
-      "centroid": [
-        -74.3,
-        4.6
-      ],
-      "viralScore": 68,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "armed-hostage-situation-cartagena-supermarket",
-        "canonicalPath": "/news/co/armed-hostage-situation-cartagena-supermarket/",
-        "headline": "Police Negotiate As Armed Men Hold Hostages In Cartagena Supermarket",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "IR",
-      "isoNumeric": "364",
-      "name": "Iran",
-      "slug": "iran",
-      "centroid": [
-        53.7,
-        32.4
-      ],
-      "viralScore": 68,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "explosions-reported-strait-hormuz-iran",
-        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
-        "headline": "Iran Reports Three Oil Tankers Struck By Mines In Strait Of Hormuz",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
       "viralScore": 67,
       "intensityTier": "high",
-      "topicCount": 8,
+      "topicCount": 55,
       "topTopic": {
-        "slug": "real-madrid-defeats-psv-eindhoven",
-        "canonicalPath": "/news/es/real-madrid-defeats-psv-eindhoven/",
-        "headline": "Real Madrid Defeats PSV Eindhoven 5-1 In Champions League Match",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
+        "slug": "victorian-state-election-campaign-launches",
+        "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+        "headline": "Victorian Labor Trails In Final Polls Before State Election",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 64,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 66,
-      "intensityTier": "high",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "ukraine-claims-sinking-of-russian-warship",
-        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-        "headline": "Zelenskyy says Ukraine was behind drone attacks on Russian ships off Libya",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 65,
         "intensityTier": "high"
       }
     },
@@ -342,39 +276,83 @@
         12.6,
         42.8
       ],
-      "viralScore": 64,
+      "viralScore": 66,
       "intensityTier": "high",
-      "topicCount": 1,
+      "topicCount": 2,
       "topTopic": {
         "slug": "s-korea-eliminated-from-davis-cup-after-narrow-loss",
         "canonicalPath": "/news/it/s-korea-eliminated-from-davis-cup-after-narrow-loss/",
-        "headline": "S. Korea eliminated from Davis Cup after narrow loss to Italy",
+        "headline": "(LEAD) S. Korea knocked out of Davis Cup after narrow loss to Italy",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 64,
+        "viralScore": 65,
         "intensityTier": "high"
       }
     },
     {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
+      "code": "NG",
+      "isoNumeric": "566",
+      "name": "Nigeria",
+      "slug": "nigeria",
       "centroid": [
-        2.4,
-        46.6
+        8.1,
+        9.6
+      ],
+      "viralScore": 66,
+      "intensityTier": "high",
+      "topicCount": 58,
+      "topTopic": {
+        "slug": "pete-edochie-life-career-and-legacy-of-a-nollywood",
+        "canonicalPath": "/news/ng/pete-edochie-life-career-and-legacy-of-a-nollywood/",
+        "headline": "President Tinubu And National Leaders Mourn Actor Pete Edochie",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 63,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "IR",
+      "isoNumeric": "364",
+      "name": "Iran",
+      "slug": "iran",
+      "centroid": [
+        53.7,
+        32.4
       ],
       "viralScore": 64,
       "intensityTier": "high",
-      "topicCount": 19,
+      "topicCount": 2,
       "topTopic": {
-        "slug": "psgs-perfect-champions-league-record-ends-as-roma-snatch",
-        "canonicalPath": "/news/fr/psgs-perfect-champions-league-record-ends-as-roma-snatch/",
-        "headline": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
-        "categorySlug": "sports",
-        "categoryName": "Sports",
-        "viralScore": 61,
+        "slug": "explosions-reported-strait-hormuz-iran",
+        "canonicalPath": "/news/ir/explosions-reported-strait-hormuz-iran/",
+        "headline": "Iran Reports Three Oil Tankers Struck By Mines In Strait Of Hormuz",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 63,
         "intensityTier": "high"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 60,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "ukraine-claims-sinking-of-russian-warship",
+        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
+        "headline": "Zelenskyy says Ukraine was behind drone attacks on Russian ships off Libya",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 59,
+        "intensityTier": "active"
       }
     },
     {
@@ -386,8 +364,8 @@
         35.2,
         31.9
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
         "slug": "gaza-displacement-camps-flooded-by-rain",
@@ -395,8 +373,8 @@
         "headline": "Severe Storms Destabilize Displacement Camps Throughout Gaza Strip",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 60,
-        "intensityTier": "high"
+        "viralScore": 58,
+        "intensityTier": "active"
       }
     },
     {
@@ -408,8 +386,8 @@
         90.3,
         23.7
       ],
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
         "slug": "sheikh-hasina-seeks-passport-for-return",
@@ -417,51 +395,7 @@
         "headline": "Ousted Leader Sheikh Hasina Sets December 16 Return To Bangladesh",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 59,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 14,
-      "topTopic": {
-        "slug": "allies-say-russia-may-launch-nuclear-space-weapon-next",
-        "canonicalPath": "/news/ru/allies-say-russia-may-launch-nuclear-space-weapon-next/",
-        "headline": "NATO Vows Space Defense Following Reports of Russian Nuclear Satellite",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
         "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 59,
-      "intensityTier": "active",
-      "topicCount": 24,
-      "topTopic": {
-        "slug": "malaysian-air-force-methamphetamine-seizure",
-        "canonicalPath": "/news/my/malaysian-air-force-methamphetamine-seizure/",
-        "headline": "Malaysian Air Force Personnel Detained Over 96 Kg Methamphetamine",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -488,67 +422,23 @@
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        45,
-        24
+        60,
+        58
       ],
       "viralScore": 58,
       "intensityTier": "active",
-      "topicCount": 6,
+      "topicCount": 13,
       "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Houthi Drone Strike Hits Riyadh Skyscraper Leaving Eleven Injured",
+        "slug": "russian-cargo-ship-drone-strike",
+        "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
+        "headline": "United Nations Seeks Inquiry Into Drone Attacks On Russian Ships",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 56,
-      "intensityTier": "active",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "cop31-climate-summit-antalya-turkey",
-        "canonicalPath": "/news/tr/cop31-climate-summit-antalya-turkey/",
-        "headline": "COP31 Climate Summit In Turkey Ends Without A Final Agreement",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PH",
-      "isoNumeric": "608",
-      "name": "Philippines",
-      "slug": "philippines",
-      "centroid": [
-        122,
-        12.5
-      ],
-      "viralScore": 55,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di",
-        "canonicalPath": "/news/ph/kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di/",
-        "headline": "Polri Pulangkan 139 WNI Terlibat Sindikat Scam Online di Manila",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
         "viralScore": 55,
         "intensityTier": "active"
       }
@@ -562,7 +452,7 @@
         10.4,
         51.1
       ],
-      "viralScore": 55,
+      "viralScore": 57,
       "intensityTier": "active",
       "topicCount": 3,
       "topTopic": {
@@ -571,7 +461,117 @@
         "headline": "Bayern Muenchen Set To Face Koln In The Tenth Week Of Bundesliga",
         "categorySlug": "sports",
         "categoryName": "Sports",
+        "viralScore": 56,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 57,
+      "intensityTier": "active",
+      "topicCount": 20,
+      "topTopic": {
+        "slug": "france-more-than-600-000-protest-as-anger-grows",
+        "canonicalPath": "/news/fr/france-more-than-600-000-protest-as-anger-grows/",
+        "headline": "France Faces Renewed Nationwide Strike As Unions Demand Wage Hikes",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
         "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 56,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Houthi Drone Strike Hits Riyadh Skyscraper Leaving Eleven Injured",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 54,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "centroid": [
+        102.3,
+        3.8
+      ],
+      "viralScore": 55,
+      "intensityTier": "active",
+      "topicCount": 25,
+      "topTopic": {
+        "slug": "malaysian-air-force-methamphetamine-seizure",
+        "canonicalPath": "/news/my/malaysian-air-force-methamphetamine-seizure/",
+        "headline": "Malaysian Air Force Personnel Detained Over 96 Kg Methamphetamine",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 52,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
+      ],
+      "viralScore": 54,
+      "intensityTier": "active",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "sixteen-killed-turkey-steel-factory-blast",
+        "canonicalPath": "/news/tr/sixteen-killed-turkey-steel-factory-blast/",
+        "headline": "Sixteen Dead Following Fatal Explosion At Steel Plant In Turkey",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 52,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
+      "centroid": [
+        122,
+        12.5
+      ],
+      "viralScore": 52,
+      "intensityTier": "active",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di",
+        "canonicalPath": "/news/ph/kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di/",
+        "headline": "Polri Pulangkan 139 WNI Terlibat Sindikat Scam Online di Manila",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -584,7 +584,7 @@
         30.2,
         15.6
       ],
-      "viralScore": 53,
+      "viralScore": 52,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -593,7 +593,7 @@
         "headline": "Drone Strikes Hit Khartoum Residential Areas And UN Building",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 53,
+        "viralScore": 52,
         "intensityTier": "active"
       }
     },
@@ -606,35 +606,13 @@
         37.9,
         0.2
       ],
-      "viralScore": 51,
+      "viralScore": 49,
       "intensityTier": "active",
-      "topicCount": 18,
+      "topicCount": 17,
       "topTopic": {
-        "slug": "kenyan-leaders-walk-out-iebc-meeting",
-        "canonicalPath": "/news/ke/kenyan-leaders-walk-out-iebc-meeting/",
-        "headline": "Kenyan Leaders Walk Out Of Consultative Forum Hosted By The IEBC",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "ZA",
-      "isoNumeric": "710",
-      "name": "South Africa",
-      "slug": "south-africa",
-      "centroid": [
-        24.7,
-        -29
-      ],
-      "viralScore": 47,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "cyril-ramaphosa-wins-impeachment-court-battle",
-        "canonicalPath": "/news/za/cyril-ramaphosa-wins-impeachment-court-battle/",
-        "headline": "Cyril Ramaphosa Secures Legal Victory Regarding Impeachment Threat",
+        "slug": "ruto-nominates-data-commissioner-and-ceos",
+        "canonicalPath": "/news/ke/ruto-nominates-data-commissioner-and-ceos/",
+        "headline": "President Ruto Commissions Naitiri Market And Launches Bokoli Project",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 46,
@@ -650,16 +628,38 @@
         103.82,
         1.35
       ],
-      "viralScore": 42,
+      "viralScore": 46,
       "intensityTier": "active",
-      "topicCount": 45,
+      "topicCount": 44,
       "topTopic": {
-        "slug": "nvidia-ceo-jensen-huang-leadership-speculation",
-        "canonicalPath": "/news/sg/nvidia-ceo-jensen-huang-leadership-speculation/",
-        "headline": "Reports Suggest Potential Leadership Changes At Nvidia Corporation",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 39,
+        "slug": "singapore-man-jailed-meth-lawyer-case",
+        "canonicalPath": "/news/sg/singapore-man-jailed-meth-lawyer-case/",
+        "headline": "Derek Khor Boon Chun Jailed Over Etomidate Kpod Trafficking Case",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 43,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "ZA",
+      "isoNumeric": "710",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "centroid": [
+        24.7,
+        -29
+      ],
+      "viralScore": 44,
+      "intensityTier": "active",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "cyril-ramaphosa-wins-impeachment-court-battle",
+        "canonicalPath": "/news/za/cyril-ramaphosa-wins-impeachment-court-battle/",
+        "headline": "Cyril Ramaphosa Secures Legal Victory Regarding Impeachment Threat",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 43,
         "intensityTier": "active"
       }
     },
@@ -726,28 +726,6 @@
         "categorySlug": "social-issues",
         "categoryName": "Social Issues",
         "viralScore": 31,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "CA",
-      "isoNumeric": "124",
-      "name": "Canada",
-      "slug": "canada",
-      "centroid": [
-        -106.3,
-        56.1
-      ],
-      "viralScore": 30,
-      "intensityTier": "active",
-      "topicCount": 1,
-      "topTopic": {
-        "slug": "butt-of-the-joke-trump-impersonator-mocks-president-at",
-        "canonicalPath": "/news/ca/butt-of-the-joke-trump-impersonator-mocks-president-at/",
-        "headline": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 30,
         "intensityTier": "active"
       }
     },
@@ -823,6 +801,20 @@
       "centroid": [
         54,
         24
+      ],
+      "viralScore": 0,
+      "intensityTier": "quiet",
+      "topicCount": 0,
+      "topTopic": null
+    },
+    {
+      "code": "CA",
+      "isoNumeric": "124",
+      "name": "Canada",
+      "slug": "canada",
+      "centroid": [
+        -106.3,
+        56.1
       ],
       "viralScore": 0,
       "intensityTier": "quiet",

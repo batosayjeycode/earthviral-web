@@ -3,44 +3,10 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 60,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-26T02:18:00Z",
+  "viralScore": 58,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-26T05:18:00Z",
   "clusters": [
-    {
-      "slug": "allies-say-russia-may-launch-nuclear-space-weapon-next",
-      "canonicalPath": "/news/ru/allies-say-russia-may-launch-nuclear-space-weapon-next/",
-      "headline": "NATO Vows Space Defense Following Reports of Russian Nuclear Satellite",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "German media outlets report that Russia could be preparing to launch a nuclear-armed satellite in the coming weeks.",
-        "The alleged satellite system would possess the capability to target and destroy other satellites in orbit."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/nato-vows-space-defence-after-russia-nuclear-satellite-report"
-      }
-    },
-    {
-      "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
-      "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
-      "headline": "Zelenskyy Seeks Peace Talks As Conflict Spreads To Libya And Beyond",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Zelenskyy has called for urgent four-way peace negotiations involving Russia, Europe, and the United States.",
-        "Ukrainian strikes on Russian vessels off the coast of Libya have raised concerns about the conflict destabilizing the nation's reunification."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks"
-      }
-    },
     {
       "slug": "russian-cargo-ship-drone-strike",
       "canonicalPath": "/news/ru/russian-cargo-ship-drone-strike/",
@@ -76,6 +42,23 @@
       }
     },
     {
+      "slug": "allies-say-russia-may-launch-nuclear-space-weapon-next",
+      "canonicalPath": "/news/ru/allies-say-russia-may-launch-nuclear-space-weapon-next/",
+      "headline": "NATO Vows Space Defense Following Reports of Russian Nuclear Satellite",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "German media outlets report that Russia could be preparing to launch a nuclear-armed satellite in the coming weeks.",
+        "The alleged satellite system would possess the capability to target and destroy other satellites in orbit."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/nato-vows-space-defence-after-russia-nuclear-satellite-report"
+      }
+    },
+    {
       "slug": "indonesian-citizens-recruited-as-russian-soldiers",
       "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
       "headline": "Indonesian Authorities Block Citizens Recruited As Russian Soldiers",
@@ -93,12 +76,29 @@
       }
     },
     {
+      "slug": "russia-ukraine-and-us-to-meet-as-zelenskyy-claims",
+      "canonicalPath": "/news/ru/russia-ukraine-and-us-to-meet-as-zelenskyy-claims/",
+      "headline": "Zelenskyy Seeks Peace Talks As Conflict Spreads To Libya And Beyond",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Zelenskyy has called for urgent four-way peace negotiations involving Russia, Europe, and the United States.",
+        "Ukrainian strikes on Russian vessels off the coast of Libya have raised concerns about the conflict destabilizing the nation's reunification."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks"
+      }
+    },
+    {
       "slug": "iihf-challenges-russia-ice-hockey-reinstatement",
       "canonicalPath": "/news/ru/iihf-challenges-russia-ice-hockey-reinstatement/",
       "headline": "IIHF Challenges CAS Ruling To Reinstate Russian National Teams",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The International Ice Hockey Federation has initiated a challenge with the Court of Arbitration for Sport regarding Russian national team status.",
@@ -192,23 +192,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/video/20261116-russia-says-intercepted-over-1-300-ukrainian-drones-in-a-major-attack"
-      }
-    },
-    {
-      "slug": "moscow-accuses-estonia-of-hostile-actions-on-verge-of",
-      "canonicalPath": "/news/ru/moscow-accuses-estonia-of-hostile-actions-on-verge-of/",
-      "headline": "Moscow accuses Estonia of hostile actions on ‘verge of triggering open war’",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Japan Times reports: Moscow accuses Estonia of hostile actions on ‘verge of triggering open war’",
-        "The West Australian reports: Estonia on 'verge of triggering open war': Russia"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/conflict/estonia-on-verge-of-triggering-open-war-russia-c-23203521"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing"
+      }
+    },
+    {
+      "slug": "russian-diesel-tankers-divert-from-us",
+      "canonicalPath": "/news/ru/russian-diesel-tankers-divert-from-us/",
+      "headline": "Russian Diesel Tankers Divert Following Failed United States Deal",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Oil tankers originally bound for the United States have altered their routes away from the American coast.",
+        "The transit was intended to fulfill a reported agreement between Donald Trump and Vladimir Putin."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261106-trump-stillborn-diesel-deal-why-russian-oil-tankers-are-not-heading-to-the-us"
       }
     }
   ]
