@@ -256,19 +256,11 @@ const editions = Object.fromEntries(
 </style>
 
 <script>
-  import { THEME_COLOR, THEME_KEY, isTheme, resolveTheme, type Theme } from '../../lib/theme.ts';
+  import { THEME_COLOR, THEME_KEY, type Theme } from '../../lib/theme.ts';
 
-  // Day/night: a click saves the reader's pick; with no pick the theme tracks the device live.
+  // Day/night: night is the default; a click switches and saves the reader's pick.
   const themeToggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
   const themeMeta = document.querySelector<HTMLMetaElement>('meta[data-theme-color]');
-  const prefersLight = matchMedia('(prefers-color-scheme: light)');
-  const savedTheme = () => {
-    try {
-      return localStorage.getItem(THEME_KEY);
-    } catch {
-      return null;
-    }
-  };
   const applyTheme = (theme: Theme) => {
     document.documentElement.dataset.theme = theme;
     if (themeMeta) themeMeta.content = THEME_COLOR[theme];
@@ -284,9 +276,6 @@ const editions = Object.fromEntries(
       /* storage blocked: the pick lasts for this page only */
     }
     applyTheme(theme);
-  });
-  prefersLight.addEventListener('change', (e) => {
-    if (!isTheme(savedTheme())) applyTheme(resolveTheme(null, e.matches));
   });
 </script>
 
