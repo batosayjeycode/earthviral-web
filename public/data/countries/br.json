@@ -3,17 +3,34 @@
   "name": "Brazil",
   "slug": "brazil",
   "region": "South America",
-  "viralScore": 85,
+  "viralScore": 88,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-26T17:18:00Z",
+  "generatedAt": "2026-11-26T20:14:00Z",
   "clusters": [
+    {
+      "slug": "brazil-black-friday-shopping-advice",
+      "canonicalPath": "/news/br/brazil-black-friday-shopping-advice/",
+      "headline": "Black Friday 2026: Consumer Shopping Tips And Financial Risks",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 85,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Promobit data indicates the highest volume of Black Friday deals occurs at the transition from Thursday to Friday, with deeper average discounts on Friday afternoon.",
+        "Procon-SP reports that nearly 70% of surveyed consumers have previously felt misled by retail offers during the Black Friday period."
+      ],
+      "primarySource": {
+        "publisherName": "InfoMoney",
+        "articleUrl": "https://www.infomoney.com.br/consumo/black-friday-chega-ao-mercado-delivery-e-fast-food-veja-descontos-de-ate-80/"
+      }
+    },
     {
       "slug": "brazil-federal-police-money-laundering-operation",
       "canonicalPath": "/news/br/brazil-federal-police-money-laundering-operation/",
       "headline": "Vasco Player David Correa Arrested Amid Fictor Group Investigations",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 82,
+      "viralScore": 78,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Professional footballers David Correa and Hayner were arrested as part of a police investigation into alleged criminal gang involvement.",
@@ -25,46 +42,12 @@
       }
     },
     {
-      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
-      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
-      "headline": "Business Leaders Urge Luiz Trabuco To Join Lula Cabinet As Minister",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 77,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Workers' Party leaders are encouraging business figures to persuade Luiz Trabuco to lead the Ministry of Finance.",
-        "Trabuco has requested time to consult with his bank's board, family, and other associates before making a decision."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/novo-pacote-de-lula-vai-mirar-emendas-gastos-tributarios-e-supersalarios-diz-chefe-da-secretaria-geral.shtml"
-      }
-    },
-    {
-      "slug": "brazilian-tax-reform-impacts-economic-sectors",
-      "canonicalPath": "/news/br/brazilian-tax-reform-impacts-economic-sectors/",
-      "headline": "Impacts Of The Brazilian Tax Reform Resonate Across Major Sectors",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 75,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "A report from the Independent Fiscal Institution suggests that the new tax contribution rate could be halved under revised calculation parameters.",
-        "The infrastructure sector is expected to benefit from tax changes, while market analysts evaluate how new fiscal rules might affect stock sectors."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/stf-preve-aumento-de-acoes-contra-reforma-tributaria/"
-      }
-    },
-    {
       "slug": "governo-e-bc-anunciam-medidas-para-reduzir-endividamento-com",
       "canonicalPath": "/news/br/governo-e-bc-anunciam-medidas-para-reduzir-endividamento-com/",
       "headline": "Banco Central Implements New Credit Rules To Limit Debt In Brazil",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 73,
+      "viralScore": 77,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The Central Bank and the National Monetary Council introduced stricter rules for credit cards and unsecured lending.",
@@ -76,12 +59,114 @@
       }
     },
     {
+      "slug": "brazil-lula-administration-fiscal-adjustment-plan",
+      "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
+      "headline": "Business Leaders Urge Luiz Trabuco To Join Lula Finance Ministry",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 76,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Business leaders are engaging with Luiz Trabuco to encourage his acceptance of a leadership role within the Finance Ministry.",
+        "Financial markets reacted positively to the news of the potential appointment, with stocks rising and interest rates declining."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/politica/lula-quer-garantir-governabilidade-no-quarto-mandato/"
+      }
+    },
+    {
+      "slug": "brazilian-tax-reform-impacts-economic-sectors",
+      "canonicalPath": "/news/br/brazilian-tax-reform-impacts-economic-sectors/",
+      "headline": "Impacts Of The Brazilian Tax Reform Resonate Across Major Sectors",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 73,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A report from the Independent Fiscal Institution suggests that the new tax contribution rate could be halved under revised calculation parameters.",
+        "The infrastructure sector is expected to benefit from tax changes, while market analysts evaluate how new fiscal rules might affect stock sectors."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/stf-preve-aumento-de-acoes-contra-reforma-tributaria/"
+      }
+    },
+    {
+      "slug": "jair-bolsonaro-hospitalized-in-brasilia",
+      "canonicalPath": "/news/br/jair-bolsonaro-hospitalized-in-brasilia/",
+      "headline": "Jair Bolsonaro Remains In Hospital Undergoing Treatment For Pneumonia",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Former President Jair Bolsonaro continues to receive intensive care treatment for intestinal obstruction and aspiration pneumonia.",
+        "Medical bulletins report a slight clinical improvement in his condition, though officials state there is currently no scheduled date for his discharge."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/politica/bolsonaro-esta-internado-em-uti-com-abdomen-agudo-obstrutivo-diz-boletim/"
+      }
+    },
+    {
+      "slug": "cleitinho-azevedo-questions-concert-funding",
+      "canonicalPath": "/news/br/cleitinho-azevedo-questions-concert-funding/",
+      "headline": "Cleitinho Azevedo Discusses Minas Gerais Debt With President Lula",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 71,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Governor-elect Cleitinho Azevedo met President Lula at the Alvorada Palace to discuss renegotiating the 188 billion reais debt of Minas Gerais.",
+        "Azevedo invited the president to his upcoming inauguration and emphasized the need for political pacification following his electoral victory."
+      ],
+      "primarySource": {
+        "publisherName": "Folha de S.Paulo",
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/emendas-de-cleitinho-bancaram-show-de-claudia-leitte-e-festa-de-prefeitura-em-mg.shtml"
+      }
+    },
+    {
+      "slug": "trump-demands-philippines-replace-brazilian-imports",
+      "canonicalPath": "/news/br/trump-demands-philippines-replace-brazilian-imports/",
+      "headline": "Brazil Resists New US Tariff Proposals On Aircraft And Sugar",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 71,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Brazilian government officials have formally rejected the proposed US tariffs on aircraft and sugar imports.",
+        "The American Chamber of Commerce in Brazil plans to engage in US consultations regarding the potential trade restrictions."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trump-cita-brasil-ao-comentar-pressao-para-que-filipinas-comprem-dos-eua/"
+      }
+    },
+    {
+      "slug": "storms-cyclones-rio-grande-do-sul",
+      "canonicalPath": "/news/br/storms-cyclones-rio-grande-do-sul/",
+      "headline": "Caixa Econômica Federal Realiza Sorteio da Mega-Sena de R$ 75 Milhões",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 69,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Caixa Econômica Federal is conducting the Mega-Sena draw for contest 3091.",
+        "The jackpot prize for this specific lottery event is estimated at 75 million Reais."
+      ],
+      "primarySource": {
+        "publisherName": "CNN Brasil",
+        "articleUrl": "https://www.cnnbrasil.com.br/nacional/rs-ciclone-pode-provocar-granizo-e-ventos-acima-de-80-km-h-neste-domingo/"
+      }
+    },
+    {
       "slug": "vasco-player-david-arrested-police-investigation",
       "canonicalPath": "/news/br/vasco-player-david-arrested-police-investigation/",
       "headline": "Vasco Player David Corrêa Da Fonseca Arrested In Police Operation",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 72,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Vasco da Gama forward David Corrêa da Fonseca was arrested by civil police at the club's training center in Rio de Janeiro.",
@@ -93,29 +178,12 @@
       }
     },
     {
-      "slug": "brazil-black-friday-shopping-advice",
-      "canonicalPath": "/news/br/brazil-black-friday-shopping-advice/",
-      "headline": "Black Friday 2026: Consumer Shopping Tips And Financial Risks",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 70,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Financial analysts suggest considering long-term investments as an alternative to discretionary spending on high-cost electronics.",
-        "Experts advise shoppers to verify website authenticity and use official comparison applications to avoid fraudulent activities."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/isabelle-moreira-lima/2026/11/black-friday-mais-de-20-vinhos-para-entrar-na-psicose-consumista.shtml"
-      }
-    },
-    {
       "slug": "global-reporting-initiative-returns-brazil",
       "canonicalPath": "/news/br/global-reporting-initiative-returns-brazil/",
       "headline": "PF Reports On Master Bank Investigation Spark Debate On Evidence",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 68,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Federal Police Director Andrei Rodrigues stated that the STF and PGR possess all data recovered from Daniel Vorcaro's mobile device.",
@@ -127,37 +195,54 @@
       }
     },
     {
-      "slug": "city-of-god-series-update",
-      "canonicalPath": "/news/br/city-of-god-series-update/",
-      "headline": "Storm Alert Issued For The Sao Paulo Coast And Southeast Region",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 67,
-      "intensityTier": "high",
+      "slug": "pioneering-brazilian-television-director-dies",
+      "canonicalPath": "/news/br/pioneering-brazilian-television-director-dies/",
+      "headline": "Renowned Jurist Fabio Konder Comparato Passes Away At Age 90",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "A cold front crossing the Southeast coast has triggered warnings for widespread storms.",
-        "Meteorological reports indicate expected rainfall levels surpassing 100 mm for the coastal regions of Sao Paulo."
+        "The prominent Brazilian legal scholar Fabio Konder Comparato has died.",
+        "He reached the age of 90 before his passing."
       ],
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/cidade-de-deus-chega-a-segunda-temporada-com-milicia-e-politicos-corruptos.shtml"
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ciencia/2026/11/thereza-imanishi-kari-cientista-inocentada-de-acusacao-nos-eua-morre-aos-83-anos.shtml"
       }
     },
     {
-      "slug": "trump-demands-philippines-replace-brazilian-imports",
-      "canonicalPath": "/news/br/trump-demands-philippines-replace-brazilian-imports/",
-      "headline": "Brazil Rejects US Tariff Proposals on Aircraft and Digital Trade",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "slug": "brazil-senate-advances-lula-fiscal-package",
+      "canonicalPath": "/news/br/brazil-senate-advances-lula-fiscal-package/",
+      "headline": "Brazil Government Unblocks Funds Following Fiscal Adjustment Law",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
-        "The US Trade Representative proposed a 10% tariff on aircraft imports, drawing criticism from Brazilian government officials.",
-        "Brazilian authorities characterized the proposed measures as unilateral pressure on digital commerce and the Pix payment system."
+        "The federal government unblocked 3.43 billion reais in the 2026 budget following the enactment of new fiscal legislation.",
+        "The legislation permits the exclusion of up to 10.5 billion reais in diesel subsidies from the annual fiscal target."
       ],
       "primarySource": {
         "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trump-cita-brasil-ao-comentar-pressao-para-que-filipinas-comprem-dos-eua/"
+        "articleUrl": "https://www.cnnbrasil.com.br/politica/saiba-quais-deputados-do-pl-votaram-com-o-governo-lula-no-ajuste-fiscal/"
+      }
+    },
+    {
+      "slug": "brazil-ipca-15-inflation-slows",
+      "canonicalPath": "/news/br/brazil-ipca-15-inflation-slows/",
+      "headline": "IPCA-15 Inflation Slows To 0.22 Percent As Food Costs Increase",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 59,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The IPCA-15 inflation index decreased to 0.22 percent in November from 0.32 percent in the previous month.",
+        "Declining prices for airline tickets and fuel contributed to the slowdown in the overall index."
+      ],
+      "primarySource": {
+        "publisherName": "Agência Brasil",
+        "articleUrl": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/ipca-15-teve-alta-de-022-em-novembro"
       }
     },
     {
@@ -166,8 +251,8 @@
       "headline": "Anvisa Seizes Unregistered Weight Loss Products And Durasteron",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 65,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Anvisa issued a resolution prohibiting the sale of three weight loss products and the drug Durasteron.",
         "The seized items include TZ Gold, Retatrutide by Ayus Genetics, and GHK-CU, all lacking formal health registration."
@@ -183,8 +268,8 @@
       "headline": "Public Prosecutors Evaluate Actions Against Sao Paulo Train Operator",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Sao Paulo public prosecutors categorized recent service failures on the Diamond Line as unacceptable.",
         "Passengers were forced to exit a stationary train by breaking windows and walking along the tracks."
@@ -200,8 +285,8 @@
       "headline": "PGR Denounces Gustavo Gayer To STF Over Alleged Misuse Of Funds",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 56,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Prosecutor-General's Office filed charges against Congressman Gustavo Gayer and 24 associates with the Supreme Federal Court.",
         "The accusations include the misuse of parliamentary funds, the use of fraudulent documents, and participation in a criminal conspiracy."
@@ -212,47 +297,13 @@
       }
     },
     {
-      "slug": "cleitinho-azevedo-questions-concert-funding",
-      "canonicalPath": "/news/br/cleitinho-azevedo-questions-concert-funding/",
-      "headline": "Senator Cleitinho Azevedo Debates Minas Gerais Debt With President",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 61,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Senator Cleitinho Azevedo met with President Lula to negotiate the debt Minas Gerais owes the federal government.",
-        "The state's current debt burden is estimated at approximately 180 billion reais."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/emendas-de-cleitinho-bancaram-show-de-claudia-leitte-e-festa-de-prefeitura-em-mg.shtml"
-      }
-    },
-    {
-      "slug": "espn-covers-copa-sudamericana-final",
-      "canonicalPath": "/news/br/espn-covers-copa-sudamericana-final/",
-      "headline": "Boca Juniors Defeats Atletico-MG In Copa Sudamericana Final",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 60,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Boca Juniors won the 2026 Copa Sudamericana title by defeating Atletico-MG 2-0 in Barranquilla, Colombia.",
-        "Goals from Ascacibar and Merentiel secured the victory for the Argentine club."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/colunistas/outro-canal/2026/11/espn-envia-dez-profissionais-para-final-da-copa-sul-americana-com-atletico-mineiro.shtml"
-      }
-    },
-    {
       "slug": "severe-weather-alert-sao-paulo",
       "canonicalPath": "/news/br/severe-weather-alert-sao-paulo/",
       "headline": "Civil Defense Issues Severe Weather Warning For São Paulo Region",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 60,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The Civil Defense issued a severe warning for São Paulo due to incoming storms.",
         "Forecasts indicate risks of lightning, wind, and hail across central and eastern city zones."
@@ -268,7 +319,7 @@
       "headline": "Haas Confirms Rafael Camara For Final Formula 1 Races Of 2026",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 59,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Haas has selected Rafael Camara to replace their current driver for the final two races of the 2026 Formula 1 season.",
@@ -280,71 +331,20 @@
       }
     },
     {
-      "slug": "brazil-higher-education-enrollment-record",
-      "canonicalPath": "/news/br/brazil-higher-education-enrollment-record/",
-      "headline": "Brazil Records 10.6 Million Enrollments In Higher Education Programs",
+      "slug": "financial-outlook-brazil-us-inflation",
+      "canonicalPath": "/news/br/financial-outlook-brazil-us-inflation/",
+      "headline": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
       "categorySlug": "social-issues",
       "categoryName": "Social Issues",
-      "viralScore": 59,
+      "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Higher education enrollments reached 10.6 million in 2025, marking a 4% increase over the previous year.",
-        "Data from the Ministry of Education indicates that growth in distance learning has surged while in-person attendance declined."
-      ],
-      "primarySource": {
-        "publisherName": "CNN Brasil",
-        "articleUrl": "https://www.cnnbrasil.com.br/educacao/com-avanco-do-ead-brasil-tem-recorde-de-matriculados-no-ensino-superior/"
-      }
-    },
-    {
-      "slug": "brazil-ipca-15-inflation-slows",
-      "canonicalPath": "/news/br/brazil-ipca-15-inflation-slows/",
-      "headline": "IPCA-15 Inflation Slows To 0.22 Percent As Food Costs Increase",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The IPCA-15 inflation index decreased to 0.22 percent in November from 0.32 percent in the previous month.",
-        "Declining prices for airline tickets and fuel contributed to the slowdown in the overall index."
-      ],
-      "primarySource": {
-        "publisherName": "Agência Brasil",
-        "articleUrl": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/ipca-15-teve-alta-de-022-em-novembro"
-      }
-    },
-    {
-      "slug": "brazilian-national-arrested-counterfeit-weight-loss-pens",
-      "canonicalPath": "/news/br/brazilian-national-arrested-counterfeit-weight-loss-pens/",
-      "headline": "Brazilian National Arrested For Falsifying Weight Loss Pens",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A Brazilian individual faces arrest due to an ongoing investigation into the falsification of weight loss medication pens.",
-        "The operation was conducted near the border shared by Paraguay, Brazil, and Argentina, involving local authorities and prosecutors."
+        "InfoMoney reports: Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
+        "CNN Brasil reports: Ouro fecha em queda com perspectiva de alta nos juros pelo Fed"
       ],
       "primarySource": {
         "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/canetas-emagrecedoras-nao-bastam-para-conter-epidemia-de-obesidade-diz-relatorio-internacional.shtml"
-      }
-    },
-    {
-      "slug": "brazil-suspends-meal-voucher-rules",
-      "canonicalPath": "/news/br/brazil-suspends-meal-voucher-rules/",
-      "headline": "TRF-1 Reinstates New Rules For Brazil Meal And Food Vouchers",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The TRF-1 court revoked a previous injunction that had halted the implementation of new guidelines for food and meal vouchers.",
-        "This legal reversal effectively mandates that companies must comply with the current government-mandated regulatory framework."
-      ],
-      "primarySource": {
-        "publisherName": "Folha de S.Paulo",
-        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/justica-suspende-novas-regras-do-vale-refeicao-para-empresas-lideres-do-setor.shtml"
+        "articleUrl": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml"
       }
     }
   ]

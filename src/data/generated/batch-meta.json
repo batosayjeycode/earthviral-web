@@ -1,59 +1,76 @@
 {
-  "batchId": "batch-202611261718",
-  "generatedAt": "2026-11-26T17:18:00Z",
+  "batchId": "batch-202611262014",
+  "generatedAt": "2026-11-26T20:14:00Z",
   "nextUpdateAt": "2026-11-26T20:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 35,
-    "viralTopics": 768,
-    "globalIndex": 86
+    "viralTopics": 755,
+    "globalIndex": 85
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 42,
     "feedsFailed": [
-      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-unitedstates: fetch failed",
+      "gdelt-unitedkingdom: fetch failed",
+      "gdelt-india: fetch failed",
+      "gdelt-australia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aaustralia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1722,
-    "newClusters": 8,
-    "updatedClusters": 123,
+    "articlesFetched": 1719,
+    "newClusters": 6,
+    "updatedClusters": 101,
     "retiredClusters": 0,
-    "aiCalls": 51,
-    "fallbackSummaries": 153,
+    "aiCalls": 34,
+    "fallbackSummaries": 150,
     "trendTitles": {
       "targeted": 1,
-      "inTitle": 1
+      "inTitle": 0
     },
     "titleNames": {
-      "kept": 17,
-      "headline": 1,
-      "previous": 1,
-      "missing": 3,
-      "no-anchor": 19
+      "kept": 10,
+      "headline": 0,
+      "previous": 2,
+      "missing": 0,
+      "no-anchor": 14
     },
     "digestSummaries": {
-      "written": 1,
-      "kept": 21,
-      "pending": 0,
+      "written": 0,
+      "kept": 22,
+      "pending": 1,
       "failed": 0
     },
     "aiFailures": {
-      "rate-limit": 1
+      "rate-limit": 1,
+      "time-budget": 2
     },
     "aiFailureSamples": [
       {
         "category": "rate-limit",
         "detail": "HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      },
+      {
+        "category": "time-budget",
+        "detail": "skipped: the AI time budget for this run is used up"
+      },
+      {
+        "category": "time-budget",
+        "detail": "skipped: the AI time budget for this run is used up"
       }
     ],
     "failover": {
       "provider": "openai:gpt-5-mini",
-      "tried": 1,
+      "tried": 3,
       "written": 0,
       "reasons": {
-        "rate-limit": 1
+        "timeout": 1,
+        "time-budget": 2
       }
     },
-    "durationMs": 216494
+    "aiTimeBudget": {
+      "minutes": 10,
+      "skipped": 5
+    },
+    "durationMs": 601040
   }
 }

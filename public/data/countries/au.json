@@ -3,18 +3,35 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 65,
+  "viralScore": 63,
   "intensityTier": "high",
-  "generatedAt": "2026-11-26T17:18:00Z",
+  "generatedAt": "2026-11-26T20:14:00Z",
   "clusters": [
+    {
+      "slug": "jannik-sinner-misses-2027-australian-open",
+      "canonicalPath": "/news/au/jannik-sinner-misses-2027-australian-open/",
+      "headline": "Jannik Sinner Withdraws From Australian Open Following Knee Surgery",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Tennis player Jannik Sinner is withdrawing from the 2027 Australian Open due to a knee injury.",
+        "The two-time tournament champion recently underwent surgery to address the physical issue."
+      ],
+      "primarySource": {
+        "publisherName": "The Japan Times",
+        "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/26/tennis/sinner-out-australian-open/"
+      }
+    },
     {
       "slug": "one-nation-immigration-policy-tasmania-poll",
       "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
       "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 62,
-      "intensityTier": "high",
+      "viralScore": 55,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
         "The party received its largest political donations in Tasmania from a salmon farm owner and a lobbyist."
@@ -25,37 +42,20 @@
       }
     },
     {
-      "slug": "cricket-australia-sandpapergate-forum",
-      "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
-      "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
+      "slug": "greens-propose-support-for-tax-changes",
+      "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
+      "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
-        "Former coach Darren Lehmann confirmed his participation, stating he has nothing to hide regarding the incident."
+        "The Greens party has signaled potential support for legislative changes regarding tax policy.",
+        "Proposed measures include a new minimum tax on trusts."
       ],
       "primarySource": {
         "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
-      }
-    },
-    {
-      "slug": "jannik-sinner-misses-2027-australian-open",
-      "canonicalPath": "/news/au/jannik-sinner-misses-2027-australian-open/",
-      "headline": "Jannik Sinner Withdraws From Australian Open Following Knee Surgery",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Tennis player Jannik Sinner is withdrawing from the 2027 Australian Open due to a knee injury.",
-        "The two-time tournament champion recently underwent surgery to address the physical issue."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/26/tennis/sinner-out-australian-open/"
+        "articleUrl": "https://www.abc.net.au/news/2026-11-17/greens-offer-government-path-to-pass-trusts-cgt/107394802"
       }
     },
     {
@@ -76,12 +76,63 @@
       }
     },
     {
+      "slug": "sydney-swans-north-melbourne-aflw-preliminary-final",
+      "canonicalPath": "/news/au/sydney-swans-north-melbourne-aflw-preliminary-final/",
+      "headline": "North Melbourne Prepares For Historic AFLW Grand Final Against Demons",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "North Melbourne enters the 2026 AFLW grand final pursuing a historic three-peat of premiership titles.",
+        "The grand final match is scheduled for Friday night, featuring a contest between North Melbourne and the Melbourne Demons."
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/sport/afl/roos-back-fit-again-star-for-swans-duel-in-aflw-finals-c-23193456"
+      }
+    },
+    {
+      "slug": "australian-rugby-players-olympic-goals",
+      "canonicalPath": "/news/au/australian-rugby-players-olympic-goals/",
+      "headline": "Australian Rugby Stars Focus On Future Olympic And Test Success",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Tia Hinds and the Australian women's rugby sevens team are training to win gold at the Los Angeles Olympic Games.",
+        "Australia has not secured an Olympic title in rugby sevens since the Rio Games in 2016."
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/sport/rugby-union/all-worth-it-late-bloomers-long-road-to-rugby-gold-c-23219225"
+      }
+    },
+    {
+      "slug": "cricket-australia-sandpapergate-forum",
+      "canonicalPath": "/news/au/cricket-australia-sandpapergate-forum/",
+      "headline": "Cricket Australia Organizes New Forum Regarding Sandpapergate Scandal",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Cricket Australia has established a forum to address the 2018 ball-tampering event known as Sandpapergate.",
+        "Former coach Darren Lehmann confirmed his participation, stating he has nothing to hide regarding the incident."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-18/cricket-australia-sandpapergate-khawaja-warner-greenberg/107398200"
+      }
+    },
+    {
       "slug": "usman-khawaja-claims-ball-tampering-knowledge",
       "canonicalPath": "/news/au/usman-khawaja-claims-ball-tampering-knowledge/",
       "headline": "Usman Khawaja Claims Tension With Pat Cummins Over Sandpapergate",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 51,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Usman Khawaja stated he felt personally attacked by team captain Pat Cummins during the ongoing dispute.",
@@ -90,23 +141,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-10/usman-khawaja-talks-sandpapergate-friendship-racism/107370242"
-      }
-    },
-    {
-      "slug": "who-gives-a-crap-data-breach",
-      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
-      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 50,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
-        "Exposed customer information includes names, contact details, and total purchase history."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
       }
     },
     {
@@ -144,23 +178,6 @@
       }
     },
     {
-      "slug": "second-invasive-fire-ant-nest-sydney",
-      "canonicalPath": "/news/au/second-invasive-fire-ant-nest-sydney/",
-      "headline": "Second invasive fire ant nest discovered in western Sydney’s Auburn",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Second invasive fire ant nest discovered in western Sydney’s Auburn",
-        "ABC reports: 'Worrying development' as second fire ant nest discovered in Sydney"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
-      }
-    },
-    {
       "slug": "australias-security-pact-with-solomon-islands-a-blow-to",
       "canonicalPath": "/news/au/australias-security-pact-with-solomon-islands-a-blow-to/",
       "headline": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
@@ -178,12 +195,29 @@
       }
     },
     {
+      "slug": "who-gives-a-crap-data-breach",
+      "canonicalPath": "/news/au/who-gives-a-crap-data-breach/",
+      "headline": "Who Gives A Crap Reports Customer Data Breach Via Third Party App",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Who Gives A Crap reported that a third-party software provider experienced a security breach.",
+        "Exposed customer information includes names, contact details, and total purchase history."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-08/who-gives-a-crap-hack/107359858"
+      }
+    },
+    {
       "slug": "australia-faces-scrutiny-climate-summit",
       "canonicalPath": "/news/au/australia-faces-scrutiny-climate-summit/",
       "headline": "Australia Faces Diplomatic Pressure As UN Climate Summit Begins",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 46,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "International climate negotiations have commenced in Türkiye amid discussions regarding national environmental policies.",
@@ -192,6 +226,23 @@
       "primarySource": {
         "publisherName": "The Guardian",
         "articleUrl": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks"
+      }
+    },
+    {
+      "slug": "australia-ends-indonesia-wildfire-mission",
+      "canonicalPath": "/news/au/australia-ends-indonesia-wildfire-mission/",
+      "headline": "Australia Concludes Aerial Firefighting Mission In East Kalimantan",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 45,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The aerial firefighting mission involving an Australian Hercules C-130 air tanker has concluded.",
+        "The Indonesian National Board for Disaster Management (BNPB) announced the formal end of the assistance period."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/berita/d-8751919/masa-kerja-sama-tuntas-australia-akhiri-misi-pemadaman-karhutla-di-kaltim"
       }
     },
     {
@@ -212,12 +263,29 @@
       }
     },
     {
+      "slug": "second-invasive-fire-ant-nest-sydney",
+      "canonicalPath": "/news/au/second-invasive-fire-ant-nest-sydney/",
+      "headline": "Second invasive fire ant nest discovered in western Sydney’s Auburn",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The West Australian reports: Second invasive fire ant nest discovered in western Sydney’s Auburn",
+        "ABC reports: 'Worrying development' as second fire ant nest discovered in Sydney"
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
+      }
+    },
+    {
       "slug": "victorian-state-election-campaign-launches",
       "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
       "headline": "Victorian Labor Trails In Final Polls Before State Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Polling indicates the Labor government faces significant losses, with its primary vote dropping to 20 percent.",
@@ -234,7 +302,7 @@
       "headline": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 45,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Guardian reports: Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
@@ -246,29 +314,12 @@
       }
     },
     {
-      "slug": "greens-propose-support-for-tax-changes",
-      "canonicalPath": "/news/au/greens-propose-support-for-tax-changes/",
-      "headline": "Greens Propose Support For Proposed Trust And Capital Gains Taxes",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Greens party has signaled potential support for legislative changes regarding tax policy.",
-        "Proposed measures include a new minimum tax on trusts."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-17/greens-offer-government-path-to-pass-trusts-cgt/107394802"
-      }
-    },
-    {
       "slug": "former-officer-testifies-sydney-murder-trial",
       "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
       "headline": "Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 42,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "ABC reports: Beau Lamarre-Condon jury retires to consider verdict in double murder trial",
@@ -277,56 +328,6 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
-      }
-    },
-    {
-      "slug": "two-arrested-after-break-in-at-kate-and-williams",
-      "canonicalPath": "/news/au/two-arrested-after-break-in-at-kate-and-williams/",
-      "headline": "Two men face court over break-in at Kate and William's estate",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 42,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "ABC reports: Two men face court over break-in at Kate and William's estate",
-        "The West Australian reports: Prince William and Kate Middleton burglary: Two men charged with trespass at Prince and Princess’ home"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/news/human-interest/prince-williams-country-home-broken-into-report-c-23208152"
-      }
-    },
-    {
-      "slug": "wall-st-roars-back-as-jensen-huang-returns-to",
-      "canonicalPath": "/news/au/wall-st-roars-back-as-jensen-huang-returns-to/",
-      "headline": "Nvidia rehires Jensen Huang in stunning reversal after Donald Trump push",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Nvidia rehires Jensen Huang in stunning reversal after Donald Trump push"
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/business/tech-giant-nvidia-reinstates-jensen-huang-as-ceo-c-23203266"
-      }
-    },
-    {
-      "slug": "former-officer-testifies-double-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-double-murder-trial/",
-      "headline": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in…",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The West Australian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies: Jury unanimous in verdict against ex-NSW cop",
-        "The Guardian reports: Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies"
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-09/beau-lamarre-condon-trial-live-blog-cross-examination/107362572"
       }
     },
     {
