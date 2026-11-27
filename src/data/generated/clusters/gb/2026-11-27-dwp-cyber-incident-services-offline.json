@@ -6,28 +6,28 @@
   "countryName": "United Kingdom",
   "countrySlug": "united-kingdom",
   "region": "Europe",
-  "categorySlug": "disasters-world-events",
-  "categoryName": "Disasters & World Events",
-  "headline": "DWP Takes Online Benefit And Pension Systems Offline After Cyber Incident",
-  "seoTitle": "DWP Cyber Incident Takes Pension And Benefit Services…",
-  "metaDescription": "The Department for Work and Pensions has taken most online services offline following a cyber incident, though officials confirm payments will continue.",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "UK Department For Work And Pensions Offline After Cyber Incident",
+  "seoTitle": "DWP Cyber Incident and Benefits Systems Offline",
+  "metaDescription": "The UK Department for Work and Pensions has suspended online benefit and pension services following a cyber incident, though payments continue as normal.",
   "aiSummaryBullets": [
-    "The Department for Work and Pensions has disabled most online systems, affecting Universal Credit, pension, and disability benefit access.",
-    "Officials report that current welfare payments remain unaffected and will proceed as scheduled despite the ongoing digital outage.",
-    "Authorities state there is currently no evidence that personal data has been compromised or that other government departments were targeted."
+    "The Department for Work and Pensions deactivated online portals for benefits and pensions following a serious cyber security incident.",
+    "Government officials confirmed that despite the service outage, regular benefit and pension payments are currently continuing to be processed.",
+    "The National Cyber Security Centre is currently investigating the incident with no evidence found that personal user data has been compromised."
   ],
-  "aiContextParagraph": "The United Kingdom's Department for Work and Pensions (DWP) has taken nearly all of its online systems offline in response to a cyber incident. This outage prevents users from accessing portals for Universal Credit, state pensions, and Personal Independence Payment (PIP) applications. While digital services are currently unavailable for millions of claimants, government officials have stated that benefit payments will continue to be processed and issued as normal. Representatives have also indicated that there is no evidence to suggest that personal user data was compromised during the incident, nor has there been any indication of malicious activity directed at other government departments. The situation follows broader recent warnings from intelligence agencies regarding increased sabotage attempts on critical sectors, though the DWP has not linked the incident to specific external actors at this time.",
-  "whyItIsViral": "This story is trending due to rapid coverage across seven major news outlets and significant public concern regarding the security of essential state welfare systems.",
+  "aiContextParagraph": "On November 27, 2026, the United Kingdom's Department for Work and Pensions (DWP) experienced a significant cyber incident that forced the temporary suspension of various online services. Affected systems include those used for processing Universal Credit, Personal Independence Payment (PIP), and state pensions. Government ministers and the National Cyber Security Centre (NCSC) have initiated an investigation into the nature of the disruption. While online account access and new application processing faced interruptions as a precautionary security measure, authorities have stated there is currently no evidence that sensitive personal data has been accessed or compromised. Official reports indicate that regular payments to claimants are proceeding as scheduled despite the technical downtime. Government departments are currently monitoring the situation to determine if other areas of public infrastructure were targeted, though no evidence of broader impact has been identified at this time.",
+  "whyItIsViral": "This story is trending due to coverage by eight independent news outlets and a very high velocity of reporting across national and international media.",
   "viralScore": 95,
   "intensityTier": "surge",
   "signalBreakdown": {
-    "verifiedPublisherCount": 7,
-    "coverageVelocityScore": 96,
+    "verifiedPublisherCount": 8,
+    "coverageVelocityScore": 94,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-27T09:57:10Z",
-  "lastUpdatedBatchAt": "2026-11-27T14:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-27T17:18:00Z",
   "sources": [
     {
       "publisherName": "Evening Standard",
@@ -105,6 +105,27 @@
       "articleTitle": "What we know about Department for Work and Pensions 'cyber incident'",
       "articleUrl": "https://www.bbc.co.uk/news/articles/ck1l0e946dqmo",
       "publishedAt": "2026-11-27T13:57:37Z"
+    },
+    {
+      "publisherName": "The Independent",
+      "publisherDomain": "independent.co.uk",
+      "articleTitle": "‘Serious cyber incident’ forced DWP to take down online systems – McFadden",
+      "articleUrl": "https://www.independent.co.uk/news/uk/politics/dwp-government-pat-mcfadden-national-cyber-security-centre-b3092841.html",
+      "publishedAt": "2026-11-27T14:55:06Z"
+    },
+    {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "‘Serious cyber incident’ forced DWP to take down online systems – McFadden",
+      "articleUrl": "https://www.standard.co.uk/news/tech/government-pat-mcfadden-national-cyber-security-centre-b1306713.html",
+      "publishedAt": "2026-11-27T14:55:06Z"
+    },
+    {
+      "publisherName": "Times of India",
+      "publisherDomain": "timesofindia.indiatimes.com",
+      "articleTitle": "UK takes DWP services offline after cyber incident; payments continue",
+      "articleUrl": "https://timesofindia.indiatimes.com/world/uk/uks-department-for-work-and-pensions-takes-nearly-all-its-online-services-offline-after-a-cyber-incident-hitting-universal-credit-pip-and-pension-applications-while-benefit-payments-continue/articleshow/136223523.cms",
+      "publishedAt": "2026-11-27T15:36:52Z"
     }
   ],
   "entityTags": [
@@ -113,22 +134,22 @@
       "slug": "department-for-work-and-pensions"
     },
     {
-      "name": "Cybersecurity",
-      "slug": "cybersecurity"
+      "name": "National Cyber Security Centre",
+      "slug": "national-cyber-security-centre"
     },
     {
-      "name": "Universal Credit",
-      "slug": "universal-credit"
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
     }
   ],
   "relatedInCountrySlugs": [
+    "uk-services-hit-microsoft-outage",
     "uk-government-thwarts-cyber-fridge-attack",
-    "best-black-friday-2026-beauty-deals-according-to-our",
-    "princess-wales-cancer-documentary-heal"
+    "uk-net-migration-falls-lowest-level"
   ],
   "relatedInCategorySlugs": [
-    "polri-cek-kesiapan-pelabuhan-merak-bakauheni-jelang-nataru-2027",
-    "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
-    "miners-trapped-bogor-illegal-gold-mine"
+    "rubio-denies-coordinated-cyberattack-us-outages",
+    "nsa-classified-network-goes-offline",
+    "nsa-internal-network-communication-disruption"
   ]
 }
