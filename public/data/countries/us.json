@@ -3,17 +3,34 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 100,
+  "viralScore": 97,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-27T11:18:00Z",
+  "generatedAt": "2026-11-27T14:18:00Z",
   "clusters": [
+    {
+      "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
+      "canonicalPath": "/news/us/new-york-citys-macys-thanksgiving-day-parade-postponed-due/",
+      "headline": "Massive Thanksgiving Storm Leaves 900,000 Without Power In The US",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 94,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Nearly 900,000 customers across the United States lost power as a result of a major storm system impacting the country on Thanksgiving.",
+        "The severe weather caused significant travel disruption, including numerous flight cancellations and delays, alongside coastal flooding."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/details-why-macys-postponed-thanksgiving-day-parade/"
+      }
+    },
     {
       "slug": "severe-storms-threaten-thanksgiving-travel",
       "canonicalPath": "/news/us/severe-storms-threaten-thanksgiving-travel/",
       "headline": "Nor'easter Causes Power Outages and Disrupts Travel Across the US",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 99,
+      "viralScore": 85,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "Nearly one million homes across the United States remain without power following severe weather conditions.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
-      "canonicalPath": "/news/us/new-york-citys-macys-thanksgiving-day-parade-postponed-due/",
-      "headline": "Storms Cause Major Power Outages And Delay Macy's Parade In US",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 85,
-      "intensityTier": "surge",
-      "aiSummaryBullets": [
-        "Severe weather across the central and eastern United States has caused widespread power outages affecting over 900,000 households.",
-        "Intense winds and flooding led New York City officials to declare a state of emergency and postpone the annual Macy's Thanksgiving Day Parade."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/video/what-to-know-as-weather-postpones-macys-thanksgiving-day/"
-      }
-    },
-    {
       "slug": "elon-musk-midterm-spending-comments",
       "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 66,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -64,7 +64,7 @@
       "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 69,
+      "viralScore": 63,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
@@ -81,7 +81,7 @@
       "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 68,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
@@ -98,7 +98,7 @@
       "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 65,
+      "viralScore": 60,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
@@ -115,8 +115,8 @@
       "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Army plans to destroy the nation's total supply of degrading lead azide at a munitions facility in Iowa on Wednesday.",
         "The controlled detonation follows significant delays, legal discussions, and ongoing public anxiety regarding potential environmental and health impacts."
@@ -132,7 +132,7 @@
       "headline": "ICE Agents Face Backlash Following Seattle Airport Arrest Incident",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Washington state officials characterized ICE conduct during airport arrests as out of control.",
@@ -141,23 +141,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/princeton-student-ice/"
-      }
-    },
-    {
-      "slug": "kennedy-family-opposes-trump-arch-plan",
-      "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
-      "headline": "Second Judge Blocks Construction Of Planned Trump Memorial Arch",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A federal judge has halted the construction of a proposed 250-foot memorial arch honoring Donald Trump in Washington, D.C.",
-        "The court ruling indicates that the project is unlikely to succeed legally due to a lack of necessary approval from the United States Congress."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
       }
     },
     {
@@ -178,6 +161,23 @@
       }
     },
     {
+      "slug": "kennedy-family-opposes-trump-arch-plan",
+      "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
+      "headline": "Second Judge Blocks Construction Of Planned Trump Memorial Arch",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A federal judge has halted the construction of a proposed 250-foot memorial arch honoring Donald Trump in Washington, D.C.",
+        "The court ruling indicates that the project is unlikely to succeed legally due to a lack of necessary approval from the United States Congress."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
+      }
+    },
+    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Commerce Department Adds Megaspeed To Trade Blacklist After Scandal",
@@ -192,23 +192,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
-        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
-      ],
-      "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5861331/rupiah-pada-rabu-pagi-menguat-jadi-rp18239-per-dolar-as"
       }
     },
     {
@@ -328,6 +311,23 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+      }
+    },
+    {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
+        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5861331/rupiah-pada-rabu-pagi-menguat-jadi-rp18239-per-dolar-as"
       }
     },
     {

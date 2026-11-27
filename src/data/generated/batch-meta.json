@@ -1,37 +1,36 @@
 {
-  "batchId": "batch-202611271118",
-  "generatedAt": "2026-11-27T11:18:00Z",
-  "nextUpdateAt": "2026-11-27T14:17:00Z",
+  "batchId": "batch-202611271418",
+  "generatedAt": "2026-11-27T14:18:00Z",
+  "nextUpdateAt": "2026-11-27T17:17:00Z",
   "isSeed": false,
   "totals": {
     "activeCountries": 36,
-    "viralTopics": 777,
-    "globalIndex": 87
+    "viralTopics": 780,
+    "globalIndex": 89
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
     "feedsOk": 41,
     "feedsFailed": [
       "detik: fetch failed",
-      "gdelt-indonesia: fetch failed",
-      "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
+      "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1624,
-    "newClusters": 13,
-    "updatedClusters": 121,
+    "articlesFetched": 1615,
+    "newClusters": 12,
+    "updatedClusters": 122,
     "retiredClusters": 0,
-    "aiCalls": 68,
-    "fallbackSummaries": 92,
+    "aiCalls": 61,
+    "fallbackSummaries": 82,
     "trendTitles": {
-      "targeted": 4,
-      "inTitle": 4
+      "targeted": 8,
+      "inTitle": 7
     },
     "titleNames": {
-      "kept": 26,
-      "headline": 4,
-      "previous": 8,
-      "missing": 1,
-      "no-anchor": 14
+      "kept": 16,
+      "headline": 3,
+      "previous": 5,
+      "missing": 2,
+      "no-anchor": 19
     },
     "digestSummaries": {
       "written": 2,
@@ -39,6 +38,28 @@
       "pending": 0,
       "failed": 0
     },
-    "durationMs": 446069
+    "aiFailures": {
+      "rate-limit": 2
+    },
+    "aiFailureSamples": [
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      },
+      {
+        "category": "rate-limit",
+        "detail": "skipped: OpenAI account has no credits (insufficient_quota) — add credits under Billing"
+      }
+    ],
+    "failover": {
+      "provider": "openai:gpt-5-mini",
+      "tried": 2,
+      "written": 0,
+      "reasons": {
+        "rate-limit": 1,
+        "server-error": 1
+      }
+    },
+    "durationMs": 563424
   }
 }
