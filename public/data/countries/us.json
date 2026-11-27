@@ -3,18 +3,35 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 95,
+  "viralScore": 94,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-27T17:18:00Z",
+  "generatedAt": "2026-11-27T20:18:00Z",
   "clusters": [
+    {
+      "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
+      "canonicalPath": "/news/us/new-york-citys-macys-thanksgiving-day-parade-postponed-due/",
+      "headline": "Post-Storm Power Restoration Continues Following Macy's Parade Delay",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 91,
+      "intensityTier": "surge",
+      "aiSummaryBullets": [
+        "Nearly half a million homes and businesses remain without electricity following a powerful storm across the U.S. East Coast.",
+        "The Macy's Thanksgiving Day Parade in New York City was postponed due to inclement weather conditions during the holiday."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo"
+      }
+    },
     {
       "slug": "severe-storms-threaten-thanksgiving-travel",
       "canonicalPath": "/news/us/severe-storms-threaten-thanksgiving-travel/",
       "headline": "Nor'easter Causes Power Outages and Disrupts Travel Across the US",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 92,
-      "intensityTier": "surge",
+      "viralScore": 74,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Nearly one million homes across the United States remain without power following severe weather conditions.",
         "A powerful nor'easter caused significant travel disruptions and flooding across both the east and west coasts."
@@ -25,20 +42,54 @@
       }
     },
     {
-      "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
-      "canonicalPath": "/news/us/new-york-citys-macys-thanksgiving-day-parade-postponed-due/",
-      "headline": "Macy's Thanksgiving Day Parade Postponed As US Storm Hits Power",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 91,
-      "intensityTier": "surge",
+      "slug": "us-china-russia-trilateral-meeting",
+      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
+      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 72,
+      "intensityTier": "high",
       "aiSummaryBullets": [
-        "Severe storm conditions forced organizers to reschedule the Macy's Thanksgiving Day Parade by two days.",
-        "The weather system resulted in nearly 900,000 utility customers losing power across the United States."
+        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
       ],
       "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261126-powerful-us-storm-forces-historic-postponement-of-thanksgiving-day-parade-in-new-york"
+        "publisherName": "CNBC Indonesia",
+        "articleUrl": "https://www.cnbcindonesia.com/news/20261119145129-4-786649/di-depan-prabowo-cs-xi-jinping-kucurkan-us-20-juta-untuk-apec"
+      }
+    },
+    {
+      "slug": "hackers-breach-us-air-force-cloud-one",
+      "canonicalPath": "/news/us/hackers-breach-us-air-force-cloud-one/",
+      "headline": "Hackers Reportedly Breach US Air Force Cloud One Computing Platform",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Air Force's Cloud One computing platform recently suffered a significant security breach by hackers.",
+        "The unauthorized access was identified during system upgrades conducted within the last month."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/hackers-breach-us-air-forces-flagship-cloud-platform-disrupting-operations/articleshow/136220848.cms"
+      }
+    },
+    {
+      "slug": "nvidia-ceo-jensen-huang-security-investigation",
+      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
+      "headline": "Jensen Huang Resumes Nvidia CEO Role Amid Ongoing Federal Scrutiny",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 68,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Jensen Huang has officially resumed his position as Nvidia's Chief Executive Officer.",
+        "Contradicting statements have emerged from political figures regarding a potential presidential pardon for Huang."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/video/experts-reporters-lawmakers-dig-nvidia-reinstalling-jensen-huang-ceo/"
       }
     },
     {
@@ -47,7 +98,7 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 74,
+      "viralScore": 67,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -59,29 +110,12 @@
       }
     },
     {
-      "slug": "us-china-russia-trilateral-meeting",
-      "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
-      "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 69,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
-        "The administration addressed a recent wave of technological outages and concerns regarding Iran during the briefing."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/internasional/d-8760326/bertemu-xi-dan-putin-trump-sebut-as-ambil-arah-berbeda"
-      }
-    },
-    {
       "slug": "supreme-court-allows-texas-border-wall",
       "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
       "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 59,
+      "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
@@ -90,23 +124,6 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
-      }
-    },
-    {
-      "slug": "us-army-detonate-explosives-iowa-plant",
-      "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
-      "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 57,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The US Army plans to destroy the nation's total supply of degrading lead azide at a munitions facility in Iowa on Wednesday.",
-        "The controlled detonation follows significant delays, legal discussions, and ongoing public anxiety regarding potential environmental and health impacts."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/iowa-residents-told-to-take-shelter-as-us-army-prepares-to-detonate-5-tonnes-of-explosives-toxic-dust-feared/articleshow/136158928.cms"
       }
     },
     {
@@ -127,20 +144,20 @@
       }
     },
     {
-      "slug": "king-tides-cause-monster-waves-flooding-on-california-coastline",
-      "canonicalPath": "/news/us/king-tides-cause-monster-waves-flooding-on-california-coastline/",
-      "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
+      "slug": "us-army-detonate-explosives-iowa-plant",
+      "canonicalPath": "/news/us/us-army-detonate-explosives-iowa-plant/",
+      "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
       "viralScore": 56,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
-        "Record water levels have resulted in damage to businesses and roads near the shoreline."
+        "The US Army plans to destroy the nation's total supply of degrading lead azide at a munitions facility in Iowa on Wednesday.",
+        "The controlled detonation follows significant delays, legal discussions, and ongoing public anxiety regarding potential environmental and health impacts."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/25/california-flooding-high-tides"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/iowa-residents-told-to-take-shelter-as-us-army-prepares-to-detonate-5-tonnes-of-explosives-toxic-dust-feared/articleshow/136158928.cms"
       }
     },
     {
@@ -195,23 +212,6 @@
       }
     },
     {
-      "slug": "nvidia-ceo-jensen-huang-security-investigation",
-      "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
-      "headline": "Jensen Huang Resumes Nvidia CEO Role Amid Ongoing Federal Scrutiny",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Jensen Huang has officially resumed his position as Nvidia's Chief Executive Officer.",
-        "Contradicting statements have emerged from political figures regarding a potential presidential pardon for Huang."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/world/us-lawmakers-criticise-nvidia-decision-reinstate-huang-ceo-6575546"
-      }
-    },
-    {
       "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
       "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
       "headline": "US Commerce Department Adds Megaspeed To Trade Blacklist After Scandal",
@@ -243,23 +243,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
-      "slug": "united-airlines-widespread-system-outage",
-      "canonicalPath": "/news/us/united-airlines-widespread-system-outage/",
-      "headline": "United Airlines Resolves Widespread System Outage Affecting Flights",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "United Airlines experienced a technical glitch that caused significant departure delays.",
-        "The airline confirmed that the system outage was resolved after a period of instability."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage"
       }
     },
     {
@@ -331,20 +314,37 @@
       }
     },
     {
-      "slug": "us-clears-spacex-to-launch-1-million-satellites-for",
-      "canonicalPath": "/news/us/us-clears-spacex-to-launch-1-million-satellites-for/",
-      "headline": "US Approves SpaceX Plan For One Million Orbital Data Centers",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
+      "slug": "king-tides-cause-monster-waves-flooding-on-california-coastline",
+      "canonicalPath": "/news/us/king-tides-cause-monster-waves-flooding-on-california-coastline/",
+      "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
       "viralScore": 54,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Trump administration granted SpaceX regulatory approval to launch a constellation of one million satellites.",
-        "The project aims to establish space-based data centers intended to support AI infrastructure and data processing."
+        "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
+        "Record water levels have resulted in damage to businesses and roads near the shoreline."
       ],
       "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/25/california-flooding-high-tides"
+      }
+    },
+    {
+      "slug": "trump-reflects-on-deportation-policy",
+      "canonicalPath": "/news/us/trump-reflects-on-deportation-policy/",
+      "headline": "Kilmar Abrego Garcia Departs United States Following Deportation Row",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Kilmar Abrego Garcia departed the United States for Spain on Tuesday, as confirmed by the Department of Homeland Security.",
+        "The individual's previous mistaken deportation to El Salvador and subsequent return fueled public debate regarding national immigration policies."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
       }
     }
   ]
