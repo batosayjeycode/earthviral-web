@@ -3,38 +3,21 @@
   "name": "Spain",
   "slug": "spain",
   "region": "Europe",
-  "viralScore": 68,
+  "viralScore": 79,
   "intensityTier": "high",
-  "generatedAt": "2026-11-27T08:18:00Z",
+  "generatedAt": "2026-11-27T11:18:00Z",
   "clusters": [
-    {
-      "slug": "real-madrid-la-liga-mbappe-controversy",
-      "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
-      "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 65,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Real Madrid secured a victory against Celta Vigo at the Santiago Bernabeu stadium.",
-        "The win places Real Madrid on equal points with current La Liga leaders Barcelona."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/sports/football/top-stories/mbappes-mao-remarks-spark-china-backlash-real-madrid-laliga-face-growing-pressure-despite-apology-as-diplomatic-talks-continue/articleshow/135614850.cms"
-      }
-    },
     {
       "slug": "spain-general-strike-over-housing-crisis",
       "canonicalPath": "/news/es/spain-general-strike-over-housing-crisis/",
-      "headline": "Nationwide General Strike In Spain Targets Housing And Cost Crisis",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 65,
+      "headline": "Spain Faces Snap General Election Amid Ongoing Housing Crisis Debate",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 76,
       "intensityTier": "high",
       "aiSummaryBullets": [
-        "Spain is experiencing its first general strike in 14 years, with mass demonstrations held across the country.",
-        "Protesters are demanding urgent government solutions to the housing crisis and rising costs of living."
+        "Prime Minister Pedro Sánchez faces a snap election after eight years of leadership as his government prepares for a challenge from the opposition.",
+        "The opposition People's Party and the VOX party have formed an alliance as the main threat to the current Socialist-led administration's tenure."
       ],
       "primarySource": {
         "publisherName": "Deutsche Welle",
@@ -47,8 +30,8 @@
       "headline": "Spain Faces Tight Snap General Election As Far-Right Gains Momentum",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 63,
-      "intensityTier": "high",
+      "viralScore": 57,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Voters are heading to the polls this Sunday for a snap parliamentary election following national political instability.",
         "The conservative People's Party and the far-right Vox are campaigning to remove Prime Minister Pedro Sánchez from office."
@@ -56,6 +39,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/video/20261124-spain-set-to-head-to-polls-in-snap-election-that-could-boost-far-right"
+      }
+    },
+    {
+      "slug": "real-madrid-la-liga-mbappe-controversy",
+      "canonicalPath": "/news/es/real-madrid-la-liga-mbappe-controversy/",
+      "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Real Madrid secured a victory against Celta Vigo at the Santiago Bernabeu stadium.",
+        "The win places Real Madrid on equal points with current La Liga leaders Barcelona."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/sports/football/top-stories/mbappes-mao-remarks-spark-china-backlash-real-madrid-laliga-face-growing-pressure-despite-apology-as-diplomatic-talks-continue/articleshow/135614850.cms"
       }
     },
     {
@@ -127,12 +127,29 @@
       }
     },
     {
+      "slug": "spain-heads-to-snap-election",
+      "canonicalPath": "/news/es/spain-heads-to-snap-election/",
+      "headline": "Spain Heads To Snap Election Amid Political And Economic Tensions",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 42,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Prime Minister Pedro Sanchez initiated a snap general election after facing a significant legislative setback concerning national housing policy.",
+        "The electoral campaign is focused on voter concerns regarding the current administration, specifically issues related to immigration and housing."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/tv-shows/a-propos/20261126-citizens-angry-with-the-establishment-as-spain-heads-to-the-polls"
+      }
+    },
+    {
       "slug": "diesel-tanker-sinks-off-ibiza-coast",
       "canonicalPath": "/news/es/diesel-tanker-sinks-off-ibiza-coast/",
       "headline": "Diesel Tanker Sinks Off Ibiza Coast Resulting In One Fatality",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A tanker vessel transporting up to 7,000 tonnes of diesel sank near the coast of Ibiza.",
@@ -149,7 +166,7 @@
       "headline": "Pablo Hernandez De Cos Selected As The Next European Central Bank Head",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 36,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Pablo Hernandez De Cos will succeed Christine Lagarde as the president of the European Central Bank.",
@@ -327,23 +344,6 @@
       "primarySource": {
         "publisherName": "CNA",
         "articleUrl": "https://www.channelnewsasia.com/sport/barcelona-teenager-cubarsi-wins-golden-boy-award-6536651"
-      }
-    },
-    {
-      "slug": "barcelona-finalizes-camp-nou-bond-funding",
-      "canonicalPath": "/news/es/barcelona-finalizes-camp-nou-bond-funding/",
-      "headline": "FC Barcelona Secures Funding For Camp Nou Renovation Completion",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 18,
-      "intensityTier": "quiet",
-      "aiSummaryBullets": [
-        "FC Barcelona has finalized a 300 million euro bond issuance.",
-        "The capital is designated to finish the renovation of the Camp Nou stadium."
-      ],
-      "primarySource": {
-        "publisherName": "CNA",
-        "articleUrl": "https://www.channelnewsasia.com/sport/barcelona-finalise-eu300-million-bond-issue-complete-camp-nou-renovations-6549591"
       }
     }
   ]

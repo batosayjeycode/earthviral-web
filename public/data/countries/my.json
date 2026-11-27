@@ -3,18 +3,52 @@
   "name": "Malaysia",
   "slug": "malaysia",
   "region": "Asia",
-  "viralScore": 69,
-  "intensityTier": "high",
-  "generatedAt": "2026-11-27T08:18:00Z",
+  "viralScore": 59,
+  "intensityTier": "active",
+  "generatedAt": "2026-11-27T11:18:00Z",
   "clusters": [
+    {
+      "slug": "three-malaysian-air-force-officers-charged-with-trafficking-96",
+      "canonicalPath": "/news/my/three-malaysian-air-force-officers-charged-with-trafficking-96/",
+      "headline": "Three RMAF Officers Among Six Charged For Meth Trafficking In Selangor",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 56,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Six suspects, including three Royal Malaysian Air Force personnel, were formally charged in court.",
+        "The legal proceedings follow the discovery of 96.2 kilograms of methamphetamine at an airbase in Selangor."
+      ],
+      "primarySource": {
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889986-three-rmaf-officers-among-6-charged-with-trafficking-962kg-of-meth"
+      }
+    },
+    {
+      "slug": "perikatan-nasional-abstains-sarawak-state-election",
+      "canonicalPath": "/news/my/perikatan-nasional-abstains-sarawak-state-election/",
+      "headline": "Perikatan Nasional To Abstain From Upcoming Sarawak State Election",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 51,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Perikatan Nasional announced it will not contest in the upcoming Sarawak state election.",
+        "The coalition stated its decision reflects respect for the right of voters to determine the state's leadership and direction."
+      ],
+      "primarySource": {
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/890010-gps-nears-possible-sarawak-polls-win-as-pn-latest-to-retreat"
+      }
+    },
     {
       "slug": "negeri-sembilan-constitutional-suit-adjourned",
       "canonicalPath": "/news/my/negeri-sembilan-constitutional-suit-adjourned/",
       "headline": "Negeri Sembilan Exco Appointed Amid Constitutional Uncertainty",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
+      "viralScore": 50,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Six new members have been appointed to the Negeri Sembilan state executive council, representing both Barisan Nasional and Perikatan Nasional.",
         "The swearing-in ceremony took place at Balairung Seri under the administration of Menteri Besar Datuk Ismail Lasim."
@@ -25,29 +59,12 @@
       }
     },
     {
-      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
-      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
-      "headline": "Negeri Sembilan Menteri Besar Ismail Lasim Hospitalised In Seremban",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 58,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Negeri Sembilan Menteri Besar Datuk Ismail Lasim is currently hospitalised in Seremban for health reasons.",
-        "Family members and personal aides have confirmed that his condition is stable and showing signs of improvement."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
-      }
-    },
-    {
       "slug": "malaysia-sues-google-for-damages",
       "canonicalPath": "/news/my/malaysia-sues-google-for-damages/",
       "headline": "Malaysia Sues Google For Over Two Hundred Million In Damages",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 52,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Malaysian regulators have initiated two lawsuits against Google, seeking $222 million in damages.",
@@ -56,40 +73,6 @@
       "primarySource": {
         "publisherName": "Malaysiakini",
         "articleUrl": "https://www.malaysiakini.com/news/889798-mcmc-sues-google-for-rm600m-over-systemic-failure-to-curb-harmful-content"
-      }
-    },
-    {
-      "slug": "former-attorney-general-abdul-gani-patail-dies",
-      "canonicalPath": "/news/my/former-attorney-general-abdul-gani-patail-dies/",
-      "headline": "Former Attorney General Abdul Gani Patail Laid To Rest In Putrajaya",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Former Attorney General Tan Sri Abdul Gani Patail died at age 71.",
-        "The veteran prosecutor served as Malaysia's attorney-general for over 13 years."
-      ],
-      "primarySource": {
-        "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889967-ex-ag-abdul-gani-patail-dies-aged-71"
-      }
-    },
-    {
-      "slug": "three-malaysian-air-force-officers-charged-with-trafficking-96",
-      "canonicalPath": "/news/my/three-malaysian-air-force-officers-charged-with-trafficking-96/",
-      "headline": "Three Malaysian air force officers charged with trafficking 96.2kg of meth at Selangor airbase",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "CNA reports: Three Malaysian air force officers charged with trafficking 96.2kg of meth at Selangor airbase",
-        "Malaysiakini reports: Three RMAF officers among 6 charged with trafficking 96.2kg of meth"
-      ],
-      "primarySource": {
-        "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889986-three-rmaf-officers-among-6-charged-with-trafficking-962kg-of-meth"
       }
     },
     {
@@ -115,7 +98,7 @@
       "headline": "Malaysian Authorities Prepare For Najib Razak House Arrest Process",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 45,
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Home Minister Saifuddin Nasution Ismail is scheduled to address the Dewan Rakyat regarding the specific terms of the house arrest order.",
@@ -144,6 +127,23 @@
       }
     },
     {
+      "slug": "negeri-sembilan-menteri-besar-withdraws-letter",
+      "canonicalPath": "/news/my/negeri-sembilan-menteri-besar-withdraws-letter/",
+      "headline": "Negeri Sembilan Menteri Besar Ismail Lasim Hospitalised In Seremban",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Negeri Sembilan Menteri Besar Datuk Ismail Lasim is currently hospitalised in Seremban for health reasons.",
+        "Family members and personal aides have confirmed that his condition is stable and showing signs of improvement."
+      ],
+      "primarySource": {
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/14/negeri-sembilan-mb-confirms-withdrawing-letter-to-rulers-maintains-status-quo-of-tunku-muhriz/243271"
+      }
+    },
+    {
       "slug": "malaysian-air-force-methamphetamine-seizure",
       "canonicalPath": "/news/my/malaysian-air-force-methamphetamine-seizure/",
       "headline": "Malaysian Air Force Personnel Detained Over 96 Kg Methamphetamine",
@@ -161,37 +161,37 @@
       }
     },
     {
-      "slug": "police-arrest-tudm-personnel-drug-smuggling",
-      "canonicalPath": "/news/my/police-arrest-tudm-personnel-drug-smuggling/",
-      "headline": "Eleven Arrested Including TUDM Personnel Over Drug Smuggling Case",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 43,
+      "slug": "former-attorney-general-abdul-gani-patail-dies",
+      "canonicalPath": "/news/my/former-attorney-general-abdul-gani-patail-dies/",
+      "headline": "Former Attorney General Abdul Gani Patail Laid To Rest In Putrajaya",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Malaysian police detained 11 individuals suspected of involvement in a drug trafficking operation.",
-        "Five members of the Royal Malaysian Air Force were among those arrested by authorities."
+        "Former Attorney General Tan Sri Abdul Gani Patail died at age 71.",
+        "The veteran prosecutor served as Malaysia's attorney-general for over 13 years."
       ],
       "primarySource": {
-        "publisherName": "theSun",
-        "articleUrl": "https://thesun.my/berita/sindiket-dadah-guna-pesawat-tudm-dibongkar/"
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889967-ex-ag-abdul-gani-patail-dies-aged-71"
       }
     },
     {
-      "slug": "pardons-board-minutes-declassified-najib-razak",
-      "canonicalPath": "/news/my/pardons-board-minutes-declassified-najib-razak/",
-      "headline": "Pardons Board Minutes Declassified For Najib Razak House Arrest Case",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
+      "slug": "hundreds-of-flood-evacuees-remain-in-selangor",
+      "canonicalPath": "/news/my/hundreds-of-flood-evacuees-remain-in-selangor/",
+      "headline": "Selangor And Perak Monitor Flood Risks Amid Monsoon Preparations",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
       "viralScore": 42,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Home Minister Saifuddin Nasution Ismail confirmed the declassification of specific Pardons Board meeting minutes.",
-        "The documents were released to support the Attorney General's Chambers in preparing an affidavit for a legal proceeding."
+        "Selangor authorities identified 56 active flood hotspots as the region prepares for the upcoming Northeast Monsoon season.",
+        "Data indicates that flood damage costs in Selangor reached RM52.9 million last year, reflecting a significant increase from previous figures."
       ],
       "primarySource": {
-        "publisherName": "theSun",
-        "articleUrl": "https://thesun.my/news/pardons-board-meeting-minutes-declassified-to-facilitate-agc-affidavit-saifuddin/"
+        "publisherName": "Malay Mail",
+        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/08/still-stuck-at-relief-centres-763-flood-evacuees-in-selangor-hundreds-more-in-perak/242422"
       }
     },
     {
@@ -212,12 +212,29 @@
       }
     },
     {
+      "slug": "pardons-board-minutes-declassified-najib-razak",
+      "canonicalPath": "/news/my/pardons-board-minutes-declassified-najib-razak/",
+      "headline": "Pardons Board Minutes Declassified For Najib Razak House Arrest Case",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Home Minister Saifuddin Nasution Ismail confirmed the declassification of specific Pardons Board meeting minutes.",
+        "The documents were released to support the Attorney General's Chambers in preparing an affidavit for a legal proceeding."
+      ],
+      "primarySource": {
+        "publisherName": "theSun",
+        "articleUrl": "https://thesun.my/news/pardons-board-meeting-minutes-declassified-to-facilitate-agc-affidavit-saifuddin/"
+      }
+    },
+    {
       "slug": "parti-wawasan-negara-skips-sarawak-election",
       "canonicalPath": "/news/my/parti-wawasan-negara-skips-sarawak-election/",
       "headline": "Parti Wawasan Negara Decides Not To Contest Sarawak State Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Parti Wawasan Negara confirms it will not field candidates in the upcoming 13th Sarawak state election.",
@@ -226,23 +243,6 @@
       "primarySource": {
         "publisherName": "theSun",
         "articleUrl": "https://thesun.my/news/malaysia-news/people-issues/wawasan-will-not-contest-sarawak-polls-wan-saifulruddin/"
-      }
-    },
-    {
-      "slug": "dewan-rakyat-passes-budget-2027",
-      "canonicalPath": "/news/my/dewan-rakyat-passes-budget-2027/",
-      "headline": "Dewan Rakyat Passes The Supply Budget Bill 2027 In Malaysia",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 32,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Dewan Rakyat approved the Supply Budget Bill 2027 through a majority voice vote.",
-        "The budget allocates a total of RM510 billion in government spending and investments."
-      ],
-      "primarySource": {
-        "publisherName": "Malaysiakini",
-        "articleUrl": "https://www.malaysiakini.com/news/889949-dewan-rakyat-passes-budget-2027-via-voice-vote"
       }
     },
     {
@@ -260,6 +260,23 @@
       "primarySource": {
         "publisherName": "Malay Mail",
         "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/09/remembering-2014s-great-flood-kelantan-firefighters-prepare-for-another-big-test/242531"
+      }
+    },
+    {
+      "slug": "dewan-rakyat-passes-budget-2027",
+      "canonicalPath": "/news/my/dewan-rakyat-passes-budget-2027/",
+      "headline": "Dewan Rakyat Passes The Supply Budget Bill 2027 In Malaysia",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 31,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Dewan Rakyat approved the Supply Budget Bill 2027 through a majority voice vote.",
+        "The budget allocates a total of RM510 billion in government spending and investments."
+      ],
+      "primarySource": {
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889949-dewan-rakyat-passes-budget-2027-via-voice-vote"
       }
     },
     {
@@ -296,23 +313,6 @@
       }
     },
     {
-      "slug": "bukit-aman-investigates-hong-kong-arrest",
-      "canonicalPath": "/news/my/bukit-aman-investigates-hong-kong-arrest/",
-      "headline": "Bukit Aman Investigates Link Between Hong Kong Drug Bust And Malaysia",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A suspect was apprehended at Hong Kong International Airport for allegedly carrying one kilogram of cocaine in his footwear.",
-        "The Royal Malaysia Police (Bukit Aman) are examining whether this case is connected to recent drug enforcement operations in Malaysia."
-      ],
-      "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/07/bukit-aman-over-6000-police-personnel-deployed-nationwide-to-step-up-deepavali-security-patrols/242314"
-      }
-    },
-    {
       "slug": "malaysia-heavy-rain-flood-warnings",
       "canonicalPath": "/news/my/malaysia-heavy-rain-flood-warnings/",
       "headline": "MetMalaysia Issues Heavy Rainfall And Flash Flood Alerts In Malaysia",
@@ -330,20 +330,20 @@
       }
     },
     {
-      "slug": "hundreds-of-flood-evacuees-remain-in-selangor",
-      "canonicalPath": "/news/my/hundreds-of-flood-evacuees-remain-in-selangor/",
-      "headline": "Selangor And Perak Monitor Flood Risks Amid Monsoon Preparations",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
+      "slug": "malaysias-next-general-election-likely-before-or-after-national",
+      "canonicalPath": "/news/my/malaysias-next-general-election-likely-before-or-after-national/",
+      "headline": "Malaysia’s next general election likely 'before or after' National Day 2027: PM Anwar",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Selangor authorities identified 56 active flood hotspots as the region prepares for the upcoming Northeast Monsoon season.",
-        "Data indicates that flood damage costs in Selangor reached RM52.9 million last year, reflecting a significant increase from previous figures."
+        "CNA reports: Malaysia’s next general election likely 'before or after' National Day 2027: PM Anwar",
+        "Malaysiakini reports: GE16 likely before or after National Day 2027, says PM"
       ],
       "primarySource": {
-        "publisherName": "Malay Mail",
-        "articleUrl": "https://www.malaymail.com/news/malaysia/2026/11/08/still-stuck-at-relief-centres-763-flood-evacuees-in-selangor-hundreds-more-in-perak/242422"
+        "publisherName": "Malaysiakini",
+        "articleUrl": "https://www.malaysiakini.com/news/889862-anwar-says-ge16-likely-before-or-after-national-day-2027"
       }
     }
   ]

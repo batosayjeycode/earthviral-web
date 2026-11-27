@@ -3,10 +3,27 @@
   "name": "Ukraine",
   "slug": "ukraine",
   "region": "Europe",
-  "viralScore": 50,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-27T08:18:00Z",
+  "viralScore": 70,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-27T11:18:00Z",
   "clusters": [
+    {
+      "slug": "eu-leaders-negotiate-ukraine-budget-summit",
+      "canonicalPath": "/news/ua/eu-leaders-negotiate-ukraine-budget-summit/",
+      "headline": "EU Leaders Fail To Reach Agreement On Long-Term Budget And Ukraine",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "European Union leaders have concluded a summit without reaching a consensus on the next seven-year budget.",
+        "Proposed financial assistance for Ukraine, including a $49 billion loan, remains a key point of disagreement among member states."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/eu-leaders-seek-agreement-on-long-term-budget-and-ukraine-at-summit/live-80056415?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
     {
       "slug": "ukraine-claims-sinking-of-russian-warship",
       "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
@@ -25,12 +42,29 @@
       }
     },
     {
+      "slug": "zelenskyy-questions-trump-putin-friendship",
+      "canonicalPath": "/news/ua/zelenskyy-questions-trump-putin-friendship/",
+      "headline": "Zelenskyy Criticizes Trump for Describing Putin as a Friend",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "President Volodymyr Zelenskyy characterized Donald Trump's description of Vladimir Putin as a friend as strange.",
+        "Zelenskyy compared the sentiment to suggesting friendship with Adolf Hitler during the Second World War."
+      ],
+      "primarySource": {
+        "publisherName": "BBC",
+        "articleUrl": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o"
+      }
+    },
+    {
       "slug": "ukraine-warfare-and-secret-military-missions",
       "canonicalPath": "/news/ua/ukraine-warfare-and-secret-military-missions/",
       "headline": "Reports Emerge Regarding Subterranean Warfare And French Missions",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Ukrainian military forces are utilizing decommissioned gas pipelines to conduct operations shielded from overhead Russian drone observation.",
@@ -39,40 +73,6 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/video/20261118-war-in-ukraine-is-france-in-direct-conflict-with-russia"
-      }
-    },
-    {
-      "slug": "eu-leaders-negotiate-ukraine-budget-summit",
-      "canonicalPath": "/news/ua/eu-leaders-negotiate-ukraine-budget-summit/",
-      "headline": "EU Leaders Prepare For High-Stakes Negotiations On Ukraine Funding",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "European Union member states are meeting in Brussels to finalize the budget framework for 2028 through 2034.",
-        "Discussions include long-term financial assistance for Ukraine following ongoing damage from Russian military actions."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/eu-leaders-seek-agreement-on-long-term-budget-and-ukraine-at-summit/live-80056415?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine",
-      "canonicalPath": "/news/ua/watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine/",
-      "headline": "Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 31,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Times of India reports: Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
-        "Deutsche Welle reports: Peter Magyar meets Volodymyr Zelenskyy: Hungary and Ukraine make a fresh start after the icy relations of the Viktor Orban era"
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/peter-magyar-meets-volodymyr-zelenskyy-hungary-and-ukraine-make-a-fresh-start-after-the-icy-relations-of-the-viktor-orban-era/a-80054175?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -90,6 +90,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/europe/20261125-live-two-libyan-soldiers-killed-in-ukrainian-attack-on-russian-vessels-in-benghazi"
+      }
+    },
+    {
+      "slug": "watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine",
+      "canonicalPath": "/news/ua/watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine/",
+      "headline": "Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Times of India reports: Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
+        "Deutsche Welle reports: Peter Magyar meets Volodymyr Zelenskyy: Hungary and Ukraine make a fresh start after the icy relations of the Viktor Orban era"
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/peter-magyar-meets-volodymyr-zelenskyy-hungary-and-ukraine-make-a-fresh-start-after-the-icy-relations-of-the-viktor-orban-era/a-80054175?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
