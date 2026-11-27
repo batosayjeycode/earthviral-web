@@ -1,43 +1,61 @@
 {
-  "batchId": "batch-202611262318",
-  "generatedAt": "2026-11-26T23:18:00Z",
-  "nextUpdateAt": "2026-11-27T02:17:00Z",
+  "batchId": "batch-202611270218",
+  "generatedAt": "2026-11-27T02:18:00Z",
+  "nextUpdateAt": "2026-11-27T05:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 35,
-    "viralTopics": 768,
+    "activeCountries": 36,
+    "viralTopics": 772,
     "globalIndex": 86
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 42,
+    "feedsOk": 41,
     "feedsFailed": [
+      "detik: fetch failed",
       "gdelt-indonesia: fetch failed",
       "gdelt-unitedstates: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aunitedstates&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1712,
-    "newClusters": 5,
-    "updatedClusters": 68,
+    "articlesFetched": 1615,
+    "newClusters": 13,
+    "updatedClusters": 99,
     "retiredClusters": 0,
-    "aiCalls": 31,
-    "fallbackSummaries": 130,
+    "aiCalls": 54,
+    "fallbackSummaries": 120,
     "trendTitles": {
       "targeted": 1,
-      "inTitle": 0
+      "inTitle": 1
     },
     "titleNames": {
-      "kept": 13,
-      "headline": 1,
-      "previous": 2,
-      "missing": 0,
-      "no-anchor": 9
+      "kept": 19,
+      "headline": 0,
+      "previous": 5,
+      "missing": 1,
+      "no-anchor": 13
     },
     "digestSummaries": {
-      "written": 1,
+      "written": 2,
       "kept": 21,
       "pending": 0,
       "failed": 0
     },
-    "durationMs": 168106
+    "aiFailures": {
+      "rate-limit": 1
+    },
+    "aiFailureSamples": [
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      }
+    ],
+    "failover": {
+      "provider": "openai:gpt-5-mini",
+      "tried": 1,
+      "written": 0,
+      "reasons": {
+        "server-error": 1
+      }
+    },
+    "durationMs": 358166
   }
 }
