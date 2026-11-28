@@ -6,8 +6,28 @@
   "countryName": "Indonesia",
   "countrySlug": "indonesia",
   "region": "Asia",
+  "categorySlug": "crime-law",
+  "categoryName": "Crime & Law",
+  "headline": "Indonesian Immigration Denies Alleged Leak Of 90 Million Passports",
+  "seoTitle": "Imigrasi Bantah Isu Kebocoran Data 90 Juta Paspor RI",
+  "metaDescription": "The Indonesian Directorate General of Immigration denied claims that 90 million passport records were compromised by the hacker group known as HYFLOCK.",
+  "aiSummaryBullets": [
+    "The Directorate General of Immigration officially dismissed reports regarding a breach involving 90 million Indonesian passport records.",
+    "Director General Hendarsam Marantoko stated that no cyberattacks were detected and that immigration services remain secure and operational.",
+    "Immigration authorities have initiated reports to the police against parties allegedly spreading the misinformation regarding the security breach."
+  ],
+  "aiContextParagraph": "The Indonesian Directorate General of Immigration, led by Director General Hendarsam Marantoko, issued a formal denial following social media rumors of a massive data breach. Claims circulating online suggested that a group identified as HYFLOCK had compromised personal information belonging to approximately 90 million Indonesian citizens. In response, officials confirmed that systems remain fully operational, with no evidence of successful cyberattacks or unauthorized data access found during internal reviews. As part of their response to these allegations, immigration authorities have taken legal action by reporting the originators of the misinformation to the police. This development occurs alongside unrelated efforts by the agency to modernize travel document procedures, including the introduction of a new simplified passport service, known as Paspor Ringkas, which allows applicants to process documentation using only their national identification card to reduce paperwork.",
+  "whyItIsViral": "The story is widely covered by four independent outlets with high reporting velocity, drawing significant attention due to the scale of the alleged data breach.",
+  "viralScore": 93,
+  "intensityTier": "surge",
+  "signalBreakdown": {
+    "verifiedPublisherCount": 4,
+    "coverageVelocityScore": 86,
+    "publicSearchSignalScore": 72,
+    "confidenceLabel": "Verified Multi-Source"
+  },
   "firstDetectedAt": "2026-11-28T08:30:00Z",
-  "lastUpdatedBatchAt": "2026-11-28T10:33:00Z",
+  "lastUpdatedBatchAt": "2026-11-28T11:18:00Z",
   "sources": [
     {
       "publisherName": "VIVA",
@@ -31,6 +51,13 @@
       "publishedAt": "2026-11-28T08:49:56Z"
     },
     {
+      "publisherName": "VIVA",
+      "publisherDomain": "viva.co.id",
+      "articleTitle": "Dirjen Imigrasi Buka Suara soal Kabar Bos Tambang AK ke Luar Negeri",
+      "articleUrl": "https://www.viva.co.id/berita/nasional/1947055-dirjen-imigrasi-buka-suara-soal-kabar-bos-tambang-ak-ke-luar-negeri",
+      "publishedAt": "2026-11-28T09:00:00Z"
+    },
+    {
       "publisherName": "CNN Indonesia",
       "publisherDomain": "cnnindonesia.com",
       "articleTitle": "Imigrasi Buka Suara Terkait Jutaan Paspor WNI Bocor",
@@ -52,28 +79,6 @@
       "publishedAt": "2026-11-28T09:58:42Z"
     }
   ],
-  "relatedInCountrySlugs": [
-    "indonesian-nationals-recruited-russian-mercenaries",
-    "indonesian-police-leadership-reforms-support",
-    "student-silva-nur-intania-putri-dies-malang"
-  ],
-  "relatedInCategorySlugs": [
-    "brazil-treasury-cyber-attack-data-breach",
-    "internet-post-office-hacked-personal-data-of-at-least",
-    "indonesian-citizens-recruited-as-russian-soldiers"
-  ],
-  "headline": "Indonesian Immigration Denies Alleged Leak Of 90 Million Passports",
-  "seoTitle": "Imigrasi Bantah Isu Kebocoran Data 90 Juta Paspor RI",
-  "metaDescription": "The Indonesian Directorate General of Immigration denied claims that 90 million passport records were compromised by the hacker group known as HYFLOCK.",
-  "aiSummaryBullets": [
-    "The Directorate General of Immigration officially dismissed reports regarding a breach involving 90 million Indonesian passport records.",
-    "Director General Hendarsam Marantoko stated that no cyberattacks were detected and that immigration services remain secure and operational.",
-    "Immigration authorities have initiated reports to the police against parties allegedly spreading the misinformation regarding the security breach."
-  ],
-  "aiContextParagraph": "The Indonesian Directorate General of Immigration, led by Director General Hendarsam Marantoko, issued a formal denial following social media rumors of a massive data breach. Claims circulating online suggested that a group identified as HYFLOCK had compromised personal information belonging to approximately 90 million Indonesian citizens. In response, officials confirmed that systems remain fully operational, with no evidence of successful cyberattacks or unauthorized data access found during internal reviews. As part of their response to these allegations, immigration authorities have taken legal action by reporting the originators of the misinformation to the police. This development occurs alongside unrelated efforts by the agency to modernize travel document procedures, including the introduction of a new simplified passport service, known as Paspor Ringkas, which allows applicants to process documentation using only their national identification card to reduce paperwork.",
-  "whyItIsViral": "The story is widely covered by four independent outlets with high reporting velocity, drawing significant attention due to the scale of the alleged data breach.",
-  "categorySlug": "crime-law",
-  "categoryName": "Crime & Law",
   "entityTags": [
     {
       "name": "Direktorat Jenderal Imigrasi",
@@ -92,12 +97,14 @@
       "slug": "cybersecurity"
     }
   ],
-  "viralScore": 82,
-  "intensityTier": "high",
-  "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 85,
-    "publicSearchSignalScore": 0,
-    "confidenceLabel": "Verified Multi-Source"
-  }
+  "relatedInCountrySlugs": [
+    "indonesian-nationals-recruited-russian-mercenaries",
+    "indonesian-police-leadership-reforms-support",
+    "student-silva-nur-intania-putri-dies-malang"
+  ],
+  "relatedInCategorySlugs": [
+    "brazil-treasury-cyber-attack-data-breach",
+    "internet-post-office-hacked-personal-data-of-at-least",
+    "indonesian-citizens-recruited-as-russian-soldiers"
+  ]
 }
