@@ -1,30 +1,8 @@
 {
-  "batchId": "batch-202611280818",
-  "generatedAt": "2026-11-28T08:18:00Z",
+  "batchId": "batch-202611281033",
+  "generatedAt": "2026-11-28T10:33:00Z",
   "nextUpdateAt": "2026-11-28T11:17:00Z",
   "countries": [
-    {
-      "code": "BR",
-      "isoNumeric": "076",
-      "name": "Brazil",
-      "slug": "brazil",
-      "centroid": [
-        -51.9,
-        -10.5
-      ],
-      "viralScore": 100,
-      "intensityTier": "surge",
-      "topicCount": 92,
-      "topTopic": {
-        "slug": "brazil-lula-administration-fiscal-adjustment-plan",
-        "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
-        "headline": "Luiz Carlos Trabuco Leads Fiscal Transition Amid Valor Do Dolar Hoje",
-        "categorySlug": "economy-business",
-        "categoryName": "Economy & Business",
-        "viralScore": 98,
-        "intensityTier": "surge"
-      }
-    },
     {
       "code": "ID",
       "isoNumeric": "360",
@@ -40,10 +18,32 @@
       "topTopic": {
         "slug": "student-silva-nur-intania-putri-dies-malang",
         "canonicalPath": "/news/id/student-silva-nur-intania-putri-dies-malang/",
-        "headline": "Four Suspects Detained Over Death Of Silva Nur Intania Putri",
+        "headline": "Officials Call For Legal Action Against Student Silva Nur Intania",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
         "viralScore": 93,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "BR",
+      "isoNumeric": "076",
+      "name": "Brazil",
+      "slug": "brazil",
+      "centroid": [
+        -51.9,
+        -10.5
+      ],
+      "viralScore": 95,
+      "intensityTier": "surge",
+      "topicCount": 91,
+      "topTopic": {
+        "slug": "brazil-lula-administration-fiscal-adjustment-plan",
+        "canonicalPath": "/news/br/brazil-lula-administration-fiscal-adjustment-plan/",
+        "headline": "Luiz Carlos Trabuco Leads Fiscal Transition Amid Valor Do Dolar Hoje",
+        "categorySlug": "economy-business",
+        "categoryName": "Economy & Business",
+        "viralScore": 92,
         "intensityTier": "surge"
       }
     },
@@ -58,37 +58,15 @@
       ],
       "viralScore": 92,
       "intensityTier": "surge",
-      "topicCount": 73,
+      "topicCount": 74,
       "topTopic": {
         "slug": "union-cabinet-tables-amended-delimitation-bill",
         "canonicalPath": "/news/in/union-cabinet-tables-amended-delimitation-bill/",
-        "headline": "DMK And NCP-SP Split On Government's New Delimitation Bill",
+        "headline": "INDIA Bloc Parties Vow To Oppose Union Cabinet's Delimitation Bill",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 89,
         "intensityTier": "surge"
-      }
-    },
-    {
-      "code": "MY",
-      "isoNumeric": "458",
-      "name": "Malaysia",
-      "slug": "malaysia",
-      "centroid": [
-        102.3,
-        3.8
-      ],
-      "viralScore": 83,
-      "intensityTier": "high",
-      "topicCount": 25,
-      "topTopic": {
-        "slug": "anwar-ibrahim-reviews-anthony-loke-resignation",
-        "canonicalPath": "/news/my/anwar-ibrahim-reviews-anthony-loke-resignation/",
-        "headline": "Anwar Ibrahim Urges Anthony Loke To Resume Transport Minister Role",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 80,
-        "intensityTier": "high"
       }
     },
     {
@@ -100,8 +78,8 @@
         -98.5,
         39.5
       ],
-      "viralScore": 83,
-      "intensityTier": "high",
+      "viralScore": 90,
+      "intensityTier": "surge",
       "topicCount": 29,
       "topTopic": {
         "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
@@ -109,6 +87,28 @@
         "headline": "Post-Storm Power Restoration Continues Following Macy's Parade Delay",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
+        "viralScore": 87,
+        "intensityTier": "surge"
+      }
+    },
+    {
+      "code": "ES",
+      "isoNumeric": "724",
+      "name": "Spain",
+      "slug": "spain",
+      "centroid": [
+        -3.7,
+        40.2
+      ],
+      "viralScore": 83,
+      "intensityTier": "high",
+      "topicCount": 10,
+      "topTopic": {
+        "slug": "leftwing-coalition-leader-calls-for-rental-revolution-as-spain",
+        "canonicalPath": "/news/es/leftwing-coalition-leader-calls-for-rental-revolution-as-spain/",
+        "headline": "Pedro Sanchez Makes Final Campaign Push Ahead Of Spanish Election",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
         "viralScore": 80,
         "intensityTier": "high"
       }
@@ -122,15 +122,37 @@
         -2,
         53.5
       ],
-      "viralScore": 78,
+      "viralScore": 81,
       "intensityTier": "high",
       "topicCount": 58,
       "topTopic": {
         "slug": "princess-wales-cancer-documentary-heal",
         "canonicalPath": "/news/gb/princess-wales-cancer-documentary-heal/",
-        "headline": "Princess Catherine Shares Personal Cancer Journey In New Documentary",
-        "categorySlug": "lifestyle-culture",
-        "categoryName": "Lifestyle & Culture",
+        "headline": "Princess Catherine Reflects On Cancer Recovery In New Documentary",
+        "categorySlug": "entertainment-celebrity",
+        "categoryName": "Entertainment & Celebrity",
+        "viralScore": 78,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KE",
+      "isoNumeric": "404",
+      "name": "Kenya",
+      "slug": "kenya",
+      "centroid": [
+        37.9,
+        0.2
+      ],
+      "viralScore": 78,
+      "intensityTier": "high",
+      "topicCount": 26,
+      "topTopic": {
+        "slug": "kenyan-cult-leader-receives-prison-sentence",
+        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
+        "headline": "Kenyan Cult Leader Paul Mackenzie Convicted Over 123 Additional Deaths",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
         "viralScore": 75,
         "intensityTier": "high"
       }
@@ -158,46 +180,24 @@
       }
     },
     {
-      "code": "KR",
-      "isoNumeric": "410",
-      "name": "South Korea",
-      "slug": "south-korea",
+      "code": "RU",
+      "isoNumeric": "643",
+      "name": "Russia",
+      "slug": "russia",
       "centroid": [
-        127.8,
-        36.3
+        60,
+        58
       ],
-      "viralScore": 74,
+      "viralScore": 75,
       "intensityTier": "high",
-      "topicCount": 36,
+      "topicCount": 8,
       "topTopic": {
-        "slug": "lee-jae-myung-asean-summit-manila",
-        "canonicalPath": "/news/kr/lee-jae-myung-asean-summit-manila/",
-        "headline": "President Lee Jae Myung Promises National Efforts to Lead AI Race",
-        "categorySlug": "technology-ai",
-        "categoryName": "Technology & AI",
-        "viralScore": 71,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "ES",
-      "isoNumeric": "724",
-      "name": "Spain",
-      "slug": "spain",
-      "centroid": [
-        -3.7,
-        40.2
-      ],
-      "viralScore": 73,
-      "intensityTier": "high",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "leftwing-coalition-leader-calls-for-rental-revolution-as-spain",
-        "canonicalPath": "/news/es/leftwing-coalition-leader-calls-for-rental-revolution-as-spain/",
-        "headline": "Pedro Sanchez Makes Final Bid To Retain Power In Spanish Election",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 70,
+        "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+        "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+        "headline": "Indonesian Authorities Stop 39 Citizens Recruited For Russia Army",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 72,
         "intensityTier": "high"
       }
     },
@@ -210,104 +210,38 @@
         104,
         35
       ],
-      "viralScore": 70,
+      "viralScore": 74,
       "intensityTier": "high",
-      "topicCount": 12,
+      "topicCount": 11,
       "topTopic": {
         "slug": "trump-hints-kim-jong-un-meeting-china",
         "canonicalPath": "/news/cn/trump-hints-kim-jong-un-meeting-china/",
         "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 67,
+        "viralScore": 71,
         "intensityTier": "high"
       }
     },
     {
-      "code": "KE",
-      "isoNumeric": "404",
-      "name": "Kenya",
-      "slug": "kenya",
+      "code": "MY",
+      "isoNumeric": "458",
+      "name": "Malaysia",
+      "slug": "malaysia",
       "centroid": [
-        37.9,
-        0.2
+        102.3,
+        3.8
       ],
-      "viralScore": 70,
+      "viralScore": 73,
       "intensityTier": "high",
       "topicCount": 25,
       "topTopic": {
-        "slug": "kenyan-cult-leader-receives-prison-sentence",
-        "canonicalPath": "/news/ke/kenyan-cult-leader-receives-prison-sentence/",
-        "headline": "Kenyan Cult Leader Paul Mackenzie Convicted Over 123 Additional Deaths",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 67,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "CA",
-      "isoNumeric": "124",
-      "name": "Canada",
-      "slug": "canada",
-      "centroid": [
-        -106.3,
-        56.1
-      ],
-      "viralScore": 68,
-      "intensityTier": "high",
-      "topicCount": 4,
-      "topTopic": {
-        "slug": "canada-court-upholds-quebec-religious-symbols-ban",
-        "canonicalPath": "/news/ca/canada-court-upholds-quebec-religious-symbols-ban/",
-        "headline": "Canada Supreme Court Largely Upholds Quebec Religious Symbols Ban",
+        "slug": "negeri-sembilan-constitutional-suit-adjourned",
+        "canonicalPath": "/news/my/negeri-sembilan-constitutional-suit-adjourned/",
+        "headline": "Negeri Sembilan Exco Appointed Amid Constitutional Uncertainty",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 66,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "FR",
-      "isoNumeric": "250",
-      "name": "France",
-      "slug": "france",
-      "centroid": [
-        2.4,
-        46.6
-      ],
-      "viralScore": 65,
-      "intensityTier": "high",
-      "topicCount": 22,
-      "topTopic": {
-        "slug": "depardieu-houellebecq-rape-investigation",
-        "canonicalPath": "/news/fr/depardieu-houellebecq-rape-investigation/",
-        "headline": "Gérard Depardieu To Face Trial Over 2018 Rape And Sexual Assault",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 62,
-        "intensityTier": "high"
-      }
-    },
-    {
-      "code": "UA",
-      "isoNumeric": "804",
-      "name": "Ukraine",
-      "slug": "ukraine",
-      "centroid": [
-        31.2,
-        49
-      ],
-      "viralScore": 62,
-      "intensityTier": "high",
-      "topicCount": 5,
-      "topTopic": {
-        "slug": "ukraine-claims-sinking-of-russian-warship",
-        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-        "headline": "Ukraine Confirms Naval Drone Strikes On Russian Ships Off Libya",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 60,
+        "viralScore": 70,
         "intensityTier": "high"
       }
     },
@@ -320,17 +254,127 @@
         134,
         -25.5
       ],
-      "viralScore": 62,
+      "viralScore": 68,
       "intensityTier": "high",
-      "topicCount": 46,
+      "topicCount": 45,
       "topTopic": {
         "slug": "australian-wwe-wrestler-jermaine-haley-dies",
         "canonicalPath": "/news/au/australian-wwe-wrestler-jermaine-haley-dies/",
         "headline": "Australian WWE Wrestler Jermaine Haley Known As Bronson Reed Dies",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 59,
-        "intensityTier": "active"
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "KR",
+      "isoNumeric": "410",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "centroid": [
+        127.8,
+        36.3
+      ],
+      "viralScore": 68,
+      "intensityTier": "high",
+      "topicCount": 29,
+      "topTopic": {
+        "slug": "lee-jae-myung-asean-summit-manila",
+        "canonicalPath": "/news/kr/lee-jae-myung-asean-summit-manila/",
+        "headline": "President Lee Jae Myung Promises National Efforts to Lead AI Race",
+        "categorySlug": "technology-ai",
+        "categoryName": "Technology & AI",
+        "viralScore": 65,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "TW",
+      "isoNumeric": "158",
+      "name": "Taiwan",
+      "slug": "taiwan",
+      "centroid": [
+        121,
+        23.7
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 1,
+      "topTopic": {
+        "slug": "taiwan-voters-head-to-polls",
+        "canonicalPath": "/news/tw/taiwan-voters-head-to-polls/",
+        "headline": "Taiwan Residents Head To Polls For Critical Local Elections",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 67,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "SA",
+      "isoNumeric": "682",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "centroid": [
+        45,
+        24
+      ],
+      "viralScore": 67,
+      "intensityTier": "high",
+      "topicCount": 3,
+      "topTopic": {
+        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
+        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
+        "headline": "Houthi Drone Strike Hits Riyadh Skyscraper Leaving Eleven Injured",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 66,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "CA",
+      "isoNumeric": "124",
+      "name": "Canada",
+      "slug": "canada",
+      "centroid": [
+        -106.3,
+        56.1
+      ],
+      "viralScore": 64,
+      "intensityTier": "high",
+      "topicCount": 4,
+      "topTopic": {
+        "slug": "canada-court-upholds-quebec-religious-symbols-ban",
+        "canonicalPath": "/news/ca/canada-court-upholds-quebec-religious-symbols-ban/",
+        "headline": "Canada Supreme Court Largely Upholds Quebec Religious Symbols Ban",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 62,
+        "intensityTier": "high"
+      }
+    },
+    {
+      "code": "FR",
+      "isoNumeric": "250",
+      "name": "France",
+      "slug": "france",
+      "centroid": [
+        2.4,
+        46.6
+      ],
+      "viralScore": 63,
+      "intensityTier": "high",
+      "topicCount": 22,
+      "topTopic": {
+        "slug": "depardieu-houellebecq-rape-investigation",
+        "canonicalPath": "/news/fr/depardieu-houellebecq-rape-investigation/",
+        "headline": "Gérard Depardieu To Face Trial Over 2018 Rape And Sexual Assault",
+        "categorySlug": "crime-law",
+        "categoryName": "Crime & Law",
+        "viralScore": 60,
+        "intensityTier": "high"
       }
     },
     {
@@ -342,8 +386,8 @@
         53.7,
         32.4
       ],
-      "viralScore": 61,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
         "slug": "iranian-drone-attack-kuwait-deaths",
@@ -351,7 +395,29 @@
         "headline": "Iran Denies Responsibility For Fatal Drone Strike In Kuwait",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 59,
+        "viralScore": 57,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "UA",
+      "isoNumeric": "804",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "centroid": [
+        31.2,
+        49
+      ],
+      "viralScore": 59,
+      "intensityTier": "active",
+      "topicCount": 5,
+      "topTopic": {
+        "slug": "ukraine-claims-sinking-of-russian-warship",
+        "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
+        "headline": "Ukraine Confirms Naval Drone Strikes On Russian Ships Off Libya",
+        "categorySlug": "disasters-world-events",
+        "categoryName": "Disasters & World Events",
+        "viralScore": 57,
         "intensityTier": "active"
       }
     },
@@ -364,38 +430,16 @@
         8.1,
         9.6
       ],
-      "viralScore": 60,
-      "intensityTier": "high",
-      "topicCount": 74,
-      "topTopic": {
-        "slug": "goodluck-jonathan-warns-election-violence",
-        "canonicalPath": "/news/ng/goodluck-jonathan-warns-election-violence/",
-        "headline": "House Of Representatives Urges President Tinubu To Address Delta State",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 57,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TW",
-      "isoNumeric": "158",
-      "name": "Taiwan",
-      "slug": "taiwan",
-      "centroid": [
-        121,
-        23.7
-      ],
-      "viralScore": 58,
+      "viralScore": 59,
       "intensityTier": "active",
-      "topicCount": 1,
+      "topicCount": 73,
       "topTopic": {
-        "slug": "taiwan-voters-head-to-polls",
-        "canonicalPath": "/news/tw/taiwan-voters-head-to-polls/",
-        "headline": "Taiwan Residents Head To Polls For Critical Local Elections",
+        "slug": "apc-prepares-for-2027-general-elections",
+        "canonicalPath": "/news/ng/apc-prepares-for-2027-general-elections/",
+        "headline": "President Tinubu Rallies For 2027 Amid Ongoing APC Support Efforts",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 58,
+        "viralScore": 56,
         "intensityTier": "active"
       }
     },
@@ -408,7 +452,7 @@
         30.8,
         26.8
       ],
-      "viralScore": 58,
+      "viralScore": 57,
       "intensityTier": "active",
       "topicCount": 4,
       "topTopic": {
@@ -417,7 +461,7 @@
         "headline": "Driver Held Following Cairo Fuel Tanker Crash That Killed 31 People",
         "categorySlug": "disasters-world-events",
         "categoryName": "Disasters & World Events",
-        "viralScore": 56,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -440,28 +484,6 @@
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
         "viralScore": 55,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "RU",
-      "isoNumeric": "643",
-      "name": "Russia",
-      "slug": "russia",
-      "centroid": [
-        60,
-        58
-      ],
-      "viralScore": 57,
-      "intensityTier": "active",
-      "topicCount": 9,
-      "topTopic": {
-        "slug": "estonia-to-close-russia-border-crossings",
-        "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
-        "headline": "Estonia To Shut All Russian Border Crossings Following Arson Incident",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 54,
         "intensityTier": "active"
       }
     },
@@ -496,16 +518,16 @@
         172,
         -41.5
       ],
-      "viralScore": 55,
+      "viralScore": 56,
       "intensityTier": "active",
       "topicCount": 2,
       "topTopic": {
-        "slug": "new-zealand-election-too-close",
-        "canonicalPath": "/news/nz/new-zealand-election-too-close/",
-        "headline": "New Zealand Election Result Remains Uncertain As Vote Count Continues",
+        "slug": "new-zealand-coalition-falls-short-majority",
+        "canonicalPath": "/news/nz/new-zealand-coalition-falls-short-majority/",
+        "headline": "New Zealand Coalition Falls One Seat Short Of Parliamentary Majority",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
-        "viralScore": 54,
+        "viralScore": 55,
         "intensityTier": "active"
       }
     },
@@ -532,24 +554,24 @@
       }
     },
     {
-      "code": "SA",
-      "isoNumeric": "682",
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia",
+      "code": "SG",
+      "isoNumeric": "702",
+      "name": "Singapore",
+      "slug": "singapore",
       "centroid": [
-        45,
-        24
+        103.82,
+        1.35
       ],
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
-      "topicCount": 3,
+      "topicCount": 31,
       "topTopic": {
-        "slug": "saudi-arabia-executes-five-ethiopians-for-smuggling-hashish",
-        "canonicalPath": "/news/sa/saudi-arabia-executes-five-ethiopians-for-smuggling-hashish/",
-        "headline": "Houthi Drone Strike Hits Riyadh Skyscraper Leaving Eleven Injured",
-        "categorySlug": "disasters-world-events",
-        "categoryName": "Disasters & World Events",
-        "viralScore": 53,
+        "slug": "sg-health-alliance-launch-chronic-disease",
+        "canonicalPath": "/news/sg/sg-health-alliance-launch-chronic-disease/",
+        "headline": "Five Community Healthcare Bodies Launch The SG Health Alliance",
+        "categorySlug": "social-issues",
+        "categoryName": "Social Issues",
+        "viralScore": 50,
         "intensityTier": "active"
       }
     },
@@ -562,7 +584,7 @@
         12.6,
         42.8
       ],
-      "viralScore": 53,
+      "viralScore": 51,
       "intensityTier": "active",
       "topicCount": 5,
       "topTopic": {
@@ -571,73 +593,7 @@
         "headline": "Italy Defeats South Korea In Davis Cup To Reach Semi-Finals",
         "categorySlug": "sports",
         "categoryName": "Sports",
-        "viralScore": 51,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PH",
-      "isoNumeric": "608",
-      "name": "Philippines",
-      "slug": "philippines",
-      "centroid": [
-        122,
-        12.5
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di",
-        "canonicalPath": "/news/ph/kapolri-bongkar-ragam-modus-wni-sindikat-online-scam-di/",
-        "headline": "Polri Ungkap Modus Sindikat Online Scam WNI di Manila Menyamar Polisi",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "PS",
-      "isoNumeric": "275",
-      "name": "Palestine",
-      "slug": "palestine",
-      "centroid": [
-        35.2,
-        31.9
-      ],
-      "viralScore": 49,
-      "intensityTier": "active",
-      "topicCount": 2,
-      "topTopic": {
-        "slug": "costa-rica-denies-francesca-albanese-entry",
-        "canonicalPath": "/news/ps/costa-rica-denies-francesca-albanese-entry/",
-        "headline": "Costa Rica Denies Entry To UN Special Rapporteur Francesca Albanese",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 48,
-        "intensityTier": "active"
-      }
-    },
-    {
-      "code": "TR",
-      "isoNumeric": "792",
-      "name": "Turkey",
-      "slug": "turkey",
-      "centroid": [
-        35.2,
-        39
-      ],
-      "viralScore": 48,
-      "intensityTier": "active",
-      "topicCount": 3,
-      "topTopic": {
-        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
-        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
-        "headline": "Turkish Authorities Take Control Of Opposition Broadcaster Sozcu TV",
-        "categorySlug": "politics-government",
-        "categoryName": "Politics & Government",
-        "viralScore": 47,
+        "viralScore": 49,
         "intensityTier": "active"
       }
     },
@@ -652,7 +608,7 @@
       ],
       "viralScore": 47,
       "intensityTier": "active",
-      "topicCount": 9,
+      "topicCount": 8,
       "topTopic": {
         "slug": "kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung",
         "canonicalPath": "/news/jp/kai-batal-impor-kereta-bekas-dari-jepang-wajib-dukung/",
@@ -664,24 +620,46 @@
       }
     },
     {
-      "code": "SG",
-      "isoNumeric": "702",
-      "name": "Singapore",
-      "slug": "singapore",
+      "code": "PS",
+      "isoNumeric": "275",
+      "name": "Palestine",
+      "slug": "palestine",
       "centroid": [
-        103.82,
-        1.35
+        35.2,
+        31.9
+      ],
+      "viralScore": 47,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "costa-rica-denies-francesca-albanese-entry",
+        "canonicalPath": "/news/ps/costa-rica-denies-francesca-albanese-entry/",
+        "headline": "Costa Rica Denies Entry To UN Special Rapporteur Francesca Albanese",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 46,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "TR",
+      "isoNumeric": "792",
+      "name": "Turkey",
+      "slug": "turkey",
+      "centroid": [
+        35.2,
+        39
       ],
       "viralScore": 45,
       "intensityTier": "active",
-      "topicCount": 32,
+      "topicCount": 3,
       "topTopic": {
-        "slug": "singapore-man-jailed-meth-lawyer-case",
-        "canonicalPath": "/news/sg/singapore-man-jailed-meth-lawyer-case/",
-        "headline": "Derek Khor Boon Chun Jailed Over Etomidate Kpod Trafficking Case",
-        "categorySlug": "crime-law",
-        "categoryName": "Crime & Law",
-        "viralScore": 42,
+        "slug": "authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu",
+        "canonicalPath": "/news/tr/authorities-take-over-turkeys-last-pro-opposition-broadcaster-sozcu/",
+        "headline": "Turkish Authorities Take Control Of Opposition Broadcaster Sozcu TV",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 44,
         "intensityTier": "active"
       }
     },
@@ -738,7 +716,7 @@
         54,
         24
       ],
-      "viralScore": 34,
+      "viralScore": 33,
       "intensityTier": "active",
       "topicCount": 1,
       "topTopic": {
@@ -747,7 +725,7 @@
         "headline": "Vikas Agrawal Extradited To India In Chhattisgarh Liquor Scam Case",
         "categorySlug": "crime-law",
         "categoryName": "Crime & Law",
-        "viralScore": 34,
+        "viralScore": 33,
         "intensityTier": "active"
       }
     },
@@ -767,6 +745,28 @@
         "slug": "argentine-senate-suspends-primary-elections",
         "canonicalPath": "/news/ar/argentine-senate-suspends-primary-elections/",
         "headline": "Argentine Senate Approves Bill To Suspend National Primary Elections",
+        "categorySlug": "politics-government",
+        "categoryName": "Politics & Government",
+        "viralScore": 31,
+        "intensityTier": "active"
+      }
+    },
+    {
+      "code": "PH",
+      "isoNumeric": "608",
+      "name": "Philippines",
+      "slug": "philippines",
+      "centroid": [
+        122,
+        12.5
+      ],
+      "viralScore": 32,
+      "intensityTier": "active",
+      "topicCount": 2,
+      "topTopic": {
+        "slug": "philippine-vice-president-sara-duterte-icc-case",
+        "canonicalPath": "/news/ph/philippine-vice-president-sara-duterte-icc-case/",
+        "headline": "Philippine Vice President Sara Duterte Criticizes ICC Legal Case",
         "categorySlug": "politics-government",
         "categoryName": "Politics & Government",
         "viralScore": 31,

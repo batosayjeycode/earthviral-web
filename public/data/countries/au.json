@@ -3,9 +3,9 @@
   "name": "Australia",
   "slug": "australia",
   "region": "Oceania",
-  "viralScore": 62,
+  "viralScore": 68,
   "intensityTier": "high",
-  "generatedAt": "2026-11-28T08:18:00Z",
+  "generatedAt": "2026-11-28T10:33:00Z",
   "clusters": [
     {
       "slug": "australian-wwe-wrestler-jermaine-haley-dies",
@@ -13,8 +13,8 @@
       "headline": "Australian WWE Wrestler Jermaine Haley Known As Bronson Reed Dies",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 59,
-      "intensityTier": "active",
+      "viralScore": 65,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Australian wrestler Jermaine Haley, performing under the name Bronson Reed, has died at the age of 38.",
         "Reports indicate that the performer passed away due to undisclosed medical complications."
@@ -25,12 +25,29 @@
       }
     },
     {
+      "slug": "victorian-state-election-campaign-launches",
+      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
+      "headline": "Victorian Voters Head To Polls As Labor Faces Potential Defeat",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Victorian voters are casting ballots today with polls suggesting a potential defeat for the incumbent Labor government.",
+        "The Coalition has pledged to fund election promises through measures including the privatisation of Melbourne's sewage treatment services."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+      }
+    },
+    {
       "slug": "ponga-leads-new-zealand-world-cup",
       "canonicalPath": "/news/au/ponga-leads-new-zealand-world-cup/",
       "headline": "Australia Women Win Fourth Rugby League World Cup Over New Zealand",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Australia defeated New Zealand to claim their fourth Women’s Rugby League World Cup title.",
@@ -42,37 +59,20 @@
       }
     },
     {
-      "slug": "sydney-swans-north-melbourne-aflw-preliminary-final",
-      "canonicalPath": "/news/au/sydney-swans-north-melbourne-aflw-preliminary-final/",
-      "headline": "North Melbourne Kangaroos Secure Historic Third AFLW Premiership",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The North Melbourne Kangaroos defeated the Melbourne Demons by 26 points at Ikon Park.",
-        "This victory marks a historic third consecutive AFLW premiership for the North Melbourne club."
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/sport/afl/roos-back-fit-again-star-for-swans-duel-in-aflw-finals-c-23193456"
-      }
-    },
-    {
-      "slug": "victorian-state-election-campaign-launches",
-      "canonicalPath": "/news/au/victorian-state-election-campaign-launches/",
-      "headline": "Victorian Voters Head To Polls As Labor Faces Potential Defeat",
+      "slug": "one-nation-immigration-policy-tasmania-poll",
+      "canonicalPath": "/news/au/one-nation-immigration-policy-tasmania-poll/",
+      "headline": "One Nation Policy Proposals And Tasmanian Political Donations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Victorian voters are casting ballots today with polls suggesting a potential defeat for the incumbent Labor government.",
-        "The Coalition has pledged to fund election promises through measures including the privatisation of Melbourne's sewage treatment services."
+        "One Nation proposed a 90% reduction in refugee intake and the elimination of the parent visa program.",
+        "The party received its largest political donations in Tasmania from a salmon farm owner and a lobbyist."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "Australian Parliament Passes Twenty Percent Gas Reservation Scheme",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 50,
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Australian federal government successfully passed a gas reservation policy requiring major exporters to keep 20% of their output for domestic use.",
@@ -93,20 +93,20 @@
       }
     },
     {
-      "slug": "former-officer-testifies-sydney-murder-trial",
-      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
-      "headline": "Former Officer Beau Lamarre-Condon Found Guilty Of Double Murder",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
+      "slug": "sydney-swans-north-melbourne-aflw-preliminary-final",
+      "canonicalPath": "/news/au/sydney-swans-north-melbourne-aflw-preliminary-final/",
+      "headline": "North Melbourne Kangaroos Secure Historic Third AFLW Premiership",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
       "viralScore": 47,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Beau Lamarre-Condon was found guilty of murdering a couple in Sydney.",
-        "Evidence presented during the trial included metadata and the purchase of a SIM card under a false name."
+        "The North Melbourne Kangaroos defeated the Melbourne Demons by 26 points at Ikon Park.",
+        "This victory marks a historic third consecutive AFLW premiership for the North Melbourne club."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/sport/afl/roos-back-fit-again-star-for-swans-duel-in-aflw-finals-c-23193456"
       }
     },
     {
@@ -127,12 +127,29 @@
       }
     },
     {
+      "slug": "man-charged-murder-fatal-home-invasion",
+      "canonicalPath": "/news/au/man-charged-murder-fatal-home-invasion/",
+      "headline": "Logan Man Charged With Wife's Murder In Fatal Slacks Creek Stabbing",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 46,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A 34-year-old man from Logan has been charged with murder following the death of his wife in Slacks Creek.",
+        "Police discovered Christine Moe at a residence with a single stab wound to her chest shortly before midnight on Saturday."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-15/suspected-fatal-stabbing-overnight-frankston/107387222"
+      }
+    },
+    {
       "slug": "australian-prime-minister-cop31-remarks",
       "canonicalPath": "/news/au/australian-prime-minister-cop31-remarks/",
       "headline": "Anthony Albanese and Chris Bowen Face Criticism Over COP31 Failure",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 46,
+      "viralScore": 45,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Anthony Albanese and Minister Chris Bowen are facing backlash regarding the outcome of the COP31 climate summit in Turkey.",
@@ -141,6 +158,23 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/more-important-than-heart-australian-pm-caught-making-genital-joke-with-climate-minister-at-cop31-watch/articleshow/135836793.cms"
+      }
+    },
+    {
+      "slug": "former-officer-testifies-sydney-murder-trial",
+      "canonicalPath": "/news/au/former-officer-testifies-sydney-murder-trial/",
+      "headline": "Former Officer Beau Lamarre-Condon Found Guilty Of Double Murder",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Beau Lamarre-Condon was found guilty of murdering a couple in Sydney.",
+        "Evidence presented during the trial included metadata and the purchase of a SIM card under a false name."
+      ],
+      "primarySource": {
+        "publisherName": "ABC",
+        "articleUrl": "https://www.abc.net.au/news/2026-11-13/beau-lamarre-condon-trial-live-blog-cross-examination-friday/107379430"
       }
     },
     {
@@ -195,46 +229,12 @@
       }
     },
     {
-      "slug": "jannik-sinner-misses-2027-australian-open",
-      "canonicalPath": "/news/au/jannik-sinner-misses-2027-australian-open/",
-      "headline": "Jannik Sinner Withdraws From Australian Open Following Knee Surgery",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 44,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Tennis player Jannik Sinner is withdrawing from the 2027 Australian Open due to a knee injury.",
-        "The two-time tournament champion recently underwent surgery to address the physical issue."
-      ],
-      "primarySource": {
-        "publisherName": "The Japan Times",
-        "articleUrl": "https://www.japantimes.co.jp/sports/2026/11/26/tennis/sinner-out-australian-open/"
-      }
-    },
-    {
-      "slug": "new-zealand-draws-against-india-cricket",
-      "canonicalPath": "/news/au/new-zealand-draws-against-india-cricket/",
-      "headline": "New Zealand Secures Draw Against India In First Test Cricket Match",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 43,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "New Zealand achieved a draw against India on the final day of the first Test match.",
-        "Strong batting performances from the New Zealand team prevented an Indian victory."
-      ],
-      "primarySource": {
-        "publisherName": "The West Australian",
-        "articleUrl": "https://thewest.com.au/sport/cricket/new-zealand-deny-india-to-secure-draw-in-first-test-c-23201766"
-      }
-    },
-    {
       "slug": "robert-crawford-convicted-of-murder",
       "canonicalPath": "/news/au/robert-crawford-convicted-of-murder/",
       "headline": "Former RAAF Pilot Robert Crawford Found Guilty Of Wife's Murder",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 43,
+      "viralScore": 41,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A jury in the Brisbane Supreme Court convicted former Royal Australian Air Force pilot Robert Crawford of murdering his wife.",
@@ -246,20 +246,20 @@
       }
     },
     {
-      "slug": "david-jones-redundancy-notices-issued",
-      "canonicalPath": "/news/au/david-jones-redundancy-notices-issued/",
-      "headline": "David Jones Issues Redundancy Notices To 1680 Staff Members",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 41,
+      "slug": "new-zealand-draws-against-india-cricket",
+      "canonicalPath": "/news/au/new-zealand-draws-against-india-cricket/",
+      "headline": "New Zealand Secures Draw Against India In First Test Cricket Match",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Retail department store David Jones has notified 1680 employees of impending job terminations.",
-        "The redundancies are scheduled to take effect before the conclusion of the calendar year."
+        "New Zealand achieved a draw against India on the final day of the first Test match.",
+        "Strong batting performances from the New Zealand team prevented an Indian victory."
       ],
       "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-20/david-jones-staff-issued-with-redundancy-notices/107411092"
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/sport/cricket/new-zealand-deny-india-to-secure-draw-in-first-test-c-23201766"
       }
     },
     {
@@ -268,7 +268,7 @@
       "headline": "Wallabies To Face Ireland In Final Nations Championship Test Match",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The Australian Wallabies are scheduled to compete against Ireland in their closing fixture of the 2026 Nations Championship.",
@@ -277,23 +277,6 @@
       "primarySource": {
         "publisherName": "The West Australian",
         "articleUrl": "https://thewest.com.au/sport/rugby-union/fiji-ring-changes-for-nations-championship-playoff-c-23214186"
-      }
-    },
-    {
-      "slug": "email-threat-to-territory-ministers-and-staff",
-      "canonicalPath": "/news/au/email-threat-to-territory-ministers-and-staff/",
-      "headline": "Northern Territory Police Find No Credible Threat After Bomb Scare",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 41,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Northern Territory Police engaged counter-terrorism officers following a threatening email sent to government ministers and staff.",
-        "The Police Commissioner stated that a thorough investigation has determined there is no credible or imminent threat."
-      ],
-      "primarySource": {
-        "publisherName": "ABC",
-        "articleUrl": "https://www.abc.net.au/news/2026-11-26/nt-government-threat-darwin-minister-and-public-areas/107429190"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "ABC",
         "articleUrl": "https://www.abc.net.au/news/2026-11-23/red-imported-fire-ants-found-western-sydney/107415336"
+      }
+    },
+    {
+      "slug": "jim-chalmers-warns-of-economic-hardship",
+      "canonicalPath": "/news/au/jim-chalmers-warns-of-economic-hardship/",
+      "headline": "Jim Chalmers Faces Pressure As Australian Inflation Hits 4.9 Percent",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 39,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Inflation in Australia has risen to a three-year high of 4.9 percent.",
+        "Treasurer Jim Chalmers has rejected claims that government budget policies are the cause of current inflationary pressure."
+      ],
+      "primarySource": {
+        "publisherName": "The West Australian",
+        "articleUrl": "https://thewest.com.au/news/anthony-albanese-says-little-amount-of-cost-of-living-relief-on-the-way-in-mid-year-budget-c-23200283"
       }
     }
   ]

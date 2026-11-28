@@ -3,10 +3,27 @@
   "name": "Russia",
   "slug": "russia",
   "region": "Europe",
-  "viralScore": 57,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-28T08:18:00Z",
+  "viralScore": 75,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-28T10:33:00Z",
   "clusters": [
+    {
+      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
+      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
+      "headline": "Indonesian Authorities Stop 39 Citizens Recruited For Russia Army",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 72,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Indonesian immigration officials prevented 39 citizens from traveling to Russia over suspicions they were trafficking victims recruited as soldiers.",
+        "The intervention follows reports of an Indonesian man from Kebumen who allegedly died after being recruited as a mercenary for the Russian military."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5867743/polda-jabar-tangani-warga-cimahi-diduga-direkrut-jadi-tentara-rusia"
+      }
+    },
     {
       "slug": "estonia-to-close-russia-border-crossings",
       "canonicalPath": "/news/ru/estonia-to-close-russia-border-crossings/",
@@ -30,7 +47,7 @@
       "headline": "Trump And NATO Chief Urge Russia To De-escalate Ukraine Conflict",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 51,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "President Donald Trump and NATO chief Mark Rutte met in Florida to request that Russia refrain from further escalating the Ukraine war.",
@@ -39,23 +56,6 @@
       "primarySource": {
         "publisherName": "Al Jazeera",
         "articleUrl": "https://www.aljazeera.com/news/2026/11/16/nato-will-collapse-russia-stalls-ukraine-talks-seeks-to-divide-europe?traffic_source=rss"
-      }
-    },
-    {
-      "slug": "indonesian-citizens-recruited-as-russian-soldiers",
-      "canonicalPath": "/news/ru/indonesian-citizens-recruited-as-russian-soldiers/",
-      "headline": "Indonesian Authorities Block Citizens Recruited As Russian Soldiers",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Ministry of Immigration and Correctional Affairs and the national police have stopped 21 Indonesian citizens from attempting to join Russian forces.",
-        "Authorities in Depok and Ngurah Rai have rejected passport applications and departures linked to recruitment schemes targeting potential mercenaries."
-      ],
-      "primarySource": {
-        "publisherName": "Detik",
-        "articleUrl": "https://news.detik.com/foto-news/d-8761824/polres-bogor-ungkap-tppo-perekrutan-tentara-bayaran-untuk-rusia"
       }
     },
     {
@@ -81,7 +81,7 @@
       "headline": "Russia Prepares Nuclear Satellite Launch As Missiles Hit Poland",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 45,
+      "viralScore": 43,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Russia is reportedly preparing to launch a satellite equipped with nuclear weaponry into orbit.",
@@ -90,23 +90,6 @@
       "primarySource": {
         "publisherName": "CNBC Indonesia",
         "articleUrl": "https://www.cnbcindonesia.com/news/20261124073026-4-787824/3-rudal-rusia-jatuh-di-wilayah-anggotanya-nato-manuver-waspada-perang"
-      }
-    },
-    {
-      "slug": "north-korea-russia-economic-cooperation-meeting",
-      "canonicalPath": "/news/ru/north-korea-russia-economic-cooperation-meeting/",
-      "headline": "North Korea And Russia Conduct Economic Cooperation Negotiations",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 40,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Officials from North Korea and Russia convened in Pyongyang for the 13th bilateral economic cooperation committee meeting.",
-        "The summit focused on the intergovernmental committee for cooperation in trade, economy, science, and technology."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261128000500315"
       }
     },
     {
@@ -127,20 +110,20 @@
       }
     },
     {
-      "slug": "south-korea-protests-russian-air-incursion",
-      "canonicalPath": "/news/ru/south-korea-protests-russian-air-incursion/",
-      "headline": "South Korea Expresses Regret Over Russian Warplanes In Air Zone",
+      "slug": "north-korea-russia-economic-cooperation-meeting",
+      "canonicalPath": "/news/ru/north-korea-russia-economic-cooperation-meeting/",
+      "headline": "North Korea And Russia Conduct Economic Cooperation Negotiations",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 30,
+      "viralScore": 37,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "South Korea's foreign ministry officially expressed regret regarding the recent flight activity of Russian military aircraft.",
-        "Five Russian warplanes were detected entering the Korea Air Defense Identification Zone over the East Sea."
+        "Officials from North Korea and Russia convened in Pyongyang for the 13th bilateral economic cooperation committee meeting.",
+        "The summit focused on the intergovernmental committee for cooperation in trade, economy, science, and technology."
       ],
       "primarySource": {
         "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261124006800315"
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261128000500315"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/video/20261117-deutsche-bank-shares-drop-after-reports-exposing-epstein-payments-russia-dealings"
+      }
+    },
+    {
+      "slug": "south-korea-scrambles-jets-russian-incursion",
+      "canonicalPath": "/news/ru/south-korea-scrambles-jets-russian-incursion/",
+      "headline": "Russian Military Transport Plane Crashes In The Kemerovo Region",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 38,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "An Antonov An-12 military transport aircraft crashed in the Yagunovo settlement of the Kemerovo region.",
+        "Reports from local authorities and media provide conflicting fatality counts ranging from 17 to 19 people."
+      ],
+      "primarySource": {
+        "publisherName": "Detik",
+        "articleUrl": "https://news.detik.com/internasional/d-8756114/pesawat-militer-rusia-masuk-zona-pertahanan-udara-korsel-kerahkan-jet-tempur"
       }
     }
   ]
