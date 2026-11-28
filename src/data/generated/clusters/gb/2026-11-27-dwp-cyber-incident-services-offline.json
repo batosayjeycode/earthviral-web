@@ -6,28 +6,28 @@
   "countryName": "United Kingdom",
   "countrySlug": "united-kingdom",
   "region": "Europe",
-  "categorySlug": "politics-government",
-  "categoryName": "Politics & Government",
-  "headline": "UK Department For Work And Pensions Offline After Cyber Incident",
-  "seoTitle": "DWP Cyber Incident and Benefits Systems Offline",
-  "metaDescription": "The UK Department for Work and Pensions has suspended online benefit and pension services following a cyber incident, though payments continue as normal.",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "UK Government Works To Restore DWP Services After Cyber Incident",
+  "seoTitle": "UK Department For Work And Pensions Cyber Incident",
+  "metaDescription": "The UK government is working to restore services after a cyber incident forced the Department for Work and Pensions to take its online systems offline.",
   "aiSummaryBullets": [
-    "The Department for Work and Pensions deactivated online portals for benefits and pensions following a serious cyber security incident.",
-    "Government officials confirmed that despite the service outage, regular benefit and pension payments are currently continuing to be processed.",
-    "The National Cyber Security Centre is currently investigating the incident with no evidence found that personal user data has been compromised."
+    "The Department for Work and Pensions took key services offline following a serious cyber incident affecting benefits and pension systems.",
+    "Government officials stated there is currently no evidence that personal data has been compromised in the event.",
+    "Authorities are working to restore digital services while noting no signs of malicious activity targeting other government departments."
   ],
-  "aiContextParagraph": "On November 27, 2026, the United Kingdom's Department for Work and Pensions (DWP) experienced a significant cyber incident that forced the temporary suspension of various online services. Affected systems include those used for processing Universal Credit, Personal Independence Payment (PIP), and state pensions. Government ministers and the National Cyber Security Centre (NCSC) have initiated an investigation into the nature of the disruption. While online account access and new application processing faced interruptions as a precautionary security measure, authorities have stated there is currently no evidence that sensitive personal data has been accessed or compromised. Official reports indicate that regular payments to claimants are proceeding as scheduled despite the technical downtime. Government departments are currently monitoring the situation to determine if other areas of public infrastructure were targeted, though no evidence of broader impact has been identified at this time.",
-  "whyItIsViral": "This story is trending due to coverage by eight independent news outlets and a very high velocity of reporting across national and international media.",
-  "viralScore": 92,
+  "aiContextParagraph": "The United Kingdom's Department for Work and Pensions (DWP) experienced a significant disruption to its online systems, leading to the temporary shutdown of websites and portals used for managing benefits and pensions. Following the incident, government officials confirmed that efforts to restore full functionality are underway. A former UK technology leader suggested the incident was likely the result of an external attack, though official investigations are ongoing. Despite the widespread loss of access for millions of users, the pensions minister indicated that there is no current evidence of data theft. The government also reported that there have been no indicators suggesting the incident expanded to compromise other sectors of the UK state apparatus. Payments to citizens remain a priority as technical teams work to stabilize the affected network infrastructure during this period of service outage.",
+  "whyItIsViral": "The incident is highly viral due to the significant impact on millions of citizens, with coverage spanning eight independent outlets and rapid reporting velocity.",
+  "viralScore": 88,
   "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 8,
-    "coverageVelocityScore": 87,
+    "coverageVelocityScore": 79,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-27T09:57:10Z",
-  "lastUpdatedBatchAt": "2026-11-27T20:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-28T00:34:00Z",
   "sources": [
     {
       "publisherName": "Evening Standard",
@@ -133,6 +133,20 @@
       "articleTitle": "Millions lose access to benefits and pensions services after 'cyber incident'",
       "articleUrl": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o",
       "publishedAt": "2026-11-27T19:15:30Z"
+    },
+    {
+      "publisherName": "The Independent",
+      "publisherDomain": "independent.co.uk",
+      "articleTitle": "DWP cyber incident ‘probably an attack’, former UK technology chief says",
+      "articleUrl": "https://www.independent.co.uk/news/uk/politics/dwp-department-for-work-and-pensions-government-b3093049.html",
+      "publishedAt": "2026-11-27T22:20:11Z"
+    },
+    {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "DWP cyber incident ‘probably an attack’, former UK technology chief says",
+      "articleUrl": "https://www.standard.co.uk/news/tech/department-for-work-and-pensions-government-downing-street-b1306768.html",
+      "publishedAt": "2026-11-27T22:20:11Z"
     }
   ],
   "entityTags": [
@@ -141,22 +155,22 @@
       "slug": "department-for-work-and-pensions"
     },
     {
-      "name": "National Cyber Security Centre",
-      "slug": "national-cyber-security-centre"
-    },
-    {
       "name": "Cybersecurity",
       "slug": "cybersecurity"
+    },
+    {
+      "name": "UK Government",
+      "slug": "uk-government"
     }
   ],
   "relatedInCountrySlugs": [
-    "uk-services-hit-microsoft-outage",
+    "uk-and-eu-negotiations-reset",
     "uk-government-thwarts-cyber-fridge-attack",
-    "nhs-cancer-targets-and-health-update"
+    "uk-eu-youth-mobility-trade-deals"
   ],
   "relatedInCategorySlugs": [
-    "rubio-denies-coordinated-cyberattack-us-outages",
-    "nsa-classified-network-goes-offline",
-    "nsa-internal-network-communication-disruption"
+    "hackers-breach-us-air-force-cloud-one",
+    "singapore-systems-impacted-by-microsoft-outage",
+    "sap-reports-recent-security-incident"
   ]
 }

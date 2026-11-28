@@ -3,17 +3,34 @@
   "name": "Spain",
   "slug": "spain",
   "region": "Europe",
-  "viralScore": 84,
+  "viralScore": 82,
   "intensityTier": "high",
-  "generatedAt": "2026-11-27T20:18:00Z",
+  "generatedAt": "2026-11-28T00:34:00Z",
   "clusters": [
+    {
+      "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
+      "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
+      "headline": "Eight Migrants Found Dead Off Coast Of Spain's Canary Islands",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 79,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Eight migrants were confirmed dead following the discovery of a boat off the coast of the Canary Islands.",
+        "Six individuals in serious condition were transported to medical facilities by Spanish rescue services."
+      ],
+      "primarySource": {
+        "publisherName": "Al Jazeera",
+        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee-influx?traffic_source=rss"
+      }
+    },
     {
       "slug": "leftwing-coalition-leader-calls-for-rental-revolution-as-spain",
       "canonicalPath": "/news/es/leftwing-coalition-leader-calls-for-rental-revolution-as-spain/",
       "headline": "Pedro Sanchez Makes Final Bid To Retain Power In Spanish Election",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 81,
+      "viralScore": 75,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Prime Minister Pedro Sanchez is campaigning for a fresh electoral mandate ahead of Sunday's national vote.",
@@ -30,7 +47,7 @@
       "headline": "Real Madrid Levels Points With Barcelona After Celta Vigo Victory",
       "categorySlug": "sports",
       "categoryName": "Sports",
-      "viralScore": 64,
+      "viralScore": 71,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Real Madrid secured a victory against Celta Vigo at the Santiago Bernabeu stadium.",
@@ -47,8 +64,8 @@
       "headline": "Spain Faces Snap General Election Amid Ongoing Housing Crisis Debate",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 64,
-      "intensityTier": "high",
+      "viralScore": 59,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Pedro Sánchez faces a snap election after eight years of leadership as his government prepares for a challenge from the opposition.",
         "The opposition People's Party and the VOX party have formed an alliance as the main threat to the current Socialist-led administration's tenure."
@@ -56,23 +73,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/spain-housing-crisis-prompts-general-strike/a-79915208?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "canary-islands-el-hierro-declares-emergency-amid-migrant-refugee",
-      "canonicalPath": "/news/es/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee/",
-      "headline": "Canary Islands Report Significant Surge In Migrant Boat Arrivals",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 62,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Approximately 2,200 migrants arrived at the Canary Islands over a 48-hour period, with nearly 1,600 landing in a single day.",
-        "The individuals arriving are reported to be primarily from Senegal, Gambia, and Guinea."
-      ],
-      "primarySource": {
-        "publisherName": "Al Jazeera",
-        "articleUrl": "https://www.aljazeera.com/news/2026/11/8/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee-influx?traffic_source=rss"
       }
     },
     {
@@ -93,20 +93,20 @@
       }
     },
     {
-      "slug": "exiled-catalan-separatist-puigdemont-to-return-to-spain-after",
-      "canonicalPath": "/news/es/exiled-catalan-separatist-puigdemont-to-return-to-spain-after/",
-      "headline": "Catalan Separatist Leader Carles Puigdemont To Return To Spain Soon",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
+      "slug": "real-madrid-barcelona-player-contract-extensions",
+      "canonicalPath": "/news/es/real-madrid-barcelona-player-contract-extensions/",
+      "headline": "Real Madrid Extends Thibaut Courtois and Barcelona Signs Xavi Espart",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Carles Puigdemont announced his scheduled return to Spain for December 12.",
-        "The Spanish Supreme Court has officially closed the legal proceedings against the former Catalan regional leader."
+        "Thibaut Courtois has committed to Real Madrid under a new contract that keeps him with the club until June 30, 2028.",
+        "Barcelona confirmed a contract extension for youth academy product Xavi Espart, extending his tenure until 2030."
       ],
       "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/spain-catalan-separatist-puigdemont-sets-date-for-return/a-80045846?maca=en-rss-en-all-1573-xml-mrss"
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5868819/barcelona-perpanjang-kontrak-xavi-espart-sampai-2030"
       }
     },
     {
@@ -149,7 +149,7 @@
       "headline": "Spain Heads To Snap Election Amid Political And Economic Tensions",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 33,
+      "viralScore": 32,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Prime Minister Pedro Sanchez initiated a snap general election after facing a significant legislative setback concerning national housing policy.",
@@ -212,6 +212,23 @@
       }
     },
     {
+      "slug": "exiled-catalan-separatist-puigdemont-to-return-to-spain-after",
+      "canonicalPath": "/news/es/exiled-catalan-separatist-puigdemont-to-return-to-spain-after/",
+      "headline": "Catalan Separatist Leader Carles Puigdemont To Return To Spain Soon",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Carles Puigdemont announced his scheduled return to Spain for December 12.",
+        "The Spanish Supreme Court has officially closed the legal proceedings against the former Catalan regional leader."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/spain-catalan-separatist-puigdemont-sets-date-for-return/a-80045846?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
+    {
       "slug": "real-madrid-extends-arda-guler-contract",
       "canonicalPath": "/news/es/real-madrid-extends-arda-guler-contract/",
       "headline": "Real Madrid Extends Midfielder Arda Guler Contract Until 2032",
@@ -226,23 +243,6 @@
       "primarySource": {
         "publisherName": "Antara",
         "articleUrl": "https://www.antaranews.com/berita/5863943/real-madrid-amankan-masa-depan-arda-guler-hingga-2032"
-      }
-    },
-    {
-      "slug": "real-madrid-barcelona-player-contract-extensions",
-      "canonicalPath": "/news/es/real-madrid-barcelona-player-contract-extensions/",
-      "headline": "Real Madrid Extends Thibaut Courtois and Barcelona Signs Xavi Espart",
-      "categorySlug": "sports",
-      "categoryName": "Sports",
-      "viralScore": 38,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Thibaut Courtois has committed to Real Madrid under a new contract that keeps him with the club until June 30, 2028.",
-        "Barcelona confirmed a contract extension for youth academy product Xavi Espart, extending his tenure until 2030."
-      ],
-      "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5868819/barcelona-perpanjang-kontrak-xavi-espart-sampai-2030"
       }
     },
     {
@@ -299,14 +299,14 @@
     {
       "slug": "endrick-sofre-lesao-na-coxa-direita-e-desfalca-o",
       "canonicalPath": "/news/es/endrick-sofre-lesao-na-coxa-direita-e-desfalca-o/",
-      "headline": "Endrick sofre lesão na coxa direita e desfalca o Real Madrid",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
+      "headline": "Real Madrid Striker Endrick Ruled Out Following Right Thigh Injury",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "CNN Brasil reports: Endrick sofre lesão na coxa direita e desfalca o Real Madrid",
-        "CNA reports: Real Madrid striker Endrick ruled out with thigh injury"
+        "Forward Endrick has been diagnosed with an injury to his right thigh.",
+        "The player is confirmed to be unavailable for Real Madrid appearances."
       ],
       "primarySource": {
         "publisherName": "CNA",
@@ -316,13 +316,14 @@
     {
       "slug": "lamine-yamal-sente-lesao-no-tornozelo-e-desfalca-barcelona",
       "canonicalPath": "/news/es/lamine-yamal-sente-lesao-no-tornozelo-e-desfalca-barcelona/",
-      "headline": "Lamine Yamal sente lesão no tornozelo e desfalca Barcelona na Champions",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
+      "headline": "Barcelona Calls Up Belgian Teenager To Replace Injured Lamine Yamal",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "CNN Brasil reports: Lamine Yamal sente lesão no tornozelo e desfalca Barcelona na Champions"
+        "Lamine Yamal is unavailable for Champions League play due to an ankle injury.",
+        "Barcelona has promoted an 18-year-old Belgian player to the squad as a replacement."
       ],
       "primarySource": {
         "publisherName": "CNN Brasil",

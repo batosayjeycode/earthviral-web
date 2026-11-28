@@ -6,28 +6,28 @@
   "countryName": "United States",
   "countrySlug": "united-states",
   "region": "North America",
-  "categorySlug": "crime-law",
-  "categoryName": "Crime & Law",
-  "headline": "US Jury Convicts Huawei Of Stealing Trade Secrets In Sanctions Case",
+  "categorySlug": "technology-ai",
+  "categoryName": "Technology & AI",
+  "headline": "OpenAI Countersues Apple Alleging Theft Of Its Trade Secrets",
   "seoTitle": "US Jury Convicts Huawei Of Stealing Trade Secrets",
-  "metaDescription": "A New York jury found Huawei guilty of stealing trade secrets and violating sanctions, though the company was acquitted of separate racketeering charges.",
+  "metaDescription": "OpenAI has filed a countersuit against Apple in a California federal court, alleging that the company stole trade secrets and pressured hardware suppliers.",
   "aiSummaryBullets": [
-    "A New York jury convicted Huawei on charges involving the theft of trade secrets.",
-    "The telecommunications company was found guilty of violating various sanctions.",
-    "The jury acquitted the corporation of separate allegations related to racketeering."
+    "OpenAI filed a lawsuit against Apple in a northern California federal court on Friday.",
+    "The legal action accuses Apple of misappropriating trade secrets and influencing hardware suppliers.",
+    "This countersuit follows a previous legal action brought by Apple against OpenAI regarding employee poaching."
   ],
-  "aiContextParagraph": "A federal jury in New York has reached a verdict in a long-standing legal battle involving Huawei, the major Chinese telecommunications corporation. The court found the company guilty of stealing trade secrets and violating international sanctions. However, the legal proceedings concluded with an acquittal on charges of racketeering. These developments are part of a broader history of regulatory and legal challenges faced by the company on the global stage, as governments and judicial bodies in several nations have scrutinized its business practices. The verdict arrives amid ongoing tensions between international technology firms and regulatory authorities regarding intellectual property protections and trade compliance. Huawei has faced mounting pressure over the past several years, with this latest conviction representing a significant milestone in its ongoing legal complications within the United States judicial system.",
-  "whyItIsViral": "The story is being tracked by four independent news outlets, indicating notable interest in the legal developments surrounding the technology giant.",
-  "viralScore": 44,
-  "intensityTier": "active",
+  "aiContextParagraph": "The legal conflict between OpenAI and Apple escalated this week as OpenAI filed a countersuit in federal court located in northern California. In its filing, OpenAI alleges that Apple engaged in the unauthorized use of its trade secrets. Furthermore, the suit claims that Apple has actively discouraged hardware suppliers from collaborating on upcoming OpenAI product initiatives. This legal move comes as a response to earlier litigation initiated by Apple, in which the technology giant accused OpenAI of poaching its personnel to gain competitive advantages. The situation reflects ongoing industry tensions concerning intellectual property rights, the movement of human capital, and supply chain control between the two major technology firms. While the current focus is on these new accusations, both companies remain in the public eye due to their significant roles in artificial intelligence and personal consumer electronics.",
+  "whyItIsViral": "The conflict is being tracked by six independent news outlets, reflecting high media interest in the legal battle between these two prominent technology firms.",
+  "viralScore": 70,
+  "intensityTier": "high",
   "signalBreakdown": {
-    "verifiedPublisherCount": 4,
-    "coverageVelocityScore": 0,
+    "verifiedPublisherCount": 6,
+    "coverageVelocityScore": 45,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-24T23:31:22Z",
-  "lastUpdatedBatchAt": "2026-11-25T15:43:00Z",
+  "lastUpdatedBatchAt": "2026-11-28T00:34:00Z",
   "sources": [
     {
       "publisherName": "France 24",
@@ -56,34 +56,48 @@
       "articleTitle": "US court convicts Huawei of theft: A history of Chinese firm’s global woes",
       "articleUrl": "https://www.aljazeera.com/news/2026/11/25/us-court-convicts-huawei-of-theft-a-history-of-chinese-firms-global-woes?traffic_source=rss",
       "publishedAt": "2026-11-25T13:37:51Z"
+    },
+    {
+      "publisherName": "CBS News",
+      "publisherDomain": "cbsnews.com",
+      "articleTitle": "OpenAI countersues Apple over allegations of stealing trade secrets",
+      "articleUrl": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/",
+      "publishedAt": "2026-11-27T22:14:43Z"
+    },
+    {
+      "publisherName": "The Guardian",
+      "publisherDomain": "theguardian.com",
+      "articleTitle": "OpenAI countersues Apple for allegedly stealing trade secrets",
+      "articleUrl": "https://www.theguardian.com/technology/2026/nov/27/openai-countersues-apple-trade-secrets",
+      "publishedAt": "2026-11-27T23:28:50Z"
     }
   ],
   "entityTags": [
     {
-      "name": "Huawei",
-      "slug": "huawei"
+      "name": "OpenAI",
+      "slug": "openai"
     },
     {
-      "name": "New York",
-      "slug": "new-york"
+      "name": "Apple",
+      "slug": "apple"
     },
     {
-      "name": "Trade Secrets",
-      "slug": "trade-secrets"
+      "name": "California",
+      "slug": "california"
     },
     {
-      "name": "Sanctions",
-      "slug": "sanctions"
+      "name": "Intellectual property",
+      "slug": "intellectual-property"
     }
   ],
   "relatedInCountrySlugs": [
-    "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
-    "thomas-markle-arrested-florida-abuse-charges",
-    "lutnick-faces-pressure-nvidia-spy-scandal"
+    "king-tides-cause-monster-waves-flooding-on-california-coastline",
+    "california-voters-reject-proposed-one-time-tax-on-billionaires",
+    "new-york-citys-macys-thanksgiving-day-parade-postponed-due"
   ],
   "relatedInCategorySlugs": [
-    "chinas-huawei-convicted-in-sprawling-us-criminal-trial",
-    "bareskrim-polri-questions-budi-arie-treason",
-    "student-silva-nur-intania-putri-dies-malang"
+    "australia-to-adopt-mandatory-ai-safeguards",
+    "apple-faces-legal-trial-in-france",
+    "dwp-cyber-incident-services-offline"
   ]
 }

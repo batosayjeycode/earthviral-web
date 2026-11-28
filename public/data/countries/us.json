@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 94,
+  "viralScore": 88,
   "intensityTier": "surge",
-  "generatedAt": "2026-11-27T20:18:00Z",
+  "generatedAt": "2026-11-28T00:34:00Z",
   "clusters": [
     {
       "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
@@ -13,15 +13,66 @@
       "headline": "Post-Storm Power Restoration Continues Following Macy's Parade Delay",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 91,
+      "viralScore": 85,
       "intensityTier": "surge",
       "aiSummaryBullets": [
         "Nearly half a million homes and businesses remain without electricity following a powerful storm across the U.S. East Coast.",
         "The Macy's Thanksgiving Day Parade in New York City was postponed due to inclement weather conditions during the holiday."
       ],
       "primarySource": {
-        "publisherName": "BBC",
-        "articleUrl": "https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo"
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/storm-hits-new-york-macys-100th-thanksgiving-parade-postponed-for-first-time/articleshow/136177443.cms"
+      }
+    },
+    {
+      "slug": "hackers-breach-us-air-force-cloud-one",
+      "canonicalPath": "/news/us/hackers-breach-us-air-force-cloud-one/",
+      "headline": "Hackers Reportedly Breach US Air Force Cloud One Computing Platform",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 77,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Air Force's primary cloud computing platform, known as Cloud One, has reportedly been compromised by hackers.",
+        "Operations at the flagship platform have faced reported disruptions following the unauthorized access."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/hackers-breach-us-air-forces-flagship-cloud-platform-disrupting-operations/articleshow/136220848.cms"
+      }
+    },
+    {
+      "slug": "us-jury-convicts-huawei-of-violating-sanctions-stealing-trade",
+      "canonicalPath": "/news/us/us-jury-convicts-huawei-of-violating-sanctions-stealing-trade/",
+      "headline": "OpenAI Countersues Apple Alleging Theft Of Its Trade Secrets",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "OpenAI filed a lawsuit against Apple in a northern California federal court on Friday.",
+        "The legal action accuses Apple of misappropriating trade secrets and influencing hardware suppliers."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets"
+      }
+    },
+    {
+      "slug": "us-disables-ship-iran-blockade",
+      "canonicalPath": "/news/us/us-disables-ship-iran-blockade/",
+      "headline": "US Military Disables Palau-Flagged Vessel Defying Iran Blockade",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 70,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "US forces disabled a commercial ship by striking its propulsion system after it left an Iranian port.",
+        "Central Command stated the Palau-flagged vessel ignored multiple warnings before military aircraft used precision munitions."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/live-updates/iran-war-trump-us-threats-diplomacy-strait-of-hormuz/"
       }
     },
     {
@@ -30,7 +81,7 @@
       "headline": "Nor'easter Causes Power Outages and Disrupts Travel Across the US",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 74,
+      "viralScore": 69,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Nearly one million homes across the United States remain without power following severe weather conditions.",
@@ -42,12 +93,63 @@
       }
     },
     {
+      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
+      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
+      "headline": "International Perspectives Follow Republican Losses In US Midterms",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
+        "Former President Donald Trump described the electoral outcome as a regression in history and indicated a potential shift further toward the political right."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
+      }
+    },
+    {
+      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
+      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
+      "headline": "US Commerce Department Adds Megaspeed To Trade Blacklist After Scandal",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "The US Department of Commerce added the AI firm Megaspeed to its trade blacklist via a filing made on Monday.",
+        "Megaspeed was founded by a suspect identified as Alice Huang, who is currently under scrutiny for alleged involvement in a spy scandal."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
+      }
+    },
+    {
+      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
+      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
+      "headline": "White House Names New Cyber Chief Following Series Of Tech Outages",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 66,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Kirsten Davies has been appointed as the new US cybersecurity lead following the removal of her predecessor, Sean Cairncross.",
+        "US intelligence officials indicated that further technical service disruptions may occur as infrastructure systems undergo scheduled upgrades."
+      ],
+      "primarySource": {
+        "publisherName": "CBS News",
+        "articleUrl": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/"
+      }
+    },
+    {
       "slug": "us-china-russia-trilateral-meeting",
       "canonicalPath": "/news/us/us-china-russia-trilateral-meeting/",
       "headline": "Trump Addresses Global Issues After Summit With Xi And Vladimir Putin",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 64,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "President Trump held a press conference following his trilateral summit with Chinese President Xi Jinping and Russian President Vladimir Putin.",
@@ -59,29 +161,12 @@
       }
     },
     {
-      "slug": "hackers-breach-us-air-force-cloud-one",
-      "canonicalPath": "/news/us/hackers-breach-us-air-force-cloud-one/",
-      "headline": "Hackers Reportedly Breach US Air Force Cloud One Computing Platform",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 70,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "The US Air Force's Cloud One computing platform recently suffered a significant security breach by hackers.",
-        "The unauthorized access was identified during system upgrades conducted within the last month."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/hackers-breach-us-air-forces-flagship-cloud-platform-disrupting-operations/articleshow/136220848.cms"
-      }
-    },
-    {
       "slug": "nvidia-ceo-jensen-huang-security-investigation",
       "canonicalPath": "/news/us/nvidia-ceo-jensen-huang-security-investigation/",
       "headline": "Jensen Huang Resumes Nvidia CEO Role Amid Ongoing Federal Scrutiny",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 68,
+      "viralScore": 62,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Jensen Huang has officially resumed his position as Nvidia's Chief Executive Officer.",
@@ -98,7 +183,7 @@
       "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 67,
+      "viralScore": 61,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
@@ -110,20 +195,20 @@
       }
     },
     {
-      "slug": "supreme-court-allows-texas-border-wall",
-      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
-      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "slug": "plane-crash-off-mississippi-coast",
+      "canonicalPath": "/news/us/plane-crash-off-mississippi-coast/",
+      "headline": "Six People Die After Cessna 210 Crashes Off Mississippi Coast",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 59,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
-        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+        "A Cessna 210 aircraft crashed into the Gulf of Mexico near Mississippi.",
+        "The US Coast Guard confirmed that all six individuals on board were killed."
       ],
       "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/24/mississippi-plane-crash"
       }
     },
     {
@@ -132,7 +217,7 @@
       "headline": "ICE Agents Face Backlash Following Seattle Airport Arrest Incident",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Washington state officials characterized ICE conduct during airport arrests as out of control.",
@@ -149,7 +234,7 @@
       "headline": "US Army Prepares To Detonate Lead Azide Stockpile At Iowa Plant",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "The US Army plans to destroy the nation's total supply of degrading lead azide at a munitions facility in Iowa on Wednesday.",
@@ -158,108 +243,6 @@
       "primarySource": {
         "publisherName": "Times of India",
         "articleUrl": "https://timesofindia.indiatimes.com/world/us/iowa-residents-told-to-take-shelter-as-us-army-prepares-to-detonate-5-tonnes-of-explosives-toxic-dust-feared/articleshow/136158928.cms"
-      }
-    },
-    {
-      "slug": "democrats-swept-the-midterms-what-comes-next-for-the",
-      "canonicalPath": "/news/us/democrats-swept-the-midterms-what-comes-next-for-the/",
-      "headline": "Democrats Secure Historic House Majority Following Midterm Wins",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Democrats attained their largest House of Representatives majority since 1992, securing 258 seats.",
-        "Following the election results, party leadership has begun outlining plans for the 2028 presidential primary cycle."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump"
-      }
-    },
-    {
-      "slug": "did-a-data-centre-revolt-affect-the-us-midterm",
-      "canonicalPath": "/news/us/did-a-data-centre-revolt-affect-the-us-midterm/",
-      "headline": "International Perspectives Follow Republican Losses In US Midterms",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Republican Party experienced a defeat in the recent midterm elections, which some observers interpreted as a public demand for significant political change.",
-        "Former President Donald Trump described the electoral outcome as a regression in history and indicated a potential shift further toward the political right."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261105005352315"
-      }
-    },
-    {
-      "slug": "thomas-markle-arrested-florida-abuse-charges",
-      "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
-      "headline": "California Grand Jury Indicts Thomas Markle On Pornography Charges",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A California grand jury has officially indicted Thomas Markle on two counts of possessing child sexual abuse material.",
-        "The indictment follows a previous arrest regarding the discovery of illicit imagery in his possession."
-      ],
-      "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
-      }
-    },
-    {
-      "slug": "lutnick-faces-pressure-nvidia-spy-scandal",
-      "canonicalPath": "/news/us/lutnick-faces-pressure-nvidia-spy-scandal/",
-      "headline": "US Commerce Department Adds Megaspeed To Trade Blacklist After Scandal",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The US Department of Commerce added the AI firm Megaspeed to its trade blacklist via a filing made on Monday.",
-        "Megaspeed was founded by a suspect identified as Alice Huang, who is currently under scrutiny for alleged involvement in a spy scandal."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/lot-of-leakage-in-chip-export-system-treasury-secy-bessent-slams-nvidia-trump-aide-lutnick-over-spy-row/articleshow/135805176.cms"
-      }
-    },
-    {
-      "slug": "us-nationwide-flight-ground-stop",
-      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
-      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
-        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
-      ],
-      "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
-      }
-    },
-    {
-      "slug": "rubio-denies-coordinated-cyberattack-us-outages",
-      "canonicalPath": "/news/us/rubio-denies-coordinated-cyberattack-us-outages/",
-      "headline": "White House Names New Cyber Chief Following Series Of Tech Outages",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 55,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Kirsten Davies has been appointed as the new US cybersecurity lead following the removal of her predecessor, Sean Cairncross.",
-        "US intelligence officials indicated that further technical service disruptions may occur as infrastructure systems undergo scheduled upgrades."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/"
       }
     },
     {
@@ -280,12 +263,46 @@
       }
     },
     {
+      "slug": "supreme-court-allows-texas-border-wall",
+      "canonicalPath": "/news/us/supreme-court-allows-texas-border-wall/",
+      "headline": "Supreme Court Permits Border Wall Construction In Big Bend Region",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The US Supreme Court approved the continuation of border wall construction within the Big Bend region of Texas.",
+        "The decision grants the Trump administration's request for emergency relief to proceed during ongoing litigation."
+      ],
+      "primarySource": {
+        "publisherName": "NPR",
+        "articleUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump"
+      }
+    },
+    {
+      "slug": "us-nationwide-flight-ground-stop",
+      "canonicalPath": "/news/us/us-nationwide-flight-ground-stop/",
+      "headline": "Aviation Sector Facing Financial Fallout From Major US Flight Halt",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 54,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A total of over 18,500 flights were canceled due to a massive disruption within the Federal Aviation Administration air traffic control systems.",
+        "Airlines are estimated to face approximately 345 million dollars in financial losses following the widespread telecommunications malfunction."
+      ],
+      "primarySource": {
+        "publisherName": "Times of India",
+        "articleUrl": "https://timesofindia.indiatimes.com/business/international-business/extraordinary-circumstances-us-grounds-all-departing-flights-over-safety-concerns/articleshow/135816386.cms"
+      }
+    },
+    {
       "slug": "kennedy-family-opposes-trump-arch-plan",
       "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
       "headline": "Second Judge Blocks Construction Of Planned Trump Memorial Arch",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 53,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A federal judge has halted the construction of a proposed 250-foot memorial arch honoring Donald Trump in Washington, D.C.",
@@ -294,40 +311,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
-      }
-    },
-    {
-      "slug": "united-states-loses-measles-elimination-status-2",
-      "canonicalPath": "/news/us/united-states-loses-measles-elimination-status-2/",
-      "headline": "US Reports Nine Measles Deaths Amid Historic Outbreak Surge",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The CDC confirmed nine deaths linked to measles across the United States in 2026.",
-        "Health authorities have officially declared the loss of the nation's measles-free status after 26 years."
-      ],
-      "primarySource": {
-        "publisherName": "NPR",
-        "articleUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
-      }
-    },
-    {
-      "slug": "king-tides-cause-monster-waves-flooding-on-california-coastline",
-      "canonicalPath": "/news/us/king-tides-cause-monster-waves-flooding-on-california-coastline/",
-      "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
-        "Record water levels have resulted in damage to businesses and roads near the shoreline."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/25/california-flooding-high-tides"
       }
     },
     {
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/"
+      }
+    },
+    {
+      "slug": "king-tides-cause-monster-waves-flooding-on-california-coastline",
+      "canonicalPath": "/news/us/king-tides-cause-monster-waves-flooding-on-california-coastline/",
+      "headline": "California Coastal Flooding Intensifies Amid Record King Tides",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 52,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "High-reaching king tides are causing extensive flooding across various coastal areas in California.",
+        "Record water levels have resulted in damage to businesses and roads near the shoreline."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/25/california-flooding-high-tides"
       }
     }
   ]

@@ -3,17 +3,34 @@
   "name": "Israel",
   "slug": "israel",
   "region": "Asia",
-  "viralScore": 75,
+  "viralScore": 78,
   "intensityTier": "high",
-  "generatedAt": "2026-11-27T20:18:00Z",
+  "generatedAt": "2026-11-28T00:34:00Z",
   "clusters": [
+    {
+      "slug": "israeli-airstrike-on-nasser-hospital",
+      "canonicalPath": "/news/il/israeli-airstrike-on-nasser-hospital/",
+      "headline": "Hamas Leader Khalil Al-Hayya’s Son Survives Israeli Airstrike",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 75,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Hamas officials confirmed that Izzeldeen al-Hayya survived an assassination attempt by Israeli forces.",
+        "The strike targeted the family of senior Hamas leader Khalil al-Hayya in the Gaza Strip."
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/israel-strikes-gaza-hospital-says-hamas-senior-figure-inside/a-79927645?maca=en-rss-en-all-1573-xml-mrss"
+      }
+    },
     {
       "slug": "israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra",
       "canonicalPath": "/news/il/israels-arab-list-backs-eisenkot-as-netanyahu-loses-ultra/",
       "headline": "Gadi Eisenkot Secures New Coalition Partners To Oust Netanyahu",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 72,
+      "viralScore": 65,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "Gadi Eisenkot formed a coalition deal with Yair Golan's left-leaning Democrats party.",
@@ -25,29 +42,12 @@
       }
     },
     {
-      "slug": "israeli-airstrike-on-nasser-hospital",
-      "canonicalPath": "/news/il/israeli-airstrike-on-nasser-hospital/",
-      "headline": "Israeli Airstrike Kills Hamas Internal Security Chief Naeem Abu Nahel",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 66,
-      "intensityTier": "high",
-      "aiSummaryBullets": [
-        "Naeem Abu Nahel, the director of Hamas' internal security service in Gaza, was confirmed dead following an Israeli aerial operation.",
-        "Medical authorities reported that six additional individuals were killed alongside the Hamas security official during the strike."
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/israel-strikes-gaza-hospital-says-hamas-senior-figure-inside/a-79927645?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
       "slug": "israel-launches-new-gaza-operation",
       "canonicalPath": "/news/il/israel-launches-new-gaza-operation/",
       "headline": "Israeli Forces Execute Rare Ground Operation In Central Gaza Strip",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Israeli military forces launched a ground operation in a Hamas-controlled area of the central Gaza Strip.",
@@ -64,7 +64,7 @@
       "headline": "Israeli Judges Suggest Prosecutors Drop Bribery Case Against Netanyahu",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 54,
+      "viralScore": 52,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "A panel of Israeli judges has recommended that state prosecutors drop the most serious bribery charges in the corruption case against Benjamin Netanyahu.",
@@ -144,33 +144,16 @@
       }
     },
     {
-      "slug": "protesters-call-on-israel-to-free-palestinian-student-held",
-      "canonicalPath": "/news/il/protesters-call-on-israel-to-free-palestinian-student-held/",
-      "headline": "Protesters call on Israel to free Palestinian student held without charge",
-      "categorySlug": "crime-law",
-      "categoryName": "Crime & Law",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "BBC reports: Protesters call on Israel to free Palestinian student held without charge",
-        "The Guardian reports: Israel attempts to jail Palestinian student at Hebrew University without trial"
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/world/2026/nov/24/israel-jail-palestinian-student-mahdi-tounsi-hebrew-university-without-trial"
-      }
-    },
-    {
       "slug": "israeli-lawmakers-advance-oct-7-inquiry-opposed-by-netanyahu",
       "canonicalPath": "/news/il/israeli-lawmakers-advance-oct-7-inquiry-opposed-by-netanyahu/",
-      "headline": "Israeli lawmakers advance Oct. 7 inquiry opposed by Netanyahu",
+      "headline": "Israeli Lawmakers Advance Oct. 7 Inquiry Opposed By Netanyahu",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
       "viralScore": 30,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "The Korea Herald reports: Israeli lawmakers advance Oct. 7 inquiry opposed by Netanyahu",
-        "France 24 reports: Israeli lawmakers advance October 7 inquiry opposed by Netanyahu"
+        "Legislators in Israel have initiated steps to form a parliamentary inquiry into the events of October 7.",
+        "The legislative push to investigate the attack faces direct opposition from Prime Minister Benjamin Netanyahu."
       ],
       "primarySource": {
         "publisherName": "France 24",
@@ -260,6 +243,23 @@
       "primarySource": {
         "publisherName": "NPR",
         "articleUrl": "https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes"
+      }
+    },
+    {
+      "slug": "protesters-call-on-israel-to-free-palestinian-student-held",
+      "canonicalPath": "/news/il/protesters-call-on-israel-to-free-palestinian-student-held/",
+      "headline": "Protesters Call On Israel To Release Detained Hebrew University Student",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "A Palestinian student enrolled at Hebrew University is being held by Israeli authorities without formal charges.",
+        "Protesters are actively campaigning for the immediate release of the student from detention."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/world/2026/nov/24/israel-jail-palestinian-student-mahdi-tounsi-hebrew-university-without-trial"
       }
     }
   ]
