@@ -1,43 +1,59 @@
 {
-  "batchId": "batch-202611280218",
-  "generatedAt": "2026-11-28T02:18:00Z",
-  "nextUpdateAt": "2026-11-28T05:17:00Z",
+  "batchId": "batch-202611280518",
+  "generatedAt": "2026-11-28T05:18:00Z",
+  "nextUpdateAt": "2026-11-28T08:17:00Z",
   "isSeed": false,
   "totals": {
-    "activeCountries": 35,
-    "viralTopics": 760,
-    "globalIndex": 86
+    "activeCountries": 36,
+    "viralTopics": 751,
+    "globalIndex": 84
   },
   "pipeline": {
     "provider": "gemini:gemini-3.1-flash-lite",
-    "feedsOk": 41,
+    "feedsOk": 42,
     "feedsFailed": [
-      "detik: fetch failed",
       "gdelt-indonesia: HTTP 429 for https://api.gdeltproject.org/api/v2/doc/doc?query=sourcecountry%3Aindonesia&mode=artlist&format=json&timespan=6h&maxrecords=40&sort=hybridrel"
     ],
-    "articlesFetched": 1607,
-    "newClusters": 7,
-    "updatedClusters": 52,
+    "articlesFetched": 1705,
+    "newClusters": 6,
+    "updatedClusters": 74,
     "retiredClusters": 0,
-    "aiCalls": 30,
-    "fallbackSummaries": 42,
+    "aiCalls": 34,
+    "fallbackSummaries": 33,
     "trendTitles": {
-      "targeted": 1,
-      "inTitle": 1
+      "targeted": 2,
+      "inTitle": 2
     },
     "titleNames": {
-      "kept": 12,
-      "headline": 1,
-      "previous": 3,
-      "missing": 0,
-      "no-anchor": 6
+      "kept": 17,
+      "headline": 0,
+      "previous": 1,
+      "missing": 1,
+      "no-anchor": 7
     },
     "digestSummaries": {
-      "written": 1,
-      "kept": 23,
+      "written": 2,
+      "kept": 22,
       "pending": 0,
       "failed": 0
     },
-    "durationMs": 117058
+    "aiFailures": {
+      "rate-limit": 1
+    },
+    "aiFailureSamples": [
+      {
+        "category": "rate-limit",
+        "detail": "HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      }
+    ],
+    "failover": {
+      "provider": "openai:gpt-5-mini",
+      "tried": 1,
+      "written": 0,
+      "reasons": {
+        "rate-limit": 1
+      }
+    },
+    "durationMs": 210224
   }
 }
