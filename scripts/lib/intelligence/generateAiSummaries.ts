@@ -309,14 +309,21 @@ export function isOpenAiOutOfCredits(body: string): boolean {
  * which publishes nothing.
  */
 let aiDeadline: number | null = null;
+/**
+ * Set when a call is cancelled by the deadline. The cancel timer runs on Node's monotonic
+ * clock and can fire a millisecond before Date.now() reaches the deadline, so the clock alone
+ * could still say "time left" right after a call was cut off.
+ */
+let aiDeadlineHit = false;
 
 export function setAiDeadline(at: number | null): void {
   aiDeadline = at;
+  aiDeadlineHit = false;
 }
 
 /** True once the run's AI time budget is used up. */
 export function aiTimeUp(): boolean {
-  return aiDeadline !== null && Date.now() >= aiDeadline;
+  return aiDeadlineHit || (aiDeadline !== null && Date.now() >= aiDeadline);
 }
 
 /** For tests: forget a quota stop (Gemini daily quota, OpenAI credits) from an earlier call. */
@@ -955,6 +962,7 @@ export async function requestModelJson(
     return await (provider === 'gemini' ? callGemini : callOpenAI)(prompt, apiKey, model, signal);
   } catch (err) {
     if (signal?.aborted) {
+      aiDeadlineHit = true;
       throw new AiResponseError(
         'time-budget',
         'stopped: the AI time budget for this run ran out during the call',

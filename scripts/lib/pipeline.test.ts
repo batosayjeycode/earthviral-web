@@ -1243,6 +1243,37 @@ describe('AI failure classification', async () => {
     }
   });
 
+  it('counts the AI time budget as used up once a call is cut off, even if the clock lags', async () => {
+    const { setAiDeadline, aiTimeUp } = await import('./intelligence/generateAiSummaries.ts');
+    process.env.GEMINI_API_KEY = 'test-key';
+    const realNow = Date.now;
+    const keepAlive = setTimeout(() => {}, 10_000);
+    try {
+      globalThis.fetch = ((_url: string, init: RequestInit) => {
+        // The cancel timer is already set. From here Date.now() lags, so when the timer fires
+        // the clock still says the deadline is ahead, as when it fires a millisecond early (CI).
+        Date.now = () => realNow() - 60_000;
+        return new Promise((_resolve, reject) => {
+          init.signal?.addEventListener('abort', () => reject(init.signal!.reason));
+        });
+      }) as unknown as typeof fetch;
+      setAiDeadline(realNow() + 30);
+      const cut = await createSummarizer('gemini').summarize(input);
+      assert.equal(cut.error?.category, 'time-budget');
+      assert.equal(aiTimeUp(), true);
+      // A new budget starts fresh.
+      Date.now = realNow;
+      setAiDeadline(realNow() + 60_000);
+      assert.equal(aiTimeUp(), false);
+    } finally {
+      Date.now = realNow;
+      clearTimeout(keepAlive);
+      setAiDeadline(null);
+      globalThis.fetch = realFetch;
+      delete process.env.GEMINI_API_KEY;
+    }
+  });
+
   it('reports an empty Gemini reply with its finish reason', async () => {
     process.env.GEMINI_API_KEY = 'test-key';
     globalThis.fetch = reply(200, {
