@@ -3,9 +3,9 @@
   "name": "United States",
   "slug": "united-states",
   "region": "North America",
-  "viralScore": 88,
-  "intensityTier": "surge",
-  "generatedAt": "2026-11-28T11:18:00Z",
+  "viralScore": 80,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-28T14:18:00Z",
   "clusters": [
     {
       "slug": "new-york-citys-macys-thanksgiving-day-parade-postponed-due",
@@ -13,15 +13,15 @@
       "headline": "Post-Storm Power Restoration Continues Following Macy's Parade Delay",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 85,
-      "intensityTier": "surge",
+      "viralScore": 77,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Nearly half a million homes and businesses remain without electricity following a powerful storm across the U.S. East Coast.",
         "The Macy's Thanksgiving Day Parade in New York City was postponed due to inclement weather conditions during the holiday."
       ],
       "primarySource": {
-        "publisherName": "Le Monde",
-        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/26/new-york-postpones-thanksgiving-day-parade-due-to-major-storm_6789070_4.html"
+        "publisherName": "kgot.iheart.com",
+        "articleUrl": "https://kgot.iheart.com/content/2026-11-25-thanksgiving-day-nfl-games-bears-vs-lions-eagles-vs-cowboys-and-chiefs-vs-bills/"
       }
     },
     {
@@ -30,7 +30,7 @@
       "headline": "Hackers Reportedly Breach US Air Force Cloud One Computing Platform",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 75,
+      "viralScore": 72,
       "intensityTier": "high",
       "aiSummaryBullets": [
         "The US Air Force's primary cloud computing platform, known as Cloud One, has reportedly been compromised by hackers.",
@@ -42,13 +42,30 @@
       }
     },
     {
+      "slug": "thomas-markle-arrested-florida-abuse-charges",
+      "canonicalPath": "/news/us/thomas-markle-arrested-florida-abuse-charges/",
+      "headline": "California Grand Jury Indicts Thomas Markle On Pornography Charges",
+      "categorySlug": "crime-law",
+      "categoryName": "Crime & Law",
+      "viralScore": 65,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "A California grand jury has officially indicted Thomas Markle on two counts of possessing child sexual abuse material.",
+        "The indictment follows a previous arrest regarding the discovery of illicit imagery in his possession."
+      ],
+      "primarySource": {
+        "publisherName": "Le Monde",
+        "articleUrl": "https://www.lemonde.fr/en/international/article/2026/11/06/meghan-markle-s-father-arrested-in-us-over-child-sex-abuse-images_6773693_4.html"
+      }
+    },
+    {
       "slug": "severe-storms-threaten-thanksgiving-travel",
       "canonicalPath": "/news/us/severe-storms-threaten-thanksgiving-travel/",
       "headline": "Nor'easter Causes Power Outages and Disrupts Travel Across the US",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 73,
-      "intensityTier": "high",
+      "viralScore": 58,
+      "intensityTier": "active",
       "aiSummaryBullets": [
         "Nearly one million homes across the United States remain without power following severe weather conditions.",
         "A powerful nor'easter caused significant travel disruptions and flooding across both the east and west coasts."
@@ -64,7 +81,7 @@
       "headline": "Jensen Huang Resumes Nvidia CEO Role Amid Ongoing Federal Scrutiny",
       "categorySlug": "economy-business",
       "categoryName": "Economy & Business",
-      "viralScore": 56,
+      "viralScore": 55,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Jensen Huang has officially resumed his position as Nvidia's Chief Executive Officer.",
@@ -73,23 +90,6 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/video/experts-reporters-lawmakers-dig-nvidia-reinstalling-jensen-huang-ceo/"
-      }
-    },
-    {
-      "slug": "elon-musk-midterm-spending-comments",
-      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
-      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 56,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
-        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
-      ],
-      "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
       }
     },
     {
@@ -141,6 +141,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/"
+      }
+    },
+    {
+      "slug": "elon-musk-midterm-spending-comments",
+      "canonicalPath": "/news/us/elon-musk-midterm-spending-comments/",
+      "headline": "Elon Musk Expresses Regret Over Midterm Election Campaign Spending",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 55,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Elon Musk stated he feels foolish after spending roughly $474 million on the 2026 US midterm elections.",
+        "The entrepreneur participated in the DealBook Summit virtually from China while accompanying President Trump to the APEC Summit."
+      ],
+      "primarySource": {
+        "publisherName": "The Guardian",
+        "articleUrl": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump"
       }
     },
     {
@@ -212,23 +229,6 @@
       }
     },
     {
-      "slug": "us-jury-convicts-huawei-of-violating-sanctions-stealing-trade",
-      "canonicalPath": "/news/us/us-jury-convicts-huawei-of-violating-sanctions-stealing-trade/",
-      "headline": "OpenAI Countersues Apple Alleging Theft Of Its Trade Secrets",
-      "categorySlug": "technology-ai",
-      "categoryName": "Technology & AI",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "OpenAI filed a lawsuit against Apple in a northern California federal court on Friday.",
-        "The legal action accuses Apple of misappropriating trade secrets and influencing hardware suppliers."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets"
-      }
-    },
-    {
       "slug": "kennedy-family-opposes-trump-arch-plan",
       "canonicalPath": "/news/us/kennedy-family-opposes-trump-arch-plan/",
       "headline": "Second Judge Blocks Construction Of Planned Trump Memorial Arch",
@@ -243,6 +243,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/"
+      }
+    },
+    {
+      "slug": "us-jury-convicts-huawei-of-violating-sanctions-stealing-trade",
+      "canonicalPath": "/news/us/us-jury-convicts-huawei-of-violating-sanctions-stealing-trade/",
+      "headline": "OpenAI Countersues Apple Alleging Theft Of Its Trade Secrets",
+      "categorySlug": "technology-ai",
+      "categoryName": "Technology & AI",
+      "viralScore": 53,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "OpenAI filed a lawsuit against Apple in a northern California federal court on Friday.",
+        "The legal action accuses Apple of misappropriating trade secrets and influencing hardware suppliers."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261124-new-york-jury-convicts-huawei-of-stealing-trade-secrets"
       }
     },
     {
@@ -263,23 +280,6 @@
       }
     },
     {
-      "slug": "pertamina-addresses-rupiah-exchange-rate",
-      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
-      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 51,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
-        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
-      ],
-      "primarySource": {
-        "publisherName": "Antara",
-        "articleUrl": "https://www.antaranews.com/berita/5861635/harga-mineral-acuan-nikel-naik-jadi-15596-dolar-as-per-ton"
-      }
-    },
-    {
       "slug": "faa-issues-nationwide-flight-ground-stop",
       "canonicalPath": "/news/us/faa-issues-nationwide-flight-ground-stop/",
       "headline": "FedEx Cargo Plane Runway Incident Follows FAA Nationwide Ground Stop",
@@ -294,6 +294,23 @@
       "primarySource": {
         "publisherName": "CBS News",
         "articleUrl": "https://www.cbsnews.com/news/4-nfl-officials-2-games-each-rarity-faa-ground-stop/"
+      }
+    },
+    {
+      "slug": "pertamina-addresses-rupiah-exchange-rate",
+      "canonicalPath": "/news/us/pertamina-addresses-rupiah-exchange-rate/",
+      "headline": "Indonesian Rupiah Drops to Rp18.270 Against US Dollar Following Fed",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 50,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Indonesian rupiah fell to 18.270 against the US dollar by the close of trading on Friday.",
+        "Financial analysts attribute the currency's decline to a strengthening US dollar and expectations of future interest rate adjustments."
+      ],
+      "primarySource": {
+        "publisherName": "Antara",
+        "articleUrl": "https://www.antaranews.com/berita/5861635/harga-mineral-acuan-nikel-naik-jadi-15596-dolar-as-per-ton"
       }
     },
     {
@@ -328,23 +345,6 @@
       "primarySource": {
         "publisherName": "Le Monde",
         "articleUrl": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html"
-      }
-    },
-    {
-      "slug": "nvidia-ceo-investigation-espionage-allegations",
-      "canonicalPath": "/news/us/nvidia-ceo-investigation-espionage-allegations/",
-      "headline": "Justice Department Probes Megaspeed and Nvidia Amid Huang Return",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The US Department of Justice has initiated an investigation involving Nvidia and the Singapore-based firm Megaspeed.",
-        "Concerns are being raised by lawmakers regarding potential national security risks linked to the company's business activities."
-      ],
-      "primarySource": {
-        "publisherName": "CBS News",
-        "articleUrl": "https://www.cbsnews.com/news/nvidia-short-seller-culper-jensen-huang/"
       }
     }
   ]

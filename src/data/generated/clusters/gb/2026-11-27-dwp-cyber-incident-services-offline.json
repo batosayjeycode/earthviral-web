@@ -6,28 +6,28 @@
   "countryName": "United Kingdom",
   "countrySlug": "united-kingdom",
   "region": "Europe",
-  "categorySlug": "technology-ai",
-  "categoryName": "Technology & AI",
-  "headline": "UK Government Works To Restore DWP Services After Cyber Incident",
-  "seoTitle": "UK Department For Work And Pensions Cyber Incident",
-  "metaDescription": "The UK government is working to restore services after a cyber incident forced the Department for Work and Pensions to take its online systems offline.",
+  "categorySlug": "politics-government",
+  "categoryName": "Politics & Government",
+  "headline": "DWP Pensions And Benefits Services Remain Offline After Cyber Incident",
+  "seoTitle": "DWP Cyber Incident and Benefits Outage",
+  "metaDescription": "Government benefits and pension services remain suspended following a cyber incident as officials investigate the disruption to the DWP digital systems.",
   "aiSummaryBullets": [
-    "The Department for Work and Pensions took key services offline following a serious cyber incident affecting benefits and pension systems.",
-    "Government officials stated there is currently no evidence that personal data has been compromised in the event.",
-    "Authorities are working to restore digital services while noting no signs of malicious activity targeting other government departments."
+    "Department for Work and Pensions systems remain offline following a cyber incident.",
+    "A former UK chief technology officer suspects the outage was caused by a cyber attack, though this is unconfirmed.",
+    "The government reports that pension and benefit payments are continuing despite the platform downtime."
   ],
-  "aiContextParagraph": "The United Kingdom's Department for Work and Pensions (DWP) experienced a significant disruption to its online systems, leading to the temporary shutdown of websites and portals used for managing benefits and pensions. Following the incident, government officials confirmed that efforts to restore full functionality are underway. A former UK technology leader suggested the incident was likely the result of an external attack, though official investigations are ongoing. Despite the widespread loss of access for millions of users, the pensions minister indicated that there is no current evidence of data theft. The government also reported that there have been no indicators suggesting the incident expanded to compromise other sectors of the UK state apparatus. Payments to citizens remain a priority as technical teams work to stabilize the affected network infrastructure during this period of service outage.",
-  "whyItIsViral": "The incident is highly viral due to the significant impact on millions of citizens, with coverage spanning eight independent outlets and rapid reporting velocity.",
-  "viralScore": 74,
-  "intensityTier": "high",
+  "aiContextParagraph": "The United Kingdom's Department for Work and Pensions (DWP) has taken several digital systems offline following a reported cyber incident. The disruption has impacted access to portals for services including Universal Credit and Personal Independence Payment (PIP). While government officials have stated there is currently no evidence that personal data has been compromised, the outage has persisted for multiple days. A former UK chief technology officer has publicly expressed strong suspicions that the disruption is the result of a cyber attack, though the government has not officially confirmed the nature or source of the incident. Despite the widespread loss of portal access, authorities have maintained that payments to beneficiaries will continue to be processed. The incident has drawn significant attention due to the scale of the service impact on millions of people who rely on DWP support.",
+  "whyItIsViral": "The story is highly viral due to widespread coverage from eight major outlets and concerns regarding the accessibility of essential public pension and benefit services.",
+  "viralScore": 89,
+  "intensityTier": "surge",
   "signalBreakdown": {
     "verifiedPublisherCount": 8,
-    "coverageVelocityScore": 47,
+    "coverageVelocityScore": 80,
     "publicSearchSignalScore": 0,
     "confidenceLabel": "Verified Multi-Source"
   },
   "firstDetectedAt": "2026-11-27T09:57:10Z",
-  "lastUpdatedBatchAt": "2026-11-28T11:18:00Z",
+  "lastUpdatedBatchAt": "2026-11-28T14:18:00Z",
   "sources": [
     {
       "publisherName": "Evening Standard",
@@ -154,6 +154,34 @@
       "articleTitle": "DWP cyber incident ‘probably an attack’, says former UK chief technology officer",
       "articleUrl": "https://www.theguardian.com/technology/2026/nov/28/dwp-cyber-incident-probably-attack-former-uk-chief-technology-officer-david-knott",
       "publishedAt": "2026-11-28T10:52:00Z"
+    },
+    {
+      "publisherName": "The Independent",
+      "publisherDomain": "independent.co.uk",
+      "articleTitle": "Pensions and benefits services remain down after ‘cyber incident’",
+      "articleUrl": "https://www.independent.co.uk/news/uk/politics/government-pip-universal-credit-b3093179.html",
+      "publishedAt": "2026-11-28T12:07:22Z"
+    },
+    {
+      "publisherName": "Evening Standard",
+      "publisherDomain": "standard.co.uk",
+      "articleTitle": "Pensions and benefits services remain down after ‘cyber incident’",
+      "articleUrl": "https://www.standard.co.uk/news/politics/government-universal-credit-b1306806.html",
+      "publishedAt": "2026-11-28T12:07:22Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "Pensions and benefits services still down after 'cyber incident'",
+      "articleUrl": "https://www.bbc.co.uk/news/articles/cm1wrgqyq4d8o",
+      "publishedAt": "2026-11-28T13:02:10Z"
+    },
+    {
+      "publisherName": "BBC",
+      "publisherDomain": "bbc.com",
+      "articleTitle": "Is DWP outage linked to cyber hack?",
+      "articleUrl": "https://www.bbc.co.uk/news/videos/cm9q8n011j48o",
+      "publishedAt": "2026-11-28T13:48:31Z"
     }
   ],
   "entityTags": [
@@ -166,18 +194,22 @@
       "slug": "cybersecurity"
     },
     {
-      "name": "UK Government",
-      "slug": "uk-government"
+      "name": "Universal Credit",
+      "slug": "universal-credit"
+    },
+    {
+      "name": "Personal Independence Payment",
+      "slug": "personal-independence-payment"
     }
   ],
   "relatedInCountrySlugs": [
+    "timms-review-disability-benefit-reforms",
     "uk-government-thwarts-cyber-fridge-attack",
-    "uk-eu-youth-mobility-trade-deals",
-    "uk-housing-plan-for-homeless-veterans"
+    "nhs-warns-of-flu-spike"
   ],
   "relatedInCategorySlugs": [
-    "hackers-breach-us-air-force-cloud-one",
-    "singapore-systems-impacted-by-microsoft-outage",
-    "sap-reports-recent-security-incident"
+    "rubio-denies-coordinated-cyberattack-us-outages",
+    "germany-expands-intelligence-agency-surveillance-powers",
+    "italian-foreign-minister-personal-data-leak"
   ]
 }
