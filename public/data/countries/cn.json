@@ -3,25 +3,42 @@
   "name": "China",
   "slug": "china",
   "region": "Asia",
-  "viralScore": 58,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-28T05:18:00Z",
+  "viralScore": 70,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-28T08:18:00Z",
   "clusters": [
+    {
+      "slug": "trump-hints-kim-jong-un-meeting-china",
+      "canonicalPath": "/news/cn/trump-hints-kim-jong-un-meeting-china/",
+      "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 67,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "President Donald Trump stated that North Korean leader Kim Jong Un has expressed interest in attending the APEC summit in China.",
+        "U.S. officials indicated the possibility of a bilateral meeting between the two leaders during the trip."
+      ],
+      "primarySource": {
+        "publisherName": "Yonhap",
+        "articleUrl": "https://en.yna.co.kr/view/AEN20261116009900315"
+      }
+    },
     {
       "slug": "nvidia-investigates-ceo-espionage-allegations",
       "canonicalPath": "/news/cn/nvidia-investigates-ceo-espionage-allegations/",
       "headline": "Jensen Huang Reinstated As Nvidia CEO Amid Espionage Allegations",
       "categorySlug": "technology-ai",
       "categoryName": "Technology & AI",
-      "viralScore": 55,
-      "intensityTier": "active",
+      "viralScore": 65,
+      "intensityTier": "high",
       "aiSummaryBullets": [
         "Nvidia's board has reinstated Jensen Huang as CEO following recent espionage allegations.",
         "Reports indicate Alice Huang maintained contact with Chinese intelligence agencies during her relationship with the executive."
       ],
       "primarySource": {
-        "publisherName": "The Guardian",
-        "articleUrl": "https://www.theguardian.com/technology/2026/nov/17/jensen-huang-testify-congress-nvidia-affair-spy"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/tv-shows/truth-or-fake/20261117-deepfakes-memes-and-misinformation-ai-turns-against-nvidia-s-jensen-huang"
       }
     },
     {
@@ -42,46 +59,12 @@
       }
     },
     {
-      "slug": "chinese-embassy-funds-mathare-school",
-      "canonicalPath": "/news/cn/chinese-embassy-funds-mathare-school/",
-      "headline": "Chinese Embassy And Enterprises Support MCEDO Beijing School",
-      "categorySlug": "social-issues",
-      "categoryName": "Social Issues",
-      "viralScore": 54,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "The Chinese Embassy and local Chinese businesses donated over seven million shillings to MCEDO Beijing School.",
-        "The funding is designated to support the educational needs and feeding programs for students in the Mathare informal settlement."
-      ],
-      "primarySource": {
-        "publisherName": "KBC",
-        "articleUrl": "https://www.kbc.co.ke/chinese-embassy-and-enterprises-boost-education-support-for-vulnerable-learners-in-mathare/"
-      }
-    },
-    {
-      "slug": "trump-imposes-new-tariffs-on-eu-and-china-despite",
-      "canonicalPath": "/news/cn/trump-imposes-new-tariffs-on-eu-and-china-despite/",
-      "headline": "China And EU Criticize New US Tariffs Proposed By President Trump",
-      "categorySlug": "economy-business",
-      "categoryName": "Economy & Business",
-      "viralScore": 49,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Trump has announced plans to implement new tariffs targeting 14 major international trading partners.",
-        "The policy announcement includes China and the European Union among the primary regions subject to the proposed trade measures."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat"
-      }
-    },
-    {
       "slug": "kim-jong-un-possible-china-visit",
       "canonicalPath": "/news/cn/kim-jong-un-possible-china-visit/",
       "headline": "South Korea Monitors Possible Visit Of Kim Jong-un To China",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 47,
+      "viralScore": 49,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "South Korea's National Intelligence Service confirmed it is observing regional activities regarding a potential trip by Kim Jong-un.",
@@ -93,20 +76,37 @@
       }
     },
     {
-      "slug": "scott-bessent-nvidia-china-chips",
-      "canonicalPath": "/news/cn/scott-bessent-nvidia-china-chips/",
-      "headline": "Treasury Secretary Scott Bessent Queries Nvidia On China Chip Sales",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 44,
+      "slug": "trump-imposes-new-tariffs-on-eu-and-china-despite",
+      "canonicalPath": "/news/cn/trump-imposes-new-tariffs-on-eu-and-china-despite/",
+      "headline": "China And EU Criticize New US Tariffs Proposed By President Trump",
+      "categorySlug": "economy-business",
+      "categoryName": "Economy & Business",
+      "viralScore": 48,
       "intensityTier": "active",
       "aiSummaryBullets": [
-        "Treasury Secretary Scott Bessent has called for an investigation into Nvidia's role in the supply of artificial intelligence chips to China.",
-        "Bessent stated that the government requires clarity on potential noncompliance regarding existing export control regulations."
+        "President Trump has announced plans to implement new tariffs targeting 14 major international trading partners.",
+        "The policy announcement includes China and the European Union among the primary regions subject to the proposed trade measures."
       ],
       "primarySource": {
-        "publisherName": "Times of India",
-        "articleUrl": "https://timesofindia.indiatimes.com/world/us/we-do-need-answers-trump-aide-bessent-on-nvidias-sale-of-chips-to-china/articleshow/136080639.cms"
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat"
+      }
+    },
+    {
+      "slug": "chinese-embassy-funds-mathare-school",
+      "canonicalPath": "/news/cn/chinese-embassy-funds-mathare-school/",
+      "headline": "Chinese Embassy And Enterprises Support MCEDO Beijing School",
+      "categorySlug": "social-issues",
+      "categoryName": "Social Issues",
+      "viralScore": 47,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "The Chinese Embassy and local Chinese businesses donated over seven million shillings to MCEDO Beijing School.",
+        "The funding is designated to support the educational needs and feeding programs for students in the Mathare informal settlement."
+      ],
+      "primarySource": {
+        "publisherName": "KBC",
+        "articleUrl": "https://www.kbc.co.ke/chinese-embassy-and-enterprises-boost-education-support-for-vulnerable-learners-in-mathare/"
       }
     },
     {
@@ -115,7 +115,7 @@
       "headline": "Mining Executive Arif Kurniawan Flees To China Amid Treason Probe",
       "categorySlug": "crime-law",
       "categoryName": "Crime & Law",
-      "viralScore": 41,
+      "viralScore": 40,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Officials from Bakom RI have identified Arif Kurniawan as a key intellectual actor in an alleged treason plot.",
@@ -280,23 +280,6 @@
       }
     },
     {
-      "slug": "trump-hints-kim-jong-un-meeting-china",
-      "canonicalPath": "/news/cn/trump-hints-kim-jong-un-meeting-china/",
-      "headline": "President Trump Suggests Potential Meeting With Kim Jong Un In China",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 52,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "President Donald Trump stated that North Korean leader Kim Jong Un has expressed interest in attending the APEC summit in China.",
-        "U.S. officials indicated the possibility of a bilateral meeting between the two leaders during the trip."
-      ],
-      "primarySource": {
-        "publisherName": "Yonhap",
-        "articleUrl": "https://en.yna.co.kr/view/AEN20261116009900315"
-      }
-    },
-    {
       "slug": "chinese-official-sentenced-to-death-for-spying-leaking-national",
       "canonicalPath": "/news/cn/chinese-official-sentenced-to-death-for-spying-leaking-national/",
       "headline": "Chinese Official Sentenced To Death For Spying And Leaking Secrets",
@@ -345,6 +328,23 @@
       "primarySource": {
         "publisherName": "VIVA",
         "articleUrl": "https://www.viva.co.id/sport/1944670-menang-dramatis-di-gim-pertama-amrinita-siap-hadapi-ujian-berikutnya-di-hong-kong-open-2026"
+      }
+    },
+    {
+      "slug": "indonesian-pairs-reach-hong-kong-open-semifinals",
+      "canonicalPath": "/news/cn/indonesian-pairs-reach-hong-kong-open-semifinals/",
+      "headline": "Leo Rolly Carnando And Daniel Marthin Finish As Hong Kong Open Runner-up",
+      "categorySlug": "sports",
+      "categoryName": "Sports",
+      "viralScore": 44,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Leo Rolly Carnando and Daniel Marthin secured the runner-up position at the Hong Kong Open 2026.",
+        "The tournament final held at The Kai Tak Arena concluded on November 22, 2026."
+      ],
+      "primarySource": {
+        "publisherName": "Okezone",
+        "articleUrl": "https://sports.okezone.com/read/2026/11/20/40/3255245/hasil-perempatfinal-hong-kong-open-2026-leo-daniel-dan-tiwi-fadia-hingga-dejan-felisha-tembus-semifinal"
       }
     }
   ]

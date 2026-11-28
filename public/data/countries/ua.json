@@ -3,17 +3,34 @@
   "name": "Ukraine",
   "slug": "ukraine",
   "region": "Europe",
-  "viralScore": 55,
-  "intensityTier": "active",
-  "generatedAt": "2026-11-28T05:18:00Z",
+  "viralScore": 62,
+  "intensityTier": "high",
+  "generatedAt": "2026-11-28T08:18:00Z",
   "clusters": [
+    {
+      "slug": "ukraine-claims-sinking-of-russian-warship",
+      "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
+      "headline": "Ukraine Confirms Naval Drone Strikes On Russian Ships Off Libya",
+      "categorySlug": "disasters-world-events",
+      "categoryName": "Disasters & World Events",
+      "viralScore": 60,
+      "intensityTier": "high",
+      "aiSummaryBullets": [
+        "Ukrainian naval drone operations successfully targeted Russian military vessels operating off the coast of Libya.",
+        "Official reports confirmed the sinking of a warship and subsequent casualties following these maritime engagements."
+      ],
+      "primarySource": {
+        "publisherName": "France 24",
+        "articleUrl": "https://www.france24.com/en/europe/20261123-live-russian-strikes-kill-at-least-15-people-in-kyiv-region-ukraine-says"
+      }
+    },
     {
       "slug": "eu-leaders-negotiate-ukraine-budget-summit",
       "canonicalPath": "/news/ua/eu-leaders-negotiate-ukraine-budget-summit/",
       "headline": "EU Leaders Fail To Reach Agreement On Long-Term Budget And Ukraine",
       "categorySlug": "politics-government",
       "categoryName": "Politics & Government",
-      "viralScore": 52,
+      "viralScore": 50,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "European Union leaders have concluded a summit without reaching a consensus on the next seven-year budget.",
@@ -22,23 +39,6 @@
       "primarySource": {
         "publisherName": "Deutsche Welle",
         "articleUrl": "https://www.dw.com/en/eu-leaders-seek-agreement-on-long-term-budget-and-ukraine-at-summit/live-80056415?maca=en-rss-en-all-1573-xml-mrss"
-      }
-    },
-    {
-      "slug": "ukraine-claims-sinking-of-russian-warship",
-      "canonicalPath": "/news/ua/ukraine-claims-sinking-of-russian-warship/",
-      "headline": "Ukraine Confirms Naval Drone Strikes On Russian Ships Off Libya",
-      "categorySlug": "disasters-world-events",
-      "categoryName": "Disasters & World Events",
-      "viralScore": 48,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Ukrainian naval drone operations successfully targeted Russian military vessels operating off the coast of Libya.",
-        "Official reports confirmed the sinking of a warship and subsequent casualties following these maritime engagements."
-      ],
-      "primarySource": {
-        "publisherName": "France 24",
-        "articleUrl": "https://www.france24.com/en/europe/20261123-live-russian-strikes-kill-at-least-15-people-in-kyiv-region-ukraine-says"
       }
     },
     {
@@ -64,7 +64,7 @@
       "headline": "Ukraine Proposes Black Sea Ceasefire To Protect Grain Shipments",
       "categorySlug": "disasters-world-events",
       "categoryName": "Disasters & World Events",
-      "viralScore": 37,
+      "viralScore": 34,
       "intensityTier": "active",
       "aiSummaryBullets": [
         "Ukraine has submitted a formal proposal for a ceasefire in the Black Sea to ensure the safe passage of food exports.",
@@ -90,23 +90,6 @@
       "primarySource": {
         "publisherName": "BBC",
         "articleUrl": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o"
-      }
-    },
-    {
-      "slug": "watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine",
-      "canonicalPath": "/news/ua/watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine/",
-      "headline": "Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
-      "categorySlug": "politics-government",
-      "categoryName": "Politics & Government",
-      "viralScore": 30,
-      "intensityTier": "active",
-      "aiSummaryBullets": [
-        "Times of India reports: Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
-        "Deutsche Welle reports: Peter Magyar meets Volodymyr Zelenskyy: Hungary and Ukraine make a fresh start after the icy relations of the Viktor Orban era"
-      ],
-      "primarySource": {
-        "publisherName": "Deutsche Welle",
-        "articleUrl": "https://www.dw.com/en/peter-magyar-meets-volodymyr-zelenskyy-hungary-and-ukraine-make-a-fresh-start-after-the-icy-relations-of-the-viktor-orban-era/a-80054175?maca=en-rss-en-all-1573-xml-mrss"
       }
     },
     {
@@ -294,6 +277,23 @@
       "primarySource": {
         "publisherName": "France 24",
         "articleUrl": "https://www.france24.com/en/europe/20261125-live-two-libyan-soldiers-killed-in-ukrainian-attack-on-russian-vessels-in-benghazi"
+      }
+    },
+    {
+      "slug": "watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine",
+      "canonicalPath": "/news/ua/watch-zelenskyy-hungary-pm-magyar-play-volleyball-during-ukraine/",
+      "headline": "Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
+      "categorySlug": "politics-government",
+      "categoryName": "Politics & Government",
+      "viralScore": 30,
+      "intensityTier": "active",
+      "aiSummaryBullets": [
+        "Times of India reports: Watch: Zelenskyy, Hungary PM Magyar play volleyball during Ukraine visit",
+        "Deutsche Welle reports: Peter Magyar meets Volodymyr Zelenskyy: Hungary and Ukraine make a fresh start after the icy relations of the Viktor Orban era"
+      ],
+      "primarySource": {
+        "publisherName": "Deutsche Welle",
+        "articleUrl": "https://www.dw.com/en/peter-magyar-meets-volodymyr-zelenskyy-hungary-and-ukraine-make-a-fresh-start-after-the-icy-relations-of-the-viktor-orban-era/a-80054175?maca=en-rss-en-all-1573-xml-mrss"
       }
     }
   ]
